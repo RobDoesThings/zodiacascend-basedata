@@ -1,0 +1,224 @@
+{
+  "status": "draft",
+  "licence": "CC-BY-4.0",
+  "physical_model": {
+    "distribution": "truncated_normal",
+    "default_cv": 0.12,
+    "clamp_sd": 3,
+    "notes": "Roll a standard normal z (e.g. Box–Muller from the seeded RNG), clamp it to ±3, then value = mean + z * sd. Weight and length share one z per beast (a heavy beast is also a long one), so roll z once and reuse it. \"upper\" in every entry is the clamp ceiling (mean + 3 sd); p95 and p99 are given for \"large specimen\" and \"record specimen\" rules."
+  },
+  "form_weight_multipliers": {
+    "wood": 1,
+    "fire": 0.97,
+    "earth": 1.1,
+    "metal": 1.05,
+    "water": 0.95
+  },
+  "moonmarked": {
+    "chance": "1/1024",
+    "description": "Pale, faintly luminous colouring said to mark a beast born under a full moon."
+  },
+  "temperaments": [
+    {
+      "id": "bold",
+      "name": "Bold",
+      "hint": "Charges in. +1 initiative; Command DC +1 when ordered to retreat."
+    },
+    {
+      "id": "wary",
+      "name": "Wary",
+      "hint": "Watches first. Advantage on Insight checks to spot Snares; −1 initiative."
+    },
+    {
+      "id": "playful",
+      "name": "Playful",
+      "hint": "Treats battle as a game. Bond Checks to befriend it are −1 DC."
+    },
+    {
+      "id": "stubborn",
+      "name": "Stubborn",
+      "hint": "Command DC +2, but +1 to saves against Charmed and Frightened."
+    },
+    {
+      "id": "gentle",
+      "name": "Gentle",
+      "hint": "Command DC −1; reluctant to attack a foe below half HP."
+    },
+    {
+      "id": "proud",
+      "name": "Proud",
+      "hint": "Command DC +1; +1 to hit against a foe of a higher stage."
+    },
+    {
+      "id": "curious",
+      "name": "Curious",
+      "hint": "Advantage on Investigation checks; may wander toward unknown things."
+    },
+    {
+      "id": "lazy",
+      "name": "Lazy",
+      "hint": "Regains 1 extra Qi on any turn it does not move; Command DC +1 for long journeys."
+    },
+    {
+      "id": "restless",
+      "name": "Restless",
+      "hint": "+5 ft Speed; disadvantage on Endurance checks during rests."
+    },
+    {
+      "id": "devoted",
+      "name": "Devoted",
+      "hint": "Command DC −2 while its Keeper is in sight."
+    },
+    {
+      "id": "sly",
+      "name": "Sly",
+      "hint": "Advantage on Stealth checks; Command DC +1 when the order is plainly risky."
+    },
+    {
+      "id": "serene",
+      "name": "Serene",
+      "hint": "Advantage on saves against Frightened; −5 ft Speed."
+    }
+  ],
+  "tame_scale": [
+    {
+      "max_dc": 10,
+      "label": "Easy"
+    },
+    {
+      "max_dc": 13,
+      "label": "Moderate"
+    },
+    {
+      "max_dc": 17,
+      "label": "Hard"
+    },
+    {
+      "max_dc": 21,
+      "label": "Very hard"
+    },
+    {
+      "max_dc": 99,
+      "label": "Story only"
+    }
+  ],
+  "command_check": {
+    "die": "d20",
+    "add": [
+      "keeper_WIS_modifier",
+      "bond_level"
+    ],
+    "base_dc": {
+      "wanderer": 8,
+      "elder-wanderer": 11,
+      "kit": 10,
+      "adept": 14,
+      "sovereign": 18
+    }
+  },
+  "confluences": [
+    {
+      "id": "kindle",
+      "name": "Kindle",
+      "elements": [
+        "wood",
+        "fire"
+      ],
+      "description": "Dry tinder and the first spark; fireflies",
+      "lanterns": null,
+      "autumn leaves.": null
+    },
+    {
+      "id": "moss",
+      "name": "Moss",
+      "elements": [
+        "wood",
+        "earth"
+      ],
+      "description": "Old stone gone green; the slow life of shrines and riverbanks."
+    },
+    {
+      "id": "lacquer",
+      "name": "Lacquer",
+      "elements": [
+        "wood",
+        "metal"
+      ],
+      "description": "Tree sap hardened to a gleaming shell."
+    },
+    {
+      "id": "mangrove",
+      "name": "Mangrove",
+      "elements": [
+        "wood",
+        "water"
+      ],
+      "description": "Roots in the tide; brackish shallows and rain-soaked forest."
+    },
+    {
+      "id": "kiln",
+      "name": "Kiln",
+      "elements": [
+        "fire",
+        "earth"
+      ],
+      "description": "Fired clay",
+      "glaze and ash.": null
+    },
+    {
+      "id": "forge",
+      "name": "Forge",
+      "elements": [
+        "fire",
+        "metal"
+      ],
+      "description": "Molten iron",
+      "bellows and sparks.": null
+    },
+    {
+      "id": "steam",
+      "name": "Steam",
+      "elements": [
+        "fire",
+        "water"
+      ],
+      "description": "Hot springs",
+      "sea glow and boiling mist.": null
+    },
+    {
+      "id": "ore",
+      "name": "Ore",
+      "elements": [
+        "earth",
+        "metal"
+      ],
+      "description": "Veins of gold and copper in the dark."
+    },
+    {
+      "id": "silt",
+      "name": "Silt",
+      "elements": [
+        "earth",
+        "water"
+      ],
+      "description": "River mud",
+      "paddy fields and estuary banks.": null
+    },
+    {
+      "id": "frost",
+      "name": "Frost",
+      "elements": [
+        "metal",
+        "water"
+      ],
+      "description": "Autumn turning to winter; cold deep water and white rime."
+    }
+  ],
+  "celestial_types": [
+    {
+      "id": "eclipse",
+      "name": "Eclipse",
+      "description": "The moment the sky's lights are swallowed. Belongs to no element and to all of them."
+    }
+  ]
+}

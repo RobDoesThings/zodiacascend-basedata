@@ -1,0 +1,792 @@
+{
+  "status": "draft",
+  "licence": "CC-BY-4.0",
+  "count": 52,
+  "categories": [
+    {
+      "id": "snare",
+      "name": "Snare",
+      "summary": "Face-down traps that spring when a foe does a particular thing. Your foe sees that a Snare is set, not which one."
+    },
+    {
+      "id": "ward",
+      "name": "Ward",
+      "summary": "Face-up protections that stay on the field and wear down with use."
+    },
+    {
+      "id": "counter",
+      "name": "Counter",
+      "summary": "Instant answers played from hand in response to a foe's move."
+    },
+    {
+      "id": "omen",
+      "name": "Omen",
+      "summary": "Delayed effects. Set face-down with a round counter showing; it resolves on its own when the counter runs out."
+    },
+    {
+      "id": "gambit",
+      "name": "Gambit",
+      "summary": "Risky plays decided by a roll. High reward, real downside."
+    },
+    {
+      "id": "edict",
+      "name": "Edict",
+      "summary": "Commands to your own beasts — swaps, rallies and focus."
+    },
+    {
+      "id": "rite",
+      "name": "Rite",
+      "summary": "Powerful effects with a steep extra cost, such as discarding cards or HP."
+    },
+    {
+      "id": "lure",
+      "name": "Lure",
+      "summary": "Tools for wild encounters, Bond Checks and vessel spirits."
+    },
+    {
+      "id": "talisman",
+      "name": "Talisman",
+      "summary": "Charms equipped to a beast or Keeper for a lasting effect."
+    },
+    {
+      "id": "memory",
+      "name": "Memory",
+      "summary": "Cards that draw on the defeated and the discarded."
+    }
+  ],
+  "cards": [
+    {
+      "id": "reed-pitfall",
+      "name": "Reed Pitfall",
+      "category": "snare",
+      "speed": "set",
+      "resolve": 1,
+      "trigger": "A foe moves into melee range of one of your beasts.",
+      "card_text": "When a foe moves into melee with your beast, it falls Prone and its attack this turn has disadvantage.",
+      "flavour": "The reeds look solid. They are not.",
+      "tags": [
+        "prone",
+        "control"
+      ],
+      "canon": false
+    },
+    {
+      "id": "bamboo-spring-snare",
+      "name": "Bamboo Spring Snare",
+      "category": "snare",
+      "speed": "set",
+      "resolve": 2,
+      "trigger": "A foe declares an attack.",
+      "card_text": "When a foe declares an attack, it makes a DEX save (DC 14) or is Restrained for 1 round and the attack is lost.",
+      "flavour": "A bent bamboo pole, a loop of cord, and patience.",
+      "tags": [
+        "restrained",
+        "control"
+      ],
+      "canon": false
+    },
+    {
+      "id": "mirror-pool",
+      "name": "Mirror Pool",
+      "category": "snare",
+      "speed": "set",
+      "resolve": 3,
+      "trigger": "A foe uses a technique that forces a save.",
+      "card_text": "Reflect a save technique back at its user. It must save against its own DC.",
+      "flavour": "Look down, and see yourself attacking.",
+      "tags": [
+        "reflect"
+      ],
+      "canon": false
+    },
+    {
+      "id": "ink-cloud",
+      "name": "Ink Cloud",
+      "category": "snare",
+      "speed": "set",
+      "resolve": 1,
+      "trigger": "A foe declares an attack against one of your beasts.",
+      "card_text": "Before the roll, the target becomes Hidden. The attack must pass a Tracking check or miss.",
+      "flavour": "Borrowed from an Inkcarp who owed a favour.",
+      "tags": [
+        "hidden",
+        "defence"
+      ],
+      "canon": false
+    },
+    {
+      "id": "ember-tripwire",
+      "name": "Ember Tripwire",
+      "category": "snare",
+      "speed": "set",
+      "resolve": 2,
+      "trigger": "A foe tags in from the bench.",
+      "card_text": "The incoming beast takes 2d6 damage and is Burning for 2 rounds.",
+      "flavour": "Strung across the gate, invisible until it isn't.",
+      "tags": [
+        "burning",
+        "damage"
+      ],
+      "canon": false
+    },
+    {
+      "id": "undertow-net",
+      "name": "Undertow Net",
+      "category": "snare",
+      "speed": "set",
+      "resolve": 2,
+      "trigger": "A foe ends its turn after moving 20 ft or more.",
+      "card_text": "The foe becomes Rooted and Soaked for 1 round.",
+      "flavour": "Fishermen's nets catch more than fish.",
+      "tags": [
+        "rooted",
+        "soaked",
+        "control"
+      ],
+      "canon": false
+    },
+    {
+      "id": "sealbreaker-knot",
+      "name": "Sealbreaker Knot",
+      "category": "snare",
+      "speed": "set",
+      "resolve": 2,
+      "trigger": "A foe begins a seal chain.",
+      "card_text": "Every seal in the chain must pass a risk roll, not just those past the third.",
+      "flavour": "Tie the knot before they finish the seal.",
+      "tags": [
+        "seal-chain",
+        "disruption"
+      ],
+      "canon": false
+    },
+    {
+      "id": "hollow-gourd",
+      "name": "Hollow Gourd",
+      "category": "snare",
+      "speed": "set",
+      "resolve": 2,
+      "trigger": "A foe heals.",
+      "card_text": "The healing is halved. One of your beasts regains the other half.",
+      "flavour": "What pours out of one gourd pours into another.",
+      "tags": [
+        "heal",
+        "steal"
+      ],
+      "canon": false
+    },
+    {
+      "id": "paper-charm-wall",
+      "name": "Paper Charm Wall",
+      "category": "ward",
+      "speed": "set",
+      "resolve": 2,
+      "charges": 3,
+      "card_text": "The first attack each round against your chosen beast has disadvantage. 3 charges; spend one each time.",
+      "flavour": "Brushed by a temple scribe, pasted with rice glue.",
+      "tags": [
+        "defence"
+      ],
+      "canon": false
+    },
+    {
+      "id": "salt-circle",
+      "name": "Salt Circle",
+      "category": "ward",
+      "speed": "set",
+      "resolve": 2,
+      "card_text": "Your beasts can't become Charmed or Frightened. Breaks when a foe scores a critical hit.",
+      "flavour": "Nothing unwelcome crosses salt.",
+      "tags": [
+        "charmed",
+        "frightened",
+        "defence"
+      ],
+      "canon": false
+    },
+    {
+      "id": "lantern-of-return",
+      "name": "Lantern of Return",
+      "category": "ward",
+      "speed": "set",
+      "resolve": 3,
+      "card_text": "The first time one of your beasts would drop to 0 HP, it drops to 1 instead. Then discard this.",
+      "flavour": "Light it for those who must come home.",
+      "tags": [
+        "survival"
+      ],
+      "canon": false
+    },
+    {
+      "id": "watch-bell",
+      "name": "Watch Bell",
+      "category": "ward",
+      "speed": "set",
+      "resolve": 1,
+      "charges": 2,
+      "card_text": "At the start of each round, all Hidden foes become Exposed. 2 charges.",
+      "flavour": "The bell rings when anything moves in the dark.",
+      "tags": [
+        "exposed",
+        "hidden"
+      ],
+      "canon": false
+    },
+    {
+      "id": "stone-ancestor",
+      "name": "Stone Ancestor",
+      "category": "ward",
+      "speed": "set",
+      "resolve": 3,
+      "charges": 3,
+      "card_text": "Your active beasts gain +1 Guard. Lose a charge each time one of them is hit. 3 charges.",
+      "flavour": "The village guardian has stood here for five hundred years. It can stand a little longer.",
+      "tags": [
+        "guard",
+        "defence"
+      ],
+      "canon": false
+    },
+    {
+      "id": "turn-the-tide",
+      "name": "Turn the Tide",
+      "category": "counter",
+      "speed": "instant",
+      "resolve": 2,
+      "trigger": "A foe's attack hits one of your beasts.",
+      "card_text": "Force the attacker to reroll the attack and keep the new result.",
+      "flavour": "The current changes its mind.",
+      "tags": [
+        "reroll"
+      ],
+      "canon": false
+    },
+    {
+      "id": "broken-seal",
+      "name": "Broken Seal",
+      "category": "counter",
+      "speed": "instant",
+      "resolve": 3,
+      "trigger": "A foe uses a technique costing 3 or more Qi.",
+      "card_text": "Cancel the technique. Its Qi is still spent.",
+      "flavour": "One stroke out of place and the whole seal fails.",
+      "tags": [
+        "negate"
+      ],
+      "canon": false
+    },
+    {
+      "id": "swift-exchange",
+      "name": "Swift Exchange",
+      "category": "counter",
+      "speed": "instant",
+      "resolve": 1,
+      "trigger": "A foe targets one of your active beasts.",
+      "card_text": "Swap the target with one of your benched beasts. The new beast becomes the target.",
+      "flavour": "Not this one. Me.",
+      "tags": [
+        "swap",
+        "defence"
+      ],
+      "canon": false
+    },
+    {
+      "id": "last-gong",
+      "name": "Last Gong",
+      "category": "counter",
+      "speed": "instant",
+      "resolve": 2,
+      "trigger": "One of your beasts drops to 0 HP.",
+      "card_text": "Before it leaves the field, the beast makes one attack or uses one technique it can pay for.",
+      "flavour": "The gong sounds once more after the hand has fallen.",
+      "tags": [
+        "revenge"
+      ],
+      "canon": false
+    },
+    {
+      "id": "echoing-rebuke",
+      "name": "Echoing Rebuke",
+      "category": "counter",
+      "speed": "instant",
+      "resolve": 2,
+      "trigger": "A foe's Snare or Omen resolves.",
+      "card_text": "Negate that Snare or Omen and destroy it.",
+      "flavour": "We saw that coming.",
+      "tags": [
+        "negate"
+      ],
+      "canon": false
+    },
+    {
+      "id": "red-sky-at-morning",
+      "name": "Red Sky at Morning",
+      "category": "omen",
+      "speed": "set",
+      "resolve": 1,
+      "delay_rounds": 2,
+      "card_text": "In 2 rounds: replace the Field with the top Field card of your deck, or keep the current one.",
+      "flavour": "Shepherds and sailors both know what a red dawn means.",
+      "tags": [
+        "field"
+      ],
+      "canon": false
+    },
+    {
+      "id": "falling-star",
+      "name": "Falling Star",
+      "category": "omen",
+      "speed": "set",
+      "resolve": 2,
+      "delay_rounds": 3,
+      "card_text": "In 3 rounds: choose a foe. It takes 4d6 damage (DEX save DC 15 for half).",
+      "flavour": "Make a wish. Theirs won't come true.",
+      "tags": [
+        "damage"
+      ],
+      "canon": false
+    },
+    {
+      "id": "ancestors-visit",
+      "name": "Ancestors' Visit",
+      "category": "omen",
+      "speed": "set",
+      "resolve": 4,
+      "delay_rounds": 2,
+      "card_text": "In 2 rounds: return one defeated beast to your bench with half its HP. It no longer counts as defeated.",
+      "flavour": "The lanterns are lit for those who return.",
+      "tags": [
+        "revive"
+      ],
+      "canon": false
+    },
+    {
+      "id": "harvest-moon-rising",
+      "name": "Harvest Moon Rising",
+      "category": "omen",
+      "speed": "set",
+      "resolve": 3,
+      "delay_rounds": 3,
+      "card_text": "In 3 rounds: each of your active beasts heals 2d8 and gains 2 Qi.",
+      "flavour": "Wait for the moon. It always comes.",
+      "tags": [
+        "heal",
+        "qi"
+      ],
+      "canon": false
+    },
+    {
+      "id": "comet-of-change",
+      "name": "Comet of Change",
+      "category": "omen",
+      "speed": "set",
+      "resolve": 3,
+      "delay_rounds": 2,
+      "card_text": "In 2 rounds: one of your Kits or Adepts that meets the level requirement evolves without its item.",
+      "flavour": "Some nights, everything changes.",
+      "tags": [
+        "evolution"
+      ],
+      "canon": false
+    },
+    {
+      "id": "coin-of-heaven-and-earth",
+      "name": "Coin of Heaven and Earth",
+      "category": "gambit",
+      "speed": "main",
+      "resolve": 1,
+      "card_text": "Roll a d6. 4–6: your beasts deal +1d6 damage this turn. 1–3: your beasts take −2 Guard until your next turn.",
+      "flavour": "Square hole for earth, round coin for heaven.",
+      "tags": [
+        "damage",
+        "risk"
+      ],
+      "canon": false
+    },
+    {
+      "id": "fortune-sticks",
+      "name": "Fortune Sticks",
+      "category": "gambit",
+      "speed": "main",
+      "resolve": 1,
+      "card_text": "Roll a d6 and read your fortune: 1 lose 1 Qi from each beast · 2 discard a card · 3 nothing · 4 draw 1 · 5 heal 2d6 · 6 draw 2 and gain 1 Resolve.",
+      "flavour": "Shake the cup until one stick falls out.",
+      "tags": [
+        "random"
+      ],
+      "canon": false
+    },
+    {
+      "id": "kite-in-a-storm",
+      "name": "Kite in a Storm",
+      "category": "gambit",
+      "speed": "main",
+      "resolve": 2,
+      "card_text": "Roll a d20. 15+: choose the next Field from your deck and play it. 6–14: nothing. 1–5: discard your hand.",
+      "flavour": "Either it flies, or it's gone.",
+      "tags": [
+        "field",
+        "risk"
+      ],
+      "canon": false
+    },
+    {
+      "id": "all-in-at-the-ferry",
+      "name": "All-In at the Ferry",
+      "category": "gambit",
+      "speed": "main",
+      "resolve": 1,
+      "card_text": "One beast spends all its Qi. Its next attack deals +1d8 per Qi spent. If it misses, it is Stunned for 1 round.",
+      "flavour": "The ferryman takes everything or nothing.",
+      "tags": [
+        "damage",
+        "risk"
+      ],
+      "canon": false
+    },
+    {
+      "id": "double-or-river",
+      "name": "Double or River",
+      "category": "gambit",
+      "speed": "main",
+      "resolve": 2,
+      "card_text": "Roll 2d6. Doubles: draw 3 cards. Otherwise draw 1 and discard 1.",
+      "flavour": "A market game older than the market.",
+      "tags": [
+        "draw",
+        "random"
+      ],
+      "canon": false
+    },
+    {
+      "id": "rally-cry",
+      "name": "Rally Cry",
+      "category": "edict",
+      "speed": "main",
+      "resolve": 2,
+      "card_text": "Each of your active beasts gains 1 Qi.",
+      "flavour": "Together!",
+      "tags": [
+        "qi"
+      ],
+      "canon": false
+    },
+    {
+      "id": "fall-back",
+      "name": "Fall Back",
+      "category": "edict",
+      "speed": "main",
+      "resolve": 1,
+      "card_text": "Swap up to two of your active beasts with benched beasts. Leaving reach does not provoke.",
+      "flavour": "Live to fight the next round.",
+      "tags": [
+        "swap"
+      ],
+      "canon": false
+    },
+    {
+      "id": "focus-fire",
+      "name": "Focus Fire",
+      "category": "edict",
+      "speed": "main",
+      "resolve": 1,
+      "card_text": "Choose a foe. Your attacks against it gain +2 to hit this turn.",
+      "flavour": "That one. All of you.",
+      "tags": [
+        "to-hit"
+      ],
+      "canon": false
+    },
+    {
+      "id": "hold-the-line",
+      "name": "Hold the Line",
+      "category": "edict",
+      "speed": "main",
+      "resolve": 2,
+      "card_text": "Until your next turn, your active beasts gain +2 Guard, can't move and can't be pushed or swapped.",
+      "flavour": "Not one step back.",
+      "tags": [
+        "guard",
+        "rooted"
+      ],
+      "canon": false
+    },
+    {
+      "id": "read-the-hour",
+      "name": "Read the Hour",
+      "category": "edict",
+      "speed": "main",
+      "resolve": 1,
+      "card_text": "Look at the top 3 cards of your deck and put them back in any order.",
+      "flavour": "A good Keeper knows what time it is.",
+      "tags": [
+        "deck"
+      ],
+      "canon": false
+    },
+    {
+      "id": "rice-and-salt-offering",
+      "name": "Rice and Salt Offering",
+      "category": "rite",
+      "speed": "main",
+      "resolve": 1,
+      "extra_cost": "Discard 2 cards.",
+      "card_text": "Discard 2 cards. One of your beasts heals to full HP and ends all conditions.",
+      "flavour": "The oldest offering is the simplest.",
+      "tags": [
+        "heal"
+      ],
+      "canon": false
+    },
+    {
+      "id": "river-lantern-rite",
+      "name": "River Lantern Rite",
+      "category": "rite",
+      "speed": "instant",
+      "resolve": 1,
+      "trigger": "You release a vessel spirit.",
+      "card_text": "When you release a vessel spirit, also end every condition on your beasts.",
+      "flavour": "Set it on the water and let it go, and let everything else go with it.",
+      "tags": [
+        "vessel",
+        "cleanse"
+      ],
+      "canon": false
+    },
+    {
+      "id": "vigil-of-the-hour",
+      "name": "Vigil of the Hour",
+      "category": "rite",
+      "speed": "main",
+      "resolve": 4,
+      "extra_cost": "Your beast skips its next two turns.",
+      "card_text": "One Adept holding a Zodiac Seal makes its Ascension Roll now. On a success it becomes Sovereign.",
+      "flavour": "The Trial does not wait for convenient times.",
+      "tags": [
+        "evolution",
+        "trial"
+      ],
+      "canon": false
+    },
+    {
+      "id": "name-binding",
+      "name": "Name Binding",
+      "category": "rite",
+      "speed": "main",
+      "resolve": 2,
+      "extra_cost": "One of your beasts takes 1d6 damage.",
+      "card_text": "Choose a foe. It can't be swapped or tagged out for 2 rounds.",
+      "flavour": "Speak its true name and it cannot leave.",
+      "tags": [
+        "control"
+      ],
+      "canon": false
+    },
+    {
+      "id": "incense-for-the-hours",
+      "name": "Incense for the Hours",
+      "category": "rite",
+      "speed": "main",
+      "resolve": 0,
+      "extra_cost": "One of your beasts takes 1d6 damage.",
+      "card_text": "Gain 2 Resolve.",
+      "flavour": "Twelve sticks, one for each Hour.",
+      "tags": [
+        "resolve"
+      ],
+      "canon": false
+    },
+    {
+      "id": "rice-ball-lure",
+      "name": "Rice Ball Lure",
+      "category": "lure",
+      "speed": "main",
+      "resolve": 1,
+      "card_text": "Your next Bond Check this battle gains +2.",
+      "flavour": "The way to most hearts.",
+      "tags": [
+        "bond"
+      ],
+      "canon": false
+    },
+    {
+      "id": "moonlight-bait",
+      "name": "Moonlight Bait",
+      "category": "lure",
+      "speed": "main",
+      "resolve": 2,
+      "card_text": "Reveal cards from the wild deck until you find a vessel spirit. You may attempt to capture it now.",
+      "flavour": "Leave a bowl of milk in the moonlight and see what comes.",
+      "tags": [
+        "vessel"
+      ],
+      "canon": false
+    },
+    {
+      "id": "woven-fish-trap",
+      "name": "Woven Fish Trap",
+      "category": "lure",
+      "speed": "set",
+      "resolve": 1,
+      "trigger": "A Water or Frost vessel spirit appears.",
+      "card_text": "When a Water or Frost spirit appears, capture it automatically if you hold an empty Bamboo Creel.",
+      "flavour": "Set it in the evening, check it in the morning.",
+      "tags": [
+        "vessel",
+        "capture"
+      ],
+      "canon": false
+    },
+    {
+      "id": "offering-of-the-favoured",
+      "name": "Offering of the Favoured",
+      "category": "lure",
+      "speed": "main",
+      "resolve": 1,
+      "card_text": "Name a beast's favoured offering. Your next Bond or Command Check with that beast has advantage.",
+      "flavour": "Every beast has something it cannot refuse.",
+      "tags": [
+        "bond",
+        "command"
+      ],
+      "canon": false
+    },
+    {
+      "id": "jade-talisman",
+      "name": "Jade Talisman",
+      "category": "talisman",
+      "speed": "equip",
+      "resolve": 1,
+      "equips_to": "keeper",
+      "card_text": "Bond Checks you make are against DC −2.",
+      "flavour": "Carved from river jade and warmed in the palm.",
+      "canon": true,
+      "tags": [
+        "bond"
+      ]
+    },
+    {
+      "id": "element-shard",
+      "name": "Element Shard",
+      "category": "talisman",
+      "speed": "equip",
+      "resolve": 1,
+      "equips_to": "beast",
+      "card_text": "A Kit at Level 16 or higher holding this may evolve into its Adept.",
+      "canon": true,
+      "tags": [
+        "evolution"
+      ]
+    },
+    {
+      "id": "zodiac-seal",
+      "name": "Zodiac Seal",
+      "category": "talisman",
+      "speed": "equip",
+      "resolve": 2,
+      "equips_to": "beast",
+      "card_text": "An Adept at Level 36 or higher holding this may attempt the Trial of the Hour.",
+      "canon": true,
+      "tags": [
+        "evolution",
+        "trial"
+      ]
+    },
+    {
+      "id": "red-thread",
+      "name": "Red Thread",
+      "category": "talisman",
+      "speed": "equip",
+      "resolve": 2,
+      "equips_to": "two-beasts",
+      "card_text": "Tie two of your beasts together. Damage dealt to either is split evenly between them, rounding up on the target.",
+      "flavour": "The thread of fate stretches but never breaks.",
+      "tags": [
+        "defence"
+      ],
+      "canon": false
+    },
+    {
+      "id": "bronze-mirror",
+      "name": "Bronze Mirror",
+      "category": "talisman",
+      "speed": "equip",
+      "resolve": 2,
+      "equips_to": "beast",
+      "card_text": "The first save technique targeting this beast each battle is reflected back at its user.",
+      "flavour": "Evil cannot bear to see its own face.",
+      "tags": [
+        "reflect"
+      ],
+      "canon": false
+    },
+    {
+      "id": "peach-wood-charm",
+      "name": "Peach Wood Charm",
+      "category": "talisman",
+      "speed": "equip",
+      "resolve": 1,
+      "equips_to": "beast",
+      "card_text": "This beast can't become Frightened.",
+      "flavour": "Peach wood has warded off evil since before the first Hour.",
+      "tags": [
+        "frightened"
+      ],
+      "canon": false
+    },
+    {
+      "id": "gourd-of-plenty",
+      "name": "Gourd of Plenty",
+      "category": "talisman",
+      "speed": "equip",
+      "resolve": 2,
+      "equips_to": "beast",
+      "card_text": "This beast regains 1 extra Qi at the start of each of its turns.",
+      "flavour": "Always a little more inside than seems possible.",
+      "tags": [
+        "qi"
+      ],
+      "canon": false
+    },
+    {
+      "id": "ancestral-tablet",
+      "name": "Ancestral Tablet",
+      "category": "memory",
+      "speed": "main",
+      "resolve": 2,
+      "card_text": "Choose a defeated beast of yours. One of your active beasts may use one of its techniques this turn, paying its Qi.",
+      "flavour": "The names on the tablet are never forgotten.",
+      "tags": [
+        "defeated"
+      ],
+      "canon": false
+    },
+    {
+      "id": "ash-and-ember",
+      "name": "Ash and Ember",
+      "category": "memory",
+      "speed": "main",
+      "resolve": 1,
+      "card_text": "Return a Snare or Counter from your discard pile to your hand.",
+      "flavour": "What burned once can burn again.",
+      "tags": [
+        "discard"
+      ],
+      "canon": false
+    },
+    {
+      "id": "return-of-the-swallows",
+      "name": "Return of the Swallows",
+      "category": "memory",
+      "speed": "main",
+      "resolve": 2,
+      "card_text": "Shuffle up to 3 defeated beasts back into your deck. Draw 1 card.",
+      "flavour": "Every spring the swallows come back to the same eaves.",
+      "tags": [
+        "defeated",
+        "deck"
+      ],
+      "canon": false
+    }
+  ]
+}

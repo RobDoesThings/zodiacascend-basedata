@@ -11,7 +11,8 @@
   "scripts": {
     "validate": "tsx scripts/validate.ts",
     "test": "node --import tsx --test tests/*.test.ts",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "drafts": "tsx scripts/build-drafts.ts"
   },
   "devDependencies": {
     "@types/node": "22.9.0",

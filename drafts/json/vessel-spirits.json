@@ -1,0 +1,1477 @@
+{
+  "status": "draft",
+  "licence": "CC-BY-4.0",
+  "count": 25,
+  "spirits": [
+    {
+      "id": "gatecarp",
+      "name": "Gatecarp",
+      "kind": "vessel-spirit",
+      "creature": "fish",
+      "type": {
+        "kind": "element",
+        "id": "water",
+        "elements": [
+          "water"
+        ]
+      },
+      "playable": false,
+      "single_use": true,
+      "physical": {
+        "size": "small",
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 6,
+          "sd": 0.72,
+          "min": 3.84,
+          "p95": 7.18,
+          "p99": 7.67,
+          "upper": 8.16
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 70,
+          "sd": 4.2,
+          "min": 57.4,
+          "p95": 76.9,
+          "p99": 79.8,
+          "upper": 82.6
+        }
+      },
+      "temperament": "proud",
+      "capture": {
+        "dc": 12,
+        "difficulty": "Moderate",
+        "vessel": "bamboo-creel",
+        "vessel_mode": "held",
+        "hold_rounds": 3
+      },
+      "release": {
+        "card_text": "Release. One of your Kits or Adepts may evolve now if it meets the level requirement, ignoring the item.",
+        "rules_text": "When released, the Gatecarp leaps once more. Choose one of your active Kits or Adepts that meets the level requirement of its next stage; it evolves immediately, without the Element Shard or Zodiac Seal. The Trial of the Hour is still required for Stage III."
+      },
+      "lore": "A Gatecarp has tried to leap the Dragon Gate ninety-nine times and fallen ninety-nine times. It no longer wants to become a dragon. It wants to see someone else make it, and it gives its leap away to anyone who will carry it upstream.",
+      "folklore_sources": [
+        {
+          "region": "China",
+          "tradition": "The carp that leaps the falls at the Dragon Gate on the Yellow River and becomes a dragon."
+        }
+      ]
+    },
+    {
+      "id": "needlefin-shoal",
+      "name": "Needlefin Shoal",
+      "kind": "vessel-spirit",
+      "creature": "fish (swordfish shoal)",
+      "type": {
+        "kind": "element",
+        "id": "metal",
+        "elements": [
+          "metal"
+        ]
+      },
+      "playable": false,
+      "single_use": true,
+      "physical": {
+        "size": "large",
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 90,
+          "sd": 10.8,
+          "min": 57.6,
+          "p95": 108,
+          "p99": 115,
+          "upper": 122
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 280,
+          "sd": 16.8,
+          "min": 230,
+          "p95": 308,
+          "p99": 319,
+          "upper": 330
+        }
+      },
+      "temperament": "bold",
+      "capture": {
+        "dc": 15,
+        "difficulty": "Hard",
+        "vessel": "bamboo-creel",
+        "vessel_mode": "held",
+        "hold_rounds": 2
+      },
+      "release": {
+        "card_text": "Release. Every foe in a 30 ft line takes 4d8 damage (DEX save for half).",
+        "rules_text": "The shoal bursts out in a straight line 30 ft long. Each foe in the line makes a DEX save against DC 15, taking 4d8 damage on a failure or half on a success. A foe behind a Ward or Rooted beast takes no damage."
+      },
+      "lore": "Needlefins hunt in shoals that move like a single blade. Coastal villages still plant a row of banana trunks along the shore in the swordfish season, and they still tell of the clever child who first thought of it, and of how badly the kingdom repaid him.",
+      "folklore_sources": [
+        {
+          "region": "Malay world (Singapore)",
+          "tradition": "The Malay Annals tell how swordfish (todak) attacked Singapura, until a boy suggested a wall of banana trunks to catch their beaks."
+        }
+      ]
+    },
+    {
+      "id": "thornpuff",
+      "name": "Thornpuff",
+      "kind": "vessel-spirit",
+      "creature": "fish (pufferfish)",
+      "type": {
+        "kind": "confluence",
+        "id": "frost",
+        "elements": [
+          "metal",
+          "water"
+        ]
+      },
+      "playable": false,
+      "single_use": true,
+      "physical": {
+        "size": "tiny",
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 1.5,
+          "sd": 0.18,
+          "min": 0.96,
+          "p95": 1.8,
+          "p99": 1.92,
+          "upper": 2.04
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 35,
+          "sd": 2.1,
+          "min": 28.7,
+          "p95": 38.5,
+          "p99": 39.9,
+          "upper": 41.3
+        }
+      },
+      "temperament": "wary",
+      "capture": {
+        "dc": 11,
+        "difficulty": "Moderate",
+        "vessel": "bamboo-creel",
+        "vessel_mode": "held",
+        "hold_rounds": 4
+      },
+      "release": {
+        "card_text": "Release. Each foe in melee with your beasts is Poisoned for 2 rounds.",
+        "rules_text": "The Thornpuff inflates and fires its frozen spines. Every foe within 5 ft of one of your active beasts makes a CON save against DC 13 or becomes Poisoned for 2 rounds."
+      },
+      "lore": "Thornpuffs drift in the cold currents beneath winter ice. They are harmless until frightened, and they are frightened of almost everything.",
+      "folklore_sources": [
+        {
+          "region": "East Asia",
+          "tradition": "The pufferfish, a delicacy so dangerous that only licensed cooks may prepare it."
+        }
+      ]
+    },
+    {
+      "id": "moonshell-snail",
+      "name": "Moonshell Snail",
+      "kind": "vessel-spirit",
+      "creature": "snail (sea snail)",
+      "type": {
+        "kind": "confluence",
+        "id": "silt",
+        "elements": [
+          "earth",
+          "water"
+        ]
+      },
+      "playable": false,
+      "single_use": true,
+      "physical": {
+        "size": "small",
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 3,
+          "sd": 0.36,
+          "min": 1.92,
+          "p95": 3.59,
+          "p99": 3.84,
+          "upper": 4.08
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 30,
+          "sd": 1.8,
+          "min": 24.6,
+          "p95": 33,
+          "p99": 34.2,
+          "upper": 35.4
+        }
+      },
+      "temperament": "serene",
+      "capture": {
+        "dc": 13,
+        "difficulty": "Moderate",
+        "vessel": "clay-jar",
+        "vessel_mode": "held",
+        "hold_rounds": 5
+      },
+      "release": {
+        "card_text": "Release. Choose a beast; it becomes Rooted and gains +4 Guard for 2 rounds.",
+        "rules_text": "The snail seals one of your active beasts in a shell of hardened silt. That beast gains +4 Guard and becomes Rooted for 2 rounds."
+      },
+      "lore": "A Moonshell Snail has lived thirty years on the estuary floor, and the moonlight that filters down has settled into its shell. It moves a hand's width a day and has outlived every fisherman who ever tried to eat it.",
+      "folklore_sources": [
+        {
+          "region": "Japan",
+          "tradition": "The belief that a turban snail that lives thirty years in the sea becomes a spirit (sazae-oni)."
+        }
+      ]
+    },
+    {
+      "id": "rain-snail",
+      "name": "Rain Snail",
+      "kind": "vessel-spirit",
+      "creature": "snail (land snail)",
+      "type": {
+        "kind": "confluence",
+        "id": "mangrove",
+        "elements": [
+          "wood",
+          "water"
+        ]
+      },
+      "playable": false,
+      "single_use": true,
+      "physical": {
+        "size": "tiny",
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 0.2,
+          "sd": 0.024,
+          "min": 0.128,
+          "p95": 0.239,
+          "p99": 0.256,
+          "upper": 0.272
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 12,
+          "sd": 0.72,
+          "min": 9.84,
+          "p95": 13.2,
+          "p99": 13.7,
+          "upper": 14.2
+        }
+      },
+      "temperament": "gentle",
+      "capture": {
+        "dc": 10,
+        "difficulty": "Easy",
+        "vessel": "clay-jar",
+        "vessel_mode": "held",
+        "hold_rounds": 5
+      },
+      "release": {
+        "card_text": "Release. Heal each of your active beasts 2d6 and end Burning on them.",
+        "rules_text": "The Rain Snail calls a gentle rain over your side of the field. Each of your active beasts regains 2d6 HP and stops Burning. Your beasts become Soaked for 1 round."
+      },
+      "lore": "A Rain Snail kept kindly in a jar will, one day, slip out while you sleep and leave the house swept, the rice cooked and the garden watered. Keepers who catch it in the act are thanked with rain and never see it again.",
+      "folklore_sources": [
+        {
+          "region": "Vietnam and China",
+          "tradition": "The Snail Maiden (Nàng Ốc; 田螺姑娘), a snail kept kindly in a jar who secretly comes out to cook and clean for the lonely person who saved it."
+        }
+      ]
+    },
+    {
+      "id": "crimson-tidemother",
+      "name": "Crimson Tidemother",
+      "kind": "vessel-spirit",
+      "creature": "octopus",
+      "type": {
+        "kind": "element",
+        "id": "water",
+        "elements": [
+          "water"
+        ]
+      },
+      "playable": false,
+      "single_use": true,
+      "physical": {
+        "size": "huge",
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 400,
+          "sd": 48,
+          "min": 256,
+          "p95": 479,
+          "p99": 512,
+          "upper": 544
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 900,
+          "sd": 54,
+          "min": 738,
+          "p95": 989,
+          "p99": 1030,
+          "upper": 1060
+        }
+      },
+      "temperament": "proud",
+      "capture": {
+        "dc": 18,
+        "difficulty": "Very hard",
+        "vessel": "conch-of-calling",
+        "vessel_mode": "token",
+        "hold_rounds": 2
+      },
+      "release": {
+        "card_text": "Release. Every active foe is Restrained for 1 round (STR save negates).",
+        "rules_text": "Eight crimson arms rise from the ground and seize the field. Every active foe makes a STR save against DC 16 or becomes Restrained for 1 round."
+      },
+      "lore": "When the bay turns red at evening, fisherfolk say the Tidemother has surfaced. She cannot be confined; a Keeper who earns her favour carries one of her shed suckers in a conch, and she answers its call exactly once.",
+      "folklore_sources": [
+        {
+          "region": "Hokkaido (Ainu)",
+          "tradition": "The great red octopus of Uchiura Bay, whose colour is said to stain the sea and sky."
+        }
+      ]
+    },
+    {
+      "id": "hooktail-shark",
+      "name": "Hooktail Shark",
+      "kind": "vessel-spirit",
+      "creature": "shark",
+      "type": {
+        "kind": "confluence",
+        "id": "frost",
+        "elements": [
+          "metal",
+          "water"
+        ]
+      },
+      "playable": false,
+      "single_use": true,
+      "physical": {
+        "size": "large",
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 350,
+          "sd": 42,
+          "min": 224,
+          "p95": 419,
+          "p99": 448,
+          "upper": 476
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 450,
+          "sd": 27,
+          "min": 369,
+          "p95": 494,
+          "p99": 513,
+          "upper": 531
+        }
+      },
+      "temperament": "sly",
+      "capture": {
+        "dc": 16,
+        "difficulty": "Hard",
+        "vessel": "bamboo-creel",
+        "vessel_mode": "held",
+        "hold_rounds": 2
+      },
+      "release": {
+        "card_text": "Release. Pull one foe's active beast to the bench and pull its benched beast in.",
+        "rules_text": "The shark's barbed tail hooks one active foe and drags it under. Swap that beast with one of its owner's benched beasts (you choose which). The dragged beast takes 2d6 damage."
+      },
+      "lore": "Sailors never see the Hooktail itself, only the barbed fin rising beside the boat. The only safe course is to keep it busy, and some Keepers have learned to point it at their enemies.",
+      "folklore_sources": [
+        {
+          "region": "Japan",
+          "tradition": "The isonade of the western coasts, a huge sea creature that hooks sailors from their boats with its barbed tail fin."
+        }
+      ]
+    },
+    {
+      "id": "harbour-grandfather",
+      "name": "Harbour Grandfather",
+      "kind": "vessel-spirit",
+      "creature": "whale",
+      "type": {
+        "kind": "element",
+        "id": "water",
+        "elements": [
+          "water"
+        ]
+      },
+      "playable": false,
+      "single_use": true,
+      "physical": {
+        "size": "huge",
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 40000,
+          "sd": 6000,
+          "min": 22000,
+          "p95": 49900,
+          "p99": 54000,
+          "upper": 58000
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 1500,
+          "sd": 113,
+          "min": 1160,
+          "p95": 1690,
+          "p99": 1760,
+          "upper": 1840
+        }
+      },
+      "temperament": "gentle",
+      "capture": {
+        "dc": 20,
+        "difficulty": "Very hard",
+        "vessel": "conch-of-calling",
+        "vessel_mode": "token",
+        "hold_rounds": 3
+      },
+      "release": {
+        "card_text": "Release. Return one defeated beast to your bench at half HP. It does not count as defeated.",
+        "rules_text": "The Grandfather rises beneath the field and carries a fallen beast home. Return one of your defeated beasts to your bench with half its maximum HP and no conditions. It no longer counts toward your opponent's defeats."
+      },
+      "lore": "Coastal villages in the Hour of the Pig keep shrines to the Harbour Grandfather and bury any whale that washes ashore with full honours. It is never caught. A Keeper who has done the sea a kindness may be given a conch that holds its song, and when they blow it, the Grandfather comes to carry someone home.",
+      "folklore_sources": [
+        {
+          "region": "Vietnam",
+          "tradition": "Cá Ông, the whale venerated by coastal fishing communities as a rescuer of those lost at sea; whales that wash ashore are given funerals and enshrined in whale temples."
+        }
+      ]
+    },
+    {
+      "id": "wingwhale",
+      "name": "Wingwhale",
+      "kind": "vessel-spirit",
+      "creature": "whale (becomes a bird)",
+      "type": {
+        "kind": "element",
+        "id": "water",
+        "elements": [
+          "water"
+        ]
+      },
+      "becomes": "metal",
+      "playable": false,
+      "single_use": true,
+      "physical": {
+        "size": "huge",
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 60000,
+          "sd": 12000,
+          "min": 24000,
+          "p95": 79700,
+          "p99": 87900,
+          "upper": 96000
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 3000,
+          "sd": 300,
+          "min": 2100,
+          "p95": 3490,
+          "p99": 3700,
+          "upper": 3900
+        }
+      },
+      "temperament": "serene",
+      "capture": {
+        "dc": 22,
+        "difficulty": "Story only",
+        "vessel": "conch-of-calling",
+        "vessel_mode": "token",
+        "hold_rounds": 1
+      },
+      "release": {
+        "card_text": "Release. Replace the Field with any Field from your deck or discard. Your beasts gain +10 ft Speed this round.",
+        "rules_text": "The Wingwhale breaches as a fish and rises as a bird, and the wind of its wings changes the world below. Search your deck or discard pile for a Field and play it, replacing the current one. Your active beasts gain +10 ft Speed until the end of the round."
+      },
+      "lore": "In the northern dark sea lives a fish too long to measure. Once in a great age it becomes a bird and flies south, and the weather of the whole world turns with it. It counts as Water while it swims and Metal once it has flown.",
+      "folklore_sources": [
+        {
+          "region": "China",
+          "tradition": "The Zhuangzi's Kun, a fish of the northern dark sea thousands of li long, which transforms into Peng, a bird whose wings are like clouds across the sky."
+        }
+      ]
+    },
+    {
+      "id": "forktail-elder",
+      "name": "Forktail Elder",
+      "kind": "vessel-spirit",
+      "creature": "cat",
+      "type": {
+        "kind": "confluence",
+        "id": "kindle",
+        "elements": [
+          "wood",
+          "fire"
+        ]
+      },
+      "playable": false,
+      "single_use": true,
+      "physical": {
+        "size": "small",
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 6,
+          "sd": 0.72,
+          "min": 3.84,
+          "p95": 7.18,
+          "p99": 7.67,
+          "upper": 8.16
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 90,
+          "sd": 5.4,
+          "min": 73.8,
+          "p95": 98.9,
+          "p99": 103,
+          "upper": 106
+        }
+      },
+      "temperament": "sly",
+      "capture": {
+        "dc": 15,
+        "difficulty": "Hard",
+        "vessel": "lantern-cage",
+        "vessel_mode": "held",
+        "hold_rounds": 3
+      },
+      "release": {
+        "card_text": "Release. Take control of one foe Kit or Wanderer until the end of your next turn.",
+        "rules_text": "The Forktail dances on its hind legs and a foe dances with it. One active foe Kit or Wanderer makes a WIS save against DC 15 or becomes Charmed by you and acts on your turn as you direct until the end of your next turn. It cannot use techniques costing more than 2 Qi, and the effect ends early if it takes damage."
+      },
+      "lore": "A cat that lives long enough grows a second tail, and with it a sense of humour nobody else shares. The Forktail Elder lights the lantern it is kept in and leaves only when it is bored.",
+      "folklore_sources": [
+        {
+          "region": "Japan",
+          "tradition": "The nekomata, a cat that grows a forked tail in great old age and gains strange powers, including making things dance."
+        }
+      ]
+    },
+    {
+      "id": "beckoning-cat",
+      "name": "Beckoning Cat",
+      "kind": "vessel-spirit",
+      "creature": "cat",
+      "type": {
+        "kind": "confluence",
+        "id": "ore",
+        "elements": [
+          "earth",
+          "metal"
+        ]
+      },
+      "playable": false,
+      "single_use": true,
+      "physical": {
+        "size": "tiny",
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 4,
+          "sd": 0.48,
+          "min": 2.56,
+          "p95": 4.79,
+          "p99": 5.12,
+          "upper": 5.44
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 70,
+          "sd": 4.2,
+          "min": 57.4,
+          "p95": 76.9,
+          "p99": 79.8,
+          "upper": 82.6
+        }
+      },
+      "temperament": "playful",
+      "capture": {
+        "dc": 12,
+        "difficulty": "Moderate",
+        "vessel": "lacquer-box",
+        "vessel_mode": "held",
+        "hold_rounds": 4
+      },
+      "release": {
+        "card_text": "Release. Draw 2 cards. Your next Bond Check this battle has advantage.",
+        "rules_text": "The cat raises one paw and fortune follows. Draw 2 cards. The next Bond Check you make before the end of the battle has advantage. In tabletop play, gain 1 Inspiration instead of drawing."
+      },
+      "lore": "A Beckoning Cat waves you over just before something terrible happens where you were standing. Shopkeepers keep porcelain copies by the till, but the real thing is made of ore and coin and is very hard to find.",
+      "folklore_sources": [
+        {
+          "region": "Japan",
+          "tradition": "The maneki-neko, the beckoning cat said to have waved a lord into Gōtoku-ji temple moments before lightning struck where he had been standing."
+        }
+      ]
+    },
+    {
+      "id": "silverpoint-cat",
+      "name": "Silverpoint Cat",
+      "kind": "vessel-spirit",
+      "creature": "cat",
+      "type": {
+        "kind": "element",
+        "id": "metal",
+        "elements": [
+          "metal"
+        ]
+      },
+      "playable": false,
+      "single_use": true,
+      "physical": {
+        "size": "tiny",
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 4,
+          "sd": 0.48,
+          "min": 2.56,
+          "p95": 4.79,
+          "p99": 5.12,
+          "upper": 5.44
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 70,
+          "sd": 4.2,
+          "min": 57.4,
+          "p95": 76.9,
+          "p99": 79.8,
+          "upper": 82.6
+        }
+      },
+      "temperament": "serene",
+      "capture": {
+        "dc": 13,
+        "difficulty": "Moderate",
+        "vessel": "rattan-cage",
+        "vessel_mode": "held",
+        "hold_rounds": 3
+      },
+      "release": {
+        "card_text": "Release. The Field becomes Monsoon Delta for 2 rounds. Your active beasts gain 2 Qi.",
+        "rules_text": "The cat's arrival brings rain. For 2 rounds the Field is Monsoon Delta, after which the previous Field returns. Each of your active beasts gains 2 Qi."
+      },
+      "lore": "A silver-blue cat with eyes like young rice. In dry years villages carry one through the streets in a rattan basket and splash it with water, and the rains come. The cat, for its part, considers this undignified but effective.",
+      "folklore_sources": [
+        {
+          "region": "Thailand",
+          "tradition": "The Cat-Book Poems (Tamra Maew), which describe lucky cats such as the silver-blue Si Sawat, and the folk rain ritual (Hae Nang Maew) in which a cat is carried through the village in a basket and splashed with water to call the rain."
+        }
+      ]
+    },
+    {
+      "id": "shrine-dove",
+      "name": "Shrine Dove",
+      "kind": "vessel-spirit",
+      "creature": "dove",
+      "type": {
+        "kind": "element",
+        "id": "metal",
+        "elements": [
+          "metal"
+        ]
+      },
+      "playable": false,
+      "single_use": true,
+      "physical": {
+        "size": "tiny",
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 0.3,
+          "sd": 0.036,
+          "min": 0.192,
+          "p95": 0.359,
+          "p99": 0.384,
+          "upper": 0.408
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 32,
+          "sd": 1.92,
+          "min": 26.2,
+          "p95": 35.2,
+          "p99": 36.5,
+          "upper": 37.8
+        }
+      },
+      "temperament": "gentle",
+      "capture": {
+        "dc": 10,
+        "difficulty": "Easy",
+        "vessel": "rattan-cage",
+        "vessel_mode": "held",
+        "hold_rounds": 5
+      },
+      "release": {
+        "card_text": "Release. Truce. No beast may attack or use a damaging technique until the end of the next round.",
+        "rules_text": "The white dove circles the field and every beast lowers its guard. Until the end of the next round, no beast can make an attack or use a technique that deals damage. Healing, buffs, swaps and card play continue."
+      },
+      "lore": "Shrine Doves nest in the eaves of warrior shrines, which is why warriors bow to them. When one is released over a battlefield, even Sovereigns stop to watch it go.",
+      "folklore_sources": [
+        {
+          "region": "Japan",
+          "tradition": "Doves as messengers of Hachiman, the god of archery and protection; the first character of Hachiman's name is often drawn as a pair of doves."
+        }
+      ]
+    },
+    {
+      "id": "pebble-finch",
+      "name": "Pebble Finch",
+      "kind": "vessel-spirit",
+      "creature": "bird (finch)",
+      "type": {
+        "kind": "element",
+        "id": "earth",
+        "elements": [
+          "earth"
+        ]
+      },
+      "playable": false,
+      "single_use": true,
+      "physical": {
+        "size": "tiny",
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 0.05,
+          "sd": 0.006,
+          "min": 0.032,
+          "p95": 0.0599,
+          "p99": 0.064,
+          "upper": 0.068
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 15,
+          "sd": 0.9,
+          "min": 12.3,
+          "p95": 16.5,
+          "p99": 17.1,
+          "upper": 17.7
+        }
+      },
+      "temperament": "stubborn",
+      "capture": {
+        "dc": 10,
+        "difficulty": "Easy",
+        "vessel": "rattan-cage",
+        "vessel_mode": "held",
+        "hold_rounds": 5
+      },
+      "release": {
+        "card_text": "Release. End any Water Field; until replaced, the Field is Terraced Rice Fields.",
+        "rules_text": "The finch drops one pebble, then another, then a thousand. If the current Field is a Water Field, it ends and Terraced Rice Fields replaces it. Otherwise, your active beasts gain +1 Guard for 2 rounds."
+      },
+      "lore": "A Pebble Finch carries one stone at a time to the sea and drops it in. It has been doing this for longer than anyone remembers, and it does not intend to stop until the sea is gone.",
+      "folklore_sources": [
+        {
+          "region": "China",
+          "tradition": "Jingwei, a princess who drowned in the Eastern Sea and became a bird that carries pebbles and twigs to fill the sea, forever."
+        }
+      ]
+    },
+    {
+      "id": "three-step-sunrook",
+      "name": "Three-Step Sunrook",
+      "kind": "vessel-spirit",
+      "creature": "bird (crow)",
+      "type": {
+        "kind": "element",
+        "id": "fire",
+        "elements": [
+          "fire"
+        ]
+      },
+      "playable": false,
+      "single_use": true,
+      "physical": {
+        "size": "small",
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 1.5,
+          "sd": 0.18,
+          "min": 0.96,
+          "p95": 1.8,
+          "p99": 1.92,
+          "upper": 2.04
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 60,
+          "sd": 3.6,
+          "min": 49.2,
+          "p95": 65.9,
+          "p99": 68.4,
+          "upper": 70.8
+        }
+      },
+      "temperament": "proud",
+      "capture": {
+        "dc": 16,
+        "difficulty": "Hard",
+        "vessel": "lantern-cage",
+        "vessel_mode": "held",
+        "hold_rounds": 2
+      },
+      "release": {
+        "card_text": "Release. Every foe makes a CON save or is Blinded and Burning for 1 round.",
+        "rules_text": "The three-legged crow flies up and becomes, briefly, the sun. Every active foe makes a CON save against DC 16 or becomes Blinded and Burning for 1 round. Hidden beasts become Exposed."
+      },
+      "lore": "Once there were ten suns and each was a crow. An archer shot nine of them down. The Sunrooks are their descendants, smaller and humbler, and they are still afraid of bows.",
+      "folklore_sources": [
+        {
+          "region": "China, Korea and Japan",
+          "tradition": "The three-legged crow that lives in the sun (sanzuwu; samjok-o; yatagarasu), and the legend of the archer who shot down nine of ten suns."
+        }
+      ]
+    },
+    {
+      "id": "gulfmaw",
+      "name": "Gulfmaw",
+      "kind": "vessel-spirit",
+      "creature": "sea serpent",
+      "type": {
+        "kind": "celestial",
+        "id": "eclipse",
+        "elements": []
+      },
+      "playable": false,
+      "single_use": true,
+      "physical": {
+        "size": "huge",
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 5000,
+          "sd": 1000,
+          "min": 2000,
+          "p95": 6640,
+          "p99": 7330,
+          "upper": 8000
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 4000,
+          "sd": 400,
+          "min": 2800,
+          "p95": 4660,
+          "p99": 4930,
+          "upper": 5200
+        }
+      },
+      "temperament": "restless",
+      "capture": {
+        "dc": 21,
+        "difficulty": "Very hard",
+        "vessel": "temple-drum",
+        "vessel_mode": "token",
+        "hold_rounds": 1
+      },
+      "release": {
+        "card_text": "Release. The Field becomes Eclipse of the Hour.",
+        "rules_text": "The serpent rises and swallows the moon. The Field becomes Eclipse of the Hour (the control cycle reverses for 3 rounds, then the previous Field returns). Any player may end the eclipse early by discarding 2 cards (\"beating the drums\")."
+      },
+      "lore": "The Gulfmaw once swallowed six of seven moons. People saved the last one by beating every pot and drum they owned. It is never caught; a Keeper may only carry the drum that once drove it off, and beat it to call the Gulfmaw back for one hungry moment.",
+      "folklore_sources": [
+        {
+          "region": "Philippines (Visayas)",
+          "tradition": "The Bakunawa, a sea serpent that rises to swallow the moon, and the custom of beating pots and drums to make it spit the moon back out."
+        }
+      ]
+    },
+    {
+      "id": "dreamgrazer",
+      "name": "Dreamgrazer",
+      "kind": "vessel-spirit",
+      "creature": "tapir-like spirit",
+      "type": {
+        "kind": "confluence",
+        "id": "mangrove",
+        "elements": [
+          "wood",
+          "water"
+        ]
+      },
+      "playable": false,
+      "single_use": true,
+      "physical": {
+        "size": "medium",
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 200,
+          "sd": 24,
+          "min": 128,
+          "p95": 239,
+          "p99": 256,
+          "upper": 272
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 200,
+          "sd": 12,
+          "min": 164,
+          "p95": 220,
+          "p99": 228,
+          "upper": 236
+        }
+      },
+      "temperament": "serene",
+      "capture": {
+        "dc": 14,
+        "difficulty": "Hard",
+        "vessel": "pillow-box",
+        "vessel_mode": "held",
+        "hold_rounds": 3
+      },
+      "release": {
+        "card_text": "Release. End Frightened and Charmed on all your beasts. They can't gain either for 2 rounds.",
+        "rules_text": "The Dreamgrazer eats the bad dreams of everyone on your side. End Frightened and Charmed on each of your beasts; they are immune to both conditions for 2 rounds."
+      },
+      "lore": "A Dreamgrazer wanders the edge of sleep eating nightmares. It is kept in a pillow box, and children who sleep on the box wake rested. It prefers the dreams of the frightened; they are the sweetest.",
+      "folklore_sources": [
+        {
+          "region": "Japan (from China)",
+          "tradition": "The baku, a chimera that devours nightmares; people once kept its picture under their pillows."
+        }
+      ]
+    },
+    {
+      "id": "goldmaw",
+      "name": "Goldmaw",
+      "kind": "vessel-spirit",
+      "creature": "winged lion",
+      "type": {
+        "kind": "confluence",
+        "id": "ore",
+        "elements": [
+          "earth",
+          "metal"
+        ]
+      },
+      "playable": false,
+      "single_use": true,
+      "physical": {
+        "size": "medium",
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 150,
+          "sd": 18,
+          "min": 96,
+          "p95": 180,
+          "p99": 192,
+          "upper": 204
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 180,
+          "sd": 10.8,
+          "min": 148,
+          "p95": 198,
+          "p99": 205,
+          "upper": 212
+        }
+      },
+      "temperament": "proud",
+      "capture": {
+        "dc": 17,
+        "difficulty": "Hard",
+        "vessel": "lacquer-box",
+        "vessel_mode": "held",
+        "hold_rounds": 3
+      },
+      "release": {
+        "card_text": "Release. Gain Qi equal to all Qi your foes spent last turn, shared among your beasts.",
+        "rules_text": "The Goldmaw devours wealth and never gives it up. Count the Qi your opponent's beasts spent during their last turn; distribute that much Qi among your active beasts (no beast above its maximum)."
+      },
+      "lore": "A Goldmaw eats coin and never spends it. Merchants keep its image facing the door so that money comes in. Keepers who catch a real one find their purses mysteriously heavier, and their enemies' oddly light.",
+      "folklore_sources": [
+        {
+          "region": "China",
+          "tradition": "The pixiu, a winged lion that eats gold and silver and never lets any out, kept as a charm to attract and hold wealth."
+        }
+      ]
+    },
+    {
+      "id": "truthmane",
+      "name": "Truthmane",
+      "kind": "vessel-spirit",
+      "creature": "lion-dog spirit",
+      "type": {
+        "kind": "element",
+        "id": "water",
+        "elements": [
+          "water"
+        ]
+      },
+      "playable": false,
+      "single_use": true,
+      "physical": {
+        "size": "large",
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 300,
+          "sd": 36,
+          "min": 192,
+          "p95": 359,
+          "p99": 384,
+          "upper": 408
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 220,
+          "sd": 13.2,
+          "min": 180,
+          "p95": 242,
+          "p99": 251,
+          "upper": 260
+        }
+      },
+      "temperament": "stubborn",
+      "capture": {
+        "dc": 17,
+        "difficulty": "Hard",
+        "vessel": "lacquer-box",
+        "vessel_mode": "held",
+        "hold_rounds": 3
+      },
+      "release": {
+        "card_text": "Release. Reveal all set cards. Negate one Snare or Omen. All Hidden foes become Exposed.",
+        "rules_text": "The Truthmane sees through every deceit. Your opponent reveals all their set cards; choose one Snare or Omen and destroy it. Every Hidden foe becomes Exposed. Decoys on the field vanish."
+      },
+      "lore": "The Truthmane cannot abide a lie. It butts liars, eats fire and guards the halls of judges. Keepers who carry one must be careful: it does not always distinguish between their enemies' deceptions and their own.",
+      "folklore_sources": [
+        {
+          "region": "Korea",
+          "tradition": "The haetae (haechi), a lion-like beast that tells right from wrong and butts the guilty; its statues guard Gyeongbokgung palace, where they were believed to protect the palace from fire."
+        }
+      ]
+    },
+    {
+      "id": "riverhop-mousedeer",
+      "name": "Riverhop Mousedeer",
+      "kind": "vessel-spirit",
+      "creature": "mousedeer",
+      "type": {
+        "kind": "element",
+        "id": "wood",
+        "elements": [
+          "wood"
+        ]
+      },
+      "playable": false,
+      "single_use": true,
+      "physical": {
+        "size": "tiny",
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 2,
+          "sd": 0.24,
+          "min": 1.28,
+          "p95": 2.39,
+          "p99": 2.56,
+          "upper": 2.72
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 50,
+          "sd": 3,
+          "min": 41,
+          "p95": 54.9,
+          "p99": 57,
+          "upper": 59
+        }
+      },
+      "temperament": "sly",
+      "capture": {
+        "dc": 13,
+        "difficulty": "Moderate",
+        "vessel": "rattan-cage",
+        "vessel_mode": "held",
+        "hold_rounds": 4
+      },
+      "release": {
+        "card_text": "Release. Swap any two active beasts on the field (yours or your foe's). Neither provokes.",
+        "rules_text": "The mousedeer talks its way across. Choose any two active beasts, on either side, and swap their slots. If both belong to different players, they stay with their own Keepers but trade positions in the line."
+      },
+      "lore": "The smallest deer in the forest is the cleverest beast in it. A Riverhop Mousedeer has talked its way out of every cage it has ever been in, which is why Keepers release it before it gets the chance.",
+      "folklore_sources": [
+        {
+          "region": "Malay world (Malaysia, Indonesia, Brunei)",
+          "tradition": "Sang Kancil, the trickster mousedeer, who crosses a river by persuading the crocodiles to line up so the King can \"count\" them."
+        }
+      ]
+    },
+    {
+      "id": "lampsquid",
+      "name": "Lampsquid",
+      "kind": "vessel-spirit",
+      "creature": "squid",
+      "type": {
+        "kind": "confluence",
+        "id": "steam",
+        "elements": [
+          "fire",
+          "water"
+        ]
+      },
+      "playable": false,
+      "single_use": true,
+      "physical": {
+        "size": "tiny",
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 0.01,
+          "sd": 0.0012,
+          "min": 0.0064,
+          "p95": 0.012,
+          "p99": 0.0128,
+          "upper": 0.0136
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 7,
+          "sd": 0.42,
+          "min": 5.74,
+          "p95": 7.69,
+          "p99": 7.98,
+          "upper": 8.26
+        }
+      },
+      "temperament": "playful",
+      "capture": {
+        "dc": 11,
+        "difficulty": "Moderate",
+        "vessel": "lantern-cage",
+        "vessel_mode": "held",
+        "hold_rounds": 3
+      },
+      "release": {
+        "card_text": "Release. All Hidden foes become Exposed. Ranged attacks have advantage this round.",
+        "rules_text": "A swarm of tiny squid lights the field in blue fire. Every Hidden foe becomes Exposed, and ranged attacks have advantage until the end of the round."
+      },
+      "lore": "Each spring the Lampsquid rise from the deep and light the bay with blue fire. One in a lantern cage is enough to read by.",
+      "folklore_sources": [
+        {
+          "region": "Japan",
+          "tradition": "The firefly squid of Toyama Bay, whose spring spawning lights the shoreline blue."
+        }
+      ]
+    },
+    {
+      "id": "blinkswarm",
+      "name": "Blinkswarm",
+      "kind": "vessel-spirit",
+      "creature": "firefly swarm",
+      "type": {
+        "kind": "confluence",
+        "id": "kindle",
+        "elements": [
+          "wood",
+          "fire"
+        ]
+      },
+      "playable": false,
+      "single_use": true,
+      "physical": {
+        "size": "medium",
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 0.5,
+          "sd": 0.06,
+          "min": 0.32,
+          "p95": 0.599,
+          "p99": 0.64,
+          "upper": 0.68
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 300,
+          "sd": 18,
+          "min": 246,
+          "p95": 330,
+          "p99": 342,
+          "upper": 354
+        }
+      },
+      "temperament": "playful",
+      "capture": {
+        "dc": 12,
+        "difficulty": "Moderate",
+        "vessel": "lantern-cage",
+        "vessel_mode": "held",
+        "hold_rounds": 4
+      },
+      "release": {
+        "card_text": "Release. All foes make a WIS save or are Blinded for 1 round. Your beasts become Hidden.",
+        "rules_text": "Thousands of fireflies flash in perfect time. Every active foe makes a WIS save against DC 14 or becomes Blinded for 1 round. Each of your active beasts becomes Hidden."
+      },
+      "lore": "On moonless nights the mangrove trees along the river light up all at once, then go dark, then light again. A Keeper can catch the rhythm in a lantern, but not for long.",
+      "folklore_sources": [
+        {
+          "region": "Malaysia",
+          "tradition": "The synchronous fireflies of the Selangor River mangroves, which flash in unison on the riverbank trees."
+        }
+      ]
+    },
+    {
+      "id": "mossback-tortoise",
+      "name": "Mossback Tortoise",
+      "kind": "vessel-spirit",
+      "creature": "tortoise",
+      "type": {
+        "kind": "confluence",
+        "id": "moss",
+        "elements": [
+          "wood",
+          "earth"
+        ]
+      },
+      "playable": false,
+      "single_use": true,
+      "physical": {
+        "size": "medium",
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 120,
+          "sd": 14.4,
+          "min": 76.8,
+          "p95": 144,
+          "p99": 153,
+          "upper": 163
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 120,
+          "sd": 7.2,
+          "min": 98.4,
+          "p95": 132,
+          "p99": 137,
+          "upper": 142
+        }
+      },
+      "temperament": "serene",
+      "capture": {
+        "dc": 14,
+        "difficulty": "Hard",
+        "vessel": "clay-jar",
+        "vessel_mode": "held",
+        "hold_rounds": 5
+      },
+      "release": {
+        "card_text": "Release. One of your beasts gains 15 temporary HP and cannot drop below 1 HP this round.",
+        "rules_text": "The ancient tortoise lends a beast its years. One of your active beasts gains 15 temporary HP and cannot drop below 1 HP until the end of the round."
+      },
+      "lore": "A Mossback Tortoise has carried the same moss for a thousand years. It trails behind it like a green cloak. Old Keepers say that touching the moss adds a day to your life, and the tortoise has never contradicted them.",
+      "folklore_sources": [
+        {
+          "region": "Japan",
+          "tradition": "The minogame, a tortoise so old that seaweed grows from its shell like a long tail; a symbol of long life."
+        }
+      ]
+    },
+    {
+      "id": "ironeater",
+      "name": "Ironeater",
+      "kind": "vessel-spirit",
+      "creature": "iron-eating beast",
+      "type": {
+        "kind": "confluence",
+        "id": "forge",
+        "elements": [
+          "fire",
+          "metal"
+        ]
+      },
+      "playable": false,
+      "single_use": true,
+      "physical": {
+        "size": "large",
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 800,
+          "sd": 96,
+          "min": 512,
+          "p95": 958,
+          "p99": 1020,
+          "upper": 1090
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 300,
+          "sd": 18,
+          "min": 246,
+          "p95": 330,
+          "p99": 342,
+          "upper": 354
+        }
+      },
+      "temperament": "restless",
+      "capture": {
+        "dc": 19,
+        "difficulty": "Very hard",
+        "vessel": "clay-jar",
+        "vessel_mode": "held",
+        "hold_rounds": 2
+      },
+      "release": {
+        "card_text": "Release. Destroy all Talismans on foes. Steel-form foes take 3d6 damage.",
+        "rules_text": "The Ironeater bursts from its jar and devours every scrap of metal in sight. Destroy every Talisman attached to a foe. Every active foe in Metal form takes 3d6 damage."
+      },
+      "lore": "The Ironeater began as a figure of rice pressed between a lonely man's fingers. It ate a needle, then a pot, then the bells of the town. It is kept in clay because clay is the only thing it will not eat.",
+      "folklore_sources": [
+        {
+          "region": "Korea",
+          "tradition": "The bulgasari, a creature shaped from grains of rice that eats iron and grows larger with every meal."
+        }
+      ]
+    },
+    {
+      "id": "jewelwing-beetle",
+      "name": "Jewelwing Beetle",
+      "kind": "vessel-spirit",
+      "creature": "beetle",
+      "type": {
+        "kind": "confluence",
+        "id": "lacquer",
+        "elements": [
+          "wood",
+          "metal"
+        ]
+      },
+      "playable": false,
+      "single_use": true,
+      "physical": {
+        "size": "tiny",
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 0.01,
+          "sd": 0.0012,
+          "min": 0.0064,
+          "p95": 0.012,
+          "p99": 0.0128,
+          "upper": 0.0136
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 4,
+          "sd": 0.24,
+          "min": 3.28,
+          "p95": 4.39,
+          "p99": 4.56,
+          "upper": 4.72
+        }
+      },
+      "temperament": "proud",
+      "capture": {
+        "dc": 11,
+        "difficulty": "Moderate",
+        "vessel": "lacquer-box",
+        "vessel_mode": "held",
+        "hold_rounds": 5
+      },
+      "release": {
+        "card_text": "Release. Attach to one of your beasts. It gains +2 Guard until it is next hit.",
+        "rules_text": "The beetle settles on one of your active beasts and covers it in iridescent lacquer. That beast gains +2 Guard. The bonus ends the first time an attack hits it."
+      },
+      "lore": "Craftsmen once covered a shrine in Jewelwing wing-cases until it shone like a rainbow. The beetles have never quite forgiven them, but they do enjoy being admired.",
+      "folklore_sources": [
+        {
+          "region": "Japan",
+          "tradition": "The Tamamushi Shrine at Hōryū-ji, a seventh-century cabinet once decorated with thousands of iridescent jewel-beetle wings."
+        }
+      ]
+    }
+  ],
+  "vessels": [
+    {
+      "id": "bamboo-creel",
+      "name": "Bamboo Creel",
+      "holds": "Fish and sea creatures of small to large size.",
+      "capture_bonus": 2,
+      "lore": "A woven bamboo fish trap with a funnel mouth, of the kind set in rivers and paddies across Southeast Asia."
+    },
+    {
+      "id": "clay-jar",
+      "name": "Clay Jar",
+      "holds": "Snails, tortoises and things that must not touch metal.",
+      "capture_bonus": 1,
+      "lore": "A lidded earthenware jar, the kind in which kindly folk once kept a snail and found their house cleaned."
+    },
+    {
+      "id": "lantern-cage",
+      "name": "Lantern Cage",
+      "holds": "Spirits of light and fire.",
+      "capture_bonus": 1,
+      "lore": "A paper lantern with a woven bamboo frame. A spirit inside makes it glow."
+    },
+    {
+      "id": "rattan-cage",
+      "name": "Rattan Cage",
+      "holds": "Birds and small, quick beasts.",
+      "capture_bonus": 2,
+      "lore": "A woven rattan cage of the kind used to carry songbirds — or, in dry years, a rain-calling cat."
+    },
+    {
+      "id": "lacquer-box",
+      "name": "Lacquer Box",
+      "holds": "Small spirits of fortune, metal and judgement.",
+      "capture_bonus": 0,
+      "lore": "A black-and-red lacquered box with a jade clasp. The finer the lacquer, the more respectful the invitation."
+    },
+    {
+      "id": "pillow-box",
+      "name": "Pillow Box",
+      "holds": "Spirits of sleep and dream.",
+      "capture_bonus": 1,
+      "lore": "A hollow ceramic headrest. A spirit of dreams sleeps inside it as long as someone sleeps on it."
+    },
+    {
+      "id": "conch-of-calling",
+      "name": "Conch of Calling",
+      "holds": "A pledge from a great sea spirit (token only).",
+      "capture_bonus": 0,
+      "lore": "A great conch shell. It holds no creature, only a promise and a song."
+    },
+    {
+      "id": "temple-drum",
+      "name": "Temple Drum",
+      "holds": "A pledge from a celestial spirit (token only).",
+      "capture_bonus": 0,
+      "lore": "A small hand drum, said to be one of those once beaten to drive a moon-swallower away."
+    }
+  ]
+}

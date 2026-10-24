@@ -1,0 +1,650 @@
+# DRAFT for review. Physical profile, characteristics, taming and lore for the 36 base zodiac
+# species. Combat stats live in data/lines/ (Phase 2). Weights in kg, lengths in cm.
+# measure: length = nose to tail tip; height = to the top of the head; shoulder = shoulder height.
+
+lines:
+  - id: rat
+    command_dc_mod: 0
+    temperaments: { sly: 30, curious: 25, restless: 25, wary: 20 }
+    markings: { ink-grey: 50, river-brown: 30, white-socked: 15, starless-black: 5 }
+    quirks:
+      - Hoards small shiny things in a hidden cache.
+      - Never takes the same path twice.
+      - Chitters softly at midnight, the start of its hour.
+      - Shares every scrap of food with its nest-mates first.
+    favoured_offerings: [toasted rice cakes, sesame seeds]
+    dislikes: [bells, closed rooms with one door]
+    disobeys_when: Ordered to fight with no escape route.
+    folklore_sources:
+      - region: China
+        tradition: The folk saying "the Rat bit open the heavens" (鼠咬天开), in which the Rat gnawed through primordial chaos at the hour of Zi so that air and light could enter.
+      - region: China
+        tradition: The Great Race, in which the Rat rode the Ox across the river and leapt ahead at the finish.
+      - region: Japan
+        tradition: Rats as messengers of Daikokuten, a god of plenty and the harvest.
+    stages:
+      - id: pipwhisk
+        name: Pipwhisk
+        habitat: Granary walls, riverbank burrows, temple storehouses.
+        weight_kg: 0.6
+        size_cm: 30
+        measure: length
+        description: A palm-sized rat with ink-dark fur and whiskers that twitch toward running water.
+        lore: >-
+          Pipwhisks nest in the gaps of granary walls and share every grain they find. Farmers in
+          the Hour of the Rat leave a single rice cake by the storehouse door on New Year's Eve;
+          a nest that takes it is said to keep the other vermin away all year.
+      - id: shadecrawl
+        name: Shadecrawl
+        habitat: Night markets, canal tunnels, abandoned shrines.
+        weight_kg: 8
+        size_cm: 90
+        measure: length
+        description: A lean, dog-sized rat whose shadow moves a heartbeat after it does.
+        lore: >-
+          A Shadecrawl's shadow lags behind it, and old canal-folk swear that the shadow sometimes
+          goes somewhere else entirely. Thieves' guilds once kept them as lookouts, until the
+          Shadecrawls started choosing which thieves to warn.
+      - id: nezrath
+        name: Nezrath
+        epithet: The First Hour
+        habitat: The midnight courts beneath the Hour of the Rat.
+        weight_kg: 38
+        size_cm: 170
+        measure: length
+        description: A sleek black rat the size of a wolf, trailed by a shimmer of half-real tails.
+        lore: >-
+          When the world was a closed egg of darkness, the story goes, a rat gnawed a hole in it at
+          midnight, and the first breath of air came through. Nezrath claims to be that rat, or its
+          heir. It holds court in the hour between days, where nothing is quite yesterday or
+          tomorrow, and every one of its echoes swears to be the real one.
+
+  - id: ox
+    command_dc_mod: 1
+    temperaments: { stubborn: 30, serene: 25, devoted: 25, lazy: 20 }
+    markings: { earth-brown: 45, slate-grey: 30, white-blaze: 20, bronze-horned: 5 }
+    quirks:
+      - Will not cross a bridge it hasn't seen another beast cross first.
+      - Hums a low note while it works.
+      - Lets small beasts ride on its back without complaint.
+      - Refuses to eat until everyone else has eaten.
+    favoured_offerings: [fresh hay, sweet potato, a scratch behind the horns]
+    dislikes: [being hurried, loud drums]
+    disobeys_when: Ordered to abandon ground it has been told to hold.
+    folklore_sources:
+      - region: China
+        tradition: The Cowherd and the Weaver Girl, in which a wise old ox tells the cowherd to keep its hide after it dies, and the hide lets him fly to the heavens. Celebrated at Qixi.
+      - region: Thailand and Cambodia
+        tradition: The Royal Ploughing Ceremony, where sacred oxen are offered seven foods (rice, maize, beans, sesame, grass, water and liquor) and their choices are read as a forecast for the harvest.
+      - region: China
+        tradition: The Spring Ox of clay struck at Lichun to welcome the farming year.
+    stages:
+      - id: calfstone
+        name: Calfstone
+        habitat: Terraced farms, river meadows.
+        weight_kg: 60
+        size_cm: 80
+        measure: shoulder
+        description: A stocky calf with pebble-smooth hide and horn buds like river stones.
+        lore: >-
+          Calfstones follow ploughs for days without tiring and sleep standing up. Farm children
+          lean on them to rest; a Calfstone that lets you lean on it has decided you are family.
+      - id: plowhorn
+        name: Plowhorn
+        habitat: Paddy terraces, mountain passes.
+        weight_kg: 450
+        size_cm: 150
+        measure: shoulder
+        description: A broad ox with a flat, blade-like horn sweep and hooves that leave furrows.
+        lore: >-
+          At planting festivals a Plowhorn is offered seven bowls. Villages read the year's harvest
+          from the bowl it chooses, and they remember the years it chose only water.
+      - id: gyuurok
+        name: Gyuurok
+        epithet: The Unbroken Yoke
+        habitat: The great terraces of the Hour of the Ox.
+        weight_kg: 1400
+        size_cm: 220
+        measure: shoulder
+        description: A mountainous ox whose back carries moss, shrines and the occasional sleeping village cat.
+        lore: >-
+          Gyuurok carried the Rat across the river in the Great Race and finished second without a
+          word of complaint. When asked why it never resented the trick, it said it had agreed to
+          carry the Rat, and a promise kept is never a loss. Its yoke is not iron but a vow, and
+          no one has ever seen it break one. When it dies, the old songs say, its hide will lift a
+          faithful heart into the sky.
+
+  - id: tiger
+    command_dc_mod: 2
+    temperaments: { proud: 30, bold: 30, wary: 20, serene: 20 }
+    markings: { amber-striped: 50, moss-striped: 30, ash-pale: 15, black-ghost-stripes: 5 }
+    quirks:
+      - Washes its face before every fight.
+      - Hates having its stripes counted.
+      - Sleeps in the highest branch that will hold it.
+      - Roars once at dawn to claim the day.
+    favoured_offerings: [smoked river fish, a respectful bow]
+    dislikes: [being called by name in the forest, garlic]
+    disobeys_when: Ordered to retreat from a challenger.
+    folklore_sources:
+      - region: Korea
+        tradition: The founding myth of Dangun, in which a tiger and a bear asked to become human; the bear endured a hundred days in a cave on mugwort and garlic, but the tiger left early.
+      - region: Malaysia
+        tradition: The rural Malay custom of speaking of the tiger respectfully, as Datuk or Pak Belang ("Mr Stripes"), rather than naming it in the forest.
+      - region: China
+        tradition: The tiger as king of the hundred beasts, with the character 王 (king) said to be written in the stripes on its brow.
+    stages:
+      - id: stripling
+        name: Stripling
+        habitat: Bamboo forests, mangrove edges.
+        weight_kg: 15
+        size_cm: 100
+        measure: length
+        description: A clumsy, oversized cub whose stripes look like brushstrokes not yet dry.
+        lore: >-
+          A Stripling's stripes darken with every challenge it wins. Villages near the bamboo sea
+          leave the cubs alone and speak of them only as "the little Datuk," for fear the mother
+          might be listening.
+      - id: thornstripe
+        name: Thornstripe
+        habitat: Deep bamboo forest, ridge trails.
+        weight_kg: 120
+        size_cm: 240
+        measure: length
+        description: A rangy tiger whose stripes are living briar, flowering after every victory.
+        lore: >-
+          Thornstripes mark their ground by letting thorns grow where they sleep. Travellers who
+          find a ring of briar in the forest step around it and bow, and the briar lets them pass.
+      - id: torakai
+        name: Torakai
+        epithet: The Verdant Fang
+        habitat: The green heart of the Hour of the Tiger.
+        weight_kg: 320
+        size_cm: 330
+        measure: length
+        description: A colossal tiger with jade-green eyes and the mark of a king on its brow.
+        lore: >-
+          Long ago a tiger and a bear sat in a cave and tried to become something else. The bear
+          endured; the tiger walked out into the light. Torakai tells this story proudly, because
+          it chose to remain a tiger. It keeps its strength behind gates of will, and opens them
+          one by one only when it must, knowing each gate costs it something it cannot take back.
+
+  - id: rabbit
+    command_dc_mod: -1
+    temperaments: { gentle: 30, playful: 30, wary: 25, curious: 15 }
+    markings: { cotton-white: 45, dawn-grey: 30, clover-flecked: 20, moon-silver: 5 }
+    quirks:
+      - Thumps a hind foot when a friend is in danger.
+      - Pounds the ground in rhythm under a full moon.
+      - Collects four-leaf clovers.
+      - Always sleeps facing the moon.
+    favoured_offerings: [rice cakes, clover, sweet osmanthus]
+    dislikes: [shouting, being picked up]
+    disobeys_when: Ordered to attack a foe that is already beaten.
+    folklore_sources:
+      - region: China, Japan, Korea
+        tradition: The rabbit in the moon pounding with a mortar and pestle (the elixir of life in China; rice cakes, mochi or tteok, in Japan and Korea).
+      - region: South and Southeast Asia
+        tradition: The Buddhist Śaśa Jātaka, in which a rabbit offers itself as food to a hungry traveller, who places its image on the moon in gratitude.
+    stages:
+      - id: mooncotton
+        name: Mooncotton
+        habitat: Clover meadows, moonlit hillsides.
+        weight_kg: 2.5
+        size_cm: 45
+        measure: length
+        description: A round, fluffy rabbit whose fur glows faintly on clear nights.
+        lore: >-
+          Mooncottons gather in rings on full-moon nights and thump the ground in rhythm. Children
+          who join the rhythm are said to dream of the moon and wake with their scrapes healed.
+      - id: hareveil
+        name: Hareveil
+        habitat: Mist-covered fields, mountain shrines.
+        weight_kg: 9
+        size_cm: 75
+        measure: length
+        description: A long-eared hare wrapped in a trailing veil of silver mist.
+        lore: >-
+          A Hareveil vanishes into its mist when startled and reappears beside whoever needs help
+          most. Shrine-keepers leave out rice cakes for them and find the plates licked clean, with
+          a single clover left in thanks.
+      - id: usagetsu
+        name: Usagetsu
+        epithet: The Jade Moon
+        habitat: The silver groves of the Hour of the Rabbit.
+        weight_kg: 30
+        size_cm: 120
+        measure: length
+        description: A tall, serene hare carrying a jade mortar and pestle, its eyes the colour of moonrise.
+        lore: >-
+          A hungry traveller once came upon a rabbit with nothing to give, and the rabbit offered
+          itself instead. The traveller, who was more than a traveller, set the rabbit's likeness in
+          the moon. Usagetsu says it is that likeness, come down to finish the work. It pounds
+          medicine in its mortar every night and gives it freely, asking only that no one waste it.
+
+  - id: dragon
+    command_dc_mod: 3
+    temperaments: { proud: 40, serene: 25, curious: 20, bold: 15 }
+    markings: { jade-scaled: 40, cloud-white: 30, pearl-bellied: 25, five-coloured: 5 }
+    quirks:
+      - Carries a pearl it will not let anyone touch.
+      - Changes the weather slightly with its mood.
+      - Counts its own scales when anxious.
+      - Bows to carp.
+    favoured_offerings: [a polished pearl, clear spring water, poetry]
+    dislikes: [iron, centipedes]
+    disobeys_when: Ordered to act beneath its dignity.
+    folklore_sources:
+      - region: China
+        tradition: The carp that leaps the falls at the Dragon Gate on the Yellow River becomes a dragon. A symbol of perseverance and success in examinations.
+      - region: Vietnam
+        tradition: Lạc Long Quân, the Dragon Lord, and Âu Cơ of the mountains, whose hundred children divided between sea and highlands to found the Vietnamese people.
+      - region: Thailand and Laos
+        tradition: The Naga of the Mekong, and the glowing "naga fireballs" said to rise from the river at the end of Buddhist Lent.
+      - region: China
+        tradition: Dragons chasing the flaming pearl, and the Dragon Kings who rule rain and the four seas.
+    stages:
+      - id: scalekin
+        name: Scalekin
+        habitat: Waterfalls, mountain springs.
+        weight_kg: 12
+        size_cm: 120
+        measure: length
+        description: A small, whiskered serpent-dragon with stubby legs and carp-like fins.
+        lore: >-
+          Every Scalekin hatches beneath a waterfall and spends its youth trying to leap it. Most
+          never make it. The ones that do are never quite the same, and neither is the waterfall.
+      - id: cloudcoil
+        name: Cloudcoil
+        habitat: Mountain peaks, storm clouds.
+        weight_kg: 180
+        size_cm: 600
+        measure: length
+        description: A long, lean dragon that swims through cloud the way a fish swims through water.
+        lore: >-
+          Farmers watch for Cloudcoils in dry summers, because where one rests, rain follows.
+          Rice villages hang paper pearls from their eaves to tempt them to stay.
+      - id: ryuuten
+        name: Ryuuten
+        epithet: Heaven's Coil
+        habitat: The sky above the Hour of the Dragon.
+        weight_kg: 900
+        size_cm: 1800
+        measure: length
+        cv: 0.15
+        description: An immense five-clawed dragon chasing a pearl that glows in all five colours.
+        lore: >-
+          Ryuuten leapt the Dragon Gate when the world was young and has been climbing ever since.
+          Its pearl holds a breath of every element. In the Great Race it stopped to bring rain to a
+          parched village, and it has never regretted finishing fifth. River-folk say that when the
+          river glows at the end of the rains, Ryuuten is passing beneath.
+
+  - id: snake
+    command_dc_mod: 1
+    temperaments: { serene: 30, sly: 30, wary: 25, proud: 15 }
+    markings: { ember-banded: 40, jade-green: 25, ash-grey: 25, pure-white: 10 }
+    quirks:
+      - Sheds its skin on the same day each year.
+      - Basks in lamplight and refuses to move.
+      - Remembers every insult.
+      - Coils around its Keeper's arm when content.
+    favoured_offerings: [warm stones, eggs, an honest apology]
+    dislikes: [cold water, sudden noise]
+    disobeys_when: Ordered to strike someone who has shown it kindness.
+    folklore_sources:
+      - region: China
+        tradition: The Legend of the White Snake (Bai Suzhen), a snake spirit who cultivates for centuries, takes human form for love and is imprisoned under Leifeng Pagoda.
+      - region: Japan
+        tradition: White snakes as messengers of Benzaiten, goddess of music and fortune, and the protected white snakes of Iwakuni.
+    stages:
+      - id: hissling
+        name: Hissling
+        habitat: Warm stone walls, temple courtyards.
+        weight_kg: 1.5
+        size_cm: 100
+        measure: length
+        description: A slender snake with ember-red bands that glow when it is angry.
+        lore: >-
+          Hisslings bask on temple steps and are considered lucky, so long as no one steps on them.
+          A Hissling that sheds near your door is said to be leaving you its old misfortunes.
+      - id: coilshade
+        name: Coilshade
+        habitat: Ruined pagodas, deep forest.
+        weight_kg: 25
+        size_cm: 400
+        measure: length
+        description: A long, smoke-grey snake whose coils leave faint scorch marks.
+        lore: >-
+          Coilshades are patient beyond reason. One was found coiled around a pagoda bell after
+          three hundred years, waiting for a debt to be repaid. The debt was paid; the Coilshade
+          left without a word.
+      - id: hebiko
+        name: Hebiko
+        epithet: The Ninefold Venom
+        habitat: The lamplit pagodas of the Hour of the Snake.
+        weight_kg: 140
+        size_cm: 900
+        measure: length
+        description: A great serpent with nine faint rings of colour, each said to be a skin it has shed and survived.
+        lore: >-
+          They tell of a snake that studied for a thousand years to take a gentler shape, and was
+          imprisoned under a pagoda for daring to love. Hebiko claims no kinship with that story,
+          but it will not pass a pagoda without stopping. It has shed eight lives already. The
+          ninth, it says, it is saving for something worth dying for.
+
+  - id: horse
+    command_dc_mod: 1
+    temperaments: { restless: 35, bold: 30, playful: 20, proud: 15 }
+    markings: { sun-chestnut: 40, cloud-dappled: 30, black-maned: 25, white-stockinged: 5 }
+    quirks:
+      - Cannot stand still for more than a minute.
+      - Races its own shadow at noon.
+      - Tosses its mane at anything it dislikes.
+      - Loves the sound of bells.
+    favoured_offerings: [salted barley, a long gallop]
+    dislikes: [fences, mud]
+    disobeys_when: Ordered to wait.
+    folklore_sources:
+      - region: China and Korea
+        tradition: The thousand-li horse (qianlima; Cheollima in Korea), which runs a thousand li in a single day.
+      - region: Japan
+        tradition: Horses offered to shrines, later replaced by painted wooden votive plaques (ema).
+      - region: Inner Asia
+        tradition: The windhorse that carries prayers and good fortune on the wind.
+    stages:
+      - id: foalspark
+        name: Foalspark
+        habitat: Open grasslands, festival grounds.
+        weight_kg: 50
+        size_cm: 100
+        measure: shoulder
+        description: A gangly foal whose hooves throw sparks on stone.
+        lore: >-
+          Foalsparks race anything that moves, including clouds. Herders paint their likeness on
+          wooden plaques and hang them at shrines to ask for safe journeys.
+      - id: galeflank
+        name: Galeflank
+        habitat: Steppe, high plateaus.
+        weight_kg: 380
+        size_cm: 155
+        measure: shoulder
+        description: A lean warhorse whose mane streams like a burning banner even in still air.
+        lore: >-
+          A Galeflank can carry a message across three valleys between sunrise and noon. Messengers
+          who ride one tie prayer flags to its mane, and the wind carries the prayers along behind.
+      - id: umaren
+        name: Umaren
+        epithet: The Sunrunner
+        habitat: The burning plains of the Hour of the Horse.
+        weight_kg: 650
+        size_cm: 180
+        measure: shoulder
+        description: A radiant stallion of golden fire whose hoofprints glow for an hour.
+        lore: >-
+          Umaren was the fastest beast in the Great Race and finished seventh, because it was
+          startled by the Snake at the last bend. It has never forgiven itself, and it has never
+          stopped running. It can cross a thousand li between dawn and dusk and does so for no reason
+          but the joy of it. To ride Umaren is to forget, for one day, that you were ever slow.
+
+  - id: goat
+    command_dc_mod: -1
+    temperaments: { gentle: 35, stubborn: 25, serene: 20, playful: 20 }
+    markings: { cream-wool: 45, earth-brown: 30, grey-bearded: 20, gold-horned: 5 }
+    quirks:
+      - Climbs onto anything taller than itself.
+      - Bleats a little song when it is happy.
+      - Shares its food with smaller beasts.
+      - Butts open any closed gate.
+    favoured_offerings: [rice stalks, mountain herbs, a song]
+    dislikes: [rain, being fenced in]
+    disobeys_when: Ordered to abandon a hurt ally.
+    folklore_sources:
+      - region: China
+        tradition: The Five Rams of Guangzhou, in which five immortals rode five rams carrying stalks of rice to a starving city, then left the rams behind as stone. Guangzhou is still called the City of Rams.
+    stages:
+      - id: woolkid
+        name: Woolkid
+        habitat: Mountain meadows, terraced slopes.
+        weight_kg: 4
+        size_cm: 50
+        measure: shoulder
+        description: A tiny kid with fleece like a cloud of rice paper and soft nubs for horns.
+        lore: >-
+          Woolkids climb onto rooftops, walls and sleeping Calfstones. Herders say a Woolkid on the
+          roof means a good harvest, and they would never shoo one down.
+      - id: cragram
+        name: Cragram
+        habitat: Cliffs, mountain monasteries.
+        weight_kg: 70
+        size_cm: 90
+        measure: shoulder
+        description: A sure-footed ram with spiralled horns of banded stone.
+        lore: >-
+          Cragrams carry supplies to cliffside monasteries no mule can reach. Monks ring a bell to
+          call them, and the Cragrams answer by headbutting the bell back.
+      - id: yangsu
+        name: Yangsu
+        epithet: The Gentle Summit
+        habitat: The mountain shrines of the Hour of the Goat.
+        weight_kg: 160
+        size_cm: 120
+        measure: shoulder
+        description: A dignified ram with golden horns, carrying five stalks of rice in its fleece.
+        lore: >-
+          In a starving city, the story goes, five riders came down from the clouds on five rams,
+          each carrying a stalk of rice. When they left, the rams stayed and turned to stone so the
+          city would never forget. Yangsu says it is the sixth ram, the one who walked home. It sings
+          to the hungry and the frightened, and wherever it sings, rice grows a little thicker.
+
+  - id: monkey
+    command_dc_mod: 2
+    temperaments: { curious: 35, playful: 30, sly: 25, restless: 10 }
+    markings: { copper-furred: 40, silver-backed: 30, red-faced: 25, golden: 5 }
+    quirks:
+      - Copies the gestures of whoever it is watching.
+      - Steals hats.
+      - Covers its eyes, ears or mouth when it disapproves.
+      - Takes apart anything with moving parts.
+    favoured_offerings: [peaches, puzzles, a new trick]
+    dislikes: [being laughed at, repetition]
+    disobeys_when: It thinks it has a better idea, which is often.
+    folklore_sources:
+      - region: Japan
+        tradition: The three wise monkeys (see no evil, hear no evil, speak no evil) carved at Tōshō-gū in Nikkō.
+      - region: Japan
+        tradition: Monkeys as messengers of the Sannō shrines, and the pun saru ("monkey" and "to leave"), so a monkey charm makes evil leave.
+      - region: Indonesia
+        tradition: The temple monkeys of Bali's forest shrines, honoured guardians and notorious thieves.
+    stages:
+      - id: mischkit
+        name: Mischkit
+        habitat: Temple forests, market rooftops.
+        weight_kg: 3
+        size_cm: 45
+        measure: height
+        description: A small, bright-eyed monkey with a silver-tipped tail it uses like a third hand.
+        lore: >-
+          Mischkits steal hats, sandals and spectacles from temple visitors, then trade them back
+          for fruit. Monks insist this is a lesson in non-attachment.
+      - id: trickpaw
+        name: Trickpaw
+        habitat: Shrine forests, mountain workshops.
+        weight_kg: 18
+        size_cm: 90
+        measure: height
+        description: A lanky monkey with metal-bright fingers that can copy any knot, lock or gesture.
+        lore: >-
+          A Trickpaw shown a lock once can open it forever. Shrine guardians keep them as gate
+          wardens and pay them in peaches to stay honest.
+      - id: sarugen
+        name: Sarugen
+        epithet: The Mirror Sage
+        habitat: The mirrored halls of the Hour of the Monkey.
+        weight_kg: 55
+        size_cm: 150
+        measure: height
+        description: A silver-maned sage-monkey whose eyes reflect whatever it looks at.
+        lore: >-
+          Sarugen keeps three statues in its hall: one with covered eyes, one with covered ears, one
+          with covered mouth. It says they are not a lesson but a warning about what it does to
+          those who watch, listen and speak carelessly in its presence. It has seen every technique
+          in the Twelve Hours, it claims, and has copied most of them out of politeness.
+
+  - id: rooster
+    command_dc_mod: 0
+    temperaments: { proud: 35, bold: 30, devoted: 20, restless: 15 }
+    markings: { flame-combed: 40, iron-grey: 30, gold-hackled: 25, white-crested: 5 }
+    quirks:
+      - Crows at exactly the same moment every dawn.
+      - Shares any food it finds with the flock.
+      - Struts before every fight.
+      - Will not start a meal before the sun is up.
+    favoured_offerings: [millet, a polished mirror]
+    dislikes: [lateness, being interrupted]
+    disobeys_when: Ordered to break a promise.
+    folklore_sources:
+      - region: Japan
+        tradition: When the sun goddess Amaterasu hid in a cave, the gods gathered the long-crying birds (roosters) to crow and call her back. Ise Grand Shrine keeps sacred chickens to this day.
+      - region: China
+        tradition: The Five Virtues of the rooster from the Han dynasty — learning (its crest), martial skill (its spurs), courage (it fights), benevolence (it shares food) and trustworthiness (it crows on time).
+    stages:
+      - id: chickpip
+        name: Chickpip
+        habitat: Villages, shrine courtyards.
+        weight_kg: 0.4
+        size_cm: 20
+        measure: height
+        description: A fluffy chick with a tiny iron-bright comb.
+        lore: >-
+          Chickpips peep at first light and never a moment late. Villages without a clock keep one,
+          and their festivals have never once started late.
+      - id: dawncrest
+        name: Dawncrest
+        habitat: Shrine grounds, sunrise ridges.
+        weight_kg: 6
+        size_cm: 75
+        measure: height
+        description: A proud rooster with a comb like a crown of hammered steel.
+        lore: >-
+          A Dawncrest crows to bring the sun up, or so it believes, and nobody has dared test it by
+          keeping one quiet. It always finds food for the flock before eating itself.
+      - id: kokketsu
+        name: Kokketsu
+        epithet: The Iron Dawn
+        habitat: The shrine gates of the Hour of the Rooster.
+        weight_kg: 40
+        size_cm: 170
+        measure: height
+        description: A towering rooster with steel-feathered wings and a tail of rippling sunrise.
+        lore: >-
+          When the sun hid in a cave and the world went dark, the long-crying birds were gathered to
+          call it home. Kokketsu says it was the first to crow. It holds to five virtues — learning,
+          courage, skill, kindness and keeping time — and of these it values the last most. It has
+          never once been late, and it will not forgive anyone who is.
+
+  - id: dog
+    command_dc_mod: -2
+    temperaments: { devoted: 45, bold: 20, wary: 20, playful: 15 }
+    markings: { hearth-gold: 40, ash-grey: 25, black-and-tan: 25, lion-maned: 10 }
+    quirks:
+      - Sleeps across the doorway.
+      - Howls when anyone leaves.
+      - Sits with an open mouth beside a twin with a closed one.
+      - Remembers every scent it has ever smelled.
+    favoured_offerings: [grilled fish skin, a warm hearth, a long walk]
+    dislikes: [strangers at night, being left behind]
+    disobeys_when: Ordered to leave its Keeper's side in danger.
+    folklore_sources:
+      - region: Okinawa (Japan)
+        tradition: Shisa, paired lion-dogs on rooftops and gates, one with an open mouth to frighten evil away and one with a closed mouth to keep good fortune in.
+      - region: Japan
+        tradition: Komainu, the guardian lion-dogs that flank shrine entrances.
+      - region: China
+        tradition: Tiangou, the heavenly dog said to swallow the sun or moon during eclipses until it is frightened off with noise.
+    stages:
+      - id: puplight
+        name: Puplight
+        habitat: Villages, hearthsides.
+        weight_kg: 4
+        size_cm: 30
+        measure: shoulder
+        description: A round-bellied pup whose tail tip glows like a coal.
+        lore: >-
+          Puplights are always born in pairs, one noisy and one quiet. Families keep the pair
+          together on the doorstep, the noisy one to scare away trouble and the quiet one to keep
+          luck inside.
+      - id: hearthound
+        name: Hearthound
+        habitat: Mountain villages, travellers' roads.
+        weight_kg: 35
+        size_cm: 65
+        measure: shoulder
+        description: A broad, lion-maned hound with ember-warm fur.
+        lore: >-
+          A Hearthound can follow a scent for a month. Lost travellers have been found in snow
+          with a Hearthound curled around them, keeping them warm until help came.
+      - id: inukai
+        name: Inukai
+        epithet: The Loyal Ward
+        habitat: The gates of the Hour of the Dog.
+        weight_kg: 95
+        size_cm: 100
+        measure: shoulder
+        description: A great guardian hound with a lion's mane of earth-gold fur, flanked by a phantom twin.
+        lore: >-
+          Inukai guards the gate between the Hours, with its twin beside it, one mouth open and one
+          closed. The rumour that it once swallowed the moon is an insult, and it will bite anyone
+          who repeats it; the moon-swallower was a different hound from a different sky. It has
+          never abandoned a post, and it has never lost a ward it swore to protect.
+
+  - id: pig
+    command_dc_mod: -1
+    temperaments: { lazy: 30, gentle: 30, stubborn: 20, playful: 20 }
+    markings: { mud-brown: 40, rose-pink: 25, black-bristled: 25, spotted-gold: 10 }
+    quirks:
+      - Finds truffles, coins and lost things by smell.
+      - Rolls in mud before every fight.
+      - Naps immediately after eating.
+      - Shares its wallow with any visitor.
+    favoured_offerings: [chestnuts, sweet potatoes, a mud bath]
+    dislikes: [being rushed, cold baths]
+    disobeys_when: Ordered to skip a meal.
+    folklore_sources:
+      - region: Japan
+        tradition: The wild boars that escorted Wake no Kiyomaro to safety, honoured with boar statues at Goō Shrine in Kyoto.
+      - region: Vietnam
+        tradition: Đông Hồ woodblock prints of a sow with piglets, hung at Tết as a wish for abundance and a large, happy family.
+    stages:
+      - id: truffling
+        name: Truffling
+        habitat: Forest floors, orchards.
+        weight_kg: 8
+        size_cm: 60
+        measure: length
+        description: A round piglet with a snout that never stops sniffing.
+        lore: >-
+          Trufflings dig up anything valuable — mushrooms, roots, lost rings — and proudly present
+          it to whoever looks hungriest. Farmers hang woodblock prints of them at New Year for luck.
+      - id: mudboar
+        name: Mudboar
+        habitat: Wetlands, forest wallows.
+        weight_kg: 140
+        size_cm: 160
+        measure: length
+        description: A bristly boar coated in a permanent armour of river mud.
+        lore: >-
+          A Mudboar's wallow is a sanctuary; no fight is allowed in it. Wounded beasts of every kind
+          come to soak, and the Mudboar lets them stay as long as they like.
+      - id: butagon
+        name: Butagon
+        epithet: The Abundant
+        habitat: The orchard valleys of the Hour of the Pig.
+        weight_kg: 600
+        size_cm: 280
+        measure: length
+        description: A vast, contented boar whose bristles sprout herbs and whose belly rumbles like distant thunder.
+        lore: >-
+          Butagon finished the Great Race last, having stopped for a meal and a nap, and it regards
+          this as the wisest thing anyone did that day. Once, the story goes, its herd escorted an
+          honest man through a forest full of assassins, and he arrived safely. When it needs to,
+          Butagon swells to the size of a hill and rolls, and very little is left standing.

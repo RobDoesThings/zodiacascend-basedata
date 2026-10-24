@@ -1,0 +1,3267 @@
+{
+  "status": "draft",
+  "licence": "CC-BY-4.0",
+  "count": 32,
+  "species": [
+    {
+      "id": "inkcarp",
+      "name": "Inkcarp",
+      "line": "inkcarp",
+      "kind": "wanderer",
+      "family": "piscine",
+      "elements": [
+        "water",
+        "wood"
+      ],
+      "stage": 1,
+      "stage_name": "Wanderer",
+      "playable": true,
+      "description": "A carp whose fins leave trails of ink in the water.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 2,
+          "sd": 0.24,
+          "min": 1.28,
+          "p95": 2.39,
+          "p99": 2.56,
+          "upper": 2.72
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 45,
+          "sd": 2.7,
+          "min": 36.9,
+          "p95": 49.4,
+          "p99": 51.3,
+          "upper": 53.1
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "serene",
+            "weight": 35
+          },
+          {
+            "id": "curious",
+            "weight": 30
+          },
+          {
+            "id": "wary",
+            "weight": 20
+          },
+          {
+            "id": "proud",
+            "weight": 15
+          }
+        ],
+        "markings": [
+          {
+            "id": "ink-black",
+            "weight": 45
+          },
+          {
+            "id": "koi-red",
+            "weight": 30
+          },
+          {
+            "id": "paper-white",
+            "weight": 20
+          },
+          {
+            "id": "gold-scaled",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "rice bran",
+          "a brushstroke on paper"
+        ]
+      },
+      "control": {
+        "command_dc": 8,
+        "difficulty": "Easy"
+      },
+      "lore": "Inkcarp write. Their ink trails form characters that scholars copy to practise calligraphy. Most of what they write is about waterfalls.",
+      "folklore_sources": [
+        {
+          "region": "China",
+          "tradition": "The carp that strives to leap the Dragon Gate."
+        }
+      ]
+    },
+    {
+      "id": "scrollfin",
+      "name": "Scrollfin",
+      "line": "inkcarp",
+      "kind": "wanderer",
+      "family": "piscine",
+      "elements": [
+        "water",
+        "wood"
+      ],
+      "stage": 2,
+      "stage_name": "Elder Wanderer",
+      "playable": true,
+      "description": "A long carp with fins like unrolled scrolls covered in flowing script.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 9,
+          "sd": 1.08,
+          "min": 5.76,
+          "p95": 10.8,
+          "p99": 11.5,
+          "upper": 12.2
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 90,
+          "sd": 5.4,
+          "min": 73.8,
+          "p95": 98.9,
+          "p99": 103,
+          "upper": 106
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "serene",
+            "weight": 35
+          },
+          {
+            "id": "curious",
+            "weight": 30
+          },
+          {
+            "id": "wary",
+            "weight": 20
+          },
+          {
+            "id": "proud",
+            "weight": 15
+          }
+        ],
+        "markings": [
+          {
+            "id": "ink-black",
+            "weight": 45
+          },
+          {
+            "id": "koi-red",
+            "weight": 30
+          },
+          {
+            "id": "paper-white",
+            "weight": 20
+          },
+          {
+            "id": "gold-scaled",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "rice bran",
+          "a brushstroke on paper"
+        ]
+      },
+      "control": {
+        "command_dc": 11,
+        "difficulty": "Moderate"
+      },
+      "lore": "Scrollfins gather below waterfalls and read aloud the characters their younger kin have written. Each one is sure it will leap the Gate next year.",
+      "folklore_sources": [
+        {
+          "region": "China",
+          "tradition": "The carp that strives to leap the Dragon Gate."
+        }
+      ]
+    },
+    {
+      "id": "lantern-moth",
+      "name": "Lantern Moth",
+      "line": "lantern-moth",
+      "kind": "wanderer",
+      "family": "insectoid",
+      "elements": [
+        "fire",
+        "wood"
+      ],
+      "stage": 1,
+      "stage_name": "Wanderer",
+      "playable": true,
+      "description": "A moth with papery wings that glow like a lit lantern.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 0.05,
+          "sd": 0.006,
+          "min": 0.032,
+          "p95": 0.0599,
+          "p99": 0.064,
+          "upper": 0.068
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 15,
+          "sd": 0.9,
+          "min": 12.3,
+          "p95": 16.5,
+          "p99": 17.1,
+          "upper": 17.7
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "gentle",
+            "weight": 35
+          },
+          {
+            "id": "curious",
+            "weight": 30
+          },
+          {
+            "id": "restless",
+            "weight": 20
+          },
+          {
+            "id": "serene",
+            "weight": 15
+          }
+        ],
+        "markings": [
+          {
+            "id": "paper-gold",
+            "weight": 45
+          },
+          {
+            "id": "festival-red",
+            "weight": 30
+          },
+          {
+            "id": "moon-pale",
+            "weight": 20
+          },
+          {
+            "id": "jade-lit",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "sugar water",
+          "an unlit lantern"
+        ]
+      },
+      "control": {
+        "command_dc": 8,
+        "difficulty": "Easy"
+      },
+      "lore": "Lantern Moths gather at festivals and settle on unlit lanterns until they glow. Children count them for luck.",
+      "folklore_sources": [
+        {
+          "region": "East and Southeast Asia",
+          "tradition": "Lantern festivals — the Lantern Festival in China, Hội An's lantern nights in Vietnam and Yi Peng in northern Thailand."
+        }
+      ]
+    },
+    {
+      "id": "lampwing",
+      "name": "Lampwing",
+      "line": "lantern-moth",
+      "kind": "wanderer",
+      "family": "insectoid",
+      "elements": [
+        "fire",
+        "wood"
+      ],
+      "stage": 2,
+      "stage_name": "Elder Wanderer",
+      "playable": true,
+      "description": "A great moth whose wingspan is patterned like a painted festival lantern.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 0.4,
+          "sd": 0.048,
+          "min": 0.256,
+          "p95": 0.479,
+          "p99": 0.512,
+          "upper": 0.544
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 40,
+          "sd": 2.4,
+          "min": 32.8,
+          "p95": 43.9,
+          "p99": 45.6,
+          "upper": 47.2
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "gentle",
+            "weight": 35
+          },
+          {
+            "id": "curious",
+            "weight": 30
+          },
+          {
+            "id": "restless",
+            "weight": 20
+          },
+          {
+            "id": "serene",
+            "weight": 15
+          }
+        ],
+        "markings": [
+          {
+            "id": "paper-gold",
+            "weight": 45
+          },
+          {
+            "id": "festival-red",
+            "weight": 30
+          },
+          {
+            "id": "moon-pale",
+            "weight": 20
+          },
+          {
+            "id": "jade-lit",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "sugar water",
+          "an unlit lantern"
+        ]
+      },
+      "control": {
+        "command_dc": 11,
+        "difficulty": "Moderate"
+      },
+      "lore": "A Lampwing leads lost travellers home by flying just ahead of them. It never lands until they are safe.",
+      "folklore_sources": [
+        {
+          "region": "East and Southeast Asia",
+          "tradition": "Lantern festivals — the Lantern Festival in China, Hội An's lantern nights in Vietnam and Yi Peng in northern Thailand."
+        }
+      ]
+    },
+    {
+      "id": "paddy-heron",
+      "name": "Paddy Heron",
+      "line": "paddy-heron",
+      "kind": "wanderer",
+      "family": "avian",
+      "elements": [
+        "water",
+        "earth"
+      ],
+      "stage": 1,
+      "stage_name": "Wanderer",
+      "playable": true,
+      "description": "A slender white heron that stands motionless in flooded rice fields.",
+      "physical": {
+        "measure": "height",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 1.2,
+          "sd": 0.144,
+          "min": 0.768,
+          "p95": 1.44,
+          "p99": 1.53,
+          "upper": 1.63
+        },
+        "height_cm": {
+          "distribution": "truncated_normal",
+          "mean": 90,
+          "sd": 5.4,
+          "min": 73.8,
+          "p95": 98.9,
+          "p99": 103,
+          "upper": 106
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "serene",
+            "weight": 40
+          },
+          {
+            "id": "wary",
+            "weight": 30
+          },
+          {
+            "id": "proud",
+            "weight": 20
+          },
+          {
+            "id": "gentle",
+            "weight": 10
+          }
+        ],
+        "markings": [
+          {
+            "id": "egret-white",
+            "weight": 45
+          },
+          {
+            "id": "grey-backed",
+            "weight": 30
+          },
+          {
+            "id": "rice-gold",
+            "weight": 20
+          },
+          {
+            "id": "black-crowned",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "small fish",
+          "a quiet morning"
+        ]
+      },
+      "control": {
+        "command_dc": 8,
+        "difficulty": "Easy"
+      },
+      "lore": "Farmers say a Paddy Heron in the field means a good planting. It can stand still from dawn until noon.",
+      "folklore_sources": [
+        {
+          "region": "Japan and China",
+          "tradition": "Herons and egrets in ink painting as symbols of patience and purity."
+        }
+      ]
+    },
+    {
+      "id": "stiltsage",
+      "name": "Stiltsage",
+      "line": "paddy-heron",
+      "kind": "wanderer",
+      "family": "avian",
+      "elements": [
+        "water",
+        "earth"
+      ],
+      "stage": 2,
+      "stage_name": "Elder Wanderer",
+      "playable": true,
+      "description": "A tall, grey-plumed heron with a crest like a scholar's cap.",
+      "physical": {
+        "measure": "height",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 4,
+          "sd": 0.48,
+          "min": 2.56,
+          "p95": 4.79,
+          "p99": 5.12,
+          "upper": 5.44
+        },
+        "height_cm": {
+          "distribution": "truncated_normal",
+          "mean": 150,
+          "sd": 9,
+          "min": 123,
+          "p95": 165,
+          "p99": 171,
+          "upper": 177
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "serene",
+            "weight": 40
+          },
+          {
+            "id": "wary",
+            "weight": 30
+          },
+          {
+            "id": "proud",
+            "weight": 20
+          },
+          {
+            "id": "gentle",
+            "weight": 10
+          }
+        ],
+        "markings": [
+          {
+            "id": "egret-white",
+            "weight": 45
+          },
+          {
+            "id": "grey-backed",
+            "weight": 30
+          },
+          {
+            "id": "rice-gold",
+            "weight": 20
+          },
+          {
+            "id": "black-crowned",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "small fish",
+          "a quiet morning"
+        ]
+      },
+      "control": {
+        "command_dc": 11,
+        "difficulty": "Moderate"
+      },
+      "lore": "Stiltsages are said to have read every scroll ever dropped in a river. They answer questions by tapping the water.",
+      "folklore_sources": [
+        {
+          "region": "Japan and China",
+          "tradition": "Herons and egrets in ink painting as symbols of patience and purity."
+        }
+      ]
+    },
+    {
+      "id": "teacup-tortoise",
+      "name": "Teacup Tortoise",
+      "line": "teacup-tortoise",
+      "kind": "wanderer",
+      "family": "chelonian",
+      "elements": [
+        "earth",
+        "water"
+      ],
+      "stage": 1,
+      "stage_name": "Wanderer",
+      "playable": true,
+      "description": "A tiny tortoise whose shell looks exactly like a glazed teacup.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 0.3,
+          "sd": 0.036,
+          "min": 0.192,
+          "p95": 0.359,
+          "p99": 0.384,
+          "upper": 0.408
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 10,
+          "sd": 0.6,
+          "min": 8.2,
+          "p95": 11,
+          "p99": 11.4,
+          "upper": 11.8
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "serene",
+            "weight": 40
+          },
+          {
+            "id": "lazy",
+            "weight": 30
+          },
+          {
+            "id": "gentle",
+            "weight": 20
+          },
+          {
+            "id": "stubborn",
+            "weight": 10
+          }
+        ],
+        "markings": [
+          {
+            "id": "celadon-shelled",
+            "weight": 40
+          },
+          {
+            "id": "clay-brown",
+            "weight": 30
+          },
+          {
+            "id": "blue-glazed",
+            "weight": 25
+          },
+          {
+            "id": "crackle-gold",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "green tea leaves",
+          "a warm sunbeam"
+        ]
+      },
+      "control": {
+        "command_dc": 8,
+        "difficulty": "Easy"
+      },
+      "lore": "Teahouses keep one on the counter for luck. Guests swear that tea poured beside it never goes cold.",
+      "folklore_sources": [
+        {
+          "region": "China and Japan",
+          "tradition": "The tortoise as a symbol of longevity, and the tea ceremony's patience."
+        }
+      ]
+    },
+    {
+      "id": "teahouse-tortoise",
+      "name": "Teahouse Tortoise",
+      "line": "teacup-tortoise",
+      "kind": "wanderer",
+      "family": "chelonian",
+      "elements": [
+        "earth",
+        "water"
+      ],
+      "stage": 2,
+      "stage_name": "Elder Wanderer",
+      "playable": true,
+      "description": "A great tortoise carrying a miniature tiled pavilion on its shell.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 60,
+          "sd": 7.2,
+          "min": 38.4,
+          "p95": 71.8,
+          "p99": 76.7,
+          "upper": 81.6
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 110,
+          "sd": 6.6,
+          "min": 90.2,
+          "p95": 121,
+          "p99": 125,
+          "upper": 130
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "serene",
+            "weight": 40
+          },
+          {
+            "id": "lazy",
+            "weight": 30
+          },
+          {
+            "id": "gentle",
+            "weight": 20
+          },
+          {
+            "id": "stubborn",
+            "weight": 10
+          }
+        ],
+        "markings": [
+          {
+            "id": "celadon-shelled",
+            "weight": 40
+          },
+          {
+            "id": "clay-brown",
+            "weight": 30
+          },
+          {
+            "id": "blue-glazed",
+            "weight": 25
+          },
+          {
+            "id": "crackle-gold",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "green tea leaves",
+          "a warm sunbeam"
+        ]
+      },
+      "control": {
+        "command_dc": 11,
+        "difficulty": "Moderate"
+      },
+      "lore": "Small beasts shelter in the pavilion on its back. It walks one step an hour and has never been late for anything that mattered.",
+      "folklore_sources": [
+        {
+          "region": "China and Japan",
+          "tradition": "The tortoise as a symbol of longevity, and the tea ceremony's patience."
+        }
+      ]
+    },
+    {
+      "id": "fox-ember",
+      "name": "Fox Ember",
+      "line": "fox-ember",
+      "kind": "wanderer",
+      "family": "canine",
+      "elements": [
+        "fire"
+      ],
+      "stage": 1,
+      "stage_name": "Wanderer",
+      "playable": true,
+      "description": "A slim red fox whose tail tip flickers like a candle flame.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 4,
+          "sd": 0.48,
+          "min": 2.56,
+          "p95": 4.79,
+          "p99": 5.12,
+          "upper": 5.44
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 90,
+          "sd": 5.4,
+          "min": 73.8,
+          "p95": 98.9,
+          "p99": 103,
+          "upper": 106
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "sly",
+            "weight": 40
+          },
+          {
+            "id": "playful",
+            "weight": 30
+          },
+          {
+            "id": "curious",
+            "weight": 20
+          },
+          {
+            "id": "proud",
+            "weight": 10
+          }
+        ],
+        "markings": [
+          {
+            "id": "ember-red",
+            "weight": 45
+          },
+          {
+            "id": "ash-tipped",
+            "weight": 30
+          },
+          {
+            "id": "white-throated",
+            "weight": 20
+          },
+          {
+            "id": "black-pawed",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "fried tofu",
+          "a riddle"
+        ]
+      },
+      "control": {
+        "command_dc": 8,
+        "difficulty": "Easy"
+      },
+      "lore": "Travellers see lights bobbing along country roads at night and know a Fox Ember is out walking. Following the lights is a bad idea.",
+      "folklore_sources": [
+        {
+          "region": "Japan",
+          "tradition": "Kitsunebi, the \"fox-fires\" — lights seen on country roads at night and blamed on foxes."
+        }
+      ]
+    },
+    {
+      "id": "pyrebrush",
+      "name": "Pyrebrush",
+      "line": "fox-ember",
+      "kind": "wanderer",
+      "family": "canine",
+      "elements": [
+        "fire"
+      ],
+      "stage": 2,
+      "stage_name": "Elder Wanderer",
+      "playable": true,
+      "description": "A fox with a great brush tail of living flame that never burns what it touches.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 9,
+          "sd": 1.08,
+          "min": 5.76,
+          "p95": 10.8,
+          "p99": 11.5,
+          "upper": 12.2
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 130,
+          "sd": 7.8,
+          "min": 107,
+          "p95": 143,
+          "p99": 148,
+          "upper": 153
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "sly",
+            "weight": 40
+          },
+          {
+            "id": "playful",
+            "weight": 30
+          },
+          {
+            "id": "curious",
+            "weight": 20
+          },
+          {
+            "id": "proud",
+            "weight": 10
+          }
+        ],
+        "markings": [
+          {
+            "id": "ember-red",
+            "weight": 45
+          },
+          {
+            "id": "ash-tipped",
+            "weight": 30
+          },
+          {
+            "id": "white-throated",
+            "weight": 20
+          },
+          {
+            "id": "black-pawed",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "fried tofu",
+          "a riddle"
+        ]
+      },
+      "control": {
+        "command_dc": 11,
+        "difficulty": "Moderate"
+      },
+      "lore": "A Pyrebrush leads processions of fox-fires along hillside paths on winter nights. It is not unfriendly, but it does enjoy watching people get lost.",
+      "folklore_sources": [
+        {
+          "region": "Japan",
+          "tradition": "Kitsunebi, the \"fox-fires\" — lights seen on country roads at night and blamed on foxes."
+        }
+      ]
+    },
+    {
+      "id": "granary-mouse",
+      "name": "Granary Mouse",
+      "line": "granary-mouse",
+      "kind": "wanderer",
+      "family": "rodent",
+      "elements": [
+        "earth",
+        "water"
+      ],
+      "stage": 1,
+      "stage_name": "Wanderer",
+      "playable": true,
+      "description": "A tiny brown mouse with a pouch of rice always tucked in its cheeks.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 0.03,
+          "sd": 0.0036,
+          "min": 0.0192,
+          "p95": 0.0359,
+          "p99": 0.0384,
+          "upper": 0.0408
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 15,
+          "sd": 0.9,
+          "min": 12.3,
+          "p95": 16.5,
+          "p99": 17.1,
+          "upper": 17.7
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "wary",
+            "weight": 35
+          },
+          {
+            "id": "curious",
+            "weight": 30
+          },
+          {
+            "id": "devoted",
+            "weight": 20
+          },
+          {
+            "id": "sly",
+            "weight": 15
+          }
+        ],
+        "markings": [
+          {
+            "id": "grain-brown",
+            "weight": 50
+          },
+          {
+            "id": "dust-grey",
+            "weight": 30
+          },
+          {
+            "id": "white-bellied",
+            "weight": 15
+          },
+          {
+            "id": "gold-flecked",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "millet",
+          "a dry corner"
+        ]
+      },
+      "control": {
+        "command_dc": 8,
+        "difficulty": "Easy"
+      },
+      "lore": "A granary with mice is a granary with grain. Farmers count them, and grow uneasy when there are none.",
+      "folklore_sources": [
+        {
+          "region": "China",
+          "tradition": "Mice and rats as signs of a full granary and household plenty."
+        }
+      ]
+    },
+    {
+      "id": "ricewarden",
+      "name": "Ricewarden",
+      "line": "granary-mouse",
+      "kind": "wanderer",
+      "family": "rodent",
+      "elements": [
+        "earth",
+        "water"
+      ],
+      "stage": 2,
+      "stage_name": "Elder Wanderer",
+      "playable": true,
+      "description": "A plump, alert mouse that patrols granaries and drives off pests.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 1.5,
+          "sd": 0.18,
+          "min": 0.96,
+          "p95": 1.8,
+          "p99": 1.92,
+          "upper": 2.04
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 45,
+          "sd": 2.7,
+          "min": 36.9,
+          "p95": 49.4,
+          "p99": 51.3,
+          "upper": 53.1
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "wary",
+            "weight": 35
+          },
+          {
+            "id": "curious",
+            "weight": 30
+          },
+          {
+            "id": "devoted",
+            "weight": 20
+          },
+          {
+            "id": "sly",
+            "weight": 15
+          }
+        ],
+        "markings": [
+          {
+            "id": "grain-brown",
+            "weight": 50
+          },
+          {
+            "id": "dust-grey",
+            "weight": 30
+          },
+          {
+            "id": "white-bellied",
+            "weight": 15
+          },
+          {
+            "id": "gold-flecked",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "millet",
+          "a dry corner"
+        ]
+      },
+      "control": {
+        "command_dc": 11,
+        "difficulty": "Moderate"
+      },
+      "lore": "A Ricewarden keeps exactly one grain in ten and guards the rest from everything else. Farmers think this is a fair price.",
+      "folklore_sources": [
+        {
+          "region": "China",
+          "tradition": "Mice and rats as signs of a full granary and household plenty."
+        }
+      ]
+    },
+    {
+      "id": "wallowcalf",
+      "name": "Wallowcalf",
+      "line": "wallow-buffalo",
+      "kind": "wanderer",
+      "family": "bovine",
+      "elements": [
+        "water",
+        "earth"
+      ],
+      "stage": 1,
+      "stage_name": "Wanderer",
+      "playable": true,
+      "description": "A dark, round-bellied buffalo calf that is never more than a step from water.",
+      "physical": {
+        "measure": "shoulder",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 90,
+          "sd": 10.8,
+          "min": 57.6,
+          "p95": 108,
+          "p99": 115,
+          "upper": 122
+        },
+        "shoulder_cm": {
+          "distribution": "truncated_normal",
+          "mean": 90,
+          "sd": 5.4,
+          "min": 73.8,
+          "p95": 98.9,
+          "p99": 103,
+          "upper": 106
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "serene",
+            "weight": 35
+          },
+          {
+            "id": "lazy",
+            "weight": 30
+          },
+          {
+            "id": "devoted",
+            "weight": 25
+          },
+          {
+            "id": "stubborn",
+            "weight": 10
+          }
+        ],
+        "markings": [
+          {
+            "id": "slate-black",
+            "weight": 45
+          },
+          {
+            "id": "mud-grey",
+            "weight": 30
+          },
+          {
+            "id": "pale-pink",
+            "weight": 20
+          },
+          {
+            "id": "white-chevroned",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "rice straw",
+          "a cool river"
+        ]
+      },
+      "control": {
+        "command_dc": 8,
+        "difficulty": "Easy"
+      },
+      "lore": "Wallowcalves follow farm children to school and wait outside, knee-deep in the nearest paddy.",
+      "folklore_sources": [
+        {
+          "region": "Southeast Asia",
+          "tradition": "The water buffalo (carabao, kerbau, trâu) as a partner in rice farming, honoured in harvest festivals across the region."
+        }
+      ]
+    },
+    {
+      "id": "wallowhorn",
+      "name": "Wallowhorn",
+      "line": "wallow-buffalo",
+      "kind": "wanderer",
+      "family": "bovine",
+      "elements": [
+        "water",
+        "earth"
+      ],
+      "stage": 2,
+      "stage_name": "Elder Wanderer",
+      "playable": true,
+      "description": "A massive water buffalo with sweeping crescent horns and a coat of drying river mud.",
+      "physical": {
+        "measure": "shoulder",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 600,
+          "sd": 72,
+          "min": 384,
+          "p95": 718,
+          "p99": 767,
+          "upper": 816
+        },
+        "shoulder_cm": {
+          "distribution": "truncated_normal",
+          "mean": 160,
+          "sd": 9.6,
+          "min": 131,
+          "p95": 176,
+          "p99": 182,
+          "upper": 189
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "serene",
+            "weight": 35
+          },
+          {
+            "id": "lazy",
+            "weight": 30
+          },
+          {
+            "id": "devoted",
+            "weight": 25
+          },
+          {
+            "id": "stubborn",
+            "weight": 10
+          }
+        ],
+        "markings": [
+          {
+            "id": "slate-black",
+            "weight": 45
+          },
+          {
+            "id": "mud-grey",
+            "weight": 30
+          },
+          {
+            "id": "pale-pink",
+            "weight": 20
+          },
+          {
+            "id": "white-chevroned",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "rice straw",
+          "a cool river"
+        ]
+      },
+      "control": {
+        "command_dc": 11,
+        "difficulty": "Moderate"
+      },
+      "lore": "A Wallowhorn ploughs a field without a driver if it likes the farmer. Villages hold races for them after the harvest.",
+      "folklore_sources": [
+        {
+          "region": "Southeast Asia",
+          "tradition": "The water buffalo (carabao, kerbau, trâu) as a partner in rice farming, honoured in harvest festivals across the region."
+        }
+      ]
+    },
+    {
+      "id": "mistkit",
+      "name": "Mistkit",
+      "line": "mistprowler",
+      "kind": "wanderer",
+      "family": "feline",
+      "elements": [
+        "wood",
+        "water"
+      ],
+      "stage": 1,
+      "stage_name": "Wanderer",
+      "playable": true,
+      "description": "A small spotted cat with cloud-shaped markings that seem to drift.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 3,
+          "sd": 0.36,
+          "min": 1.92,
+          "p95": 3.59,
+          "p99": 3.84,
+          "upper": 4.08
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 70,
+          "sd": 4.2,
+          "min": 57.4,
+          "p95": 76.9,
+          "p99": 79.8,
+          "upper": 82.6
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "wary",
+            "weight": 40
+          },
+          {
+            "id": "sly",
+            "weight": 30
+          },
+          {
+            "id": "serene",
+            "weight": 20
+          },
+          {
+            "id": "proud",
+            "weight": 10
+          }
+        ],
+        "markings": [
+          {
+            "id": "cloud-patterned",
+            "weight": 50
+          },
+          {
+            "id": "smoke-grey",
+            "weight": 25
+          },
+          {
+            "id": "gold-washed",
+            "weight": 20
+          },
+          {
+            "id": "black",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "river fish",
+          "silence"
+        ]
+      },
+      "control": {
+        "command_dc": 8,
+        "difficulty": "Easy"
+      },
+      "lore": "Mistkits are only ever glimpsed in fog. Hunters say that if you can see one clearly, it has decided to be seen.",
+      "folklore_sources": [
+        {
+          "region": "Southeast Asia",
+          "tradition": "The clouded leopard of mountain forests, rarely seen and often said to be a spirit of the mist."
+        }
+      ]
+    },
+    {
+      "id": "cloudpelt",
+      "name": "Cloudpelt",
+      "line": "mistprowler",
+      "kind": "wanderer",
+      "family": "feline",
+      "elements": [
+        "wood",
+        "water"
+      ],
+      "stage": 2,
+      "stage_name": "Elder Wanderer",
+      "playable": true,
+      "description": "A long-tailed tree cat whose coat is a moving map of clouds.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 20,
+          "sd": 2.4,
+          "min": 12.8,
+          "p95": 23.9,
+          "p99": 25.6,
+          "upper": 27.2
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 170,
+          "sd": 10.2,
+          "min": 139,
+          "p95": 187,
+          "p99": 194,
+          "upper": 201
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "wary",
+            "weight": 40
+          },
+          {
+            "id": "sly",
+            "weight": 30
+          },
+          {
+            "id": "serene",
+            "weight": 20
+          },
+          {
+            "id": "proud",
+            "weight": 10
+          }
+        ],
+        "markings": [
+          {
+            "id": "cloud-patterned",
+            "weight": 50
+          },
+          {
+            "id": "smoke-grey",
+            "weight": 25
+          },
+          {
+            "id": "gold-washed",
+            "weight": 20
+          },
+          {
+            "id": "black",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "river fish",
+          "silence"
+        ]
+      },
+      "control": {
+        "command_dc": 11,
+        "difficulty": "Moderate"
+      },
+      "lore": "A Cloudpelt can climb down a tree head-first and hang by its hind paws. It watches villages from the canopy for years before it ever comes down.",
+      "folklore_sources": [
+        {
+          "region": "Southeast Asia",
+          "tradition": "The clouded leopard of mountain forests, rarely seen and often said to be a spirit of the mist."
+        }
+      ]
+    },
+    {
+      "id": "burrbun",
+      "name": "Burrbun",
+      "line": "bramblehare",
+      "kind": "wanderer",
+      "family": "lagomorph",
+      "elements": [
+        "wood"
+      ],
+      "stage": 1,
+      "stage_name": "Wanderer",
+      "playable": true,
+      "description": "A small brown rabbit whose fur is always tangled with burrs.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 1.5,
+          "sd": 0.18,
+          "min": 0.96,
+          "p95": 1.8,
+          "p99": 1.92,
+          "upper": 2.04
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 35,
+          "sd": 2.1,
+          "min": 28.7,
+          "p95": 38.5,
+          "p99": 39.9,
+          "upper": 41.3
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "playful",
+            "weight": 35
+          },
+          {
+            "id": "wary",
+            "weight": 35
+          },
+          {
+            "id": "restless",
+            "weight": 20
+          },
+          {
+            "id": "gentle",
+            "weight": 10
+          }
+        ],
+        "markings": [
+          {
+            "id": "thicket-brown",
+            "weight": 50
+          },
+          {
+            "id": "sand-grey",
+            "weight": 25
+          },
+          {
+            "id": "burr-speckled",
+            "weight": 20
+          },
+          {
+            "id": "white-tailed",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "berries",
+          "a tangle of brambles"
+        ]
+      },
+      "control": {
+        "command_dc": 8,
+        "difficulty": "Easy"
+      },
+      "lore": "Burrbuns spread seeds wherever they go. A meadow full of brambles probably has a Burrbun to thank.",
+      "folklore_sources": [
+        {
+          "region": "East Asia",
+          "tradition": "The hare as a quick-witted survivor in countryside tales."
+        }
+      ]
+    },
+    {
+      "id": "bramblehare",
+      "name": "Bramblehare",
+      "line": "bramblehare",
+      "kind": "wanderer",
+      "family": "lagomorph",
+      "elements": [
+        "wood"
+      ],
+      "stage": 2,
+      "stage_name": "Elder Wanderer",
+      "playable": true,
+      "description": "A long-legged hare that weaves through thorn thickets without a scratch.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 4.5,
+          "sd": 0.54,
+          "min": 2.88,
+          "p95": 5.39,
+          "p99": 5.76,
+          "upper": 6.12
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 65,
+          "sd": 3.9,
+          "min": 53.3,
+          "p95": 71.4,
+          "p99": 74.1,
+          "upper": 76.7
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "playful",
+            "weight": 35
+          },
+          {
+            "id": "wary",
+            "weight": 35
+          },
+          {
+            "id": "restless",
+            "weight": 20
+          },
+          {
+            "id": "gentle",
+            "weight": 10
+          }
+        ],
+        "markings": [
+          {
+            "id": "thicket-brown",
+            "weight": 50
+          },
+          {
+            "id": "sand-grey",
+            "weight": 25
+          },
+          {
+            "id": "burr-speckled",
+            "weight": 20
+          },
+          {
+            "id": "white-tailed",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "berries",
+          "a tangle of brambles"
+        ]
+      },
+      "control": {
+        "command_dc": 11,
+        "difficulty": "Moderate"
+      },
+      "lore": "A Bramblehare leads pursuers into the thorns and out the other side, where it waits, patiently, for them to untangle themselves.",
+      "folklore_sources": [
+        {
+          "region": "East Asia",
+          "tradition": "The hare as a quick-witted survivor in countryside tales."
+        }
+      ]
+    },
+    {
+      "id": "callgecko",
+      "name": "Callgecko",
+      "line": "callgecko",
+      "kind": "wanderer",
+      "family": "reptilian",
+      "elements": [
+        "wood",
+        "earth"
+      ],
+      "stage": 1,
+      "stage_name": "Wanderer",
+      "playable": true,
+      "description": "A spotted gecko whose loud two-note call echoes through the house at night.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 0.15,
+          "sd": 0.018,
+          "min": 0.096,
+          "p95": 0.18,
+          "p99": 0.192,
+          "upper": 0.204
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 30,
+          "sd": 1.8,
+          "min": 24.6,
+          "p95": 33,
+          "p99": 34.2,
+          "upper": 35.4
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "curious",
+            "weight": 35
+          },
+          {
+            "id": "bold",
+            "weight": 25
+          },
+          {
+            "id": "devoted",
+            "weight": 25
+          },
+          {
+            "id": "wary",
+            "weight": 15
+          }
+        ],
+        "markings": [
+          {
+            "id": "blue-and-orange-spotted",
+            "weight": 45
+          },
+          {
+            "id": "bark-grey",
+            "weight": 30
+          },
+          {
+            "id": "leaf-green",
+            "weight": 20
+          },
+          {
+            "id": "gold",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "crickets",
+          "a warm wall"
+        ]
+      },
+      "control": {
+        "command_dc": 8,
+        "difficulty": "Easy"
+      },
+      "lore": "Families count a Callgecko's calls. An odd number means yes, an even number no, and seven in a row means a baby is on the way.",
+      "folklore_sources": [
+        {
+          "region": "Southeast Asia",
+          "tradition": "The tokay gecko's call, counted aloud for luck or answers in households across the region."
+        }
+      ]
+    },
+    {
+      "id": "eavesgecko",
+      "name": "Eavesgecko",
+      "line": "callgecko",
+      "kind": "wanderer",
+      "family": "reptilian",
+      "elements": [
+        "wood",
+        "earth"
+      ],
+      "stage": 2,
+      "stage_name": "Elder Wanderer",
+      "playable": true,
+      "description": "A large gecko that clings to rafters and guards the household from pests.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 2,
+          "sd": 0.24,
+          "min": 1.28,
+          "p95": 2.39,
+          "p99": 2.56,
+          "upper": 2.72
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 70,
+          "sd": 4.2,
+          "min": 57.4,
+          "p95": 76.9,
+          "p99": 79.8,
+          "upper": 82.6
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "curious",
+            "weight": 35
+          },
+          {
+            "id": "bold",
+            "weight": 25
+          },
+          {
+            "id": "devoted",
+            "weight": 25
+          },
+          {
+            "id": "wary",
+            "weight": 15
+          }
+        ],
+        "markings": [
+          {
+            "id": "blue-and-orange-spotted",
+            "weight": 45
+          },
+          {
+            "id": "bark-grey",
+            "weight": 30
+          },
+          {
+            "id": "leaf-green",
+            "weight": 20
+          },
+          {
+            "id": "gold",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "crickets",
+          "a warm wall"
+        ]
+      },
+      "control": {
+        "command_dc": 11,
+        "difficulty": "Moderate"
+      },
+      "lore": "An Eavesgecko in the rafters keeps away insects, snakes and bad luck. Nobody evicts one; it would be like evicting a grandparent.",
+      "folklore_sources": [
+        {
+          "region": "Southeast Asia",
+          "tradition": "The tokay gecko's call, counted aloud for luck or answers in households across the region."
+        }
+      ]
+    },
+    {
+      "id": "packfoal",
+      "name": "Packfoal",
+      "line": "saltroad-pony",
+      "kind": "wanderer",
+      "family": "equine",
+      "elements": [
+        "earth",
+        "metal"
+      ],
+      "stage": 1,
+      "stage_name": "Wanderer",
+      "playable": true,
+      "description": "A shaggy, short-legged foal with a bell on its halter.",
+      "physical": {
+        "measure": "shoulder",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 60,
+          "sd": 7.2,
+          "min": 38.4,
+          "p95": 71.8,
+          "p99": 76.7,
+          "upper": 81.6
+        },
+        "shoulder_cm": {
+          "distribution": "truncated_normal",
+          "mean": 90,
+          "sd": 5.4,
+          "min": 73.8,
+          "p95": 98.9,
+          "p99": 103,
+          "upper": 106
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "stubborn",
+            "weight": 35
+          },
+          {
+            "id": "devoted",
+            "weight": 30
+          },
+          {
+            "id": "serene",
+            "weight": 20
+          },
+          {
+            "id": "bold",
+            "weight": 15
+          }
+        ],
+        "markings": [
+          {
+            "id": "dun",
+            "weight": 45
+          },
+          {
+            "id": "bay",
+            "weight": 30
+          },
+          {
+            "id": "grey-dappled",
+            "weight": 20
+          },
+          {
+            "id": "gold-maned",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "brick tea",
+          "salt"
+        ]
+      },
+      "control": {
+        "command_dc": 8,
+        "difficulty": "Easy"
+      },
+      "lore": "Packfoals walk beside the caravan before they are old enough to carry anything. The bell is so the caravan always knows where they are.",
+      "folklore_sources": [
+        {
+          "region": "Southwest China and the Himalaya",
+          "tradition": "The Tea Horse Road, where caravans of ponies carried tea one way and horses and salt the other across high mountain passes."
+        }
+      ]
+    },
+    {
+      "id": "saltroad-pony",
+      "name": "Saltroad Pony",
+      "line": "saltroad-pony",
+      "kind": "wanderer",
+      "family": "equine",
+      "elements": [
+        "earth",
+        "metal"
+      ],
+      "stage": 2,
+      "stage_name": "Elder Wanderer",
+      "playable": true,
+      "description": "A tough mountain pony laden with bricks of tea and blocks of salt.",
+      "physical": {
+        "measure": "shoulder",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 280,
+          "sd": 33.6,
+          "min": 179,
+          "p95": 335,
+          "p99": 358,
+          "upper": 381
+        },
+        "shoulder_cm": {
+          "distribution": "truncated_normal",
+          "mean": 130,
+          "sd": 7.8,
+          "min": 107,
+          "p95": 143,
+          "p99": 148,
+          "upper": 153
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "stubborn",
+            "weight": 35
+          },
+          {
+            "id": "devoted",
+            "weight": 30
+          },
+          {
+            "id": "serene",
+            "weight": 20
+          },
+          {
+            "id": "bold",
+            "weight": 15
+          }
+        ],
+        "markings": [
+          {
+            "id": "dun",
+            "weight": 45
+          },
+          {
+            "id": "bay",
+            "weight": 30
+          },
+          {
+            "id": "grey-dappled",
+            "weight": 20
+          },
+          {
+            "id": "gold-maned",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "brick tea",
+          "salt"
+        ]
+      },
+      "control": {
+        "command_dc": 11,
+        "difficulty": "Moderate"
+      },
+      "lore": "A Saltroad Pony knows every pass between the Hours and walks them without a guide. Caravan masters trust its judgement over any map.",
+      "folklore_sources": [
+        {
+          "region": "Southwest China and the Himalaya",
+          "tradition": "The Tea Horse Road, where caravans of ponies carried tea one way and horses and salt the other across high mountain passes."
+        }
+      ]
+    },
+    {
+      "id": "crag-kid",
+      "name": "Crag Kid",
+      "line": "cliffserow",
+      "kind": "wanderer",
+      "family": "caprine",
+      "elements": [
+        "earth",
+        "metal"
+      ],
+      "stage": 1,
+      "stage_name": "Wanderer",
+      "playable": true,
+      "description": "A small dark goat-antelope that bounds up cliffs on its first day.",
+      "physical": {
+        "measure": "shoulder",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 6,
+          "sd": 0.72,
+          "min": 3.84,
+          "p95": 7.18,
+          "p99": 7.67,
+          "upper": 8.16
+        },
+        "shoulder_cm": {
+          "distribution": "truncated_normal",
+          "mean": 50,
+          "sd": 3,
+          "min": 41,
+          "p95": 54.9,
+          "p99": 57,
+          "upper": 59
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "wary",
+            "weight": 40
+          },
+          {
+            "id": "stubborn",
+            "weight": 30
+          },
+          {
+            "id": "serene",
+            "weight": 20
+          },
+          {
+            "id": "bold",
+            "weight": 10
+          }
+        ],
+        "markings": [
+          {
+            "id": "charcoal",
+            "weight": 45
+          },
+          {
+            "id": "red-maned",
+            "weight": 30
+          },
+          {
+            "id": "grey",
+            "weight": 20
+          },
+          {
+            "id": "white-flanked",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "mountain salt",
+          "lichen"
+        ]
+      },
+      "control": {
+        "command_dc": 8,
+        "difficulty": "Easy"
+      },
+      "lore": "Crag Kids are born on ledges and learn to climb before they learn to walk on flat ground.",
+      "folklore_sources": [
+        {
+          "region": "East and Southeast Asia",
+          "tradition": "The serow, a mountain goat-antelope of steep forests, admired for its surefootedness."
+        }
+      ]
+    },
+    {
+      "id": "cliffserow",
+      "name": "Cliffserow",
+      "line": "cliffserow",
+      "kind": "wanderer",
+      "family": "caprine",
+      "elements": [
+        "earth",
+        "metal"
+      ],
+      "stage": 2,
+      "stage_name": "Elder Wanderer",
+      "playable": true,
+      "description": "A shaggy, maned goat-antelope with short spiked horns.",
+      "physical": {
+        "measure": "shoulder",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 90,
+          "sd": 10.8,
+          "min": 57.6,
+          "p95": 108,
+          "p99": 115,
+          "upper": 122
+        },
+        "shoulder_cm": {
+          "distribution": "truncated_normal",
+          "mean": 100,
+          "sd": 6,
+          "min": 82,
+          "p95": 110,
+          "p99": 114,
+          "upper": 118
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "wary",
+            "weight": 40
+          },
+          {
+            "id": "stubborn",
+            "weight": 30
+          },
+          {
+            "id": "serene",
+            "weight": 20
+          },
+          {
+            "id": "bold",
+            "weight": 10
+          }
+        ],
+        "markings": [
+          {
+            "id": "charcoal",
+            "weight": 45
+          },
+          {
+            "id": "red-maned",
+            "weight": 30
+          },
+          {
+            "id": "grey",
+            "weight": 20
+          },
+          {
+            "id": "white-flanked",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "mountain salt",
+          "lichen"
+        ]
+      },
+      "control": {
+        "command_dc": 11,
+        "difficulty": "Moderate"
+      },
+      "lore": "A Cliffserow stands on one ledge its entire life. Climbers who reach it leave a pinch of salt, and it lets them pass.",
+      "folklore_sources": [
+        {
+          "region": "East and Southeast Asia",
+          "tradition": "The serow, a mountain goat-antelope of steep forests, admired for its surefootedness."
+        }
+      ]
+    },
+    {
+      "id": "duskloris",
+      "name": "Duskloris",
+      "line": "duskloris",
+      "kind": "wanderer",
+      "family": "primate",
+      "elements": [
+        "water",
+        "wood"
+      ],
+      "stage": 1,
+      "stage_name": "Wanderer",
+      "playable": true,
+      "description": "A round-eyed loris that moves with dreamlike slowness.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 0.6,
+          "sd": 0.072,
+          "min": 0.384,
+          "p95": 0.718,
+          "p99": 0.767,
+          "upper": 0.816
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 30,
+          "sd": 1.8,
+          "min": 24.6,
+          "p95": 33,
+          "p99": 34.2,
+          "upper": 35.4
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "serene",
+            "weight": 35
+          },
+          {
+            "id": "wary",
+            "weight": 30
+          },
+          {
+            "id": "lazy",
+            "weight": 25
+          },
+          {
+            "id": "sly",
+            "weight": 10
+          }
+        ],
+        "markings": [
+          {
+            "id": "dusk-brown",
+            "weight": 45
+          },
+          {
+            "id": "silver-faced",
+            "weight": 30
+          },
+          {
+            "id": "ring-eyed",
+            "weight": 20
+          },
+          {
+            "id": "moon-white",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "tree sap",
+          "nectar"
+        ]
+      },
+      "control": {
+        "command_dc": 8,
+        "difficulty": "Easy"
+      },
+      "lore": "A Duskloris moves so slowly that people forget it is there. Its bite carries a sleepy venom, which it uses only when it has been very rudely treated.",
+      "folklore_sources": [
+        {
+          "region": "Southeast Asia",
+          "tradition": "The slow loris, a shy night primate surrounded by many local beliefs about luck and misfortune."
+        }
+      ]
+    },
+    {
+      "id": "moonloris",
+      "name": "Moonloris",
+      "line": "duskloris",
+      "kind": "wanderer",
+      "family": "primate",
+      "elements": [
+        "water",
+        "wood"
+      ],
+      "stage": 2,
+      "stage_name": "Elder Wanderer",
+      "playable": true,
+      "description": "A silver-masked loris whose huge eyes reflect moonlight.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 2,
+          "sd": 0.24,
+          "min": 1.28,
+          "p95": 2.39,
+          "p99": 2.56,
+          "upper": 2.72
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 45,
+          "sd": 2.7,
+          "min": 36.9,
+          "p95": 49.4,
+          "p99": 51.3,
+          "upper": 53.1
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "serene",
+            "weight": 35
+          },
+          {
+            "id": "wary",
+            "weight": 30
+          },
+          {
+            "id": "lazy",
+            "weight": 25
+          },
+          {
+            "id": "sly",
+            "weight": 10
+          }
+        ],
+        "markings": [
+          {
+            "id": "dusk-brown",
+            "weight": 45
+          },
+          {
+            "id": "silver-faced",
+            "weight": 30
+          },
+          {
+            "id": "ring-eyed",
+            "weight": 20
+          },
+          {
+            "id": "moon-white",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "tree sap",
+          "nectar"
+        ]
+      },
+      "control": {
+        "command_dc": 11,
+        "difficulty": "Moderate"
+      },
+      "lore": "A Moonloris sees in the dark as others see at noon. It never hurries, and it has never once been caught unprepared.",
+      "folklore_sources": [
+        {
+          "region": "Southeast Asia",
+          "tradition": "The slow loris, a shy night primate surrounded by many local beliefs about luck and misfortune."
+        }
+      ]
+    },
+    {
+      "id": "whistlepup",
+      "name": "Whistlepup",
+      "line": "whistle-dhole",
+      "kind": "wanderer",
+      "family": "canine",
+      "elements": [
+        "wood",
+        "fire"
+      ],
+      "stage": 1,
+      "stage_name": "Wanderer",
+      "playable": true,
+      "description": "A rust-red pup that whistles instead of barking.",
+      "physical": {
+        "measure": "shoulder",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 4,
+          "sd": 0.48,
+          "min": 2.56,
+          "p95": 4.79,
+          "p99": 5.12,
+          "upper": 5.44
+        },
+        "shoulder_cm": {
+          "distribution": "truncated_normal",
+          "mean": 30,
+          "sd": 1.8,
+          "min": 24.6,
+          "p95": 33,
+          "p99": 34.2,
+          "upper": 35.4
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "devoted",
+            "weight": 35
+          },
+          {
+            "id": "bold",
+            "weight": 30
+          },
+          {
+            "id": "playful",
+            "weight": 25
+          },
+          {
+            "id": "restless",
+            "weight": 10
+          }
+        ],
+        "markings": [
+          {
+            "id": "rust-red",
+            "weight": 50
+          },
+          {
+            "id": "cinnamon",
+            "weight": 25
+          },
+          {
+            "id": "dark-tailed",
+            "weight": 20
+          },
+          {
+            "id": "pale",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "dried meat",
+          "a game of chase"
+        ]
+      },
+      "control": {
+        "command_dc": 8,
+        "difficulty": "Easy"
+      },
+      "lore": "Whistlepups are raised by the whole pack. A lost one whistles, and every adult within a valley answers.",
+      "folklore_sources": [
+        {
+          "region": "South, East and Southeast Asia",
+          "tradition": "The dhole, a wild dog that hunts in packs and calls to its packmates with whistles."
+        }
+      ]
+    },
+    {
+      "id": "redwhistle",
+      "name": "Redwhistle",
+      "line": "whistle-dhole",
+      "kind": "wanderer",
+      "family": "canine",
+      "elements": [
+        "wood",
+        "fire"
+      ],
+      "stage": 2,
+      "stage_name": "Elder Wanderer",
+      "playable": true,
+      "description": "A lean red wild dog with a dark bushy tail and a piercing whistle.",
+      "physical": {
+        "measure": "shoulder",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 16,
+          "sd": 1.92,
+          "min": 10.2,
+          "p95": 19.2,
+          "p99": 20.5,
+          "upper": 21.8
+        },
+        "shoulder_cm": {
+          "distribution": "truncated_normal",
+          "mean": 50,
+          "sd": 3,
+          "min": 41,
+          "p95": 54.9,
+          "p99": 57,
+          "upper": 59
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "devoted",
+            "weight": 35
+          },
+          {
+            "id": "bold",
+            "weight": 30
+          },
+          {
+            "id": "playful",
+            "weight": 25
+          },
+          {
+            "id": "restless",
+            "weight": 10
+          }
+        ],
+        "markings": [
+          {
+            "id": "rust-red",
+            "weight": 50
+          },
+          {
+            "id": "cinnamon",
+            "weight": 25
+          },
+          {
+            "id": "dark-tailed",
+            "weight": 20
+          },
+          {
+            "id": "pale",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "dried meat",
+          "a game of chase"
+        ]
+      },
+      "control": {
+        "command_dc": 11,
+        "difficulty": "Moderate"
+      },
+      "lore": "A pack of Redwhistles hunts in perfect silence, then whistles all at once. Keepers who bond with one often find the rest of the pack following them home.",
+      "folklore_sources": [
+        {
+          "region": "South, East and Southeast Asia",
+          "tradition": "The dhole, a wild dog that hunts in packs and calls to its packmates with whistles."
+        }
+      ]
+    },
+    {
+      "id": "bristlet",
+      "name": "Bristlet",
+      "line": "bristleboar",
+      "kind": "wanderer",
+      "family": "suine",
+      "elements": [
+        "wood",
+        "earth"
+      ],
+      "stage": 1,
+      "stage_name": "Wanderer",
+      "playable": true,
+      "description": "A striped piglet with a tuft of whiskers like a tiny beard.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 5,
+          "sd": 0.6,
+          "min": 3.2,
+          "p95": 5.99,
+          "p99": 6.4,
+          "upper": 6.8
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 50,
+          "sd": 3,
+          "min": 41,
+          "p95": 54.9,
+          "p99": 57,
+          "upper": 59
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "stubborn",
+            "weight": 35
+          },
+          {
+            "id": "lazy",
+            "weight": 25
+          },
+          {
+            "id": "bold",
+            "weight": 25
+          },
+          {
+            "id": "gentle",
+            "weight": 15
+          }
+        ],
+        "markings": [
+          {
+            "id": "forest-brown",
+            "weight": 45
+          },
+          {
+            "id": "bearded-grey",
+            "weight": 30
+          },
+          {
+            "id": "striped-young",
+            "weight": 20
+          },
+          {
+            "id": "white-bearded",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "fallen fruit",
+          "a muddy bank"
+        ]
+      },
+      "control": {
+        "command_dc": 8,
+        "difficulty": "Easy"
+      },
+      "lore": "Bristlets follow fruiting trees with their herd, walking for weeks to reach the next feast.",
+      "folklore_sources": [
+        {
+          "region": "Borneo and Sumatra",
+          "tradition": "The bearded pig and its long seasonal migrations following fruiting forests."
+        }
+      ]
+    },
+    {
+      "id": "bristleboar",
+      "name": "Bristleboar",
+      "line": "bristleboar",
+      "kind": "wanderer",
+      "family": "suine",
+      "elements": [
+        "wood",
+        "earth"
+      ],
+      "stage": 2,
+      "stage_name": "Elder Wanderer",
+      "playable": true,
+      "description": "A long-snouted boar with a magnificent bristly beard.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 120,
+          "sd": 14.4,
+          "min": 76.8,
+          "p95": 144,
+          "p99": 153,
+          "upper": 163
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 150,
+          "sd": 9,
+          "min": 123,
+          "p95": 165,
+          "p99": 171,
+          "upper": 177
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "stubborn",
+            "weight": 35
+          },
+          {
+            "id": "lazy",
+            "weight": 25
+          },
+          {
+            "id": "bold",
+            "weight": 25
+          },
+          {
+            "id": "gentle",
+            "weight": 15
+          }
+        ],
+        "markings": [
+          {
+            "id": "forest-brown",
+            "weight": 45
+          },
+          {
+            "id": "bearded-grey",
+            "weight": 30
+          },
+          {
+            "id": "striped-young",
+            "weight": 20
+          },
+          {
+            "id": "white-bearded",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "fallen fruit",
+          "a muddy bank"
+        ]
+      },
+      "control": {
+        "command_dc": 11,
+        "difficulty": "Moderate"
+      },
+      "lore": "When the forest fruits, Bristleboar herds arrive within days from nowhere anyone can explain. Villages plan their own harvests by their arrival.",
+      "folklore_sources": [
+        {
+          "region": "Borneo and Sumatra",
+          "tradition": "The bearded pig and its long seasonal migrations following fruiting forests."
+        }
+      ]
+    },
+    {
+      "id": "chirpling",
+      "name": "Chirpling",
+      "line": "bellcricket",
+      "kind": "wanderer",
+      "family": "insectoid",
+      "elements": [
+        "metal",
+        "wood"
+      ],
+      "stage": 1,
+      "stage_name": "Wanderer",
+      "playable": true,
+      "description": "A tiny green cricket with a surprisingly loud chirp.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 0.01,
+          "sd": 0.0012,
+          "min": 0.0064,
+          "p95": 0.012,
+          "p99": 0.0128,
+          "upper": 0.0136
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 4,
+          "sd": 0.24,
+          "min": 3.28,
+          "p95": 4.39,
+          "p99": 4.56,
+          "upper": 4.72
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "proud",
+            "weight": 35
+          },
+          {
+            "id": "playful",
+            "weight": 30
+          },
+          {
+            "id": "restless",
+            "weight": 20
+          },
+          {
+            "id": "bold",
+            "weight": 15
+          }
+        ],
+        "markings": [
+          {
+            "id": "bronze-winged",
+            "weight": 45
+          },
+          {
+            "id": "grass-green",
+            "weight": 30
+          },
+          {
+            "id": "black-lacquered",
+            "weight": 20
+          },
+          {
+            "id": "silver",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "fresh greens",
+          "an audience"
+        ]
+      },
+      "control": {
+        "command_dc": 8,
+        "difficulty": "Easy"
+      },
+      "lore": "Chirplings sing on autumn evenings. Those who hear one on the first cool night say the summer heat has broken.",
+      "folklore_sources": [
+        {
+          "region": "China and Japan",
+          "tradition": "Keeping singing crickets for their song, in carved gourds in China and small cages in Japan, as a sign of autumn."
+        }
+      ]
+    },
+    {
+      "id": "bellcricket",
+      "name": "Bellcricket",
+      "line": "bellcricket",
+      "kind": "wanderer",
+      "family": "insectoid",
+      "elements": [
+        "metal",
+        "wood"
+      ],
+      "stage": 2,
+      "stage_name": "Elder Wanderer",
+      "playable": true,
+      "description": "A bronze cricket whose song rings like a struck temple bell.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 0.2,
+          "sd": 0.024,
+          "min": 0.128,
+          "p95": 0.239,
+          "p99": 0.256,
+          "upper": 0.272
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 15,
+          "sd": 0.9,
+          "min": 12.3,
+          "p95": 16.5,
+          "p99": 17.1,
+          "upper": 17.7
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "proud",
+            "weight": 35
+          },
+          {
+            "id": "playful",
+            "weight": 30
+          },
+          {
+            "id": "restless",
+            "weight": 20
+          },
+          {
+            "id": "bold",
+            "weight": 15
+          }
+        ],
+        "markings": [
+          {
+            "id": "bronze-winged",
+            "weight": 45
+          },
+          {
+            "id": "grass-green",
+            "weight": 30
+          },
+          {
+            "id": "black-lacquered",
+            "weight": 20
+          },
+          {
+            "id": "silver",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "fresh greens",
+          "an audience"
+        ]
+      },
+      "control": {
+        "command_dc": 11,
+        "difficulty": "Moderate"
+      },
+      "lore": "Bellcrickets were once kept in carved gourds for their song. A kind Keeper set one free, and it followed her for the rest of her life, singing. They have chosen Keepers ever since.",
+      "folklore_sources": [
+        {
+          "region": "China and Japan",
+          "tradition": "Keeping singing crickets for their song, in carved gourds in China and small cages in Japan, as a sign of autumn."
+        }
+      ]
+    }
+  ]
+}

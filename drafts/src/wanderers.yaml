@@ -1,0 +1,275 @@
+# DRAFT for review. Wanderers: common, bondable, two-stage lines. They exist only in the
+# elements they list. Combat stats come later (Phase 4).
+
+lines:
+  - id: inkcarp
+    family: piscine
+    elements: [water, wood]
+    temperaments: { serene: 35, curious: 30, wary: 20, proud: 15 }
+    markings: { ink-black: 45, koi-red: 30, paper-white: 20, gold-scaled: 5 }
+    favoured_offerings: [rice bran, a brushstroke on paper]
+    folklore_sources:
+      - region: China
+        tradition: The carp that strives to leap the Dragon Gate.
+    stages:
+      - { id: inkcarp, name: Inkcarp, weight_kg: 2, size_cm: 45, measure: length,
+          description: "A carp whose fins leave trails of ink in the water.",
+          lore: "Inkcarp write. Their ink trails form characters that scholars copy to practise calligraphy. Most of what they write is about waterfalls." }
+      - { id: scrollfin, name: Scrollfin, weight_kg: 9, size_cm: 90, measure: length,
+          description: "A long carp with fins like unrolled scrolls covered in flowing script.",
+          lore: "Scrollfins gather below waterfalls and read aloud the characters their younger kin have written. Each one is sure it will leap the Gate next year." }
+
+  - id: lantern-moth
+    family: insectoid
+    elements: [fire, wood]
+    temperaments: { gentle: 35, curious: 30, restless: 20, serene: 15 }
+    markings: { paper-gold: 45, festival-red: 30, moon-pale: 20, jade-lit: 5 }
+    favoured_offerings: [sugar water, an unlit lantern]
+    folklore_sources:
+      - region: East and Southeast Asia
+        tradition: Lantern festivals — the Lantern Festival in China, Hội An's lantern nights in Vietnam and Yi Peng in northern Thailand.
+    stages:
+      - { id: lantern-moth, name: Lantern Moth, weight_kg: 0.05, size_cm: 15, measure: length,
+          description: "A moth with papery wings that glow like a lit lantern.",
+          lore: "Lantern Moths gather at festivals and settle on unlit lanterns until they glow. Children count them for luck." }
+      - { id: lampwing, name: Lampwing, weight_kg: 0.4, size_cm: 40, measure: length,
+          description: "A great moth whose wingspan is patterned like a painted festival lantern.",
+          lore: "A Lampwing leads lost travellers home by flying just ahead of them. It never lands until they are safe." }
+
+  - id: paddy-heron
+    family: avian
+    elements: [water, earth]
+    temperaments: { serene: 40, wary: 30, proud: 20, gentle: 10 }
+    markings: { egret-white: 45, grey-backed: 30, rice-gold: 20, black-crowned: 5 }
+    favoured_offerings: [small fish, a quiet morning]
+    folklore_sources:
+      - region: Japan and China
+        tradition: Herons and egrets in ink painting as symbols of patience and purity.
+    stages:
+      - { id: paddy-heron, name: Paddy Heron, weight_kg: 1.2, size_cm: 90, measure: height,
+          description: "A slender white heron that stands motionless in flooded rice fields.",
+          lore: "Farmers say a Paddy Heron in the field means a good planting. It can stand still from dawn until noon." }
+      - { id: stiltsage, name: Stiltsage, weight_kg: 4, size_cm: 150, measure: height,
+          description: "A tall, grey-plumed heron with a crest like a scholar's cap.",
+          lore: "Stiltsages are said to have read every scroll ever dropped in a river. They answer questions by tapping the water." }
+
+  - id: teacup-tortoise
+    family: chelonian
+    elements: [earth, water]
+    temperaments: { serene: 40, lazy: 30, gentle: 20, stubborn: 10 }
+    markings: { celadon-shelled: 40, clay-brown: 30, blue-glazed: 25, crackle-gold: 5 }
+    favoured_offerings: [green tea leaves, a warm sunbeam]
+    folklore_sources:
+      - region: China and Japan
+        tradition: The tortoise as a symbol of longevity, and the tea ceremony's patience.
+    stages:
+      - { id: teacup-tortoise, name: Teacup Tortoise, weight_kg: 0.3, size_cm: 10, measure: length,
+          description: "A tiny tortoise whose shell looks exactly like a glazed teacup.",
+          lore: "Teahouses keep one on the counter for luck. Guests swear that tea poured beside it never goes cold." }
+      - { id: teahouse-tortoise, name: Teahouse Tortoise, weight_kg: 60, size_cm: 110, measure: length,
+          description: "A great tortoise carrying a miniature tiled pavilion on its shell.",
+          lore: "Small beasts shelter in the pavilion on its back. It walks one step an hour and has never been late for anything that mattered." }
+
+  - id: fox-ember
+    family: canine
+    elements: [fire]
+    temperaments: { sly: 40, playful: 30, curious: 20, proud: 10 }
+    markings: { ember-red: 45, ash-tipped: 30, white-throated: 20, black-pawed: 5 }
+    favoured_offerings: [fried tofu, a riddle]
+    folklore_sources:
+      - region: Japan
+        tradition: Kitsunebi, the "fox-fires" — lights seen on country roads at night and blamed on foxes.
+    stages:
+      - { id: fox-ember, name: Fox Ember, weight_kg: 4, size_cm: 90, measure: length,
+          description: "A slim red fox whose tail tip flickers like a candle flame.",
+          lore: "Travellers see lights bobbing along country roads at night and know a Fox Ember is out walking. Following the lights is a bad idea." }
+      - { id: pyrebrush, name: Pyrebrush, weight_kg: 9, size_cm: 130, measure: length,
+          description: "A fox with a great brush tail of living flame that never burns what it touches.",
+          lore: "A Pyrebrush leads processions of fox-fires along hillside paths on winter nights. It is not unfriendly, but it does enjoy watching people get lost." }
+
+  - id: granary-mouse
+    family: rodent
+    elements: [earth, water]
+    temperaments: { wary: 35, curious: 30, devoted: 20, sly: 15 }
+    markings: { grain-brown: 50, dust-grey: 30, white-bellied: 15, gold-flecked: 5 }
+    favoured_offerings: [millet, a dry corner]
+    folklore_sources:
+      - region: China
+        tradition: Mice and rats as signs of a full granary and household plenty.
+    stages:
+      - { id: granary-mouse, name: Granary Mouse, weight_kg: 0.03, size_cm: 15, measure: length,
+          description: "A tiny brown mouse with a pouch of rice always tucked in its cheeks.",
+          lore: "A granary with mice is a granary with grain. Farmers count them, and grow uneasy when there are none." }
+      - { id: ricewarden, name: Ricewarden, weight_kg: 1.5, size_cm: 45, measure: length,
+          description: "A plump, alert mouse that patrols granaries and drives off pests.",
+          lore: "A Ricewarden keeps exactly one grain in ten and guards the rest from everything else. Farmers think this is a fair price." }
+
+  - id: wallow-buffalo
+    family: bovine
+    elements: [water, earth]
+    temperaments: { serene: 35, lazy: 30, devoted: 25, stubborn: 10 }
+    markings: { slate-black: 45, mud-grey: 30, pale-pink: 20, white-chevroned: 5 }
+    favoured_offerings: [rice straw, a cool river]
+    folklore_sources:
+      - region: Southeast Asia
+        tradition: The water buffalo (carabao, kerbau, trâu) as a partner in rice farming, honoured in harvest festivals across the region.
+    stages:
+      - { id: wallowcalf, name: Wallowcalf, weight_kg: 90, size_cm: 90, measure: shoulder,
+          description: "A dark, round-bellied buffalo calf that is never more than a step from water.",
+          lore: "Wallowcalves follow farm children to school and wait outside, knee-deep in the nearest paddy." }
+      - { id: wallowhorn, name: Wallowhorn, weight_kg: 600, size_cm: 160, measure: shoulder,
+          description: "A massive water buffalo with sweeping crescent horns and a coat of drying river mud.",
+          lore: "A Wallowhorn ploughs a field without a driver if it likes the farmer. Villages hold races for them after the harvest." }
+
+  - id: mistprowler
+    family: feline
+    elements: [wood, water]
+    temperaments: { wary: 40, sly: 30, serene: 20, proud: 10 }
+    markings: { cloud-patterned: 50, smoke-grey: 25, gold-washed: 20, black: 5 }
+    favoured_offerings: [river fish, silence]
+    folklore_sources:
+      - region: Southeast Asia
+        tradition: The clouded leopard of mountain forests, rarely seen and often said to be a spirit of the mist.
+    stages:
+      - { id: mistkit, name: Mistkit, weight_kg: 3, size_cm: 70, measure: length,
+          description: "A small spotted cat with cloud-shaped markings that seem to drift.",
+          lore: "Mistkits are only ever glimpsed in fog. Hunters say that if you can see one clearly, it has decided to be seen." }
+      - { id: cloudpelt, name: Cloudpelt, weight_kg: 20, size_cm: 170, measure: length,
+          description: "A long-tailed tree cat whose coat is a moving map of clouds.",
+          lore: "A Cloudpelt can climb down a tree head-first and hang by its hind paws. It watches villages from the canopy for years before it ever comes down." }
+
+  - id: bramblehare
+    family: lagomorph
+    elements: [wood]
+    temperaments: { playful: 35, wary: 35, restless: 20, gentle: 10 }
+    markings: { thicket-brown: 50, sand-grey: 25, burr-speckled: 20, white-tailed: 5 }
+    favoured_offerings: [berries, a tangle of brambles]
+    folklore_sources:
+      - region: East Asia
+        tradition: The hare as a quick-witted survivor in countryside tales.
+    stages:
+      - { id: burrbun, name: Burrbun, weight_kg: 1.5, size_cm: 35, measure: length,
+          description: "A small brown rabbit whose fur is always tangled with burrs.",
+          lore: "Burrbuns spread seeds wherever they go. A meadow full of brambles probably has a Burrbun to thank." }
+      - { id: bramblehare, name: Bramblehare, weight_kg: 4.5, size_cm: 65, measure: length,
+          description: "A long-legged hare that weaves through thorn thickets without a scratch.",
+          lore: "A Bramblehare leads pursuers into the thorns and out the other side, where it waits, patiently, for them to untangle themselves." }
+
+  - id: callgecko
+    family: reptilian
+    elements: [wood, earth]
+    temperaments: { curious: 35, bold: 25, devoted: 25, wary: 15 }
+    markings: { blue-and-orange-spotted: 45, bark-grey: 30, leaf-green: 20, gold: 5 }
+    favoured_offerings: [crickets, a warm wall]
+    folklore_sources:
+      - region: Southeast Asia
+        tradition: The tokay gecko's call, counted aloud for luck or answers in households across the region.
+    stages:
+      - { id: callgecko, name: Callgecko, weight_kg: 0.15, size_cm: 30, measure: length,
+          description: "A spotted gecko whose loud two-note call echoes through the house at night.",
+          lore: "Families count a Callgecko's calls. An odd number means yes, an even number no, and seven in a row means a baby is on the way." }
+      - { id: eavesgecko, name: Eavesgecko, weight_kg: 2, size_cm: 70, measure: length,
+          description: "A large gecko that clings to rafters and guards the household from pests.",
+          lore: "An Eavesgecko in the rafters keeps away insects, snakes and bad luck. Nobody evicts one; it would be like evicting a grandparent." }
+
+  - id: saltroad-pony
+    family: equine
+    elements: [earth, metal]
+    temperaments: { stubborn: 35, devoted: 30, serene: 20, bold: 15 }
+    markings: { dun: 45, bay: 30, grey-dappled: 20, gold-maned: 5 }
+    favoured_offerings: [brick tea, salt]
+    folklore_sources:
+      - region: Southwest China and the Himalaya
+        tradition: The Tea Horse Road, where caravans of ponies carried tea one way and horses and salt the other across high mountain passes.
+    stages:
+      - { id: packfoal, name: Packfoal, weight_kg: 60, size_cm: 90, measure: shoulder,
+          description: "A shaggy, short-legged foal with a bell on its halter.",
+          lore: "Packfoals walk beside the caravan before they are old enough to carry anything. The bell is so the caravan always knows where they are." }
+      - { id: saltroad-pony, name: Saltroad Pony, weight_kg: 280, size_cm: 130, measure: shoulder,
+          description: "A tough mountain pony laden with bricks of tea and blocks of salt.",
+          lore: "A Saltroad Pony knows every pass between the Hours and walks them without a guide. Caravan masters trust its judgement over any map." }
+
+  - id: cliffserow
+    family: caprine
+    elements: [earth, metal]
+    temperaments: { wary: 40, stubborn: 30, serene: 20, bold: 10 }
+    markings: { charcoal: 45, red-maned: 30, grey: 20, white-flanked: 5 }
+    favoured_offerings: [mountain salt, lichen]
+    folklore_sources:
+      - region: East and Southeast Asia
+        tradition: The serow, a mountain goat-antelope of steep forests, admired for its surefootedness.
+    stages:
+      - { id: crag-kid, name: Crag Kid, weight_kg: 6, size_cm: 50, measure: shoulder,
+          description: "A small dark goat-antelope that bounds up cliffs on its first day.",
+          lore: "Crag Kids are born on ledges and learn to climb before they learn to walk on flat ground." }
+      - { id: cliffserow, name: Cliffserow, weight_kg: 90, size_cm: 100, measure: shoulder,
+          description: "A shaggy, maned goat-antelope with short spiked horns.",
+          lore: "A Cliffserow stands on one ledge its entire life. Climbers who reach it leave a pinch of salt, and it lets them pass." }
+
+  - id: duskloris
+    family: primate
+    elements: [water, wood]
+    temperaments: { serene: 35, wary: 30, lazy: 25, sly: 10 }
+    markings: { dusk-brown: 45, silver-faced: 30, ring-eyed: 20, moon-white: 5 }
+    favoured_offerings: [tree sap, nectar]
+    folklore_sources:
+      - region: Southeast Asia
+        tradition: The slow loris, a shy night primate surrounded by many local beliefs about luck and misfortune.
+    stages:
+      - { id: duskloris, name: Duskloris, weight_kg: 0.6, size_cm: 30, measure: length,
+          description: "A round-eyed loris that moves with dreamlike slowness.",
+          lore: "A Duskloris moves so slowly that people forget it is there. Its bite carries a sleepy venom, which it uses only when it has been very rudely treated." }
+      - { id: moonloris, name: Moonloris, weight_kg: 2, size_cm: 45, measure: length,
+          description: "A silver-masked loris whose huge eyes reflect moonlight.",
+          lore: "A Moonloris sees in the dark as others see at noon. It never hurries, and it has never once been caught unprepared." }
+
+  - id: whistle-dhole
+    family: canine
+    elements: [wood, fire]
+    temperaments: { devoted: 35, bold: 30, playful: 25, restless: 10 }
+    markings: { rust-red: 50, cinnamon: 25, dark-tailed: 20, pale: 5 }
+    favoured_offerings: [dried meat, a game of chase]
+    folklore_sources:
+      - region: South, East and Southeast Asia
+        tradition: The dhole, a wild dog that hunts in packs and calls to its packmates with whistles.
+    stages:
+      - { id: whistlepup, name: Whistlepup, weight_kg: 4, size_cm: 30, measure: shoulder,
+          description: "A rust-red pup that whistles instead of barking.",
+          lore: "Whistlepups are raised by the whole pack. A lost one whistles, and every adult within a valley answers." }
+      - { id: redwhistle, name: Redwhistle, weight_kg: 16, size_cm: 50, measure: shoulder,
+          description: "A lean red wild dog with a dark bushy tail and a piercing whistle.",
+          lore: "A pack of Redwhistles hunts in perfect silence, then whistles all at once. Keepers who bond with one often find the rest of the pack following them home." }
+
+  - id: bristleboar
+    family: suine
+    elements: [wood, earth]
+    temperaments: { stubborn: 35, lazy: 25, bold: 25, gentle: 15 }
+    markings: { forest-brown: 45, bearded-grey: 30, striped-young: 20, white-bearded: 5 }
+    favoured_offerings: [fallen fruit, a muddy bank]
+    folklore_sources:
+      - region: Borneo and Sumatra
+        tradition: The bearded pig and its long seasonal migrations following fruiting forests.
+    stages:
+      - { id: bristlet, name: Bristlet, weight_kg: 5, size_cm: 50, measure: length,
+          description: "A striped piglet with a tuft of whiskers like a tiny beard.",
+          lore: "Bristlets follow fruiting trees with their herd, walking for weeks to reach the next feast." }
+      - { id: bristleboar, name: Bristleboar, weight_kg: 120, size_cm: 150, measure: length,
+          description: "A long-snouted boar with a magnificent bristly beard.",
+          lore: "When the forest fruits, Bristleboar herds arrive within days from nowhere anyone can explain. Villages plan their own harvests by their arrival." }
+
+  - id: bellcricket
+    family: insectoid
+    elements: [metal, wood]
+    temperaments: { proud: 35, playful: 30, restless: 20, bold: 15 }
+    markings: { bronze-winged: 45, grass-green: 30, black-lacquered: 20, silver: 5 }
+    favoured_offerings: [fresh greens, an audience]
+    folklore_sources:
+      - region: China and Japan
+        tradition: Keeping singing crickets for their song, in carved gourds in China and small cages in Japan, as a sign of autumn.
+    stages:
+      - { id: chirpling, name: Chirpling, weight_kg: 0.01, size_cm: 4, measure: length,
+          description: "A tiny green cricket with a surprisingly loud chirp.",
+          lore: "Chirplings sing on autumn evenings. Those who hear one on the first cool night say the summer heat has broken." }
+      - { id: bellcricket, name: Bellcricket, weight_kg: 0.2, size_cm: 15, measure: length,
+          description: "A bronze cricket whose song rings like a struck temple bell.",
+          lore: "Bellcrickets were once kept in carved gourds for their song. A kind Keeper set one free, and it followed her for the rest of her life, singing. They have chosen Keepers ever since." }

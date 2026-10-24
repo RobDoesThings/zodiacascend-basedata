@@ -1,0 +1,4195 @@
+{
+  "status": "draft",
+  "licence": "CC-BY-4.0",
+  "count": 36,
+  "species": [
+    {
+      "id": "pipwhisk",
+      "name": "Pipwhisk",
+      "line": "rat",
+      "kind": "zodiac",
+      "stage": 1,
+      "stage_name": "Kit",
+      "playable": true,
+      "habitat": "Granary walls, riverbank burrows, temple storehouses.",
+      "description": "A palm-sized rat with ink-dark fur and whiskers that twitch toward running water.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 0.6,
+          "sd": 0.072,
+          "min": 0.384,
+          "p95": 0.718,
+          "p99": 0.767,
+          "upper": 0.816
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 30,
+          "sd": 1.8,
+          "min": 24.6,
+          "p95": 33,
+          "p99": 34.2,
+          "upper": 35.4
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "sly",
+            "weight": 30
+          },
+          {
+            "id": "curious",
+            "weight": 25
+          },
+          {
+            "id": "restless",
+            "weight": 25
+          },
+          {
+            "id": "wary",
+            "weight": 20
+          }
+        ],
+        "markings": [
+          {
+            "id": "ink-grey",
+            "weight": 50
+          },
+          {
+            "id": "river-brown",
+            "weight": 30
+          },
+          {
+            "id": "white-socked",
+            "weight": 15
+          },
+          {
+            "id": "starless-black",
+            "weight": 5
+          }
+        ],
+        "quirks": [
+          "Hoards small shiny things in a hidden cache.",
+          "Never takes the same path twice.",
+          "Chitters softly at midnight, the start of its hour.",
+          "Shares every scrap of food with its nest-mates first."
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 13,
+        "story_only": false,
+        "difficulty": "Moderate",
+        "favoured_offerings": [
+          "toasted rice cakes",
+          "sesame seeds"
+        ],
+        "dislikes": [
+          "bells",
+          "closed rooms with one door"
+        ]
+      },
+      "control": {
+        "command_dc": 10,
+        "difficulty": "Easy",
+        "disobeys_when": "Ordered to fight with no escape route."
+      },
+      "lore": "Pipwhisks nest in the gaps of granary walls and share every grain they find. Farmers in the Hour of the Rat leave a single rice cake by the storehouse door on New Year's Eve; a nest that takes it is said to keep the other vermin away all year.",
+      "folklore_sources": [
+        {
+          "region": "China",
+          "tradition": "The folk saying \"the Rat bit open the heavens\" (鼠咬天开), in which the Rat gnawed through primordial chaos at the hour of Zi so that air and light could enter."
+        },
+        {
+          "region": "China",
+          "tradition": "The Great Race, in which the Rat rode the Ox across the river and leapt ahead at the finish."
+        },
+        {
+          "region": "Japan",
+          "tradition": "Rats as messengers of Daikokuten, a god of plenty and the harvest."
+        }
+      ]
+    },
+    {
+      "id": "shadecrawl",
+      "name": "Shadecrawl",
+      "line": "rat",
+      "kind": "zodiac",
+      "stage": 2,
+      "stage_name": "Adept",
+      "playable": true,
+      "habitat": "Night markets, canal tunnels, abandoned shrines.",
+      "description": "A lean, dog-sized rat whose shadow moves a heartbeat after it does.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 8,
+          "sd": 0.96,
+          "min": 5.12,
+          "p95": 9.58,
+          "p99": 10.2,
+          "upper": 10.9
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 90,
+          "sd": 5.4,
+          "min": 73.8,
+          "p95": 98.9,
+          "p99": 103,
+          "upper": 106
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "sly",
+            "weight": 30
+          },
+          {
+            "id": "curious",
+            "weight": 25
+          },
+          {
+            "id": "restless",
+            "weight": 25
+          },
+          {
+            "id": "wary",
+            "weight": 20
+          }
+        ],
+        "markings": [
+          {
+            "id": "ink-grey",
+            "weight": 50
+          },
+          {
+            "id": "river-brown",
+            "weight": 30
+          },
+          {
+            "id": "white-socked",
+            "weight": 15
+          },
+          {
+            "id": "starless-black",
+            "weight": 5
+          }
+        ],
+        "quirks": [
+          "Hoards small shiny things in a hidden cache.",
+          "Never takes the same path twice.",
+          "Chitters softly at midnight, the start of its hour.",
+          "Shares every scrap of food with its nest-mates first."
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 17,
+        "story_only": false,
+        "difficulty": "Hard",
+        "favoured_offerings": [
+          "toasted rice cakes",
+          "sesame seeds"
+        ],
+        "dislikes": [
+          "bells",
+          "closed rooms with one door"
+        ]
+      },
+      "control": {
+        "command_dc": 14,
+        "difficulty": "Hard",
+        "disobeys_when": "Ordered to fight with no escape route."
+      },
+      "lore": "A Shadecrawl's shadow lags behind it, and old canal-folk swear that the shadow sometimes goes somewhere else entirely. Thieves' guilds once kept them as lookouts, until the Shadecrawls started choosing which thieves to warn.",
+      "folklore_sources": [
+        {
+          "region": "China",
+          "tradition": "The folk saying \"the Rat bit open the heavens\" (鼠咬天开), in which the Rat gnawed through primordial chaos at the hour of Zi so that air and light could enter."
+        },
+        {
+          "region": "China",
+          "tradition": "The Great Race, in which the Rat rode the Ox across the river and leapt ahead at the finish."
+        },
+        {
+          "region": "Japan",
+          "tradition": "Rats as messengers of Daikokuten, a god of plenty and the harvest."
+        }
+      ]
+    },
+    {
+      "id": "nezrath",
+      "name": "Nezrath",
+      "line": "rat",
+      "kind": "zodiac",
+      "stage": 3,
+      "stage_name": "Sovereign",
+      "epithet": "The First Hour",
+      "playable": true,
+      "habitat": "The midnight courts beneath the Hour of the Rat.",
+      "description": "A sleek black rat the size of a wolf, trailed by a shimmer of half-real tails.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 38,
+          "sd": 4.56,
+          "min": 24.3,
+          "p95": 45.5,
+          "p99": 48.6,
+          "upper": 51.7
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 170,
+          "sd": 10.2,
+          "min": 139,
+          "p95": 187,
+          "p99": 194,
+          "upper": 201
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "sly",
+            "weight": 30
+          },
+          {
+            "id": "curious",
+            "weight": 25
+          },
+          {
+            "id": "restless",
+            "weight": 25
+          },
+          {
+            "id": "wary",
+            "weight": 20
+          }
+        ],
+        "markings": [
+          {
+            "id": "ink-grey",
+            "weight": 50
+          },
+          {
+            "id": "river-brown",
+            "weight": 30
+          },
+          {
+            "id": "white-socked",
+            "weight": 15
+          },
+          {
+            "id": "starless-black",
+            "weight": 5
+          }
+        ],
+        "quirks": [
+          "Hoards small shiny things in a hidden cache.",
+          "Never takes the same path twice.",
+          "Chitters softly at midnight, the start of its hour.",
+          "Shares every scrap of food with its nest-mates first."
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 22,
+        "story_only": true,
+        "difficulty": "Story only",
+        "favoured_offerings": [
+          "toasted rice cakes",
+          "sesame seeds"
+        ],
+        "dislikes": [
+          "bells",
+          "closed rooms with one door"
+        ]
+      },
+      "control": {
+        "command_dc": 18,
+        "difficulty": "Very hard",
+        "disobeys_when": "Ordered to fight with no escape route."
+      },
+      "lore": "When the world was a closed egg of darkness, the story goes, a rat gnawed a hole in it at midnight, and the first breath of air came through. Nezrath claims to be that rat, or its heir. It holds court in the hour between days, where nothing is quite yesterday or tomorrow, and every one of its echoes swears to be the real one.",
+      "folklore_sources": [
+        {
+          "region": "China",
+          "tradition": "The folk saying \"the Rat bit open the heavens\" (鼠咬天开), in which the Rat gnawed through primordial chaos at the hour of Zi so that air and light could enter."
+        },
+        {
+          "region": "China",
+          "tradition": "The Great Race, in which the Rat rode the Ox across the river and leapt ahead at the finish."
+        },
+        {
+          "region": "Japan",
+          "tradition": "Rats as messengers of Daikokuten, a god of plenty and the harvest."
+        }
+      ]
+    },
+    {
+      "id": "calfstone",
+      "name": "Calfstone",
+      "line": "ox",
+      "kind": "zodiac",
+      "stage": 1,
+      "stage_name": "Kit",
+      "playable": true,
+      "habitat": "Terraced farms, river meadows.",
+      "description": "A stocky calf with pebble-smooth hide and horn buds like river stones.",
+      "physical": {
+        "measure": "shoulder",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 60,
+          "sd": 7.2,
+          "min": 38.4,
+          "p95": 71.8,
+          "p99": 76.7,
+          "upper": 81.6
+        },
+        "shoulder_cm": {
+          "distribution": "truncated_normal",
+          "mean": 80,
+          "sd": 4.8,
+          "min": 65.6,
+          "p95": 87.9,
+          "p99": 91.2,
+          "upper": 94.4
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "stubborn",
+            "weight": 30
+          },
+          {
+            "id": "serene",
+            "weight": 25
+          },
+          {
+            "id": "devoted",
+            "weight": 25
+          },
+          {
+            "id": "lazy",
+            "weight": 20
+          }
+        ],
+        "markings": [
+          {
+            "id": "earth-brown",
+            "weight": 45
+          },
+          {
+            "id": "slate-grey",
+            "weight": 30
+          },
+          {
+            "id": "white-blaze",
+            "weight": 20
+          },
+          {
+            "id": "bronze-horned",
+            "weight": 5
+          }
+        ],
+        "quirks": [
+          "Will not cross a bridge it hasn't seen another beast cross first.",
+          "Hums a low note while it works.",
+          "Lets small beasts ride on its back without complaint.",
+          "Refuses to eat until everyone else has eaten."
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 13,
+        "story_only": false,
+        "difficulty": "Moderate",
+        "favoured_offerings": [
+          "fresh hay",
+          "sweet potato",
+          "a scratch behind the horns"
+        ],
+        "dislikes": [
+          "being hurried",
+          "loud drums"
+        ]
+      },
+      "control": {
+        "command_dc": 11,
+        "difficulty": "Moderate",
+        "disobeys_when": "Ordered to abandon ground it has been told to hold."
+      },
+      "lore": "Calfstones follow ploughs for days without tiring and sleep standing up. Farm children lean on them to rest; a Calfstone that lets you lean on it has decided you are family.",
+      "folklore_sources": [
+        {
+          "region": "China",
+          "tradition": "The Cowherd and the Weaver Girl, in which a wise old ox tells the cowherd to keep its hide after it dies, and the hide lets him fly to the heavens. Celebrated at Qixi."
+        },
+        {
+          "region": "Thailand and Cambodia",
+          "tradition": "The Royal Ploughing Ceremony, where sacred oxen are offered seven foods (rice, maize, beans, sesame, grass, water and liquor) and their choices are read as a forecast for the harvest."
+        },
+        {
+          "region": "China",
+          "tradition": "The Spring Ox of clay struck at Lichun to welcome the farming year."
+        }
+      ]
+    },
+    {
+      "id": "plowhorn",
+      "name": "Plowhorn",
+      "line": "ox",
+      "kind": "zodiac",
+      "stage": 2,
+      "stage_name": "Adept",
+      "playable": true,
+      "habitat": "Paddy terraces, mountain passes.",
+      "description": "A broad ox with a flat, blade-like horn sweep and hooves that leave furrows.",
+      "physical": {
+        "measure": "shoulder",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 450,
+          "sd": 54,
+          "min": 288,
+          "p95": 539,
+          "p99": 576,
+          "upper": 612
+        },
+        "shoulder_cm": {
+          "distribution": "truncated_normal",
+          "mean": 150,
+          "sd": 9,
+          "min": 123,
+          "p95": 165,
+          "p99": 171,
+          "upper": 177
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "stubborn",
+            "weight": 30
+          },
+          {
+            "id": "serene",
+            "weight": 25
+          },
+          {
+            "id": "devoted",
+            "weight": 25
+          },
+          {
+            "id": "lazy",
+            "weight": 20
+          }
+        ],
+        "markings": [
+          {
+            "id": "earth-brown",
+            "weight": 45
+          },
+          {
+            "id": "slate-grey",
+            "weight": 30
+          },
+          {
+            "id": "white-blaze",
+            "weight": 20
+          },
+          {
+            "id": "bronze-horned",
+            "weight": 5
+          }
+        ],
+        "quirks": [
+          "Will not cross a bridge it hasn't seen another beast cross first.",
+          "Hums a low note while it works.",
+          "Lets small beasts ride on its back without complaint.",
+          "Refuses to eat until everyone else has eaten."
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 17,
+        "story_only": false,
+        "difficulty": "Hard",
+        "favoured_offerings": [
+          "fresh hay",
+          "sweet potato",
+          "a scratch behind the horns"
+        ],
+        "dislikes": [
+          "being hurried",
+          "loud drums"
+        ]
+      },
+      "control": {
+        "command_dc": 15,
+        "difficulty": "Hard",
+        "disobeys_when": "Ordered to abandon ground it has been told to hold."
+      },
+      "lore": "At planting festivals a Plowhorn is offered seven bowls. Villages read the year's harvest from the bowl it chooses, and they remember the years it chose only water.",
+      "folklore_sources": [
+        {
+          "region": "China",
+          "tradition": "The Cowherd and the Weaver Girl, in which a wise old ox tells the cowherd to keep its hide after it dies, and the hide lets him fly to the heavens. Celebrated at Qixi."
+        },
+        {
+          "region": "Thailand and Cambodia",
+          "tradition": "The Royal Ploughing Ceremony, where sacred oxen are offered seven foods (rice, maize, beans, sesame, grass, water and liquor) and their choices are read as a forecast for the harvest."
+        },
+        {
+          "region": "China",
+          "tradition": "The Spring Ox of clay struck at Lichun to welcome the farming year."
+        }
+      ]
+    },
+    {
+      "id": "gyuurok",
+      "name": "Gyuurok",
+      "line": "ox",
+      "kind": "zodiac",
+      "stage": 3,
+      "stage_name": "Sovereign",
+      "epithet": "The Unbroken Yoke",
+      "playable": true,
+      "habitat": "The great terraces of the Hour of the Ox.",
+      "description": "A mountainous ox whose back carries moss, shrines and the occasional sleeping village cat.",
+      "physical": {
+        "measure": "shoulder",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 1400,
+          "sd": 168,
+          "min": 896,
+          "p95": 1680,
+          "p99": 1790,
+          "upper": 1900
+        },
+        "shoulder_cm": {
+          "distribution": "truncated_normal",
+          "mean": 220,
+          "sd": 13.2,
+          "min": 180,
+          "p95": 242,
+          "p99": 251,
+          "upper": 260
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "stubborn",
+            "weight": 30
+          },
+          {
+            "id": "serene",
+            "weight": 25
+          },
+          {
+            "id": "devoted",
+            "weight": 25
+          },
+          {
+            "id": "lazy",
+            "weight": 20
+          }
+        ],
+        "markings": [
+          {
+            "id": "earth-brown",
+            "weight": 45
+          },
+          {
+            "id": "slate-grey",
+            "weight": 30
+          },
+          {
+            "id": "white-blaze",
+            "weight": 20
+          },
+          {
+            "id": "bronze-horned",
+            "weight": 5
+          }
+        ],
+        "quirks": [
+          "Will not cross a bridge it hasn't seen another beast cross first.",
+          "Hums a low note while it works.",
+          "Lets small beasts ride on its back without complaint.",
+          "Refuses to eat until everyone else has eaten."
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 22,
+        "story_only": true,
+        "difficulty": "Story only",
+        "favoured_offerings": [
+          "fresh hay",
+          "sweet potato",
+          "a scratch behind the horns"
+        ],
+        "dislikes": [
+          "being hurried",
+          "loud drums"
+        ]
+      },
+      "control": {
+        "command_dc": 19,
+        "difficulty": "Very hard",
+        "disobeys_when": "Ordered to abandon ground it has been told to hold."
+      },
+      "lore": "Gyuurok carried the Rat across the river in the Great Race and finished second without a word of complaint. When asked why it never resented the trick, it said it had agreed to carry the Rat, and a promise kept is never a loss. Its yoke is not iron but a vow, and no one has ever seen it break one. When it dies, the old songs say, its hide will lift a faithful heart into the sky.",
+      "folklore_sources": [
+        {
+          "region": "China",
+          "tradition": "The Cowherd and the Weaver Girl, in which a wise old ox tells the cowherd to keep its hide after it dies, and the hide lets him fly to the heavens. Celebrated at Qixi."
+        },
+        {
+          "region": "Thailand and Cambodia",
+          "tradition": "The Royal Ploughing Ceremony, where sacred oxen are offered seven foods (rice, maize, beans, sesame, grass, water and liquor) and their choices are read as a forecast for the harvest."
+        },
+        {
+          "region": "China",
+          "tradition": "The Spring Ox of clay struck at Lichun to welcome the farming year."
+        }
+      ]
+    },
+    {
+      "id": "stripling",
+      "name": "Stripling",
+      "line": "tiger",
+      "kind": "zodiac",
+      "stage": 1,
+      "stage_name": "Kit",
+      "playable": true,
+      "habitat": "Bamboo forests, mangrove edges.",
+      "description": "A clumsy, oversized cub whose stripes look like brushstrokes not yet dry.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 15,
+          "sd": 1.8,
+          "min": 9.6,
+          "p95": 18,
+          "p99": 19.2,
+          "upper": 20.4
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 100,
+          "sd": 6,
+          "min": 82,
+          "p95": 110,
+          "p99": 114,
+          "upper": 118
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "proud",
+            "weight": 30
+          },
+          {
+            "id": "bold",
+            "weight": 30
+          },
+          {
+            "id": "wary",
+            "weight": 20
+          },
+          {
+            "id": "serene",
+            "weight": 20
+          }
+        ],
+        "markings": [
+          {
+            "id": "amber-striped",
+            "weight": 50
+          },
+          {
+            "id": "moss-striped",
+            "weight": 30
+          },
+          {
+            "id": "ash-pale",
+            "weight": 15
+          },
+          {
+            "id": "black-ghost-stripes",
+            "weight": 5
+          }
+        ],
+        "quirks": [
+          "Washes its face before every fight.",
+          "Hates having its stripes counted.",
+          "Sleeps in the highest branch that will hold it.",
+          "Roars once at dawn to claim the day."
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 13,
+        "story_only": false,
+        "difficulty": "Moderate",
+        "favoured_offerings": [
+          "smoked river fish",
+          "a respectful bow"
+        ],
+        "dislikes": [
+          "being called by name in the forest",
+          "garlic"
+        ]
+      },
+      "control": {
+        "command_dc": 12,
+        "difficulty": "Moderate",
+        "disobeys_when": "Ordered to retreat from a challenger."
+      },
+      "lore": "A Stripling's stripes darken with every challenge it wins. Villages near the bamboo sea leave the cubs alone and speak of them only as \"the little Datuk,\" for fear the mother might be listening.",
+      "folklore_sources": [
+        {
+          "region": "Korea",
+          "tradition": "The founding myth of Dangun, in which a tiger and a bear asked to become human; the bear endured a hundred days in a cave on mugwort and garlic, but the tiger left early."
+        },
+        {
+          "region": "Malaysia",
+          "tradition": "The rural Malay custom of speaking of the tiger respectfully, as Datuk or Pak Belang (\"Mr Stripes\"), rather than naming it in the forest."
+        },
+        {
+          "region": "China",
+          "tradition": "The tiger as king of the hundred beasts, with the character 王 (king) said to be written in the stripes on its brow."
+        }
+      ]
+    },
+    {
+      "id": "thornstripe",
+      "name": "Thornstripe",
+      "line": "tiger",
+      "kind": "zodiac",
+      "stage": 2,
+      "stage_name": "Adept",
+      "playable": true,
+      "habitat": "Deep bamboo forest, ridge trails.",
+      "description": "A rangy tiger whose stripes are living briar, flowering after every victory.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 120,
+          "sd": 14.4,
+          "min": 76.8,
+          "p95": 144,
+          "p99": 153,
+          "upper": 163
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 240,
+          "sd": 14.4,
+          "min": 197,
+          "p95": 264,
+          "p99": 273,
+          "upper": 283
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "proud",
+            "weight": 30
+          },
+          {
+            "id": "bold",
+            "weight": 30
+          },
+          {
+            "id": "wary",
+            "weight": 20
+          },
+          {
+            "id": "serene",
+            "weight": 20
+          }
+        ],
+        "markings": [
+          {
+            "id": "amber-striped",
+            "weight": 50
+          },
+          {
+            "id": "moss-striped",
+            "weight": 30
+          },
+          {
+            "id": "ash-pale",
+            "weight": 15
+          },
+          {
+            "id": "black-ghost-stripes",
+            "weight": 5
+          }
+        ],
+        "quirks": [
+          "Washes its face before every fight.",
+          "Hates having its stripes counted.",
+          "Sleeps in the highest branch that will hold it.",
+          "Roars once at dawn to claim the day."
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 17,
+        "story_only": false,
+        "difficulty": "Hard",
+        "favoured_offerings": [
+          "smoked river fish",
+          "a respectful bow"
+        ],
+        "dislikes": [
+          "being called by name in the forest",
+          "garlic"
+        ]
+      },
+      "control": {
+        "command_dc": 16,
+        "difficulty": "Hard",
+        "disobeys_when": "Ordered to retreat from a challenger."
+      },
+      "lore": "Thornstripes mark their ground by letting thorns grow where they sleep. Travellers who find a ring of briar in the forest step around it and bow, and the briar lets them pass.",
+      "folklore_sources": [
+        {
+          "region": "Korea",
+          "tradition": "The founding myth of Dangun, in which a tiger and a bear asked to become human; the bear endured a hundred days in a cave on mugwort and garlic, but the tiger left early."
+        },
+        {
+          "region": "Malaysia",
+          "tradition": "The rural Malay custom of speaking of the tiger respectfully, as Datuk or Pak Belang (\"Mr Stripes\"), rather than naming it in the forest."
+        },
+        {
+          "region": "China",
+          "tradition": "The tiger as king of the hundred beasts, with the character 王 (king) said to be written in the stripes on its brow."
+        }
+      ]
+    },
+    {
+      "id": "torakai",
+      "name": "Torakai",
+      "line": "tiger",
+      "kind": "zodiac",
+      "stage": 3,
+      "stage_name": "Sovereign",
+      "epithet": "The Verdant Fang",
+      "playable": true,
+      "habitat": "The green heart of the Hour of the Tiger.",
+      "description": "A colossal tiger with jade-green eyes and the mark of a king on its brow.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 320,
+          "sd": 38.4,
+          "min": 205,
+          "p95": 383,
+          "p99": 409,
+          "upper": 435
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 330,
+          "sd": 19.8,
+          "min": 271,
+          "p95": 363,
+          "p99": 376,
+          "upper": 389
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "proud",
+            "weight": 30
+          },
+          {
+            "id": "bold",
+            "weight": 30
+          },
+          {
+            "id": "wary",
+            "weight": 20
+          },
+          {
+            "id": "serene",
+            "weight": 20
+          }
+        ],
+        "markings": [
+          {
+            "id": "amber-striped",
+            "weight": 50
+          },
+          {
+            "id": "moss-striped",
+            "weight": 30
+          },
+          {
+            "id": "ash-pale",
+            "weight": 15
+          },
+          {
+            "id": "black-ghost-stripes",
+            "weight": 5
+          }
+        ],
+        "quirks": [
+          "Washes its face before every fight.",
+          "Hates having its stripes counted.",
+          "Sleeps in the highest branch that will hold it.",
+          "Roars once at dawn to claim the day."
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 22,
+        "story_only": true,
+        "difficulty": "Story only",
+        "favoured_offerings": [
+          "smoked river fish",
+          "a respectful bow"
+        ],
+        "dislikes": [
+          "being called by name in the forest",
+          "garlic"
+        ]
+      },
+      "control": {
+        "command_dc": 20,
+        "difficulty": "Very hard",
+        "disobeys_when": "Ordered to retreat from a challenger."
+      },
+      "lore": "Long ago a tiger and a bear sat in a cave and tried to become something else. The bear endured; the tiger walked out into the light. Torakai tells this story proudly, because it chose to remain a tiger. It keeps its strength behind gates of will, and opens them one by one only when it must, knowing each gate costs it something it cannot take back.",
+      "folklore_sources": [
+        {
+          "region": "Korea",
+          "tradition": "The founding myth of Dangun, in which a tiger and a bear asked to become human; the bear endured a hundred days in a cave on mugwort and garlic, but the tiger left early."
+        },
+        {
+          "region": "Malaysia",
+          "tradition": "The rural Malay custom of speaking of the tiger respectfully, as Datuk or Pak Belang (\"Mr Stripes\"), rather than naming it in the forest."
+        },
+        {
+          "region": "China",
+          "tradition": "The tiger as king of the hundred beasts, with the character 王 (king) said to be written in the stripes on its brow."
+        }
+      ]
+    },
+    {
+      "id": "mooncotton",
+      "name": "Mooncotton",
+      "line": "rabbit",
+      "kind": "zodiac",
+      "stage": 1,
+      "stage_name": "Kit",
+      "playable": true,
+      "habitat": "Clover meadows, moonlit hillsides.",
+      "description": "A round, fluffy rabbit whose fur glows faintly on clear nights.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 2.5,
+          "sd": 0.3,
+          "min": 1.6,
+          "p95": 2.99,
+          "p99": 3.2,
+          "upper": 3.4
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 45,
+          "sd": 2.7,
+          "min": 36.9,
+          "p95": 49.4,
+          "p99": 51.3,
+          "upper": 53.1
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "gentle",
+            "weight": 30
+          },
+          {
+            "id": "playful",
+            "weight": 30
+          },
+          {
+            "id": "wary",
+            "weight": 25
+          },
+          {
+            "id": "curious",
+            "weight": 15
+          }
+        ],
+        "markings": [
+          {
+            "id": "cotton-white",
+            "weight": 45
+          },
+          {
+            "id": "dawn-grey",
+            "weight": 30
+          },
+          {
+            "id": "clover-flecked",
+            "weight": 20
+          },
+          {
+            "id": "moon-silver",
+            "weight": 5
+          }
+        ],
+        "quirks": [
+          "Thumps a hind foot when a friend is in danger.",
+          "Pounds the ground in rhythm under a full moon.",
+          "Collects four-leaf clovers.",
+          "Always sleeps facing the moon."
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 13,
+        "story_only": false,
+        "difficulty": "Moderate",
+        "favoured_offerings": [
+          "rice cakes",
+          "clover",
+          "sweet osmanthus"
+        ],
+        "dislikes": [
+          "shouting",
+          "being picked up"
+        ]
+      },
+      "control": {
+        "command_dc": 9,
+        "difficulty": "Easy",
+        "disobeys_when": "Ordered to attack a foe that is already beaten."
+      },
+      "lore": "Mooncottons gather in rings on full-moon nights and thump the ground in rhythm. Children who join the rhythm are said to dream of the moon and wake with their scrapes healed.",
+      "folklore_sources": [
+        {
+          "region": "China, Japan, Korea",
+          "tradition": "The rabbit in the moon pounding with a mortar and pestle (the elixir of life in China; rice cakes, mochi or tteok, in Japan and Korea)."
+        },
+        {
+          "region": "South and Southeast Asia",
+          "tradition": "The Buddhist Śaśa Jātaka, in which a rabbit offers itself as food to a hungry traveller, who places its image on the moon in gratitude."
+        }
+      ]
+    },
+    {
+      "id": "hareveil",
+      "name": "Hareveil",
+      "line": "rabbit",
+      "kind": "zodiac",
+      "stage": 2,
+      "stage_name": "Adept",
+      "playable": true,
+      "habitat": "Mist-covered fields, mountain shrines.",
+      "description": "A long-eared hare wrapped in a trailing veil of silver mist.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 9,
+          "sd": 1.08,
+          "min": 5.76,
+          "p95": 10.8,
+          "p99": 11.5,
+          "upper": 12.2
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 75,
+          "sd": 4.5,
+          "min": 61.5,
+          "p95": 82.4,
+          "p99": 85.5,
+          "upper": 88.5
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "gentle",
+            "weight": 30
+          },
+          {
+            "id": "playful",
+            "weight": 30
+          },
+          {
+            "id": "wary",
+            "weight": 25
+          },
+          {
+            "id": "curious",
+            "weight": 15
+          }
+        ],
+        "markings": [
+          {
+            "id": "cotton-white",
+            "weight": 45
+          },
+          {
+            "id": "dawn-grey",
+            "weight": 30
+          },
+          {
+            "id": "clover-flecked",
+            "weight": 20
+          },
+          {
+            "id": "moon-silver",
+            "weight": 5
+          }
+        ],
+        "quirks": [
+          "Thumps a hind foot when a friend is in danger.",
+          "Pounds the ground in rhythm under a full moon.",
+          "Collects four-leaf clovers.",
+          "Always sleeps facing the moon."
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 17,
+        "story_only": false,
+        "difficulty": "Hard",
+        "favoured_offerings": [
+          "rice cakes",
+          "clover",
+          "sweet osmanthus"
+        ],
+        "dislikes": [
+          "shouting",
+          "being picked up"
+        ]
+      },
+      "control": {
+        "command_dc": 13,
+        "difficulty": "Moderate",
+        "disobeys_when": "Ordered to attack a foe that is already beaten."
+      },
+      "lore": "A Hareveil vanishes into its mist when startled and reappears beside whoever needs help most. Shrine-keepers leave out rice cakes for them and find the plates licked clean, with a single clover left in thanks.",
+      "folklore_sources": [
+        {
+          "region": "China, Japan, Korea",
+          "tradition": "The rabbit in the moon pounding with a mortar and pestle (the elixir of life in China; rice cakes, mochi or tteok, in Japan and Korea)."
+        },
+        {
+          "region": "South and Southeast Asia",
+          "tradition": "The Buddhist Śaśa Jātaka, in which a rabbit offers itself as food to a hungry traveller, who places its image on the moon in gratitude."
+        }
+      ]
+    },
+    {
+      "id": "usagetsu",
+      "name": "Usagetsu",
+      "line": "rabbit",
+      "kind": "zodiac",
+      "stage": 3,
+      "stage_name": "Sovereign",
+      "epithet": "The Jade Moon",
+      "playable": true,
+      "habitat": "The silver groves of the Hour of the Rabbit.",
+      "description": "A tall, serene hare carrying a jade mortar and pestle, its eyes the colour of moonrise.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 30,
+          "sd": 3.6,
+          "min": 19.2,
+          "p95": 35.9,
+          "p99": 38.4,
+          "upper": 40.8
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 120,
+          "sd": 7.2,
+          "min": 98.4,
+          "p95": 132,
+          "p99": 137,
+          "upper": 142
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "gentle",
+            "weight": 30
+          },
+          {
+            "id": "playful",
+            "weight": 30
+          },
+          {
+            "id": "wary",
+            "weight": 25
+          },
+          {
+            "id": "curious",
+            "weight": 15
+          }
+        ],
+        "markings": [
+          {
+            "id": "cotton-white",
+            "weight": 45
+          },
+          {
+            "id": "dawn-grey",
+            "weight": 30
+          },
+          {
+            "id": "clover-flecked",
+            "weight": 20
+          },
+          {
+            "id": "moon-silver",
+            "weight": 5
+          }
+        ],
+        "quirks": [
+          "Thumps a hind foot when a friend is in danger.",
+          "Pounds the ground in rhythm under a full moon.",
+          "Collects four-leaf clovers.",
+          "Always sleeps facing the moon."
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 22,
+        "story_only": true,
+        "difficulty": "Story only",
+        "favoured_offerings": [
+          "rice cakes",
+          "clover",
+          "sweet osmanthus"
+        ],
+        "dislikes": [
+          "shouting",
+          "being picked up"
+        ]
+      },
+      "control": {
+        "command_dc": 17,
+        "difficulty": "Hard",
+        "disobeys_when": "Ordered to attack a foe that is already beaten."
+      },
+      "lore": "A hungry traveller once came upon a rabbit with nothing to give, and the rabbit offered itself instead. The traveller, who was more than a traveller, set the rabbit's likeness in the moon. Usagetsu says it is that likeness, come down to finish the work. It pounds medicine in its mortar every night and gives it freely, asking only that no one waste it.",
+      "folklore_sources": [
+        {
+          "region": "China, Japan, Korea",
+          "tradition": "The rabbit in the moon pounding with a mortar and pestle (the elixir of life in China; rice cakes, mochi or tteok, in Japan and Korea)."
+        },
+        {
+          "region": "South and Southeast Asia",
+          "tradition": "The Buddhist Śaśa Jātaka, in which a rabbit offers itself as food to a hungry traveller, who places its image on the moon in gratitude."
+        }
+      ]
+    },
+    {
+      "id": "scalekin",
+      "name": "Scalekin",
+      "line": "dragon",
+      "kind": "zodiac",
+      "stage": 1,
+      "stage_name": "Kit",
+      "playable": true,
+      "habitat": "Waterfalls, mountain springs.",
+      "description": "A small, whiskered serpent-dragon with stubby legs and carp-like fins.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 12,
+          "sd": 1.44,
+          "min": 7.68,
+          "p95": 14.4,
+          "p99": 15.3,
+          "upper": 16.3
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 120,
+          "sd": 7.2,
+          "min": 98.4,
+          "p95": 132,
+          "p99": 137,
+          "upper": 142
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "proud",
+            "weight": 40
+          },
+          {
+            "id": "serene",
+            "weight": 25
+          },
+          {
+            "id": "curious",
+            "weight": 20
+          },
+          {
+            "id": "bold",
+            "weight": 15
+          }
+        ],
+        "markings": [
+          {
+            "id": "jade-scaled",
+            "weight": 40
+          },
+          {
+            "id": "cloud-white",
+            "weight": 30
+          },
+          {
+            "id": "pearl-bellied",
+            "weight": 25
+          },
+          {
+            "id": "five-coloured",
+            "weight": 5
+          }
+        ],
+        "quirks": [
+          "Carries a pearl it will not let anyone touch.",
+          "Changes the weather slightly with its mood.",
+          "Counts its own scales when anxious.",
+          "Bows to carp."
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 13,
+        "story_only": false,
+        "difficulty": "Moderate",
+        "favoured_offerings": [
+          "a polished pearl",
+          "clear spring water",
+          "poetry"
+        ],
+        "dislikes": [
+          "iron",
+          "centipedes"
+        ]
+      },
+      "control": {
+        "command_dc": 13,
+        "difficulty": "Moderate",
+        "disobeys_when": "Ordered to act beneath its dignity."
+      },
+      "lore": "Every Scalekin hatches beneath a waterfall and spends its youth trying to leap it. Most never make it. The ones that do are never quite the same, and neither is the waterfall.",
+      "folklore_sources": [
+        {
+          "region": "China",
+          "tradition": "The carp that leaps the falls at the Dragon Gate on the Yellow River becomes a dragon. A symbol of perseverance and success in examinations."
+        },
+        {
+          "region": "Vietnam",
+          "tradition": "Lạc Long Quân, the Dragon Lord, and Âu Cơ of the mountains, whose hundred children divided between sea and highlands to found the Vietnamese people."
+        },
+        {
+          "region": "Thailand and Laos",
+          "tradition": "The Naga of the Mekong, and the glowing \"naga fireballs\" said to rise from the river at the end of Buddhist Lent."
+        },
+        {
+          "region": "China",
+          "tradition": "Dragons chasing the flaming pearl, and the Dragon Kings who rule rain and the four seas."
+        }
+      ]
+    },
+    {
+      "id": "cloudcoil",
+      "name": "Cloudcoil",
+      "line": "dragon",
+      "kind": "zodiac",
+      "stage": 2,
+      "stage_name": "Adept",
+      "playable": true,
+      "habitat": "Mountain peaks, storm clouds.",
+      "description": "A long, lean dragon that swims through cloud the way a fish swims through water.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 180,
+          "sd": 21.6,
+          "min": 115,
+          "p95": 216,
+          "p99": 230,
+          "upper": 245
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 600,
+          "sd": 36,
+          "min": 492,
+          "p95": 659,
+          "p99": 684,
+          "upper": 708
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "proud",
+            "weight": 40
+          },
+          {
+            "id": "serene",
+            "weight": 25
+          },
+          {
+            "id": "curious",
+            "weight": 20
+          },
+          {
+            "id": "bold",
+            "weight": 15
+          }
+        ],
+        "markings": [
+          {
+            "id": "jade-scaled",
+            "weight": 40
+          },
+          {
+            "id": "cloud-white",
+            "weight": 30
+          },
+          {
+            "id": "pearl-bellied",
+            "weight": 25
+          },
+          {
+            "id": "five-coloured",
+            "weight": 5
+          }
+        ],
+        "quirks": [
+          "Carries a pearl it will not let anyone touch.",
+          "Changes the weather slightly with its mood.",
+          "Counts its own scales when anxious.",
+          "Bows to carp."
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 17,
+        "story_only": false,
+        "difficulty": "Hard",
+        "favoured_offerings": [
+          "a polished pearl",
+          "clear spring water",
+          "poetry"
+        ],
+        "dislikes": [
+          "iron",
+          "centipedes"
+        ]
+      },
+      "control": {
+        "command_dc": 17,
+        "difficulty": "Hard",
+        "disobeys_when": "Ordered to act beneath its dignity."
+      },
+      "lore": "Farmers watch for Cloudcoils in dry summers, because where one rests, rain follows. Rice villages hang paper pearls from their eaves to tempt them to stay.",
+      "folklore_sources": [
+        {
+          "region": "China",
+          "tradition": "The carp that leaps the falls at the Dragon Gate on the Yellow River becomes a dragon. A symbol of perseverance and success in examinations."
+        },
+        {
+          "region": "Vietnam",
+          "tradition": "Lạc Long Quân, the Dragon Lord, and Âu Cơ of the mountains, whose hundred children divided between sea and highlands to found the Vietnamese people."
+        },
+        {
+          "region": "Thailand and Laos",
+          "tradition": "The Naga of the Mekong, and the glowing \"naga fireballs\" said to rise from the river at the end of Buddhist Lent."
+        },
+        {
+          "region": "China",
+          "tradition": "Dragons chasing the flaming pearl, and the Dragon Kings who rule rain and the four seas."
+        }
+      ]
+    },
+    {
+      "id": "ryuuten",
+      "name": "Ryuuten",
+      "line": "dragon",
+      "kind": "zodiac",
+      "stage": 3,
+      "stage_name": "Sovereign",
+      "epithet": "Heaven's Coil",
+      "playable": true,
+      "habitat": "The sky above the Hour of the Dragon.",
+      "description": "An immense five-clawed dragon chasing a pearl that glows in all five colours.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 900,
+          "sd": 135,
+          "min": 495,
+          "p95": 1120,
+          "p99": 1210,
+          "upper": 1310
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 1800,
+          "sd": 135,
+          "min": 1400,
+          "p95": 2020,
+          "p99": 2110,
+          "upper": 2210
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "proud",
+            "weight": 40
+          },
+          {
+            "id": "serene",
+            "weight": 25
+          },
+          {
+            "id": "curious",
+            "weight": 20
+          },
+          {
+            "id": "bold",
+            "weight": 15
+          }
+        ],
+        "markings": [
+          {
+            "id": "jade-scaled",
+            "weight": 40
+          },
+          {
+            "id": "cloud-white",
+            "weight": 30
+          },
+          {
+            "id": "pearl-bellied",
+            "weight": 25
+          },
+          {
+            "id": "five-coloured",
+            "weight": 5
+          }
+        ],
+        "quirks": [
+          "Carries a pearl it will not let anyone touch.",
+          "Changes the weather slightly with its mood.",
+          "Counts its own scales when anxious.",
+          "Bows to carp."
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 22,
+        "story_only": true,
+        "difficulty": "Story only",
+        "favoured_offerings": [
+          "a polished pearl",
+          "clear spring water",
+          "poetry"
+        ],
+        "dislikes": [
+          "iron",
+          "centipedes"
+        ]
+      },
+      "control": {
+        "command_dc": 21,
+        "difficulty": "Very hard",
+        "disobeys_when": "Ordered to act beneath its dignity."
+      },
+      "lore": "Ryuuten leapt the Dragon Gate when the world was young and has been climbing ever since. Its pearl holds a breath of every element. In the Great Race it stopped to bring rain to a parched village, and it has never regretted finishing fifth. River-folk say that when the river glows at the end of the rains, Ryuuten is passing beneath.",
+      "folklore_sources": [
+        {
+          "region": "China",
+          "tradition": "The carp that leaps the falls at the Dragon Gate on the Yellow River becomes a dragon. A symbol of perseverance and success in examinations."
+        },
+        {
+          "region": "Vietnam",
+          "tradition": "Lạc Long Quân, the Dragon Lord, and Âu Cơ of the mountains, whose hundred children divided between sea and highlands to found the Vietnamese people."
+        },
+        {
+          "region": "Thailand and Laos",
+          "tradition": "The Naga of the Mekong, and the glowing \"naga fireballs\" said to rise from the river at the end of Buddhist Lent."
+        },
+        {
+          "region": "China",
+          "tradition": "Dragons chasing the flaming pearl, and the Dragon Kings who rule rain and the four seas."
+        }
+      ]
+    },
+    {
+      "id": "hissling",
+      "name": "Hissling",
+      "line": "snake",
+      "kind": "zodiac",
+      "stage": 1,
+      "stage_name": "Kit",
+      "playable": true,
+      "habitat": "Warm stone walls, temple courtyards.",
+      "description": "A slender snake with ember-red bands that glow when it is angry.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 1.5,
+          "sd": 0.18,
+          "min": 0.96,
+          "p95": 1.8,
+          "p99": 1.92,
+          "upper": 2.04
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 100,
+          "sd": 6,
+          "min": 82,
+          "p95": 110,
+          "p99": 114,
+          "upper": 118
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "serene",
+            "weight": 30
+          },
+          {
+            "id": "sly",
+            "weight": 30
+          },
+          {
+            "id": "wary",
+            "weight": 25
+          },
+          {
+            "id": "proud",
+            "weight": 15
+          }
+        ],
+        "markings": [
+          {
+            "id": "ember-banded",
+            "weight": 40
+          },
+          {
+            "id": "jade-green",
+            "weight": 25
+          },
+          {
+            "id": "ash-grey",
+            "weight": 25
+          },
+          {
+            "id": "pure-white",
+            "weight": 10
+          }
+        ],
+        "quirks": [
+          "Sheds its skin on the same day each year.",
+          "Basks in lamplight and refuses to move.",
+          "Remembers every insult.",
+          "Coils around its Keeper's arm when content."
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 13,
+        "story_only": false,
+        "difficulty": "Moderate",
+        "favoured_offerings": [
+          "warm stones",
+          "eggs",
+          "an honest apology"
+        ],
+        "dislikes": [
+          "cold water",
+          "sudden noise"
+        ]
+      },
+      "control": {
+        "command_dc": 11,
+        "difficulty": "Moderate",
+        "disobeys_when": "Ordered to strike someone who has shown it kindness."
+      },
+      "lore": "Hisslings bask on temple steps and are considered lucky, so long as no one steps on them. A Hissling that sheds near your door is said to be leaving you its old misfortunes.",
+      "folklore_sources": [
+        {
+          "region": "China",
+          "tradition": "The Legend of the White Snake (Bai Suzhen), a snake spirit who cultivates for centuries, takes human form for love and is imprisoned under Leifeng Pagoda."
+        },
+        {
+          "region": "Japan",
+          "tradition": "White snakes as messengers of Benzaiten, goddess of music and fortune, and the protected white snakes of Iwakuni."
+        }
+      ]
+    },
+    {
+      "id": "coilshade",
+      "name": "Coilshade",
+      "line": "snake",
+      "kind": "zodiac",
+      "stage": 2,
+      "stage_name": "Adept",
+      "playable": true,
+      "habitat": "Ruined pagodas, deep forest.",
+      "description": "A long, smoke-grey snake whose coils leave faint scorch marks.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 25,
+          "sd": 3,
+          "min": 16,
+          "p95": 29.9,
+          "p99": 32,
+          "upper": 34
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 400,
+          "sd": 24,
+          "min": 328,
+          "p95": 439,
+          "p99": 456,
+          "upper": 472
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "serene",
+            "weight": 30
+          },
+          {
+            "id": "sly",
+            "weight": 30
+          },
+          {
+            "id": "wary",
+            "weight": 25
+          },
+          {
+            "id": "proud",
+            "weight": 15
+          }
+        ],
+        "markings": [
+          {
+            "id": "ember-banded",
+            "weight": 40
+          },
+          {
+            "id": "jade-green",
+            "weight": 25
+          },
+          {
+            "id": "ash-grey",
+            "weight": 25
+          },
+          {
+            "id": "pure-white",
+            "weight": 10
+          }
+        ],
+        "quirks": [
+          "Sheds its skin on the same day each year.",
+          "Basks in lamplight and refuses to move.",
+          "Remembers every insult.",
+          "Coils around its Keeper's arm when content."
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 17,
+        "story_only": false,
+        "difficulty": "Hard",
+        "favoured_offerings": [
+          "warm stones",
+          "eggs",
+          "an honest apology"
+        ],
+        "dislikes": [
+          "cold water",
+          "sudden noise"
+        ]
+      },
+      "control": {
+        "command_dc": 15,
+        "difficulty": "Hard",
+        "disobeys_when": "Ordered to strike someone who has shown it kindness."
+      },
+      "lore": "Coilshades are patient beyond reason. One was found coiled around a pagoda bell after three hundred years, waiting for a debt to be repaid. The debt was paid; the Coilshade left without a word.",
+      "folklore_sources": [
+        {
+          "region": "China",
+          "tradition": "The Legend of the White Snake (Bai Suzhen), a snake spirit who cultivates for centuries, takes human form for love and is imprisoned under Leifeng Pagoda."
+        },
+        {
+          "region": "Japan",
+          "tradition": "White snakes as messengers of Benzaiten, goddess of music and fortune, and the protected white snakes of Iwakuni."
+        }
+      ]
+    },
+    {
+      "id": "hebiko",
+      "name": "Hebiko",
+      "line": "snake",
+      "kind": "zodiac",
+      "stage": 3,
+      "stage_name": "Sovereign",
+      "epithet": "The Ninefold Venom",
+      "playable": true,
+      "habitat": "The lamplit pagodas of the Hour of the Snake.",
+      "description": "A great serpent with nine faint rings of colour, each said to be a skin it has shed and survived.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 140,
+          "sd": 16.8,
+          "min": 89.6,
+          "p95": 168,
+          "p99": 179,
+          "upper": 190
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 900,
+          "sd": 54,
+          "min": 738,
+          "p95": 989,
+          "p99": 1030,
+          "upper": 1060
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "serene",
+            "weight": 30
+          },
+          {
+            "id": "sly",
+            "weight": 30
+          },
+          {
+            "id": "wary",
+            "weight": 25
+          },
+          {
+            "id": "proud",
+            "weight": 15
+          }
+        ],
+        "markings": [
+          {
+            "id": "ember-banded",
+            "weight": 40
+          },
+          {
+            "id": "jade-green",
+            "weight": 25
+          },
+          {
+            "id": "ash-grey",
+            "weight": 25
+          },
+          {
+            "id": "pure-white",
+            "weight": 10
+          }
+        ],
+        "quirks": [
+          "Sheds its skin on the same day each year.",
+          "Basks in lamplight and refuses to move.",
+          "Remembers every insult.",
+          "Coils around its Keeper's arm when content."
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 22,
+        "story_only": true,
+        "difficulty": "Story only",
+        "favoured_offerings": [
+          "warm stones",
+          "eggs",
+          "an honest apology"
+        ],
+        "dislikes": [
+          "cold water",
+          "sudden noise"
+        ]
+      },
+      "control": {
+        "command_dc": 19,
+        "difficulty": "Very hard",
+        "disobeys_when": "Ordered to strike someone who has shown it kindness."
+      },
+      "lore": "They tell of a snake that studied for a thousand years to take a gentler shape, and was imprisoned under a pagoda for daring to love. Hebiko claims no kinship with that story, but it will not pass a pagoda without stopping. It has shed eight lives already. The ninth, it says, it is saving for something worth dying for.",
+      "folklore_sources": [
+        {
+          "region": "China",
+          "tradition": "The Legend of the White Snake (Bai Suzhen), a snake spirit who cultivates for centuries, takes human form for love and is imprisoned under Leifeng Pagoda."
+        },
+        {
+          "region": "Japan",
+          "tradition": "White snakes as messengers of Benzaiten, goddess of music and fortune, and the protected white snakes of Iwakuni."
+        }
+      ]
+    },
+    {
+      "id": "foalspark",
+      "name": "Foalspark",
+      "line": "horse",
+      "kind": "zodiac",
+      "stage": 1,
+      "stage_name": "Kit",
+      "playable": true,
+      "habitat": "Open grasslands, festival grounds.",
+      "description": "A gangly foal whose hooves throw sparks on stone.",
+      "physical": {
+        "measure": "shoulder",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 50,
+          "sd": 6,
+          "min": 32,
+          "p95": 59.9,
+          "p99": 64,
+          "upper": 68
+        },
+        "shoulder_cm": {
+          "distribution": "truncated_normal",
+          "mean": 100,
+          "sd": 6,
+          "min": 82,
+          "p95": 110,
+          "p99": 114,
+          "upper": 118
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "restless",
+            "weight": 35
+          },
+          {
+            "id": "bold",
+            "weight": 30
+          },
+          {
+            "id": "playful",
+            "weight": 20
+          },
+          {
+            "id": "proud",
+            "weight": 15
+          }
+        ],
+        "markings": [
+          {
+            "id": "sun-chestnut",
+            "weight": 40
+          },
+          {
+            "id": "cloud-dappled",
+            "weight": 30
+          },
+          {
+            "id": "black-maned",
+            "weight": 25
+          },
+          {
+            "id": "white-stockinged",
+            "weight": 5
+          }
+        ],
+        "quirks": [
+          "Cannot stand still for more than a minute.",
+          "Races its own shadow at noon.",
+          "Tosses its mane at anything it dislikes.",
+          "Loves the sound of bells."
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 13,
+        "story_only": false,
+        "difficulty": "Moderate",
+        "favoured_offerings": [
+          "salted barley",
+          "a long gallop"
+        ],
+        "dislikes": [
+          "fences",
+          "mud"
+        ]
+      },
+      "control": {
+        "command_dc": 11,
+        "difficulty": "Moderate",
+        "disobeys_when": "Ordered to wait."
+      },
+      "lore": "Foalsparks race anything that moves, including clouds. Herders paint their likeness on wooden plaques and hang them at shrines to ask for safe journeys.",
+      "folklore_sources": [
+        {
+          "region": "China and Korea",
+          "tradition": "The thousand-li horse (qianlima; Cheollima in Korea), which runs a thousand li in a single day."
+        },
+        {
+          "region": "Japan",
+          "tradition": "Horses offered to shrines, later replaced by painted wooden votive plaques (ema)."
+        },
+        {
+          "region": "Inner Asia",
+          "tradition": "The windhorse that carries prayers and good fortune on the wind."
+        }
+      ]
+    },
+    {
+      "id": "galeflank",
+      "name": "Galeflank",
+      "line": "horse",
+      "kind": "zodiac",
+      "stage": 2,
+      "stage_name": "Adept",
+      "playable": true,
+      "habitat": "Steppe, high plateaus.",
+      "description": "A lean warhorse whose mane streams like a burning banner even in still air.",
+      "physical": {
+        "measure": "shoulder",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 380,
+          "sd": 45.6,
+          "min": 243,
+          "p95": 455,
+          "p99": 486,
+          "upper": 517
+        },
+        "shoulder_cm": {
+          "distribution": "truncated_normal",
+          "mean": 155,
+          "sd": 9.3,
+          "min": 127,
+          "p95": 170,
+          "p99": 177,
+          "upper": 183
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "restless",
+            "weight": 35
+          },
+          {
+            "id": "bold",
+            "weight": 30
+          },
+          {
+            "id": "playful",
+            "weight": 20
+          },
+          {
+            "id": "proud",
+            "weight": 15
+          }
+        ],
+        "markings": [
+          {
+            "id": "sun-chestnut",
+            "weight": 40
+          },
+          {
+            "id": "cloud-dappled",
+            "weight": 30
+          },
+          {
+            "id": "black-maned",
+            "weight": 25
+          },
+          {
+            "id": "white-stockinged",
+            "weight": 5
+          }
+        ],
+        "quirks": [
+          "Cannot stand still for more than a minute.",
+          "Races its own shadow at noon.",
+          "Tosses its mane at anything it dislikes.",
+          "Loves the sound of bells."
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 17,
+        "story_only": false,
+        "difficulty": "Hard",
+        "favoured_offerings": [
+          "salted barley",
+          "a long gallop"
+        ],
+        "dislikes": [
+          "fences",
+          "mud"
+        ]
+      },
+      "control": {
+        "command_dc": 15,
+        "difficulty": "Hard",
+        "disobeys_when": "Ordered to wait."
+      },
+      "lore": "A Galeflank can carry a message across three valleys between sunrise and noon. Messengers who ride one tie prayer flags to its mane, and the wind carries the prayers along behind.",
+      "folklore_sources": [
+        {
+          "region": "China and Korea",
+          "tradition": "The thousand-li horse (qianlima; Cheollima in Korea), which runs a thousand li in a single day."
+        },
+        {
+          "region": "Japan",
+          "tradition": "Horses offered to shrines, later replaced by painted wooden votive plaques (ema)."
+        },
+        {
+          "region": "Inner Asia",
+          "tradition": "The windhorse that carries prayers and good fortune on the wind."
+        }
+      ]
+    },
+    {
+      "id": "umaren",
+      "name": "Umaren",
+      "line": "horse",
+      "kind": "zodiac",
+      "stage": 3,
+      "stage_name": "Sovereign",
+      "epithet": "The Sunrunner",
+      "playable": true,
+      "habitat": "The burning plains of the Hour of the Horse.",
+      "description": "A radiant stallion of golden fire whose hoofprints glow for an hour.",
+      "physical": {
+        "measure": "shoulder",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 650,
+          "sd": 78,
+          "min": 416,
+          "p95": 778,
+          "p99": 831,
+          "upper": 884
+        },
+        "shoulder_cm": {
+          "distribution": "truncated_normal",
+          "mean": 180,
+          "sd": 10.8,
+          "min": 148,
+          "p95": 198,
+          "p99": 205,
+          "upper": 212
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "restless",
+            "weight": 35
+          },
+          {
+            "id": "bold",
+            "weight": 30
+          },
+          {
+            "id": "playful",
+            "weight": 20
+          },
+          {
+            "id": "proud",
+            "weight": 15
+          }
+        ],
+        "markings": [
+          {
+            "id": "sun-chestnut",
+            "weight": 40
+          },
+          {
+            "id": "cloud-dappled",
+            "weight": 30
+          },
+          {
+            "id": "black-maned",
+            "weight": 25
+          },
+          {
+            "id": "white-stockinged",
+            "weight": 5
+          }
+        ],
+        "quirks": [
+          "Cannot stand still for more than a minute.",
+          "Races its own shadow at noon.",
+          "Tosses its mane at anything it dislikes.",
+          "Loves the sound of bells."
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 22,
+        "story_only": true,
+        "difficulty": "Story only",
+        "favoured_offerings": [
+          "salted barley",
+          "a long gallop"
+        ],
+        "dislikes": [
+          "fences",
+          "mud"
+        ]
+      },
+      "control": {
+        "command_dc": 19,
+        "difficulty": "Very hard",
+        "disobeys_when": "Ordered to wait."
+      },
+      "lore": "Umaren was the fastest beast in the Great Race and finished seventh, because it was startled by the Snake at the last bend. It has never forgiven itself, and it has never stopped running. It can cross a thousand li between dawn and dusk and does so for no reason but the joy of it. To ride Umaren is to forget, for one day, that you were ever slow.",
+      "folklore_sources": [
+        {
+          "region": "China and Korea",
+          "tradition": "The thousand-li horse (qianlima; Cheollima in Korea), which runs a thousand li in a single day."
+        },
+        {
+          "region": "Japan",
+          "tradition": "Horses offered to shrines, later replaced by painted wooden votive plaques (ema)."
+        },
+        {
+          "region": "Inner Asia",
+          "tradition": "The windhorse that carries prayers and good fortune on the wind."
+        }
+      ]
+    },
+    {
+      "id": "woolkid",
+      "name": "Woolkid",
+      "line": "goat",
+      "kind": "zodiac",
+      "stage": 1,
+      "stage_name": "Kit",
+      "playable": true,
+      "habitat": "Mountain meadows, terraced slopes.",
+      "description": "A tiny kid with fleece like a cloud of rice paper and soft nubs for horns.",
+      "physical": {
+        "measure": "shoulder",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 4,
+          "sd": 0.48,
+          "min": 2.56,
+          "p95": 4.79,
+          "p99": 5.12,
+          "upper": 5.44
+        },
+        "shoulder_cm": {
+          "distribution": "truncated_normal",
+          "mean": 50,
+          "sd": 3,
+          "min": 41,
+          "p95": 54.9,
+          "p99": 57,
+          "upper": 59
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "gentle",
+            "weight": 35
+          },
+          {
+            "id": "stubborn",
+            "weight": 25
+          },
+          {
+            "id": "serene",
+            "weight": 20
+          },
+          {
+            "id": "playful",
+            "weight": 20
+          }
+        ],
+        "markings": [
+          {
+            "id": "cream-wool",
+            "weight": 45
+          },
+          {
+            "id": "earth-brown",
+            "weight": 30
+          },
+          {
+            "id": "grey-bearded",
+            "weight": 20
+          },
+          {
+            "id": "gold-horned",
+            "weight": 5
+          }
+        ],
+        "quirks": [
+          "Climbs onto anything taller than itself.",
+          "Bleats a little song when it is happy.",
+          "Shares its food with smaller beasts.",
+          "Butts open any closed gate."
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 13,
+        "story_only": false,
+        "difficulty": "Moderate",
+        "favoured_offerings": [
+          "rice stalks",
+          "mountain herbs",
+          "a song"
+        ],
+        "dislikes": [
+          "rain",
+          "being fenced in"
+        ]
+      },
+      "control": {
+        "command_dc": 9,
+        "difficulty": "Easy",
+        "disobeys_when": "Ordered to abandon a hurt ally."
+      },
+      "lore": "Woolkids climb onto rooftops, walls and sleeping Calfstones. Herders say a Woolkid on the roof means a good harvest, and they would never shoo one down.",
+      "folklore_sources": [
+        {
+          "region": "China",
+          "tradition": "The Five Rams of Guangzhou, in which five immortals rode five rams carrying stalks of rice to a starving city, then left the rams behind as stone. Guangzhou is still called the City of Rams."
+        }
+      ]
+    },
+    {
+      "id": "cragram",
+      "name": "Cragram",
+      "line": "goat",
+      "kind": "zodiac",
+      "stage": 2,
+      "stage_name": "Adept",
+      "playable": true,
+      "habitat": "Cliffs, mountain monasteries.",
+      "description": "A sure-footed ram with spiralled horns of banded stone.",
+      "physical": {
+        "measure": "shoulder",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 70,
+          "sd": 8.4,
+          "min": 44.8,
+          "p95": 83.8,
+          "p99": 89.5,
+          "upper": 95.2
+        },
+        "shoulder_cm": {
+          "distribution": "truncated_normal",
+          "mean": 90,
+          "sd": 5.4,
+          "min": 73.8,
+          "p95": 98.9,
+          "p99": 103,
+          "upper": 106
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "gentle",
+            "weight": 35
+          },
+          {
+            "id": "stubborn",
+            "weight": 25
+          },
+          {
+            "id": "serene",
+            "weight": 20
+          },
+          {
+            "id": "playful",
+            "weight": 20
+          }
+        ],
+        "markings": [
+          {
+            "id": "cream-wool",
+            "weight": 45
+          },
+          {
+            "id": "earth-brown",
+            "weight": 30
+          },
+          {
+            "id": "grey-bearded",
+            "weight": 20
+          },
+          {
+            "id": "gold-horned",
+            "weight": 5
+          }
+        ],
+        "quirks": [
+          "Climbs onto anything taller than itself.",
+          "Bleats a little song when it is happy.",
+          "Shares its food with smaller beasts.",
+          "Butts open any closed gate."
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 17,
+        "story_only": false,
+        "difficulty": "Hard",
+        "favoured_offerings": [
+          "rice stalks",
+          "mountain herbs",
+          "a song"
+        ],
+        "dislikes": [
+          "rain",
+          "being fenced in"
+        ]
+      },
+      "control": {
+        "command_dc": 13,
+        "difficulty": "Moderate",
+        "disobeys_when": "Ordered to abandon a hurt ally."
+      },
+      "lore": "Cragrams carry supplies to cliffside monasteries no mule can reach. Monks ring a bell to call them, and the Cragrams answer by headbutting the bell back.",
+      "folklore_sources": [
+        {
+          "region": "China",
+          "tradition": "The Five Rams of Guangzhou, in which five immortals rode five rams carrying stalks of rice to a starving city, then left the rams behind as stone. Guangzhou is still called the City of Rams."
+        }
+      ]
+    },
+    {
+      "id": "yangsu",
+      "name": "Yangsu",
+      "line": "goat",
+      "kind": "zodiac",
+      "stage": 3,
+      "stage_name": "Sovereign",
+      "epithet": "The Gentle Summit",
+      "playable": true,
+      "habitat": "The mountain shrines of the Hour of the Goat.",
+      "description": "A dignified ram with golden horns, carrying five stalks of rice in its fleece.",
+      "physical": {
+        "measure": "shoulder",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 160,
+          "sd": 19.2,
+          "min": 102,
+          "p95": 192,
+          "p99": 205,
+          "upper": 218
+        },
+        "shoulder_cm": {
+          "distribution": "truncated_normal",
+          "mean": 120,
+          "sd": 7.2,
+          "min": 98.4,
+          "p95": 132,
+          "p99": 137,
+          "upper": 142
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "gentle",
+            "weight": 35
+          },
+          {
+            "id": "stubborn",
+            "weight": 25
+          },
+          {
+            "id": "serene",
+            "weight": 20
+          },
+          {
+            "id": "playful",
+            "weight": 20
+          }
+        ],
+        "markings": [
+          {
+            "id": "cream-wool",
+            "weight": 45
+          },
+          {
+            "id": "earth-brown",
+            "weight": 30
+          },
+          {
+            "id": "grey-bearded",
+            "weight": 20
+          },
+          {
+            "id": "gold-horned",
+            "weight": 5
+          }
+        ],
+        "quirks": [
+          "Climbs onto anything taller than itself.",
+          "Bleats a little song when it is happy.",
+          "Shares its food with smaller beasts.",
+          "Butts open any closed gate."
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 22,
+        "story_only": true,
+        "difficulty": "Story only",
+        "favoured_offerings": [
+          "rice stalks",
+          "mountain herbs",
+          "a song"
+        ],
+        "dislikes": [
+          "rain",
+          "being fenced in"
+        ]
+      },
+      "control": {
+        "command_dc": 17,
+        "difficulty": "Hard",
+        "disobeys_when": "Ordered to abandon a hurt ally."
+      },
+      "lore": "In a starving city, the story goes, five riders came down from the clouds on five rams, each carrying a stalk of rice. When they left, the rams stayed and turned to stone so the city would never forget. Yangsu says it is the sixth ram, the one who walked home. It sings to the hungry and the frightened, and wherever it sings, rice grows a little thicker.",
+      "folklore_sources": [
+        {
+          "region": "China",
+          "tradition": "The Five Rams of Guangzhou, in which five immortals rode five rams carrying stalks of rice to a starving city, then left the rams behind as stone. Guangzhou is still called the City of Rams."
+        }
+      ]
+    },
+    {
+      "id": "mischkit",
+      "name": "Mischkit",
+      "line": "monkey",
+      "kind": "zodiac",
+      "stage": 1,
+      "stage_name": "Kit",
+      "playable": true,
+      "habitat": "Temple forests, market rooftops.",
+      "description": "A small, bright-eyed monkey with a silver-tipped tail it uses like a third hand.",
+      "physical": {
+        "measure": "height",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 3,
+          "sd": 0.36,
+          "min": 1.92,
+          "p95": 3.59,
+          "p99": 3.84,
+          "upper": 4.08
+        },
+        "height_cm": {
+          "distribution": "truncated_normal",
+          "mean": 45,
+          "sd": 2.7,
+          "min": 36.9,
+          "p95": 49.4,
+          "p99": 51.3,
+          "upper": 53.1
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "curious",
+            "weight": 35
+          },
+          {
+            "id": "playful",
+            "weight": 30
+          },
+          {
+            "id": "sly",
+            "weight": 25
+          },
+          {
+            "id": "restless",
+            "weight": 10
+          }
+        ],
+        "markings": [
+          {
+            "id": "copper-furred",
+            "weight": 40
+          },
+          {
+            "id": "silver-backed",
+            "weight": 30
+          },
+          {
+            "id": "red-faced",
+            "weight": 25
+          },
+          {
+            "id": "golden",
+            "weight": 5
+          }
+        ],
+        "quirks": [
+          "Copies the gestures of whoever it is watching.",
+          "Steals hats.",
+          "Covers its eyes, ears or mouth when it disapproves.",
+          "Takes apart anything with moving parts."
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 13,
+        "story_only": false,
+        "difficulty": "Moderate",
+        "favoured_offerings": [
+          "peaches",
+          "puzzles",
+          "a new trick"
+        ],
+        "dislikes": [
+          "being laughed at",
+          "repetition"
+        ]
+      },
+      "control": {
+        "command_dc": 12,
+        "difficulty": "Moderate",
+        "disobeys_when": "It thinks it has a better idea, which is often."
+      },
+      "lore": "Mischkits steal hats, sandals and spectacles from temple visitors, then trade them back for fruit. Monks insist this is a lesson in non-attachment.",
+      "folklore_sources": [
+        {
+          "region": "Japan",
+          "tradition": "The three wise monkeys (see no evil, hear no evil, speak no evil) carved at Tōshō-gū in Nikkō."
+        },
+        {
+          "region": "Japan",
+          "tradition": "Monkeys as messengers of the Sannō shrines, and the pun saru (\"monkey\" and \"to leave\"), so a monkey charm makes evil leave."
+        },
+        {
+          "region": "Indonesia",
+          "tradition": "The temple monkeys of Bali's forest shrines, honoured guardians and notorious thieves."
+        }
+      ]
+    },
+    {
+      "id": "trickpaw",
+      "name": "Trickpaw",
+      "line": "monkey",
+      "kind": "zodiac",
+      "stage": 2,
+      "stage_name": "Adept",
+      "playable": true,
+      "habitat": "Shrine forests, mountain workshops.",
+      "description": "A lanky monkey with metal-bright fingers that can copy any knot, lock or gesture.",
+      "physical": {
+        "measure": "height",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 18,
+          "sd": 2.16,
+          "min": 11.5,
+          "p95": 21.6,
+          "p99": 23,
+          "upper": 24.5
+        },
+        "height_cm": {
+          "distribution": "truncated_normal",
+          "mean": 90,
+          "sd": 5.4,
+          "min": 73.8,
+          "p95": 98.9,
+          "p99": 103,
+          "upper": 106
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "curious",
+            "weight": 35
+          },
+          {
+            "id": "playful",
+            "weight": 30
+          },
+          {
+            "id": "sly",
+            "weight": 25
+          },
+          {
+            "id": "restless",
+            "weight": 10
+          }
+        ],
+        "markings": [
+          {
+            "id": "copper-furred",
+            "weight": 40
+          },
+          {
+            "id": "silver-backed",
+            "weight": 30
+          },
+          {
+            "id": "red-faced",
+            "weight": 25
+          },
+          {
+            "id": "golden",
+            "weight": 5
+          }
+        ],
+        "quirks": [
+          "Copies the gestures of whoever it is watching.",
+          "Steals hats.",
+          "Covers its eyes, ears or mouth when it disapproves.",
+          "Takes apart anything with moving parts."
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 17,
+        "story_only": false,
+        "difficulty": "Hard",
+        "favoured_offerings": [
+          "peaches",
+          "puzzles",
+          "a new trick"
+        ],
+        "dislikes": [
+          "being laughed at",
+          "repetition"
+        ]
+      },
+      "control": {
+        "command_dc": 16,
+        "difficulty": "Hard",
+        "disobeys_when": "It thinks it has a better idea, which is often."
+      },
+      "lore": "A Trickpaw shown a lock once can open it forever. Shrine guardians keep them as gate wardens and pay them in peaches to stay honest.",
+      "folklore_sources": [
+        {
+          "region": "Japan",
+          "tradition": "The three wise monkeys (see no evil, hear no evil, speak no evil) carved at Tōshō-gū in Nikkō."
+        },
+        {
+          "region": "Japan",
+          "tradition": "Monkeys as messengers of the Sannō shrines, and the pun saru (\"monkey\" and \"to leave\"), so a monkey charm makes evil leave."
+        },
+        {
+          "region": "Indonesia",
+          "tradition": "The temple monkeys of Bali's forest shrines, honoured guardians and notorious thieves."
+        }
+      ]
+    },
+    {
+      "id": "sarugen",
+      "name": "Sarugen",
+      "line": "monkey",
+      "kind": "zodiac",
+      "stage": 3,
+      "stage_name": "Sovereign",
+      "epithet": "The Mirror Sage",
+      "playable": true,
+      "habitat": "The mirrored halls of the Hour of the Monkey.",
+      "description": "A silver-maned sage-monkey whose eyes reflect whatever it looks at.",
+      "physical": {
+        "measure": "height",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 55,
+          "sd": 6.6,
+          "min": 35.2,
+          "p95": 65.9,
+          "p99": 70.4,
+          "upper": 74.8
+        },
+        "height_cm": {
+          "distribution": "truncated_normal",
+          "mean": 150,
+          "sd": 9,
+          "min": 123,
+          "p95": 165,
+          "p99": 171,
+          "upper": 177
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "curious",
+            "weight": 35
+          },
+          {
+            "id": "playful",
+            "weight": 30
+          },
+          {
+            "id": "sly",
+            "weight": 25
+          },
+          {
+            "id": "restless",
+            "weight": 10
+          }
+        ],
+        "markings": [
+          {
+            "id": "copper-furred",
+            "weight": 40
+          },
+          {
+            "id": "silver-backed",
+            "weight": 30
+          },
+          {
+            "id": "red-faced",
+            "weight": 25
+          },
+          {
+            "id": "golden",
+            "weight": 5
+          }
+        ],
+        "quirks": [
+          "Copies the gestures of whoever it is watching.",
+          "Steals hats.",
+          "Covers its eyes, ears or mouth when it disapproves.",
+          "Takes apart anything with moving parts."
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 22,
+        "story_only": true,
+        "difficulty": "Story only",
+        "favoured_offerings": [
+          "peaches",
+          "puzzles",
+          "a new trick"
+        ],
+        "dislikes": [
+          "being laughed at",
+          "repetition"
+        ]
+      },
+      "control": {
+        "command_dc": 20,
+        "difficulty": "Very hard",
+        "disobeys_when": "It thinks it has a better idea, which is often."
+      },
+      "lore": "Sarugen keeps three statues in its hall: one with covered eyes, one with covered ears, one with covered mouth. It says they are not a lesson but a warning about what it does to those who watch, listen and speak carelessly in its presence. It has seen every technique in the Twelve Hours, it claims, and has copied most of them out of politeness.",
+      "folklore_sources": [
+        {
+          "region": "Japan",
+          "tradition": "The three wise monkeys (see no evil, hear no evil, speak no evil) carved at Tōshō-gū in Nikkō."
+        },
+        {
+          "region": "Japan",
+          "tradition": "Monkeys as messengers of the Sannō shrines, and the pun saru (\"monkey\" and \"to leave\"), so a monkey charm makes evil leave."
+        },
+        {
+          "region": "Indonesia",
+          "tradition": "The temple monkeys of Bali's forest shrines, honoured guardians and notorious thieves."
+        }
+      ]
+    },
+    {
+      "id": "chickpip",
+      "name": "Chickpip",
+      "line": "rooster",
+      "kind": "zodiac",
+      "stage": 1,
+      "stage_name": "Kit",
+      "playable": true,
+      "habitat": "Villages, shrine courtyards.",
+      "description": "A fluffy chick with a tiny iron-bright comb.",
+      "physical": {
+        "measure": "height",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 0.4,
+          "sd": 0.048,
+          "min": 0.256,
+          "p95": 0.479,
+          "p99": 0.512,
+          "upper": 0.544
+        },
+        "height_cm": {
+          "distribution": "truncated_normal",
+          "mean": 20,
+          "sd": 1.2,
+          "min": 16.4,
+          "p95": 22,
+          "p99": 22.8,
+          "upper": 23.6
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "proud",
+            "weight": 35
+          },
+          {
+            "id": "bold",
+            "weight": 30
+          },
+          {
+            "id": "devoted",
+            "weight": 20
+          },
+          {
+            "id": "restless",
+            "weight": 15
+          }
+        ],
+        "markings": [
+          {
+            "id": "flame-combed",
+            "weight": 40
+          },
+          {
+            "id": "iron-grey",
+            "weight": 30
+          },
+          {
+            "id": "gold-hackled",
+            "weight": 25
+          },
+          {
+            "id": "white-crested",
+            "weight": 5
+          }
+        ],
+        "quirks": [
+          "Crows at exactly the same moment every dawn.",
+          "Shares any food it finds with the flock.",
+          "Struts before every fight.",
+          "Will not start a meal before the sun is up."
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 13,
+        "story_only": false,
+        "difficulty": "Moderate",
+        "favoured_offerings": [
+          "millet",
+          "a polished mirror"
+        ],
+        "dislikes": [
+          "lateness",
+          "being interrupted"
+        ]
+      },
+      "control": {
+        "command_dc": 10,
+        "difficulty": "Easy",
+        "disobeys_when": "Ordered to break a promise."
+      },
+      "lore": "Chickpips peep at first light and never a moment late. Villages without a clock keep one, and their festivals have never once started late.",
+      "folklore_sources": [
+        {
+          "region": "Japan",
+          "tradition": "When the sun goddess Amaterasu hid in a cave, the gods gathered the long-crying birds (roosters) to crow and call her back. Ise Grand Shrine keeps sacred chickens to this day."
+        },
+        {
+          "region": "China",
+          "tradition": "The Five Virtues of the rooster from the Han dynasty — learning (its crest), martial skill (its spurs), courage (it fights), benevolence (it shares food) and trustworthiness (it crows on time)."
+        }
+      ]
+    },
+    {
+      "id": "dawncrest",
+      "name": "Dawncrest",
+      "line": "rooster",
+      "kind": "zodiac",
+      "stage": 2,
+      "stage_name": "Adept",
+      "playable": true,
+      "habitat": "Shrine grounds, sunrise ridges.",
+      "description": "A proud rooster with a comb like a crown of hammered steel.",
+      "physical": {
+        "measure": "height",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 6,
+          "sd": 0.72,
+          "min": 3.84,
+          "p95": 7.18,
+          "p99": 7.67,
+          "upper": 8.16
+        },
+        "height_cm": {
+          "distribution": "truncated_normal",
+          "mean": 75,
+          "sd": 4.5,
+          "min": 61.5,
+          "p95": 82.4,
+          "p99": 85.5,
+          "upper": 88.5
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "proud",
+            "weight": 35
+          },
+          {
+            "id": "bold",
+            "weight": 30
+          },
+          {
+            "id": "devoted",
+            "weight": 20
+          },
+          {
+            "id": "restless",
+            "weight": 15
+          }
+        ],
+        "markings": [
+          {
+            "id": "flame-combed",
+            "weight": 40
+          },
+          {
+            "id": "iron-grey",
+            "weight": 30
+          },
+          {
+            "id": "gold-hackled",
+            "weight": 25
+          },
+          {
+            "id": "white-crested",
+            "weight": 5
+          }
+        ],
+        "quirks": [
+          "Crows at exactly the same moment every dawn.",
+          "Shares any food it finds with the flock.",
+          "Struts before every fight.",
+          "Will not start a meal before the sun is up."
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 17,
+        "story_only": false,
+        "difficulty": "Hard",
+        "favoured_offerings": [
+          "millet",
+          "a polished mirror"
+        ],
+        "dislikes": [
+          "lateness",
+          "being interrupted"
+        ]
+      },
+      "control": {
+        "command_dc": 14,
+        "difficulty": "Hard",
+        "disobeys_when": "Ordered to break a promise."
+      },
+      "lore": "A Dawncrest crows to bring the sun up, or so it believes, and nobody has dared test it by keeping one quiet. It always finds food for the flock before eating itself.",
+      "folklore_sources": [
+        {
+          "region": "Japan",
+          "tradition": "When the sun goddess Amaterasu hid in a cave, the gods gathered the long-crying birds (roosters) to crow and call her back. Ise Grand Shrine keeps sacred chickens to this day."
+        },
+        {
+          "region": "China",
+          "tradition": "The Five Virtues of the rooster from the Han dynasty — learning (its crest), martial skill (its spurs), courage (it fights), benevolence (it shares food) and trustworthiness (it crows on time)."
+        }
+      ]
+    },
+    {
+      "id": "kokketsu",
+      "name": "Kokketsu",
+      "line": "rooster",
+      "kind": "zodiac",
+      "stage": 3,
+      "stage_name": "Sovereign",
+      "epithet": "The Iron Dawn",
+      "playable": true,
+      "habitat": "The shrine gates of the Hour of the Rooster.",
+      "description": "A towering rooster with steel-feathered wings and a tail of rippling sunrise.",
+      "physical": {
+        "measure": "height",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 40,
+          "sd": 4.8,
+          "min": 25.6,
+          "p95": 47.9,
+          "p99": 51.2,
+          "upper": 54.4
+        },
+        "height_cm": {
+          "distribution": "truncated_normal",
+          "mean": 170,
+          "sd": 10.2,
+          "min": 139,
+          "p95": 187,
+          "p99": 194,
+          "upper": 201
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "proud",
+            "weight": 35
+          },
+          {
+            "id": "bold",
+            "weight": 30
+          },
+          {
+            "id": "devoted",
+            "weight": 20
+          },
+          {
+            "id": "restless",
+            "weight": 15
+          }
+        ],
+        "markings": [
+          {
+            "id": "flame-combed",
+            "weight": 40
+          },
+          {
+            "id": "iron-grey",
+            "weight": 30
+          },
+          {
+            "id": "gold-hackled",
+            "weight": 25
+          },
+          {
+            "id": "white-crested",
+            "weight": 5
+          }
+        ],
+        "quirks": [
+          "Crows at exactly the same moment every dawn.",
+          "Shares any food it finds with the flock.",
+          "Struts before every fight.",
+          "Will not start a meal before the sun is up."
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 22,
+        "story_only": true,
+        "difficulty": "Story only",
+        "favoured_offerings": [
+          "millet",
+          "a polished mirror"
+        ],
+        "dislikes": [
+          "lateness",
+          "being interrupted"
+        ]
+      },
+      "control": {
+        "command_dc": 18,
+        "difficulty": "Very hard",
+        "disobeys_when": "Ordered to break a promise."
+      },
+      "lore": "When the sun hid in a cave and the world went dark, the long-crying birds were gathered to call it home. Kokketsu says it was the first to crow. It holds to five virtues — learning, courage, skill, kindness and keeping time — and of these it values the last most. It has never once been late, and it will not forgive anyone who is.",
+      "folklore_sources": [
+        {
+          "region": "Japan",
+          "tradition": "When the sun goddess Amaterasu hid in a cave, the gods gathered the long-crying birds (roosters) to crow and call her back. Ise Grand Shrine keeps sacred chickens to this day."
+        },
+        {
+          "region": "China",
+          "tradition": "The Five Virtues of the rooster from the Han dynasty — learning (its crest), martial skill (its spurs), courage (it fights), benevolence (it shares food) and trustworthiness (it crows on time)."
+        }
+      ]
+    },
+    {
+      "id": "puplight",
+      "name": "Puplight",
+      "line": "dog",
+      "kind": "zodiac",
+      "stage": 1,
+      "stage_name": "Kit",
+      "playable": true,
+      "habitat": "Villages, hearthsides.",
+      "description": "A round-bellied pup whose tail tip glows like a coal.",
+      "physical": {
+        "measure": "shoulder",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 4,
+          "sd": 0.48,
+          "min": 2.56,
+          "p95": 4.79,
+          "p99": 5.12,
+          "upper": 5.44
+        },
+        "shoulder_cm": {
+          "distribution": "truncated_normal",
+          "mean": 30,
+          "sd": 1.8,
+          "min": 24.6,
+          "p95": 33,
+          "p99": 34.2,
+          "upper": 35.4
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "devoted",
+            "weight": 45
+          },
+          {
+            "id": "bold",
+            "weight": 20
+          },
+          {
+            "id": "wary",
+            "weight": 20
+          },
+          {
+            "id": "playful",
+            "weight": 15
+          }
+        ],
+        "markings": [
+          {
+            "id": "hearth-gold",
+            "weight": 40
+          },
+          {
+            "id": "ash-grey",
+            "weight": 25
+          },
+          {
+            "id": "black-and-tan",
+            "weight": 25
+          },
+          {
+            "id": "lion-maned",
+            "weight": 10
+          }
+        ],
+        "quirks": [
+          "Sleeps across the doorway.",
+          "Howls when anyone leaves.",
+          "Sits with an open mouth beside a twin with a closed one.",
+          "Remembers every scent it has ever smelled."
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 13,
+        "story_only": false,
+        "difficulty": "Moderate",
+        "favoured_offerings": [
+          "grilled fish skin",
+          "a warm hearth",
+          "a long walk"
+        ],
+        "dislikes": [
+          "strangers at night",
+          "being left behind"
+        ]
+      },
+      "control": {
+        "command_dc": 8,
+        "difficulty": "Easy",
+        "disobeys_when": "Ordered to leave its Keeper's side in danger."
+      },
+      "lore": "Puplights are always born in pairs, one noisy and one quiet. Families keep the pair together on the doorstep, the noisy one to scare away trouble and the quiet one to keep luck inside.",
+      "folklore_sources": [
+        {
+          "region": "Okinawa (Japan)",
+          "tradition": "Shisa, paired lion-dogs on rooftops and gates, one with an open mouth to frighten evil away and one with a closed mouth to keep good fortune in."
+        },
+        {
+          "region": "Japan",
+          "tradition": "Komainu, the guardian lion-dogs that flank shrine entrances."
+        },
+        {
+          "region": "China",
+          "tradition": "Tiangou, the heavenly dog said to swallow the sun or moon during eclipses until it is frightened off with noise."
+        }
+      ]
+    },
+    {
+      "id": "hearthound",
+      "name": "Hearthound",
+      "line": "dog",
+      "kind": "zodiac",
+      "stage": 2,
+      "stage_name": "Adept",
+      "playable": true,
+      "habitat": "Mountain villages, travellers' roads.",
+      "description": "A broad, lion-maned hound with ember-warm fur.",
+      "physical": {
+        "measure": "shoulder",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 35,
+          "sd": 4.2,
+          "min": 22.4,
+          "p95": 41.9,
+          "p99": 44.8,
+          "upper": 47.6
+        },
+        "shoulder_cm": {
+          "distribution": "truncated_normal",
+          "mean": 65,
+          "sd": 3.9,
+          "min": 53.3,
+          "p95": 71.4,
+          "p99": 74.1,
+          "upper": 76.7
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "devoted",
+            "weight": 45
+          },
+          {
+            "id": "bold",
+            "weight": 20
+          },
+          {
+            "id": "wary",
+            "weight": 20
+          },
+          {
+            "id": "playful",
+            "weight": 15
+          }
+        ],
+        "markings": [
+          {
+            "id": "hearth-gold",
+            "weight": 40
+          },
+          {
+            "id": "ash-grey",
+            "weight": 25
+          },
+          {
+            "id": "black-and-tan",
+            "weight": 25
+          },
+          {
+            "id": "lion-maned",
+            "weight": 10
+          }
+        ],
+        "quirks": [
+          "Sleeps across the doorway.",
+          "Howls when anyone leaves.",
+          "Sits with an open mouth beside a twin with a closed one.",
+          "Remembers every scent it has ever smelled."
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 17,
+        "story_only": false,
+        "difficulty": "Hard",
+        "favoured_offerings": [
+          "grilled fish skin",
+          "a warm hearth",
+          "a long walk"
+        ],
+        "dislikes": [
+          "strangers at night",
+          "being left behind"
+        ]
+      },
+      "control": {
+        "command_dc": 12,
+        "difficulty": "Moderate",
+        "disobeys_when": "Ordered to leave its Keeper's side in danger."
+      },
+      "lore": "A Hearthound can follow a scent for a month. Lost travellers have been found in snow with a Hearthound curled around them, keeping them warm until help came.",
+      "folklore_sources": [
+        {
+          "region": "Okinawa (Japan)",
+          "tradition": "Shisa, paired lion-dogs on rooftops and gates, one with an open mouth to frighten evil away and one with a closed mouth to keep good fortune in."
+        },
+        {
+          "region": "Japan",
+          "tradition": "Komainu, the guardian lion-dogs that flank shrine entrances."
+        },
+        {
+          "region": "China",
+          "tradition": "Tiangou, the heavenly dog said to swallow the sun or moon during eclipses until it is frightened off with noise."
+        }
+      ]
+    },
+    {
+      "id": "inukai",
+      "name": "Inukai",
+      "line": "dog",
+      "kind": "zodiac",
+      "stage": 3,
+      "stage_name": "Sovereign",
+      "epithet": "The Loyal Ward",
+      "playable": true,
+      "habitat": "The gates of the Hour of the Dog.",
+      "description": "A great guardian hound with a lion's mane of earth-gold fur, flanked by a phantom twin.",
+      "physical": {
+        "measure": "shoulder",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 95,
+          "sd": 11.4,
+          "min": 60.8,
+          "p95": 114,
+          "p99": 122,
+          "upper": 129
+        },
+        "shoulder_cm": {
+          "distribution": "truncated_normal",
+          "mean": 100,
+          "sd": 6,
+          "min": 82,
+          "p95": 110,
+          "p99": 114,
+          "upper": 118
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "devoted",
+            "weight": 45
+          },
+          {
+            "id": "bold",
+            "weight": 20
+          },
+          {
+            "id": "wary",
+            "weight": 20
+          },
+          {
+            "id": "playful",
+            "weight": 15
+          }
+        ],
+        "markings": [
+          {
+            "id": "hearth-gold",
+            "weight": 40
+          },
+          {
+            "id": "ash-grey",
+            "weight": 25
+          },
+          {
+            "id": "black-and-tan",
+            "weight": 25
+          },
+          {
+            "id": "lion-maned",
+            "weight": 10
+          }
+        ],
+        "quirks": [
+          "Sleeps across the doorway.",
+          "Howls when anyone leaves.",
+          "Sits with an open mouth beside a twin with a closed one.",
+          "Remembers every scent it has ever smelled."
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 22,
+        "story_only": true,
+        "difficulty": "Story only",
+        "favoured_offerings": [
+          "grilled fish skin",
+          "a warm hearth",
+          "a long walk"
+        ],
+        "dislikes": [
+          "strangers at night",
+          "being left behind"
+        ]
+      },
+      "control": {
+        "command_dc": 16,
+        "difficulty": "Hard",
+        "disobeys_when": "Ordered to leave its Keeper's side in danger."
+      },
+      "lore": "Inukai guards the gate between the Hours, with its twin beside it, one mouth open and one closed. The rumour that it once swallowed the moon is an insult, and it will bite anyone who repeats it; the moon-swallower was a different hound from a different sky. It has never abandoned a post, and it has never lost a ward it swore to protect.",
+      "folklore_sources": [
+        {
+          "region": "Okinawa (Japan)",
+          "tradition": "Shisa, paired lion-dogs on rooftops and gates, one with an open mouth to frighten evil away and one with a closed mouth to keep good fortune in."
+        },
+        {
+          "region": "Japan",
+          "tradition": "Komainu, the guardian lion-dogs that flank shrine entrances."
+        },
+        {
+          "region": "China",
+          "tradition": "Tiangou, the heavenly dog said to swallow the sun or moon during eclipses until it is frightened off with noise."
+        }
+      ]
+    },
+    {
+      "id": "truffling",
+      "name": "Truffling",
+      "line": "pig",
+      "kind": "zodiac",
+      "stage": 1,
+      "stage_name": "Kit",
+      "playable": true,
+      "habitat": "Forest floors, orchards.",
+      "description": "A round piglet with a snout that never stops sniffing.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 8,
+          "sd": 0.96,
+          "min": 5.12,
+          "p95": 9.58,
+          "p99": 10.2,
+          "upper": 10.9
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 60,
+          "sd": 3.6,
+          "min": 49.2,
+          "p95": 65.9,
+          "p99": 68.4,
+          "upper": 70.8
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "lazy",
+            "weight": 30
+          },
+          {
+            "id": "gentle",
+            "weight": 30
+          },
+          {
+            "id": "stubborn",
+            "weight": 20
+          },
+          {
+            "id": "playful",
+            "weight": 20
+          }
+        ],
+        "markings": [
+          {
+            "id": "mud-brown",
+            "weight": 40
+          },
+          {
+            "id": "rose-pink",
+            "weight": 25
+          },
+          {
+            "id": "black-bristled",
+            "weight": 25
+          },
+          {
+            "id": "spotted-gold",
+            "weight": 10
+          }
+        ],
+        "quirks": [
+          "Finds truffles, coins and lost things by smell.",
+          "Rolls in mud before every fight.",
+          "Naps immediately after eating.",
+          "Shares its wallow with any visitor."
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 13,
+        "story_only": false,
+        "difficulty": "Moderate",
+        "favoured_offerings": [
+          "chestnuts",
+          "sweet potatoes",
+          "a mud bath"
+        ],
+        "dislikes": [
+          "being rushed",
+          "cold baths"
+        ]
+      },
+      "control": {
+        "command_dc": 9,
+        "difficulty": "Easy",
+        "disobeys_when": "Ordered to skip a meal."
+      },
+      "lore": "Trufflings dig up anything valuable — mushrooms, roots, lost rings — and proudly present it to whoever looks hungriest. Farmers hang woodblock prints of them at New Year for luck.",
+      "folklore_sources": [
+        {
+          "region": "Japan",
+          "tradition": "The wild boars that escorted Wake no Kiyomaro to safety, honoured with boar statues at Goō Shrine in Kyoto."
+        },
+        {
+          "region": "Vietnam",
+          "tradition": "Đông Hồ woodblock prints of a sow with piglets, hung at Tết as a wish for abundance and a large, happy family."
+        }
+      ]
+    },
+    {
+      "id": "mudboar",
+      "name": "Mudboar",
+      "line": "pig",
+      "kind": "zodiac",
+      "stage": 2,
+      "stage_name": "Adept",
+      "playable": true,
+      "habitat": "Wetlands, forest wallows.",
+      "description": "A bristly boar coated in a permanent armour of river mud.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 140,
+          "sd": 16.8,
+          "min": 89.6,
+          "p95": 168,
+          "p99": 179,
+          "upper": 190
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 160,
+          "sd": 9.6,
+          "min": 131,
+          "p95": 176,
+          "p99": 182,
+          "upper": 189
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "lazy",
+            "weight": 30
+          },
+          {
+            "id": "gentle",
+            "weight": 30
+          },
+          {
+            "id": "stubborn",
+            "weight": 20
+          },
+          {
+            "id": "playful",
+            "weight": 20
+          }
+        ],
+        "markings": [
+          {
+            "id": "mud-brown",
+            "weight": 40
+          },
+          {
+            "id": "rose-pink",
+            "weight": 25
+          },
+          {
+            "id": "black-bristled",
+            "weight": 25
+          },
+          {
+            "id": "spotted-gold",
+            "weight": 10
+          }
+        ],
+        "quirks": [
+          "Finds truffles, coins and lost things by smell.",
+          "Rolls in mud before every fight.",
+          "Naps immediately after eating.",
+          "Shares its wallow with any visitor."
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 17,
+        "story_only": false,
+        "difficulty": "Hard",
+        "favoured_offerings": [
+          "chestnuts",
+          "sweet potatoes",
+          "a mud bath"
+        ],
+        "dislikes": [
+          "being rushed",
+          "cold baths"
+        ]
+      },
+      "control": {
+        "command_dc": 13,
+        "difficulty": "Moderate",
+        "disobeys_when": "Ordered to skip a meal."
+      },
+      "lore": "A Mudboar's wallow is a sanctuary; no fight is allowed in it. Wounded beasts of every kind come to soak, and the Mudboar lets them stay as long as they like.",
+      "folklore_sources": [
+        {
+          "region": "Japan",
+          "tradition": "The wild boars that escorted Wake no Kiyomaro to safety, honoured with boar statues at Goō Shrine in Kyoto."
+        },
+        {
+          "region": "Vietnam",
+          "tradition": "Đông Hồ woodblock prints of a sow with piglets, hung at Tết as a wish for abundance and a large, happy family."
+        }
+      ]
+    },
+    {
+      "id": "butagon",
+      "name": "Butagon",
+      "line": "pig",
+      "kind": "zodiac",
+      "stage": 3,
+      "stage_name": "Sovereign",
+      "epithet": "The Abundant",
+      "playable": true,
+      "habitat": "The orchard valleys of the Hour of the Pig.",
+      "description": "A vast, contented boar whose bristles sprout herbs and whose belly rumbles like distant thunder.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 600,
+          "sd": 72,
+          "min": 384,
+          "p95": 718,
+          "p99": 767,
+          "upper": 816
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 280,
+          "sd": 16.8,
+          "min": 230,
+          "p95": 308,
+          "p99": 319,
+          "upper": 330
+        }
+      },
+      "form_weight_multipliers": {
+        "wood": 1,
+        "fire": 0.97,
+        "earth": 1.1,
+        "metal": 1.05,
+        "water": 0.95
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "lazy",
+            "weight": 30
+          },
+          {
+            "id": "gentle",
+            "weight": 30
+          },
+          {
+            "id": "stubborn",
+            "weight": 20
+          },
+          {
+            "id": "playful",
+            "weight": 20
+          }
+        ],
+        "markings": [
+          {
+            "id": "mud-brown",
+            "weight": 40
+          },
+          {
+            "id": "rose-pink",
+            "weight": 25
+          },
+          {
+            "id": "black-bristled",
+            "weight": 25
+          },
+          {
+            "id": "spotted-gold",
+            "weight": 10
+          }
+        ],
+        "quirks": [
+          "Finds truffles, coins and lost things by smell.",
+          "Rolls in mud before every fight.",
+          "Naps immediately after eating.",
+          "Shares its wallow with any visitor."
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 22,
+        "story_only": true,
+        "difficulty": "Story only",
+        "favoured_offerings": [
+          "chestnuts",
+          "sweet potatoes",
+          "a mud bath"
+        ],
+        "dislikes": [
+          "being rushed",
+          "cold baths"
+        ]
+      },
+      "control": {
+        "command_dc": 17,
+        "difficulty": "Hard",
+        "disobeys_when": "Ordered to skip a meal."
+      },
+      "lore": "Butagon finished the Great Race last, having stopped for a meal and a nap, and it regards this as the wisest thing anyone did that day. Once, the story goes, its herd escorted an honest man through a forest full of assassins, and he arrived safely. When it needs to, Butagon swells to the size of a hill and rolls, and very little is left standing.",
+      "folklore_sources": [
+        {
+          "region": "Japan",
+          "tradition": "The wild boars that escorted Wake no Kiyomaro to safety, honoured with boar statues at Goō Shrine in Kyoto."
+        },
+        {
+          "region": "Vietnam",
+          "tradition": "Đông Hồ woodblock prints of a sow with piglets, hung at Tết as a wish for abundance and a large, happy family."
+        }
+      ]
+    }
+  ]
+}
