@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://zodiac-ascendant.dev/schemas/envelope.schema.json",
+  "title": "API envelope",
+  "description": "Fields the build adds to every object published under /api/v1/. Each published entity is allOf [envelope, entity schema].",
+  "type": "object",
+  "required": ["id", "version", "licence", "self"],
+  "properties": {
+    "id": { "$ref": "common.schema.json#/$defs/id" },
+    "version": { "description": "Semantic version of the dataset this object was built from.", "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+(-[0-9A-Za-z.-]+)?$" },
+    "licence": { "const": "CC-BY-4.0" },
+    "self": { "description": "Canonical URL of this object.", "type": "string", "format": "uri-reference" }
+  }
+}

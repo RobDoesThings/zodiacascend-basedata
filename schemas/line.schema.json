@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://zodiac-ascendant.dev/schemas/line.schema.json",
+  "title": "Evolution line",
+  "description": "An evolution line as hand-authored in data/lines/. Zodiac lines have three stages (Kit, Adept, Sovereign) and exist in all five element forms; Wanderer lines have two stages and exist only in the elements they list. Stage stats are the base (pre-form) values; scripts/expand-forms.ts applies element bumps.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "kind", "family", "native_element", "role", "key_stat", "stages"],
+  "properties": {
+    "id": { "description": "Zodiac lines use the animal id (e.g. rat); Wanderer lines use their own id.", "$ref": "common.schema.json#/$defs/id" },
+    "name": { "type": "string" },
+    "kind": { "type": "string", "enum": ["zodiac", "wanderer"] },
+    "animal": { "$ref": "common.schema.json#/$defs/zodiac_animal" },
+    "glyph": { "type": "string", "minLength": 1, "maxLength": 1 },
+    "family": { "$ref": "common.schema.json#/$defs/id" },
+    "mythic": { "description": "True for creatures of legend rather than nature (the Dragon).", "type": "boolean", "default": false },
+    "native_element": { "$ref": "common.schema.json#/$defs/element" },
+    "elements": {
+      "description": "Wanderers only: the element forms this line exists in. Zodiac lines always exist in all five.",
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "common.schema.json#/$defs/element" },
+      "uniqueItems": true
+    },
+    "hour": {
+      "description": "Zodiac lines only: the double-hour the Sovereign rules, 24-hour clock.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["start", "end"],
+      "properties": {
+        "start": { "type": "integer", "minimum": 0, "maximum": 23 },
+        "end": { "type": "integer", "minimum": 0, "maximum": 23 }
+      }
+    },
+    "role": { "description": "Tabletop archetype, e.g. Rogue.", "type": "string" },
+    "key_stat": { "$ref": "common.schema.json#/$defs/ability" },
+    "stages": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 3,
+      "items": { "$ref": "#/$defs/stage_entry" }
+    }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "kind": { "const": "zodiac" } } },
+      "then": {
+        "required": ["animal", "glyph", "hour"],
+        "properties": { "stages": { "minItems": 3, "maxItems": 3 }, "elements": false }
+      }
+    },
+    {
+      "if": { "properties": { "kind": { "const": "wanderer" } } },
+      "then": {
+        "required": ["elements"],
+        "properties": { "stages": { "minItems": 2, "maxItems": 2 }, "animal": false, "hour": false }
+      }
+    }
+  ],
+  "$defs": {
+    "stage_entry": {
+      "description": "One base species within a line, e.g. Pipwhisk. Element forms are generated from this.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "stage", "size", "stats", "card_moves"],
+      "properties": {
+        "id": { "$ref": "common.schema.json#/$defs/id" },
+        "name": { "type": "string" },
+        "stage": { "$ref": "common.schema.json#/$defs/stage" },
+        "epithet": { "description": "Sovereigns only, e.g. The First Hour.", "type": "string" },
+        "size": { "$ref": "common.schema.json#/$defs/size" },
+        "stats": { "$ref": "common.schema.json#/$defs/stats" },
+        "trait": { "$ref": "common.schema.json#/$defs/trait" },
+        "signature": { "description": "Move id of this stage's signature technique.", "$ref": "common.schema.json#/$defs/id" },
+        "card_moves": {
+          "description": "The 2-3 moves printed on this beast's stat block and card.",
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 3,
+          "items": { "$ref": "common.schema.json#/$defs/id" },
+          "uniqueItems": true
+        }
+      }
+    }
+  }
+}

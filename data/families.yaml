@@ -1,0 +1,88 @@
+# Families: the real-world animal types. Every creature belongs to exactly one family.
+# Lines name their family; the API derives each family's list of lines.
+# Content licence: CC BY 4.0.
+
+families:
+  - id: rodent
+    name: Rodent
+    wanderer_only: false
+    move_themes: [swarming, gnawing, scurrying, decoys]
+    description: Small, quick and never alone. Rodents survive by numbers, nerve and sharp teeth.
+
+  - id: bovine
+    name: Bovine
+    wanderer_only: false
+    move_themes: [stamina, charges, immovable-stances]
+    description: Patient grazers with enormous strength. Bovines outlast every storm and every foe.
+
+  - id: feline
+    name: Feline
+    wanderer_only: false
+    move_themes: [pouncing, stealth, critical-strikes]
+    description: Silent hunters who wait for the single perfect moment, then end the matter.
+
+  - id: lagomorph
+    name: Lagomorph
+    wanderer_only: false
+    move_themes: [evasion, burst-speed, luck]
+    description: Hares and rabbits, gone before the strike lands and blessed by the moon's favour.
+
+  - id: reptilian
+    name: Reptilian
+    wanderer_only: false
+    move_themes: [venom, coils, shedding, cold-blood]
+    description: Scaled and patient. Reptilians strike with venom or coils and renew themselves by shedding their skin.
+
+  - id: equine
+    name: Equine
+    wanderer_only: false
+    move_themes: [speed, trampling, multi-hit]
+    description: Runners of the open plain. Equines turn speed into a storm of hooves.
+
+  - id: caprine
+    name: Caprine
+    wanderer_only: false
+    move_themes: [climbing, headbutts, hardiness, support]
+    description: Sure-footed climbers who thrive where nothing else can, and look after their herd.
+
+  - id: primate
+    name: Primate
+    wanderer_only: false
+    move_themes: [tools, mimicry, tricks]
+    description: Clever hands and cleverer minds. Primates copy, improvise and play tricks.
+
+  - id: avian
+    name: Avian
+    wanderer_only: false
+    move_themes: [flight, cries, talons]
+    description: Masters of the sky, whose cries carry across valleys and whose talons strike from above.
+
+  - id: canine
+    name: Canine
+    wanderer_only: false
+    move_themes: [pack-tactics, tracking, loyalty]
+    description: Loyal trackers who hunt as one and never abandon a packmate.
+
+  - id: suine
+    name: Suine
+    wanderer_only: false
+    move_themes: [bulk, foraging, rolling, self-healing]
+    description: Heavy foragers who shrug off wounds, dig up what they need and bowl over what they don't.
+
+  - id: piscine
+    name: Piscine
+    wanderer_only: true
+    move_themes: [currents, schooling, slipperiness]
+    description: Fish of river, pond and paddy, who ride the current and slip through any grip.
+
+  - id: insectoid
+    name: Insectoid
+    wanderer_only: true
+    move_themes: [lights, swarms, metamorphosis]
+    description: Small lives in great numbers. Insectoids dazzle, sting and change their shape.
+
+  - id: chelonian
+    name: Chelonian
+    wanderer_only: true
+    move_themes: [shells, longevity, slow-wisdom]
+    description: Turtles and tortoises, the slow and the ancient, safe inside the shells they carry.

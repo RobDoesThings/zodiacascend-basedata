@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://zodiac-ascendant.dev/schemas/element.schema.json",
+  "title": "Element",
+  "description": "One of the five elements. The generating and controlling cycles are stored as each element's single outgoing edge; the full 5x5 relationship matrix is derived at build time.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "glyph", "colour", "form_prefix", "stat_bump", "generates", "controls", "associations", "description"],
+  "properties": {
+    "id": { "$ref": "common.schema.json#/$defs/element" },
+    "name": { "type": "string" },
+    "glyph": { "type": "string", "minLength": 1, "maxLength": 1 },
+    "colour": { "$ref": "common.schema.json#/$defs/colour" },
+    "form_prefix": { "description": "Prefix used to name creature forms of this element, e.g. Jade.", "type": "string" },
+    "stat_bump": {
+      "description": "Ability bonus every creature form of this element receives.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ability", "amount"],
+      "properties": {
+        "ability": { "$ref": "common.schema.json#/$defs/ability" },
+        "amount": { "type": "integer" }
+      }
+    },
+    "generates": { "description": "Next element in the generating cycle.", "$ref": "common.schema.json#/$defs/element" },
+    "controls": { "description": "Next element in the controlling cycle.", "$ref": "common.schema.json#/$defs/element" },
+    "associations": {
+      "description": "Traditional Wu Xing correspondences.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["direction", "season", "planet", "traditional_colour"],
+      "properties": {
+        "direction": { "type": "string" },
+        "season": { "type": "string" },
+        "planet": { "type": "string" },
+        "traditional_colour": { "type": "string" }
+      }
+    },
+    "description": { "$ref": "common.schema.json#/$defs/text" }
+  }
+}

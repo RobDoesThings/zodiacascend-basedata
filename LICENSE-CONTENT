@@ -1,0 +1,26 @@
+Zodiac Ascendant: Beasts of the Five Elements — Game Content Licence
+
+Copyright (c) 2026 [OWNER NAME]
+
+The game content in this repository is licensed under the Creative Commons
+Attribution 4.0 International licence (CC BY 4.0). Game content means:
+
+  - everything under /data   (creature, move, field, bond and rules data)
+  - everything under /lore   (world and creature lore)
+  - everything under /rulebook (rules text)
+  - the JSON published under /api/ that is built from the above
+
+Full legal code: https://creativecommons.org/licenses/by/4.0/legalcode
+Human-readable summary: https://creativecommons.org/licenses/by/4.0/
+
+Attribution: credit "Zodiac Ascendant by [OWNER NAME], CC BY 4.0", link to
+this licence, and say if you changed anything.
+
+CC BY 4.0 does not grant trademark rights. The name "Zodiac Ascendant" and the
+"Official Compatible" badge are covered separately by TRADEMARK.md.
+
+Source code (/scripts, /schemas, /site, /worker, /sdk and build tooling) is
+licensed separately under the MIT licence in LICENSE-CODE.
+
+[TODO before v1.0.0: replace the pointer above with the verbatim CC BY 4.0
+legal code from the URL above, as reviewed by counsel.]

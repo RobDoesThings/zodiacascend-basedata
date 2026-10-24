@@ -1,0 +1,91 @@
+# The five elements (Wu Xing). Each element names the single element it generates and the single
+# element it controls; the full relationship matrix is derived from these two cycles.
+#   Generating: Wood → Fire → Earth → Metal → Water → Wood
+#   Controlling: Wood › Earth › Water › Fire › Metal › Wood
+# Content licence: CC BY 4.0.
+
+elements:
+  - id: wood
+    name: Wood
+    glyph: 木
+    colour: "#5FBF77"
+    form_prefix: Jade
+    stat_bump: { ability: WIS, amount: 2 }
+    generates: fire
+    controls: earth
+    associations:
+      direction: East
+      season: Spring
+      planet: Jupiter
+      traditional_colour: Green
+    description: >-
+      The element of growth and patience. Wood bends before it breaks, feeds the fire and splits the
+      stubborn earth with its roots. Jade-form beasts are perceptive and slow to anger.
+
+  - id: fire
+    name: Fire
+    glyph: 火
+    colour: "#F06A4A"
+    form_prefix: Ember
+    stat_bump: { ability: CHA, amount: 2 }
+    generates: earth
+    controls: metal
+    associations:
+      direction: South
+      season: Summer
+      planet: Mars
+      traditional_colour: Red
+    description: >-
+      The element of passion and display. Fire leaves fertile ash behind it and softens even the
+      hardest metal. Ember-form beasts are bold, bright and hard to ignore.
+
+  - id: earth
+    name: Earth
+    glyph: 土
+    colour: "#D9A441"
+    form_prefix: Ochre
+    stat_bump: { ability: CON, amount: 2 }
+    generates: metal
+    controls: water
+    associations:
+      direction: Centre
+      season: Late summer
+      planet: Saturn
+      traditional_colour: Yellow
+    description: >-
+      The element of the centre and of steadiness. Earth holds ore in its depths and banks the
+      wandering river. Ochre-form beasts endure what would break others.
+
+  - id: metal
+    name: Metal
+    glyph: 金
+    colour: "#C9D1DC"
+    form_prefix: Steel
+    stat_bump: { ability: STR, amount: 2 }
+    generates: water
+    controls: wood
+    associations:
+      direction: West
+      season: Autumn
+      planet: Venus
+      traditional_colour: White
+    description: >-
+      The element of edges and resolve. Cold metal gathers dew, and the axe fells the tree.
+      Steel-form beasts strike cleanly and keep their word.
+
+  - id: water
+    name: Water
+    glyph: 水
+    colour: "#4F9BEA"
+    form_prefix: Tide
+    stat_bump: { ability: DEX, amount: 2 }
+    generates: wood
+    controls: fire
+    associations:
+      direction: North
+      season: Winter
+      planet: Mercury
+      traditional_colour: Black
+    description: >-
+      The element of depth and adaptation. Water nourishes every root and quenches every flame.
+      Tide-form beasts are quick, supple and never where you expect.

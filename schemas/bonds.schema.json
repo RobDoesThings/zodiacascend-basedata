@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://zodiac-ascendant.dev/schemas/bonds.schema.json",
+  "title": "Zodiac bonds",
+  "description": "Trines, Kindred pairs and Rivals between the twelve zodiac animals, plus the mechanical effect of each bond type.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["effects", "trines", "kindred", "rivals"],
+  "properties": {
+    "effects": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["trine", "kindred", "rival"],
+      "properties": {
+        "trine": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["requires", "guard_bonus", "shared_qi_pool", "rules_text"],
+          "properties": {
+            "requires": { "type": "string", "const": "all_members_active" },
+            "guard_bonus": { "type": "integer" },
+            "shared_qi_pool": { "type": "boolean" },
+            "rules_text": { "type": "string" }
+          }
+        },
+        "kindred": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["requires", "unlocks", "rules_text"],
+          "properties": {
+            "requires": { "type": "string", "const": "both_members_active" },
+            "unlocks": { "type": "string", "const": "combo_move" },
+            "rules_text": { "type": "string" }
+          }
+        },
+        "rival": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["to_hit_bonus_vs_rival", "same_team_guard_penalty", "rules_text"],
+          "properties": {
+            "to_hit_bonus_vs_rival": { "type": "integer" },
+            "same_team_guard_penalty": { "type": "integer" },
+            "rules_text": { "type": "string" }
+          }
+        }
+      }
+    },
+    "trines": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "name", "members", "description"],
+        "properties": {
+          "id": { "$ref": "common.schema.json#/$defs/id" },
+          "name": { "type": "string" },
+          "members": { "type": "array", "minItems": 3, "maxItems": 3, "uniqueItems": true, "items": { "$ref": "common.schema.json#/$defs/zodiac_animal" } },
+          "description": { "type": "string" }
+        }
+      }
+    },
+    "kindred": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "name", "members", "description"],
+        "properties": {
+          "id": { "$ref": "common.schema.json#/$defs/id" },
+          "name": { "type": "string" },
+          "members": { "type": "array", "minItems": 2, "maxItems": 2, "uniqueItems": true, "items": { "$ref": "common.schema.json#/$defs/zodiac_animal" } },
+          "combo_move": { "description": "Move id of the pair's combo technique (added in the move-system phase).", "$ref": "common.schema.json#/$defs/id" },
+          "description": { "type": "string" }
+        }
+      }
+    },
+    "rivals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "members", "description"],
+        "properties": {
+          "id": { "$ref": "common.schema.json#/$defs/id" },
+          "members": { "type": "array", "minItems": 2, "maxItems": 2, "uniqueItems": true, "items": { "$ref": "common.schema.json#/$defs/zodiac_animal" } },
+          "description": { "type": "string" }
+        }
+      }
+    }
+  }
+}

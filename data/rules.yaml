@@ -1,0 +1,275 @@
+# Zodiac Ascendant — core numeric constants.
+# Every number quoted in the rulebook is read from this file or from other /data files.
+# Content licence: CC BY 4.0.
+
+abilities:
+  list: [STR, DEX, CON, INT, WIS, CHA]
+  score_min: 1
+  score_max: 30
+  # modifier = floor((score - modifier_base) / modifier_divisor)
+  modifier_base: 10
+  modifier_divisor: 2
+
+skills:
+  STR: [athletics]
+  DEX: [stealth, acrobatics]
+  CON: [endurance]
+  INT: [lore, investigation]
+  WIS: [tracking, insight]
+  CHA: [bonding, persuasion]
+
+levels:
+  min: 1
+  max: 40
+
+# Rank is added to attack rolls and technique save DCs.
+rank:
+  - { min_level: 1, max_level: 8, bonus: 2 }
+  - { min_level: 9, max_level: 16, bonus: 3 }
+  - { min_level: 17, max_level: 28, bonus: 4 }
+  - { min_level: 29, max_level: 40, bonus: 5 }
+
+attack:
+  die: d20
+  # d20 + ability modifier + Rank >= target Guard
+  add_ability_modifier: true
+  add_rank: true
+  hits_on: meets_or_beats_guard
+
+technique_dc:
+  # 8 + Rank + key ability modifier
+  base: 8
+  add_rank: true
+  add_ability_modifier: true
+
+saves:
+  die: d20
+  # d20 + ability modifier >= DC
+  succeeds_on: meets_or_beats_dc
+
+advantage:
+  dice_rolled: 2
+  advantage_keeps: highest
+  disadvantage_keeps: lowest
+  # Advantage and disadvantage on the same roll cancel; multiples do not stack.
+  cancel_out: true
+  stacks: false
+
+critical:
+  natural: 20
+  applies_to: attack
+  effect: double_damage_dice
+
+fumble:
+  natural: 1
+  applies_to: attack
+  effect: fizzle
+  # The technique has no effect, its Qi cost is still spent, and the beast loses this much more Qi (minimum 0).
+  extra_qi_lost: 1
+
+qi:
+  regen_per_turn: 1
+  regen_timing: turn_start
+  # Beasts begin a battle with half their maximum Qi, rounded up.
+  start_fraction: 0.5
+  start_rounding: up
+  native_form_max_bonus: 1
+
+seal_chain:
+  min_seals: 1
+  max_seals: 5
+  qi_per_seal: 1
+  damage_per_seal: 1d6
+  # Each seal past this number must pass a risk roll.
+  safe_seals: 3
+  risk_die: d6
+  # Any risk roll showing this number breaks the chain; all Qi spent on it is lost.
+  breaks_on: 1
+
+initiative:
+  die: d20
+  ability: DEX
+  tiebreak: [speed, DEX]
+
+movement:
+  melee_reach_ft: 5
+  # Leaving a foe's reach provokes a free melee attack from it.
+  leaving_reach_provokes: true
+
+sizes:
+  - { id: tiny, space_ft: 2.5 }
+  - { id: small, space_ft: 5 }
+  - { id: medium, space_ft: 5 }
+  - { id: large, space_ft: 10 }
+  - { id: huge, space_ft: 15 }
+
+# Order the twelve animals finished the Great Race. Used for The Great Race Field and for sorting.
+zodiac_order: [rat, ox, tiger, rabbit, dragon, snake, horse, goat, monkey, rooster, dog, pig]
+
+stages:
+  zodiac:
+    - stage: 1
+      name: Kit
+      min_level: 1
+      items: []
+      trial: null
+    - stage: 2
+      name: Adept
+      min_level: 16
+      items: [element-shard]
+      trial: null
+    - stage: 3
+      name: Sovereign
+      min_level: 36
+      items: [zodiac-seal]
+      trial: trial-of-the-hour
+  wanderer:
+    - stage: 1
+      name: Wanderer
+      min_level: 1
+      items: []
+      trial: null
+    - stage: 2
+      name: Elder Wanderer
+      min_level: 12
+      items: []
+      trial: null
+
+ascension_roll:
+  # Trial of the Hour: d20 + Bond level + key-stat modifier >= target
+  trial: trial-of-the-hour
+  die: d20
+  add_bond_level: true
+  add_key_stat_modifier: true
+  target: 18
+
+bond_level:
+  min: 0
+  max: 5
+  start: 0
+
+bond_check:
+  # Befriending a wild beast (there is no capture): d20 + CHA modifier vs Bond DC
+  die: d20
+  ability: CHA
+  skill: bonding
+  dc:
+    wanderer: 10
+    kit: 13
+    adept: 17
+    sovereign: 22
+  story_only: [sovereign]
+  modifiers:
+    - { id: below-half-hp, when: target_below_half_hp, dc_change: -2 }
+    - { id: jade-talisman, when: jade_talisman_used, dc_change: -2 }
+
+element_relationships:
+  # Effects on an attack, from the attacker's point of view. Exactly one applies to any pair of different elements.
+  attacker_controls_defender:
+    roll_mode: advantage
+    bonus_damage: 1d6
+  defender_controls_attacker:
+    roll_mode: disadvantage
+  attacker_generates_defender:
+    damage_multiplier: 0.5
+  defender_generates_attacker:
+    qi_gain_on_hit: 1
+  same_element: {}
+
+conditions:
+  - id: blinded
+    name: Blinded
+    summary: Attacks at disadvantage; attacks against it have advantage.
+    rules_text: >-
+      A Blinded beast makes attack rolls at disadvantage, cannot target anything beyond melee range
+      with a technique that needs sight, and automatically fails checks that rely on sight. Attack
+      rolls against it have advantage.
+  - id: burning
+    name: Burning
+    summary: Takes 1d6 at the start of each turn; ends when Soaked.
+    damage: 1d6
+    rules_text: >-
+      A Burning beast takes 1d6 damage at the start of each of its turns. It can spend its movement
+      to beat out the flames and end the condition. Becoming Soaked ends Burning at once.
+  - id: charmed
+    name: Charmed
+    summary: Cannot harm the charmer; the charmer has advantage on social checks against it.
+    rules_text: >-
+      A Charmed beast cannot target the beast that charmed it with attacks or harmful techniques.
+      The charmer has advantage on Bond Checks and social checks against it. Damage from the
+      charmer or its allies ends the condition.
+  - id: restrained
+    name: Restrained
+    summary: Speed 0; attacks and DEX saves at disadvantage; attacks against it have advantage.
+    rules_text: >-
+      A Restrained beast's Speed is 0. Its attack rolls and DEX saves are made at disadvantage, and
+      attack rolls against it have advantage. It can use its action to make a STR save against the
+      effect's DC to break free.
+  - id: frightened
+    name: Frightened
+    summary: Disadvantage on attacks and checks while the source is in sight; cannot approach it.
+    rules_text: >-
+      A Frightened beast has disadvantage on attack rolls and ability checks while the source of its
+      fear is within sight, and it cannot willingly move closer to that source.
+  - id: poisoned
+    name: Poisoned
+    summary: Takes 1d4 at the start of each turn; disadvantage on ability checks.
+    damage: 1d4
+    rules_text: >-
+      A Poisoned beast takes 1d4 damage at the start of each of its turns and makes ability checks at
+      disadvantage.
+  - id: prone
+    name: Prone
+    summary: Melee attacks against it have advantage, ranged ones disadvantage; standing costs half Speed.
+    rules_text: >-
+      A Prone beast makes attack rolls at disadvantage. Melee attacks against it have advantage and
+      ranged attacks against it have disadvantage. Standing up costs half its Speed and ends the
+      condition.
+  - id: stunned
+    name: Stunned
+    summary: Cannot act, move or react; fails STR and DEX saves; attacks against it have advantage.
+    rules_text: >-
+      A Stunned beast cannot take actions, move or use reactions. It automatically fails STR and DEX
+      saves, and attack rolls against it have advantage. It does not regain Qi while Stunned.
+  - id: rooted
+    name: Rooted
+    summary: Speed 0 and cannot be moved, but attacks normally.
+    rules_text: >-
+      A Rooted beast's Speed is 0 and it cannot be pushed, pulled or swapped out. Unlike Restrained,
+      it attacks and saves normally.
+  - id: soaked
+    name: Soaked
+    summary: Speed −10 ft; immune to Burning; disadvantage on saves against Water techniques.
+    speed_change_ft: -10
+    rules_text: >-
+      A Soaked beast's Speed is reduced by 10 ft. It cannot be Burning (becoming Soaked ends Burning)
+      and it makes saves against Water techniques at disadvantage.
+  - id: hidden
+    name: Hidden
+    summary: Cannot be targeted directly; its next attack has advantage.
+    rules_text: >-
+      A Hidden beast cannot be targeted directly by attacks or techniques unless the attacker first
+      succeeds on a Tracking check against the beast's Stealth. Its next attack roll has advantage.
+      The condition ends after it attacks, takes damage or is Exposed.
+  - id: exposed
+    name: Exposed
+    summary: Cannot become Hidden; decoys do not protect it; the next attack against it has advantage.
+    rules_text: >-
+      An Exposed beast cannot become Hidden and its decoys do not intercept attacks. The next attack
+      roll against it has advantage.
+
+condition_rules:
+  # A condition with duration_rounds N ends at the end of the affected beast's Nth turn after it was applied.
+  duration_ends: affected_turn_end
+  # Re-applying a condition resets its duration; it never stacks.
+  reapply: refresh
+
+card_game:
+  deck_size: 40
+  max_copies: 3
+  max_sovereigns_per_line: 1
+  card_types: [beast, technique, talisman, field]
+  active_slots: 3
+  bench_slots: 3
+  shared_fields: 1
+  defeats_to_win: 6

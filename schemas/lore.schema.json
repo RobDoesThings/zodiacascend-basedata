@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://zodiac-ascendant.dev/schemas/lore.schema.json",
+  "title": "Lore entry",
+  "description": "A lore document from /lore, published as markdown, plain text and a short summary.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "title", "subject", "summary", "markdown", "text"],
+  "properties": {
+    "id": { "$ref": "common.schema.json#/$defs/id" },
+    "title": { "type": "string" },
+    "subject": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type"],
+      "properties": {
+        "type": { "enum": ["world", "line", "family", "wanderers", "rumour"] },
+        "id": { "$ref": "common.schema.json#/$defs/id" }
+      }
+    },
+    "summary": { "type": "string", "maxLength": 400 },
+    "markdown": { "type": "string" },
+    "text": { "type": "string" }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://zodiac-ascendant.dev/schemas/family.schema.json",
+  "title": "Family",
+  "description": "A real-world animal type. Every creature belongs to exactly one family, which decides its family-exclusive moves. The lines in a family are not stored here: each line names its family, and the API derives the reverse list.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "wanderer_only", "move_themes", "description"],
+  "properties": {
+    "id": { "$ref": "common.schema.json#/$defs/id" },
+    "name": { "type": "string" },
+    "wanderer_only": { "description": "True when only Wanderer lines belong to this family.", "type": "boolean" },
+    "move_themes": {
+      "description": "Design themes for the family's exclusive moves.",
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "description": { "$ref": "common.schema.json#/$defs/text" }
+  }
+}

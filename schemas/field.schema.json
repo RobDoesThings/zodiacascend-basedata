@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://zodiac-ascendant.dev/schemas/field.schema.json",
+  "title": "Field",
+  "description": "A shared battlefield card. Effects are stated as text for people and as structured modifiers for engines; the two must agree.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "affinity", "modifiers", "card_text", "rules_text"],
+  "properties": {
+    "id": { "$ref": "common.schema.json#/$defs/id" },
+    "name": { "type": "string" },
+    "affinity": {
+      "description": "An element, or celestial for Fields tied to the calendar and sky.",
+      "oneOf": [{ "$ref": "common.schema.json#/$defs/element" }, { "const": "celestial" }]
+    },
+    "duration_rounds": { "description": "Omit for Fields that last until replaced.", "type": "integer", "minimum": 1 },
+    "modifiers": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/modifier" } },
+    "card_text": { "type": "string", "minLength": 1, "maxLength": 200 },
+    "rules_text": { "$ref": "common.schema.json#/$defs/text" },
+    "flavour": { "type": "string" },
+    "tags": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/id" }, "uniqueItems": true }
+  },
+  "$defs": {
+    "selector": {
+      "description": "Which beasts or techniques a modifier applies to. Omit for everything.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "element": { "$ref": "common.schema.json#/$defs/element" },
+        "not_element": { "$ref": "common.schema.json#/$defs/element" },
+        "family": { "$ref": "common.schema.json#/$defs/id" },
+        "attack_type": { "type": "string", "enum": ["melee", "ranged", "any"] }
+      }
+    },
+    "modifier": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind"],
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": [
+            "hp_regen", "roll_mode", "technique_damage_bonus", "technique_damage_multiplier",
+            "skill_roll_mode", "decoy_duration", "guard_bonus", "speed_multiplier", "crit_range",
+            "condition_ends", "save_dc_bonus", "cycle_reversal", "initiative_order",
+            "bond_check_bonus", "healing_multiplier", "qi_regen_bonus", "to_hit_bonus", "custom"
+          ]
+        },
+        "beasts": { "description": "Beasts affected (by their form).", "$ref": "#/$defs/selector" },
+        "techniques": { "description": "Techniques affected (by their element).", "$ref": "#/$defs/selector" },
+        "rolls": { "type": "string", "enum": ["attack", "save", "check", "all"] },
+        "mode": { "type": "string", "enum": ["advantage", "disadvantage"] },
+        "skill": { "type": "string" },
+        "value": { "type": "number" },
+        "dice": { "$ref": "common.schema.json#/$defs/dice" },
+        "conditions": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/condition" } },
+        "timing": { "type": "string", "enum": ["turn_start", "turn_end", "round_end", "always"] },
+        "duration_rounds": { "type": "integer", "minimum": 1 },
+        "order": { "type": "string" },
+        "tiebreak": { "type": "string" },
+        "then": { "type": "string", "enum": ["previous_field"] },
+        "notes": { "type": "string" }
+      }
+    }
+  }
+}

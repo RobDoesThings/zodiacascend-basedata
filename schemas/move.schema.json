@@ -1,0 +1,147 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://zodiac-ascendant.dev/schemas/move.schema.json",
+  "title": "Move",
+  "description": "A technique, reaction or passive. Every move has exactly one scope, which decides who can learn it.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id", "name", "scope", "element", "family", "line", "min_stage", "action", "range",
+    "qi_cost", "seals", "card_text", "rules_text", "tags"
+  ],
+  "properties": {
+    "id": { "$ref": "common.schema.json#/$defs/id" },
+    "name": { "type": "string" },
+    "scope": { "type": "string", "enum": ["universal", "element", "family", "signature", "combo"] },
+    "element": {
+      "description": "Required for element scope. For other scopes, the element the move is typed as (null means it takes the user's form element, or is untyped).",
+      "oneOf": [{ "$ref": "common.schema.json#/$defs/element" }, { "type": "null" }]
+    },
+    "family": { "oneOf": [{ "$ref": "common.schema.json#/$defs/id" }, { "type": "null" }] },
+    "line": { "oneOf": [{ "$ref": "common.schema.json#/$defs/id" }, { "type": "null" }] },
+    "partners": {
+      "description": "Combo scope only: the two Kindred animals that must both be on the field.",
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": { "$ref": "common.schema.json#/$defs/zodiac_animal" },
+      "uniqueItems": true
+    },
+    "min_stage": { "$ref": "common.schema.json#/$defs/stage" },
+    "min_level": { "description": "Level at which the move enters a learnset. Defaults to the first level of min_stage.", "$ref": "common.schema.json#/$defs/level" },
+    "action": { "type": "string", "enum": ["attack", "save", "heal", "buff", "debuff", "summon", "reaction", "passive"] },
+    "trigger": { "description": "Reactions only: what lets the beast use it.", "type": "string" },
+    "range": {
+      "description": "Range in feet, or \"self\" / \"melee\" (5 ft).",
+      "oneOf": [{ "type": "integer", "minimum": 5, "multipleOf": 5 }, { "type": "string", "enum": ["self", "melee"] }]
+    },
+    "area": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["shape", "size"],
+      "properties": {
+        "shape": { "type": "string", "enum": ["cone", "line", "radius", "cube", "all-foes", "all-allies"] },
+        "size": { "description": "Feet; 0 for all-foes / all-allies.", "type": "integer", "minimum": 0 }
+      }
+    },
+    "qi_cost": { "type": "integer", "minimum": 0 },
+    "seals": { "description": "Seals woven at the listed Qi cost (0 for non-chain moves). The listed qi_cost and damage include these seals.", "type": "integer", "minimum": 0, "maximum": 5 },
+    "uses_per_battle": { "type": "integer", "minimum": 1 },
+    "to_hit": { "description": "Ability used for the attack roll.", "$ref": "common.schema.json#/$defs/ability" },
+    "save": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ability", "dc"],
+      "properties": {
+        "ability": { "description": "Ability the target saves with.", "$ref": "common.schema.json#/$defs/ability" },
+        "dc": {
+          "description": "\"technique\" means 8 + Rank + the user's dc_ability modifier.",
+          "oneOf": [{ "const": "technique" }, { "type": "integer", "minimum": 1 }]
+        },
+        "dc_ability": { "description": "User ability for a technique DC; defaults to the user's key stat.", "$ref": "common.schema.json#/$defs/ability" },
+        "on_success": { "type": "string", "enum": ["half", "none", "negates"] }
+      }
+    },
+    "damage": { "$ref": "common.schema.json#/$defs/dice" },
+    "healing": { "$ref": "common.schema.json#/$defs/dice" },
+    "effects": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/effect" }
+    },
+    "element_variants": {
+      "description": "Per-element effect variants for element-typed moves (keyed by the user's form element).",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "wood": { "$ref": "#/$defs/variant" },
+        "fire": { "$ref": "#/$defs/variant" },
+        "earth": { "$ref": "#/$defs/variant" },
+        "metal": { "$ref": "#/$defs/variant" },
+        "water": { "$ref": "#/$defs/variant" }
+      }
+    },
+    "card_text": { "type": "string", "minLength": 1, "maxLength": 200 },
+    "rules_text": { "$ref": "common.schema.json#/$defs/text" },
+    "flavour": { "type": "string" },
+    "tags": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/id" }, "uniqueItems": true }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "scope": { "const": "element" } } },
+      "then": { "properties": { "element": { "$ref": "common.schema.json#/$defs/element" }, "family": { "type": "null" }, "line": { "type": "null" } } }
+    },
+    {
+      "if": { "properties": { "scope": { "const": "family" } } },
+      "then": { "properties": { "family": { "$ref": "common.schema.json#/$defs/id" }, "line": { "type": "null" } } }
+    },
+    {
+      "if": { "properties": { "scope": { "const": "signature" } } },
+      "then": { "properties": { "line": { "$ref": "common.schema.json#/$defs/id" } } }
+    },
+    {
+      "if": { "properties": { "scope": { "const": "combo" } } },
+      "then": { "required": ["partners"] }
+    },
+    {
+      "if": { "properties": { "scope": { "const": "universal" } } },
+      "then": { "properties": { "element": { "type": "null" }, "family": { "type": "null" }, "line": { "type": "null" }, "min_stage": { "const": 1 } } }
+    },
+    {
+      "if": { "properties": { "action": { "const": "attack" } } },
+      "then": { "required": ["to_hit"] }
+    },
+    {
+      "if": { "properties": { "action": { "const": "save" } } },
+      "then": { "required": ["save"] }
+    },
+    {
+      "if": { "properties": { "action": { "const": "reaction" } } },
+      "then": { "required": ["trigger"] }
+    }
+  ],
+  "$defs": {
+    "effect": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["condition", "duration_rounds"],
+      "properties": {
+        "condition": { "$ref": "common.schema.json#/$defs/condition" },
+        "duration_rounds": { "type": "integer", "minimum": 1 },
+        "target": { "type": "string", "enum": ["target", "self", "allies", "foes"], "default": "target" }
+      }
+    },
+    "variant": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["rules_text"],
+      "properties": {
+        "damage": { "$ref": "common.schema.json#/$defs/dice" },
+        "effects": { "type": "array", "items": { "$ref": "#/$defs/effect" } },
+        "crit_range": { "description": "Lowest natural roll that crits, e.g. 19.", "type": "integer", "minimum": 2, "maximum": 20 },
+        "push": { "description": "Feet pushed.", "type": "integer", "minimum": 5, "multipleOf": 5 },
+        "card_text": { "type": "string", "maxLength": 200 },
+        "rules_text": { "$ref": "common.schema.json#/$defs/text" }
+      }
+    }
+  }
+}

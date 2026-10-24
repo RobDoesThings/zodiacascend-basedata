@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://zodiac-ascendant.dev/schemas/common.schema.json",
+  "title": "Common definitions",
+  "description": "Shared building blocks referenced by every other Zodiac Ascendant schema.",
+  "$defs": {
+    "id": {
+      "description": "Stable kebab-case identifier. Never reused once published.",
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "maxLength": 64
+    },
+    "element": {
+      "description": "One of the five elements (Wu Xing).",
+      "type": "string",
+      "enum": ["wood", "fire", "earth", "metal", "water"]
+    },
+    "ability": {
+      "description": "One of the six abilities.",
+      "type": "string",
+      "enum": ["STR", "DEX", "CON", "INT", "WIS", "CHA"]
+    },
+    "condition": {
+      "description": "A condition from the fixed list defined in rules.yaml.",
+      "type": "string",
+      "enum": [
+        "blinded", "burning", "charmed", "restrained", "frightened", "poisoned",
+        "prone", "stunned", "rooted", "soaked", "hidden", "exposed"
+      ]
+    },
+    "zodiac_animal": {
+      "description": "One of the twelve zodiac animals, in Great Race order.",
+      "type": "string",
+      "enum": ["rat", "ox", "tiger", "rabbit", "dragon", "snake", "horse", "goat", "monkey", "rooster", "dog", "pig"]
+    },
+    "size": {
+      "type": "string",
+      "enum": ["tiny", "small", "medium", "large", "huge"]
+    },
+    "stage": {
+      "description": "Evolution stage: 1 Kit, 2 Adept, 3 Sovereign. Wanderers use 1 and 2.",
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 3
+    },
+    "level": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 40
+    },
+    "dice": {
+      "description": "Dice expression, e.g. \"2d8+STR\", \"1d10+4\", \"6d6\". Terms are dice (NdM), integers, ability names or RANK, joined by + or -. Fully parsed by scripts/lib/dice.ts.",
+      "type": "string",
+      "pattern": "^\\s*(\\d+d\\d+|\\d+|STR|DEX|CON|INT|WIS|CHA|RANK)(\\s*[+-]\\s*(\\d+d\\d+|\\d+|STR|DEX|CON|INT|WIS|CHA|RANK))*\\s*$"
+    },
+    "colour": {
+      "type": "string",
+      "pattern": "^#[0-9A-F]{6}$"
+    },
+    "abilities": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["STR", "DEX", "CON", "INT", "WIS", "CHA"],
+      "properties": {
+        "STR": { "$ref": "#/$defs/score" },
+        "DEX": { "$ref": "#/$defs/score" },
+        "CON": { "$ref": "#/$defs/score" },
+        "INT": { "$ref": "#/$defs/score" },
+        "WIS": { "$ref": "#/$defs/score" },
+        "CHA": { "$ref": "#/$defs/score" }
+      }
+    },
+    "score": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 30
+    },
+    "stats": {
+      "description": "A beast's stat block.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["hp", "guard", "speed", "qi", "abilities"],
+      "properties": {
+        "hp": { "type": "integer", "minimum": 1 },
+        "guard": { "type": "integer", "minimum": 1, "maximum": 30 },
+        "speed": { "description": "Feet per turn.", "type": "integer", "minimum": 0, "multipleOf": 5 },
+        "qi": { "description": "Maximum Qi.", "type": "integer", "minimum": 0 },
+        "abilities": { "$ref": "#/$defs/abilities" }
+      }
+    },
+    "trait": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "rules_text"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "name": { "type": "string" },
+        "rules_text": { "type": "string" },
+        "tags": { "type": "array", "items": { "type": "string" }, "uniqueItems": true }
+      }
+    },
+    "text": {
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}

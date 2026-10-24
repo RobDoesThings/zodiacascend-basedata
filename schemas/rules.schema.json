@@ -1,0 +1,767 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://zodiac-ascendant.dev/schemas/rules.schema.json",
+  "title": "Rules constants",
+  "description": "Every numeric constant of the core d20 rules. The rulebook and all generated tables read from this object.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "abilities",
+    "skills",
+    "levels",
+    "rank",
+    "attack",
+    "technique_dc",
+    "saves",
+    "advantage",
+    "critical",
+    "fumble",
+    "qi",
+    "seal_chain",
+    "initiative",
+    "movement",
+    "sizes",
+    "zodiac_order",
+    "stages",
+    "ascension_roll",
+    "bond_level",
+    "bond_check",
+    "element_relationships",
+    "conditions",
+    "condition_rules",
+    "card_game"
+  ],
+  "properties": {
+    "abilities": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "list",
+        "score_min",
+        "score_max",
+        "modifier_base",
+        "modifier_divisor"
+      ],
+      "properties": {
+        "list": {
+          "type": "array",
+          "items": {
+            "$ref": "common.schema.json#/$defs/ability"
+          },
+          "minItems": 6,
+          "maxItems": 6,
+          "uniqueItems": true
+        },
+        "score_min": {
+          "type": "integer"
+        },
+        "score_max": {
+          "type": "integer"
+        },
+        "modifier_base": {
+          "type": "integer"
+        },
+        "modifier_divisor": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "skills": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "STR",
+        "DEX",
+        "CON",
+        "INT",
+        "WIS",
+        "CHA"
+      ],
+      "properties": {
+        "STR": {
+          "$ref": "#/$defs/skill_list"
+        },
+        "DEX": {
+          "$ref": "#/$defs/skill_list"
+        },
+        "CON": {
+          "$ref": "#/$defs/skill_list"
+        },
+        "INT": {
+          "$ref": "#/$defs/skill_list"
+        },
+        "WIS": {
+          "$ref": "#/$defs/skill_list"
+        },
+        "CHA": {
+          "$ref": "#/$defs/skill_list"
+        }
+      }
+    },
+    "levels": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "min",
+        "max"
+      ],
+      "properties": {
+        "min": {
+          "type": "integer"
+        },
+        "max": {
+          "type": "integer"
+        }
+      }
+    },
+    "rank": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "min_level",
+          "max_level",
+          "bonus"
+        ],
+        "properties": {
+          "min_level": {
+            "$ref": "common.schema.json#/$defs/level"
+          },
+          "max_level": {
+            "$ref": "common.schema.json#/$defs/level"
+          },
+          "bonus": {
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "attack": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "die",
+        "add_ability_modifier",
+        "add_rank",
+        "hits_on"
+      ],
+      "properties": {
+        "die": {
+          "const": "d20"
+        },
+        "add_ability_modifier": {
+          "type": "boolean"
+        },
+        "add_rank": {
+          "type": "boolean"
+        },
+        "hits_on": {
+          "const": "meets_or_beats_guard"
+        }
+      }
+    },
+    "technique_dc": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "base",
+        "add_rank",
+        "add_ability_modifier"
+      ],
+      "properties": {
+        "base": {
+          "type": "integer"
+        },
+        "add_rank": {
+          "type": "boolean"
+        },
+        "add_ability_modifier": {
+          "type": "boolean"
+        }
+      }
+    },
+    "saves": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "die",
+        "succeeds_on"
+      ],
+      "properties": {
+        "die": {
+          "const": "d20"
+        },
+        "succeeds_on": {
+          "const": "meets_or_beats_dc"
+        }
+      }
+    },
+    "advantage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "dice_rolled",
+        "advantage_keeps",
+        "disadvantage_keeps",
+        "cancel_out",
+        "stacks"
+      ],
+      "properties": {
+        "dice_rolled": {
+          "type": "integer"
+        },
+        "advantage_keeps": {
+          "const": "highest"
+        },
+        "disadvantage_keeps": {
+          "const": "lowest"
+        },
+        "cancel_out": {
+          "type": "boolean"
+        },
+        "stacks": {
+          "type": "boolean"
+        }
+      }
+    },
+    "critical": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "natural",
+        "applies_to",
+        "effect"
+      ],
+      "properties": {
+        "natural": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 20
+        },
+        "applies_to": {
+          "const": "attack"
+        },
+        "effect": {
+          "const": "double_damage_dice"
+        }
+      }
+    },
+    "fumble": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "natural",
+        "applies_to",
+        "effect",
+        "extra_qi_lost"
+      ],
+      "properties": {
+        "natural": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 20
+        },
+        "applies_to": {
+          "const": "attack"
+        },
+        "effect": {
+          "const": "fizzle"
+        },
+        "extra_qi_lost": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "qi": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "regen_per_turn",
+        "regen_timing",
+        "start_fraction",
+        "start_rounding",
+        "native_form_max_bonus"
+      ],
+      "properties": {
+        "regen_per_turn": {
+          "type": "integer"
+        },
+        "regen_timing": {
+          "enum": [
+            "turn_start",
+            "turn_end"
+          ]
+        },
+        "start_fraction": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "start_rounding": {
+          "enum": [
+            "up",
+            "down"
+          ]
+        },
+        "native_form_max_bonus": {
+          "type": "integer"
+        }
+      }
+    },
+    "seal_chain": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "min_seals",
+        "max_seals",
+        "qi_per_seal",
+        "damage_per_seal",
+        "safe_seals",
+        "risk_die",
+        "breaks_on"
+      ],
+      "properties": {
+        "min_seals": {
+          "type": "integer"
+        },
+        "max_seals": {
+          "type": "integer"
+        },
+        "qi_per_seal": {
+          "type": "integer"
+        },
+        "damage_per_seal": {
+          "$ref": "common.schema.json#/$defs/dice"
+        },
+        "safe_seals": {
+          "type": "integer"
+        },
+        "risk_die": {
+          "type": "string",
+          "pattern": "^d\\d+$"
+        },
+        "breaks_on": {
+          "type": "integer"
+        }
+      }
+    },
+    "initiative": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "die",
+        "ability",
+        "tiebreak"
+      ],
+      "properties": {
+        "die": {
+          "const": "d20"
+        },
+        "ability": {
+          "$ref": "common.schema.json#/$defs/ability"
+        },
+        "tiebreak": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "movement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "melee_reach_ft",
+        "leaving_reach_provokes"
+      ],
+      "properties": {
+        "melee_reach_ft": {
+          "type": "integer"
+        },
+        "leaving_reach_provokes": {
+          "type": "boolean"
+        }
+      }
+    },
+    "sizes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "space_ft"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "common.schema.json#/$defs/size"
+          },
+          "space_ft": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "zodiac_order": {
+      "type": "array",
+      "minItems": 12,
+      "maxItems": 12,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "common.schema.json#/$defs/zodiac_animal"
+      }
+    },
+    "stages": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "zodiac",
+        "wanderer"
+      ],
+      "properties": {
+        "zodiac": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 3,
+          "items": {
+            "$ref": "#/$defs/stage_rule"
+          }
+        },
+        "wanderer": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "$ref": "#/$defs/stage_rule"
+          }
+        }
+      }
+    },
+    "ascension_roll": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "trial",
+        "die",
+        "add_bond_level",
+        "add_key_stat_modifier",
+        "target"
+      ],
+      "properties": {
+        "trial": {
+          "$ref": "common.schema.json#/$defs/id"
+        },
+        "die": {
+          "const": "d20"
+        },
+        "add_bond_level": {
+          "type": "boolean"
+        },
+        "add_key_stat_modifier": {
+          "type": "boolean"
+        },
+        "target": {
+          "type": "integer"
+        }
+      }
+    },
+    "bond_level": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "min",
+        "max",
+        "start"
+      ],
+      "properties": {
+        "min": {
+          "type": "integer"
+        },
+        "max": {
+          "type": "integer"
+        },
+        "start": {
+          "type": "integer"
+        }
+      }
+    },
+    "bond_check": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "die",
+        "ability",
+        "skill",
+        "dc",
+        "story_only",
+        "modifiers"
+      ],
+      "properties": {
+        "die": {
+          "const": "d20"
+        },
+        "ability": {
+          "$ref": "common.schema.json#/$defs/ability"
+        },
+        "skill": {
+          "$ref": "common.schema.json#/$defs/id"
+        },
+        "dc": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "wanderer",
+            "kit",
+            "adept",
+            "sovereign"
+          ],
+          "properties": {
+            "wanderer": {
+              "type": "integer"
+            },
+            "kit": {
+              "type": "integer"
+            },
+            "adept": {
+              "type": "integer"
+            },
+            "sovereign": {
+              "type": "integer"
+            }
+          }
+        },
+        "story_only": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "wanderer",
+              "kit",
+              "adept",
+              "sovereign"
+            ]
+          }
+        },
+        "modifiers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "when",
+              "dc_change"
+            ],
+            "properties": {
+              "id": {
+                "$ref": "common.schema.json#/$defs/id"
+              },
+              "when": {
+                "type": "string"
+              },
+              "dc_change": {
+                "type": "integer"
+              }
+            }
+          }
+        }
+      }
+    },
+    "element_relationships": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "attacker_controls_defender",
+        "defender_controls_attacker",
+        "attacker_generates_defender",
+        "defender_generates_attacker",
+        "same_element"
+      ],
+      "properties": {
+        "attacker_controls_defender": {
+          "$ref": "#/$defs/relationship_effect"
+        },
+        "defender_controls_attacker": {
+          "$ref": "#/$defs/relationship_effect"
+        },
+        "attacker_generates_defender": {
+          "$ref": "#/$defs/relationship_effect"
+        },
+        "defender_generates_attacker": {
+          "$ref": "#/$defs/relationship_effect"
+        },
+        "same_element": {
+          "$ref": "#/$defs/relationship_effect"
+        }
+      }
+    },
+    "conditions": {
+      "type": "array",
+      "minItems": 12,
+      "maxItems": 12,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "name",
+          "summary",
+          "rules_text"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "common.schema.json#/$defs/condition"
+          },
+          "name": {
+            "type": "string"
+          },
+          "summary": {
+            "type": "string",
+            "maxLength": 120
+          },
+          "damage": {
+            "$ref": "common.schema.json#/$defs/dice"
+          },
+          "speed_change_ft": {
+            "type": "integer"
+          },
+          "rules_text": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "condition_rules": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "duration_ends",
+        "reapply"
+      ],
+      "properties": {
+        "duration_ends": {
+          "const": "affected_turn_end"
+        },
+        "reapply": {
+          "const": "refresh"
+        }
+      }
+    },
+    "card_game": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "deck_size",
+        "max_copies",
+        "max_sovereigns_per_line",
+        "card_types",
+        "active_slots",
+        "bench_slots",
+        "shared_fields",
+        "defeats_to_win"
+      ],
+      "properties": {
+        "deck_size": {
+          "type": "integer"
+        },
+        "max_copies": {
+          "type": "integer"
+        },
+        "max_sovereigns_per_line": {
+          "type": "integer"
+        },
+        "card_types": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "active_slots": {
+          "type": "integer"
+        },
+        "bench_slots": {
+          "type": "integer"
+        },
+        "shared_fields": {
+          "type": "integer"
+        },
+        "defeats_to_win": {
+          "type": "integer"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "stage_rule": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "stage",
+        "name",
+        "min_level",
+        "items",
+        "trial"
+      ],
+      "properties": {
+        "stage": {
+          "$ref": "common.schema.json#/$defs/stage"
+        },
+        "name": {
+          "type": "string"
+        },
+        "min_level": {
+          "$ref": "common.schema.json#/$defs/level"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "$ref": "common.schema.json#/$defs/id"
+          }
+        },
+        "trial": {
+          "oneOf": [
+            {
+              "$ref": "common.schema.json#/$defs/id"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "skill_list": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/id"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "relationship_effect": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "roll_mode": {
+          "enum": [
+            "advantage",
+            "disadvantage"
+          ]
+        },
+        "bonus_damage": {
+          "$ref": "common.schema.json#/$defs/dice"
+        },
+        "damage_multiplier": {
+          "type": "number"
+        },
+        "qi_gain_on_hit": {
+          "type": "integer"
+        }
+      }
+    }
+  }
+}
