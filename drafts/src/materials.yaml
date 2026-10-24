@@ -1,0 +1,322 @@
+# DRAFT for review. Crafting materials.
+#
+# Beasts are bonded, never harvested: nothing here comes from defeating or killing a beast.
+# Animal materials are shed (moulted feathers, shed skin, cast horns, fallen scales), given by a
+# bonded beast during a long rest, or gifted by a Sovereign after its Trial.
+#
+# tier: 1 common · 2 uncommon · 3 rare · 4 legendary (gift only; can never be sold for real money)
+# role: what part of a piece the material can be — frame, facing, binding, padding or finish.
+# value is in strings of cash (a string = 1000 copper coins), the in-world currency.
+# Gather DC by tier: 1 → 10, 2 → 13, 3 → 16, 4 → story only.
+
+materials:
+  # ---------------- Untyped (no element) ----------------
+  - id: cotton-batting
+    name: Cotton Batting
+    element: null
+    tier: 1
+    category: fibre
+    roles: [padding]
+    source: { method: traded }
+    value: 1
+    properties: Light and warm. Quilted in layers it stops more than you'd expect.
+  - id: ramie-cord
+    name: Ramie Cord
+    element: null
+    tier: 1
+    category: fibre
+    roles: [binding]
+    source: { method: grown }
+    value: 1
+    properties: Strong plant-fibre cord used to lace lamellar plates.
+
+  # ---------------- Wood ----------------
+  - id: rattan
+    name: Rattan
+    element: wood
+    tier: 1
+    category: wood
+    roles: [frame, facing]
+    source: { method: gathered, skill: athletics }
+    value: 1
+    properties: Springy climbing palm, woven into helmets and shields across Southeast Asia. Light frames.
+  - id: bamboo-lath
+    name: Bamboo Lath
+    element: wood
+    tier: 1
+    category: wood
+    roles: [frame, facing]
+    source: { method: gathered, skill: athletics }
+    value: 1
+    properties: Split bamboo strips. Light, stiff and quick to replace.
+  - id: mulberry-paper
+    name: Mulberry Paper
+    element: wood
+    tier: 1
+    category: fibre
+    roles: [facing, padding]
+    source: { method: traded }
+    value: 2
+    properties: Pressed in dozens of layers it makes paper armour, which was really used in China. Weak to fire.
+  - id: peach-wood
+    name: Peach Wood
+    element: wood
+    tier: 2
+    category: wood
+    roles: [frame, finish]
+    source: { method: gathered, skill: tracking }
+    value: 4
+    properties: Traditionally believed to ward off evil. Any piece with a peach-wood frame grants advantage on saves against Frightened.
+  - id: thornstripe-briar
+    name: Thornstripe Briar
+    element: wood
+    tier: 2
+    category: wood
+    roles: [facing]
+    source: { method: shed, from: thornstripe }
+    value: 6
+    properties: Briar a Thornstripe lets grow where it sleeps, gathered with its permission. A beast that grapples the wearer takes 1d4 damage.
+  - id: lampwing-silk
+    name: Lampwing Silk
+    element: kindle
+    tier: 2
+    category: fibre
+    roles: [padding, facing]
+    source: { method: shed, from: lampwing }
+    value: 8
+    properties: Silk from discarded cocoons. Glows softly; the wearer is never Blinded by darkness.
+
+  # ---------------- Fire ----------------
+  - id: ember-felt
+    name: Ember Felt
+    element: fire
+    tier: 1
+    category: fibre
+    roles: [padding]
+    source: { method: shed, from: pyrebrush }
+    value: 2
+    properties: Felt pressed from fur that Fox Embers and Pyrebrushes shed in spring. Always warm.
+  - id: galeflank-mane
+    name: Galeflank Mane Hair
+    element: fire
+    tier: 2
+    category: fibre
+    roles: [binding]
+    source: { method: shed, from: galeflank }
+    value: 5
+    properties: Combed from a bonded Galeflank. Lacings of it never come loose; +1 durability.
+  - id: kiln-glaze
+    name: Kiln Glaze Tile
+    element: kiln
+    tier: 2
+    category: ceramic
+    roles: [facing]
+    source: { method: traded }
+    value: 6
+    properties: Small fired tiles with a celadon glaze, set into lamellar. Heavy but fireproof.
+  - id: ember-lacquer
+    name: Ember Lacquer
+    element: fire
+    tier: 3
+    category: finish
+    roles: [finish]
+    source: { method: traded }
+    value: 15
+    properties: Cinnabar-red lacquer cured over a low fire. The wearer gains advantage on CHA (Persuasion) checks when meeting someone for the first time.
+
+  # ---------------- Earth ----------------
+  - id: buffalo-horn
+    name: Buffalo Horn
+    element: earth
+    tier: 1
+    category: horn
+    roles: [facing, frame]
+    source: { method: shed, from: wallowhorn }
+    value: 3
+    properties: Horn sheaths cast off naturally. Used, as in the brass-and-horn armour of the southern Philippines, for plates and fittings.
+  - id: river-jade
+    name: River Jade
+    element: earth
+    tier: 2
+    category: mineral
+    roles: [finish, facing]
+    source: { method: gathered, skill: investigation }
+    value: 10
+    properties: Smooth green stones from riverbeds. Jade plates are prized and believed to be protective.
+  - id: tortoise-scute
+    name: Shed Scute
+    element: earth
+    tier: 2
+    category: shell
+    roles: [facing]
+    source: { method: shed, from: teahouse-tortoise }
+    value: 8
+    properties: Outer shell layers that tortoises shed as they grow. Overlapping scutes make tough scale facing.
+  - id: terraced-clay
+    name: Terraced Clay
+    element: silt
+    tier: 1
+    category: mineral
+    roles: [finish]
+    source: { method: gathered, skill: athletics }
+    value: 1
+    properties: Paddy clay rubbed into leather. Waterproofs it; the wearer can't be Soaked.
+
+  # ---------------- Metal ----------------
+  - id: bronze
+    name: Bronze
+    element: metal
+    tier: 1
+    category: metal
+    roles: [facing, frame]
+    source: { method: traded }
+    value: 4
+    properties: Cast bronze plates and mirror-bosses. Heavy and easy to repair.
+  - id: brass
+    name: Brass
+    element: metal
+    tier: 2
+    category: metal
+    roles: [facing, binding]
+    source: { method: traded }
+    value: 6
+    properties: Bright, workable brass plates and rings, joined with mail.
+  - id: folded-iron
+    name: Folded Iron
+    element: metal
+    tier: 2
+    category: metal
+    roles: [facing, frame]
+    source: { method: mined, skill: athletics }
+    value: 8
+    properties: Iron folded and hammered many times. The standard heavy armour material.
+  - id: dawncrest-quill
+    name: Dawncrest Quill
+    element: metal
+    tier: 3
+    category: feather
+    roles: [facing]
+    source: { method: shed, from: dawncrest }
+    value: 20
+    properties: Steel-bright feathers moulted once a year. Light as feathers, hard as plate; counts as one weight class lighter.
+  - id: bell-bronze
+    name: Bell Bronze
+    element: metal
+    tier: 3
+    category: metal
+    roles: [facing]
+    source: { method: traded }
+    value: 18
+    properties: High-tin bronze for temple bells. Struck, it rings; the wearer has advantage on saves against Charmed.
+  - id: jewelwing-lacquer
+    name: Jewelwing Lacquer
+    element: lacquer
+    tier: 3
+    category: finish
+    roles: [finish]
+    source: { method: gathered, skill: tracking }
+    value: 22
+    properties: Iridescent lacquer from the empty wing-cases jewel beetles leave behind. +1 durability and it shimmers.
+
+  # ---------------- Water ----------------
+  - id: fish-leather
+    name: Fish Leather
+    element: water
+    tier: 1
+    category: hide
+    roles: [facing, binding]
+    source: { method: traded }
+    value: 2
+    properties: Tanned fish skin, as used for clothing by the Hezhe and Nanai peoples of the Amur river. Light, tough and waterproof.
+  - id: inkcarp-scale
+    name: Inkcarp Scale
+    element: water
+    tier: 1
+    category: scale
+    roles: [facing]
+    source: { method: shed, from: scrollfin }
+    value: 2
+    properties: Scales Inkcarp and Scrollfins drop below waterfalls. Faintly inked with characters.
+  - id: mother-of-pearl
+    name: Mother-of-Pearl
+    element: water
+    tier: 2
+    category: shell
+    roles: [finish, facing]
+    source: { method: gathered, skill: athletics }
+    value: 9
+    properties: Shell lining from empty shells. Inlaid into lacquer it makes the finest finishes.
+  - id: hooktail-denticle
+    name: Hooktail Denticle
+    element: frost
+    tier: 3
+    category: scale
+    roles: [facing]
+    source: { method: gifted, from: hooktail-shark }
+    value: 25
+    properties: Rough denticles left in a creel by a released Hooktail. Anyone who strikes the wearer in melee takes 1 damage.
+  - id: moonshell-nacre
+    name: Moonshell Nacre
+    element: silt
+    tier: 3
+    category: shell
+    roles: [facing, finish]
+    source: { method: gifted, from: moonshell-snail }
+    value: 25
+    properties: A shell layer the Moonshell Snail leaves behind when released. Glows faintly in moonlight; +1 Guard when Rooted.
+
+  # ---------------- Other confluences ----------------
+  - id: mangrove-tannin-leather
+    name: Mangrove-Tanned Leather
+    element: mangrove
+    tier: 2
+    category: hide
+    roles: [facing, binding]
+    source: { method: traded }
+    value: 6
+    properties: Leather tanned in mangrove bark. Doesn't rot in salt water or rain.
+  - id: forge-scale
+    name: Forge Scale
+    element: forge
+    tier: 3
+    category: metal
+    roles: [facing]
+    source: { method: gifted, from: ironeater }
+    value: 30
+    properties: Iron scraps a released Ironeater spits out, fused and glowing. Immune to Burning.
+  - id: gold-leaf
+    name: Gold Leaf
+    element: ore
+    tier: 2
+    category: finish
+    roles: [finish]
+    source: { method: traded }
+    value: 12
+    properties: Beaten gold. Mostly for show; +1 to Bond Checks against beasts that like shiny things (Rodent, Primate, Avian).
+
+  # ---------------- Legendary: Sovereign gifts ----------------
+  # Given once, by a Sovereign, to a Keeper whose beast passed its Trial of the Hour.
+  - { id: echo-whisker, name: Nezrath's Echo-Whisker, element: water, tier: 4, category: fibre, roles: [binding], source: { method: gifted, from: nezrath }, value: null,
+      properties: "Lace a piece with it: once per battle, the first attack against the wearer hits a decoy instead." }
+  - { id: yoke-moss, name: Gyuurok's Yoke-Moss, element: moss, tier: 4, category: fibre, roles: [padding], source: { method: gifted, from: gyuurok }, value: null,
+      properties: "Moss from Gyuurok's back. The wearer can't be pushed, pulled or knocked Prone." }
+  - { id: verdant-claw, name: Torakai's Shed Claw, element: wood, tier: 4, category: horn, roles: [facing], source: { method: gifted, from: torakai }, value: null,
+      properties: "A claw sheath Torakai has shed. The wearer is immune to Frightened." }
+  - { id: moonlight-felt, name: Usagetsu's Moonlight Felt, element: wood, tier: 4, category: fibre, roles: [padding], source: { method: gifted, from: usagetsu }, value: null,
+      properties: "Felt of fur shed under a full moon. The wearer regains 1d4 HP at the start of each turn while below half HP." }
+  - { id: pearl-scale, name: Ryuuten's Pearl-Scale, element: earth, tier: 4, category: scale, roles: [facing], source: { method: gifted, from: ryuuten }, value: null,
+      properties: "One scale from Heaven's Coil. Counts as all five elements: always Attuned, never Oppressive or Strained." }
+  - { id: ninth-skin, name: Hebiko's Shed Skin, element: fire, tier: 4, category: hide, roles: [facing], source: { method: gifted, from: hebiko }, value: null,
+      properties: "Once per long rest, when the wearer would drop to 0 HP it drops to 1 instead and ends one condition." }
+  - { id: sun-mane, name: Umaren's Sun-Mane, element: fire, tier: 4, category: fibre, roles: [binding], source: { method: gifted, from: umaren }, value: null,
+      properties: "Moving never provokes a free attack against the wearer." }
+  - { id: golden-fleece, name: Yangsu's Golden Fleece, element: earth, tier: 4, category: fibre, roles: [padding], source: { method: gifted, from: yangsu }, value: null,
+      properties: "Allies within 10 ft of the wearer add 1 to their saves." }
+  - { id: mirror-hair, name: Sarugen's Mirror-Hair, element: metal, tier: 4, category: fibre, roles: [binding], source: { method: gifted, from: sarugen }, value: null,
+      properties: "Once per battle the wearer may reflect a technique that targets only them back at its user." }
+  - { id: dawn-feather, name: Kokketsu's Dawn-Feather, element: metal, tier: 4, category: feather, roles: [facing], source: { method: gifted, from: kokketsu }, value: null,
+      properties: "+5 initiative. The wearer can't be surprised." }
+  - { id: guardian-mane, name: Inukai's Guardian Mane, element: earth, tier: 4, category: fibre, roles: [padding], source: { method: gifted, from: inukai }, value: null,
+      properties: "When an ally within 5 ft is hit, the wearer may take the damage instead." }
+  - { id: herb-bristle, name: Butagon's Herb-Bristle, element: water, tier: 4, category: fibre, roles: [padding], source: { method: gifted, from: butagon }, value: null,
+      properties: "The wearer starts each battle with 10 temporary HP." }

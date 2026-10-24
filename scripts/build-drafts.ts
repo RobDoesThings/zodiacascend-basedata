@@ -5,7 +5,7 @@
 
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-import { DATA_DIR, ROOT, readYaml } from "./lib/data.ts";
+import { DATA_DIR, ROOT, readYaml, type Element, type ElementData } from "./lib/data.ts";
 
 const SRC = join(ROOT, "drafts", "src");
 const OUT = join(ROOT, "drafts", "json");
@@ -16,8 +16,12 @@ const zodiac = readYaml<any>(join(SRC, "zodiac.yaml")).data;
 const wanderers = readYaml<any>(join(SRC, "wanderers.yaml")).data;
 const vessels = readYaml<any>(join(SRC, "vessel-spirits.yaml")).data;
 const cards = readYaml<any>(join(SRC, "keeper-cards.yaml")).data;
+const armour = readYaml<any>(join(SRC, "armour.yaml")).data;
+const materials = readYaml<any>(join(SRC, "materials.yaml")).data.materials;
+const crafting = readYaml<any>(join(SRC, "crafting.yaml")).data;
 const rules = readYaml<any>(join(DATA_DIR, "rules.yaml")).data;
 const families = readYaml<any>(join(DATA_DIR, "families.yaml")).data.families.map((f: any) => f.id);
+const elementData: ElementData[] = readYaml<any>(join(DATA_DIR, "elements.yaml")).data.elements;
 
 const ELEMENTS = ["wood", "fire", "earth", "metal", "water"];
 const CONFLUENCES = chars.confluences.map((c: any) => c.id);
@@ -93,6 +97,7 @@ const zodiacOut = zodiac.lines.flatMap((line: any) => {
       name: s.name,
       line: line.id,
       kind: "zodiac",
+      family: line.family,
       stage: i + 1,
       stage_name: rules.stages.zodiac[i].name,
       ...(s.epithet ? { epithet: s.epithet } : {}),
@@ -217,6 +222,185 @@ const cardOut = cards.cards.map((c: any) => {
   return { ...c, canon: c.canon ?? false };
 });
 
+// ---------- Armour, materials and crafting ----------
+const elementById = new Map(elementData.map((e) => [e.id, e]));
+
+/** The plain elements a material or wearer type stands for (confluences expand to two). */
+function componentsOf(type: string | null): Element[] {
+  if (!type) return [];
+  if (ELEMENTS.includes(type)) return [type as Element];
+  const c = chars.confluences.find((x: any) => x.id === type);
+  if (!c) throw new Error(`unknown element or confluence ${type}`);
+  return c.elements;
+}
+
+type PairRelation = "same" | "a_generates_b" | "b_generates_a" | "a_controls_b" | "b_controls_a";
+function pairRelation(a: Element, b: Element): PairRelation {
+  if (a === b) return "same";
+  if (elementById.get(a)!.generates === b) return "a_generates_b";
+  if (elementById.get(b)!.generates === a) return "b_generates_a";
+  if (elementById.get(a)!.controls === b) return "a_controls_b";
+  return "b_controls_a";
+}
+
+/** Resolves one relationship per component; disagreeing components cancel to null (neutral). */
+function agree<T>(results: T[]): T | null {
+  return results.every((r) => r === results[0]) ? results[0] : null;
+}
+
+const WEARER_EFFECT: Record<PairRelation, string> = {
+  same: "same_element",
+  a_generates_b: "material_generates_wearer",
+  b_generates_a: "wearer_generates_material",
+  a_controls_b: "material_controls_wearer",
+  b_controls_a: "wearer_controls_material",
+};
+
+const HELPFUL = new Set(["same_element", "material_generates_wearer", "wearer_generates_material"]);
+
+/** Plain elements give one effect. A confluence gives both components' effects when they are all
+ *  helpful or all harmful; a helpful effect against a harmful one cancels to neutral. */
+function wearerEffect(materialType: string, wearer: Element): string | null {
+  const keys = [...new Set(componentsOf(materialType).map((m) => WEARER_EFFECT[pairRelation(m, wearer)]))];
+  if (!agree(keys.map((k) => HELPFUL.has(k)))) return null;
+  return keys.map((k) => armour.element_compatibility.wearer_vs_material[k].name).join(" + ");
+}
+
+/** Any component that resists makes the material resist, unless another component is vulnerable. */
+function techniqueEffect(materialType: string, attacker: Element): string | null {
+  const res = new Set(
+    componentsOf(materialType).map((m) => {
+      const r = pairRelation(m, attacker);
+      return r === "a_controls_b" ? "resists" : r === "b_controls_a" ? "vulnerable" : "neutral";
+    }),
+  );
+  if (res.has("resists") && res.has("vulnerable")) return null;
+  return res.has("resists") ? "resists" : res.has("vulnerable") ? "vulnerable" : null;
+}
+
+const MATERIAL_TYPES = [...ELEMENTS, ...CONFLUENCES];
+const wearerMatrix = Object.fromEntries(
+  MATERIAL_TYPES.map((m) => [m, Object.fromEntries(ELEMENTS.map((w) => [w, wearerEffect(m, w as Element) ?? "Neutral"]))]),
+);
+const techniqueMatrix = Object.fromEntries(
+  MATERIAL_TYPES.map((m) => {
+    const resists = ELEMENTS.filter((a) => techniqueEffect(m, a as Element) === "resists");
+    const vulnerable = ELEMENTS.filter((a) => techniqueEffect(m, a as Element) === "vulnerable");
+    return [m, { resists, vulnerable }];
+  }),
+);
+
+// Armour types x body plans.
+const BODY_PLANS = armour.body_plans.map((b: any) => b.id);
+const WEIGHT_ORDER = ["none", "light", "medium", "heavy"];
+const SIZE_ORDER = ["tiny", "small", "medium", "large", "huge"];
+for (const t of armour.armour_types) {
+  claim(t.id, "armour type");
+  for (const bp of BODY_PLANS) if (!(bp in t.fit)) errors.push(`armour type ${t.id}: no fit given for body plan ${bp}`);
+  for (const [bp, fit] of Object.entries(t.fit)) {
+    const plan = armour.body_plans.find((b: any) => b.id === bp);
+    if (!plan) errors.push(`armour type ${t.id}: unknown body plan ${bp}`);
+    else if (fit !== "no" && !plan.slots.includes(t.slot)) errors.push(`armour type ${t.id}: fits ${bp} but ${bp} has no ${t.slot} slot`);
+  }
+}
+for (const [fam, bp] of Object.entries(armour.family_body_plans)) {
+  if (!families.includes(fam)) errors.push(`family_body_plans: unknown family ${fam}`);
+  if (!BODY_PLANS.includes(bp)) errors.push(`family_body_plans: unknown body plan ${bp}`);
+}
+
+function sizeFromWeight(kg: number): string {
+  return armour.beast_armour.sizes_by_weight_kg.find((s: any) => kg <= s.max).size;
+}
+
+/** What a species can wear: body plan, size, slots and the heaviest class allowed at its stage and size. */
+function armourProfile(species: any) {
+  const plan = armour.body_plans.find(
+    (b: any) => b.id === (armour.line_body_plan_overrides[species.line] ?? armour.family_body_plans[species.family]),
+  );
+  const size = sizeFromWeight(species.physical.weight_kg.mean);
+  const allowedClasses = armour.beast_armour.weight_classes
+    .filter(
+      (w: any) =>
+        species.stage >= w.min_stage &&
+        SIZE_ORDER.indexOf(size) >= SIZE_ORDER.indexOf(w.min_size) &&
+        WEIGHT_ORDER.indexOf(w.id) <= WEIGHT_ORDER.indexOf(plan.max_weight),
+    )
+    .map((w: any) => w.id);
+  const types = armour.armour_types
+    .filter((t: any) => t.fit[plan.id] !== "no" && (t.weight === "none" || allowedClasses.includes(t.weight)))
+    .map((t: any) => ({ type: t.id, fit: t.fit[plan.id] }));
+  return { body_plan: plan.id, size, slots: plan.slots, max_weight: allowedClasses.at(-1) ?? "none", armour_types: types };
+}
+
+// Materials.
+const materialById = new Map<string, any>();
+const knownSpecies = new Set([...zodiacOut, ...wandererOut, ...spiritOut].map((s: any) => s.id));
+for (const m of materials) {
+  claim(m.id, "material");
+  materialById.set(m.id, m);
+  if (m.element !== null && !MATERIAL_TYPES.includes(m.element)) errors.push(`material ${m.id}: unknown element ${m.element}`);
+  if (m.source.from && !knownSpecies.has(m.source.from)) errors.push(`material ${m.id}: source species ${m.source.from} not found`);
+  if (m.tier === 4 && m.source.method !== "gifted") errors.push(`material ${m.id}: legendary materials must be gifted`);
+  if (m.tier === 4 && m.value !== null) errors.push(`material ${m.id}: legendary materials have no price`);
+}
+const materialOut = materials.map((m: any) => ({
+  ...m,
+  gather_dc: m.tier === 4 ? null : crafting.tier_dc_floor[m.tier],
+  resists: m.element ? techniqueMatrix[m.element].resists : [],
+  vulnerable_to: m.element ? techniqueMatrix[m.element].vulnerable : [],
+}));
+
+// Recipes.
+const DISCIPLINES = crafting.disciplines.map((d: any) => d.id);
+const recipeOut = crafting.recipes.map((r: any) => {
+  claim(r.id, "recipe");
+  if (!DISCIPLINES.includes(r.discipline)) errors.push(`recipe ${r.id}: unknown discipline ${r.discipline}`);
+  const type = r.armour_type ? armour.armour_types.find((t: any) => t.id === r.armour_type) : null;
+  if (r.armour_type && !type) errors.push(`recipe ${r.id}: unknown armour type ${r.armour_type}`);
+  if (r.makes_vessel && !vessels.vessels.some((v: any) => v.id === r.makes_vessel)) errors.push(`recipe ${r.id}: unknown vessel ${r.makes_vessel}`);
+  const mats = r.materials.map((x: any) => materialById.get(x.material));
+  r.materials.forEach((x: any, i: number) => !mats[i] && errors.push(`recipe ${r.id}: unknown material ${x.material}`));
+  if (mats.some((m: any) => !m)) return r;
+
+  // Element synergy between every distinct pair of typed materials.
+  const typed: string[] = [...new Set<string>(mats.filter((m: any) => m.element).map((m: any) => m.element as string))];
+  const synergy: { pair: string[]; dc_change: number }[] = [];
+  for (let i = 0; i < typed.length; i++) {
+    for (let j = i + 1; j < typed.length; j++) {
+      const rels = componentsOf(typed[i]).flatMap((a) => componentsOf(typed[j]).map((b) => pairRelation(a, b)));
+      const change =
+        (rels.some((x) => x.includes("generates")) ? crafting.element_synergy.one_generates_the_other.dc_change : 0) +
+        (rels.some((x) => x.includes("controls")) ? crafting.element_synergy.one_controls_the_other.dc_change : 0);
+      if (change) synergy.push({ pair: [typed[i], typed[j]], dc_change: change });
+    }
+  }
+  const floor = crafting.tier_dc_floor[Math.max(...mats.map((m: any) => m.tier))];
+  const finalDc = Math.max(floor, r.dc + synergy.reduce((s, x) => s + x.dc_change, 0));
+  const weight = r.weight ?? type?.weight ?? null;
+  const wc = armour.beast_armour.weight_classes.find((w: any) => w.id === weight);
+  const primary = mats[0];
+  return {
+    ...r,
+    base_dc: r.dc,
+    dc: finalDc,
+    synergy,
+    weight,
+    guard_bonus: r.wearer === "keeper" ? r.guard_bonus : (wc?.guard_bonus ?? 0),
+    ...(r.wearer === "beast" && wc ? { speed_change_ft: wc.speed_change_ft } : {}),
+    durability: weight ? armour.durability.by_weight[weight] : null,
+    armour_element: primary.element,
+    resists: primary.element ? techniqueMatrix[primary.element].resists : [],
+    vulnerable_to: primary.element ? techniqueMatrix[primary.element].vulnerable : [],
+    fits: type ? Object.entries(type.fit).filter(([, f]) => f !== "no").map(([bp, f]) => ({ body_plan: bp, fit: f })) : undefined,
+  };
+});
+for (const [cls, list] of Object.entries(armour.keeper_armour.proficiency) as [string, string[]][]) {
+  for (const w of list) if (!armour.keeper_armour.classes.some((c: any) => c.id === w)) errors.push(`keeper proficiency ${cls}: unknown class ${w}`);
+}
+for (const a of crafting.beast_abilities.by_family) if (!families.includes(a.family)) errors.push(`beast ability: unknown family ${a.family}`);
+
+for (const s of [...zodiacOut, ...wandererOut] as any[]) s.armour = armourProfile(s);
+
 if (errors.length) {
   console.error(`${errors.length} draft error(s):`);
   for (const e of errors) console.error(`  ✗ ${e}`);
@@ -231,6 +415,17 @@ write("zodiac-bestiary.json", { ...meta, count: zodiacOut.length, species: zodia
 write("wanderers.json", { ...meta, count: wandererOut.length, species: wandererOut });
 write("vessel-spirits.json", { ...meta, count: spiritOut.length, spirits: spiritOut, vessels: vessels.vessels });
 write("keeper-cards.json", { ...meta, count: cardOut.length, categories: cards.categories, cards: cardOut });
+write("armour.json", {
+  ...meta,
+  ...armour,
+  compatibility: {
+    armour_type_by_body_plan: Object.fromEntries(armour.armour_types.map((t: any) => [t.id, t.fit])),
+    material_by_wearer_element: wearerMatrix,
+    material_vs_techniques: techniqueMatrix,
+  },
+});
+write("materials.json", { ...meta, count: materialOut.length, materials: materialOut });
+write("crafting.json", { ...meta, ...crafting, recipes: recipeOut });
 
 // ---------- Review digest ----------
 const md: string[] = [];
@@ -277,6 +472,60 @@ for (const cat of cards.categories) {
 }
 md.push("ⓒ = already canon in the brief.", "");
 
+// Armour
+const FIT_MARK: Record<string, string> = { yes: "✔", adapted: "◐", no: "·" };
+md.push("## Armour compatibility", "");
+md.push("### Armour type × body plan", "", "✔ fits · ◐ adapted (Beastwright fitting: DC +2, double time) · · can't be worn", "");
+md.push(`| Armour type | Slot | Weight | ${BODY_PLANS.join(" | ")} |`, `|---|---|---|${BODY_PLANS.map(() => "---").join("|")}|`);
+for (const t of armour.armour_types) md.push(`| ${t.name} | ${t.slot} | ${t.weight} | ${BODY_PLANS.map((bp: string) => FIT_MARK[t.fit[bp]]).join(" | ")} |`);
+md.push("");
+md.push("### Beast weight classes", "", "| Class | Guard | Speed | Min stage | Min size |", "|---|---|---|---|---|");
+for (const w of armour.beast_armour.weight_classes) md.push(`| ${w.id} | +${w.guard_bonus} | ${w.speed_change_ft} ft | ${w.min_stage} | ${w.min_size} |`);
+md.push("", `Total armour Guard bonus on a beast is capped at +${armour.beast_armour.max_total_guard_bonus}.`, "");
+md.push("### Material element × wearer element", "", "Rows: the armour's material. Columns: the wearer's form element. Keepers have no element, so for them only resistances apply.", "");
+md.push(`| Material | ${ELEMENTS.join(" | ")} | Resists | Vulnerable to |`, `|---|${ELEMENTS.map(() => "---").join("|")}|---|---|`);
+for (const m of MATERIAL_TYPES) {
+  md.push(`| **${m}** | ${ELEMENTS.map((w) => wearerMatrix[m][w]).join(" | ")} | ${techniqueMatrix[m].resists.join(", ") || "—"} | ${techniqueMatrix[m].vulnerable.join(", ") || "—"} |`);
+}
+md.push("");
+for (const [k, v] of Object.entries(armour.element_compatibility.wearer_vs_material) as [string, any][]) md.push(`- **${v.name}** — ${v.effect}`);
+md.push(`- **Resists** — ${armour.element_compatibility.versus_incoming_techniques.material_controls_attacker.effect}`);
+md.push(`- **Vulnerable** — ${armour.element_compatibility.versus_incoming_techniques.attacker_controls_material.effect}`, "");
+md.push("### What each zodiac species can wear", "", "| Species | Body plan | Size | Slots | Heaviest |", "|---|---|---|---|---|");
+for (const s of zodiacOut) md.push(`| ${s.name} | ${s.armour.body_plan} | ${s.armour.size} | ${s.armour.slots.join(", ")} | ${s.armour.max_weight} |`);
+md.push("");
+md.push("### Keeper armour", "", "| Armour | Class | Guard | DEX cap | Material element | Resists | Vulnerable | Craft DC | Days |", "|---|---|---|---|---|---|---|---|---|");
+for (const r of recipeOut.filter((x: any) => x.wearer === "keeper")) {
+  const cls = armour.keeper_armour.classes.find((c: any) => c.id === r.weight);
+  md.push(`| ${r.name} | ${r.weight} | +${r.guard_bonus} | ${cls.dex_cap ?? "none"} | ${r.armour_element ?? "—"} | ${r.resists.join(", ") || "—"} | ${r.vulnerable_to.join(", ") || "—"} | ${r.dc} | ${r.days} |`);
+}
+md.push("");
+
+// Materials
+md.push("## Materials", "", "Tier 4 materials are Sovereign gifts only: they can't be bought, sold or crafted.", "");
+md.push("| Material | Element | Tier | Source | Roles | Value | Property |", "|---|---|---|---|---|---|---|");
+for (const m of materialOut) {
+  const src = m.source.from ? `${m.source.method} (${m.source.from})` : m.source.method;
+  md.push(`| ${m.name} | ${m.element ?? "—"} | ${m.tier} | ${src} | ${m.roles.join(", ")} | ${m.value ?? "gift"} | ${m.properties} |`);
+}
+md.push("");
+
+// Crafting
+md.push("## Crafting", "", `**Check:** ${crafting.check.roll}.`, "");
+for (const o of crafting.check.outcomes) md.push(`- **${o.id}** (${o.when}): ${o.result}`);
+md.push("", `**Element synergy:** materials that generate each other −2 DC; materials that control each other +3 DC. The best material's tier sets a minimum DC (${Object.entries(crafting.tier_dc_floor).map(([t, d]) => `T${t} ${d}`).join(", ")}).`, "");
+md.push("### Disciplines", "", "| Discipline | Ability | Makes |", "|---|---|---|");
+for (const d of crafting.disciplines) md.push(`| ${d.name} | ${d.ability} | ${d.makes} |`);
+md.push("", "### Beast crafting abilities", "", "| Family / form | Ability | Effect |", "|---|---|---|");
+for (const a of crafting.beast_abilities.by_family) md.push(`| ${a.family} | ${a.name} | ${a.effect} |`);
+for (const a of crafting.beast_abilities.by_element_form) md.push(`| ${a.element} form | ${a.name} | ${a.effect} |`);
+md.push("", "### Beast armour recipes", "", "| Recipe | Type | Weight | Guard | Element | Materials | DC (base → final) | Days |", "|---|---|---|---|---|---|---|---|");
+for (const r of recipeOut.filter((x: any) => x.wearer !== "keeper")) {
+  const mats = r.materials.map((x: any) => `${x.qty}× ${x.material}`).join(", ");
+  md.push(`| ${r.name} | ${r.armour_type ?? r.makes_vessel ?? "—"} | ${r.weight ?? "—"} | ${r.weight ? `+${r.guard_bonus}` : "—"} | ${r.armour_element ?? "—"} | ${mats} | ${r.base_dc} → ${r.dc} | ${r.days} |`);
+}
+md.push("");
+
 md.push("## Sample lore", "");
 for (const id of ["nezrath", "gyuurok", "usagetsu"]) {
   const s = zodiacOut.find((x: any) => x.id === id);
@@ -284,4 +533,4 @@ for (const id of ["nezrath", "gyuurok", "usagetsu"]) {
 }
 writeFileSync(join(ROOT, "drafts", "REVIEW.md"), md.join("\n"));
 
-console.log(`drafts: ${zodiacOut.length} zodiac · ${wandererOut.length} wanderer · ${spiritOut.length} spirits · ${cardOut.length} cards → drafts/json, drafts/REVIEW.md`);
+console.log(`drafts: ${zodiacOut.length} zodiac · ${wandererOut.length} wanderer · ${spiritOut.length} spirits · ${cardOut.length} cards · ${materialOut.length} materials · ${recipeOut.length} recipes → drafts/json, drafts/REVIEW.md`);

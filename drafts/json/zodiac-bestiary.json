@@ -8,6 +8,7 @@
       "name": "Pipwhisk",
       "line": "rat",
       "kind": "zodiac",
+      "family": "rodent",
       "stage": 1,
       "stage_name": "Kit",
       "playable": true,
@@ -118,13 +119,48 @@
           "region": "Japan",
           "tradition": "Rats as messengers of Daikokuten, a god of plenty and the harvest."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "clawed-quadruped",
+        "size": "tiny",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "tail",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "claw-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "tail-sheath",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "shadecrawl",
       "name": "Shadecrawl",
       "line": "rat",
       "kind": "zodiac",
+      "family": "rodent",
       "stage": 2,
       "stage_name": "Adept",
       "playable": true,
@@ -235,13 +271,56 @@
           "region": "Japan",
           "tradition": "Rats as messengers of Daikokuten, a god of plenty and the harvest."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "clawed-quadruped",
+        "size": "small",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "tail",
+          "charm"
+        ],
+        "max_weight": "medium",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "lamellar-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "scale-sheath",
+            "fit": "adapted"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "claw-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "tail-sheath",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "nezrath",
       "name": "Nezrath",
       "line": "rat",
       "kind": "zodiac",
+      "family": "rodent",
       "stage": 3,
       "stage_name": "Sovereign",
       "epithet": "The First Hour",
@@ -353,13 +432,60 @@
           "region": "Japan",
           "tradition": "Rats as messengers of Daikokuten, a god of plenty and the harvest."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "clawed-quadruped",
+        "size": "medium",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "tail",
+          "charm"
+        ],
+        "max_weight": "heavy",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "lamellar-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "scale-sheath",
+            "fit": "adapted"
+          },
+          {
+            "type": "plate-barding",
+            "fit": "adapted"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "claw-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "tail-sheath",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "calfstone",
       "name": "Calfstone",
       "line": "ox",
       "kind": "zodiac",
+      "family": "bovine",
       "stage": 1,
       "stage_name": "Kit",
       "playable": true,
@@ -471,13 +597,43 @@
           "region": "China",
           "tradition": "The Spring Ox of clay struck at Lichun to welcome the farming year."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "hooved-quadruped",
+        "size": "medium",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "hoof-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "plowhorn",
       "name": "Plowhorn",
       "line": "ox",
       "kind": "zodiac",
+      "family": "bovine",
       "stage": 2,
       "stage_name": "Adept",
       "playable": true,
@@ -589,13 +745,59 @@
           "region": "China",
           "tradition": "The Spring Ox of clay struck at Lichun to welcome the farming year."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "hooved-quadruped",
+        "size": "large",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "charm"
+        ],
+        "max_weight": "heavy",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "lamellar-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "scale-sheath",
+            "fit": "adapted"
+          },
+          {
+            "type": "plate-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "horn-cap",
+            "fit": "yes"
+          },
+          {
+            "type": "hoof-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "gyuurok",
       "name": "Gyuurok",
       "line": "ox",
       "kind": "zodiac",
+      "family": "bovine",
       "stage": 3,
       "stage_name": "Sovereign",
       "epithet": "The Unbroken Yoke",
@@ -708,13 +910,59 @@
           "region": "China",
           "tradition": "The Spring Ox of clay struck at Lichun to welcome the farming year."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "hooved-quadruped",
+        "size": "huge",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "charm"
+        ],
+        "max_weight": "heavy",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "lamellar-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "scale-sheath",
+            "fit": "adapted"
+          },
+          {
+            "type": "plate-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "horn-cap",
+            "fit": "yes"
+          },
+          {
+            "type": "hoof-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "stripling",
       "name": "Stripling",
       "line": "tiger",
       "kind": "zodiac",
+      "family": "feline",
       "stage": 1,
       "stage_name": "Kit",
       "playable": true,
@@ -825,13 +1073,48 @@
           "region": "China",
           "tradition": "The tiger as king of the hundred beasts, with the character 王 (king) said to be written in the stripes on its brow."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "clawed-quadruped",
+        "size": "small",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "tail",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "claw-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "tail-sheath",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "thornstripe",
       "name": "Thornstripe",
       "line": "tiger",
       "kind": "zodiac",
+      "family": "feline",
       "stage": 2,
       "stage_name": "Adept",
       "playable": true,
@@ -942,13 +1225,60 @@
           "region": "China",
           "tradition": "The tiger as king of the hundred beasts, with the character 王 (king) said to be written in the stripes on its brow."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "clawed-quadruped",
+        "size": "medium",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "tail",
+          "charm"
+        ],
+        "max_weight": "heavy",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "lamellar-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "scale-sheath",
+            "fit": "adapted"
+          },
+          {
+            "type": "plate-barding",
+            "fit": "adapted"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "claw-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "tail-sheath",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "torakai",
       "name": "Torakai",
       "line": "tiger",
       "kind": "zodiac",
+      "family": "feline",
       "stage": 3,
       "stage_name": "Sovereign",
       "epithet": "The Verdant Fang",
@@ -1060,13 +1390,60 @@
           "region": "China",
           "tradition": "The tiger as king of the hundred beasts, with the character 王 (king) said to be written in the stripes on its brow."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "clawed-quadruped",
+        "size": "large",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "tail",
+          "charm"
+        ],
+        "max_weight": "heavy",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "lamellar-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "scale-sheath",
+            "fit": "adapted"
+          },
+          {
+            "type": "plate-barding",
+            "fit": "adapted"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "claw-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "tail-sheath",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "mooncotton",
       "name": "Mooncotton",
       "line": "rabbit",
       "kind": "zodiac",
+      "family": "lagomorph",
       "stage": 1,
       "stage_name": "Kit",
       "playable": true,
@@ -1174,13 +1551,48 @@
           "region": "South and Southeast Asia",
           "tradition": "The Buddhist Śaśa Jātaka, in which a rabbit offers itself as food to a hungry traveller, who places its image on the moon in gratitude."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "clawed-quadruped",
+        "size": "tiny",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "tail",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "claw-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "tail-sheath",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "hareveil",
       "name": "Hareveil",
       "line": "rabbit",
       "kind": "zodiac",
+      "family": "lagomorph",
       "stage": 2,
       "stage_name": "Adept",
       "playable": true,
@@ -1288,13 +1700,56 @@
           "region": "South and Southeast Asia",
           "tradition": "The Buddhist Śaśa Jātaka, in which a rabbit offers itself as food to a hungry traveller, who places its image on the moon in gratitude."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "clawed-quadruped",
+        "size": "small",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "tail",
+          "charm"
+        ],
+        "max_weight": "medium",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "lamellar-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "scale-sheath",
+            "fit": "adapted"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "claw-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "tail-sheath",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "usagetsu",
       "name": "Usagetsu",
       "line": "rabbit",
       "kind": "zodiac",
+      "family": "lagomorph",
       "stage": 3,
       "stage_name": "Sovereign",
       "epithet": "The Jade Moon",
@@ -1403,13 +1858,56 @@
           "region": "South and Southeast Asia",
           "tradition": "The Buddhist Śaśa Jātaka, in which a rabbit offers itself as food to a hungry traveller, who places its image on the moon in gratitude."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "clawed-quadruped",
+        "size": "small",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "tail",
+          "charm"
+        ],
+        "max_weight": "medium",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "lamellar-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "scale-sheath",
+            "fit": "adapted"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "claw-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "tail-sheath",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "scalekin",
       "name": "Scalekin",
       "line": "dragon",
       "kind": "zodiac",
+      "family": "reptilian",
       "stage": 1,
       "stage_name": "Kit",
       "playable": true,
@@ -1525,13 +2023,47 @@
           "region": "China",
           "tradition": "Dragons chasing the flaming pearl, and the Dragon Kings who rule rain and the four seas."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "long-dragon",
+        "size": "small",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "adapted"
+          },
+          {
+            "type": "feather-mantle",
+            "fit": "adapted"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "claw-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "cloudcoil",
       "name": "Cloudcoil",
       "line": "dragon",
       "kind": "zodiac",
+      "family": "reptilian",
       "stage": 2,
       "stage_name": "Adept",
       "playable": true,
@@ -1647,13 +2179,63 @@
           "region": "China",
           "tradition": "Dragons chasing the flaming pearl, and the Dragon Kings who rule rain and the four seas."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "long-dragon",
+        "size": "medium",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "charm"
+        ],
+        "max_weight": "heavy",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "adapted"
+          },
+          {
+            "type": "lamellar-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "scale-sheath",
+            "fit": "yes"
+          },
+          {
+            "type": "plate-barding",
+            "fit": "adapted"
+          },
+          {
+            "type": "feather-mantle",
+            "fit": "adapted"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "horn-cap",
+            "fit": "yes"
+          },
+          {
+            "type": "claw-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "ryuuten",
       "name": "Ryuuten",
       "line": "dragon",
       "kind": "zodiac",
+      "family": "reptilian",
       "stage": 3,
       "stage_name": "Sovereign",
       "epithet": "Heaven's Coil",
@@ -1770,13 +2352,63 @@
           "region": "China",
           "tradition": "Dragons chasing the flaming pearl, and the Dragon Kings who rule rain and the four seas."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "long-dragon",
+        "size": "large",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "charm"
+        ],
+        "max_weight": "heavy",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "adapted"
+          },
+          {
+            "type": "lamellar-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "scale-sheath",
+            "fit": "yes"
+          },
+          {
+            "type": "plate-barding",
+            "fit": "adapted"
+          },
+          {
+            "type": "feather-mantle",
+            "fit": "adapted"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "horn-cap",
+            "fit": "yes"
+          },
+          {
+            "type": "claw-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "hissling",
       "name": "Hissling",
       "line": "snake",
       "kind": "zodiac",
+      "family": "reptilian",
       "stage": 1,
       "stage_name": "Kit",
       "playable": true,
@@ -1884,13 +2516,38 @@
           "region": "Japan",
           "tradition": "White snakes as messengers of Benzaiten, goddess of music and fortune, and the protected white snakes of Iwakuni."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "serpentine",
+        "size": "tiny",
+        "slots": [
+          "head",
+          "body",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "adapted"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "coilshade",
       "name": "Coilshade",
       "line": "snake",
       "kind": "zodiac",
+      "family": "reptilian",
       "stage": 2,
       "stage_name": "Adept",
       "playable": true,
@@ -1998,13 +2655,42 @@
           "region": "Japan",
           "tradition": "White snakes as messengers of Benzaiten, goddess of music and fortune, and the protected white snakes of Iwakuni."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "serpentine",
+        "size": "small",
+        "slots": [
+          "head",
+          "body",
+          "charm"
+        ],
+        "max_weight": "medium",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "adapted"
+          },
+          {
+            "type": "scale-sheath",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "hebiko",
       "name": "Hebiko",
       "line": "snake",
       "kind": "zodiac",
+      "family": "reptilian",
       "stage": 3,
       "stage_name": "Sovereign",
       "epithet": "The Ninefold Venom",
@@ -2113,13 +2799,42 @@
           "region": "Japan",
           "tradition": "White snakes as messengers of Benzaiten, goddess of music and fortune, and the protected white snakes of Iwakuni."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "serpentine",
+        "size": "medium",
+        "slots": [
+          "head",
+          "body",
+          "charm"
+        ],
+        "max_weight": "medium",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "adapted"
+          },
+          {
+            "type": "scale-sheath",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "foalspark",
       "name": "Foalspark",
       "line": "horse",
       "kind": "zodiac",
+      "family": "equine",
       "stage": 1,
       "stage_name": "Kit",
       "playable": true,
@@ -2230,13 +2945,43 @@
           "region": "Inner Asia",
           "tradition": "The windhorse that carries prayers and good fortune on the wind."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "hooved-quadruped",
+        "size": "medium",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "hoof-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "galeflank",
       "name": "Galeflank",
       "line": "horse",
       "kind": "zodiac",
+      "family": "equine",
       "stage": 2,
       "stage_name": "Adept",
       "playable": true,
@@ -2347,13 +3092,59 @@
           "region": "Inner Asia",
           "tradition": "The windhorse that carries prayers and good fortune on the wind."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "hooved-quadruped",
+        "size": "large",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "charm"
+        ],
+        "max_weight": "heavy",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "lamellar-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "scale-sheath",
+            "fit": "adapted"
+          },
+          {
+            "type": "plate-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "horn-cap",
+            "fit": "yes"
+          },
+          {
+            "type": "hoof-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "umaren",
       "name": "Umaren",
       "line": "horse",
       "kind": "zodiac",
+      "family": "equine",
       "stage": 3,
       "stage_name": "Sovereign",
       "epithet": "The Sunrunner",
@@ -2465,13 +3256,59 @@
           "region": "Inner Asia",
           "tradition": "The windhorse that carries prayers and good fortune on the wind."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "hooved-quadruped",
+        "size": "large",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "charm"
+        ],
+        "max_weight": "heavy",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "lamellar-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "scale-sheath",
+            "fit": "adapted"
+          },
+          {
+            "type": "plate-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "horn-cap",
+            "fit": "yes"
+          },
+          {
+            "type": "hoof-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "woolkid",
       "name": "Woolkid",
       "line": "goat",
       "kind": "zodiac",
+      "family": "caprine",
       "stage": 1,
       "stage_name": "Kit",
       "playable": true,
@@ -2575,13 +3412,43 @@
           "region": "China",
           "tradition": "The Five Rams of Guangzhou, in which five immortals rode five rams carrying stalks of rice to a starving city, then left the rams behind as stone. Guangzhou is still called the City of Rams."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "hooved-quadruped",
+        "size": "tiny",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "hoof-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "cragram",
       "name": "Cragram",
       "line": "goat",
       "kind": "zodiac",
+      "family": "caprine",
       "stage": 2,
       "stage_name": "Adept",
       "playable": true,
@@ -2685,13 +3552,59 @@
           "region": "China",
           "tradition": "The Five Rams of Guangzhou, in which five immortals rode five rams carrying stalks of rice to a starving city, then left the rams behind as stone. Guangzhou is still called the City of Rams."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "hooved-quadruped",
+        "size": "medium",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "charm"
+        ],
+        "max_weight": "heavy",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "lamellar-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "scale-sheath",
+            "fit": "adapted"
+          },
+          {
+            "type": "plate-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "horn-cap",
+            "fit": "yes"
+          },
+          {
+            "type": "hoof-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "yangsu",
       "name": "Yangsu",
       "line": "goat",
       "kind": "zodiac",
+      "family": "caprine",
       "stage": 3,
       "stage_name": "Sovereign",
       "epithet": "The Gentle Summit",
@@ -2796,13 +3709,59 @@
           "region": "China",
           "tradition": "The Five Rams of Guangzhou, in which five immortals rode five rams carrying stalks of rice to a starving city, then left the rams behind as stone. Guangzhou is still called the City of Rams."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "hooved-quadruped",
+        "size": "medium",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "charm"
+        ],
+        "max_weight": "heavy",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "lamellar-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "scale-sheath",
+            "fit": "adapted"
+          },
+          {
+            "type": "plate-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "horn-cap",
+            "fit": "yes"
+          },
+          {
+            "type": "hoof-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "mischkit",
       "name": "Mischkit",
       "line": "monkey",
       "kind": "zodiac",
+      "family": "primate",
       "stage": 1,
       "stage_name": "Kit",
       "playable": true,
@@ -2914,13 +3873,48 @@
           "region": "Indonesia",
           "tradition": "The temple monkeys of Bali's forest shrines, honoured guardians and notorious thieves."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "primate",
+        "size": "tiny",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "tail",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "claw-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "tail-sheath",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "trickpaw",
       "name": "Trickpaw",
       "line": "monkey",
       "kind": "zodiac",
+      "family": "primate",
       "stage": 2,
       "stage_name": "Adept",
       "playable": true,
@@ -3032,13 +4026,52 @@
           "region": "Indonesia",
           "tradition": "The temple monkeys of Bali's forest shrines, honoured guardians and notorious thieves."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "primate",
+        "size": "small",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "tail",
+          "charm"
+        ],
+        "max_weight": "medium",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "lamellar-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "claw-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "tail-sheath",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "sarugen",
       "name": "Sarugen",
       "line": "monkey",
       "kind": "zodiac",
+      "family": "primate",
       "stage": 3,
       "stage_name": "Sovereign",
       "epithet": "The Mirror Sage",
@@ -3151,13 +4184,52 @@
           "region": "Indonesia",
           "tradition": "The temple monkeys of Bali's forest shrines, honoured guardians and notorious thieves."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "primate",
+        "size": "medium",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "tail",
+          "charm"
+        ],
+        "max_weight": "medium",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "lamellar-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "claw-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "tail-sheath",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "chickpip",
       "name": "Chickpip",
       "line": "rooster",
       "kind": "zodiac",
+      "family": "avian",
       "stage": 1,
       "stage_name": "Kit",
       "playable": true,
@@ -3264,13 +4336,47 @@
           "region": "China",
           "tradition": "The Five Virtues of the rooster from the Han dynasty — learning (its crest), martial skill (its spurs), courage (it fights), benevolence (it shares food) and trustworthiness (it crows on time)."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "avian",
+        "size": "tiny",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "adapted"
+          },
+          {
+            "type": "feather-mantle",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "talon-sheaths",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "dawncrest",
       "name": "Dawncrest",
       "line": "rooster",
       "kind": "zodiac",
+      "family": "avian",
       "stage": 2,
       "stage_name": "Adept",
       "playable": true,
@@ -3377,13 +4483,47 @@
           "region": "China",
           "tradition": "The Five Virtues of the rooster from the Han dynasty — learning (its crest), martial skill (its spurs), courage (it fights), benevolence (it shares food) and trustworthiness (it crows on time)."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "avian",
+        "size": "small",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "adapted"
+          },
+          {
+            "type": "feather-mantle",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "talon-sheaths",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "kokketsu",
       "name": "Kokketsu",
       "line": "rooster",
       "kind": "zodiac",
+      "family": "avian",
       "stage": 3,
       "stage_name": "Sovereign",
       "epithet": "The Iron Dawn",
@@ -3491,13 +4631,47 @@
           "region": "China",
           "tradition": "The Five Virtues of the rooster from the Han dynasty — learning (its crest), martial skill (its spurs), courage (it fights), benevolence (it shares food) and trustworthiness (it crows on time)."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "avian",
+        "size": "medium",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "adapted"
+          },
+          {
+            "type": "feather-mantle",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "talon-sheaths",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "puplight",
       "name": "Puplight",
       "line": "dog",
       "kind": "zodiac",
+      "family": "canine",
       "stage": 1,
       "stage_name": "Kit",
       "playable": true,
@@ -3609,13 +4783,48 @@
           "region": "China",
           "tradition": "Tiangou, the heavenly dog said to swallow the sun or moon during eclipses until it is frightened off with noise."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "clawed-quadruped",
+        "size": "tiny",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "tail",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "claw-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "tail-sheath",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "hearthound",
       "name": "Hearthound",
       "line": "dog",
       "kind": "zodiac",
+      "family": "canine",
       "stage": 2,
       "stage_name": "Adept",
       "playable": true,
@@ -3727,13 +4936,60 @@
           "region": "China",
           "tradition": "Tiangou, the heavenly dog said to swallow the sun or moon during eclipses until it is frightened off with noise."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "clawed-quadruped",
+        "size": "medium",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "tail",
+          "charm"
+        ],
+        "max_weight": "heavy",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "lamellar-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "scale-sheath",
+            "fit": "adapted"
+          },
+          {
+            "type": "plate-barding",
+            "fit": "adapted"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "claw-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "tail-sheath",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "inukai",
       "name": "Inukai",
       "line": "dog",
       "kind": "zodiac",
+      "family": "canine",
       "stage": 3,
       "stage_name": "Sovereign",
       "epithet": "The Loyal Ward",
@@ -3846,13 +5102,60 @@
           "region": "China",
           "tradition": "Tiangou, the heavenly dog said to swallow the sun or moon during eclipses until it is frightened off with noise."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "clawed-quadruped",
+        "size": "medium",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "tail",
+          "charm"
+        ],
+        "max_weight": "heavy",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "lamellar-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "scale-sheath",
+            "fit": "adapted"
+          },
+          {
+            "type": "plate-barding",
+            "fit": "adapted"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "claw-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "tail-sheath",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "truffling",
       "name": "Truffling",
       "line": "pig",
       "kind": "zodiac",
+      "family": "suine",
       "stage": 1,
       "stage_name": "Kit",
       "playable": true,
@@ -3960,13 +5263,43 @@
           "region": "Vietnam",
           "tradition": "Đông Hồ woodblock prints of a sow with piglets, hung at Tết as a wish for abundance and a large, happy family."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "hooved-quadruped",
+        "size": "small",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "hoof-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "mudboar",
       "name": "Mudboar",
       "line": "pig",
       "kind": "zodiac",
+      "family": "suine",
       "stage": 2,
       "stage_name": "Adept",
       "playable": true,
@@ -4074,13 +5407,59 @@
           "region": "Vietnam",
           "tradition": "Đông Hồ woodblock prints of a sow with piglets, hung at Tết as a wish for abundance and a large, happy family."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "hooved-quadruped",
+        "size": "medium",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "charm"
+        ],
+        "max_weight": "heavy",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "lamellar-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "scale-sheath",
+            "fit": "adapted"
+          },
+          {
+            "type": "plate-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "horn-cap",
+            "fit": "yes"
+          },
+          {
+            "type": "hoof-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "butagon",
       "name": "Butagon",
       "line": "pig",
       "kind": "zodiac",
+      "family": "suine",
       "stage": 3,
       "stage_name": "Sovereign",
       "epithet": "The Abundant",
@@ -4189,7 +5568,52 @@
           "region": "Vietnam",
           "tradition": "Đông Hồ woodblock prints of a sow with piglets, hung at Tết as a wish for abundance and a large, happy family."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "hooved-quadruped",
+        "size": "large",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "charm"
+        ],
+        "max_weight": "heavy",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "lamellar-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "scale-sheath",
+            "fit": "adapted"
+          },
+          {
+            "type": "plate-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "horn-cap",
+            "fit": "yes"
+          },
+          {
+            "type": "hoof-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     }
   ]
 }

@@ -1,0 +1,386 @@
+# DRAFT for review. Crafting: Keeper disciplines, how a crafting check works, how beasts help,
+# and recipes for Keeper armour, beast armour and charms.
+
+check:
+  roll: d20 + discipline ability modifier + Rank (if proficient in the discipline) vs recipe DC
+  rank_source: The Keeper's Rank, from the same level table as beasts (data/rules.yaml).
+  time: Each recipe lists working days. Two Keepers working together halve it (round up).
+  outcomes:
+    - { id: ruined, when: "Fail by 5 or more", result: "All materials are lost." }
+    - { id: failed, when: "Fail by 1–4", result: "No progress; half the materials (round down) are lost." }
+    - { id: standard, when: "Meet the DC", result: "The piece is made." }
+    - { id: fine, when: "Beat the DC by 5 or more", result: "+2 durability, and pick one: −1 weight class step for Speed purposes, or +1 to the material's special effect." }
+    - { id: masterwork, when: "Beat the DC by 10 or more, or a natural 20 that also meets the DC", result: "Fine, plus an inscription slot for a talisman charm (see charms)." }
+
+# Combining materials of different elements in one piece.
+element_synergy:
+  one_generates_the_other: { dc_change: -2, note: "The materials feed each other, e.g. Wood frame with Fire padding." }
+  one_controls_the_other: { dc_change: 3, note: "The materials fight, e.g. Metal facing on a Wood frame." }
+  same_element: { dc_change: 0 }
+  untyped: { dc_change: 0 }
+  rule: Compare every pair of typed materials in the recipe; apply each change once per distinct pair.
+
+# Tier of the best material sets a floor on the DC.
+tier_dc_floor: { 1: 10, 2: 13, 3: 16, 4: 19 }
+
+disciplines:
+  - id: weaving
+    name: Weaving
+    ability: DEX
+    tools: Loom, rattan knife, needles
+    makes: Quilted coats, rattan and paper armour, feather mantles, silk padding, collars.
+  - id: hidework
+    name: Hidework
+    ability: DEX
+    tools: Awls, scrapers, tanning vats
+    makes: Fish leather, tanned hides, scale sheaths, straps and lacing.
+  - id: smithing
+    name: Smithing
+    ability: STR
+    tools: Forge, anvil, hammers, quench trough
+    makes: Lamellar plates, plate barding, horn caps, metal fittings.
+  - id: lacquerwork
+    name: Lacquerwork
+    ability: WIS
+    tools: Brushes, curing cabinet, polishing stones
+    makes: Lacquer finishes, shell facing, inlay. Needs patience; each coat cures for a day.
+  - id: kilnwork
+    name: Kilnwork
+    ability: INT
+    tools: Kiln, glazes, moulds
+    makes: Glazed tiles, ceramic plates, clay jars and pillow boxes (vessels).
+  - id: talisman-carving
+    name: Talisman Carving
+    ability: WIS
+    tools: Fine chisels, brushes, cinnabar ink
+    makes: Charms, peach-wood and jade talismans, inscriptions on masterwork pieces.
+  - id: beastwright
+    name: Beastwright
+    ability: WIS
+    tools: Measuring cords, padding, fitting frame
+    makes: Fits any beast armour to a body plan marked "adapted"; refits armour after a beast evolves.
+
+# Keeper class links (proposed; classes are designed in Phase 6).
+class_disciplines:
+  artisan: Proficient in three disciplines at level 1 and adds a fourth at level 5. Halves crafting time.
+  warden: Proficient in Smithing.
+  sage: Proficient in Talisman Carving.
+  wayfarer: Proficient in Hidework.
+  envoy: Proficient in Weaving.
+  seeker: Proficient in Beastwright.
+
+# How beasts help. A bonded beast can assist one crafting or gathering task per day.
+beast_abilities:
+  by_family:
+    - { family: rodent, name: "Fine Gnawing", effect: "Advantage on Talisman Carving checks." }
+    - { family: bovine, name: "Bellows and Millstone", effect: "Smithing and Kilnwork take half time." }
+    - { family: feline, name: "Precise Claw", effect: "+2 to inscription work on masterwork pieces." }
+    - { family: lagomorph, name: "Lucky Find", effect: "Reroll one failed gathering check per day." }
+    - { family: reptilian, name: "Patient Shedding", effect: "Gives one tier-1 hide or scale material per long rest." }
+    - { family: equine, name: "Packbearer", effect: "Carries up to 10× its weight class in materials; travel to a market takes half time." }
+    - { family: caprine, name: "Cliff Forager", effect: "Advantage on gathering checks for minerals and jade." }
+    - { family: primate, name: "Deft Hands", effect: "Counts as a second crafter (halves time) for Weaving and Hidework." }
+    - { family: avian, name: "Moult Gift", effect: "Gives one feather material of its form's element per long rest." }
+    - { family: canine, name: "Keen Nose", effect: "Advantage on gathering checks to find materials (Tracking)." }
+    - { family: suine, name: "Forager", effect: "Finds one tier-1 material of its choice per day of travel." }
+    - { family: piscine, name: "Pearl Diver", effect: "Advantage on gathering checks for shell and mother-of-pearl." }
+    - { family: insectoid, name: "Silk Spinner", effect: "Gives one silk or fibre material per long rest." }
+    - { family: chelonian, name: "Slow Cure", effect: "Lacquerwork curing time is halved." }
+  by_element_form:
+    - { element: wood, name: "Green Thumb", effect: "Grown materials (rattan, bamboo, peach wood) are found on any gathering success." }
+    - { element: fire, name: "Living Forge", effect: "Heats a forge or kiln with no fuel; +1 to Smithing and Kilnwork checks." }
+    - { element: earth, name: "Steady Ground", effect: "+1 to Kilnwork checks; ceramic pieces gain +1 durability." }
+    - { element: metal, name: "Edge Sense", effect: "+1 to Smithing checks; spots flaws, so a failed Smithing check loses no materials." }
+    - { element: water, name: "Quench", effect: "+2 to Smithing checks for metal pieces (a perfect quench)." }
+
+recipes:
+  # ---------------- Keeper armour ----------------
+  - id: quilted-robe
+    name: Quilted Robe
+    wearer: keeper
+    weight: light
+    guard_bonus: 1
+    discipline: weaving
+    dc: 10
+    days: 2
+    materials: [{ material: cotton-batting, qty: 3 }, { material: ramie-cord, qty: 1 }]
+  - id: paper-armour
+    name: Paper Armour
+    wearer: keeper
+    weight: light
+    guard_bonus: 2
+    discipline: weaving
+    dc: 12
+    days: 4
+    materials: [{ material: mulberry-paper, qty: 6 }, { material: ramie-cord, qty: 2 }]
+    notes: Layered, pressed paper. Light and surprisingly tough, but Vulnerable to Fire.
+  - id: rattan-cuirass
+    name: Rattan Cuirass
+    wearer: keeper
+    weight: light
+    guard_bonus: 2
+    discipline: weaving
+    dc: 11
+    days: 3
+    materials: [{ material: rattan, qty: 4 }, { material: cotton-batting, qty: 1 }]
+  - id: fish-leather-coat
+    name: Fish-Leather Coat
+    wearer: keeper
+    weight: medium
+    guard_bonus: 3
+    discipline: hidework
+    dc: 12
+    days: 5
+    materials: [{ material: fish-leather, qty: 4 }, { material: cotton-batting, qty: 1 }]
+    notes: Waterproof; the wearer can't be Soaked.
+  - id: horn-lamellar
+    name: Horn Lamellar
+    wearer: keeper
+    weight: medium
+    guard_bonus: 4
+    discipline: smithing
+    dc: 13
+    days: 6
+    materials: [{ material: buffalo-horn, qty: 4 }, { material: ramie-cord, qty: 3 }, { material: cotton-batting, qty: 1 }]
+  - id: studded-brigandine
+    name: Studded Brigandine
+    wearer: keeper
+    weight: medium
+    guard_bonus: 4
+    discipline: smithing
+    dc: 14
+    days: 7
+    materials: [{ material: bronze, qty: 3 }, { material: cotton-batting, qty: 2 }, { material: ramie-cord, qty: 1 }]
+    notes: Plates riveted inside a cloth coat, so only the studs show.
+  - id: iron-lamellar
+    name: Iron Lamellar
+    wearer: keeper
+    weight: heavy
+    guard_bonus: 5
+    discipline: smithing
+    dc: 15
+    days: 10
+    materials: [{ material: folded-iron, qty: 6 }, { material: galeflank-mane, qty: 2 }, { material: cotton-batting, qty: 2 }]
+  - id: brass-and-horn-plate
+    name: Brass-and-Horn Plate
+    wearer: keeper
+    weight: heavy
+    guard_bonus: 6
+    discipline: smithing
+    dc: 16
+    days: 12
+    materials: [{ material: brass, qty: 5 }, { material: buffalo-horn, qty: 3 }, { material: fish-leather, qty: 2 }]
+    notes: Brass plates and horn joined with mail, after the armour traditions of the southern Philippines.
+
+  # ---------------- Beast armour ----------------
+  - id: quilted-beast-coat
+    name: Quilted Beast Coat
+    wearer: beast
+    armour_type: quilted-coat
+    discipline: weaving
+    dc: 10
+    days: 2
+    materials: [{ material: cotton-batting, qty: 3 }, { material: ramie-cord, qty: 1 }]
+  - id: ember-felt-coat
+    name: Ember Felt Coat
+    wearer: beast
+    armour_type: quilted-coat
+    discipline: weaving
+    dc: 11
+    days: 3
+    materials: [{ material: ember-felt, qty: 3 }, { material: rattan, qty: 1 }]
+    notes: Rattan (Wood) generates the felt's Fire, so the build applies a −2 synergy to the DC.
+  - id: horn-lamellar-barding
+    name: Horn Lamellar Barding
+    wearer: beast
+    armour_type: lamellar-barding
+    discipline: smithing
+    dc: 13
+    days: 6
+    materials: [{ material: buffalo-horn, qty: 6 }, { material: ramie-cord, qty: 3 }]
+  - id: glazed-lamellar-barding
+    name: Glazed Lamellar Barding
+    wearer: beast
+    armour_type: lamellar-barding
+    discipline: kilnwork
+    dc: 14
+    days: 8
+    materials: [{ material: kiln-glaze, qty: 6 }, { material: galeflank-mane, qty: 2 }]
+  - id: scute-scale-sheath
+    name: Scute Scale Sheath
+    wearer: beast
+    armour_type: scale-sheath
+    discipline: hidework
+    dc: 13
+    days: 6
+    materials: [{ material: tortoise-scute, qty: 5 }, { material: galeflank-mane, qty: 2 }]
+  - id: inkscale-sheath
+    name: Inkscale Sheath
+    wearer: beast
+    armour_type: scale-sheath
+    discipline: hidework
+    dc: 11
+    days: 4
+    materials: [{ material: inkcarp-scale, qty: 8 }, { material: fish-leather, qty: 2 }]
+  - id: iron-plate-barding
+    name: Iron Plate Barding
+    wearer: beast
+    armour_type: plate-barding
+    discipline: smithing
+    dc: 16
+    days: 12
+    materials: [{ material: folded-iron, qty: 10 }, { material: cotton-batting, qty: 4 }, { material: ramie-cord, qty: 2 }]
+  - id: quill-mantle
+    name: Quill Mantle
+    wearer: beast
+    armour_type: feather-mantle
+    discipline: weaving
+    dc: 16
+    days: 6
+    materials: [{ material: dawncrest-quill, qty: 4 }, { material: fish-leather, qty: 1 }]
+  - id: lacquered-shell-facing
+    name: Lacquered Shell Facing
+    wearer: beast
+    armour_type: shell-facing
+    discipline: lacquerwork
+    dc: 15
+    days: 9
+    materials: [{ material: tortoise-scute, qty: 3 }, { material: mother-of-pearl, qty: 2 }, { material: ember-lacquer, qty: 1 }]
+    notes: A prestige piece whose materials clash (Earth controls Water, Water controls Fire), so it is hard to make.
+  - id: guardian-mask
+    name: Guardian Mask
+    wearer: beast
+    armour_type: beast-mask
+    discipline: lacquerwork
+    dc: 12
+    days: 3
+    materials: [{ material: bamboo-lath, qty: 2 }, { material: mulberry-paper, qty: 2 }, { material: ember-lacquer, qty: 1 }]
+    notes: Painted with a fierce guardian face. Foes have disadvantage on the first Insight check against the wearer.
+  - id: bronze-horn-caps
+    name: Bronze Horn Caps
+    wearer: beast
+    armour_type: horn-cap
+    discipline: smithing
+    dc: 12
+    days: 2
+    materials: [{ material: bronze, qty: 2 }, { material: fish-leather, qty: 1 }]
+  - id: rattan-claw-guards
+    name: Rattan Claw Guards
+    wearer: beast
+    armour_type: claw-guards
+    discipline: weaving
+    dc: 10
+    days: 1
+    materials: [{ material: rattan, qty: 2 }, { material: ramie-cord, qty: 1 }]
+  - id: horn-hoof-guards
+    name: Horn Hoof Guards
+    wearer: beast
+    armour_type: hoof-guards
+    discipline: hidework
+    dc: 11
+    days: 2
+    materials: [{ material: buffalo-horn, qty: 2 }, { material: ember-felt, qty: 1 }]
+  - id: bronze-talon-sheaths
+    name: Bronze Talon Sheaths
+    wearer: beast
+    armour_type: talon-sheaths
+    discipline: smithing
+    dc: 13
+    days: 2
+    materials: [{ material: bronze, qty: 1 }, { material: fish-leather, qty: 1 }]
+  - id: brass-tail-rings
+    name: Brass Tail Rings
+    wearer: beast
+    armour_type: tail-sheath
+    discipline: smithing
+    dc: 12
+    days: 1
+    materials: [{ material: brass, qty: 1 }, { material: ramie-cord, qty: 1 }]
+
+  # ---------------- Charms (charm slot, or a masterwork inscription) ----------------
+  - id: peach-wood-tassel
+    name: Peach-Wood Tassel
+    wearer: any
+    armour_type: charm-collar
+    discipline: talisman-carving
+    dc: 13
+    days: 1
+    materials: [{ material: peach-wood, qty: 1 }, { material: ramie-cord, qty: 1 }]
+    notes: The wearer can't become Frightened. (Same effect as the Peach Wood Charm Keeper card.)
+  - id: bell-bronze-collar
+    name: Bell-Bronze Collar
+    wearer: any
+    armour_type: charm-collar
+    discipline: smithing
+    dc: 16
+    days: 2
+    materials: [{ material: bell-bronze, qty: 1 }, { material: fish-leather, qty: 1 }]
+    notes: Advantage on saves against Charmed.
+  - id: jade-disc-charm
+    name: Jade Disc Charm
+    wearer: any
+    armour_type: charm-collar
+    discipline: talisman-carving
+    dc: 14
+    days: 2
+    materials: [{ material: river-jade, qty: 1 }, { material: galeflank-mane, qty: 1 }]
+    notes: "+1 to Bond Checks made by the wearer's Keeper toward the wearer's own family."
+  - id: lantern-silk-ribbon
+    name: Lantern-Silk Ribbon
+    wearer: any
+    armour_type: charm-collar
+    discipline: weaving
+    dc: 13
+    days: 1
+    materials: [{ material: lampwing-silk, qty: 1 }]
+    notes: The wearer can't be Blinded by darkness, and Hidden foes within 10 ft are Exposed.
+
+  # ---------------- Vessels (for vessel spirits) ----------------
+  - id: craft-bamboo-creel
+    name: Bamboo Creel
+    makes_vessel: bamboo-creel
+    wearer: none
+    discipline: weaving
+    dc: 10
+    days: 1
+    materials: [{ material: bamboo-lath, qty: 3 }, { material: ramie-cord, qty: 1 }]
+  - id: craft-rattan-cage
+    name: Rattan Cage
+    makes_vessel: rattan-cage
+    wearer: none
+    discipline: weaving
+    dc: 11
+    days: 1
+    materials: [{ material: rattan, qty: 3 }]
+  - id: craft-clay-jar
+    name: Clay Jar
+    makes_vessel: clay-jar
+    wearer: none
+    discipline: kilnwork
+    dc: 11
+    days: 2
+    materials: [{ material: terraced-clay, qty: 3 }]
+  - id: craft-lantern-cage
+    name: Lantern Cage
+    makes_vessel: lantern-cage
+    wearer: none
+    discipline: weaving
+    dc: 12
+    days: 1
+    materials: [{ material: bamboo-lath, qty: 2 }, { material: mulberry-paper, qty: 2 }]
+  - id: craft-lacquer-box
+    name: Lacquer Box
+    makes_vessel: lacquer-box
+    wearer: none
+    discipline: lacquerwork
+    dc: 15
+    days: 4
+    materials: [{ material: bamboo-lath, qty: 2 }, { material: ember-lacquer, qty: 1 }, { material: river-jade, qty: 1 }]
+  - id: craft-pillow-box
+    name: Pillow Box
+    makes_vessel: pillow-box
+    wearer: none
+    discipline: kilnwork
+    dc: 13
+    days: 3
+    materials: [{ material: terraced-clay, qty: 2 }, { material: kiln-glaze, qty: 1 }]

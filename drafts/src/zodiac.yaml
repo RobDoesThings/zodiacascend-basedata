@@ -4,6 +4,7 @@
 
 lines:
   - id: rat
+    family: rodent
     command_dc_mod: 0
     temperaments: { sly: 30, curious: 25, restless: 25, wary: 20 }
     markings: { ink-grey: 50, river-brown: 30, white-socked: 15, starless-black: 5 }
@@ -60,6 +61,7 @@ lines:
           tomorrow, and every one of its echoes swears to be the real one.
 
   - id: ox
+    family: bovine
     command_dc_mod: 1
     temperaments: { stubborn: 30, serene: 25, devoted: 25, lazy: 20 }
     markings: { earth-brown: 45, slate-grey: 30, white-blaze: 20, bronze-horned: 5 }
@@ -115,6 +117,7 @@ lines:
           faithful heart into the sky.
 
   - id: tiger
+    family: feline
     command_dc_mod: 2
     temperaments: { proud: 30, bold: 30, wary: 20, serene: 20 }
     markings: { amber-striped: 50, moss-striped: 30, ash-pale: 15, black-ghost-stripes: 5 }
@@ -170,6 +173,7 @@ lines:
           one by one only when it must, knowing each gate costs it something it cannot take back.
 
   - id: rabbit
+    family: lagomorph
     command_dc_mod: -1
     temperaments: { gentle: 30, playful: 30, wary: 25, curious: 15 }
     markings: { cotton-white: 45, dawn-grey: 30, clover-flecked: 20, moon-silver: 5 }
@@ -223,6 +227,7 @@ lines:
           medicine in its mortar every night and gives it freely, asking only that no one waste it.
 
   - id: dragon
+    family: reptilian
     command_dc_mod: 3
     temperaments: { proud: 40, serene: 25, curious: 20, bold: 15 }
     markings: { jade-scaled: 40, cloud-white: 30, pearl-bellied: 25, five-coloured: 5 }
@@ -280,6 +285,7 @@ lines:
           river glows at the end of the rains, Ryuuten is passing beneath.
 
   - id: snake
+    family: reptilian
     command_dc_mod: 1
     temperaments: { serene: 30, sly: 30, wary: 25, proud: 15 }
     markings: { ember-banded: 40, jade-green: 25, ash-grey: 25, pure-white: 10 }
@@ -333,6 +339,7 @@ lines:
           ninth, it says, it is saving for something worth dying for.
 
   - id: horse
+    family: equine
     command_dc_mod: 1
     temperaments: { restless: 35, bold: 30, playful: 20, proud: 15 }
     markings: { sun-chestnut: 40, cloud-dappled: 30, black-maned: 25, white-stockinged: 5 }
@@ -387,6 +394,7 @@ lines:
           but the joy of it. To ride Umaren is to forget, for one day, that you were ever slow.
 
   - id: goat
+    family: caprine
     command_dc_mod: -1
     temperaments: { gentle: 35, stubborn: 25, serene: 20, playful: 20 }
     markings: { cream-wool: 45, earth-brown: 30, grey-bearded: 20, gold-horned: 5 }
@@ -437,6 +445,7 @@ lines:
           to the hungry and the frightened, and wherever it sings, rice grows a little thicker.
 
   - id: monkey
+    family: primate
     command_dc_mod: 2
     temperaments: { curious: 35, playful: 30, sly: 25, restless: 10 }
     markings: { copper-furred: 40, silver-backed: 30, red-faced: 25, golden: 5 }
@@ -491,6 +500,7 @@ lines:
           in the Twelve Hours, it claims, and has copied most of them out of politeness.
 
   - id: rooster
+    family: avian
     command_dc_mod: 0
     temperaments: { proud: 35, bold: 30, devoted: 20, restless: 15 }
     markings: { flame-combed: 40, iron-grey: 30, gold-hackled: 25, white-crested: 5 }
@@ -543,6 +553,7 @@ lines:
           never once been late, and it will not forgive anyone who is.
 
   - id: dog
+    family: canine
     command_dc_mod: -2
     temperaments: { devoted: 45, bold: 20, wary: 20, playful: 15 }
     markings: { hearth-gold: 40, ash-grey: 25, black-and-tan: 25, lion-maned: 10 }
@@ -598,6 +609,7 @@ lines:
           never abandoned a post, and it has never lost a ward it swore to protect.
 
   - id: pig
+    family: suine
     command_dc_mod: -1
     temperaments: { lazy: 30, gentle: 30, stubborn: 20, playful: 20 }
     markings: { mud-brown: 40, rose-pink: 25, black-bristled: 25, spotted-gold: 10 }

@@ -1,0 +1,923 @@
+{
+  "status": "draft",
+  "licence": "CC-BY-4.0",
+  "keeper_armour": {
+    "guard_formula": "10 + DEX modifier (capped by armour) + armour bonus",
+    "classes": [
+      {
+        "id": "light",
+        "name": "Light",
+        "dex_cap": null,
+        "str_min": null,
+        "stealth": "normal",
+        "don_minutes": 1
+      },
+      {
+        "id": "medium",
+        "name": "Medium",
+        "dex_cap": 2,
+        "str_min": null,
+        "stealth": "normal",
+        "don_minutes": 5
+      },
+      {
+        "id": "heavy",
+        "name": "Heavy",
+        "dex_cap": 0,
+        "str_min": 13,
+        "stealth": "disadvantage",
+        "don_minutes": 10
+      }
+    ],
+    "proficiency": {
+      "warden": [
+        "light",
+        "medium",
+        "heavy"
+      ],
+      "sage": [
+        "light"
+      ],
+      "wayfarer": [
+        "light",
+        "medium"
+      ],
+      "envoy": [
+        "light",
+        "medium"
+      ],
+      "seeker": [
+        "light",
+        "medium"
+      ],
+      "artisan": [
+        "light",
+        "medium",
+        "heavy"
+      ]
+    },
+    "untrained_penalty": "Disadvantage on attack rolls, DEX checks and DEX saves."
+  },
+  "beast_armour": {
+    "weight_classes": [
+      {
+        "id": "light",
+        "guard_bonus": 1,
+        "speed_change_ft": 0,
+        "min_stage": 1,
+        "min_size": "tiny"
+      },
+      {
+        "id": "medium",
+        "guard_bonus": 2,
+        "speed_change_ft": -5,
+        "min_stage": 2,
+        "min_size": "small"
+      },
+      {
+        "id": "heavy",
+        "guard_bonus": 3,
+        "speed_change_ft": -10,
+        "min_stage": 2,
+        "min_size": "medium"
+      }
+    ],
+    "max_total_guard_bonus": 3,
+    "card_game": "Armour is a Talisman with the subtype Barding. Light +1 Guard, medium or heavy +2 Guard.",
+    "not_wearable_by": [
+      "vessel-spirit"
+    ],
+    "sizes_by_weight_kg": [
+      {
+        "max": 5,
+        "size": "tiny"
+      },
+      {
+        "max": 30,
+        "size": "small"
+      },
+      {
+        "max": 200,
+        "size": "medium"
+      },
+      {
+        "max": 1000,
+        "size": "large"
+      },
+      {
+        "max": 1000000,
+        "size": "huge"
+      }
+    ]
+  },
+  "slots": [
+    {
+      "id": "head",
+      "name": "Head",
+      "examples": "masks, helms, horn caps"
+    },
+    {
+      "id": "body",
+      "name": "Body",
+      "examples": "coats, barding, sheaths"
+    },
+    {
+      "id": "limbs",
+      "name": "Limbs",
+      "examples": "claw guards, hoof guards, talon sheaths, bracers"
+    },
+    {
+      "id": "tail",
+      "name": "Tail",
+      "examples": "tail sheaths, tail rings"
+    },
+    {
+      "id": "charm",
+      "name": "Charm",
+      "examples": "collars, bells, tassels (always available; no Guard bonus)"
+    }
+  ],
+  "body_plans": [
+    {
+      "id": "clawed-quadruped",
+      "name": "Clawed quadruped",
+      "slots": [
+        "head",
+        "body",
+        "limbs",
+        "tail",
+        "charm"
+      ],
+      "max_weight": "heavy"
+    },
+    {
+      "id": "hooved-quadruped",
+      "name": "Hooved quadruped",
+      "slots": [
+        "head",
+        "body",
+        "limbs",
+        "charm"
+      ],
+      "max_weight": "heavy"
+    },
+    {
+      "id": "serpentine",
+      "name": "Serpentine",
+      "slots": [
+        "head",
+        "body",
+        "charm"
+      ],
+      "max_weight": "medium"
+    },
+    {
+      "id": "long-dragon",
+      "name": "Long dragon",
+      "slots": [
+        "head",
+        "body",
+        "limbs",
+        "charm"
+      ],
+      "max_weight": "heavy"
+    },
+    {
+      "id": "primate",
+      "name": "Primate",
+      "slots": [
+        "head",
+        "body",
+        "limbs",
+        "tail",
+        "charm"
+      ],
+      "max_weight": "medium"
+    },
+    {
+      "id": "avian",
+      "name": "Avian",
+      "slots": [
+        "head",
+        "body",
+        "limbs",
+        "charm"
+      ],
+      "max_weight": "light"
+    },
+    {
+      "id": "aquatic",
+      "name": "Aquatic",
+      "slots": [
+        "head",
+        "charm"
+      ],
+      "max_weight": "light"
+    },
+    {
+      "id": "insect",
+      "name": "Insect",
+      "slots": [
+        "charm"
+      ],
+      "max_weight": "light"
+    },
+    {
+      "id": "shelled",
+      "name": "Shelled",
+      "slots": [
+        "body",
+        "charm"
+      ],
+      "max_weight": "heavy"
+    }
+  ],
+  "family_body_plans": {
+    "rodent": "clawed-quadruped",
+    "bovine": "hooved-quadruped",
+    "feline": "clawed-quadruped",
+    "lagomorph": "clawed-quadruped",
+    "reptilian": "serpentine",
+    "equine": "hooved-quadruped",
+    "caprine": "hooved-quadruped",
+    "primate": "primate",
+    "avian": "avian",
+    "canine": "clawed-quadruped",
+    "suine": "hooved-quadruped",
+    "piscine": "aquatic",
+    "insectoid": "insect",
+    "chelonian": "shelled"
+  },
+  "line_body_plan_overrides": {
+    "dragon": "long-dragon",
+    "callgecko": "clawed-quadruped"
+  },
+  "armour_types": [
+    {
+      "id": "quilted-coat",
+      "name": "Quilted Coat",
+      "slot": "body",
+      "weight": "light",
+      "description": "Layers of cotton or silk stitched in diamonds.",
+      "fit": {
+        "clawed-quadruped": "yes",
+        "hooved-quadruped": "yes",
+        "serpentine": "adapted",
+        "long-dragon": "adapted",
+        "primate": "yes",
+        "avian": "adapted",
+        "aquatic": "no",
+        "insect": "no",
+        "shelled": "no"
+      }
+    },
+    {
+      "id": "lamellar-barding",
+      "name": "Lamellar Barding",
+      "slot": "body",
+      "weight": "medium",
+      "description": "Small plates laced together in rows, flexible along the spine.",
+      "fit": {
+        "clawed-quadruped": "yes",
+        "hooved-quadruped": "yes",
+        "serpentine": "no",
+        "long-dragon": "yes",
+        "primate": "yes",
+        "avian": "no",
+        "aquatic": "no",
+        "insect": "no",
+        "shelled": "no"
+      }
+    },
+    {
+      "id": "scale-sheath",
+      "name": "Scale Sheath",
+      "slot": "body",
+      "weight": "medium",
+      "description": "Overlapping scales on a supple backing, made to move with a coiling body.",
+      "fit": {
+        "clawed-quadruped": "adapted",
+        "hooved-quadruped": "adapted",
+        "serpentine": "yes",
+        "long-dragon": "yes",
+        "primate": "no",
+        "avian": "no",
+        "aquatic": "no",
+        "insect": "no",
+        "shelled": "no"
+      }
+    },
+    {
+      "id": "plate-barding",
+      "name": "Plate Barding",
+      "slot": "body",
+      "weight": "heavy",
+      "description": "Large shaped plates over a padded coat. Only for big, sturdy beasts.",
+      "fit": {
+        "clawed-quadruped": "adapted",
+        "hooved-quadruped": "yes",
+        "serpentine": "no",
+        "long-dragon": "adapted",
+        "primate": "no",
+        "avian": "no",
+        "aquatic": "no",
+        "insect": "no",
+        "shelled": "no"
+      }
+    },
+    {
+      "id": "feather-mantle",
+      "name": "Feather Mantle",
+      "slot": "body",
+      "weight": "light",
+      "description": "A woven cape that sits between the wings and doesn't hinder flight.",
+      "fit": {
+        "clawed-quadruped": "no",
+        "hooved-quadruped": "no",
+        "serpentine": "no",
+        "long-dragon": "adapted",
+        "primate": "no",
+        "avian": "yes",
+        "aquatic": "no",
+        "insect": "no",
+        "shelled": "no"
+      }
+    },
+    {
+      "id": "shell-facing",
+      "name": "Shell Facing",
+      "slot": "body",
+      "weight": "heavy",
+      "description": "Plates lacquered directly onto a living shell, never glued or nailed.",
+      "fit": {
+        "clawed-quadruped": "no",
+        "hooved-quadruped": "no",
+        "serpentine": "no",
+        "long-dragon": "no",
+        "primate": "no",
+        "avian": "no",
+        "aquatic": "no",
+        "insect": "no",
+        "shelled": "yes"
+      }
+    },
+    {
+      "id": "beast-mask",
+      "name": "Beast Mask",
+      "slot": "head",
+      "weight": "light",
+      "description": "A face guard shaped to the beast's head, often painted with a guardian face.",
+      "fit": {
+        "clawed-quadruped": "yes",
+        "hooved-quadruped": "yes",
+        "serpentine": "yes",
+        "long-dragon": "yes",
+        "primate": "yes",
+        "avian": "yes",
+        "aquatic": "adapted",
+        "insect": "no",
+        "shelled": "no"
+      }
+    },
+    {
+      "id": "horn-cap",
+      "name": "Horn Cap",
+      "slot": "head",
+      "weight": "medium",
+      "description": "Metal or horn caps fitted over horns and brow.",
+      "fit": {
+        "clawed-quadruped": "no",
+        "hooved-quadruped": "yes",
+        "serpentine": "no",
+        "long-dragon": "yes",
+        "primate": "no",
+        "avian": "no",
+        "aquatic": "no",
+        "insect": "no",
+        "shelled": "no"
+      }
+    },
+    {
+      "id": "claw-guards",
+      "name": "Claw Guards",
+      "slot": "limbs",
+      "weight": "light",
+      "description": "Fitted sheaths over the forelimbs that leave claws free.",
+      "fit": {
+        "clawed-quadruped": "yes",
+        "hooved-quadruped": "no",
+        "serpentine": "no",
+        "long-dragon": "yes",
+        "primate": "yes",
+        "avian": "no",
+        "aquatic": "no",
+        "insect": "no",
+        "shelled": "no"
+      }
+    },
+    {
+      "id": "hoof-guards",
+      "name": "Hoof Guards",
+      "slot": "limbs",
+      "weight": "light",
+      "description": "Shin plates and hoof wraps for hard ground and hard kicks.",
+      "fit": {
+        "clawed-quadruped": "no",
+        "hooved-quadruped": "yes",
+        "serpentine": "no",
+        "long-dragon": "no",
+        "primate": "no",
+        "avian": "no",
+        "aquatic": "no",
+        "insect": "no",
+        "shelled": "no"
+      }
+    },
+    {
+      "id": "talon-sheaths",
+      "name": "Talon Sheaths",
+      "slot": "limbs",
+      "weight": "light",
+      "description": "Thin guards over the legs and talons.",
+      "fit": {
+        "clawed-quadruped": "no",
+        "hooved-quadruped": "no",
+        "serpentine": "no",
+        "long-dragon": "no",
+        "primate": "no",
+        "avian": "yes",
+        "aquatic": "no",
+        "insect": "no",
+        "shelled": "no"
+      }
+    },
+    {
+      "id": "tail-sheath",
+      "name": "Tail Sheath",
+      "slot": "tail",
+      "weight": "light",
+      "description": "Rings or a sleeve along the tail.",
+      "fit": {
+        "clawed-quadruped": "yes",
+        "hooved-quadruped": "no",
+        "serpentine": "no",
+        "long-dragon": "no",
+        "primate": "yes",
+        "avian": "no",
+        "aquatic": "no",
+        "insect": "no",
+        "shelled": "no"
+      }
+    },
+    {
+      "id": "charm-collar",
+      "name": "Charm Collar",
+      "slot": "charm",
+      "weight": "none",
+      "description": "A collar, bell, tassel or ribbon that carries a charm. No Guard bonus.",
+      "fit": {
+        "clawed-quadruped": "yes",
+        "hooved-quadruped": "yes",
+        "serpentine": "yes",
+        "long-dragon": "yes",
+        "primate": "yes",
+        "avian": "yes",
+        "aquatic": "yes",
+        "insect": "yes",
+        "shelled": "yes"
+      }
+    }
+  ],
+  "element_compatibility": {
+    "wearer_vs_material": {
+      "same_element": {
+        "name": "Attuned",
+        "effect": "+1 Guard (counts toward the cap)."
+      },
+      "material_generates_wearer": {
+        "name": "Nourishing",
+        "effect": "+1 maximum Qi."
+      },
+      "wearer_generates_material": {
+        "name": "Tempered",
+        "effect": "The armour gains +2 durability."
+      },
+      "material_controls_wearer": {
+        "name": "Oppressive",
+        "effect": "−5 ft Speed and disadvantage on Endurance checks."
+      },
+      "wearer_controls_material": {
+        "name": "Strained",
+        "effect": "The armour's durability is halved."
+      }
+    },
+    "versus_incoming_techniques": {
+      "material_controls_attacker": {
+        "name": "Resists",
+        "effect": "Reduce damage from techniques of that element by 2."
+      },
+      "attacker_controls_material": {
+        "name": "Vulnerable",
+        "effect": "Increase damage from techniques of that element by 2."
+      }
+    },
+    "confluence_materials": "A confluence material counts as both its elements. Work out each element's effect on the wearer: if both are helpful (Attuned, Nourishing, Tempered) or both harmful (Oppressive, Strained), both apply; one helpful and one harmful cancel to neutral. Against techniques it resists what either element resists and is vulnerable to what either is vulnerable to, but a resistance and a vulnerability to the same element cancel."
+  },
+  "durability": {
+    "by_weight": {
+      "light": 6,
+      "medium": 8,
+      "heavy": 10,
+      "none": 4
+    },
+    "loses_1_when": "The wearer takes a critical hit or fails a save against a technique of an element that controls the material.",
+    "at_zero": "The armour is broken and gives no bonus until repaired.",
+    "repair": "A check in the armour's discipline at its recipe DC − 5 restores all durability in 1 hour."
+  },
+  "compatibility": {
+    "armour_type_by_body_plan": {
+      "quilted-coat": {
+        "clawed-quadruped": "yes",
+        "hooved-quadruped": "yes",
+        "serpentine": "adapted",
+        "long-dragon": "adapted",
+        "primate": "yes",
+        "avian": "adapted",
+        "aquatic": "no",
+        "insect": "no",
+        "shelled": "no"
+      },
+      "lamellar-barding": {
+        "clawed-quadruped": "yes",
+        "hooved-quadruped": "yes",
+        "serpentine": "no",
+        "long-dragon": "yes",
+        "primate": "yes",
+        "avian": "no",
+        "aquatic": "no",
+        "insect": "no",
+        "shelled": "no"
+      },
+      "scale-sheath": {
+        "clawed-quadruped": "adapted",
+        "hooved-quadruped": "adapted",
+        "serpentine": "yes",
+        "long-dragon": "yes",
+        "primate": "no",
+        "avian": "no",
+        "aquatic": "no",
+        "insect": "no",
+        "shelled": "no"
+      },
+      "plate-barding": {
+        "clawed-quadruped": "adapted",
+        "hooved-quadruped": "yes",
+        "serpentine": "no",
+        "long-dragon": "adapted",
+        "primate": "no",
+        "avian": "no",
+        "aquatic": "no",
+        "insect": "no",
+        "shelled": "no"
+      },
+      "feather-mantle": {
+        "clawed-quadruped": "no",
+        "hooved-quadruped": "no",
+        "serpentine": "no",
+        "long-dragon": "adapted",
+        "primate": "no",
+        "avian": "yes",
+        "aquatic": "no",
+        "insect": "no",
+        "shelled": "no"
+      },
+      "shell-facing": {
+        "clawed-quadruped": "no",
+        "hooved-quadruped": "no",
+        "serpentine": "no",
+        "long-dragon": "no",
+        "primate": "no",
+        "avian": "no",
+        "aquatic": "no",
+        "insect": "no",
+        "shelled": "yes"
+      },
+      "beast-mask": {
+        "clawed-quadruped": "yes",
+        "hooved-quadruped": "yes",
+        "serpentine": "yes",
+        "long-dragon": "yes",
+        "primate": "yes",
+        "avian": "yes",
+        "aquatic": "adapted",
+        "insect": "no",
+        "shelled": "no"
+      },
+      "horn-cap": {
+        "clawed-quadruped": "no",
+        "hooved-quadruped": "yes",
+        "serpentine": "no",
+        "long-dragon": "yes",
+        "primate": "no",
+        "avian": "no",
+        "aquatic": "no",
+        "insect": "no",
+        "shelled": "no"
+      },
+      "claw-guards": {
+        "clawed-quadruped": "yes",
+        "hooved-quadruped": "no",
+        "serpentine": "no",
+        "long-dragon": "yes",
+        "primate": "yes",
+        "avian": "no",
+        "aquatic": "no",
+        "insect": "no",
+        "shelled": "no"
+      },
+      "hoof-guards": {
+        "clawed-quadruped": "no",
+        "hooved-quadruped": "yes",
+        "serpentine": "no",
+        "long-dragon": "no",
+        "primate": "no",
+        "avian": "no",
+        "aquatic": "no",
+        "insect": "no",
+        "shelled": "no"
+      },
+      "talon-sheaths": {
+        "clawed-quadruped": "no",
+        "hooved-quadruped": "no",
+        "serpentine": "no",
+        "long-dragon": "no",
+        "primate": "no",
+        "avian": "yes",
+        "aquatic": "no",
+        "insect": "no",
+        "shelled": "no"
+      },
+      "tail-sheath": {
+        "clawed-quadruped": "yes",
+        "hooved-quadruped": "no",
+        "serpentine": "no",
+        "long-dragon": "no",
+        "primate": "yes",
+        "avian": "no",
+        "aquatic": "no",
+        "insect": "no",
+        "shelled": "no"
+      },
+      "charm-collar": {
+        "clawed-quadruped": "yes",
+        "hooved-quadruped": "yes",
+        "serpentine": "yes",
+        "long-dragon": "yes",
+        "primate": "yes",
+        "avian": "yes",
+        "aquatic": "yes",
+        "insect": "yes",
+        "shelled": "yes"
+      }
+    },
+    "material_by_wearer_element": {
+      "wood": {
+        "wood": "Attuned",
+        "fire": "Nourishing",
+        "earth": "Neutral",
+        "metal": "Neutral",
+        "water": "Tempered"
+      },
+      "fire": {
+        "wood": "Tempered",
+        "fire": "Attuned",
+        "earth": "Nourishing",
+        "metal": "Neutral",
+        "water": "Neutral"
+      },
+      "earth": {
+        "wood": "Neutral",
+        "fire": "Tempered",
+        "earth": "Attuned",
+        "metal": "Nourishing",
+        "water": "Neutral"
+      },
+      "metal": {
+        "wood": "Neutral",
+        "fire": "Neutral",
+        "earth": "Tempered",
+        "metal": "Attuned",
+        "water": "Nourishing"
+      },
+      "water": {
+        "wood": "Nourishing",
+        "fire": "Neutral",
+        "earth": "Neutral",
+        "metal": "Tempered",
+        "water": "Attuned"
+      },
+      "kindle": {
+        "wood": "Attuned + Tempered",
+        "fire": "Nourishing + Attuned",
+        "earth": "Neutral",
+        "metal": "Neutral",
+        "water": "Neutral"
+      },
+      "moss": {
+        "wood": "Neutral",
+        "fire": "Nourishing + Tempered",
+        "earth": "Neutral",
+        "metal": "Neutral",
+        "water": "Neutral"
+      },
+      "lacquer": {
+        "wood": "Neutral",
+        "fire": "Neutral",
+        "earth": "Neutral",
+        "metal": "Neutral",
+        "water": "Tempered + Nourishing"
+      },
+      "mangrove": {
+        "wood": "Attuned + Nourishing",
+        "fire": "Neutral",
+        "earth": "Neutral",
+        "metal": "Neutral",
+        "water": "Tempered + Attuned"
+      },
+      "kiln": {
+        "wood": "Neutral",
+        "fire": "Attuned + Tempered",
+        "earth": "Nourishing + Attuned",
+        "metal": "Neutral",
+        "water": "Neutral"
+      },
+      "forge": {
+        "wood": "Neutral",
+        "fire": "Neutral",
+        "earth": "Nourishing + Tempered",
+        "metal": "Neutral",
+        "water": "Neutral"
+      },
+      "steam": {
+        "wood": "Tempered + Nourishing",
+        "fire": "Neutral",
+        "earth": "Neutral",
+        "metal": "Neutral",
+        "water": "Neutral"
+      },
+      "ore": {
+        "wood": "Neutral",
+        "fire": "Neutral",
+        "earth": "Attuned + Tempered",
+        "metal": "Nourishing + Attuned",
+        "water": "Neutral"
+      },
+      "silt": {
+        "wood": "Neutral",
+        "fire": "Neutral",
+        "earth": "Neutral",
+        "metal": "Nourishing + Tempered",
+        "water": "Neutral"
+      },
+      "frost": {
+        "wood": "Neutral",
+        "fire": "Neutral",
+        "earth": "Neutral",
+        "metal": "Attuned + Tempered",
+        "water": "Nourishing + Attuned"
+      }
+    },
+    "material_vs_techniques": {
+      "wood": {
+        "resists": [
+          "earth"
+        ],
+        "vulnerable": [
+          "metal"
+        ]
+      },
+      "fire": {
+        "resists": [
+          "metal"
+        ],
+        "vulnerable": [
+          "water"
+        ]
+      },
+      "earth": {
+        "resists": [
+          "water"
+        ],
+        "vulnerable": [
+          "wood"
+        ]
+      },
+      "metal": {
+        "resists": [
+          "wood"
+        ],
+        "vulnerable": [
+          "fire"
+        ]
+      },
+      "water": {
+        "resists": [
+          "fire"
+        ],
+        "vulnerable": [
+          "earth"
+        ]
+      },
+      "kindle": {
+        "resists": [
+          "earth"
+        ],
+        "vulnerable": [
+          "water"
+        ]
+      },
+      "moss": {
+        "resists": [
+          "earth",
+          "water"
+        ],
+        "vulnerable": [
+          "wood",
+          "metal"
+        ]
+      },
+      "lacquer": {
+        "resists": [
+          "wood",
+          "earth"
+        ],
+        "vulnerable": [
+          "fire",
+          "metal"
+        ]
+      },
+      "mangrove": {
+        "resists": [
+          "fire"
+        ],
+        "vulnerable": [
+          "metal"
+        ]
+      },
+      "kiln": {
+        "resists": [
+          "metal"
+        ],
+        "vulnerable": [
+          "wood"
+        ]
+      },
+      "forge": {
+        "resists": [
+          "wood",
+          "metal"
+        ],
+        "vulnerable": [
+          "fire",
+          "water"
+        ]
+      },
+      "steam": {
+        "resists": [
+          "fire",
+          "metal"
+        ],
+        "vulnerable": [
+          "earth",
+          "water"
+        ]
+      },
+      "ore": {
+        "resists": [
+          "water"
+        ],
+        "vulnerable": [
+          "fire"
+        ]
+      },
+      "silt": {
+        "resists": [
+          "fire",
+          "water"
+        ],
+        "vulnerable": [
+          "wood",
+          "earth"
+        ]
+      },
+      "frost": {
+        "resists": [
+          "wood"
+        ],
+        "vulnerable": [
+          "earth"
+        ]
+      }
+    }
+  }
+}

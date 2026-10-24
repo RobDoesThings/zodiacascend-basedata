@@ -103,7 +103,26 @@
           "region": "China",
           "tradition": "The carp that strives to leap the Dragon Gate."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "aquatic",
+        "size": "tiny",
+        "slots": [
+          "head",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "beast-mask",
+            "fit": "adapted"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "scrollfin",
@@ -205,7 +224,26 @@
           "region": "China",
           "tradition": "The carp that strives to leap the Dragon Gate."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "aquatic",
+        "size": "small",
+        "slots": [
+          "head",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "beast-mask",
+            "fit": "adapted"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "lantern-moth",
@@ -307,7 +345,21 @@
           "region": "East and Southeast Asia",
           "tradition": "Lantern festivals — the Lantern Festival in China, Hội An's lantern nights in Vietnam and Yi Peng in northern Thailand."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "insect",
+        "size": "tiny",
+        "slots": [
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "lampwing",
@@ -409,7 +461,21 @@
           "region": "East and Southeast Asia",
           "tradition": "Lantern festivals — the Lantern Festival in China, Hội An's lantern nights in Vietnam and Yi Peng in northern Thailand."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "insect",
+        "size": "tiny",
+        "slots": [
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "paddy-heron",
@@ -511,7 +577,40 @@
           "region": "Japan and China",
           "tradition": "Herons and egrets in ink painting as symbols of patience and purity."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "avian",
+        "size": "tiny",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "adapted"
+          },
+          {
+            "type": "feather-mantle",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "talon-sheaths",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "stiltsage",
@@ -613,7 +712,40 @@
           "region": "Japan and China",
           "tradition": "Herons and egrets in ink painting as symbols of patience and purity."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "avian",
+        "size": "tiny",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "adapted"
+          },
+          {
+            "type": "feather-mantle",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "talon-sheaths",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "teacup-tortoise",
@@ -715,7 +847,22 @@
           "region": "China and Japan",
           "tradition": "The tortoise as a symbol of longevity, and the tea ceremony's patience."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "shelled",
+        "size": "tiny",
+        "slots": [
+          "body",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "teahouse-tortoise",
@@ -817,7 +964,26 @@
           "region": "China and Japan",
           "tradition": "The tortoise as a symbol of longevity, and the tea ceremony's patience."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "shelled",
+        "size": "medium",
+        "slots": [
+          "body",
+          "charm"
+        ],
+        "max_weight": "heavy",
+        "armour_types": [
+          {
+            "type": "shell-facing",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "fox-ember",
@@ -918,7 +1084,41 @@
           "region": "Japan",
           "tradition": "Kitsunebi, the \"fox-fires\" — lights seen on country roads at night and blamed on foxes."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "clawed-quadruped",
+        "size": "tiny",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "tail",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "claw-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "tail-sheath",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "pyrebrush",
@@ -1019,7 +1219,49 @@
           "region": "Japan",
           "tradition": "Kitsunebi, the \"fox-fires\" — lights seen on country roads at night and blamed on foxes."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "clawed-quadruped",
+        "size": "small",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "tail",
+          "charm"
+        ],
+        "max_weight": "medium",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "lamellar-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "scale-sheath",
+            "fit": "adapted"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "claw-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "tail-sheath",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "granary-mouse",
@@ -1121,7 +1363,41 @@
           "region": "China",
           "tradition": "Mice and rats as signs of a full granary and household plenty."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "clawed-quadruped",
+        "size": "tiny",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "tail",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "claw-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "tail-sheath",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "ricewarden",
@@ -1223,7 +1499,41 @@
           "region": "China",
           "tradition": "Mice and rats as signs of a full granary and household plenty."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "clawed-quadruped",
+        "size": "tiny",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "tail",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "claw-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "tail-sheath",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "wallowcalf",
@@ -1325,7 +1635,36 @@
           "region": "Southeast Asia",
           "tradition": "The water buffalo (carabao, kerbau, trâu) as a partner in rice farming, honoured in harvest festivals across the region."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "hooved-quadruped",
+        "size": "medium",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "hoof-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "wallowhorn",
@@ -1427,7 +1766,52 @@
           "region": "Southeast Asia",
           "tradition": "The water buffalo (carabao, kerbau, trâu) as a partner in rice farming, honoured in harvest festivals across the region."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "hooved-quadruped",
+        "size": "large",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "charm"
+        ],
+        "max_weight": "heavy",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "lamellar-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "scale-sheath",
+            "fit": "adapted"
+          },
+          {
+            "type": "plate-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "horn-cap",
+            "fit": "yes"
+          },
+          {
+            "type": "hoof-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "mistkit",
@@ -1529,7 +1913,41 @@
           "region": "Southeast Asia",
           "tradition": "The clouded leopard of mountain forests, rarely seen and often said to be a spirit of the mist."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "clawed-quadruped",
+        "size": "tiny",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "tail",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "claw-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "tail-sheath",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "cloudpelt",
@@ -1631,7 +2049,49 @@
           "region": "Southeast Asia",
           "tradition": "The clouded leopard of mountain forests, rarely seen and often said to be a spirit of the mist."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "clawed-quadruped",
+        "size": "small",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "tail",
+          "charm"
+        ],
+        "max_weight": "medium",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "lamellar-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "scale-sheath",
+            "fit": "adapted"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "claw-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "tail-sheath",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "burrbun",
@@ -1732,7 +2192,41 @@
           "region": "East Asia",
           "tradition": "The hare as a quick-witted survivor in countryside tales."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "clawed-quadruped",
+        "size": "tiny",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "tail",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "claw-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "tail-sheath",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "bramblehare",
@@ -1833,7 +2327,41 @@
           "region": "East Asia",
           "tradition": "The hare as a quick-witted survivor in countryside tales."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "clawed-quadruped",
+        "size": "tiny",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "tail",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "claw-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "tail-sheath",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "callgecko",
@@ -1935,7 +2463,41 @@
           "region": "Southeast Asia",
           "tradition": "The tokay gecko's call, counted aloud for luck or answers in households across the region."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "clawed-quadruped",
+        "size": "tiny",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "tail",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "claw-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "tail-sheath",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "eavesgecko",
@@ -2037,7 +2599,41 @@
           "region": "Southeast Asia",
           "tradition": "The tokay gecko's call, counted aloud for luck or answers in households across the region."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "clawed-quadruped",
+        "size": "tiny",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "tail",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "claw-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "tail-sheath",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "packfoal",
@@ -2139,7 +2735,36 @@
           "region": "Southwest China and the Himalaya",
           "tradition": "The Tea Horse Road, where caravans of ponies carried tea one way and horses and salt the other across high mountain passes."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "hooved-quadruped",
+        "size": "medium",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "hoof-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "saltroad-pony",
@@ -2241,7 +2866,52 @@
           "region": "Southwest China and the Himalaya",
           "tradition": "The Tea Horse Road, where caravans of ponies carried tea one way and horses and salt the other across high mountain passes."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "hooved-quadruped",
+        "size": "large",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "charm"
+        ],
+        "max_weight": "heavy",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "lamellar-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "scale-sheath",
+            "fit": "adapted"
+          },
+          {
+            "type": "plate-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "horn-cap",
+            "fit": "yes"
+          },
+          {
+            "type": "hoof-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "crag-kid",
@@ -2343,7 +3013,36 @@
           "region": "East and Southeast Asia",
           "tradition": "The serow, a mountain goat-antelope of steep forests, admired for its surefootedness."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "hooved-quadruped",
+        "size": "small",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "hoof-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "cliffserow",
@@ -2445,7 +3144,52 @@
           "region": "East and Southeast Asia",
           "tradition": "The serow, a mountain goat-antelope of steep forests, admired for its surefootedness."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "hooved-quadruped",
+        "size": "medium",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "charm"
+        ],
+        "max_weight": "heavy",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "lamellar-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "scale-sheath",
+            "fit": "adapted"
+          },
+          {
+            "type": "plate-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "horn-cap",
+            "fit": "yes"
+          },
+          {
+            "type": "hoof-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "duskloris",
@@ -2547,7 +3291,41 @@
           "region": "Southeast Asia",
           "tradition": "The slow loris, a shy night primate surrounded by many local beliefs about luck and misfortune."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "primate",
+        "size": "tiny",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "tail",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "claw-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "tail-sheath",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "moonloris",
@@ -2649,7 +3427,41 @@
           "region": "Southeast Asia",
           "tradition": "The slow loris, a shy night primate surrounded by many local beliefs about luck and misfortune."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "primate",
+        "size": "tiny",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "tail",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "claw-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "tail-sheath",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "whistlepup",
@@ -2751,7 +3563,41 @@
           "region": "South, East and Southeast Asia",
           "tradition": "The dhole, a wild dog that hunts in packs and calls to its packmates with whistles."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "clawed-quadruped",
+        "size": "tiny",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "tail",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "claw-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "tail-sheath",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "redwhistle",
@@ -2853,7 +3699,49 @@
           "region": "South, East and Southeast Asia",
           "tradition": "The dhole, a wild dog that hunts in packs and calls to its packmates with whistles."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "clawed-quadruped",
+        "size": "small",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "tail",
+          "charm"
+        ],
+        "max_weight": "medium",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "lamellar-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "scale-sheath",
+            "fit": "adapted"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "claw-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "tail-sheath",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "bristlet",
@@ -2955,7 +3843,36 @@
           "region": "Borneo and Sumatra",
           "tradition": "The bearded pig and its long seasonal migrations following fruiting forests."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "hooved-quadruped",
+        "size": "tiny",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "hoof-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "bristleboar",
@@ -3057,7 +3974,52 @@
           "region": "Borneo and Sumatra",
           "tradition": "The bearded pig and its long seasonal migrations following fruiting forests."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "hooved-quadruped",
+        "size": "medium",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "charm"
+        ],
+        "max_weight": "heavy",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "lamellar-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "scale-sheath",
+            "fit": "adapted"
+          },
+          {
+            "type": "plate-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "horn-cap",
+            "fit": "yes"
+          },
+          {
+            "type": "hoof-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "chirpling",
@@ -3159,7 +4121,21 @@
           "region": "China and Japan",
           "tradition": "Keeping singing crickets for their song, in carved gourds in China and small cages in Japan, as a sign of autumn."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "insect",
+        "size": "tiny",
+        "slots": [
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     },
     {
       "id": "bellcricket",
@@ -3261,7 +4237,21 @@
           "region": "China and Japan",
           "tradition": "Keeping singing crickets for their song, in carved gourds in China and small cages in Japan, as a sign of autumn."
         }
-      ]
+      ],
+      "armour": {
+        "body_plan": "insect",
+        "size": "tiny",
+        "slots": [
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
     }
   ]
 }

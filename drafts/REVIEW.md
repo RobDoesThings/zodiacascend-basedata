@@ -268,6 +268,249 @@ Weights are truncated normal curves: *mean* is the average, *upper* is the ceili
 
 ⓒ = already canon in the brief.
 
+## Armour compatibility
+
+### Armour type × body plan
+
+✔ fits · ◐ adapted (Beastwright fitting: DC +2, double time) · · can't be worn
+
+| Armour type | Slot | Weight | clawed-quadruped | hooved-quadruped | serpentine | long-dragon | primate | avian | aquatic | insect | shelled |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Quilted Coat | body | light | ✔ | ✔ | ◐ | ◐ | ✔ | ◐ | · | · | · |
+| Lamellar Barding | body | medium | ✔ | ✔ | · | ✔ | ✔ | · | · | · | · |
+| Scale Sheath | body | medium | ◐ | ◐ | ✔ | ✔ | · | · | · | · | · |
+| Plate Barding | body | heavy | ◐ | ✔ | · | ◐ | · | · | · | · | · |
+| Feather Mantle | body | light | · | · | · | ◐ | · | ✔ | · | · | · |
+| Shell Facing | body | heavy | · | · | · | · | · | · | · | · | ✔ |
+| Beast Mask | head | light | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ◐ | · | · |
+| Horn Cap | head | medium | · | ✔ | · | ✔ | · | · | · | · | · |
+| Claw Guards | limbs | light | ✔ | · | · | ✔ | ✔ | · | · | · | · |
+| Hoof Guards | limbs | light | · | ✔ | · | · | · | · | · | · | · |
+| Talon Sheaths | limbs | light | · | · | · | · | · | ✔ | · | · | · |
+| Tail Sheath | tail | light | ✔ | · | · | · | ✔ | · | · | · | · |
+| Charm Collar | charm | none | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+
+### Beast weight classes
+
+| Class | Guard | Speed | Min stage | Min size |
+|---|---|---|---|---|
+| light | +1 | 0 ft | 1 | tiny |
+| medium | +2 | -5 ft | 2 | small |
+| heavy | +3 | -10 ft | 2 | medium |
+
+Total armour Guard bonus on a beast is capped at +3.
+
+### Material element × wearer element
+
+Rows: the armour's material. Columns: the wearer's form element. Keepers have no element, so for them only resistances apply.
+
+| Material | wood | fire | earth | metal | water | Resists | Vulnerable to |
+|---|---|---|---|---|---|---|---|
+| **wood** | Attuned | Nourishing | Neutral | Neutral | Tempered | earth | metal |
+| **fire** | Tempered | Attuned | Nourishing | Neutral | Neutral | metal | water |
+| **earth** | Neutral | Tempered | Attuned | Nourishing | Neutral | water | wood |
+| **metal** | Neutral | Neutral | Tempered | Attuned | Nourishing | wood | fire |
+| **water** | Nourishing | Neutral | Neutral | Tempered | Attuned | fire | earth |
+| **kindle** | Attuned + Tempered | Nourishing + Attuned | Neutral | Neutral | Neutral | earth | water |
+| **moss** | Neutral | Nourishing + Tempered | Neutral | Neutral | Neutral | earth, water | wood, metal |
+| **lacquer** | Neutral | Neutral | Neutral | Neutral | Tempered + Nourishing | wood, earth | fire, metal |
+| **mangrove** | Attuned + Nourishing | Neutral | Neutral | Neutral | Tempered + Attuned | fire | metal |
+| **kiln** | Neutral | Attuned + Tempered | Nourishing + Attuned | Neutral | Neutral | metal | wood |
+| **forge** | Neutral | Neutral | Nourishing + Tempered | Neutral | Neutral | wood, metal | fire, water |
+| **steam** | Tempered + Nourishing | Neutral | Neutral | Neutral | Neutral | fire, metal | earth, water |
+| **ore** | Neutral | Neutral | Attuned + Tempered | Nourishing + Attuned | Neutral | water | fire |
+| **silt** | Neutral | Neutral | Neutral | Nourishing + Tempered | Neutral | fire, water | wood, earth |
+| **frost** | Neutral | Neutral | Neutral | Attuned + Tempered | Nourishing + Attuned | wood | earth |
+
+- **Attuned** — +1 Guard (counts toward the cap).
+- **Nourishing** — +1 maximum Qi.
+- **Tempered** — The armour gains +2 durability.
+- **Oppressive** — −5 ft Speed and disadvantage on Endurance checks.
+- **Strained** — The armour's durability is halved.
+- **Resists** — Reduce damage from techniques of that element by 2.
+- **Vulnerable** — Increase damage from techniques of that element by 2.
+
+### What each zodiac species can wear
+
+| Species | Body plan | Size | Slots | Heaviest |
+|---|---|---|---|---|
+| Pipwhisk | clawed-quadruped | tiny | head, body, limbs, tail, charm | light |
+| Shadecrawl | clawed-quadruped | small | head, body, limbs, tail, charm | medium |
+| Nezrath | clawed-quadruped | medium | head, body, limbs, tail, charm | heavy |
+| Calfstone | hooved-quadruped | medium | head, body, limbs, charm | light |
+| Plowhorn | hooved-quadruped | large | head, body, limbs, charm | heavy |
+| Gyuurok | hooved-quadruped | huge | head, body, limbs, charm | heavy |
+| Stripling | clawed-quadruped | small | head, body, limbs, tail, charm | light |
+| Thornstripe | clawed-quadruped | medium | head, body, limbs, tail, charm | heavy |
+| Torakai | clawed-quadruped | large | head, body, limbs, tail, charm | heavy |
+| Mooncotton | clawed-quadruped | tiny | head, body, limbs, tail, charm | light |
+| Hareveil | clawed-quadruped | small | head, body, limbs, tail, charm | medium |
+| Usagetsu | clawed-quadruped | small | head, body, limbs, tail, charm | medium |
+| Scalekin | long-dragon | small | head, body, limbs, charm | light |
+| Cloudcoil | long-dragon | medium | head, body, limbs, charm | heavy |
+| Ryuuten | long-dragon | large | head, body, limbs, charm | heavy |
+| Hissling | serpentine | tiny | head, body, charm | light |
+| Coilshade | serpentine | small | head, body, charm | medium |
+| Hebiko | serpentine | medium | head, body, charm | medium |
+| Foalspark | hooved-quadruped | medium | head, body, limbs, charm | light |
+| Galeflank | hooved-quadruped | large | head, body, limbs, charm | heavy |
+| Umaren | hooved-quadruped | large | head, body, limbs, charm | heavy |
+| Woolkid | hooved-quadruped | tiny | head, body, limbs, charm | light |
+| Cragram | hooved-quadruped | medium | head, body, limbs, charm | heavy |
+| Yangsu | hooved-quadruped | medium | head, body, limbs, charm | heavy |
+| Mischkit | primate | tiny | head, body, limbs, tail, charm | light |
+| Trickpaw | primate | small | head, body, limbs, tail, charm | medium |
+| Sarugen | primate | medium | head, body, limbs, tail, charm | medium |
+| Chickpip | avian | tiny | head, body, limbs, charm | light |
+| Dawncrest | avian | small | head, body, limbs, charm | light |
+| Kokketsu | avian | medium | head, body, limbs, charm | light |
+| Puplight | clawed-quadruped | tiny | head, body, limbs, tail, charm | light |
+| Hearthound | clawed-quadruped | medium | head, body, limbs, tail, charm | heavy |
+| Inukai | clawed-quadruped | medium | head, body, limbs, tail, charm | heavy |
+| Truffling | hooved-quadruped | small | head, body, limbs, charm | light |
+| Mudboar | hooved-quadruped | medium | head, body, limbs, charm | heavy |
+| Butagon | hooved-quadruped | large | head, body, limbs, charm | heavy |
+
+### Keeper armour
+
+| Armour | Class | Guard | DEX cap | Material element | Resists | Vulnerable | Craft DC | Days |
+|---|---|---|---|---|---|---|---|---|
+| Quilted Robe | light | +1 | none | — | — | — | 10 | 2 |
+| Paper Armour | light | +2 | none | wood | earth | metal | 12 | 4 |
+| Rattan Cuirass | light | +2 | none | wood | earth | metal | 11 | 3 |
+| Fish-Leather Coat | medium | +3 | 2 | water | fire | earth | 12 | 5 |
+| Horn Lamellar | medium | +4 | 2 | earth | water | wood | 13 | 6 |
+| Studded Brigandine | medium | +4 | 2 | metal | wood | fire | 14 | 7 |
+| Iron Lamellar | heavy | +5 | 0 | metal | wood | fire | 18 | 10 |
+| Brass-and-Horn Plate | heavy | +6 | 0 | metal | wood | fire | 15 | 12 |
+
+## Materials
+
+Tier 4 materials are Sovereign gifts only: they can't be bought, sold or crafted.
+
+| Material | Element | Tier | Source | Roles | Value | Property |
+|---|---|---|---|---|---|---|
+| Cotton Batting | — | 1 | traded | padding | 1 | Light and warm. Quilted in layers it stops more than you'd expect. |
+| Ramie Cord | — | 1 | grown | binding | 1 | Strong plant-fibre cord used to lace lamellar plates. |
+| Rattan | wood | 1 | gathered | frame, facing | 1 | Springy climbing palm, woven into helmets and shields across Southeast Asia. Light frames. |
+| Bamboo Lath | wood | 1 | gathered | frame, facing | 1 | Split bamboo strips. Light, stiff and quick to replace. |
+| Mulberry Paper | wood | 1 | traded | facing, padding | 2 | Pressed in dozens of layers it makes paper armour, which was really used in China. Weak to fire. |
+| Peach Wood | wood | 2 | gathered | frame, finish | 4 | Traditionally believed to ward off evil. Any piece with a peach-wood frame grants advantage on saves against Frightened. |
+| Thornstripe Briar | wood | 2 | shed (thornstripe) | facing | 6 | Briar a Thornstripe lets grow where it sleeps, gathered with its permission. A beast that grapples the wearer takes 1d4 damage. |
+| Lampwing Silk | kindle | 2 | shed (lampwing) | padding, facing | 8 | Silk from discarded cocoons. Glows softly; the wearer is never Blinded by darkness. |
+| Ember Felt | fire | 1 | shed (pyrebrush) | padding | 2 | Felt pressed from fur that Fox Embers and Pyrebrushes shed in spring. Always warm. |
+| Galeflank Mane Hair | fire | 2 | shed (galeflank) | binding | 5 | Combed from a bonded Galeflank. Lacings of it never come loose; +1 durability. |
+| Kiln Glaze Tile | kiln | 2 | traded | facing | 6 | Small fired tiles with a celadon glaze, set into lamellar. Heavy but fireproof. |
+| Ember Lacquer | fire | 3 | traded | finish | 15 | Cinnabar-red lacquer cured over a low fire. The wearer gains advantage on CHA (Persuasion) checks when meeting someone for the first time. |
+| Buffalo Horn | earth | 1 | shed (wallowhorn) | facing, frame | 3 | Horn sheaths cast off naturally. Used, as in the brass-and-horn armour of the southern Philippines, for plates and fittings. |
+| River Jade | earth | 2 | gathered | finish, facing | 10 | Smooth green stones from riverbeds. Jade plates are prized and believed to be protective. |
+| Shed Scute | earth | 2 | shed (teahouse-tortoise) | facing | 8 | Outer shell layers that tortoises shed as they grow. Overlapping scutes make tough scale facing. |
+| Terraced Clay | silt | 1 | gathered | finish | 1 | Paddy clay rubbed into leather. Waterproofs it; the wearer can't be Soaked. |
+| Bronze | metal | 1 | traded | facing, frame | 4 | Cast bronze plates and mirror-bosses. Heavy and easy to repair. |
+| Brass | metal | 2 | traded | facing, binding | 6 | Bright, workable brass plates and rings, joined with mail. |
+| Folded Iron | metal | 2 | mined | facing, frame | 8 | Iron folded and hammered many times. The standard heavy armour material. |
+| Dawncrest Quill | metal | 3 | shed (dawncrest) | facing | 20 | Steel-bright feathers moulted once a year. Light as feathers, hard as plate; counts as one weight class lighter. |
+| Bell Bronze | metal | 3 | traded | facing | 18 | High-tin bronze for temple bells. Struck, it rings; the wearer has advantage on saves against Charmed. |
+| Jewelwing Lacquer | lacquer | 3 | gathered | finish | 22 | Iridescent lacquer from the empty wing-cases jewel beetles leave behind. +1 durability and it shimmers. |
+| Fish Leather | water | 1 | traded | facing, binding | 2 | Tanned fish skin, as used for clothing by the Hezhe and Nanai peoples of the Amur river. Light, tough and waterproof. |
+| Inkcarp Scale | water | 1 | shed (scrollfin) | facing | 2 | Scales Inkcarp and Scrollfins drop below waterfalls. Faintly inked with characters. |
+| Mother-of-Pearl | water | 2 | gathered | finish, facing | 9 | Shell lining from empty shells. Inlaid into lacquer it makes the finest finishes. |
+| Hooktail Denticle | frost | 3 | gifted (hooktail-shark) | facing | 25 | Rough denticles left in a creel by a released Hooktail. Anyone who strikes the wearer in melee takes 1 damage. |
+| Moonshell Nacre | silt | 3 | gifted (moonshell-snail) | facing, finish | 25 | A shell layer the Moonshell Snail leaves behind when released. Glows faintly in moonlight; +1 Guard when Rooted. |
+| Mangrove-Tanned Leather | mangrove | 2 | traded | facing, binding | 6 | Leather tanned in mangrove bark. Doesn't rot in salt water or rain. |
+| Forge Scale | forge | 3 | gifted (ironeater) | facing | 30 | Iron scraps a released Ironeater spits out, fused and glowing. Immune to Burning. |
+| Gold Leaf | ore | 2 | traded | finish | 12 | Beaten gold. Mostly for show; +1 to Bond Checks against beasts that like shiny things (Rodent, Primate, Avian). |
+| Nezrath's Echo-Whisker | water | 4 | gifted (nezrath) | binding | gift | Lace a piece with it: once per battle, the first attack against the wearer hits a decoy instead. |
+| Gyuurok's Yoke-Moss | moss | 4 | gifted (gyuurok) | padding | gift | Moss from Gyuurok's back. The wearer can't be pushed, pulled or knocked Prone. |
+| Torakai's Shed Claw | wood | 4 | gifted (torakai) | facing | gift | A claw sheath Torakai has shed. The wearer is immune to Frightened. |
+| Usagetsu's Moonlight Felt | wood | 4 | gifted (usagetsu) | padding | gift | Felt of fur shed under a full moon. The wearer regains 1d4 HP at the start of each turn while below half HP. |
+| Ryuuten's Pearl-Scale | earth | 4 | gifted (ryuuten) | facing | gift | One scale from Heaven's Coil. Counts as all five elements: always Attuned, never Oppressive or Strained. |
+| Hebiko's Shed Skin | fire | 4 | gifted (hebiko) | facing | gift | Once per long rest, when the wearer would drop to 0 HP it drops to 1 instead and ends one condition. |
+| Umaren's Sun-Mane | fire | 4 | gifted (umaren) | binding | gift | Moving never provokes a free attack against the wearer. |
+| Yangsu's Golden Fleece | earth | 4 | gifted (yangsu) | padding | gift | Allies within 10 ft of the wearer add 1 to their saves. |
+| Sarugen's Mirror-Hair | metal | 4 | gifted (sarugen) | binding | gift | Once per battle the wearer may reflect a technique that targets only them back at its user. |
+| Kokketsu's Dawn-Feather | metal | 4 | gifted (kokketsu) | facing | gift | +5 initiative. The wearer can't be surprised. |
+| Inukai's Guardian Mane | earth | 4 | gifted (inukai) | padding | gift | When an ally within 5 ft is hit, the wearer may take the damage instead. |
+| Butagon's Herb-Bristle | water | 4 | gifted (butagon) | padding | gift | The wearer starts each battle with 10 temporary HP. |
+
+## Crafting
+
+**Check:** d20 + discipline ability modifier + Rank (if proficient in the discipline) vs recipe DC.
+
+- **ruined** (Fail by 5 or more): All materials are lost.
+- **failed** (Fail by 1–4): No progress; half the materials (round down) are lost.
+- **standard** (Meet the DC): The piece is made.
+- **fine** (Beat the DC by 5 or more): +2 durability, and pick one: −1 weight class step for Speed purposes, or +1 to the material's special effect.
+- **masterwork** (Beat the DC by 10 or more, or a natural 20 that also meets the DC): Fine, plus an inscription slot for a talisman charm (see charms).
+
+**Element synergy:** materials that generate each other −2 DC; materials that control each other +3 DC. The best material's tier sets a minimum DC (T1 10, T2 13, T3 16, T4 19).
+
+### Disciplines
+
+| Discipline | Ability | Makes |
+|---|---|---|
+| Weaving | DEX | Quilted coats, rattan and paper armour, feather mantles, silk padding, collars. |
+| Hidework | DEX | Fish leather, tanned hides, scale sheaths, straps and lacing. |
+| Smithing | STR | Lamellar plates, plate barding, horn caps, metal fittings. |
+| Lacquerwork | WIS | Lacquer finishes, shell facing, inlay. Needs patience; each coat cures for a day. |
+| Kilnwork | INT | Glazed tiles, ceramic plates, clay jars and pillow boxes (vessels). |
+| Talisman Carving | WIS | Charms, peach-wood and jade talismans, inscriptions on masterwork pieces. |
+| Beastwright | WIS | Fits any beast armour to a body plan marked "adapted"; refits armour after a beast evolves. |
+
+### Beast crafting abilities
+
+| Family / form | Ability | Effect |
+|---|---|---|
+| rodent | Fine Gnawing | Advantage on Talisman Carving checks. |
+| bovine | Bellows and Millstone | Smithing and Kilnwork take half time. |
+| feline | Precise Claw | +2 to inscription work on masterwork pieces. |
+| lagomorph | Lucky Find | Reroll one failed gathering check per day. |
+| reptilian | Patient Shedding | Gives one tier-1 hide or scale material per long rest. |
+| equine | Packbearer | Carries up to 10× its weight class in materials; travel to a market takes half time. |
+| caprine | Cliff Forager | Advantage on gathering checks for minerals and jade. |
+| primate | Deft Hands | Counts as a second crafter (halves time) for Weaving and Hidework. |
+| avian | Moult Gift | Gives one feather material of its form's element per long rest. |
+| canine | Keen Nose | Advantage on gathering checks to find materials (Tracking). |
+| suine | Forager | Finds one tier-1 material of its choice per day of travel. |
+| piscine | Pearl Diver | Advantage on gathering checks for shell and mother-of-pearl. |
+| insectoid | Silk Spinner | Gives one silk or fibre material per long rest. |
+| chelonian | Slow Cure | Lacquerwork curing time is halved. |
+| wood form | Green Thumb | Grown materials (rattan, bamboo, peach wood) are found on any gathering success. |
+| fire form | Living Forge | Heats a forge or kiln with no fuel; +1 to Smithing and Kilnwork checks. |
+| earth form | Steady Ground | +1 to Kilnwork checks; ceramic pieces gain +1 durability. |
+| metal form | Edge Sense | +1 to Smithing checks; spots flaws, so a failed Smithing check loses no materials. |
+| water form | Quench | +2 to Smithing checks for metal pieces (a perfect quench). |
+
+### Beast armour recipes
+
+| Recipe | Type | Weight | Guard | Element | Materials | DC (base → final) | Days |
+|---|---|---|---|---|---|---|---|
+| Quilted Beast Coat | quilted-coat | light | +1 | — | 3× cotton-batting, 1× ramie-cord | 10 → 10 | 2 |
+| Ember Felt Coat | quilted-coat | light | +1 | fire | 3× ember-felt, 1× rattan | 11 → 10 | 3 |
+| Horn Lamellar Barding | lamellar-barding | medium | +2 | earth | 6× buffalo-horn, 3× ramie-cord | 13 → 13 | 6 |
+| Glazed Lamellar Barding | lamellar-barding | medium | +2 | kiln | 6× kiln-glaze, 2× galeflank-mane | 14 → 13 | 8 |
+| Scute Scale Sheath | scale-sheath | medium | +2 | earth | 5× tortoise-scute, 2× galeflank-mane | 13 → 13 | 6 |
+| Inkscale Sheath | scale-sheath | medium | +2 | water | 8× inkcarp-scale, 2× fish-leather | 11 → 11 | 4 |
+| Iron Plate Barding | plate-barding | heavy | +3 | metal | 10× folded-iron, 4× cotton-batting, 2× ramie-cord | 16 → 16 | 12 |
+| Quill Mantle | feather-mantle | light | +1 | metal | 4× dawncrest-quill, 1× fish-leather | 16 → 16 | 6 |
+| Lacquered Shell Facing | shell-facing | heavy | +3 | earth | 3× tortoise-scute, 2× mother-of-pearl, 1× ember-lacquer | 15 → 19 | 9 |
+| Guardian Mask | beast-mask | light | +1 | wood | 2× bamboo-lath, 2× mulberry-paper, 1× ember-lacquer | 12 → 16 | 3 |
+| Bronze Horn Caps | horn-cap | medium | +2 | metal | 2× bronze, 1× fish-leather | 12 → 10 | 2 |
+| Rattan Claw Guards | claw-guards | light | +1 | wood | 2× rattan, 1× ramie-cord | 10 → 10 | 1 |
+| Horn Hoof Guards | hoof-guards | light | +1 | earth | 2× buffalo-horn, 1× ember-felt | 11 → 10 | 2 |
+| Bronze Talon Sheaths | talon-sheaths | light | +1 | metal | 1× bronze, 1× fish-leather | 13 → 11 | 2 |
+| Brass Tail Rings | tail-sheath | light | +1 | metal | 1× brass, 1× ramie-cord | 12 → 13 | 1 |
+| Peach-Wood Tassel | charm-collar | none | +0 | wood | 1× peach-wood, 1× ramie-cord | 13 → 13 | 1 |
+| Bell-Bronze Collar | charm-collar | none | +0 | metal | 1× bell-bronze, 1× fish-leather | 16 → 16 | 2 |
+| Jade Disc Charm | charm-collar | none | +0 | earth | 1× river-jade, 1× galeflank-mane | 14 → 13 | 2 |
+| Lantern-Silk Ribbon | charm-collar | none | +0 | kindle | 1× lampwing-silk | 13 → 13 | 1 |
+| Bamboo Creel | bamboo-creel | — | — | wood | 3× bamboo-lath, 1× ramie-cord | 10 → 10 | 1 |
+| Rattan Cage | rattan-cage | — | — | wood | 3× rattan | 11 → 11 | 1 |
+| Clay Jar | clay-jar | — | — | silt | 3× terraced-clay | 11 → 11 | 2 |
+| Lantern Cage | lantern-cage | — | — | wood | 2× bamboo-lath, 2× mulberry-paper | 12 → 12 | 1 |
+| Lacquer Box | lacquer-box | — | — | wood | 2× bamboo-lath, 1× ember-lacquer, 1× river-jade | 15 → 16 | 4 |
+| Pillow Box | pillow-box | — | — | silt | 2× terraced-clay, 1× kiln-glaze | 13 → 14 | 3 |
+
 ## Sample lore
 
 **Nezrath, The First Hour.** When the world was a closed egg of darkness, the story goes, a rat gnawed a hole in it at midnight, and the first breath of air came through. Nezrath claims to be that rat, or its heir. It holds court in the hour between days, where nothing is quite yesterday or tomorrow, and every one of its echoes swears to be the real one.
