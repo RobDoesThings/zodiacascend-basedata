@@ -4,6 +4,7 @@
 //   npm run art:ai -- --dry-run               show what would be generated and the estimated cost
 //   npm run art:ai -- --limit 3               generate the first 3 missing images (try this first)
 //   npm run art:ai -- --type zodiac           only zodiac species (zodiac|wanderer|spirit|card)
+//   npm run art:ai -- --set starter           the 12 native zodiac Sovereigns, one per animal
 //   npm run art:ai -- --only torakai,suerak   specific keys
 //   npm run art:ai -- --stale                 also redo images whose prompt changed
 //   npm run art:ai -- --force                 redo everything selected
@@ -29,6 +30,7 @@ const { values: args, positionals } = parseArgs({
     "dry-run": { type: "boolean", default: false },
     limit: { type: "string" },
     type: { type: "string" },
+    set: { type: "string" },
     only: { type: "string" },
     stale: { type: "boolean", default: false },
     force: { type: "boolean", default: false },
@@ -64,6 +66,15 @@ const manifest: Record<string, Record_> = existsSync(manifestPath) ? JSON.parse(
 
 let jobs: PromptJob[] = jobsAll;
 if (args.type) jobs = jobs.filter((j) => j.kind === args.type);
+// Named sets. "starter": the twelve native zodiac Sovereigns, one per animal.
+const SETS: Record<string, string[]> = {
+  starter: J("zodiac-bestiary.json").species.filter((s: any) => s.native && s.stage === 3).map((s: any) => s.id),
+};
+if (args.set) {
+  const keys = SETS[args.set];
+  if (!keys) throw new Error(`unknown set "${args.set}" (known: ${Object.keys(SETS).join(", ")})`);
+  jobs = jobs.filter((j) => keys.includes(j.key));
+}
 if (args.only) {
   const keys = new Set(args.only.split(",").map((s) => s.trim()));
   jobs = jobs.filter((j) => keys.has(j.key) || keys.has(j.key.replace(/^card:/, "")));

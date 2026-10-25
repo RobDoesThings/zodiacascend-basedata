@@ -144,6 +144,7 @@ const zodiacOut = zodiacLines.flatMap((line: any) => {
       playable: true,
       habitat: s.habitat,
       description: s.description,
+      ...(s.art_description ? { art_description: s.art_description } : {}),
       physical: physical(s),
       characteristics: {
         temperaments: weighted(line.temperaments),

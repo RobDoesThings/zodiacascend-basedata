@@ -111,6 +111,7 @@
     return `
       <p class="lede">${esc(s.description)}</p>
       <h3>Lore</h3><p class="lore">${esc(s.lore)}</p>
+      ${s.art_description ? `<h3>Art direction</h3><p class="src">${esc(s.art_description)}</p>` : ""}
       ${physicalSection(s.physical)}
       <h3>Characteristics</h3>
       <p><b>Temperament</b></p>${bars(s.characteristics.temperaments)}

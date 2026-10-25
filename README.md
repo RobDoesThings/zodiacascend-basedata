@@ -35,7 +35,7 @@ Every prompt is built from the card's data (species, stage, element, description
 
 1. Get an API key at <https://dashboard.bfl.ai> and add credits.
 2. Add it as a repository secret named `BFL_API_KEY` (**Settings → Secrets and variables → Actions → New repository secret**).
-3. **Actions → Generate card art → Run workflow.** Start with the default limit of 3 to check the style, then run again with the limit blank to do the rest. The images are committed and the site redeploys.
+3. **Actions → Generate card art → Run workflow.** The default, `starter`, makes 12 images: one native Sovereign per zodiac animal, from hand-written art descriptions (about $0.50). Check the style on the site, then run `all` with the limit blank to do the rest. The images are committed and the site redeploys.
 
 **Locally:**
 

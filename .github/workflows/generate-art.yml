@@ -8,14 +8,14 @@ on:
   workflow_dispatch:
     inputs:
       limit:
-        description: "Max images this run (blank = all missing). Start with 3 to check the style."
-        default: "3"
+        description: "Max images this run (blank = all missing in the chosen set)."
+        default: "12"
         required: false
       type:
-        description: "Only this kind of card"
+        description: "Which cards. starter = the 12 native zodiac Sovereigns, one per animal."
         type: choice
-        default: all
-        options: [all, zodiac, wanderer, spirit, card]
+        default: starter
+        options: [starter, all, zodiac, wanderer, spirit, card]
       only:
         description: "Comma-separated card ids (optional), e.g. torakai,suerak"
         required: false
@@ -53,7 +53,7 @@ jobs:
         run: |
           args=()
           [ -n "$LIMIT" ] && args+=(--limit "$LIMIT")
-          [ "$TYPE" != "all" ] && args+=(--type "$TYPE")
+          if [ "$TYPE" = "starter" ]; then args+=(--set starter); elif [ "$TYPE" != "all" ]; then args+=(--type "$TYPE"); fi
           [ -n "$ONLY" ] && args+=(--only "$ONLY")
           [ "$STALE" = "true" ] && args+=(--stale)
           npm run art:ai -- "${args[@]}"

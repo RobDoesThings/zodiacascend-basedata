@@ -58,6 +58,7 @@ lines:
         size_cm: 170
         measure: length
         description: A sleek black rat the size of a wolf, trailed by a shimmer of half-real tails.
+        art_description: "A sleek, wolf-sized black rat crouched on a wet stone stair at midnight, fur glistening like ink, sharp intelligent dark eyes. Behind it fan out many translucent, half-real tails and three faint shadowy echo-copies of itself, as if it exists a heartbeat apart. Moonlight on rippling water, temple lanterns reflected in a canal, a water-clock dripping nearby."
         lore: >-
           When the world was a closed egg of darkness, the story goes, a rat gnawed a hole in it at
           midnight, and the first breath of air came through. Nezrath claims to be that rat, or its
@@ -114,6 +115,7 @@ lines:
         size_cm: 220
         measure: shoulder
         description: A mountainous ox whose back carries moss, shrines and the occasional sleeping village cat.
+        art_description: "A colossal, mountain-like ox standing calm and immovable, broad crescent horns of weathered stone, earth-brown hide with a white blaze. Its back is a living hillside of moss, small stone shrines and a sleeping cat. A thick wooden yoke rests on its neck, wound with a red vow-cord and a brass bell. Terraced rice fields stepping down golden hills behind it."
         lore: >-
           Gyuurok carried the Rat across the river in the Great Race and finished second without a
           word of complaint. When asked why it never resented the trick, it said it had agreed to
@@ -172,6 +174,7 @@ lines:
         size_cm: 330
         measure: length
         description: A colossal tiger with jade-green eyes and the mark of a king on its brow.
+        art_description: "A colossal tiger with deep orange fur and bold black stripes, glowing jade-green eyes and the character-like markings of a king on its brow. Faint green spirit-light gathers around it in three ring-shaped gates, as if it is unlocking hidden strength. Mid-stride on a mossy rock in a towering bamboo forest, sunlight breaking through morning mist, bamboo leaves drifting."
         lore: >-
           Long ago a tiger and a bear sat in a cave and tried to become something else. The bear
           endured; the tiger walked out into the light. Torakai tells this story proudly, because
@@ -227,6 +230,7 @@ lines:
         size_cm: 120
         measure: length
         description: A tall, serene hare carrying a jade mortar and pestle, its eyes the colour of moonrise.
+        art_description: "A tall, serene white hare with long silver-tipped ears and eyes the colour of moonrise, standing upright beside a carved jade mortar and pestle that glows softly with healing light. Moonlight pours around it; tiny glowing clover leaves and rice-cake shapes drift in the air. Silver birch-like trees and a huge full moon in a quiet night garden."
         lore: >-
           A hungry traveller once came upon a rabbit with nothing to give, and the rabbit offered
           itself instead. The traveller, who was more than a traveller, set the rabbit's likeness in
@@ -286,6 +290,7 @@ lines:
         measure: length
         cv: 0.15
         description: An immense five-clawed dragon chasing a pearl that glows in all five colours.
+        art_description: "An immense five-clawed East Asian long dragon, serpentine body coiling through golden clouds, earth-gold and jade scales, long whiskers, antlers and a flowing mane. It chases a radiant pearl that glows in five colours: green, red, gold, white and blue. Below, a waterfall plunges over the Dragon Gate cliffs and leaping carp sparkle in the spray."
         lore: >-
           Ryuuten leapt the Dragon Gate when the world was young and has been climbing ever since.
           Its pearl holds a breath of every element. In the Great Race it stopped to bring rain to a
@@ -341,6 +346,7 @@ lines:
         size_cm: 900
         measure: length
         description: A great serpent with nine faint rings of colour, each said to be a skin it has shed and survived.
+        art_description: "A great serpent with ember-red scales banded with nine faint rings of colour, raised in a coiled hood-like pose, calm golden eyes. A translucent shed skin drapes beside it like silk. Coiled around the base of an old lamplit pagoda at dusk, paper lanterns glowing warm red, drifting sparks and incense smoke."
         lore: >-
           They tell of a snake that studied for a thousand years to take a gentler shape, and was
           imprisoned under a pagoda for daring to love. Hebiko claims no kinship with that story,
@@ -397,6 +403,7 @@ lines:
         size_cm: 180
         measure: shoulder
         description: A radiant stallion of golden fire whose hoofprints glow for an hour.
+        art_description: "A radiant stallion mid-gallop, coat of golden fire, mane and tail streaming like solar flames, hooves leaving glowing hoofprints in the grass. Strong, joyful and fast, blurred dust and heat shimmer behind it. Racing across a vast sunlit plain at noon under a blazing sky, distant red mountains."
         lore: >-
           Umaren was the fastest beast in the Great Race and finished seventh, because it was
           startled by the Snake at the last bend. It has never forgiven itself, and it has never
@@ -449,6 +456,7 @@ lines:
         size_cm: 120
         measure: shoulder
         description: A dignified ram with golden horns, carrying five stalks of rice in its fleece.
+        art_description: "A dignified, gentle ram with thick cream fleece and great curling golden horns, five ripe stalks of golden rice tucked into its wool. Its mouth slightly open as if singing; soft notes of warm light drift around it. Standing on a mountain summit shrine above terraced rice fields at golden hour, prayer ribbons fluttering."
         lore: >-
           In a starving city, the story goes, five riders came down from the clouds on five rams,
           each carrying a stalk of rice. When they left, the rams stayed and turned to stone so the
@@ -505,6 +513,7 @@ lines:
         size_cm: 150
         measure: height
         description: A silver-maned sage-monkey whose eyes reflect whatever it looks at.
+        art_description: "A wise, silver-maned sage monkey seated cross-legged on a lacquered platform, holding up a round bronze mirror that reflects a different scene than the room. Its own eyes are reflective like polished metal. Behind it, three small statues: one covering its eyes, one its ears, one its mouth. A hall of mirrors and hanging bronze bells in cool silver light."
         lore: >-
           Sarugen keeps three statues in its hall: one with covered eyes, one with covered ears, one
           with covered mouth. It says they are not a lesson but a warning about what it does to
@@ -559,6 +568,7 @@ lines:
         size_cm: 170
         measure: height
         description: A towering rooster with steel-feathered wings and a tail of rippling sunrise.
+        art_description: "A towering, proud rooster with steel-grey feathers that shine like hammered metal, a crimson comb and a long cascading tail of sunrise colours, red, orange and gold. Mid-crow on top of a red shrine gate, chest puffed out, as the first rays of dawn break behind it over misty mountains."
         lore: >-
           When the sun hid in a cave and the world went dark, the long-crying birds were gathered to
           call it home. Kokketsu says it was the first to crow. It holds to five virtues — learning,
@@ -616,6 +626,7 @@ lines:
         size_cm: 100
         measure: shoulder
         description: A great guardian hound with a lion's mane of earth-gold fur, flanked by a phantom twin.
+        art_description: "A great guardian hound with a thick lion-like mane of earth-gold fur, broad chest and calm, watchful eyes, sitting upright like a shrine guardian. Beside it stands a translucent phantom twin, one with mouth open and one with mouth closed. Guarding an ancient stone gate at dusk with stone lanterns, autumn leaves on the steps."
         lore: >-
           Inukai guards the gate between the Hours, with its twin beside it, one mouth open and one
           closed. The rumour that it once swallowed the moon is an insult, and it will bite anyone
@@ -670,6 +681,7 @@ lines:
         size_cm: 280
         measure: length
         description: A vast, contented boar whose bristles sprout herbs and whose belly rumbles like distant thunder.
+        art_description: "A vast, contented boar with a round belly and dark bristles sprouting green herbs and tiny flowers, gentle eyes and modest tusks. Lounging happily in an abundant orchard valley beside a river, fallen fruit, chestnuts and mushrooms around it, small animals resting against its side. Soft blue evening light and fireflies over the water."
         lore: >-
           Butagon finished the Great Race last, having stopped for a meal and a nap, and it regards
           this as the wisest thing anyone did that day. Once, the story goes, its herd escorted an

@@ -73,6 +73,19 @@ function job(key: string, kind: PromptJob["kind"], name: string, prompt: string)
 export function buildPrompts(d: { zodiac: any[]; wanderers: any[]; spirits: any[]; cards: any[] }): PromptJob[] {
   const jobs: PromptJob[] = [];
   for (const s of d.zodiac) {
+    // A hand-written art description replaces the generated subject details.
+    if (s.art_description) {
+      jobs.push(
+        job(
+          s.id,
+          "zodiac",
+          s.name,
+          `${STYLE} Subject: ${s.name}${s.epithet ? ` ("${s.epithet}")` : ""}, a ${ANIMAL[s.animal]} of the ${s.element} element, ${STAGE[s.stage_name]}. ` +
+            `${s.art_description} Palette: ${ELEMENT_SETTING[s.element]}.`,
+        ),
+      );
+      continue;
+    }
     jobs.push(
       job(
         s.id,
