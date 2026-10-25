@@ -37,7 +37,7 @@ export function configFromEnv(): FluxConfig {
 }
 
 export class FluxError extends Error {
-  constructor(message: string, readonly retryable = false) {
+  constructor(message: string, readonly retryable = false, readonly outOfCredits = false) {
     super(message);
   }
 }
@@ -50,6 +50,7 @@ async function call(url: string, cfg: FluxConfig, init: RequestInit = {}): Promi
     headers: { accept: "application/json", "x-key": cfg.apiKey, ...(init.body ? { "content-type": "application/json" } : {}) },
   });
   const text = await res.text();
+  if (res.status === 402) throw new FluxError(`HTTP 402: ${text.slice(0, 200)}`, false, true);
   if (res.status === 429 || res.status >= 500) throw new FluxError(`HTTP ${res.status}: ${text.slice(0, 200)}`, true);
   if (!res.ok) throw new FluxError(`HTTP ${res.status}: ${text.slice(0, 300)}`);
   try {

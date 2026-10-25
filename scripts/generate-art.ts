@@ -99,7 +99,9 @@ if (!cfg.apiKey) {
 
 const saveManifest = () => writeFileSync(manifestPath, JSON.stringify(Object.fromEntries(Object.entries(manifest).sort()), null, 2) + "\n");
 
+const queue = [...jobs];
 let ok = 0;
+let outOfCredits = false;
 const failed: string[] = [];
 async function runOne(j: PromptJob) {
   for (let attempt = 1; attempt <= 3; attempt++) {
@@ -112,7 +114,8 @@ async function runOne(j: PromptJob) {
       console.log(`  ✓ ${j.key} (${ok}/${jobs.length})`);
       return;
     } catch (e) {
-      const err = e as FluxError;
+      // Network failures (not FluxErrors) are worth retrying too.
+      const err = e instanceof FluxError ? e : new FluxError((e as Error).message, true);
       if (err.retryable && attempt < 3) {
         console.warn(`  … ${j.key}: ${err.message}; retrying`);
         await new Promise((r) => setTimeout(r, 5000 * attempt));
@@ -120,17 +123,22 @@ async function runOne(j: PromptJob) {
       }
       failed.push(`${j.key}: ${err.message}`);
       console.error(`  ✗ ${j.key}: ${err.message}`);
+      if (err.outOfCredits && !outOfCredits) {
+        outOfCredits = true;
+        console.error("\nOut of FLUX credits: stopping. Top up at https://dashboard.bfl.ai and run again; finished images are kept.");
+        queue.length = 0;
+      }
       return;
     }
   }
 }
 
-const queue = [...jobs];
 const workers = Array.from({ length: Math.max(1, Number(args.concurrency)) }, async () => {
   while (queue.length) await runOne(queue.shift()!);
 });
 await Promise.all(workers);
-console.log(`\ngenerated ${ok}, failed ${failed.length}`);
+const skipped = jobs.length - ok - failed.length;
+console.log(`\ngenerated ${ok}, failed ${failed.length}${skipped ? `, not attempted ${skipped}` : ""}`);
 if (failed.length) {
   for (const f of failed) console.error(`  ${f}`);
   process.exit(1);
