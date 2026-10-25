@@ -79,14 +79,6 @@
     "task_id": "ee7724eb-3397-4383-9bad-c2646a0bc8d9",
     "generated": "2026-10-25T05:47:22.080Z"
   },
-  "usagetsu": {
-    "file": "usagetsu.jpg",
-    "prompt_hash": "3c64d2be144336cf",
-    "seed": 1099089274,
-    "model": "flux-pro-1.1",
-    "task_id": "4b8d96f6-1756-4084-a7da-6170c25ca136",
-    "generated": "2026-10-25T05:47:21.105Z"
-  },
   "yangsu": {
     "file": "yangsu.jpg",
     "prompt_hash": "deb47dbf91aa0493",

@@ -1,4 +1,4 @@
-# Zodiac bonds between the twelve animals. These follow the traditional groupings:
+# Zodiac bonds between the twelve animals of the Vietnamese zodiac. These follow the traditional groupings:
 # Trines are the Three Harmonies (each gathers into one element), Kindred pairs are the
 # Six Harmonies, and Rivals are the Six Clashes (animals opposite each other on the wheel).
 # Combo moves for Kindred pairs are added with the move system.
@@ -34,7 +34,7 @@ trines:
     description: The quick-witted. The Rat begins it, the Dragon gives it force, the Monkey finishes it.
   - id: trine-of-metal
     name: Trine of Metal
-    members: [ox, snake, rooster]
+    members: [buffalo, snake, rooster]
     description: The resolute. Each keeps to its course and finishes what it starts.
   - id: trine-of-fire
     name: Trine of Fire
@@ -42,22 +42,22 @@ trines:
     description: The brave. They run toward trouble and stand by each other within it.
   - id: trine-of-wood
     name: Trine of Wood
-    members: [rabbit, goat, pig]
+    members: [cat, goat, pig]
     description: The gentle. They heal, shelter and feed those around them.
 
 kindred:
-  - id: kindred-rat-ox
+  - id: kindred-rat-buffalo
     name: Rider and Road
-    members: [rat, ox]
-    description: The Rat rode the Ox across the river in the Great Race. The Ox still carries it, and neither minds.
+    members: [rat, buffalo]
+    description: The Rat rode the Buffalo across the river in the Great Race. The Buffalo still carries it, and neither minds.
   - id: kindred-tiger-pig
     name: Hunter and Hearth
     members: [tiger, pig]
     description: The Tiger hunts and the Pig feeds the camp; each keeps the other whole.
-  - id: kindred-rabbit-dog
+  - id: kindred-cat-dog
     name: Moon and Watchfire
-    members: [rabbit, dog]
-    description: The Rabbit mends what the Dog defends.
+    members: [cat, dog]
+    description: The Cat mends what the Dog defends, and the two share the hearth without a single argument.
   - id: kindred-dragon-rooster
     name: Heaven and Dawn
     members: [dragon, rooster]
@@ -75,15 +75,15 @@ rivals:
   - id: rivals-rat-horse
     members: [rat, horse]
     description: Midnight and noon, opposite on the wheel of hours.
-  - id: rivals-ox-goat
-    members: [ox, goat]
+  - id: rivals-buffalo-goat
+    members: [buffalo, goat]
     description: Two stubborn grazers who will not yield the same pasture.
   - id: rivals-tiger-monkey
     members: [tiger, monkey]
     description: Brute strength against mocking cleverness.
-  - id: rivals-rabbit-rooster
-    members: [rabbit, rooster]
-    description: The moon's favourite against the herald of the sun.
+  - id: rivals-cat-rooster
+    members: [cat, rooster]
+    description: The night-prowler of the moon against the herald of the sun.
   - id: rivals-dragon-dog
     members: [dragon, dog]
     description: Heaven's pride against the earthbound guardian who will not bow.

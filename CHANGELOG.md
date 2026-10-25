@@ -7,7 +7,20 @@ id is never removed or reused within major version 1.
 
 ## [Unreleased]
 
+### Changed
+
+- **Vietnamese zodiac.** The Water Buffalo (`buffalo`) replaces the Ox and the Cat (`cat`) replaces
+  the Rabbit everywhere: zodiac order, bonds (Trine of Metal, Trine of Wood, Rat + Buffalo and
+  Cat + Dog Kindred, Buffalo × Goat and Cat × Rooster Rivals), lines and art. Gyuurok's line is
+  now a water buffalo line (names kept). The native Cat line is Mooncotton → Moonveil → Meonguyet
+  (replacing Hareveil and Usagetsu); the other Cat Sovereigns are Goyanghwa, Kucinara, Maewthong
+  and Meohai. Buffalo Sovereigns Lembara and Wuarak are renamed Kerbara and Khwairak.
+- Lagomorph is now a Wanderer-only family. The secret unreleased Sovereign is now the Moon Rabbit
+  (the one that stayed on the moon), replacing the Moon Cat.
+
 ### Added
+
+- The Moon Rabbit, a mythical Wanderer line (Pestlebun → Jade Moonhare).
 
 - 48 new zodiac element lines: every animal now has five distinct lines (one per element), each
   Kit → Adept → Sovereign, for 180 species and 60 Sovereigns. Native lines keep their canon names.

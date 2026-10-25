@@ -57,7 +57,7 @@ const STAGE: Record<string, string> = {
 };
 
 const ANIMAL: Record<string, string> = {
-  rat: "rat", ox: "ox", tiger: "tiger", rabbit: "rabbit", dragon: "East Asian long dragon (serpentine body, four clawed legs, whiskers, antlers)",
+  rat: "rat", buffalo: "Asian water buffalo (swept-back crescent horns)", tiger: "tiger", cat: "cat", dragon: "East Asian long dragon (serpentine body, four clawed legs, whiskers, antlers)",
   snake: "snake", horse: "horse", goat: "goat", monkey: "monkey", rooster: "rooster", dog: "dog", pig: "pig",
 };
 

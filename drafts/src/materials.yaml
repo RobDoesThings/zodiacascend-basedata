@@ -302,7 +302,7 @@ materials:
       properties: "Moss from Gyuurok's back. The wearer can't be pushed, pulled or knocked Prone." }
   - { id: verdant-claw, name: Torakai's Shed Claw, element: wood, tier: 4, category: horn, roles: [facing], source: { method: gifted, from: torakai }, value: null,
       properties: "A claw sheath Torakai has shed. The wearer is immune to Frightened." }
-  - { id: moonlight-felt, name: Usagetsu's Moonlight Felt, element: wood, tier: 4, category: fibre, roles: [padding], source: { method: gifted, from: usagetsu }, value: null,
+  - { id: moonlight-felt, name: Meonguyet's Moonlight Felt, element: wood, tier: 4, category: fibre, roles: [padding], source: { method: gifted, from: meonguyet }, value: null,
       properties: "Felt of fur shed under a full moon. The wearer regains 1d4 HP at the start of each turn while below half HP." }
   - { id: pearl-scale, name: Ryuuten's Pearl-Scale, element: earth, tier: 4, category: scale, roles: [facing], source: { method: gifted, from: ryuuten }, value: null,
       properties: "One scale from Heaven's Coil. Counts as all five elements: always Attuned, never Oppressive or Strained." }

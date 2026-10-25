@@ -612,3 +612,34 @@ lines:
           At the Mid-Autumn Festival, Moonlions dance through the streets of the Twelve Hours,
           following a round-bellied figure with a fan. Children chase them, merchants feed them and
           the moon shines brighter wherever they pass.
+
+  - id: moon-rabbit
+    family: lagomorph
+    mythical: true
+    elements: [wood, metal]
+    temperaments: { gentle: 45, serene: 30, curious: 20, playful: 5 }
+    markings: { moon-white: 50, silver: 30, jade-eyed: 15, gold: 5 }
+    favoured_offerings: [rice cakes, sweet osmanthus, a quiet night]
+    folklore_sources:
+      - region: China, Japan, Korea and Vietnam
+        tradition: The rabbit in the moon pounding with a mortar and pestle, making the elixir of life in China and rice cakes (mochi, tteok) in Japan and Korea.
+      - region: South and Southeast Asia
+        tradition: The Buddhist Śaśa Jātaka, in which a rabbit offers itself as food to a hungry traveller, who places its image on the moon in gratitude.
+    stages:
+      - id: pestlebun
+        name: Pestlebun
+        weight_kg: 2
+        size_cm: 40
+        measure: length
+        description: A small white rabbit with silver-tipped ears, carrying a tiny jade pestle.
+        lore: Pestlebuns appear only under a full moon, pounding dew into medicine on flat stones. By morning they are gone and the stones are clean.
+      - id: jade-moonhare
+        name: Jade Moonhare
+        weight_kg: 8
+        size_cm: 75
+        measure: length
+        description: A serene white hare with moonlight in its fur, standing beside a glowing jade mortar.
+        lore: >-
+          They say the Rabbit was meant to run the Great Race but would not leave its mortar on the
+          moon, and the Cat ran in its place. On the brightest nights a Jade Moonhare comes down to
+          gather herbs, and those it finds sick wake well. It holds no Hour and wants none.

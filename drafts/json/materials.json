@@ -769,7 +769,7 @@
     },
     {
       "id": "moonlight-felt",
-      "name": "Usagetsu's Moonlight Felt",
+      "name": "Meonguyet's Moonlight Felt",
       "element": "wood",
       "tier": 4,
       "category": "fibre",
@@ -778,7 +778,7 @@
       ],
       "source": {
         "method": "gifted",
-        "from": "usagetsu"
+        "from": "meonguyet"
       },
       "value": null,
       "properties": "Felt of fur shed under a full moon. The wearer regains 1d4 HP at the start of each turn while below half HP.",

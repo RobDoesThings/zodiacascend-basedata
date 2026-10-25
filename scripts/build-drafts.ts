@@ -569,7 +569,7 @@ for (const r of recipeOut.filter((x: any) => x.wearer !== "keeper")) {
 md.push("");
 
 md.push("## Sample lore", "");
-for (const id of ["nezrath", "gyuurok", "usagetsu"]) {
+for (const id of ["nezrath", "gyuurok", "meonguyet"]) {
   const s = zodiacOut.find((x: any) => x.id === id);
   md.push(`**${s.name}, ${s.epithet}.** ${s.lore}`, "");
 }

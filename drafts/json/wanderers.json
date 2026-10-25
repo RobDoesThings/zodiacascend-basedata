@@ -1,7 +1,7 @@
 {
   "status": "draft",
   "licence": "CC-BY-4.0",
-  "count": 52,
+  "count": 54,
   "species": [
     {
       "id": "inkcarp",
@@ -6752,6 +6752,288 @@
           },
           {
             "type": "plate-barding",
+            "fit": "adapted"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "claw-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "tail-sheath",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "pestlebun",
+      "name": "Pestlebun",
+      "line": "moon-rabbit",
+      "kind": "wanderer",
+      "family": "lagomorph",
+      "mythical": true,
+      "elements": [
+        "wood",
+        "metal"
+      ],
+      "evolves_from": null,
+      "evolves_to": "jade-moonhare",
+      "stage": 1,
+      "stage_name": "Wanderer",
+      "playable": true,
+      "description": "A small white rabbit with silver-tipped ears, carrying a tiny jade pestle.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 2,
+          "sd": 0.24,
+          "min": 1.28,
+          "p95": 2.39,
+          "p99": 2.56,
+          "upper": 2.72
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 40,
+          "sd": 2.4,
+          "min": 32.8,
+          "p95": 43.9,
+          "p99": 45.6,
+          "upper": 47.2
+        }
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "gentle",
+            "weight": 45
+          },
+          {
+            "id": "serene",
+            "weight": 30
+          },
+          {
+            "id": "curious",
+            "weight": 20
+          },
+          {
+            "id": "playful",
+            "weight": 5
+          }
+        ],
+        "markings": [
+          {
+            "id": "moon-white",
+            "weight": 50
+          },
+          {
+            "id": "silver",
+            "weight": 30
+          },
+          {
+            "id": "jade-eyed",
+            "weight": 15
+          },
+          {
+            "id": "gold",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "rice cakes",
+          "sweet osmanthus",
+          "a quiet night"
+        ]
+      },
+      "control": {
+        "command_dc": 8,
+        "difficulty": "Easy"
+      },
+      "lore": "Pestlebuns appear only under a full moon, pounding dew into medicine on flat stones. By morning they are gone and the stones are clean.",
+      "folklore_sources": [
+        {
+          "region": "China, Japan, Korea and Vietnam",
+          "tradition": "The rabbit in the moon pounding with a mortar and pestle, making the elixir of life in China and rice cakes (mochi, tteok) in Japan and Korea."
+        },
+        {
+          "region": "South and Southeast Asia",
+          "tradition": "The Buddhist Śaśa Jātaka, in which a rabbit offers itself as food to a hungry traveller, who places its image on the moon in gratitude."
+        }
+      ],
+      "armour": {
+        "body_plan": "clawed-quadruped",
+        "size": "tiny",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "tail",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "claw-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "tail-sheath",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "jade-moonhare",
+      "name": "Jade Moonhare",
+      "line": "moon-rabbit",
+      "kind": "wanderer",
+      "family": "lagomorph",
+      "mythical": true,
+      "elements": [
+        "wood",
+        "metal"
+      ],
+      "evolves_from": "pestlebun",
+      "evolves_to": null,
+      "stage": 2,
+      "stage_name": "Elder Wanderer",
+      "playable": true,
+      "description": "A serene white hare with moonlight in its fur, standing beside a glowing jade mortar.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 8,
+          "sd": 0.96,
+          "min": 5.12,
+          "p95": 9.58,
+          "p99": 10.2,
+          "upper": 10.9
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 75,
+          "sd": 4.5,
+          "min": 61.5,
+          "p95": 82.4,
+          "p99": 85.5,
+          "upper": 88.5
+        }
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "gentle",
+            "weight": 45
+          },
+          {
+            "id": "serene",
+            "weight": 30
+          },
+          {
+            "id": "curious",
+            "weight": 20
+          },
+          {
+            "id": "playful",
+            "weight": 5
+          }
+        ],
+        "markings": [
+          {
+            "id": "moon-white",
+            "weight": 50
+          },
+          {
+            "id": "silver",
+            "weight": 30
+          },
+          {
+            "id": "jade-eyed",
+            "weight": 15
+          },
+          {
+            "id": "gold",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "rice cakes",
+          "sweet osmanthus",
+          "a quiet night"
+        ]
+      },
+      "control": {
+        "command_dc": 11,
+        "difficulty": "Moderate"
+      },
+      "lore": "They say the Rabbit was meant to run the Great Race but would not leave its mortar on the moon, and the Cat ran in its place. On the brightest nights a Jade Moonhare comes down to gather herbs, and those it finds sick wake well. It holds no Hour and wants none.",
+      "folklore_sources": [
+        {
+          "region": "China, Japan, Korea and Vietnam",
+          "tradition": "The rabbit in the moon pounding with a mortar and pestle, making the elixir of life in China and rice cakes (mochi, tteok) in Japan and Korea."
+        },
+        {
+          "region": "South and Southeast Asia",
+          "tradition": "The Buddhist Śaśa Jātaka, in which a rabbit offers itself as food to a hungry traveller, who places its image on the moon in gratitude."
+        }
+      ],
+      "armour": {
+        "body_plan": "clawed-quadruped",
+        "size": "small",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "tail",
+          "charm"
+        ],
+        "max_weight": "medium",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "lamellar-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "scale-sheath",
             "fit": "adapted"
           },
           {

@@ -19,13 +19,13 @@ families:
     name: Feline
     wanderer_only: false
     move_themes: [pouncing, stealth, critical-strikes]
-    description: Silent hunters who wait for the single perfect moment, then end the matter.
+    description: Silent hunters, from the great Tiger to the household Cat, who wait for the single perfect moment, then end the matter.
 
   - id: lagomorph
     name: Lagomorph
-    wanderer_only: false
+    wanderer_only: true
     move_themes: [evasion, burst-speed, luck]
-    description: Hares and rabbits, gone before the strike lands and blessed by the moon's favour.
+    description: Hares, rabbits and pikas, gone before the strike lands. The Rabbit stayed on the moon when the Great Race was run, and its kin still look up at it.
 
   - id: reptilian
     name: Reptilian

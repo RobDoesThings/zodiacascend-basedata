@@ -14,7 +14,7 @@ export const ELEMENT_COLOURS: Record<string, string> = {
 };
 export const ELEMENT_GLYPHS: Record<string, string> = { wood: "木", fire: "火", earth: "土", metal: "金", water: "水" };
 export const ZODIAC_GLYPHS: Record<string, string> = {
-  rat: "鼠", ox: "牛", tiger: "虎", rabbit: "兔", dragon: "龍", snake: "蛇",
+  rat: "鼠", buffalo: "牛", tiger: "虎", cat: "貓", dragon: "龍", snake: "蛇",
   horse: "馬", goat: "羊", monkey: "猴", rooster: "雞", dog: "狗", pig: "豬",
 };
 

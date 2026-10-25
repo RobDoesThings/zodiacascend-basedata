@@ -111,7 +111,7 @@
         },
         {
           "region": "China",
-          "tradition": "The Great Race, in which the Rat rode the Ox across the river and leapt ahead at the finish."
+          "tradition": "The Great Race, in which the Rat rode the Buffalo (the Ox, in the Chinese telling) across the river and leapt ahead at the finish."
         },
         {
           "region": "Japan",
@@ -261,7 +261,7 @@
         },
         {
           "region": "China",
-          "tradition": "The Great Race, in which the Rat rode the Ox across the river and leapt ahead at the finish."
+          "tradition": "The Great Race, in which the Rat rode the Buffalo (the Ox, in the Chinese telling) across the river and leapt ahead at the finish."
         },
         {
           "region": "Japan",
@@ -421,7 +421,7 @@
         },
         {
           "region": "China",
-          "tradition": "The Great Race, in which the Rat rode the Ox across the river and leapt ahead at the finish."
+          "tradition": "The Great Race, in which the Rat rode the Buffalo (the Ox, in the Chinese telling) across the river and leapt ahead at the finish."
         },
         {
           "region": "Japan",
@@ -583,7 +583,7 @@
         },
         {
           "region": "China",
-          "tradition": "The Great Race, in which the Rat rode the Ox across the river and leapt ahead at the finish."
+          "tradition": "The Great Race, in which the Rat rode the Buffalo (the Ox, in the Chinese telling) across the river and leapt ahead at the finish."
         },
         {
           "region": "Japan",
@@ -733,7 +733,7 @@
         },
         {
           "region": "China",
-          "tradition": "The Great Race, in which the Rat rode the Ox across the river and leapt ahead at the finish."
+          "tradition": "The Great Race, in which the Rat rode the Buffalo (the Ox, in the Chinese telling) across the river and leapt ahead at the finish."
         },
         {
           "region": "Japan",
@@ -892,7 +892,7 @@
         },
         {
           "region": "China",
-          "tradition": "The Great Race, in which the Rat rode the Ox across the river and leapt ahead at the finish."
+          "tradition": "The Great Race, in which the Rat rode the Buffalo (the Ox, in the Chinese telling) across the river and leapt ahead at the finish."
         },
         {
           "region": "Japan",
@@ -1054,7 +1054,7 @@
         },
         {
           "region": "China",
-          "tradition": "The Great Race, in which the Rat rode the Ox across the river and leapt ahead at the finish."
+          "tradition": "The Great Race, in which the Rat rode the Buffalo (the Ox, in the Chinese telling) across the river and leapt ahead at the finish."
         },
         {
           "region": "Japan",
@@ -1204,7 +1204,7 @@
         },
         {
           "region": "China",
-          "tradition": "The Great Race, in which the Rat rode the Ox across the river and leapt ahead at the finish."
+          "tradition": "The Great Race, in which the Rat rode the Buffalo (the Ox, in the Chinese telling) across the river and leapt ahead at the finish."
         },
         {
           "region": "Japan",
@@ -1363,7 +1363,7 @@
         },
         {
           "region": "China",
-          "tradition": "The Great Race, in which the Rat rode the Ox across the river and leapt ahead at the finish."
+          "tradition": "The Great Race, in which the Rat rode the Buffalo (the Ox, in the Chinese telling) across the river and leapt ahead at the finish."
         },
         {
           "region": "Japan",
@@ -1525,7 +1525,7 @@
         },
         {
           "region": "China",
-          "tradition": "The Great Race, in which the Rat rode the Ox across the river and leapt ahead at the finish."
+          "tradition": "The Great Race, in which the Rat rode the Buffalo (the Ox, in the Chinese telling) across the river and leapt ahead at the finish."
         },
         {
           "region": "Japan",
@@ -1675,7 +1675,7 @@
         },
         {
           "region": "China",
-          "tradition": "The Great Race, in which the Rat rode the Ox across the river and leapt ahead at the finish."
+          "tradition": "The Great Race, in which the Rat rode the Buffalo (the Ox, in the Chinese telling) across the river and leapt ahead at the finish."
         },
         {
           "region": "Japan",
@@ -1834,7 +1834,7 @@
         },
         {
           "region": "China",
-          "tradition": "The Great Race, in which the Rat rode the Ox across the river and leapt ahead at the finish."
+          "tradition": "The Great Race, in which the Rat rode the Buffalo (the Ox, in the Chinese telling) across the river and leapt ahead at the finish."
         },
         {
           "region": "Japan",
@@ -1996,7 +1996,7 @@
         },
         {
           "region": "China",
-          "tradition": "The Great Race, in which the Rat rode the Ox across the river and leapt ahead at the finish."
+          "tradition": "The Great Race, in which the Rat rode the Buffalo (the Ox, in the Chinese telling) across the river and leapt ahead at the finish."
         },
         {
           "region": "Japan",
@@ -2146,7 +2146,7 @@
         },
         {
           "region": "China",
-          "tradition": "The Great Race, in which the Rat rode the Ox across the river and leapt ahead at the finish."
+          "tradition": "The Great Race, in which the Rat rode the Buffalo (the Ox, in the Chinese telling) across the river and leapt ahead at the finish."
         },
         {
           "region": "Japan",
@@ -2305,7 +2305,7 @@
         },
         {
           "region": "China",
-          "tradition": "The Great Race, in which the Rat rode the Ox across the river and leapt ahead at the finish."
+          "tradition": "The Great Race, in which the Rat rode the Buffalo (the Ox, in the Chinese telling) across the river and leapt ahead at the finish."
         },
         {
           "region": "Japan",
@@ -2362,8 +2362,8 @@
     {
       "id": "calfstone",
       "name": "Calfstone",
-      "line": "ox-earth",
-      "animal": "ox",
+      "line": "buffalo-earth",
+      "animal": "buffalo",
       "element": "earth",
       "native": true,
       "kind": "zodiac",
@@ -2373,27 +2373,27 @@
       "evolves_from": null,
       "evolves_to": "plowhorn",
       "playable": true,
-      "habitat": "Terraced farms, river meadows.",
-      "description": "A stocky calf with pebble-smooth hide and horn buds like river stones.",
+      "habitat": "Paddy fields, river meadows.",
+      "description": "A stocky buffalo calf with pebble-smooth slate hide and horn buds like river stones.",
       "physical": {
         "measure": "shoulder",
         "weight_kg": {
           "distribution": "truncated_normal",
-          "mean": 60,
-          "sd": 7.2,
-          "min": 38.4,
-          "p95": 71.8,
-          "p99": 76.7,
-          "upper": 81.6
+          "mean": 90,
+          "sd": 10.8,
+          "min": 57.6,
+          "p95": 108,
+          "p99": 115,
+          "upper": 122
         },
         "shoulder_cm": {
           "distribution": "truncated_normal",
-          "mean": 80,
-          "sd": 4.8,
-          "min": 65.6,
-          "p95": 87.9,
-          "p99": 91.2,
-          "upper": 94.4
+          "mean": 85,
+          "sd": 5.1,
+          "min": 69.7,
+          "p95": 93.4,
+          "p99": 96.9,
+          "upper": 100
         }
       },
       "characteristics": {
@@ -2417,15 +2417,15 @@
         ],
         "markings": [
           {
-            "id": "earth-brown",
+            "id": "slate-black",
             "weight": 45
           },
           {
-            "id": "slate-grey",
+            "id": "mud-grey",
             "weight": 30
           },
           {
-            "id": "white-blaze",
+            "id": "white-chevroned",
             "weight": 20
           },
           {
@@ -2437,7 +2437,7 @@
           "Will not cross a bridge it hasn't seen another beast cross first.",
           "Hums a low note while it works.",
           "Lets small beasts ride on its back without complaint.",
-          "Refuses to eat until everyone else has eaten."
+          "Wallows in the nearest mud at noon, whatever else is happening."
         ],
         "moonmarked_chance": "1/1024"
       },
@@ -2446,7 +2446,7 @@
         "story_only": false,
         "difficulty": "Moderate",
         "favoured_offerings": [
-          "fresh hay",
+          "rice straw",
           "sweet potato",
           "a scratch behind the horns"
         ],
@@ -2460,19 +2460,19 @@
         "difficulty": "Moderate",
         "disobeys_when": "Ordered to abandon ground it has been told to hold."
       },
-      "lore": "Calfstones follow ploughs for days without tiring and sleep standing up. Farm children lean on them to rest; a Calfstone that lets you lean on it has decided you are family.",
+      "lore": "Calfstones follow ploughs through the flooded paddies for days without tiring and sleep knee-deep in water. Farm children lean on them to rest; a Calfstone that lets you lean on it has decided you are family.",
       "folklore_sources": [
         {
-          "region": "China",
-          "tradition": "The Cowherd and the Weaver Girl, in which a wise old ox tells the cowherd to keep its hide after it dies, and the hide lets him fly to the heavens. Celebrated at Qixi."
+          "region": "Vietnam",
+          "tradition": "In the Vietnamese zodiac (12 con giáp) the water buffalo (trâu) holds the second place, and the proverb \"con trâu là đầu cơ nghiệp\" calls the buffalo the foundation of a family's livelihood."
         },
         {
-          "region": "Thailand and Cambodia",
-          "tradition": "The Royal Ploughing Ceremony, where sacred oxen are offered seven foods (rice, maize, beans, sesame, grass, water and liquor) and their choices are read as a forecast for the harvest."
+          "region": "Vietnam and China",
+          "tradition": "The Cowherd and the Weaver Girl (Ngưu Lang Chức Nữ), whose tears at their yearly meeting fall as the \"mưa ngâu\" rains of the seventh lunar month; the cowherd's faithful beast helps him reach the heavens."
         },
         {
-          "region": "China",
-          "tradition": "The Spring Ox of clay struck at Lichun to welcome the farming year."
+          "region": "Southeast Asia",
+          "tradition": "The water buffalo (trâu, kerbau, carabao, khwai) as the rice farmer's partner across the region, honoured at planting and harvest."
         }
       ],
       "armour": {
@@ -2508,8 +2508,8 @@
     {
       "id": "plowhorn",
       "name": "Plowhorn",
-      "line": "ox-earth",
-      "animal": "ox",
+      "line": "buffalo-earth",
+      "animal": "buffalo",
       "element": "earth",
       "native": true,
       "kind": "zodiac",
@@ -2520,17 +2520,17 @@
       "evolves_to": "gyuurok",
       "playable": true,
       "habitat": "Paddy terraces, mountain passes.",
-      "description": "A broad ox with a flat, blade-like horn sweep and hooves that leave furrows.",
+      "description": "A broad water buffalo with long, swept-back crescent horns and hooves that leave furrows.",
       "physical": {
         "measure": "shoulder",
         "weight_kg": {
           "distribution": "truncated_normal",
-          "mean": 450,
-          "sd": 54,
-          "min": 288,
-          "p95": 539,
-          "p99": 576,
-          "upper": 612
+          "mean": 550,
+          "sd": 66,
+          "min": 352,
+          "p95": 659,
+          "p99": 704,
+          "upper": 748
         },
         "shoulder_cm": {
           "distribution": "truncated_normal",
@@ -2563,15 +2563,15 @@
         ],
         "markings": [
           {
-            "id": "earth-brown",
+            "id": "slate-black",
             "weight": 45
           },
           {
-            "id": "slate-grey",
+            "id": "mud-grey",
             "weight": 30
           },
           {
-            "id": "white-blaze",
+            "id": "white-chevroned",
             "weight": 20
           },
           {
@@ -2583,7 +2583,7 @@
           "Will not cross a bridge it hasn't seen another beast cross first.",
           "Hums a low note while it works.",
           "Lets small beasts ride on its back without complaint.",
-          "Refuses to eat until everyone else has eaten."
+          "Wallows in the nearest mud at noon, whatever else is happening."
         ],
         "moonmarked_chance": "1/1024"
       },
@@ -2592,7 +2592,7 @@
         "story_only": false,
         "difficulty": "Hard",
         "favoured_offerings": [
-          "fresh hay",
+          "rice straw",
           "sweet potato",
           "a scratch behind the horns"
         ],
@@ -2609,16 +2609,16 @@
       "lore": "At planting festivals a Plowhorn is offered seven bowls. Villages read the year's harvest from the bowl it chooses, and they remember the years it chose only water.",
       "folklore_sources": [
         {
-          "region": "China",
-          "tradition": "The Cowherd and the Weaver Girl, in which a wise old ox tells the cowherd to keep its hide after it dies, and the hide lets him fly to the heavens. Celebrated at Qixi."
+          "region": "Vietnam",
+          "tradition": "In the Vietnamese zodiac (12 con giáp) the water buffalo (trâu) holds the second place, and the proverb \"con trâu là đầu cơ nghiệp\" calls the buffalo the foundation of a family's livelihood."
         },
         {
-          "region": "Thailand and Cambodia",
-          "tradition": "The Royal Ploughing Ceremony, where sacred oxen are offered seven foods (rice, maize, beans, sesame, grass, water and liquor) and their choices are read as a forecast for the harvest."
+          "region": "Vietnam and China",
+          "tradition": "The Cowherd and the Weaver Girl (Ngưu Lang Chức Nữ), whose tears at their yearly meeting fall as the \"mưa ngâu\" rains of the seventh lunar month; the cowherd's faithful beast helps him reach the heavens."
         },
         {
-          "region": "China",
-          "tradition": "The Spring Ox of clay struck at Lichun to welcome the farming year."
+          "region": "Southeast Asia",
+          "tradition": "The water buffalo (trâu, kerbau, carabao, khwai) as the rice farmer's partner across the region, honoured at planting and harvest."
         }
       ],
       "armour": {
@@ -2670,8 +2670,8 @@
     {
       "id": "gyuurok",
       "name": "Gyuurok",
-      "line": "ox-earth",
-      "animal": "ox",
+      "line": "buffalo-earth",
+      "animal": "buffalo",
       "element": "earth",
       "native": true,
       "kind": "zodiac",
@@ -2682,9 +2682,9 @@
       "evolves_from": "plowhorn",
       "evolves_to": null,
       "playable": true,
-      "habitat": "The great terraces of the Hour of the Ox.",
-      "description": "A mountainous ox whose back carries moss, shrines and the occasional sleeping village cat.",
-      "art_description": "A colossal, mountain-like ox standing calm and immovable, broad crescent horns of weathered stone, earth-brown hide with a white blaze. Its back is a living hillside of moss, small stone shrines and a sleeping cat. A thick wooden yoke rests on its neck, wound with a red vow-cord and a brass bell. Terraced rice fields stepping down golden hills behind it.",
+      "habitat": "The great terraces of the Hour of the Buffalo.",
+      "description": "A mountainous water buffalo whose back carries moss, shrines and the occasional sleeping village cat.",
+      "art_description": "A colossal, mountain-like Asian water buffalo standing calm and immovable in shallow paddy water, enormous swept-back crescent horns curving out and up, dark slate-grey hide with a pale chevron on its throat. Its broad back is a living hillside of moss, small stone shrines and a sleeping cat. A thick wooden yoke rests on its neck, wound with a red vow-cord and a brass bell. Flooded rice terraces stepping down golden hills behind it.",
       "physical": {
         "measure": "shoulder",
         "weight_kg": {
@@ -2727,15 +2727,15 @@
         ],
         "markings": [
           {
-            "id": "earth-brown",
+            "id": "slate-black",
             "weight": 45
           },
           {
-            "id": "slate-grey",
+            "id": "mud-grey",
             "weight": 30
           },
           {
-            "id": "white-blaze",
+            "id": "white-chevroned",
             "weight": 20
           },
           {
@@ -2747,7 +2747,7 @@
           "Will not cross a bridge it hasn't seen another beast cross first.",
           "Hums a low note while it works.",
           "Lets small beasts ride on its back without complaint.",
-          "Refuses to eat until everyone else has eaten."
+          "Wallows in the nearest mud at noon, whatever else is happening."
         ],
         "moonmarked_chance": "1/1024"
       },
@@ -2756,7 +2756,7 @@
         "story_only": true,
         "difficulty": "Story only",
         "favoured_offerings": [
-          "fresh hay",
+          "rice straw",
           "sweet potato",
           "a scratch behind the horns"
         ],
@@ -2770,19 +2770,19 @@
         "difficulty": "Very hard",
         "disobeys_when": "Ordered to abandon ground it has been told to hold."
       },
-      "lore": "Gyuurok carried the Rat across the river in the Great Race and finished second without a word of complaint. When asked why it never resented the trick, it said it had agreed to carry the Rat, and a promise kept is never a loss. Its yoke is not iron but a vow, and no one has ever seen it break one. When it dies, the old songs say, its hide will lift a faithful heart into the sky.",
+      "lore": "Gyuurok carried the Rat across the river in the Great Race and finished second without a word of complaint. When asked why it never resented the trick, it said it had agreed to carry the Rat, and a promise kept is never a loss. Its yoke is not iron but a vow, and no one has ever seen it break one. Farmers say a family with a buffalo has a future, and the whole Hour of the Buffalo is Gyuurok's family.",
       "folklore_sources": [
         {
-          "region": "China",
-          "tradition": "The Cowherd and the Weaver Girl, in which a wise old ox tells the cowherd to keep its hide after it dies, and the hide lets him fly to the heavens. Celebrated at Qixi."
+          "region": "Vietnam",
+          "tradition": "In the Vietnamese zodiac (12 con giáp) the water buffalo (trâu) holds the second place, and the proverb \"con trâu là đầu cơ nghiệp\" calls the buffalo the foundation of a family's livelihood."
         },
         {
-          "region": "Thailand and Cambodia",
-          "tradition": "The Royal Ploughing Ceremony, where sacred oxen are offered seven foods (rice, maize, beans, sesame, grass, water and liquor) and their choices are read as a forecast for the harvest."
+          "region": "Vietnam and China",
+          "tradition": "The Cowherd and the Weaver Girl (Ngưu Lang Chức Nữ), whose tears at their yearly meeting fall as the \"mưa ngâu\" rains of the seventh lunar month; the cowherd's faithful beast helps him reach the heavens."
         },
         {
-          "region": "China",
-          "tradition": "The Spring Ox of clay struck at Lichun to welcome the farming year."
+          "region": "Southeast Asia",
+          "tradition": "The water buffalo (trâu, kerbau, carabao, khwai) as the rice farmer's partner across the region, honoured at planting and harvest."
         }
       ],
       "armour": {
@@ -2834,8 +2834,8 @@
     {
       "id": "leafcalf",
       "name": "Leafcalf",
-      "line": "ox-wood",
-      "animal": "ox",
+      "line": "buffalo-wood",
+      "animal": "buffalo",
       "element": "wood",
       "native": false,
       "kind": "zodiac",
@@ -2846,26 +2846,26 @@
       "evolves_to": "thicketyoke",
       "playable": true,
       "habitat": "Spring pastures, bamboo valleys.",
-      "description": "A gentle calf whose budding horns sprout tiny green leaves.",
+      "description": "A gentle buffalo calf whose budding horns sprout tiny green leaves.",
       "physical": {
         "measure": "shoulder",
         "weight_kg": {
           "distribution": "truncated_normal",
-          "mean": 60,
-          "sd": 7.2,
-          "min": 38.4,
-          "p95": 71.8,
-          "p99": 76.7,
-          "upper": 81.6
+          "mean": 90,
+          "sd": 10.8,
+          "min": 57.6,
+          "p95": 108,
+          "p99": 115,
+          "upper": 122
         },
         "shoulder_cm": {
           "distribution": "truncated_normal",
-          "mean": 80,
-          "sd": 4.8,
-          "min": 65.6,
-          "p95": 87.9,
-          "p99": 91.2,
-          "upper": 94.4
+          "mean": 85,
+          "sd": 5.1,
+          "min": 69.7,
+          "p95": 93.4,
+          "p99": 96.9,
+          "upper": 100
         }
       },
       "characteristics": {
@@ -2909,7 +2909,7 @@
           "Will not cross a bridge it hasn't seen another beast cross first.",
           "Hums a low note while it works.",
           "Lets small beasts ride on its back without complaint.",
-          "Refuses to eat until everyone else has eaten."
+          "Wallows in the nearest mud at noon, whatever else is happening."
         ],
         "moonmarked_chance": "1/1024"
       },
@@ -2918,7 +2918,7 @@
         "story_only": false,
         "difficulty": "Moderate",
         "favoured_offerings": [
-          "fresh hay",
+          "rice straw",
           "sweet potato",
           "a scratch behind the horns"
         ],
@@ -2935,16 +2935,16 @@
       "lore": "Leafcalves eat only fallen leaves, never living ones. Orchards welcome them in autumn and gently shoo them in spring.",
       "folklore_sources": [
         {
-          "region": "China",
-          "tradition": "The Cowherd and the Weaver Girl, in which a wise old ox tells the cowherd to keep its hide after it dies, and the hide lets him fly to the heavens. Celebrated at Qixi."
+          "region": "Vietnam",
+          "tradition": "In the Vietnamese zodiac (12 con giáp) the water buffalo (trâu) holds the second place, and the proverb \"con trâu là đầu cơ nghiệp\" calls the buffalo the foundation of a family's livelihood."
         },
         {
-          "region": "Thailand and Cambodia",
-          "tradition": "The Royal Ploughing Ceremony, where sacred oxen are offered seven foods (rice, maize, beans, sesame, grass, water and liquor) and their choices are read as a forecast for the harvest."
+          "region": "Vietnam and China",
+          "tradition": "The Cowherd and the Weaver Girl (Ngưu Lang Chức Nữ), whose tears at their yearly meeting fall as the \"mưa ngâu\" rains of the seventh lunar month; the cowherd's faithful beast helps him reach the heavens."
         },
         {
-          "region": "China",
-          "tradition": "The Spring Ox of clay struck at Lichun to welcome the farming year."
+          "region": "Southeast Asia",
+          "tradition": "The water buffalo (trâu, kerbau, carabao, khwai) as the rice farmer's partner across the region, honoured at planting and harvest."
         }
       ],
       "armour": {
@@ -2980,8 +2980,8 @@
     {
       "id": "thicketyoke",
       "name": "Thicketyoke",
-      "line": "ox-wood",
-      "animal": "ox",
+      "line": "buffalo-wood",
+      "animal": "buffalo",
       "element": "wood",
       "native": false,
       "kind": "zodiac",
@@ -2992,17 +2992,17 @@
       "evolves_to": "niushan",
       "playable": true,
       "habitat": "Spring pastures, bamboo valleys.",
-      "description": "A strong ox with a living hedge of bramble across its shoulders.",
+      "description": "A strong water buffalo with a living hedge of bramble across its shoulders.",
       "physical": {
         "measure": "shoulder",
         "weight_kg": {
           "distribution": "truncated_normal",
-          "mean": 450,
-          "sd": 54,
-          "min": 288,
-          "p95": 539,
-          "p99": 576,
-          "upper": 612
+          "mean": 550,
+          "sd": 66,
+          "min": 352,
+          "p95": 659,
+          "p99": 704,
+          "upper": 748
         },
         "shoulder_cm": {
           "distribution": "truncated_normal",
@@ -3055,7 +3055,7 @@
           "Will not cross a bridge it hasn't seen another beast cross first.",
           "Hums a low note while it works.",
           "Lets small beasts ride on its back without complaint.",
-          "Refuses to eat until everyone else has eaten."
+          "Wallows in the nearest mud at noon, whatever else is happening."
         ],
         "moonmarked_chance": "1/1024"
       },
@@ -3064,7 +3064,7 @@
         "story_only": false,
         "difficulty": "Hard",
         "favoured_offerings": [
-          "fresh hay",
+          "rice straw",
           "sweet potato",
           "a scratch behind the horns"
         ],
@@ -3081,16 +3081,16 @@
       "lore": "A Thicketyoke can pull a stump out of the ground and then plant the sapling that replaces it. Woodcutters' villages keep one as a conscience.",
       "folklore_sources": [
         {
-          "region": "China",
-          "tradition": "The Cowherd and the Weaver Girl, in which a wise old ox tells the cowherd to keep its hide after it dies, and the hide lets him fly to the heavens. Celebrated at Qixi."
+          "region": "Vietnam",
+          "tradition": "In the Vietnamese zodiac (12 con giáp) the water buffalo (trâu) holds the second place, and the proverb \"con trâu là đầu cơ nghiệp\" calls the buffalo the foundation of a family's livelihood."
         },
         {
-          "region": "Thailand and Cambodia",
-          "tradition": "The Royal Ploughing Ceremony, where sacred oxen are offered seven foods (rice, maize, beans, sesame, grass, water and liquor) and their choices are read as a forecast for the harvest."
+          "region": "Vietnam and China",
+          "tradition": "The Cowherd and the Weaver Girl (Ngưu Lang Chức Nữ), whose tears at their yearly meeting fall as the \"mưa ngâu\" rains of the seventh lunar month; the cowherd's faithful beast helps him reach the heavens."
         },
         {
-          "region": "China",
-          "tradition": "The Spring Ox of clay struck at Lichun to welcome the farming year."
+          "region": "Southeast Asia",
+          "tradition": "The water buffalo (trâu, kerbau, carabao, khwai) as the rice farmer's partner across the region, honoured at planting and harvest."
         }
       ],
       "armour": {
@@ -3142,8 +3142,8 @@
     {
       "id": "niushan",
       "name": "Niushan",
-      "line": "ox-wood",
-      "animal": "ox",
+      "line": "buffalo-wood",
+      "animal": "buffalo",
       "element": "wood",
       "native": false,
       "kind": "zodiac",
@@ -3155,7 +3155,7 @@
       "evolves_to": null,
       "playable": true,
       "habitat": "Spring pastures, bamboo valleys.",
-      "description": "A towering ox whose back is a meadow of grass and wildflowers, horns wound with vines.",
+      "description": "A towering water buffalo whose back is a meadow of grass and wildflowers, its swept-back horns wound with vines.",
       "physical": {
         "measure": "shoulder",
         "weight_kg": {
@@ -3218,7 +3218,7 @@
           "Will not cross a bridge it hasn't seen another beast cross first.",
           "Hums a low note while it works.",
           "Lets small beasts ride on its back without complaint.",
-          "Refuses to eat until everyone else has eaten."
+          "Wallows in the nearest mud at noon, whatever else is happening."
         ],
         "moonmarked_chance": "1/1024"
       },
@@ -3227,7 +3227,7 @@
         "story_only": true,
         "difficulty": "Story only",
         "favoured_offerings": [
-          "fresh hay",
+          "rice straw",
           "sweet potato",
           "a scratch behind the horns"
         ],
@@ -3244,16 +3244,16 @@
       "lore": "Where Niushan lies down to rest, a pasture grows. Its herd has never known a hungry spring, because Niushan carries the spring with it. It is the slowest Sovereign in the Twelve Hours and the most patient, and it believes that anything worth growing is worth waiting for.",
       "folklore_sources": [
         {
-          "region": "China",
-          "tradition": "The Cowherd and the Weaver Girl, in which a wise old ox tells the cowherd to keep its hide after it dies, and the hide lets him fly to the heavens. Celebrated at Qixi."
+          "region": "Vietnam",
+          "tradition": "In the Vietnamese zodiac (12 con giáp) the water buffalo (trâu) holds the second place, and the proverb \"con trâu là đầu cơ nghiệp\" calls the buffalo the foundation of a family's livelihood."
         },
         {
-          "region": "Thailand and Cambodia",
-          "tradition": "The Royal Ploughing Ceremony, where sacred oxen are offered seven foods (rice, maize, beans, sesame, grass, water and liquor) and their choices are read as a forecast for the harvest."
+          "region": "Vietnam and China",
+          "tradition": "The Cowherd and the Weaver Girl (Ngưu Lang Chức Nữ), whose tears at their yearly meeting fall as the \"mưa ngâu\" rains of the seventh lunar month; the cowherd's faithful beast helps him reach the heavens."
         },
         {
-          "region": "China",
-          "tradition": "The Spring Ox of clay struck at Lichun to welcome the farming year."
+          "region": "Southeast Asia",
+          "tradition": "The water buffalo (trâu, kerbau, carabao, khwai) as the rice farmer's partner across the region, honoured at planting and harvest."
         }
       ],
       "armour": {
@@ -3305,8 +3305,8 @@
     {
       "id": "kilncalf",
       "name": "Kilncalf",
-      "line": "ox-fire",
-      "animal": "ox",
+      "line": "buffalo-fire",
+      "animal": "buffalo",
       "element": "fire",
       "native": false,
       "kind": "zodiac",
@@ -3314,29 +3314,29 @@
       "stage": 1,
       "stage_name": "Kit",
       "evolves_from": null,
-      "evolves_to": "forgebull",
+      "evolves_to": "forgehorn",
       "playable": true,
       "habitat": "Kiln villages, volcanic plains.",
-      "description": "A sturdy red calf whose breath steams on the coldest mornings.",
+      "description": "A sturdy red buffalo calf whose breath steams on the coldest mornings.",
       "physical": {
         "measure": "shoulder",
         "weight_kg": {
           "distribution": "truncated_normal",
-          "mean": 58.2,
-          "sd": 6.98,
-          "min": 37.2,
-          "p95": 69.7,
-          "p99": 74.4,
-          "upper": 79.2
+          "mean": 87.3,
+          "sd": 10.5,
+          "min": 55.9,
+          "p95": 105,
+          "p99": 112,
+          "upper": 119
         },
         "shoulder_cm": {
           "distribution": "truncated_normal",
-          "mean": 80,
-          "sd": 4.8,
-          "min": 65.6,
-          "p95": 87.9,
-          "p99": 91.2,
-          "upper": 94.4
+          "mean": 85,
+          "sd": 5.1,
+          "min": 69.7,
+          "p95": 93.4,
+          "p99": 96.9,
+          "upper": 100
         }
       },
       "characteristics": {
@@ -3380,7 +3380,7 @@
           "Will not cross a bridge it hasn't seen another beast cross first.",
           "Hums a low note while it works.",
           "Lets small beasts ride on its back without complaint.",
-          "Refuses to eat until everyone else has eaten."
+          "Wallows in the nearest mud at noon, whatever else is happening."
         ],
         "moonmarked_chance": "1/1024"
       },
@@ -3389,7 +3389,7 @@
         "story_only": false,
         "difficulty": "Moderate",
         "favoured_offerings": [
-          "fresh hay",
+          "rice straw",
           "sweet potato",
           "a scratch behind the horns"
         ],
@@ -3406,16 +3406,16 @@
       "lore": "Kilncalves sleep against kiln walls for warmth and keep the fires steady through the night. Potters swear their glazes come out better for it.",
       "folklore_sources": [
         {
-          "region": "China",
-          "tradition": "The Cowherd and the Weaver Girl, in which a wise old ox tells the cowherd to keep its hide after it dies, and the hide lets him fly to the heavens. Celebrated at Qixi."
+          "region": "Vietnam",
+          "tradition": "In the Vietnamese zodiac (12 con giáp) the water buffalo (trâu) holds the second place, and the proverb \"con trâu là đầu cơ nghiệp\" calls the buffalo the foundation of a family's livelihood."
         },
         {
-          "region": "Thailand and Cambodia",
-          "tradition": "The Royal Ploughing Ceremony, where sacred oxen are offered seven foods (rice, maize, beans, sesame, grass, water and liquor) and their choices are read as a forecast for the harvest."
+          "region": "Vietnam and China",
+          "tradition": "The Cowherd and the Weaver Girl (Ngưu Lang Chức Nữ), whose tears at their yearly meeting fall as the \"mưa ngâu\" rains of the seventh lunar month; the cowherd's faithful beast helps him reach the heavens."
         },
         {
-          "region": "China",
-          "tradition": "The Spring Ox of clay struck at Lichun to welcome the farming year."
+          "region": "Southeast Asia",
+          "tradition": "The water buffalo (trâu, kerbau, carabao, khwai) as the rice farmer's partner across the region, honoured at planting and harvest."
         }
       ],
       "armour": {
@@ -3449,10 +3449,10 @@
       }
     },
     {
-      "id": "forgebull",
-      "name": "Forgebull",
-      "line": "ox-fire",
-      "animal": "ox",
+      "id": "forgehorn",
+      "name": "Forgehorn",
+      "line": "buffalo-fire",
+      "animal": "buffalo",
       "element": "fire",
       "native": false,
       "kind": "zodiac",
@@ -3460,20 +3460,20 @@
       "stage": 2,
       "stage_name": "Adept",
       "evolves_from": "kilncalf",
-      "evolves_to": "lembara",
+      "evolves_to": "kerbara",
       "playable": true,
       "habitat": "Kiln villages, volcanic plains.",
-      "description": "A heavy bull whose hide glows like cooling iron along its flanks.",
+      "description": "A heavy bull buffalo whose hide glows like cooling iron along its flanks.",
       "physical": {
         "measure": "shoulder",
         "weight_kg": {
           "distribution": "truncated_normal",
-          "mean": 437,
-          "sd": 52.4,
-          "min": 279,
-          "p95": 523,
-          "p99": 558,
-          "upper": 594
+          "mean": 534,
+          "sd": 64,
+          "min": 341,
+          "p95": 639,
+          "p99": 682,
+          "upper": 726
         },
         "shoulder_cm": {
           "distribution": "truncated_normal",
@@ -3526,7 +3526,7 @@
           "Will not cross a bridge it hasn't seen another beast cross first.",
           "Hums a low note while it works.",
           "Lets small beasts ride on its back without complaint.",
-          "Refuses to eat until everyone else has eaten."
+          "Wallows in the nearest mud at noon, whatever else is happening."
         ],
         "moonmarked_chance": "1/1024"
       },
@@ -3535,7 +3535,7 @@
         "story_only": false,
         "difficulty": "Hard",
         "favoured_offerings": [
-          "fresh hay",
+          "rice straw",
           "sweet potato",
           "a scratch behind the horns"
         ],
@@ -3549,19 +3549,19 @@
         "difficulty": "Hard",
         "disobeys_when": "Ordered to abandon ground it has been told to hold."
       },
-      "lore": "A Forgebull can turn a millstone for three days without rest. Smiths say its breath alone can soften a blade.",
+      "lore": "A Forgehorn can turn a millstone for three days without rest. Smiths say its breath alone can soften a blade.",
       "folklore_sources": [
         {
-          "region": "China",
-          "tradition": "The Cowherd and the Weaver Girl, in which a wise old ox tells the cowherd to keep its hide after it dies, and the hide lets him fly to the heavens. Celebrated at Qixi."
+          "region": "Vietnam",
+          "tradition": "In the Vietnamese zodiac (12 con giáp) the water buffalo (trâu) holds the second place, and the proverb \"con trâu là đầu cơ nghiệp\" calls the buffalo the foundation of a family's livelihood."
         },
         {
-          "region": "Thailand and Cambodia",
-          "tradition": "The Royal Ploughing Ceremony, where sacred oxen are offered seven foods (rice, maize, beans, sesame, grass, water and liquor) and their choices are read as a forecast for the harvest."
+          "region": "Vietnam and China",
+          "tradition": "The Cowherd and the Weaver Girl (Ngưu Lang Chức Nữ), whose tears at their yearly meeting fall as the \"mưa ngâu\" rains of the seventh lunar month; the cowherd's faithful beast helps him reach the heavens."
         },
         {
-          "region": "China",
-          "tradition": "The Spring Ox of clay struck at Lichun to welcome the farming year."
+          "region": "Southeast Asia",
+          "tradition": "The water buffalo (trâu, kerbau, carabao, khwai) as the rice farmer's partner across the region, honoured at planting and harvest."
         }
       ],
       "armour": {
@@ -3611,10 +3611,10 @@
       }
     },
     {
-      "id": "lembara",
-      "name": "Lembara",
-      "line": "ox-fire",
-      "animal": "ox",
+      "id": "kerbara",
+      "name": "Kerbara",
+      "line": "buffalo-fire",
+      "animal": "buffalo",
       "element": "fire",
       "native": false,
       "kind": "zodiac",
@@ -3622,11 +3622,11 @@
       "stage": 3,
       "stage_name": "Sovereign",
       "epithet": "The Furnace Yoke",
-      "evolves_from": "forgebull",
+      "evolves_from": "forgehorn",
       "evolves_to": null,
       "playable": true,
       "habitat": "Kiln villages, volcanic plains.",
-      "description": "A colossal bull of black hide and molten veins, its horns glowing white at the tips.",
+      "description": "A colossal buffalo of black hide and molten veins, its great crescent horns glowing white at the tips.",
       "physical": {
         "measure": "shoulder",
         "weight_kg": {
@@ -3689,7 +3689,7 @@
           "Will not cross a bridge it hasn't seen another beast cross first.",
           "Hums a low note while it works.",
           "Lets small beasts ride on its back without complaint.",
-          "Refuses to eat until everyone else has eaten."
+          "Wallows in the nearest mud at noon, whatever else is happening."
         ],
         "moonmarked_chance": "1/1024"
       },
@@ -3698,7 +3698,7 @@
         "story_only": true,
         "difficulty": "Story only",
         "favoured_offerings": [
-          "fresh hay",
+          "rice straw",
           "sweet potato",
           "a scratch behind the horns"
         ],
@@ -3712,19 +3712,19 @@
         "difficulty": "Very hard",
         "disobeys_when": "Ordered to abandon ground it has been told to hold."
       },
-      "lore": "Lembara pulls the sun's chariot up from the horizon each morning, or so the kiln villages believe, and the red sky at dawn is its breath. It is fierce in battle and gentle at the forge, and it has never refused to pull a load that someone else could not carry.",
+      "lore": "Kerbara pulls the sun's chariot up from the horizon each morning, or so the kiln villages believe, and the red sky at dawn is its breath. It is fierce in battle and gentle at the forge, and it has never refused to pull a load that someone else could not carry.",
       "folklore_sources": [
         {
-          "region": "China",
-          "tradition": "The Cowherd and the Weaver Girl, in which a wise old ox tells the cowherd to keep its hide after it dies, and the hide lets him fly to the heavens. Celebrated at Qixi."
+          "region": "Vietnam",
+          "tradition": "In the Vietnamese zodiac (12 con giáp) the water buffalo (trâu) holds the second place, and the proverb \"con trâu là đầu cơ nghiệp\" calls the buffalo the foundation of a family's livelihood."
         },
         {
-          "region": "Thailand and Cambodia",
-          "tradition": "The Royal Ploughing Ceremony, where sacred oxen are offered seven foods (rice, maize, beans, sesame, grass, water and liquor) and their choices are read as a forecast for the harvest."
+          "region": "Vietnam and China",
+          "tradition": "The Cowherd and the Weaver Girl (Ngưu Lang Chức Nữ), whose tears at their yearly meeting fall as the \"mưa ngâu\" rains of the seventh lunar month; the cowherd's faithful beast helps him reach the heavens."
         },
         {
-          "region": "China",
-          "tradition": "The Spring Ox of clay struck at Lichun to welcome the farming year."
+          "region": "Southeast Asia",
+          "tradition": "The water buffalo (trâu, kerbau, carabao, khwai) as the rice farmer's partner across the region, honoured at planting and harvest."
         }
       ],
       "armour": {
@@ -3776,8 +3776,8 @@
     {
       "id": "bellcalf",
       "name": "Bellcalf",
-      "line": "ox-metal",
-      "animal": "ox",
+      "line": "buffalo-metal",
+      "animal": "buffalo",
       "element": "metal",
       "native": false,
       "kind": "zodiac",
@@ -3788,26 +3788,26 @@
       "evolves_to": "ironplough",
       "playable": true,
       "habitat": "River dykes, mountain mines.",
-      "description": "A small calf with a bronze sheen to its coat and a bell-shaped dewlap.",
+      "description": "A small buffalo calf with a bronze sheen to its coat and a bell on its neck.",
       "physical": {
         "measure": "shoulder",
         "weight_kg": {
           "distribution": "truncated_normal",
-          "mean": 63,
-          "sd": 7.56,
-          "min": 40.3,
-          "p95": 75.4,
-          "p99": 80.6,
-          "upper": 85.7
+          "mean": 94.5,
+          "sd": 11.3,
+          "min": 60.5,
+          "p95": 113,
+          "p99": 121,
+          "upper": 129
         },
         "shoulder_cm": {
           "distribution": "truncated_normal",
-          "mean": 80,
-          "sd": 4.8,
-          "min": 65.6,
-          "p95": 87.9,
-          "p99": 91.2,
-          "upper": 94.4
+          "mean": 85,
+          "sd": 5.1,
+          "min": 69.7,
+          "p95": 93.4,
+          "p99": 96.9,
+          "upper": 100
         }
       },
       "characteristics": {
@@ -3851,7 +3851,7 @@
           "Will not cross a bridge it hasn't seen another beast cross first.",
           "Hums a low note while it works.",
           "Lets small beasts ride on its back without complaint.",
-          "Refuses to eat until everyone else has eaten."
+          "Wallows in the nearest mud at noon, whatever else is happening."
         ],
         "moonmarked_chance": "1/1024"
       },
@@ -3860,7 +3860,7 @@
         "story_only": false,
         "difficulty": "Moderate",
         "favoured_offerings": [
-          "fresh hay",
+          "rice straw",
           "sweet potato",
           "a scratch behind the horns"
         ],
@@ -3881,16 +3881,16 @@
           "tradition": "Bronze and iron oxen set beside rivers and lakes to guard against floods, such as the bronze ox placed beside Kunming Lake at the Summer Palace in 1755."
         },
         {
-          "region": "China",
-          "tradition": "The Cowherd and the Weaver Girl, in which a wise old ox tells the cowherd to keep its hide after it dies, and the hide lets him fly to the heavens. Celebrated at Qixi."
+          "region": "Vietnam",
+          "tradition": "In the Vietnamese zodiac (12 con giáp) the water buffalo (trâu) holds the second place, and the proverb \"con trâu là đầu cơ nghiệp\" calls the buffalo the foundation of a family's livelihood."
         },
         {
-          "region": "Thailand and Cambodia",
-          "tradition": "The Royal Ploughing Ceremony, where sacred oxen are offered seven foods (rice, maize, beans, sesame, grass, water and liquor) and their choices are read as a forecast for the harvest."
+          "region": "Vietnam and China",
+          "tradition": "The Cowherd and the Weaver Girl (Ngưu Lang Chức Nữ), whose tears at their yearly meeting fall as the \"mưa ngâu\" rains of the seventh lunar month; the cowherd's faithful beast helps him reach the heavens."
         },
         {
-          "region": "China",
-          "tradition": "The Spring Ox of clay struck at Lichun to welcome the farming year."
+          "region": "Southeast Asia",
+          "tradition": "The water buffalo (trâu, kerbau, carabao, khwai) as the rice farmer's partner across the region, honoured at planting and harvest."
         }
       ],
       "armour": {
@@ -3926,8 +3926,8 @@
     {
       "id": "ironplough",
       "name": "Ironplough",
-      "line": "ox-metal",
-      "animal": "ox",
+      "line": "buffalo-metal",
+      "animal": "buffalo",
       "element": "metal",
       "native": false,
       "kind": "zodiac",
@@ -3935,20 +3935,20 @@
       "stage": 2,
       "stage_name": "Adept",
       "evolves_from": "bellcalf",
-      "evolves_to": "wuarak",
+      "evolves_to": "khwairak",
       "playable": true,
       "habitat": "River dykes, mountain mines.",
-      "description": "A broad ox with plough-blade horns of grey metal.",
+      "description": "A broad water buffalo with plough-blade horns of grey metal.",
       "physical": {
         "measure": "shoulder",
         "weight_kg": {
           "distribution": "truncated_normal",
-          "mean": 473,
-          "sd": 56.7,
-          "min": 302,
-          "p95": 566,
-          "p99": 604,
-          "upper": 643
+          "mean": 578,
+          "sd": 69.3,
+          "min": 370,
+          "p95": 691,
+          "p99": 739,
+          "upper": 785
         },
         "shoulder_cm": {
           "distribution": "truncated_normal",
@@ -4001,7 +4001,7 @@
           "Will not cross a bridge it hasn't seen another beast cross first.",
           "Hums a low note while it works.",
           "Lets small beasts ride on its back without complaint.",
-          "Refuses to eat until everyone else has eaten."
+          "Wallows in the nearest mud at noon, whatever else is happening."
         ],
         "moonmarked_chance": "1/1024"
       },
@@ -4010,7 +4010,7 @@
         "story_only": false,
         "difficulty": "Hard",
         "favoured_offerings": [
-          "fresh hay",
+          "rice straw",
           "sweet potato",
           "a scratch behind the horns"
         ],
@@ -4031,16 +4031,16 @@
           "tradition": "Bronze and iron oxen set beside rivers and lakes to guard against floods, such as the bronze ox placed beside Kunming Lake at the Summer Palace in 1755."
         },
         {
-          "region": "China",
-          "tradition": "The Cowherd and the Weaver Girl, in which a wise old ox tells the cowherd to keep its hide after it dies, and the hide lets him fly to the heavens. Celebrated at Qixi."
+          "region": "Vietnam",
+          "tradition": "In the Vietnamese zodiac (12 con giáp) the water buffalo (trâu) holds the second place, and the proverb \"con trâu là đầu cơ nghiệp\" calls the buffalo the foundation of a family's livelihood."
         },
         {
-          "region": "Thailand and Cambodia",
-          "tradition": "The Royal Ploughing Ceremony, where sacred oxen are offered seven foods (rice, maize, beans, sesame, grass, water and liquor) and their choices are read as a forecast for the harvest."
+          "region": "Vietnam and China",
+          "tradition": "The Cowherd and the Weaver Girl (Ngưu Lang Chức Nữ), whose tears at their yearly meeting fall as the \"mưa ngâu\" rains of the seventh lunar month; the cowherd's faithful beast helps him reach the heavens."
         },
         {
-          "region": "China",
-          "tradition": "The Spring Ox of clay struck at Lichun to welcome the farming year."
+          "region": "Southeast Asia",
+          "tradition": "The water buffalo (trâu, kerbau, carabao, khwai) as the rice farmer's partner across the region, honoured at planting and harvest."
         }
       ],
       "armour": {
@@ -4090,10 +4090,10 @@
       }
     },
     {
-      "id": "wuarak",
-      "name": "Wuarak",
-      "line": "ox-metal",
-      "animal": "ox",
+      "id": "khwairak",
+      "name": "Khwairak",
+      "line": "buffalo-metal",
+      "animal": "buffalo",
       "element": "metal",
       "native": false,
       "kind": "zodiac",
@@ -4105,7 +4105,7 @@
       "evolves_to": null,
       "playable": true,
       "habitat": "River dykes, mountain mines.",
-      "description": "A massive ox of green-patinated bronze who stands motionless beside a river.",
+      "description": "A massive water buffalo of green-patinated bronze who stands motionless beside a river.",
       "physical": {
         "measure": "shoulder",
         "weight_kg": {
@@ -4168,7 +4168,7 @@
           "Will not cross a bridge it hasn't seen another beast cross first.",
           "Hums a low note while it works.",
           "Lets small beasts ride on its back without complaint.",
-          "Refuses to eat until everyone else has eaten."
+          "Wallows in the nearest mud at noon, whatever else is happening."
         ],
         "moonmarked_chance": "1/1024"
       },
@@ -4177,7 +4177,7 @@
         "story_only": true,
         "difficulty": "Story only",
         "favoured_offerings": [
-          "fresh hay",
+          "rice straw",
           "sweet potato",
           "a scratch behind the horns"
         ],
@@ -4191,23 +4191,23 @@
         "difficulty": "Very hard",
         "disobeys_when": "Ordered to abandon ground it has been told to hold."
       },
-      "lore": "Bronze oxen once stood beside rivers to hold back the floods, and Wuarak says it is the first of them, come to life. It can stand guard on a dyke for a hundred years without moving. When the water rises, it lowers its horns, and the river turns back.",
+      "lore": "Bronze oxen once stood beside rivers to hold back the floods, and Khwairak says it is the first of them, come to life. It can stand guard on a dyke for a hundred years without moving. When the water rises, it lowers its horns, and the river turns back.",
       "folklore_sources": [
         {
           "region": "China",
           "tradition": "Bronze and iron oxen set beside rivers and lakes to guard against floods, such as the bronze ox placed beside Kunming Lake at the Summer Palace in 1755."
         },
         {
-          "region": "China",
-          "tradition": "The Cowherd and the Weaver Girl, in which a wise old ox tells the cowherd to keep its hide after it dies, and the hide lets him fly to the heavens. Celebrated at Qixi."
+          "region": "Vietnam",
+          "tradition": "In the Vietnamese zodiac (12 con giáp) the water buffalo (trâu) holds the second place, and the proverb \"con trâu là đầu cơ nghiệp\" calls the buffalo the foundation of a family's livelihood."
         },
         {
-          "region": "Thailand and Cambodia",
-          "tradition": "The Royal Ploughing Ceremony, where sacred oxen are offered seven foods (rice, maize, beans, sesame, grass, water and liquor) and their choices are read as a forecast for the harvest."
+          "region": "Vietnam and China",
+          "tradition": "The Cowherd and the Weaver Girl (Ngưu Lang Chức Nữ), whose tears at their yearly meeting fall as the \"mưa ngâu\" rains of the seventh lunar month; the cowherd's faithful beast helps him reach the heavens."
         },
         {
-          "region": "China",
-          "tradition": "The Spring Ox of clay struck at Lichun to welcome the farming year."
+          "region": "Southeast Asia",
+          "tradition": "The water buffalo (trâu, kerbau, carabao, khwai) as the rice farmer's partner across the region, honoured at planting and harvest."
         }
       ],
       "armour": {
@@ -4259,8 +4259,8 @@
     {
       "id": "reedcalf",
       "name": "Reedcalf",
-      "line": "ox-water",
-      "animal": "ox",
+      "line": "buffalo-water",
+      "animal": "buffalo",
       "element": "water",
       "native": false,
       "kind": "zodiac",
@@ -4276,21 +4276,21 @@
         "measure": "shoulder",
         "weight_kg": {
           "distribution": "truncated_normal",
-          "mean": 57,
-          "sd": 6.84,
-          "min": 36.5,
-          "p95": 68.3,
-          "p99": 72.9,
-          "upper": 77.5
+          "mean": 85.5,
+          "sd": 10.3,
+          "min": 54.7,
+          "p95": 102,
+          "p99": 109,
+          "upper": 116
         },
         "shoulder_cm": {
           "distribution": "truncated_normal",
-          "mean": 80,
-          "sd": 4.8,
-          "min": 65.6,
-          "p95": 87.9,
-          "p99": 91.2,
-          "upper": 94.4
+          "mean": 85,
+          "sd": 5.1,
+          "min": 69.7,
+          "p95": 93.4,
+          "p99": 96.9,
+          "upper": 100
         }
       },
       "characteristics": {
@@ -4334,7 +4334,7 @@
           "Will not cross a bridge it hasn't seen another beast cross first.",
           "Hums a low note while it works.",
           "Lets small beasts ride on its back without complaint.",
-          "Refuses to eat until everyone else has eaten."
+          "Wallows in the nearest mud at noon, whatever else is happening."
         ],
         "moonmarked_chance": "1/1024"
       },
@@ -4343,7 +4343,7 @@
         "story_only": false,
         "difficulty": "Moderate",
         "favoured_offerings": [
-          "fresh hay",
+          "rice straw",
           "sweet potato",
           "a scratch behind the horns"
         ],
@@ -4361,19 +4361,15 @@
       "folklore_sources": [
         {
           "region": "Vietnam",
-          "tradition": "In the Vietnamese zodiac the water buffalo (trâu) takes the place of the ox, honoured as the farmer's closest partner in the paddy."
+          "tradition": "In the Vietnamese zodiac (12 con giáp) the water buffalo (trâu) holds the second place, and the proverb \"con trâu là đầu cơ nghiệp\" calls the buffalo the foundation of a family's livelihood."
         },
         {
-          "region": "China",
-          "tradition": "The Cowherd and the Weaver Girl, in which a wise old ox tells the cowherd to keep its hide after it dies, and the hide lets him fly to the heavens. Celebrated at Qixi."
+          "region": "Vietnam and China",
+          "tradition": "The Cowherd and the Weaver Girl (Ngưu Lang Chức Nữ), whose tears at their yearly meeting fall as the \"mưa ngâu\" rains of the seventh lunar month; the cowherd's faithful beast helps him reach the heavens."
         },
         {
-          "region": "Thailand and Cambodia",
-          "tradition": "The Royal Ploughing Ceremony, where sacred oxen are offered seven foods (rice, maize, beans, sesame, grass, water and liquor) and their choices are read as a forecast for the harvest."
-        },
-        {
-          "region": "China",
-          "tradition": "The Spring Ox of clay struck at Lichun to welcome the farming year."
+          "region": "Southeast Asia",
+          "tradition": "The water buffalo (trâu, kerbau, carabao, khwai) as the rice farmer's partner across the region, honoured at planting and harvest."
         }
       ],
       "armour": {
@@ -4409,8 +4405,8 @@
     {
       "id": "paddywade",
       "name": "Paddywade",
-      "line": "ox-water",
-      "animal": "ox",
+      "line": "buffalo-water",
+      "animal": "buffalo",
       "element": "water",
       "native": false,
       "kind": "zodiac",
@@ -4426,12 +4422,12 @@
         "measure": "shoulder",
         "weight_kg": {
           "distribution": "truncated_normal",
-          "mean": 428,
-          "sd": 51.3,
-          "min": 274,
-          "p95": 512,
-          "p99": 547,
-          "upper": 581
+          "mean": 523,
+          "sd": 62.7,
+          "min": 334,
+          "p95": 626,
+          "p99": 668,
+          "upper": 711
         },
         "shoulder_cm": {
           "distribution": "truncated_normal",
@@ -4484,7 +4480,7 @@
           "Will not cross a bridge it hasn't seen another beast cross first.",
           "Hums a low note while it works.",
           "Lets small beasts ride on its back without complaint.",
-          "Refuses to eat until everyone else has eaten."
+          "Wallows in the nearest mud at noon, whatever else is happening."
         ],
         "moonmarked_chance": "1/1024"
       },
@@ -4493,7 +4489,7 @@
         "story_only": false,
         "difficulty": "Hard",
         "favoured_offerings": [
-          "fresh hay",
+          "rice straw",
           "sweet potato",
           "a scratch behind the horns"
         ],
@@ -4511,19 +4507,15 @@
       "folklore_sources": [
         {
           "region": "Vietnam",
-          "tradition": "In the Vietnamese zodiac the water buffalo (trâu) takes the place of the ox, honoured as the farmer's closest partner in the paddy."
+          "tradition": "In the Vietnamese zodiac (12 con giáp) the water buffalo (trâu) holds the second place, and the proverb \"con trâu là đầu cơ nghiệp\" calls the buffalo the foundation of a family's livelihood."
         },
         {
-          "region": "China",
-          "tradition": "The Cowherd and the Weaver Girl, in which a wise old ox tells the cowherd to keep its hide after it dies, and the hide lets him fly to the heavens. Celebrated at Qixi."
+          "region": "Vietnam and China",
+          "tradition": "The Cowherd and the Weaver Girl (Ngưu Lang Chức Nữ), whose tears at their yearly meeting fall as the \"mưa ngâu\" rains of the seventh lunar month; the cowherd's faithful beast helps him reach the heavens."
         },
         {
-          "region": "Thailand and Cambodia",
-          "tradition": "The Royal Ploughing Ceremony, where sacred oxen are offered seven foods (rice, maize, beans, sesame, grass, water and liquor) and their choices are read as a forecast for the harvest."
-        },
-        {
-          "region": "China",
-          "tradition": "The Spring Ox of clay struck at Lichun to welcome the farming year."
+          "region": "Southeast Asia",
+          "tradition": "The water buffalo (trâu, kerbau, carabao, khwai) as the rice farmer's partner across the region, honoured at planting and harvest."
         }
       ],
       "armour": {
@@ -4575,8 +4567,8 @@
     {
       "id": "traurun",
       "name": "Traurun",
-      "line": "ox-water",
-      "animal": "ox",
+      "line": "buffalo-water",
+      "animal": "buffalo",
       "element": "water",
       "native": false,
       "kind": "zodiac",
@@ -4651,7 +4643,7 @@
           "Will not cross a bridge it hasn't seen another beast cross first.",
           "Hums a low note while it works.",
           "Lets small beasts ride on its back without complaint.",
-          "Refuses to eat until everyone else has eaten."
+          "Wallows in the nearest mud at noon, whatever else is happening."
         ],
         "moonmarked_chance": "1/1024"
       },
@@ -4660,7 +4652,7 @@
         "story_only": true,
         "difficulty": "Story only",
         "favoured_offerings": [
-          "fresh hay",
+          "rice straw",
           "sweet potato",
           "a scratch behind the horns"
         ],
@@ -4674,23 +4666,19 @@
         "difficulty": "Very hard",
         "disobeys_when": "Ordered to abandon ground it has been told to hold."
       },
-      "lore": "In the Hour of the Ox the rivers flood every year, and every year Traurun walks out into the water and lies down, and the flood spreads gently over the fields instead of tearing them away. Farmers sing to it at planting. It sings back, a low note that carries for miles across the flooded paddies.",
+      "lore": "In the Hour of the Buffalo the rivers flood every year, and every year Traurun walks out into the water and lies down, and the flood spreads gently over the fields instead of tearing them away. Farmers sing to it at planting. It sings back, a low note that carries for miles across the flooded paddies.",
       "folklore_sources": [
         {
           "region": "Vietnam",
-          "tradition": "In the Vietnamese zodiac the water buffalo (trâu) takes the place of the ox, honoured as the farmer's closest partner in the paddy."
+          "tradition": "In the Vietnamese zodiac (12 con giáp) the water buffalo (trâu) holds the second place, and the proverb \"con trâu là đầu cơ nghiệp\" calls the buffalo the foundation of a family's livelihood."
         },
         {
-          "region": "China",
-          "tradition": "The Cowherd and the Weaver Girl, in which a wise old ox tells the cowherd to keep its hide after it dies, and the hide lets him fly to the heavens. Celebrated at Qixi."
+          "region": "Vietnam and China",
+          "tradition": "The Cowherd and the Weaver Girl (Ngưu Lang Chức Nữ), whose tears at their yearly meeting fall as the \"mưa ngâu\" rains of the seventh lunar month; the cowherd's faithful beast helps him reach the heavens."
         },
         {
-          "region": "Thailand and Cambodia",
-          "tradition": "The Royal Ploughing Ceremony, where sacred oxen are offered seven foods (rice, maize, beans, sesame, grass, water and liquor) and their choices are read as a forecast for the harvest."
-        },
-        {
-          "region": "China",
-          "tradition": "The Spring Ox of clay struck at Lichun to welcome the farming year."
+          "region": "Southeast Asia",
+          "tradition": "The water buffalo (trâu, kerbau, carabao, khwai) as the rice farmer's partner across the region, honoured at planting and harvest."
         }
       ],
       "armour": {
@@ -7130,19 +7118,19 @@
     {
       "id": "mooncotton",
       "name": "Mooncotton",
-      "line": "rabbit-wood",
-      "animal": "rabbit",
+      "line": "cat-wood",
+      "animal": "cat",
       "element": "wood",
       "native": true,
       "kind": "zodiac",
-      "family": "lagomorph",
+      "family": "feline",
       "stage": 1,
       "stage_name": "Kit",
       "evolves_from": null,
-      "evolves_to": "hareveil",
+      "evolves_to": "moonveil",
       "playable": true,
-      "habitat": "Clover meadows, moonlit hillsides.",
-      "description": "A round, fluffy rabbit whose fur glows faintly on clear nights.",
+      "habitat": "Clover meadows, moonlit rooftops.",
+      "description": "A round, fluffy white kitten whose fur glows faintly on clear nights.",
       "physical": {
         "measure": "length",
         "weight_kg": {
@@ -7167,20 +7155,20 @@
       "characteristics": {
         "temperaments": [
           {
-            "id": "gentle",
+            "id": "curious",
             "weight": 30
           },
           {
-            "id": "playful",
-            "weight": 30
-          },
-          {
-            "id": "wary",
+            "id": "sly",
             "weight": 25
           },
           {
-            "id": "curious",
-            "weight": 15
+            "id": "serene",
+            "weight": 25
+          },
+          {
+            "id": "playful",
+            "weight": 20
           }
         ],
         "markings": [
@@ -7189,23 +7177,23 @@
             "weight": 45
           },
           {
-            "id": "dawn-grey",
-            "weight": 30
+            "id": "moon-silver",
+            "weight": 25
+          },
+          {
+            "id": "jade-eyed",
+            "weight": 25
           },
           {
             "id": "clover-flecked",
-            "weight": 20
-          },
-          {
-            "id": "moon-silver",
             "weight": 5
           }
         ],
         "quirks": [
-          "Thumps a hind foot when a friend is in danger.",
-          "Pounds the ground in rhythm under a full moon.",
-          "Collects four-leaf clovers.",
-          "Always sleeps facing the moon."
+          "Sits in any circle drawn on the ground.",
+          "Watches the moon for hours without blinking.",
+          "Brings small gifts to the people it likes.",
+          "Always lands on its feet, and looks smug about it."
         ],
         "moonmarked_chance": "1/1024"
       },
@@ -7214,29 +7202,29 @@
         "story_only": false,
         "difficulty": "Moderate",
         "favoured_offerings": [
-          "rice cakes",
-          "clover",
-          "sweet osmanthus"
+          "dried fish",
+          "a warm windowsill",
+          "catnip"
         ],
         "dislikes": [
-          "shouting",
-          "being picked up"
+          "closed doors",
+          "being hurried"
         ]
       },
       "control": {
-        "command_dc": 9,
-        "difficulty": "Easy",
-        "disobeys_when": "Ordered to attack a foe that is already beaten."
+        "command_dc": 11,
+        "difficulty": "Moderate",
+        "disobeys_when": "It would rather be somewhere else, which it will make clear."
       },
-      "lore": "Mooncottons gather in rings on full-moon nights and thump the ground in rhythm. Children who join the rhythm are said to dream of the moon and wake with their scrapes healed.",
+      "lore": "Mooncottons gather on rooftops on full-moon nights and sit in a ring, purring in rhythm. Children who fall asleep to the sound are said to dream of the moon and wake with their scrapes healed.",
       "folklore_sources": [
         {
-          "region": "China, Japan, Korea",
-          "tradition": "The rabbit in the moon pounding with a mortar and pestle (the elixir of life in China; rice cakes, mochi or tteok, in Japan and Korea)."
+          "region": "Vietnam",
+          "tradition": "In the Vietnamese zodiac (12 con giáp) the Cat (Mèo) takes the fourth place held by the Rabbit elsewhere; a common explanation is that the old name of the year, Mão, sounded like mèo, \"cat\"."
         },
         {
-          "region": "South and Southeast Asia",
-          "tradition": "The Buddhist Śaśa Jātaka, in which a rabbit offers itself as food to a hungry traveller, who places its image on the moon in gratitude."
+          "region": "Thailand",
+          "tradition": "The Cat-Book Poems (Tamra Maew), which describe lucky cats and the fortune they bring to a household."
         }
       ],
       "armour": {
@@ -7275,59 +7263,59 @@
       }
     },
     {
-      "id": "hareveil",
-      "name": "Hareveil",
-      "line": "rabbit-wood",
-      "animal": "rabbit",
+      "id": "moonveil",
+      "name": "Moonveil",
+      "line": "cat-wood",
+      "animal": "cat",
       "element": "wood",
       "native": true,
       "kind": "zodiac",
-      "family": "lagomorph",
+      "family": "feline",
       "stage": 2,
       "stage_name": "Adept",
       "evolves_from": "mooncotton",
-      "evolves_to": "usagetsu",
+      "evolves_to": "meonguyet",
       "playable": true,
       "habitat": "Mist-covered fields, mountain shrines.",
-      "description": "A long-eared hare wrapped in a trailing veil of silver mist.",
+      "description": "A long-tailed silver cat wrapped in a trailing veil of moonlit mist.",
       "physical": {
         "measure": "length",
         "weight_kg": {
           "distribution": "truncated_normal",
-          "mean": 9,
-          "sd": 1.08,
-          "min": 5.76,
-          "p95": 10.8,
-          "p99": 11.5,
-          "upper": 12.2
+          "mean": 6,
+          "sd": 0.72,
+          "min": 3.84,
+          "p95": 7.18,
+          "p99": 7.67,
+          "upper": 8.16
         },
         "length_cm": {
           "distribution": "truncated_normal",
-          "mean": 75,
-          "sd": 4.5,
-          "min": 61.5,
-          "p95": 82.4,
-          "p99": 85.5,
-          "upper": 88.5
+          "mean": 90,
+          "sd": 5.4,
+          "min": 73.8,
+          "p95": 98.9,
+          "p99": 103,
+          "upper": 106
         }
       },
       "characteristics": {
         "temperaments": [
           {
-            "id": "gentle",
+            "id": "curious",
             "weight": 30
           },
           {
-            "id": "playful",
-            "weight": 30
-          },
-          {
-            "id": "wary",
+            "id": "sly",
             "weight": 25
           },
           {
-            "id": "curious",
-            "weight": 15
+            "id": "serene",
+            "weight": 25
+          },
+          {
+            "id": "playful",
+            "weight": 20
           }
         ],
         "markings": [
@@ -7336,23 +7324,23 @@
             "weight": 45
           },
           {
-            "id": "dawn-grey",
-            "weight": 30
+            "id": "moon-silver",
+            "weight": 25
+          },
+          {
+            "id": "jade-eyed",
+            "weight": 25
           },
           {
             "id": "clover-flecked",
-            "weight": 20
-          },
-          {
-            "id": "moon-silver",
             "weight": 5
           }
         ],
         "quirks": [
-          "Thumps a hind foot when a friend is in danger.",
-          "Pounds the ground in rhythm under a full moon.",
-          "Collects four-leaf clovers.",
-          "Always sleeps facing the moon."
+          "Sits in any circle drawn on the ground.",
+          "Watches the moon for hours without blinking.",
+          "Brings small gifts to the people it likes.",
+          "Always lands on its feet, and looks smug about it."
         ],
         "moonmarked_chance": "1/1024"
       },
@@ -7361,29 +7349,29 @@
         "story_only": false,
         "difficulty": "Hard",
         "favoured_offerings": [
-          "rice cakes",
-          "clover",
-          "sweet osmanthus"
+          "dried fish",
+          "a warm windowsill",
+          "catnip"
         ],
         "dislikes": [
-          "shouting",
-          "being picked up"
+          "closed doors",
+          "being hurried"
         ]
       },
       "control": {
-        "command_dc": 13,
-        "difficulty": "Moderate",
-        "disobeys_when": "Ordered to attack a foe that is already beaten."
+        "command_dc": 15,
+        "difficulty": "Hard",
+        "disobeys_when": "It would rather be somewhere else, which it will make clear."
       },
-      "lore": "A Hareveil vanishes into its mist when startled and reappears beside whoever needs help most. Shrine-keepers leave out rice cakes for them and find the plates licked clean, with a single clover left in thanks.",
+      "lore": "A Moonveil vanishes into its mist when startled and reappears on the lap of whoever needs comfort most. Shrine-keepers leave out dried fish and find the plates licked clean, with a single clover left in thanks.",
       "folklore_sources": [
         {
-          "region": "China, Japan, Korea",
-          "tradition": "The rabbit in the moon pounding with a mortar and pestle (the elixir of life in China; rice cakes, mochi or tteok, in Japan and Korea)."
+          "region": "Vietnam",
+          "tradition": "In the Vietnamese zodiac (12 con giáp) the Cat (Mèo) takes the fourth place held by the Rabbit elsewhere; a common explanation is that the old name of the year, Mão, sounded like mèo, \"cat\"."
         },
         {
-          "region": "South and Southeast Asia",
-          "tradition": "The Buddhist Śaśa Jātaka, in which a rabbit offers itself as food to a hungry traveller, who places its image on the moon in gratitude."
+          "region": "Thailand",
+          "tradition": "The Cat-Book Poems (Tamra Maew), which describe lucky cats and the fortune they bring to a household."
         }
       ],
       "armour": {
@@ -7430,61 +7418,61 @@
       }
     },
     {
-      "id": "usagetsu",
-      "name": "Usagetsu",
-      "line": "rabbit-wood",
-      "animal": "rabbit",
+      "id": "meonguyet",
+      "name": "Meonguyet",
+      "line": "cat-wood",
+      "animal": "cat",
       "element": "wood",
       "native": true,
       "kind": "zodiac",
-      "family": "lagomorph",
+      "family": "feline",
       "stage": 3,
       "stage_name": "Sovereign",
       "epithet": "The Jade Moon",
-      "evolves_from": "hareveil",
+      "evolves_from": "moonveil",
       "evolves_to": null,
       "playable": true,
-      "habitat": "The silver groves of the Hour of the Rabbit.",
-      "description": "A tall, serene hare carrying a jade mortar and pestle, its eyes the colour of moonrise.",
-      "art_description": "A tall, serene white hare with long silver-tipped ears and eyes the colour of moonrise, standing upright beside a carved jade mortar and pestle that glows softly with healing light. Moonlight pours around it; tiny glowing clover leaves and rice-cake shapes drift in the air. Silver birch-like trees and a huge full moon in a quiet night garden.",
+      "habitat": "The silver groves of the Hour of the Cat.",
+      "description": "A tall, serene white cat the size of a leopard, with jade eyes and a jade mortar beside it.",
+      "art_description": "A large, elegant white cat with long silky fur, a plumed tail and luminous jade-green eyes, sitting upright and serene beside a carved jade mortar and pestle that glows softly with healing light. Moonlight pours around it; tiny glowing clover leaves drift in the air. Silver birch-like trees and a huge full moon in a quiet night garden; in the face of the moon, the faint shape of a rabbit.",
       "physical": {
         "measure": "length",
         "weight_kg": {
           "distribution": "truncated_normal",
-          "mean": 30,
-          "sd": 3.6,
-          "min": 19.2,
-          "p95": 35.9,
-          "p99": 38.4,
-          "upper": 40.8
+          "mean": 45,
+          "sd": 5.4,
+          "min": 28.8,
+          "p95": 53.9,
+          "p99": 57.6,
+          "upper": 61.2
         },
         "length_cm": {
           "distribution": "truncated_normal",
-          "mean": 120,
-          "sd": 7.2,
-          "min": 98.4,
-          "p95": 132,
-          "p99": 137,
-          "upper": 142
+          "mean": 170,
+          "sd": 10.2,
+          "min": 139,
+          "p95": 187,
+          "p99": 194,
+          "upper": 201
         }
       },
       "characteristics": {
         "temperaments": [
           {
-            "id": "gentle",
+            "id": "curious",
             "weight": 30
           },
           {
-            "id": "playful",
-            "weight": 30
-          },
-          {
-            "id": "wary",
+            "id": "sly",
             "weight": 25
           },
           {
-            "id": "curious",
-            "weight": 15
+            "id": "serene",
+            "weight": 25
+          },
+          {
+            "id": "playful",
+            "weight": 20
           }
         ],
         "markings": [
@@ -7493,23 +7481,23 @@
             "weight": 45
           },
           {
-            "id": "dawn-grey",
-            "weight": 30
+            "id": "moon-silver",
+            "weight": 25
+          },
+          {
+            "id": "jade-eyed",
+            "weight": 25
           },
           {
             "id": "clover-flecked",
-            "weight": 20
-          },
-          {
-            "id": "moon-silver",
             "weight": 5
           }
         ],
         "quirks": [
-          "Thumps a hind foot when a friend is in danger.",
-          "Pounds the ground in rhythm under a full moon.",
-          "Collects four-leaf clovers.",
-          "Always sleeps facing the moon."
+          "Sits in any circle drawn on the ground.",
+          "Watches the moon for hours without blinking.",
+          "Brings small gifts to the people it likes.",
+          "Always lands on its feet, and looks smug about it."
         ],
         "moonmarked_chance": "1/1024"
       },
@@ -7518,34 +7506,34 @@
         "story_only": true,
         "difficulty": "Story only",
         "favoured_offerings": [
-          "rice cakes",
-          "clover",
-          "sweet osmanthus"
+          "dried fish",
+          "a warm windowsill",
+          "catnip"
         ],
         "dislikes": [
-          "shouting",
-          "being picked up"
+          "closed doors",
+          "being hurried"
         ]
       },
       "control": {
-        "command_dc": 17,
-        "difficulty": "Hard",
-        "disobeys_when": "Ordered to attack a foe that is already beaten."
+        "command_dc": 19,
+        "difficulty": "Very hard",
+        "disobeys_when": "It would rather be somewhere else, which it will make clear."
       },
-      "lore": "A hungry traveller once came upon a rabbit with nothing to give, and the rabbit offered itself instead. The traveller, who was more than a traveller, set the rabbit's likeness in the moon. Usagetsu says it is that likeness, come down to finish the work. It pounds medicine in its mortar every night and gives it freely, asking only that no one waste it.",
+      "lore": "They say the Rabbit was meant to run the Great Race but would not leave its mortar on the moon, where it pounds medicine still. A white cat ran in its place, and the Hour has been the Cat's ever since. Meonguyet keeps the Rabbit's work on earth: it carries a jade mortar, pounds medicine every night and gives it freely. On clear nights it looks up and nods to the shape in the moon.",
       "folklore_sources": [
         {
-          "region": "China, Japan, Korea",
-          "tradition": "The rabbit in the moon pounding with a mortar and pestle (the elixir of life in China; rice cakes, mochi or tteok, in Japan and Korea)."
+          "region": "Vietnam",
+          "tradition": "In the Vietnamese zodiac (12 con giáp) the Cat (Mèo) takes the fourth place held by the Rabbit elsewhere; a common explanation is that the old name of the year, Mão, sounded like mèo, \"cat\"."
         },
         {
-          "region": "South and Southeast Asia",
-          "tradition": "The Buddhist Śaśa Jātaka, in which a rabbit offers itself as food to a hungry traveller, who places its image on the moon in gratitude."
+          "region": "Thailand",
+          "tradition": "The Cat-Book Poems (Tamra Maew), which describe lucky cats and the fortune they bring to a household."
         }
       ],
       "armour": {
         "body_plan": "clawed-quadruped",
-        "size": "small",
+        "size": "medium",
         "slots": [
           "head",
           "body",
@@ -7553,7 +7541,7 @@
           "tail",
           "charm"
         ],
-        "max_weight": "medium",
+        "max_weight": "heavy",
         "armour_types": [
           {
             "type": "quilted-coat",
@@ -7565,6 +7553,10 @@
           },
           {
             "type": "scale-sheath",
+            "fit": "adapted"
+          },
+          {
+            "type": "plate-barding",
             "fit": "adapted"
           },
           {
@@ -7587,21 +7579,21 @@
       }
     },
     {
-      "id": "kindlebun",
-      "name": "Kindlebun",
-      "line": "rabbit-fire",
-      "animal": "rabbit",
+      "id": "lanternkit",
+      "name": "Lanternkit",
+      "line": "cat-fire",
+      "animal": "cat",
       "element": "fire",
       "native": false,
       "kind": "zodiac",
-      "family": "lagomorph",
+      "family": "feline",
       "stage": 1,
       "stage_name": "Kit",
       "evolves_from": null,
-      "evolves_to": "lanternhare",
+      "evolves_to": "hearthmouser",
       "playable": true,
-      "habitat": "Festival grounds, warm hillsides.",
-      "description": "A small rabbit whose ear tips glow like paper lanterns.",
+      "habitat": "Festival rooftops, warm kitchens.",
+      "description": "A small ginger kitten whose ear tips glow like paper lanterns.",
       "physical": {
         "measure": "length",
         "weight_kg": {
@@ -7626,20 +7618,20 @@
       "characteristics": {
         "temperaments": [
           {
-            "id": "gentle",
+            "id": "curious",
             "weight": 30
           },
           {
-            "id": "playful",
-            "weight": 30
-          },
-          {
-            "id": "wary",
+            "id": "sly",
             "weight": 25
           },
           {
-            "id": "curious",
-            "weight": 15
+            "id": "serene",
+            "weight": 25
+          },
+          {
+            "id": "playful",
+            "weight": 20
           }
         ],
         "markings": [
@@ -7656,15 +7648,15 @@
             "weight": 25
           },
           {
-            "id": "gold-eared",
+            "id": "gold-eyed",
             "weight": 5
           }
         ],
         "quirks": [
-          "Thumps a hind foot when a friend is in danger.",
-          "Pounds the ground in rhythm under a full moon.",
-          "Collects four-leaf clovers.",
-          "Always sleeps facing the moon."
+          "Sits in any circle drawn on the ground.",
+          "Watches the moon for hours without blinking.",
+          "Brings small gifts to the people it likes.",
+          "Always lands on its feet, and looks smug about it."
         ],
         "moonmarked_chance": "1/1024"
       },
@@ -7673,29 +7665,29 @@
         "story_only": false,
         "difficulty": "Moderate",
         "favoured_offerings": [
-          "rice cakes",
-          "clover",
-          "sweet osmanthus"
+          "dried fish",
+          "a warm windowsill",
+          "catnip"
         ],
         "dislikes": [
-          "shouting",
-          "being picked up"
+          "closed doors",
+          "being hurried"
         ]
       },
       "control": {
-        "command_dc": 9,
-        "difficulty": "Easy",
-        "disobeys_when": "Ordered to attack a foe that is already beaten."
+        "command_dc": 11,
+        "difficulty": "Moderate",
+        "disobeys_when": "It would rather be somewhere else, which it will make clear."
       },
-      "lore": "Kindlebuns gather where lanterns are lit and hop between them like sparks. Festival children try to catch them and never manage it.",
+      "lore": "Lanternkits gather where lanterns are lit and leap between them like sparks. Festival children try to catch them and never manage it.",
       "folklore_sources": [
         {
-          "region": "China, Japan, Korea",
-          "tradition": "The rabbit in the moon pounding with a mortar and pestle (the elixir of life in China; rice cakes, mochi or tteok, in Japan and Korea)."
+          "region": "Vietnam",
+          "tradition": "In the Vietnamese zodiac (12 con giáp) the Cat (Mèo) takes the fourth place held by the Rabbit elsewhere; a common explanation is that the old name of the year, Mão, sounded like mèo, \"cat\"."
         },
         {
-          "region": "South and Southeast Asia",
-          "tradition": "The Buddhist Śaśa Jātaka, in which a rabbit offers itself as food to a hungry traveller, who places its image on the moon in gratitude."
+          "region": "Thailand",
+          "tradition": "The Cat-Book Poems (Tamra Maew), which describe lucky cats and the fortune they bring to a household."
         }
       ],
       "armour": {
@@ -7734,59 +7726,59 @@
       }
     },
     {
-      "id": "lanternhare",
-      "name": "Lanternhare",
-      "line": "rabbit-fire",
-      "animal": "rabbit",
+      "id": "hearthmouser",
+      "name": "Hearthmouser",
+      "line": "cat-fire",
+      "animal": "cat",
       "element": "fire",
       "native": false,
       "kind": "zodiac",
-      "family": "lagomorph",
+      "family": "feline",
       "stage": 2,
       "stage_name": "Adept",
-      "evolves_from": "kindlebun",
-      "evolves_to": "tokkiran",
+      "evolves_from": "lanternkit",
+      "evolves_to": "goyanghwa",
       "playable": true,
-      "habitat": "Festival grounds, warm hillsides.",
-      "description": "A long-eared hare carrying a faint glow in its fur, bright enough to read by.",
+      "habitat": "Festival rooftops, warm kitchens.",
+      "description": "A lithe red cat carrying a faint warm glow in its fur, bright enough to read by.",
       "physical": {
         "measure": "length",
         "weight_kg": {
           "distribution": "truncated_normal",
-          "mean": 8.73,
-          "sd": 1.05,
-          "min": 5.59,
-          "p95": 10.5,
-          "p99": 11.2,
-          "upper": 11.9
+          "mean": 5.82,
+          "sd": 0.698,
+          "min": 3.72,
+          "p95": 6.97,
+          "p99": 7.44,
+          "upper": 7.92
         },
         "length_cm": {
           "distribution": "truncated_normal",
-          "mean": 75,
-          "sd": 4.5,
-          "min": 61.5,
-          "p95": 82.4,
-          "p99": 85.5,
-          "upper": 88.5
+          "mean": 90,
+          "sd": 5.4,
+          "min": 73.8,
+          "p95": 98.9,
+          "p99": 103,
+          "upper": 106
         }
       },
       "characteristics": {
         "temperaments": [
           {
-            "id": "gentle",
+            "id": "curious",
             "weight": 30
           },
           {
-            "id": "playful",
-            "weight": 30
-          },
-          {
-            "id": "wary",
+            "id": "sly",
             "weight": 25
           },
           {
-            "id": "curious",
-            "weight": 15
+            "id": "serene",
+            "weight": 25
+          },
+          {
+            "id": "playful",
+            "weight": 20
           }
         ],
         "markings": [
@@ -7803,15 +7795,15 @@
             "weight": 25
           },
           {
-            "id": "gold-eared",
+            "id": "gold-eyed",
             "weight": 5
           }
         ],
         "quirks": [
-          "Thumps a hind foot when a friend is in danger.",
-          "Pounds the ground in rhythm under a full moon.",
-          "Collects four-leaf clovers.",
-          "Always sleeps facing the moon."
+          "Sits in any circle drawn on the ground.",
+          "Watches the moon for hours without blinking.",
+          "Brings small gifts to the people it likes.",
+          "Always lands on its feet, and looks smug about it."
         ],
         "moonmarked_chance": "1/1024"
       },
@@ -7820,29 +7812,29 @@
         "story_only": false,
         "difficulty": "Hard",
         "favoured_offerings": [
-          "rice cakes",
-          "clover",
-          "sweet osmanthus"
+          "dried fish",
+          "a warm windowsill",
+          "catnip"
         ],
         "dislikes": [
-          "shouting",
-          "being picked up"
+          "closed doors",
+          "being hurried"
         ]
       },
       "control": {
-        "command_dc": 13,
-        "difficulty": "Moderate",
-        "disobeys_when": "Ordered to attack a foe that is already beaten."
+        "command_dc": 15,
+        "difficulty": "Hard",
+        "disobeys_when": "It would rather be somewhere else, which it will make clear."
       },
-      "lore": "A Lanternhare guides travellers home on moonless nights, always staying just far enough ahead to follow.",
+      "lore": "A Hearthmouser keeps a kitchen free of pests and warm all night. It guides travellers home on moonless nights, always just far enough ahead to follow.",
       "folklore_sources": [
         {
-          "region": "China, Japan, Korea",
-          "tradition": "The rabbit in the moon pounding with a mortar and pestle (the elixir of life in China; rice cakes, mochi or tteok, in Japan and Korea)."
+          "region": "Vietnam",
+          "tradition": "In the Vietnamese zodiac (12 con giáp) the Cat (Mèo) takes the fourth place held by the Rabbit elsewhere; a common explanation is that the old name of the year, Mão, sounded like mèo, \"cat\"."
         },
         {
-          "region": "South and Southeast Asia",
-          "tradition": "The Buddhist Śaśa Jātaka, in which a rabbit offers itself as food to a hungry traveller, who places its image on the moon in gratitude."
+          "region": "Thailand",
+          "tradition": "The Cat-Book Poems (Tamra Maew), which describe lucky cats and the fortune they bring to a household."
         }
       ],
       "armour": {
@@ -7889,60 +7881,60 @@
       }
     },
     {
-      "id": "tokkiran",
-      "name": "Tokkiran",
-      "line": "rabbit-fire",
-      "animal": "rabbit",
+      "id": "goyanghwa",
+      "name": "Goyanghwa",
+      "line": "cat-fire",
+      "animal": "cat",
       "element": "fire",
       "native": false,
       "kind": "zodiac",
-      "family": "lagomorph",
+      "family": "feline",
       "stage": 3,
       "stage_name": "Sovereign",
       "epithet": "The Lantern Moon",
-      "evolves_from": "lanternhare",
+      "evolves_from": "hearthmouser",
       "evolves_to": null,
       "playable": true,
-      "habitat": "Festival grounds, warm hillsides.",
-      "description": "A tall hare of warm amber light, a lantern-moon glowing between its ears.",
+      "habitat": "Festival rooftops, warm kitchens.",
+      "description": "A tall cat of warm amber light, a lantern-moon glowing between its ears.",
       "physical": {
         "measure": "length",
         "weight_kg": {
           "distribution": "truncated_normal",
-          "mean": 29.1,
-          "sd": 3.49,
-          "min": 18.6,
-          "p95": 34.8,
-          "p99": 37.2,
-          "upper": 39.6
+          "mean": 43.6,
+          "sd": 5.24,
+          "min": 27.9,
+          "p95": 52.3,
+          "p99": 55.8,
+          "upper": 59.4
         },
         "length_cm": {
           "distribution": "truncated_normal",
-          "mean": 120,
-          "sd": 7.2,
-          "min": 98.4,
-          "p95": 132,
-          "p99": 137,
-          "upper": 142
+          "mean": 170,
+          "sd": 10.2,
+          "min": 139,
+          "p95": 187,
+          "p99": 194,
+          "upper": 201
         }
       },
       "characteristics": {
         "temperaments": [
           {
-            "id": "gentle",
+            "id": "curious",
             "weight": 30
           },
           {
-            "id": "playful",
-            "weight": 30
-          },
-          {
-            "id": "wary",
+            "id": "sly",
             "weight": 25
           },
           {
-            "id": "curious",
-            "weight": 15
+            "id": "serene",
+            "weight": 25
+          },
+          {
+            "id": "playful",
+            "weight": 20
           }
         ],
         "markings": [
@@ -7959,15 +7951,15 @@
             "weight": 25
           },
           {
-            "id": "gold-eared",
+            "id": "gold-eyed",
             "weight": 5
           }
         ],
         "quirks": [
-          "Thumps a hind foot when a friend is in danger.",
-          "Pounds the ground in rhythm under a full moon.",
-          "Collects four-leaf clovers.",
-          "Always sleeps facing the moon."
+          "Sits in any circle drawn on the ground.",
+          "Watches the moon for hours without blinking.",
+          "Brings small gifts to the people it likes.",
+          "Always lands on its feet, and looks smug about it."
         ],
         "moonmarked_chance": "1/1024"
       },
@@ -7976,34 +7968,34 @@
         "story_only": true,
         "difficulty": "Story only",
         "favoured_offerings": [
-          "rice cakes",
-          "clover",
-          "sweet osmanthus"
+          "dried fish",
+          "a warm windowsill",
+          "catnip"
         ],
         "dislikes": [
-          "shouting",
-          "being picked up"
+          "closed doors",
+          "being hurried"
         ]
       },
       "control": {
-        "command_dc": 17,
-        "difficulty": "Hard",
-        "disobeys_when": "Ordered to attack a foe that is already beaten."
+        "command_dc": 19,
+        "difficulty": "Very hard",
+        "disobeys_when": "It would rather be somewhere else, which it will make clear."
       },
-      "lore": "On the one night a year when the moon does not rise, Tokkiran rises in its place, and the festival lanterns light themselves to greet it. It pounds medicine like its moon-bound cousin, but its medicine is warmth: for the cold, the lonely and the frightened.",
+      "lore": "On the one night a year when the moon does not rise, Goyanghwa climbs the highest roof in its place, and the festival lanterns light themselves to greet it. Its medicine is warmth: for the cold, the lonely and the frightened, it curls up beside them until morning.",
       "folklore_sources": [
         {
-          "region": "China, Japan, Korea",
-          "tradition": "The rabbit in the moon pounding with a mortar and pestle (the elixir of life in China; rice cakes, mochi or tteok, in Japan and Korea)."
+          "region": "Vietnam",
+          "tradition": "In the Vietnamese zodiac (12 con giáp) the Cat (Mèo) takes the fourth place held by the Rabbit elsewhere; a common explanation is that the old name of the year, Mão, sounded like mèo, \"cat\"."
         },
         {
-          "region": "South and Southeast Asia",
-          "tradition": "The Buddhist Śaśa Jātaka, in which a rabbit offers itself as food to a hungry traveller, who places its image on the moon in gratitude."
+          "region": "Thailand",
+          "tradition": "The Cat-Book Poems (Tamra Maew), which describe lucky cats and the fortune they bring to a household."
         }
       ],
       "armour": {
         "body_plan": "clawed-quadruped",
-        "size": "small",
+        "size": "medium",
         "slots": [
           "head",
           "body",
@@ -8011,7 +8003,7 @@
           "tail",
           "charm"
         ],
-        "max_weight": "medium",
+        "max_weight": "heavy",
         "armour_types": [
           {
             "type": "quilted-coat",
@@ -8023,6 +8015,10 @@
           },
           {
             "type": "scale-sheath",
+            "fit": "adapted"
+          },
+          {
+            "type": "plate-barding",
             "fit": "adapted"
           },
           {
@@ -8045,21 +8041,21 @@
       }
     },
     {
-      "id": "dunebun",
-      "name": "Dunebun",
-      "line": "rabbit-earth",
-      "animal": "rabbit",
+      "id": "dustkitten",
+      "name": "Dustkitten",
+      "line": "cat-earth",
+      "animal": "cat",
       "element": "earth",
       "native": false,
       "kind": "zodiac",
-      "family": "lagomorph",
+      "family": "feline",
       "stage": 1,
       "stage_name": "Kit",
       "evolves_from": null,
-      "evolves_to": "burrowhare",
+      "evolves_to": "granarymouser",
       "playable": true,
-      "habitat": "Dry meadows, hill warrens.",
-      "description": "A sandy little rabbit with oversized feet for digging.",
+      "habitat": "Granaries, temple storehouses.",
+      "description": "A sandy tabby kitten with oversized paws and a serious face.",
       "physical": {
         "measure": "length",
         "weight_kg": {
@@ -8084,20 +8080,20 @@
       "characteristics": {
         "temperaments": [
           {
-            "id": "gentle",
+            "id": "curious",
             "weight": 30
           },
           {
-            "id": "playful",
-            "weight": 30
-          },
-          {
-            "id": "wary",
+            "id": "sly",
             "weight": 25
           },
           {
-            "id": "curious",
-            "weight": 15
+            "id": "serene",
+            "weight": 25
+          },
+          {
+            "id": "playful",
+            "weight": 20
           }
         ],
         "markings": [
@@ -8110,19 +8106,19 @@
             "weight": 30
           },
           {
-            "id": "dust-grey",
+            "id": "tabby-striped",
             "weight": 20
           },
           {
-            "id": "white-tailed",
+            "id": "white-pawed",
             "weight": 5
           }
         ],
         "quirks": [
-          "Thumps a hind foot when a friend is in danger.",
-          "Pounds the ground in rhythm under a full moon.",
-          "Collects four-leaf clovers.",
-          "Always sleeps facing the moon."
+          "Sits in any circle drawn on the ground.",
+          "Watches the moon for hours without blinking.",
+          "Brings small gifts to the people it likes.",
+          "Always lands on its feet, and looks smug about it."
         ],
         "moonmarked_chance": "1/1024"
       },
@@ -8131,29 +8127,29 @@
         "story_only": false,
         "difficulty": "Moderate",
         "favoured_offerings": [
-          "rice cakes",
-          "clover",
-          "sweet osmanthus"
+          "dried fish",
+          "a warm windowsill",
+          "catnip"
         ],
         "dislikes": [
-          "shouting",
-          "being picked up"
+          "closed doors",
+          "being hurried"
         ]
       },
       "control": {
-        "command_dc": 9,
-        "difficulty": "Easy",
-        "disobeys_when": "Ordered to attack a foe that is already beaten."
+        "command_dc": 11,
+        "difficulty": "Moderate",
+        "disobeys_when": "It would rather be somewhere else, which it will make clear."
       },
-      "lore": "Dunebuns dig warrens with a hundred doors. Foxes give up; the Dunebuns are always out of a different one.",
+      "lore": "Dustkittens are born in granaries and guard them before their eyes have fully opened. A granary with a Dustkitten never loses a grain to mice.",
       "folklore_sources": [
         {
-          "region": "China, Japan, Korea",
-          "tradition": "The rabbit in the moon pounding with a mortar and pestle (the elixir of life in China; rice cakes, mochi or tteok, in Japan and Korea)."
+          "region": "Vietnam",
+          "tradition": "In the Vietnamese zodiac (12 con giáp) the Cat (Mèo) takes the fourth place held by the Rabbit elsewhere; a common explanation is that the old name of the year, Mão, sounded like mèo, \"cat\"."
         },
         {
-          "region": "South and Southeast Asia",
-          "tradition": "The Buddhist Śaśa Jātaka, in which a rabbit offers itself as food to a hungry traveller, who places its image on the moon in gratitude."
+          "region": "Thailand",
+          "tradition": "The Cat-Book Poems (Tamra Maew), which describe lucky cats and the fortune they bring to a household."
         }
       ],
       "armour": {
@@ -8192,59 +8188,59 @@
       }
     },
     {
-      "id": "burrowhare",
-      "name": "Burrowhare",
-      "line": "rabbit-earth",
-      "animal": "rabbit",
+      "id": "granarymouser",
+      "name": "Granary Mouser",
+      "line": "cat-earth",
+      "animal": "cat",
       "element": "earth",
       "native": false,
       "kind": "zodiac",
-      "family": "lagomorph",
+      "family": "feline",
       "stage": 2,
       "stage_name": "Adept",
-      "evolves_from": "dunebun",
-      "evolves_to": "arnavel",
+      "evolves_from": "dustkitten",
+      "evolves_to": "kucinara",
       "playable": true,
-      "habitat": "Dry meadows, hill warrens.",
-      "description": "A sturdy hare with earth-stained paws and an alert, patient face.",
+      "habitat": "Granaries, temple storehouses.",
+      "description": "A sturdy tabby cat with earth-stained paws and an alert, patient stare.",
       "physical": {
         "measure": "length",
         "weight_kg": {
           "distribution": "truncated_normal",
-          "mean": 9.9,
-          "sd": 1.19,
-          "min": 6.34,
-          "p95": 11.9,
-          "p99": 12.7,
-          "upper": 13.5
+          "mean": 6.6,
+          "sd": 0.792,
+          "min": 4.22,
+          "p95": 7.9,
+          "p99": 8.44,
+          "upper": 8.98
         },
         "length_cm": {
           "distribution": "truncated_normal",
-          "mean": 75,
-          "sd": 4.5,
-          "min": 61.5,
-          "p95": 82.4,
-          "p99": 85.5,
-          "upper": 88.5
+          "mean": 90,
+          "sd": 5.4,
+          "min": 73.8,
+          "p95": 98.9,
+          "p99": 103,
+          "upper": 106
         }
       },
       "characteristics": {
         "temperaments": [
           {
-            "id": "gentle",
+            "id": "curious",
             "weight": 30
           },
           {
-            "id": "playful",
-            "weight": 30
-          },
-          {
-            "id": "wary",
+            "id": "sly",
             "weight": 25
           },
           {
-            "id": "curious",
-            "weight": 15
+            "id": "serene",
+            "weight": 25
+          },
+          {
+            "id": "playful",
+            "weight": 20
           }
         ],
         "markings": [
@@ -8257,19 +8253,19 @@
             "weight": 30
           },
           {
-            "id": "dust-grey",
+            "id": "tabby-striped",
             "weight": 20
           },
           {
-            "id": "white-tailed",
+            "id": "white-pawed",
             "weight": 5
           }
         ],
         "quirks": [
-          "Thumps a hind foot when a friend is in danger.",
-          "Pounds the ground in rhythm under a full moon.",
-          "Collects four-leaf clovers.",
-          "Always sleeps facing the moon."
+          "Sits in any circle drawn on the ground.",
+          "Watches the moon for hours without blinking.",
+          "Brings small gifts to the people it likes.",
+          "Always lands on its feet, and looks smug about it."
         ],
         "moonmarked_chance": "1/1024"
       },
@@ -8278,29 +8274,29 @@
         "story_only": false,
         "difficulty": "Hard",
         "favoured_offerings": [
-          "rice cakes",
-          "clover",
-          "sweet osmanthus"
+          "dried fish",
+          "a warm windowsill",
+          "catnip"
         ],
         "dislikes": [
-          "shouting",
-          "being picked up"
+          "closed doors",
+          "being hurried"
         ]
       },
       "control": {
-        "command_dc": 13,
-        "difficulty": "Moderate",
-        "disobeys_when": "Ordered to attack a foe that is already beaten."
+        "command_dc": 15,
+        "difficulty": "Hard",
+        "disobeys_when": "It would rather be somewhere else, which it will make clear."
       },
-      "lore": "A Burrowhare's warren can shelter a whole village in a storm. It expects guests to wipe their feet.",
+      "lore": "A Granary Mouser can sit by a mousehole for a whole day. Farmers pay it in fish and say it earns every one.",
       "folklore_sources": [
         {
-          "region": "China, Japan, Korea",
-          "tradition": "The rabbit in the moon pounding with a mortar and pestle (the elixir of life in China; rice cakes, mochi or tteok, in Japan and Korea)."
+          "region": "Vietnam",
+          "tradition": "In the Vietnamese zodiac (12 con giáp) the Cat (Mèo) takes the fourth place held by the Rabbit elsewhere; a common explanation is that the old name of the year, Mão, sounded like mèo, \"cat\"."
         },
         {
-          "region": "South and Southeast Asia",
-          "tradition": "The Buddhist Śaśa Jātaka, in which a rabbit offers itself as food to a hungry traveller, who places its image on the moon in gratitude."
+          "region": "Thailand",
+          "tradition": "The Cat-Book Poems (Tamra Maew), which describe lucky cats and the fortune they bring to a household."
         }
       ],
       "armour": {
@@ -8347,60 +8343,60 @@
       }
     },
     {
-      "id": "arnavel",
-      "name": "Arnavel",
-      "line": "rabbit-earth",
-      "animal": "rabbit",
+      "id": "kucinara",
+      "name": "Kucinara",
+      "line": "cat-earth",
+      "animal": "cat",
       "element": "earth",
       "native": false,
       "kind": "zodiac",
-      "family": "lagomorph",
+      "family": "feline",
       "stage": 3,
       "stage_name": "Sovereign",
-      "epithet": "The Deep Warren",
-      "evolves_from": "burrowhare",
+      "epithet": "The Granary Guardian",
+      "evolves_from": "granarymouser",
       "evolves_to": null,
       "playable": true,
-      "habitat": "Dry meadows, hill warrens.",
-      "description": "A broad, calm hare with a coat like rich soil and eyes like polished agate.",
+      "habitat": "Granaries, temple storehouses.",
+      "description": "A broad, calm tabby cat with a coat like rich soil and eyes like polished agate, curled on a mound of rice sacks.",
       "physical": {
         "measure": "length",
         "weight_kg": {
           "distribution": "truncated_normal",
-          "mean": 33,
-          "sd": 3.96,
-          "min": 21.1,
-          "p95": 39.5,
-          "p99": 42.2,
-          "upper": 44.9
+          "mean": 49.5,
+          "sd": 5.94,
+          "min": 31.7,
+          "p95": 59.3,
+          "p99": 63.3,
+          "upper": 67.3
         },
         "length_cm": {
           "distribution": "truncated_normal",
-          "mean": 120,
-          "sd": 7.2,
-          "min": 98.4,
-          "p95": 132,
-          "p99": 137,
-          "upper": 142
+          "mean": 170,
+          "sd": 10.2,
+          "min": 139,
+          "p95": 187,
+          "p99": 194,
+          "upper": 201
         }
       },
       "characteristics": {
         "temperaments": [
           {
-            "id": "gentle",
+            "id": "curious",
             "weight": 30
           },
           {
-            "id": "playful",
-            "weight": 30
-          },
-          {
-            "id": "wary",
+            "id": "sly",
             "weight": 25
           },
           {
-            "id": "curious",
-            "weight": 15
+            "id": "serene",
+            "weight": 25
+          },
+          {
+            "id": "playful",
+            "weight": 20
           }
         ],
         "markings": [
@@ -8413,19 +8409,19 @@
             "weight": 30
           },
           {
-            "id": "dust-grey",
+            "id": "tabby-striped",
             "weight": 20
           },
           {
-            "id": "white-tailed",
+            "id": "white-pawed",
             "weight": 5
           }
         ],
         "quirks": [
-          "Thumps a hind foot when a friend is in danger.",
-          "Pounds the ground in rhythm under a full moon.",
-          "Collects four-leaf clovers.",
-          "Always sleeps facing the moon."
+          "Sits in any circle drawn on the ground.",
+          "Watches the moon for hours without blinking.",
+          "Brings small gifts to the people it likes.",
+          "Always lands on its feet, and looks smug about it."
         ],
         "moonmarked_chance": "1/1024"
       },
@@ -8434,29 +8430,29 @@
         "story_only": true,
         "difficulty": "Story only",
         "favoured_offerings": [
-          "rice cakes",
-          "clover",
-          "sweet osmanthus"
+          "dried fish",
+          "a warm windowsill",
+          "catnip"
         ],
         "dislikes": [
-          "shouting",
-          "being picked up"
+          "closed doors",
+          "being hurried"
         ]
       },
       "control": {
-        "command_dc": 17,
-        "difficulty": "Hard",
-        "disobeys_when": "Ordered to attack a foe that is already beaten."
+        "command_dc": 19,
+        "difficulty": "Very hard",
+        "disobeys_when": "It would rather be somewhere else, which it will make clear."
       },
-      "lore": "Arnavel's warren runs beneath the whole of the Hour of the Rabbit, and it knows every tunnel. In wartime it hides the helpless; in peace it hides seeds against the next famine. It is the gentlest Sovereign, and the hardest to find when it does not wish to be found.",
+      "lore": "Kucinara guards every granary in the Hour of the Cat, and no famine has ever begun on its watch. The Rat and Kucinara have an old understanding: the Rat may take one grain in ten, and not one grain more, and both of them keep count.",
       "folklore_sources": [
         {
-          "region": "China, Japan, Korea",
-          "tradition": "The rabbit in the moon pounding with a mortar and pestle (the elixir of life in China; rice cakes, mochi or tteok, in Japan and Korea)."
+          "region": "Vietnam",
+          "tradition": "In the Vietnamese zodiac (12 con giáp) the Cat (Mèo) takes the fourth place held by the Rabbit elsewhere; a common explanation is that the old name of the year, Mão, sounded like mèo, \"cat\"."
         },
         {
-          "region": "South and Southeast Asia",
-          "tradition": "The Buddhist Śaśa Jātaka, in which a rabbit offers itself as food to a hungry traveller, who places its image on the moon in gratitude."
+          "region": "Thailand",
+          "tradition": "The Cat-Book Poems (Tamra Maew), which describe lucky cats and the fortune they bring to a household."
         }
       ],
       "armour": {
@@ -8507,21 +8503,21 @@
       }
     },
     {
-      "id": "frostbun",
-      "name": "Frostbun",
-      "line": "rabbit-metal",
-      "animal": "rabbit",
+      "id": "frostkitten",
+      "name": "Frostkitten",
+      "line": "cat-metal",
+      "animal": "cat",
       "element": "metal",
       "native": false,
       "kind": "zodiac",
-      "family": "lagomorph",
+      "family": "feline",
       "stage": 1,
       "stage_name": "Kit",
       "evolves_from": null,
-      "evolves_to": "silverhop",
+      "evolves_to": "silverwhisker",
       "playable": true,
-      "habitat": "Moonlit mountain shrines.",
-      "description": "A small silver-white rabbit whose breath frosts the grass it hops through.",
+      "habitat": "Merchant houses, moonlit shrines.",
+      "description": "A small silver-white kitten whose breath frosts the windowpane it sits behind.",
       "physical": {
         "measure": "length",
         "weight_kg": {
@@ -8546,20 +8542,20 @@
       "characteristics": {
         "temperaments": [
           {
-            "id": "gentle",
+            "id": "curious",
             "weight": 30
           },
           {
-            "id": "playful",
-            "weight": 30
-          },
-          {
-            "id": "wary",
+            "id": "sly",
             "weight": 25
           },
           {
-            "id": "curious",
-            "weight": 15
+            "id": "serene",
+            "weight": 25
+          },
+          {
+            "id": "playful",
+            "weight": 20
           }
         ],
         "markings": [
@@ -8576,15 +8572,15 @@
             "weight": 20
           },
           {
-            "id": "moon-eyed",
+            "id": "gold-eyed",
             "weight": 5
           }
         ],
         "quirks": [
-          "Thumps a hind foot when a friend is in danger.",
-          "Pounds the ground in rhythm under a full moon.",
-          "Collects four-leaf clovers.",
-          "Always sleeps facing the moon."
+          "Sits in any circle drawn on the ground.",
+          "Watches the moon for hours without blinking.",
+          "Brings small gifts to the people it likes.",
+          "Always lands on its feet, and looks smug about it."
         ],
         "moonmarked_chance": "1/1024"
       },
@@ -8593,29 +8589,33 @@
         "story_only": false,
         "difficulty": "Moderate",
         "favoured_offerings": [
-          "rice cakes",
-          "clover",
-          "sweet osmanthus"
+          "dried fish",
+          "a warm windowsill",
+          "catnip"
         ],
         "dislikes": [
-          "shouting",
-          "being picked up"
+          "closed doors",
+          "being hurried"
         ]
       },
       "control": {
-        "command_dc": 9,
-        "difficulty": "Easy",
-        "disobeys_when": "Ordered to attack a foe that is already beaten."
+        "command_dc": 11,
+        "difficulty": "Moderate",
+        "disobeys_when": "It would rather be somewhere else, which it will make clear."
       },
-      "lore": "Frostbuns appear on the first frost of autumn and vanish by spring. Finding their tracks is said to mean a good harvest next year.",
+      "lore": "Frostkittens appear on the first frost of autumn. Finding one on your step is said to mean a good harvest next year.",
       "folklore_sources": [
         {
-          "region": "China, Japan, Korea",
-          "tradition": "The rabbit in the moon pounding with a mortar and pestle (the elixir of life in China; rice cakes, mochi or tteok, in Japan and Korea)."
+          "region": "Thailand",
+          "tradition": "The Cat-Book Poems (Tamra Maew), which name copper- and gold-coated cats among the luckiest a household can keep."
         },
         {
-          "region": "South and Southeast Asia",
-          "tradition": "The Buddhist Śaśa Jātaka, in which a rabbit offers itself as food to a hungry traveller, who places its image on the moon in gratitude."
+          "region": "Vietnam",
+          "tradition": "In the Vietnamese zodiac (12 con giáp) the Cat (Mèo) takes the fourth place held by the Rabbit elsewhere; a common explanation is that the old name of the year, Mão, sounded like mèo, \"cat\"."
+        },
+        {
+          "region": "Thailand",
+          "tradition": "The Cat-Book Poems (Tamra Maew), which describe lucky cats and the fortune they bring to a household."
         }
       ],
       "armour": {
@@ -8654,59 +8654,59 @@
       }
     },
     {
-      "id": "silverhop",
-      "name": "Silverhop",
-      "line": "rabbit-metal",
-      "animal": "rabbit",
+      "id": "silverwhisker",
+      "name": "Silverwhisker",
+      "line": "cat-metal",
+      "animal": "cat",
       "element": "metal",
       "native": false,
       "kind": "zodiac",
-      "family": "lagomorph",
+      "family": "feline",
       "stage": 2,
       "stage_name": "Adept",
-      "evolves_from": "frostbun",
-      "evolves_to": "kratayo",
+      "evolves_from": "frostkitten",
+      "evolves_to": "maewthong",
       "playable": true,
-      "habitat": "Moonlit mountain shrines.",
-      "description": "A long-legged hare with a metallic sheen and ears like polished blades.",
+      "habitat": "Merchant houses, moonlit shrines.",
+      "description": "A long-legged silver cat with a metallic sheen and whiskers that ring faintly when it hunts.",
       "physical": {
         "measure": "length",
         "weight_kg": {
           "distribution": "truncated_normal",
-          "mean": 9.45,
-          "sd": 1.13,
-          "min": 6.05,
-          "p95": 11.3,
-          "p99": 12.1,
-          "upper": 12.9
+          "mean": 6.3,
+          "sd": 0.756,
+          "min": 4.03,
+          "p95": 7.54,
+          "p99": 8.06,
+          "upper": 8.57
         },
         "length_cm": {
           "distribution": "truncated_normal",
-          "mean": 75,
-          "sd": 4.5,
-          "min": 61.5,
-          "p95": 82.4,
-          "p99": 85.5,
-          "upper": 88.5
+          "mean": 90,
+          "sd": 5.4,
+          "min": 73.8,
+          "p95": 98.9,
+          "p99": 103,
+          "upper": 106
         }
       },
       "characteristics": {
         "temperaments": [
           {
-            "id": "gentle",
+            "id": "curious",
             "weight": 30
           },
           {
-            "id": "playful",
-            "weight": 30
-          },
-          {
-            "id": "wary",
+            "id": "sly",
             "weight": 25
           },
           {
-            "id": "curious",
-            "weight": 15
+            "id": "serene",
+            "weight": 25
+          },
+          {
+            "id": "playful",
+            "weight": 20
           }
         ],
         "markings": [
@@ -8723,15 +8723,15 @@
             "weight": 20
           },
           {
-            "id": "moon-eyed",
+            "id": "gold-eyed",
             "weight": 5
           }
         ],
         "quirks": [
-          "Thumps a hind foot when a friend is in danger.",
-          "Pounds the ground in rhythm under a full moon.",
-          "Collects four-leaf clovers.",
-          "Always sleeps facing the moon."
+          "Sits in any circle drawn on the ground.",
+          "Watches the moon for hours without blinking.",
+          "Brings small gifts to the people it likes.",
+          "Always lands on its feet, and looks smug about it."
         ],
         "moonmarked_chance": "1/1024"
       },
@@ -8740,29 +8740,33 @@
         "story_only": false,
         "difficulty": "Hard",
         "favoured_offerings": [
-          "rice cakes",
-          "clover",
-          "sweet osmanthus"
+          "dried fish",
+          "a warm windowsill",
+          "catnip"
         ],
         "dislikes": [
-          "shouting",
-          "being picked up"
+          "closed doors",
+          "being hurried"
         ]
       },
       "control": {
-        "command_dc": 13,
-        "difficulty": "Moderate",
-        "disobeys_when": "Ordered to attack a foe that is already beaten."
+        "command_dc": 15,
+        "difficulty": "Hard",
+        "disobeys_when": "It would rather be somewhere else, which it will make clear."
       },
-      "lore": "A Silverhop's leap can clear a temple wall. Shrine guards consider this a security problem; the Silverhops consider it exercise.",
+      "lore": "A Silverwhisker can clear a temple wall in one leap. Shrine guards consider this a security problem; the Silverwhiskers consider it exercise.",
       "folklore_sources": [
         {
-          "region": "China, Japan, Korea",
-          "tradition": "The rabbit in the moon pounding with a mortar and pestle (the elixir of life in China; rice cakes, mochi or tteok, in Japan and Korea)."
+          "region": "Thailand",
+          "tradition": "The Cat-Book Poems (Tamra Maew), which name copper- and gold-coated cats among the luckiest a household can keep."
         },
         {
-          "region": "South and Southeast Asia",
-          "tradition": "The Buddhist Śaśa Jātaka, in which a rabbit offers itself as food to a hungry traveller, who places its image on the moon in gratitude."
+          "region": "Vietnam",
+          "tradition": "In the Vietnamese zodiac (12 con giáp) the Cat (Mèo) takes the fourth place held by the Rabbit elsewhere; a common explanation is that the old name of the year, Mão, sounded like mèo, \"cat\"."
+        },
+        {
+          "region": "Thailand",
+          "tradition": "The Cat-Book Poems (Tamra Maew), which describe lucky cats and the fortune they bring to a household."
         }
       ],
       "armour": {
@@ -8809,60 +8813,60 @@
       }
     },
     {
-      "id": "kratayo",
-      "name": "Kratayo",
-      "line": "rabbit-metal",
-      "animal": "rabbit",
+      "id": "maewthong",
+      "name": "Maewthong",
+      "line": "cat-metal",
+      "animal": "cat",
       "element": "metal",
       "native": false,
       "kind": "zodiac",
-      "family": "lagomorph",
+      "family": "feline",
       "stage": 3,
       "stage_name": "Sovereign",
-      "epithet": "The Silver Mortar",
-      "evolves_from": "silverhop",
+      "epithet": "The Fortune Paw",
+      "evolves_from": "silverwhisker",
       "evolves_to": null,
       "playable": true,
-      "habitat": "Moonlit mountain shrines.",
-      "description": "A slender hare of moon-bright silver carrying a mortar and pestle of hammered metal.",
+      "habitat": "Merchant houses, moonlit shrines.",
+      "description": "A slender cat of moon-bright silver with gold-tipped ears, one paw raised in greeting.",
       "physical": {
         "measure": "length",
         "weight_kg": {
           "distribution": "truncated_normal",
-          "mean": 31.5,
-          "sd": 3.78,
-          "min": 20.2,
-          "p95": 37.7,
-          "p99": 40.3,
-          "upper": 42.8
+          "mean": 47.3,
+          "sd": 5.67,
+          "min": 30.2,
+          "p95": 56.6,
+          "p99": 60.4,
+          "upper": 64.3
         },
         "length_cm": {
           "distribution": "truncated_normal",
-          "mean": 120,
-          "sd": 7.2,
-          "min": 98.4,
-          "p95": 132,
-          "p99": 137,
-          "upper": 142
+          "mean": 170,
+          "sd": 10.2,
+          "min": 139,
+          "p95": 187,
+          "p99": 194,
+          "upper": 201
         }
       },
       "characteristics": {
         "temperaments": [
           {
-            "id": "gentle",
+            "id": "curious",
             "weight": 30
           },
           {
-            "id": "playful",
-            "weight": 30
-          },
-          {
-            "id": "wary",
+            "id": "sly",
             "weight": 25
           },
           {
-            "id": "curious",
-            "weight": 15
+            "id": "serene",
+            "weight": 25
+          },
+          {
+            "id": "playful",
+            "weight": 20
           }
         ],
         "markings": [
@@ -8879,15 +8883,15 @@
             "weight": 20
           },
           {
-            "id": "moon-eyed",
+            "id": "gold-eyed",
             "weight": 5
           }
         ],
         "quirks": [
-          "Thumps a hind foot when a friend is in danger.",
-          "Pounds the ground in rhythm under a full moon.",
-          "Collects four-leaf clovers.",
-          "Always sleeps facing the moon."
+          "Sits in any circle drawn on the ground.",
+          "Watches the moon for hours without blinking.",
+          "Brings small gifts to the people it likes.",
+          "Always lands on its feet, and looks smug about it."
         ],
         "moonmarked_chance": "1/1024"
       },
@@ -8896,29 +8900,33 @@
         "story_only": true,
         "difficulty": "Story only",
         "favoured_offerings": [
-          "rice cakes",
-          "clover",
-          "sweet osmanthus"
+          "dried fish",
+          "a warm windowsill",
+          "catnip"
         ],
         "dislikes": [
-          "shouting",
-          "being picked up"
+          "closed doors",
+          "being hurried"
         ]
       },
       "control": {
-        "command_dc": 17,
-        "difficulty": "Hard",
-        "disobeys_when": "Ordered to attack a foe that is already beaten."
+        "command_dc": 19,
+        "difficulty": "Very hard",
+        "disobeys_when": "It would rather be somewhere else, which it will make clear."
       },
-      "lore": "Kratayo pounds the moonlight into silver dust and scatters it over sleeping villages, and anyone who breathes it wakes a little wiser. It is precise in everything, and it has never once spilled a grain of the moonlight it was trusted with.",
+      "lore": "Merchants in the Hour of the Cat keep a silver cat by the door for luck, but only one shop ever has Maewthong herself. She chooses a new one each year: always the kindest, never the richest. The shop she leaves keeps a little of its luck, out of courtesy.",
       "folklore_sources": [
         {
-          "region": "China, Japan, Korea",
-          "tradition": "The rabbit in the moon pounding with a mortar and pestle (the elixir of life in China; rice cakes, mochi or tteok, in Japan and Korea)."
+          "region": "Thailand",
+          "tradition": "The Cat-Book Poems (Tamra Maew), which name copper- and gold-coated cats among the luckiest a household can keep."
         },
         {
-          "region": "South and Southeast Asia",
-          "tradition": "The Buddhist Śaśa Jātaka, in which a rabbit offers itself as food to a hungry traveller, who places its image on the moon in gratitude."
+          "region": "Vietnam",
+          "tradition": "In the Vietnamese zodiac (12 con giáp) the Cat (Mèo) takes the fourth place held by the Rabbit elsewhere; a common explanation is that the old name of the year, Mão, sounded like mèo, \"cat\"."
+        },
+        {
+          "region": "Thailand",
+          "tradition": "The Cat-Book Poems (Tamra Maew), which describe lucky cats and the fortune they bring to a household."
         }
       ],
       "armour": {
@@ -8969,21 +8977,21 @@
       }
     },
     {
-      "id": "dewbun",
-      "name": "Dewbun",
-      "line": "rabbit-water",
-      "animal": "rabbit",
+      "id": "dewkitten",
+      "name": "Dewkitten",
+      "line": "cat-water",
+      "animal": "cat",
       "element": "water",
       "native": false,
       "kind": "zodiac",
-      "family": "lagomorph",
+      "family": "feline",
       "stage": 1,
       "stage_name": "Kit",
       "evolves_from": null,
-      "evolves_to": "mistleap",
+      "evolves_to": "mistwhisker",
       "playable": true,
-      "habitat": "Riverbanks, misty lakes.",
-      "description": "A small, damp-furred rabbit covered in morning dew that never dries.",
+      "habitat": "Riverbanks, misty lakes, fishing piers.",
+      "description": "A small, damp-furred grey kitten that doesn't mind the rain at all.",
       "physical": {
         "measure": "length",
         "weight_kg": {
@@ -9008,20 +9016,20 @@
       "characteristics": {
         "temperaments": [
           {
-            "id": "gentle",
+            "id": "curious",
             "weight": 30
           },
           {
-            "id": "playful",
-            "weight": 30
-          },
-          {
-            "id": "wary",
+            "id": "sly",
             "weight": 25
           },
           {
-            "id": "curious",
-            "weight": 15
+            "id": "serene",
+            "weight": 25
+          },
+          {
+            "id": "playful",
+            "weight": 20
           }
         ],
         "markings": [
@@ -9043,10 +9051,10 @@
           }
         ],
         "quirks": [
-          "Thumps a hind foot when a friend is in danger.",
-          "Pounds the ground in rhythm under a full moon.",
-          "Collects four-leaf clovers.",
-          "Always sleeps facing the moon."
+          "Sits in any circle drawn on the ground.",
+          "Watches the moon for hours without blinking.",
+          "Brings small gifts to the people it likes.",
+          "Always lands on its feet, and looks smug about it."
         ],
         "moonmarked_chance": "1/1024"
       },
@@ -9055,33 +9063,29 @@
         "story_only": false,
         "difficulty": "Moderate",
         "favoured_offerings": [
-          "rice cakes",
-          "clover",
-          "sweet osmanthus"
+          "dried fish",
+          "a warm windowsill",
+          "catnip"
         ],
         "dislikes": [
-          "shouting",
-          "being picked up"
+          "closed doors",
+          "being hurried"
         ]
       },
       "control": {
-        "command_dc": 9,
-        "difficulty": "Easy",
-        "disobeys_when": "Ordered to attack a foe that is already beaten."
+        "command_dc": 11,
+        "difficulty": "Moderate",
+        "disobeys_when": "It would rather be somewhere else, which it will make clear."
       },
-      "lore": "Dewbuns drink only dew. A meadow they visit is always green, even in drought.",
+      "lore": "Dewkittens paddle in puddles and chase raindrops. Fishers say a Dewkitten on the pier means a good catch.",
       "folklore_sources": [
         {
           "region": "Vietnam",
-          "tradition": "In the Vietnamese zodiac the Cat takes the Rabbit's place, the origin of rumours about a lost Moon Cat."
+          "tradition": "In the Vietnamese zodiac (12 con giáp) the Cat (Mèo) takes the fourth place held by the Rabbit elsewhere; a common explanation is that the old name of the year, Mão, sounded like mèo, \"cat\"."
         },
         {
-          "region": "China, Japan, Korea",
-          "tradition": "The rabbit in the moon pounding with a mortar and pestle (the elixir of life in China; rice cakes, mochi or tteok, in Japan and Korea)."
-        },
-        {
-          "region": "South and Southeast Asia",
-          "tradition": "The Buddhist Śaśa Jātaka, in which a rabbit offers itself as food to a hungry traveller, who places its image on the moon in gratitude."
+          "region": "Thailand",
+          "tradition": "The Cat-Book Poems (Tamra Maew), which describe lucky cats and the fortune they bring to a household."
         }
       ],
       "armour": {
@@ -9120,59 +9124,59 @@
       }
     },
     {
-      "id": "mistleap",
-      "name": "Mistleap",
-      "line": "rabbit-water",
-      "animal": "rabbit",
+      "id": "mistwhisker",
+      "name": "Mistwhisker",
+      "line": "cat-water",
+      "animal": "cat",
       "element": "water",
       "native": false,
       "kind": "zodiac",
-      "family": "lagomorph",
+      "family": "feline",
       "stage": 2,
       "stage_name": "Adept",
-      "evolves_from": "dewbun",
-      "evolves_to": "thohai",
+      "evolves_from": "dewkitten",
+      "evolves_to": "meohai",
       "playable": true,
-      "habitat": "Riverbanks, misty lakes.",
-      "description": "A grey hare that fades into river fog when it runs.",
+      "habitat": "Riverbanks, misty lakes, fishing piers.",
+      "description": "A grey cat that fades into river fog when it pads along the bank.",
       "physical": {
         "measure": "length",
         "weight_kg": {
           "distribution": "truncated_normal",
-          "mean": 8.55,
-          "sd": 1.03,
-          "min": 5.47,
-          "p95": 10.2,
-          "p99": 10.9,
-          "upper": 11.6
+          "mean": 5.7,
+          "sd": 0.684,
+          "min": 3.65,
+          "p95": 6.83,
+          "p99": 7.29,
+          "upper": 7.75
         },
         "length_cm": {
           "distribution": "truncated_normal",
-          "mean": 75,
-          "sd": 4.5,
-          "min": 61.5,
-          "p95": 82.4,
-          "p99": 85.5,
-          "upper": 88.5
+          "mean": 90,
+          "sd": 5.4,
+          "min": 73.8,
+          "p95": 98.9,
+          "p99": 103,
+          "upper": 106
         }
       },
       "characteristics": {
         "temperaments": [
           {
-            "id": "gentle",
+            "id": "curious",
             "weight": 30
           },
           {
-            "id": "playful",
-            "weight": 30
-          },
-          {
-            "id": "wary",
+            "id": "sly",
             "weight": 25
           },
           {
-            "id": "curious",
-            "weight": 15
+            "id": "serene",
+            "weight": 25
+          },
+          {
+            "id": "playful",
+            "weight": 20
           }
         ],
         "markings": [
@@ -9194,10 +9198,10 @@
           }
         ],
         "quirks": [
-          "Thumps a hind foot when a friend is in danger.",
-          "Pounds the ground in rhythm under a full moon.",
-          "Collects four-leaf clovers.",
-          "Always sleeps facing the moon."
+          "Sits in any circle drawn on the ground.",
+          "Watches the moon for hours without blinking.",
+          "Brings small gifts to the people it likes.",
+          "Always lands on its feet, and looks smug about it."
         ],
         "moonmarked_chance": "1/1024"
       },
@@ -9206,33 +9210,29 @@
         "story_only": false,
         "difficulty": "Hard",
         "favoured_offerings": [
-          "rice cakes",
-          "clover",
-          "sweet osmanthus"
+          "dried fish",
+          "a warm windowsill",
+          "catnip"
         ],
         "dislikes": [
-          "shouting",
-          "being picked up"
+          "closed doors",
+          "being hurried"
         ]
       },
       "control": {
-        "command_dc": 13,
-        "difficulty": "Moderate",
-        "disobeys_when": "Ordered to attack a foe that is already beaten."
+        "command_dc": 15,
+        "difficulty": "Hard",
+        "disobeys_when": "It would rather be somewhere else, which it will make clear."
       },
-      "lore": "Ferrymen hear a Mistleap's splash before every fog. They wait, and the fog clears exactly when the hare says it will.",
+      "lore": "Ferrymen see a Mistwhisker's eyes in the fog before every crossing. They wait, and the fog clears exactly when the cat blinks.",
       "folklore_sources": [
         {
           "region": "Vietnam",
-          "tradition": "In the Vietnamese zodiac the Cat takes the Rabbit's place, the origin of rumours about a lost Moon Cat."
+          "tradition": "In the Vietnamese zodiac (12 con giáp) the Cat (Mèo) takes the fourth place held by the Rabbit elsewhere; a common explanation is that the old name of the year, Mão, sounded like mèo, \"cat\"."
         },
         {
-          "region": "China, Japan, Korea",
-          "tradition": "The rabbit in the moon pounding with a mortar and pestle (the elixir of life in China; rice cakes, mochi or tteok, in Japan and Korea)."
-        },
-        {
-          "region": "South and Southeast Asia",
-          "tradition": "The Buddhist Śaśa Jātaka, in which a rabbit offers itself as food to a hungry traveller, who places its image on the moon in gratitude."
+          "region": "Thailand",
+          "tradition": "The Cat-Book Poems (Tamra Maew), which describe lucky cats and the fortune they bring to a household."
         }
       ],
       "armour": {
@@ -9279,60 +9279,60 @@
       }
     },
     {
-      "id": "thohai",
-      "name": "Thohai",
-      "line": "rabbit-water",
-      "animal": "rabbit",
+      "id": "meohai",
+      "name": "Meohai",
+      "line": "cat-water",
+      "animal": "cat",
       "element": "water",
       "native": false,
       "kind": "zodiac",
-      "family": "lagomorph",
+      "family": "feline",
       "stage": 3,
       "stage_name": "Sovereign",
-      "epithet": "The Tide Hare",
-      "evolves_from": "mistleap",
+      "epithet": "The Tide Cat",
+      "evolves_from": "mistwhisker",
       "evolves_to": null,
       "playable": true,
-      "habitat": "Riverbanks, misty lakes.",
-      "description": "A pale hare that skims across the water, its reflection a cat's.",
+      "habitat": "Riverbanks, misty lakes, fishing piers.",
+      "description": "A pale cat that walks across the water without sinking, its reflection a rabbit's.",
       "physical": {
         "measure": "length",
         "weight_kg": {
           "distribution": "truncated_normal",
-          "mean": 28.5,
-          "sd": 3.42,
-          "min": 18.2,
-          "p95": 34.1,
-          "p99": 36.5,
-          "upper": 38.8
+          "mean": 42.8,
+          "sd": 5.13,
+          "min": 27.4,
+          "p95": 51.2,
+          "p99": 54.7,
+          "upper": 58.1
         },
         "length_cm": {
           "distribution": "truncated_normal",
-          "mean": 120,
-          "sd": 7.2,
-          "min": 98.4,
-          "p95": 132,
-          "p99": 137,
-          "upper": 142
+          "mean": 170,
+          "sd": 10.2,
+          "min": 139,
+          "p95": 187,
+          "p99": 194,
+          "upper": 201
         }
       },
       "characteristics": {
         "temperaments": [
           {
-            "id": "gentle",
+            "id": "curious",
             "weight": 30
           },
           {
-            "id": "playful",
-            "weight": 30
-          },
-          {
-            "id": "wary",
+            "id": "sly",
             "weight": 25
           },
           {
-            "id": "curious",
-            "weight": 15
+            "id": "serene",
+            "weight": 25
+          },
+          {
+            "id": "playful",
+            "weight": 20
           }
         ],
         "markings": [
@@ -9354,10 +9354,10 @@
           }
         ],
         "quirks": [
-          "Thumps a hind foot when a friend is in danger.",
-          "Pounds the ground in rhythm under a full moon.",
-          "Collects four-leaf clovers.",
-          "Always sleeps facing the moon."
+          "Sits in any circle drawn on the ground.",
+          "Watches the moon for hours without blinking.",
+          "Brings small gifts to the people it likes.",
+          "Always lands on its feet, and looks smug about it."
         ],
         "moonmarked_chance": "1/1024"
       },
@@ -9366,38 +9366,34 @@
         "story_only": true,
         "difficulty": "Story only",
         "favoured_offerings": [
-          "rice cakes",
-          "clover",
-          "sweet osmanthus"
+          "dried fish",
+          "a warm windowsill",
+          "catnip"
         ],
         "dislikes": [
-          "shouting",
-          "being picked up"
+          "closed doors",
+          "being hurried"
         ]
       },
       "control": {
-        "command_dc": 17,
-        "difficulty": "Hard",
-        "disobeys_when": "Ordered to attack a foe that is already beaten."
+        "command_dc": 19,
+        "difficulty": "Very hard",
+        "disobeys_when": "It would rather be somewhere else, which it will make clear."
       },
-      "lore": "Look at Thohai's reflection and you will see a cat, not a hare. Thohai says this is the water's mistake. Others whisper that it once had a sister who was left out of the Twelve, and that it keeps her place on the water until she returns.",
+      "lore": "Look at Meohai's reflection and you will see a rabbit, not a cat. Meohai says this is the water's mistake. Others whisper that it ran the Great Race in the Rabbit's place and keeps the Rabbit's shape on the water, waiting for the day the Rabbit comes down from the moon.",
       "folklore_sources": [
         {
           "region": "Vietnam",
-          "tradition": "In the Vietnamese zodiac the Cat takes the Rabbit's place, the origin of rumours about a lost Moon Cat."
+          "tradition": "In the Vietnamese zodiac (12 con giáp) the Cat (Mèo) takes the fourth place held by the Rabbit elsewhere; a common explanation is that the old name of the year, Mão, sounded like mèo, \"cat\"."
         },
         {
-          "region": "China, Japan, Korea",
-          "tradition": "The rabbit in the moon pounding with a mortar and pestle (the elixir of life in China; rice cakes, mochi or tteok, in Japan and Korea)."
-        },
-        {
-          "region": "South and Southeast Asia",
-          "tradition": "The Buddhist Śaśa Jātaka, in which a rabbit offers itself as food to a hungry traveller, who places its image on the moon in gratitude."
+          "region": "Thailand",
+          "tradition": "The Cat-Book Poems (Tamra Maew), which describe lucky cats and the fortune they bring to a household."
         }
       ],
       "armour": {
         "body_plan": "clawed-quadruped",
-        "size": "small",
+        "size": "medium",
         "slots": [
           "head",
           "body",
@@ -9405,7 +9401,7 @@
           "tail",
           "charm"
         ],
-        "max_weight": "medium",
+        "max_weight": "heavy",
         "armour_types": [
           {
             "type": "quilted-coat",
@@ -9417,6 +9413,10 @@
           },
           {
             "type": "scale-sheath",
+            "fit": "adapted"
+          },
+          {
+            "type": "plate-barding",
             "fit": "adapted"
           },
           {

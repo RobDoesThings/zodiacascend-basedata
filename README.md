@@ -1,6 +1,6 @@
 # Zodiac Ascendant: Beasts of the Five Elements
 
-An original, open creature-collecting franchise built on the twelve animals of the Chinese zodiac and the five elements (Wu Xing). The same data drives three ways to play:
+An original, open creature-collecting franchise built on the twelve animals of the **Vietnamese zodiac** (12 con giáp, with the Water Buffalo and the Cat in place of the Ox and the Rabbit) and the five elements (Wu Xing). The same data drives three ways to play:
 
 - a **tabletop RPG** (d20, D&D-style),
 - a **trading card game**, and

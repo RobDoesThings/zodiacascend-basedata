@@ -29,9 +29,9 @@
       ]
     },
     "zodiac_animal": {
-      "description": "One of the twelve zodiac animals, in Great Race order.",
+      "description": "One of the twelve zodiac animals of the Vietnamese zodiac, in Great Race order.",
       "type": "string",
-      "enum": ["rat", "ox", "tiger", "rabbit", "dragon", "snake", "horse", "goat", "monkey", "rooster", "dog", "pig"]
+      "enum": ["rat", "buffalo", "tiger", "cat", "dragon", "snake", "horse", "goat", "monkey", "rooster", "dog", "pig"]
     },
     "size": {
       "type": "string",

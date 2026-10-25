@@ -1,4 +1,5 @@
-# DRAFT for review. The four non-native element lines of each zodiac animal (48 lines, 144
+# DRAFT for review. The four non-native element lines of each zodiac animal (Vietnamese zodiac:
+# the Water Buffalo and the Cat in place of the Ox and the Rabbit) (48 lines, 144
 # species). The native line of each animal (its canon Kit → Adept → Sovereign) lives in
 # zodiac.yaml. A line here inherits its animal's family, quirks, offerings, dislikes and
 # folklore from zodiac.yaml; it sets its own markings, habitat and (optionally) temperaments.
@@ -97,50 +98,50 @@ lines:
           is. It lends to the desperate at no interest and to the greedy at ruinous rates, and it has
           never once misjudged which is which. Its hoard rings like a temple bell when it walks.
 
-  # ======================================================== OX (native Earth: Gyuurok)
-  - animal: ox
+  # ======================================================== BUFFALO (native Earth: Gyuurok)
+  - animal: buffalo
     element: wood
     habitat: Spring pastures, bamboo valleys.
     markings: { moss-brown: 40, leaf-green: 30, bark-grey: 25, flower-horned: 5 }
     stages:
       - id: leafcalf
         name: Leafcalf
-        description: A gentle calf whose budding horns sprout tiny green leaves.
+        description: A gentle buffalo calf whose budding horns sprout tiny green leaves.
         lore: Leafcalves eat only fallen leaves, never living ones. Orchards welcome them in autumn and gently shoo them in spring.
       - id: thicketyoke
         name: Thicketyoke
-        description: A strong ox with a living hedge of bramble across its shoulders.
+        description: A strong water buffalo with a living hedge of bramble across its shoulders.
         lore: A Thicketyoke can pull a stump out of the ground and then plant the sapling that replaces it. Woodcutters' villages keep one as a conscience.
       - id: niushan
         name: Niushan
         epithet: The Green Pasture
-        description: A towering ox whose back is a meadow of grass and wildflowers, horns wound with vines.
+        description: A towering water buffalo whose back is a meadow of grass and wildflowers, its swept-back horns wound with vines.
         lore: >-
           Where Niushan lies down to rest, a pasture grows. Its herd has never known a hungry spring,
           because Niushan carries the spring with it. It is the slowest Sovereign in the Twelve Hours
           and the most patient, and it believes that anything worth growing is worth waiting for.
-  - animal: ox
+  - animal: buffalo
     element: fire
     habitat: Kiln villages, volcanic plains.
     markings: { kiln-red: 40, soot-black: 30, ash-grey: 25, ember-horned: 5 }
     stages:
       - id: kilncalf
         name: Kilncalf
-        description: A sturdy red calf whose breath steams on the coldest mornings.
+        description: A sturdy red buffalo calf whose breath steams on the coldest mornings.
         lore: Kilncalves sleep against kiln walls for warmth and keep the fires steady through the night. Potters swear their glazes come out better for it.
-      - id: forgebull
-        name: Forgebull
-        description: A heavy bull whose hide glows like cooling iron along its flanks.
-        lore: A Forgebull can turn a millstone for three days without rest. Smiths say its breath alone can soften a blade.
-      - id: lembara
-        name: Lembara
+      - id: forgehorn
+        name: Forgehorn
+        description: A heavy bull buffalo whose hide glows like cooling iron along its flanks.
+        lore: A Forgehorn can turn a millstone for three days without rest. Smiths say its breath alone can soften a blade.
+      - id: kerbara
+        name: Kerbara
         epithet: The Furnace Yoke
-        description: A colossal bull of black hide and molten veins, its horns glowing white at the tips.
+        description: A colossal buffalo of black hide and molten veins, its great crescent horns glowing white at the tips.
         lore: >-
-          Lembara pulls the sun's chariot up from the horizon each morning, or so the kiln villages
+          Kerbara pulls the sun's chariot up from the horizon each morning, or so the kiln villages
           believe, and the red sky at dawn is its breath. It is fierce in battle and gentle at the
           forge, and it has never refused to pull a load that someone else could not carry.
-  - animal: ox
+  - animal: buffalo
     element: metal
     habitat: River dykes, mountain mines.
     markings: { bronze: 40, iron-grey: 35, verdigris: 20, gold-horned: 5 }
@@ -150,27 +151,24 @@ lines:
     stages:
       - id: bellcalf
         name: Bellcalf
-        description: A small calf with a bronze sheen to its coat and a bell-shaped dewlap.
+        description: A small buffalo calf with a bronze sheen to its coat and a bell on its neck.
         lore: Bellcalves ring faintly when they run. Herders never lose them, and neither do wolves, which is a problem.
       - id: ironplough
         name: Ironplough
-        description: A broad ox with plough-blade horns of grey metal.
+        description: A broad water buffalo with plough-blade horns of grey metal.
         lore: An Ironplough can break ground no other beast can. Terrace builders measure their work by how many Ironplough-days it took.
-      - id: wuarak
-        name: Wuarak
+      - id: khwairak
+        name: Khwairak
         epithet: The Bronze Ward
-        description: A massive ox of green-patinated bronze who stands motionless beside a river.
+        description: A massive water buffalo of green-patinated bronze who stands motionless beside a river.
         lore: >-
-          Bronze oxen once stood beside rivers to hold back the floods, and Wuarak says it is the
+          Bronze oxen once stood beside rivers to hold back the floods, and Khwairak says it is the
           first of them, come to life. It can stand guard on a dyke for a hundred years without
           moving. When the water rises, it lowers its horns, and the river turns back.
-  - animal: ox
+  - animal: buffalo
     element: water
     habitat: Flooded paddies, slow rivers, delta islands.
     markings: { slate-black: 45, river-grey: 30, pale-pink: 20, white-chevroned: 5 }
-    folklore_sources:
-      - region: Vietnam
-        tradition: In the Vietnamese zodiac the water buffalo (trâu) takes the place of the ox, honoured as the farmer's closest partner in the paddy.
     stages:
       - id: reedcalf
         name: Reedcalf
@@ -185,7 +183,7 @@ lines:
         epithet: The River Buffalo
         description: A vast water buffalo with horns like a crescent moon, lotus flowers floating around its legs.
         lore: >-
-          In the Hour of the Ox the rivers flood every year, and every year Traurun walks out into the
+          In the Hour of the Buffalo the rivers flood every year, and every year Traurun walks out into the
           water and lies down, and the flood spreads gently over the fields instead of tearing them
           away. Farmers sing to it at planting. It sings back, a low note that carries for miles
           across the flooded paddies.
@@ -281,94 +279,94 @@ lines:
           fishing villages as its own cubs: it guards them fiercely and expects, in return, a little
           of everything they catch.
 
-  # ======================================================== RABBIT (native Wood: Usagetsu)
-  - animal: rabbit
+  # ======================================================== CAT (native Wood: Meonguyet)
+  - animal: cat
     element: fire
-    habitat: Festival grounds, warm hillsides.
-    markings: { lantern-red: 40, apricot: 30, cream-white: 25, gold-eared: 5 }
+    habitat: Festival rooftops, warm kitchens.
+    markings: { lantern-red: 40, apricot: 30, cream-white: 25, gold-eyed: 5 }
     stages:
-      - id: kindlebun
-        name: Kindlebun
-        description: A small rabbit whose ear tips glow like paper lanterns.
-        lore: Kindlebuns gather where lanterns are lit and hop between them like sparks. Festival children try to catch them and never manage it.
-      - id: lanternhare
-        name: Lanternhare
-        description: A long-eared hare carrying a faint glow in its fur, bright enough to read by.
-        lore: A Lanternhare guides travellers home on moonless nights, always staying just far enough ahead to follow.
-      - id: tokkiran
-        name: Tokkiran
+      - id: lanternkit
+        name: Lanternkit
+        description: A small ginger kitten whose ear tips glow like paper lanterns.
+        lore: Lanternkits gather where lanterns are lit and leap between them like sparks. Festival children try to catch them and never manage it.
+      - id: hearthmouser
+        name: Hearthmouser
+        description: A lithe red cat carrying a faint warm glow in its fur, bright enough to read by.
+        lore: A Hearthmouser keeps a kitchen free of pests and warm all night. It guides travellers home on moonless nights, always just far enough ahead to follow.
+      - id: goyanghwa
+        name: Goyanghwa
         epithet: The Lantern Moon
-        description: A tall hare of warm amber light, a lantern-moon glowing between its ears.
+        description: A tall cat of warm amber light, a lantern-moon glowing between its ears.
         lore: >-
-          On the one night a year when the moon does not rise, Tokkiran rises in its place, and the
-          festival lanterns light themselves to greet it. It pounds medicine like its moon-bound
-          cousin, but its medicine is warmth: for the cold, the lonely and the frightened.
-  - animal: rabbit
+          On the one night a year when the moon does not rise, Goyanghwa climbs the highest roof in
+          its place, and the festival lanterns light themselves to greet it. Its medicine is warmth:
+          for the cold, the lonely and the frightened, it curls up beside them until morning.
+  - animal: cat
     element: earth
-    habitat: Dry meadows, hill warrens.
-    markings: { sand-brown: 45, earth-brown: 30, dust-grey: 20, white-tailed: 5 }
+    habitat: Granaries, temple storehouses.
+    markings: { sand-brown: 45, earth-brown: 30, tabby-striped: 20, white-pawed: 5 }
     stages:
-      - id: dunebun
-        name: Dunebun
-        description: A sandy little rabbit with oversized feet for digging.
-        lore: Dunebuns dig warrens with a hundred doors. Foxes give up; the Dunebuns are always out of a different one.
-      - id: burrowhare
-        name: Burrowhare
-        description: A sturdy hare with earth-stained paws and an alert, patient face.
-        lore: A Burrowhare's warren can shelter a whole village in a storm. It expects guests to wipe their feet.
-      - id: arnavel
-        name: Arnavel
-        epithet: The Deep Warren
-        description: A broad, calm hare with a coat like rich soil and eyes like polished agate.
+      - id: dustkitten
+        name: Dustkitten
+        description: A sandy tabby kitten with oversized paws and a serious face.
+        lore: Dustkittens are born in granaries and guard them before their eyes have fully opened. A granary with a Dustkitten never loses a grain to mice.
+      - id: granarymouser
+        name: Granary Mouser
+        description: A sturdy tabby cat with earth-stained paws and an alert, patient stare.
+        lore: A Granary Mouser can sit by a mousehole for a whole day. Farmers pay it in fish and say it earns every one.
+      - id: kucinara
+        name: Kucinara
+        epithet: The Granary Guardian
+        description: A broad, calm tabby cat with a coat like rich soil and eyes like polished agate, curled on a mound of rice sacks.
         lore: >-
-          Arnavel's warren runs beneath the whole of the Hour of the Rabbit, and it knows every
-          tunnel. In wartime it hides the helpless; in peace it hides seeds against the next famine.
-          It is the gentlest Sovereign, and the hardest to find when it does not wish to be found.
-  - animal: rabbit
+          Kucinara guards every granary in the Hour of the Cat, and no famine has ever begun on its
+          watch. The Rat and Kucinara have an old understanding: the Rat may take one grain in ten,
+          and not one grain more, and both of them keep count.
+  - animal: cat
     element: metal
-    habitat: Moonlit mountain shrines.
-    markings: { silver: 45, frost-white: 30, slate-grey: 20, moon-eyed: 5 }
-    stages:
-      - id: frostbun
-        name: Frostbun
-        description: A small silver-white rabbit whose breath frosts the grass it hops through.
-        lore: Frostbuns appear on the first frost of autumn and vanish by spring. Finding their tracks is said to mean a good harvest next year.
-      - id: silverhop
-        name: Silverhop
-        description: A long-legged hare with a metallic sheen and ears like polished blades.
-        lore: A Silverhop's leap can clear a temple wall. Shrine guards consider this a security problem; the Silverhops consider it exercise.
-      - id: kratayo
-        name: Kratayo
-        epithet: The Silver Mortar
-        description: A slender hare of moon-bright silver carrying a mortar and pestle of hammered metal.
-        lore: >-
-          Kratayo pounds the moonlight into silver dust and scatters it over sleeping villages, and
-          anyone who breathes it wakes a little wiser. It is precise in everything, and it has never
-          once spilled a grain of the moonlight it was trusted with.
-  - animal: rabbit
-    element: water
-    habitat: Riverbanks, misty lakes.
-    markings: { dew-grey: 40, river-blue: 30, white: 25, silver-tipped: 5 }
+    habitat: Merchant houses, moonlit shrines.
+    markings: { silver: 45, frost-white: 30, slate-grey: 20, gold-eyed: 5 }
     folklore_sources:
-      - region: Vietnam
-        tradition: In the Vietnamese zodiac the Cat takes the Rabbit's place, the origin of rumours about a lost Moon Cat.
+      - region: Thailand
+        tradition: The Cat-Book Poems (Tamra Maew), which name copper- and gold-coated cats among the luckiest a household can keep.
     stages:
-      - id: dewbun
-        name: Dewbun
-        description: A small, damp-furred rabbit covered in morning dew that never dries.
-        lore: Dewbuns drink only dew. A meadow they visit is always green, even in drought.
-      - id: mistleap
-        name: Mistleap
-        description: A grey hare that fades into river fog when it runs.
-        lore: Ferrymen hear a Mistleap's splash before every fog. They wait, and the fog clears exactly when the hare says it will.
-      - id: thohai
-        name: Thohai
-        epithet: The Tide Hare
-        description: A pale hare that skims across the water, its reflection a cat's.
+      - id: frostkitten
+        name: Frostkitten
+        description: A small silver-white kitten whose breath frosts the windowpane it sits behind.
+        lore: Frostkittens appear on the first frost of autumn. Finding one on your step is said to mean a good harvest next year.
+      - id: silverwhisker
+        name: Silverwhisker
+        description: A long-legged silver cat with a metallic sheen and whiskers that ring faintly when it hunts.
+        lore: A Silverwhisker can clear a temple wall in one leap. Shrine guards consider this a security problem; the Silverwhiskers consider it exercise.
+      - id: maewthong
+        name: Maewthong
+        epithet: The Fortune Paw
+        description: A slender cat of moon-bright silver with gold-tipped ears, one paw raised in greeting.
         lore: >-
-          Look at Thohai's reflection and you will see a cat, not a hare. Thohai says this is the
-          water's mistake. Others whisper that it once had a sister who was left out of the Twelve,
-          and that it keeps her place on the water until she returns.
+          Merchants in the Hour of the Cat keep a silver cat by the door for luck, but only one shop
+          ever has Maewthong herself. She chooses a new one each year: always the kindest, never the
+          richest. The shop she leaves keeps a little of its luck, out of courtesy.
+  - animal: cat
+    element: water
+    habitat: Riverbanks, misty lakes, fishing piers.
+    markings: { dew-grey: 40, river-blue: 30, white: 25, silver-tipped: 5 }
+    stages:
+      - id: dewkitten
+        name: Dewkitten
+        description: A small, damp-furred grey kitten that doesn't mind the rain at all.
+        lore: Dewkittens paddle in puddles and chase raindrops. Fishers say a Dewkitten on the pier means a good catch.
+      - id: mistwhisker
+        name: Mistwhisker
+        description: A grey cat that fades into river fog when it pads along the bank.
+        lore: Ferrymen see a Mistwhisker's eyes in the fog before every crossing. They wait, and the fog clears exactly when the cat blinks.
+      - id: meohai
+        name: Meohai
+        epithet: The Tide Cat
+        description: A pale cat that walks across the water without sinking, its reflection a rabbit's.
+        lore: >-
+          Look at Meohai's reflection and you will see a rabbit, not a cat. Meohai says this is the
+          water's mistake. Others whisper that it ran the Great Race in the Rabbit's place and keeps
+          the Rabbit's shape on the water, waiting for the day the Rabbit comes down from the moon.
 
   # ======================================================== DRAGON (native Earth: Ryuuten)
   - animal: dragon

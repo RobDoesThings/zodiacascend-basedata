@@ -24,7 +24,7 @@ lines:
       - region: China
         tradition: The folk saying "the Rat bit open the heavens" (鼠咬天开), in which the Rat gnawed through primordial chaos at the hour of Zi so that air and light could enter.
       - region: China
-        tradition: The Great Race, in which the Rat rode the Ox across the river and leapt ahead at the finish.
+        tradition: The Great Race, in which the Rat rode the Buffalo (the Ox, in the Chinese telling) across the river and leapt ahead at the finish.
       - region: Japan
         tradition: Rats as messengers of Daikokuten, a god of plenty and the harvest.
     stages:
@@ -65,63 +65,64 @@ lines:
           heir. It holds court in the hour between days, where nothing is quite yesterday or
           tomorrow, and every one of its echoes swears to be the real one.
 
-  - id: ox
+  - id: buffalo
     native_element: earth
     family: bovine
     command_dc_mod: 1
     temperaments: { stubborn: 30, serene: 25, devoted: 25, lazy: 20 }
-    markings: { earth-brown: 45, slate-grey: 30, white-blaze: 20, bronze-horned: 5 }
+    markings: { slate-black: 45, mud-grey: 30, white-chevroned: 20, bronze-horned: 5 }
     quirks:
       - Will not cross a bridge it hasn't seen another beast cross first.
       - Hums a low note while it works.
       - Lets small beasts ride on its back without complaint.
-      - Refuses to eat until everyone else has eaten.
-    favoured_offerings: [fresh hay, sweet potato, a scratch behind the horns]
+      - Wallows in the nearest mud at noon, whatever else is happening.
+    favoured_offerings: [rice straw, sweet potato, a scratch behind the horns]
     dislikes: [being hurried, loud drums]
     disobeys_when: Ordered to abandon ground it has been told to hold.
     folklore_sources:
-      - region: China
-        tradition: The Cowherd and the Weaver Girl, in which a wise old ox tells the cowherd to keep its hide after it dies, and the hide lets him fly to the heavens. Celebrated at Qixi.
-      - region: Thailand and Cambodia
-        tradition: The Royal Ploughing Ceremony, where sacred oxen are offered seven foods (rice, maize, beans, sesame, grass, water and liquor) and their choices are read as a forecast for the harvest.
-      - region: China
-        tradition: The Spring Ox of clay struck at Lichun to welcome the farming year.
+      - region: Vietnam
+        tradition: In the Vietnamese zodiac (12 con giáp) the water buffalo (trâu) holds the second place, and the proverb "con trâu là đầu cơ nghiệp" calls the buffalo the foundation of a family's livelihood.
+      - region: Vietnam and China
+        tradition: The Cowherd and the Weaver Girl (Ngưu Lang Chức Nữ), whose tears at their yearly meeting fall as the "mưa ngâu" rains of the seventh lunar month; the cowherd's faithful beast helps him reach the heavens.
+      - region: Southeast Asia
+        tradition: The water buffalo (trâu, kerbau, carabao, khwai) as the rice farmer's partner across the region, honoured at planting and harvest.
     stages:
       - id: calfstone
         name: Calfstone
-        habitat: Terraced farms, river meadows.
-        weight_kg: 60
-        size_cm: 80
+        habitat: Paddy fields, river meadows.
+        weight_kg: 90
+        size_cm: 85
         measure: shoulder
-        description: A stocky calf with pebble-smooth hide and horn buds like river stones.
+        description: A stocky buffalo calf with pebble-smooth slate hide and horn buds like river stones.
         lore: >-
-          Calfstones follow ploughs for days without tiring and sleep standing up. Farm children
-          lean on them to rest; a Calfstone that lets you lean on it has decided you are family.
+          Calfstones follow ploughs through the flooded paddies for days without tiring and sleep
+          knee-deep in water. Farm children lean on them to rest; a Calfstone that lets you lean on
+          it has decided you are family.
       - id: plowhorn
         name: Plowhorn
         habitat: Paddy terraces, mountain passes.
-        weight_kg: 450
+        weight_kg: 550
         size_cm: 150
         measure: shoulder
-        description: A broad ox with a flat, blade-like horn sweep and hooves that leave furrows.
+        description: A broad water buffalo with long, swept-back crescent horns and hooves that leave furrows.
         lore: >-
           At planting festivals a Plowhorn is offered seven bowls. Villages read the year's harvest
           from the bowl it chooses, and they remember the years it chose only water.
       - id: gyuurok
         name: Gyuurok
         epithet: The Unbroken Yoke
-        habitat: The great terraces of the Hour of the Ox.
+        habitat: The great terraces of the Hour of the Buffalo.
         weight_kg: 1400
         size_cm: 220
         measure: shoulder
-        description: A mountainous ox whose back carries moss, shrines and the occasional sleeping village cat.
-        art_description: "A colossal, mountain-like ox standing calm and immovable, broad crescent horns of weathered stone, earth-brown hide with a white blaze. Its back is a living hillside of moss, small stone shrines and a sleeping cat. A thick wooden yoke rests on its neck, wound with a red vow-cord and a brass bell. Terraced rice fields stepping down golden hills behind it."
+        description: A mountainous water buffalo whose back carries moss, shrines and the occasional sleeping village cat.
+        art_description: "A colossal, mountain-like Asian water buffalo standing calm and immovable in shallow paddy water, enormous swept-back crescent horns curving out and up, dark slate-grey hide with a pale chevron on its throat. Its broad back is a living hillside of moss, small stone shrines and a sleeping cat. A thick wooden yoke rests on its neck, wound with a red vow-cord and a brass bell. Flooded rice terraces stepping down golden hills behind it."
         lore: >-
           Gyuurok carried the Rat across the river in the Great Race and finished second without a
           word of complaint. When asked why it never resented the trick, it said it had agreed to
           carry the Rat, and a promise kept is never a loss. Its yoke is not iron but a vow, and
-          no one has ever seen it break one. When it dies, the old songs say, its hide will lift a
-          faithful heart into the sky.
+          no one has ever seen it break one. Farmers say a family with a buffalo has a future, and
+          the whole Hour of the Buffalo is Gyuurok's family.
 
   - id: tiger
     native_element: wood
@@ -181,61 +182,63 @@ lines:
           it chose to remain a tiger. It keeps its strength behind gates of will, and opens them
           one by one only when it must, knowing each gate costs it something it cannot take back.
 
-  - id: rabbit
+  - id: cat
     native_element: wood
-    family: lagomorph
-    command_dc_mod: -1
-    temperaments: { gentle: 30, playful: 30, wary: 25, curious: 15 }
-    markings: { cotton-white: 45, dawn-grey: 30, clover-flecked: 20, moon-silver: 5 }
+    family: feline
+    command_dc_mod: 1
+    temperaments: { curious: 30, sly: 25, serene: 25, playful: 20 }
+    markings: { cotton-white: 45, moon-silver: 25, jade-eyed: 25, clover-flecked: 5 }
     quirks:
-      - Thumps a hind foot when a friend is in danger.
-      - Pounds the ground in rhythm under a full moon.
-      - Collects four-leaf clovers.
-      - Always sleeps facing the moon.
-    favoured_offerings: [rice cakes, clover, sweet osmanthus]
-    dislikes: [shouting, being picked up]
-    disobeys_when: Ordered to attack a foe that is already beaten.
+      - Sits in any circle drawn on the ground.
+      - Watches the moon for hours without blinking.
+      - Brings small gifts to the people it likes.
+      - Always lands on its feet, and looks smug about it.
+    favoured_offerings: [dried fish, a warm windowsill, catnip]
+    dislikes: [closed doors, being hurried]
+    disobeys_when: It would rather be somewhere else, which it will make clear.
     folklore_sources:
-      - region: China, Japan, Korea
-        tradition: The rabbit in the moon pounding with a mortar and pestle (the elixir of life in China; rice cakes, mochi or tteok, in Japan and Korea).
-      - region: South and Southeast Asia
-        tradition: The Buddhist Śaśa Jātaka, in which a rabbit offers itself as food to a hungry traveller, who places its image on the moon in gratitude.
+      - region: Vietnam
+        tradition: In the Vietnamese zodiac (12 con giáp) the Cat (Mèo) takes the fourth place held by the Rabbit elsewhere; a common explanation is that the old name of the year, Mão, sounded like mèo, "cat".
+      - region: Thailand
+        tradition: The Cat-Book Poems (Tamra Maew), which describe lucky cats and the fortune they bring to a household.
     stages:
       - id: mooncotton
         name: Mooncotton
-        habitat: Clover meadows, moonlit hillsides.
+        habitat: Clover meadows, moonlit rooftops.
         weight_kg: 2.5
         size_cm: 45
         measure: length
-        description: A round, fluffy rabbit whose fur glows faintly on clear nights.
+        description: A round, fluffy white kitten whose fur glows faintly on clear nights.
         lore: >-
-          Mooncottons gather in rings on full-moon nights and thump the ground in rhythm. Children
-          who join the rhythm are said to dream of the moon and wake with their scrapes healed.
-      - id: hareveil
-        name: Hareveil
+          Mooncottons gather on rooftops on full-moon nights and sit in a ring, purring in rhythm.
+          Children who fall asleep to the sound are said to dream of the moon and wake with their
+          scrapes healed.
+      - id: moonveil
+        name: Moonveil
         habitat: Mist-covered fields, mountain shrines.
-        weight_kg: 9
-        size_cm: 75
+        weight_kg: 6
+        size_cm: 90
         measure: length
-        description: A long-eared hare wrapped in a trailing veil of silver mist.
+        description: A long-tailed silver cat wrapped in a trailing veil of moonlit mist.
         lore: >-
-          A Hareveil vanishes into its mist when startled and reappears beside whoever needs help
-          most. Shrine-keepers leave out rice cakes for them and find the plates licked clean, with
-          a single clover left in thanks.
-      - id: usagetsu
-        name: Usagetsu
+          A Moonveil vanishes into its mist when startled and reappears on the lap of whoever needs
+          comfort most. Shrine-keepers leave out dried fish and find the plates licked clean, with a
+          single clover left in thanks.
+      - id: meonguyet
+        name: Meonguyet
         epithet: The Jade Moon
-        habitat: The silver groves of the Hour of the Rabbit.
-        weight_kg: 30
-        size_cm: 120
+        habitat: The silver groves of the Hour of the Cat.
+        weight_kg: 45
+        size_cm: 170
         measure: length
-        description: A tall, serene hare carrying a jade mortar and pestle, its eyes the colour of moonrise.
-        art_description: "A tall, serene white hare with long silver-tipped ears and eyes the colour of moonrise, standing upright beside a carved jade mortar and pestle that glows softly with healing light. Moonlight pours around it; tiny glowing clover leaves and rice-cake shapes drift in the air. Silver birch-like trees and a huge full moon in a quiet night garden."
+        description: A tall, serene white cat the size of a leopard, with jade eyes and a jade mortar beside it.
+        art_description: "A large, elegant white cat with long silky fur, a plumed tail and luminous jade-green eyes, sitting upright and serene beside a carved jade mortar and pestle that glows softly with healing light. Moonlight pours around it; tiny glowing clover leaves drift in the air. Silver birch-like trees and a huge full moon in a quiet night garden; in the face of the moon, the faint shape of a rabbit."
         lore: >-
-          A hungry traveller once came upon a rabbit with nothing to give, and the rabbit offered
-          itself instead. The traveller, who was more than a traveller, set the rabbit's likeness in
-          the moon. Usagetsu says it is that likeness, come down to finish the work. It pounds
-          medicine in its mortar every night and gives it freely, asking only that no one waste it.
+          They say the Rabbit was meant to run the Great Race but would not leave its mortar on the
+          moon, where it pounds medicine still. A white cat ran in its place, and the Hour has been
+          the Cat's ever since. Meonguyet keeps the Rabbit's work on earth: it carries a jade mortar,
+          pounds medicine every night and gives it freely. On clear nights it looks up and nods to
+          the shape in the moon.
 
   - id: dragon
     native_element: earth

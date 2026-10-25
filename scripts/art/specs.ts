@@ -60,9 +60,9 @@ const q = (p: Quad): Spec => ({ rig: "quad", p });
 // ---------------------------------------------------------------- zodiac lines (by line id)
 const ZODIAC: Record<string, Maker> = {
   rat: (s) => ({ spec: q({ len: 150, h: 58, leg: 26, legW: 12, head: s === 1 ? 36 : 30, snout: 26, neck: 0.1, ears: "round", tail: s === 3 ? "fork" : "thin" }) }),
-  ox: (s) => ({ spec: q({ len: 205, h: 105, leg: 50, legW: 24, head: 36, snout: 22, neck: 0, ears: "small", horns: s === 1 ? "short" : "crescent", tail: "tuft", hooves: true, blaze: s > 1, bell: s === 3 }) }),
+  buffalo: (s) => ({ spec: q({ len: 210, h: 100, leg: 48, legW: 24, head: 34, snout: 22, neck: 0, ears: "small", horns: s === 1 ? "short" : "crescent", tail: "tuft", hooves: true, bell: s === 3 }), accent: "grey" }),
   tiger: (s) => ({ spec: q({ len: 195, h: 80, leg: 46, legW: 19, head: s === 1 ? 40 : 35, snout: 12, neck: 0.15, ears: "round", tail: "long", stripes: s === 1 ? 4 : 7 }), accent: "black" }),
-  rabbit: (s) => ({ spec: q({ len: 120, h: 72, leg: 18, legW: 15, head: 34, snout: 8, neck: 0.45, ears: "long", tail: "stub" }), accent: s === 3 ? "jade" : "rose" }),
+  cat: (s) => ({ spec: q({ len: 140, h: 55, leg: 34, legW: 12, head: s === 1 ? 32 : 28, snout: 8, neck: 0.35, ears: "pointed", tail: "long" }), accent: s === 3 ? "jade" : "silver" }),
   dragon: (s) => ({ spec: { rig: "serpent", p: { thick: s === 1 ? 30 : 30, waves: s === 1 ? 1.5 : 2.2, amp: s === 1 ? 30 : 48, flying: s > 1, dragon: true, pearl: s === 3, rise: 50 } } }),
   snake: (s) => ({ spec: { rig: "serpent", p: { thick: s === 3 ? 34 : 26, waves: 2.5, amp: 48, rise: 80, bands: true, hood: s === 3 } }, accent: "ember" }),
   horse: (s) => ({ spec: q({ len: 185, h: 78, leg: s === 1 ? 82 : 76, legW: 15, head: 30, snout: 30, neck: 0.95, ears: "pointed", tail: "flowing", mane: "flowing", hooves: true, blaze: s === 3 }), accent: s === 3 ? "gold" : "black" }),
@@ -100,6 +100,7 @@ const WANDERER: Record<string, Maker> = {
   tallstrider: () => ({ spec: q({ len: 120, h: 58, leg: 110, legW: 11, head: 28, snout: 30, neck: 1.0, ears: "pointed", tail: "flowing", mane: "flowing", hooves: true }), accent: "black" }),
   trunklion: () => ({ spec: q({ len: 190, h: 80, leg: 45, legW: 20, head: 34, snout: 10, neck: 0.3, ears: "small", mane: "curly", trunk: true, tusks: true, tail: "tuft" }), accent: "cream" }),
   nightchimera: () => ({ spec: q({ len: 170, h: 70, leg: 40, legW: 17, head: 32, snout: 8, neck: 0.2, ears: "round", stripes: 4, tail: "long" }), body: "tanuki", accent: "night" }),
+  "moon-rabbit": () => ({ spec: q({ len: 120, h: 72, leg: 18, legW: 15, head: 34, snout: 8, neck: 0.45, ears: "long", tail: "stub" }), accent: "jade" }),
   "festival-lion": () => ({ spec: q({ len: 170, h: 72, leg: 40, legW: 18, head: 36, snout: 10, neck: 0.4, ears: "small", horns: "single", mane: "curly", tail: "bushy", bell: true }), accent: "gold" }),
 };
 

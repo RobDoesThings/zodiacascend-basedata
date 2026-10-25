@@ -103,8 +103,9 @@ sizes:
   - { id: large, space_ft: 10 }
   - { id: huge, space_ft: 15 }
 
-# Order the twelve animals finished the Great Race. Used for The Great Race Field and for sorting.
-zodiac_order: [rat, ox, tiger, rabbit, dragon, snake, horse, goat, monkey, rooster, dog, pig]
+# Order the twelve animals finished the Great Race (Vietnamese zodiac: the Water Buffalo and the Cat
+# hold the places the Chinese zodiac gives the Ox and the Rabbit). Used for The Great Race Field and for sorting.
+zodiac_order: [rat, buffalo, tiger, cat, dragon, snake, horse, goat, monkey, rooster, dog, pig]
 
 stages:
   zodiac:
