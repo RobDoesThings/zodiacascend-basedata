@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
     inputs:
       limit:
-        description: "Max images this run (blank = all missing in the chosen set)."
+        description: "Max images this run, or 'all' for every missing image in the chosen set."
         default: "12"
         required: false
       type:
@@ -52,7 +52,7 @@ jobs:
           STALE: ${{ inputs.stale }}
         run: |
           args=()
-          [ -n "$LIMIT" ] && args+=(--limit "$LIMIT")
+          if [ -n "$LIMIT" ] && [ "$LIMIT" != "all" ] && [ "$LIMIT" != "0" ]; then args+=(--limit "$LIMIT"); fi
           if [ "$TYPE" = "starter" ]; then args+=(--set starter); elif [ "$TYPE" != "all" ]; then args+=(--type "$TYPE"); fi
           [ -n "$ONLY" ] && args+=(--only "$ONLY")
           [ "$STALE" = "true" ] && args+=(--stale)
