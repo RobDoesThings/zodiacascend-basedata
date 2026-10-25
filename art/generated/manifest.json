@@ -1,0 +1,98 @@
+{
+  "butagon": {
+    "file": "butagon.jpg",
+    "prompt_hash": "80c759b5a8ef17d3",
+    "seed": 679263693,
+    "model": "flux-pro-1.1",
+    "task_id": "ac92c15d-e2fe-4b60-8667-5a84a7254d84",
+    "generated": "2026-10-25T05:47:27.306Z"
+  },
+  "gyuurok": {
+    "file": "gyuurok.jpg",
+    "prompt_hash": "36c0b2b428df1d45",
+    "seed": 1785642062,
+    "model": "flux-pro-1.1",
+    "task_id": "a8a99f1a-f8e2-4602-b240-e698687f9717",
+    "generated": "2026-10-25T05:47:17.121Z"
+  },
+  "hebiko": {
+    "file": "hebiko.jpg",
+    "prompt_hash": "0f0a9d3ecbf15aed",
+    "seed": 286046122,
+    "model": "flux-pro-1.1",
+    "task_id": "4296933e-5598-4154-a894-6d897bea2ec5",
+    "generated": "2026-10-25T05:47:23.094Z"
+  },
+  "inukai": {
+    "file": "inukai.jpg",
+    "prompt_hash": "a4fb76d8f9b29e4f",
+    "seed": 1419649028,
+    "model": "flux-pro-1.1",
+    "task_id": "dbad9a19-722c-4df7-ad27-6556b9cd1487",
+    "generated": "2026-10-25T05:47:26.564Z"
+  },
+  "kokketsu": {
+    "file": "kokketsu.jpg",
+    "prompt_hash": "7b446b7066f297b8",
+    "seed": 1235331531,
+    "model": "flux-pro-1.1",
+    "task_id": "ee52634f-1a55-462a-badc-8d80d7c99031",
+    "generated": "2026-10-25T05:47:26.670Z"
+  },
+  "nezrath": {
+    "file": "nezrath.jpg",
+    "prompt_hash": "fee0b839a35670e2",
+    "seed": 1222265707,
+    "model": "flux-pro-1.1",
+    "task_id": "f4d8b66c-be03-4e65-bfd1-243a0ce95aae",
+    "generated": "2026-10-25T05:47:17.396Z"
+  },
+  "ryuuten": {
+    "file": "ryuuten.jpg",
+    "prompt_hash": "230192e3dfeb7506",
+    "seed": 428482287,
+    "model": "flux-pro-1.1",
+    "task_id": "3a59eb27-40db-404f-b472-714e4376e3ef",
+    "generated": "2026-10-25T05:47:19.107Z"
+  },
+  "sarugen": {
+    "file": "sarugen.jpg",
+    "prompt_hash": "0d7a43c2d286e771",
+    "seed": 1133450035,
+    "model": "flux-pro-1.1",
+    "task_id": "4dbb429d-d9cd-471c-9469-1ffd76785715",
+    "generated": "2026-10-25T05:47:25.655Z"
+  },
+  "torakai": {
+    "file": "torakai.jpg",
+    "prompt_hash": "2324f0650e4fde90",
+    "seed": 168181692,
+    "model": "flux-pro-1.1",
+    "task_id": "2f8093c5-190b-4b72-9ca7-3a122a0c07c9",
+    "generated": "2026-10-25T05:47:19.960Z"
+  },
+  "umaren": {
+    "file": "umaren.jpg",
+    "prompt_hash": "649791bb7c263b0f",
+    "seed": 755086143,
+    "model": "flux-pro-1.1",
+    "task_id": "ee7724eb-3397-4383-9bad-c2646a0bc8d9",
+    "generated": "2026-10-25T05:47:22.080Z"
+  },
+  "usagetsu": {
+    "file": "usagetsu.jpg",
+    "prompt_hash": "3c64d2be144336cf",
+    "seed": 1099089274,
+    "model": "flux-pro-1.1",
+    "task_id": "4b8d96f6-1756-4084-a7da-6170c25ca136",
+    "generated": "2026-10-25T05:47:21.105Z"
+  },
+  "yangsu": {
+    "file": "yangsu.jpg",
+    "prompt_hash": "deb47dbf91aa0493",
+    "seed": 1329479617,
+    "model": "flux-pro-1.1",
+    "task_id": "2a8de24b-e4a5-4805-b973-236686c1680b",
+    "generated": "2026-10-25T05:47:24.677Z"
+  }
+}
