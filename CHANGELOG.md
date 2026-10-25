@@ -9,6 +9,12 @@ id is never removed or reused within major version 1.
 
 ### Added
 
+- The Codex card viewer (`site/viewer/`), built to `dist/` and deployed to GitHub Pages from `main`.
+- Generated SVG card art for every species in every element form, vessel spirits and Keeper cards
+  (`npm run art`), with `art/overrides/` for commissioned art.
+- CI workflow (typecheck, validate, build) and a GitHub Pages deploy workflow.
+- Review drafts: bestiary, Wanderers, vessel spirits, Keeper cards, armour, materials and crafting.
+
 - Project scaffold: TypeScript tooling (Node 22), JSON Schemas (draft 2020-12) for every entity.
 - `data/rules.yaml` with the core d20 constants: Rank table, attack and technique DC formulas,
   advantage, crits and fumbles, Qi, seal chains, stages, Bond Checks, the Ascension Roll, the

@@ -12,7 +12,10 @@
     "validate": "tsx scripts/validate.ts",
     "test": "node --import tsx --test tests/*.test.ts",
     "typecheck": "tsc --noEmit",
-    "drafts": "tsx scripts/build-drafts.ts"
+    "drafts": "tsx scripts/build-drafts.ts",
+    "art": "tsx scripts/build-art.ts",
+    "site": "tsx scripts/build-site.ts",
+    "build": "npm run drafts && npm run art && npm run site"
   },
   "devDependencies": {
     "@types/node": "22.9.0",

@@ -6,7 +6,24 @@ An original, open creature-collecting franchise built on the twelve animals of t
 - a **trading card game**, and
 - **video-game RPGs** built by anyone, from the open data API.
 
-> **Status:** pre-release (Phase 1 of 7). The schemas, core rules constants, elements, families and bonds are in place. Creatures, moves, Fields, lore, the rulebook and the published API follow.
+> **Status:** pre-release. Canon data (schemas, core rules, elements, families, bonds) is in `data/`. Review drafts of the bestiary, vessel spirits, Keeper cards, armour, materials and crafting are in `drafts/`, with generated card art in `art/`. Moves, Fields, lore, the rulebook and the versioned API follow.
+
+## The Codex viewer
+
+`site/viewer/` is a static card browser over everything in the drafts: 36 zodiac species (in all five element forms), 32 Wanderers, 25 vessel spirits, 52 Keeper cards, 42 materials and 33 recipes. Each card opens to its full metadata: lore, bell-curve weight and size charts, temperaments, taming and command difficulty, armour fit, folklore sources and raw JSON.
+
+```sh
+npm run build                 # drafts → art → dist/
+npx serve dist                # or any static server
+```
+
+It deploys to GitHub Pages on every push to `main` (`.github/workflows/pages.yml`). Turn it on once under **Settings → Pages → Source: GitHub Actions**. Pages for a private repository needs a paid GitHub plan; on the free plan the repository must be public.
+
+Card links are shareable: `#zodiac/torakai/water` opens Tide Torakai.
+
+## Card art
+
+`npm run art` draws every illustration as SVG from the species data (body plan, markings, element, stage), so the art stays in step with the descriptions. It is placeholder art for review, not final illustration. To use commissioned art, drop a 4:3 image named after its key into `art/overrides/` (see the README there) and the viewer will use it instead.
 
 ## Licences
 
@@ -24,14 +41,12 @@ data/        source of truth, hand-authored YAML
   elements.yaml    the five elements and both cycles
   families.yaml    animal families
   bonds.yaml       Trines, Kindred pairs, Rivals
-  lines/           evolution lines (Phase 2)
-  moves/           universal, element, family, signature and combo moves (Phase 3)
+drafts/      review drafts: src/*.yaml (authored), json/ (generated), REVIEW.md
+art/         generated SVG card art, manifest.json, overrides/ for commissioned art
 schemas/     JSON Schema (draft 2020-12) for every entity
-scripts/     validate, build, expand-forms, generate-openapi
+scripts/     validate, build-drafts, build-art (art/), build-site (the viewer)
+site/viewer/ the Codex card viewer (static HTML, CSS and JS)
 tests/       unit tests (dice parser, rules helpers)
-lore/        world and creature lore (Phase 5)
-rulebook/    rulebook chapters (Phase 6)
-site/        VitePress docs site (Phase 6)
 ```
 
 ## Development
@@ -43,6 +58,10 @@ npm install
 npm run validate   # schema checks, referential integrity, canon invariants, unit tests
 npm test           # unit tests only
 npm run typecheck
+npm run drafts     # drafts/src → drafts/json and drafts/REVIEW.md
+npm run art        # card art → art/
+npm run site       # viewer → dist/
+npm run build      # all three
 ```
 
 ## Contributing
