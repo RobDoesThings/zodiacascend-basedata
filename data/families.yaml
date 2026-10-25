@@ -86,3 +86,9 @@ families:
     wanderer_only: true
     move_themes: [shells, longevity, slow-wisdom]
     description: Turtles and tortoises, the slow and the ancient, safe inside the shells they carry.
+
+  - id: mustelid
+    name: Mustelid
+    wanderer_only: true
+    move_themes: [quickness, sharp-claws, wind-riding]
+    description: Weasels, martens and their kin. Small, fierce and quick enough to ride the wind.

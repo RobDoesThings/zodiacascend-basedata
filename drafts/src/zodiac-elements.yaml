@@ -1,0 +1,1068 @@
+# DRAFT for review. The four non-native element lines of each zodiac animal (48 lines, 144
+# species). The native line of each animal (its canon Kit → Adept → Sovereign) lives in
+# zodiac.yaml. A line here inherits its animal's family, quirks, offerings, dislikes and
+# folklore from zodiac.yaml; it sets its own markings, habitat and (optionally) temperaments.
+#
+# Weights and sizes are not authored per species: each stage takes the native stage's figures,
+# times the element's form weight multiplier (characteristics.yaml), times this line's `build`
+# (default 1.0). Line ids are {animal}-{element}.
+
+lines:
+  # ======================================================== RAT (native Water: Nezrath)
+  - animal: rat
+    element: wood
+    habitat: Bamboo groves, root tangles under old trees.
+    markings: { moss-green: 45, bark-brown: 35, leaf-flecked: 15, white-socked: 5 }
+    stages:
+      - id: sproutnib
+        name: Sproutnib
+        description: A tiny rat with a sprig of clover growing from the fur between its ears.
+        lore: Sproutnibs plant every seed they can't finish. Forest paths with a Sproutnib nest nearby are lined with saplings in tidy rows.
+      - id: rootgnaw
+        name: Rootgnaw
+        description: A wiry rat with bark-patterned fur and teeth like hardwood chisels.
+        lore: A Rootgnaw tunnels through the roots of a dying tree to let new ones in. Foresters follow its tunnels to find where the forest is about to change.
+      - id: jwiryeon
+        name: Jwiryeon
+        epithet: The Root Beneath
+        description: A great rat cloaked in hanging moss, its tail coiling into the ground like a root.
+        lore: >-
+          Jwiryeon is said to live under the oldest tree in every forest at once, gnawing gently at
+          the roots so the tree never grows too proud to fall. When it finally does fall, the clearing
+          it leaves is Jwiryeon's gift to the saplings. It speaks rarely, and only to those who have
+          planted something they will never see grow.
+  - animal: rat
+    element: fire
+    habitat: Lantern markets, kitchen chimneys, kiln yards.
+    markings: { soot-black: 40, ember-tipped: 35, ash-grey: 20, flame-tailed: 5 }
+    stages:
+      - id: charwhisk
+        name: Charwhisk
+        description: A small soot-black rat whose whisker tips glow like matchheads.
+        lore: Charwhisks nest in warm chimneys and steal the crisp rice from the bottom of the pot. Cooks leave them a little on purpose.
+      - id: sparkgnaw
+        name: Sparkgnaw
+        description: A lean rat whose teeth strike sparks on stone.
+        lore: A Sparkgnaw can light a lantern by biting its wick. Night-market vendors trade it dried fish to light their stalls at dusk.
+      - id: shuyen
+        name: Shuyen
+        epithet: The Lantern Thief
+        description: A sleek rat of banked coals whose tail trails a ribbon of red lantern light.
+        lore: >-
+          At every lantern festival one lantern goes missing, and everyone knows who took it. Shuyen
+          collects them in a hidden hall beneath the Hour of the Rat, where a thousand stolen lights
+          burn without fuel. It says it is only borrowing them, and every year one comes back to a
+          child who lost theirs.
+  - animal: rat
+    element: earth
+    habitat: Granaries, terraced farms, dry riverbanks.
+    markings: { grain-gold: 45, clay-brown: 30, dust-grey: 20, white-bellied: 5 }
+    stages:
+      - id: burrowlet
+        name: Burrowlet
+        description: A plump, round-eared rat with dusty golden fur and pouched cheeks.
+        lore: Burrowlets dig storerooms off their storerooms. A field with Burrowlets never floods, because they have already dug it a drain.
+      - id: moundcrawl
+        name: Moundcrawl
+        description: A heavy-shouldered rat whose fur is caked in dried paddy clay.
+        lore: Moundcrawls build earthen mounds the size of huts and live in them by the hundred. Travellers lost on the plain use the mounds as landmarks.
+      - id: chuotan
+        name: Chuotan
+        epithet: The Granary Lord
+        description: A broad, golden-furred rat seated on a throne of rice sacks.
+        lore: >-
+          Chuotan keeps a granary that has never once been empty. It takes one grain in ten from every
+          harvest in the Hour of the Rat and gives it back, doubled, in famine years. Farmers grumble
+          about the tithe in good years and pray to it in bad ones, and Chuotan thinks this is
+          exactly as it should be.
+  - animal: rat
+    element: metal
+    habitat: Mints, temple treasuries, mountain mines.
+    markings: { silver-grey: 45, brass-gold: 30, iron-dark: 20, coin-spotted: 5 }
+    stages:
+      - id: coinpip
+        name: Coinpip
+        description: A tiny silver rat that carries a square-holed coin threaded on its tail.
+        lore: Coinpips find lost coins the way other rats find crumbs. A Coinpip that brings you a coin is either paying a debt or starting one.
+      - id: brasstooth
+        name: Brasstooth
+        description: A sharp-eyed rat with metallic fur and gleaming brass incisors.
+        lore: Brasstooths can bite a coin and tell if it is counterfeit. Moneylenders keep one on the counter; honest traders don't mind.
+      - id: tikuras
+        name: Tikuras
+        epithet: The Coin Counter
+        description: A silver-maned rat draped in strings of copper cash, its eyes bright as polished coins.
+        lore: >-
+          Tikuras has counted every coin ever minted in the Twelve Hours and remembers where each one
+          is. It lends to the desperate at no interest and to the greedy at ruinous rates, and it has
+          never once misjudged which is which. Its hoard rings like a temple bell when it walks.
+
+  # ======================================================== OX (native Earth: Gyuurok)
+  - animal: ox
+    element: wood
+    habitat: Spring pastures, bamboo valleys.
+    markings: { moss-brown: 40, leaf-green: 30, bark-grey: 25, flower-horned: 5 }
+    stages:
+      - id: leafcalf
+        name: Leafcalf
+        description: A gentle calf whose budding horns sprout tiny green leaves.
+        lore: Leafcalves eat only fallen leaves, never living ones. Orchards welcome them in autumn and gently shoo them in spring.
+      - id: thicketyoke
+        name: Thicketyoke
+        description: A strong ox with a living hedge of bramble across its shoulders.
+        lore: A Thicketyoke can pull a stump out of the ground and then plant the sapling that replaces it. Woodcutters' villages keep one as a conscience.
+      - id: niushan
+        name: Niushan
+        epithet: The Green Pasture
+        description: A towering ox whose back is a meadow of grass and wildflowers, horns wound with vines.
+        lore: >-
+          Where Niushan lies down to rest, a pasture grows. Its herd has never known a hungry spring,
+          because Niushan carries the spring with it. It is the slowest Sovereign in the Twelve Hours
+          and the most patient, and it believes that anything worth growing is worth waiting for.
+  - animal: ox
+    element: fire
+    habitat: Kiln villages, volcanic plains.
+    markings: { kiln-red: 40, soot-black: 30, ash-grey: 25, ember-horned: 5 }
+    stages:
+      - id: kilncalf
+        name: Kilncalf
+        description: A sturdy red calf whose breath steams on the coldest mornings.
+        lore: Kilncalves sleep against kiln walls for warmth and keep the fires steady through the night. Potters swear their glazes come out better for it.
+      - id: forgebull
+        name: Forgebull
+        description: A heavy bull whose hide glows like cooling iron along its flanks.
+        lore: A Forgebull can turn a millstone for three days without rest. Smiths say its breath alone can soften a blade.
+      - id: lembara
+        name: Lembara
+        epithet: The Furnace Yoke
+        description: A colossal bull of black hide and molten veins, its horns glowing white at the tips.
+        lore: >-
+          Lembara pulls the sun's chariot up from the horizon each morning, or so the kiln villages
+          believe, and the red sky at dawn is its breath. It is fierce in battle and gentle at the
+          forge, and it has never refused to pull a load that someone else could not carry.
+  - animal: ox
+    element: metal
+    habitat: River dykes, mountain mines.
+    markings: { bronze: 40, iron-grey: 35, verdigris: 20, gold-horned: 5 }
+    folklore_sources:
+      - region: China
+        tradition: Bronze and iron oxen set beside rivers and lakes to guard against floods, such as the bronze ox placed beside Kunming Lake at the Summer Palace in 1755.
+    stages:
+      - id: bellcalf
+        name: Bellcalf
+        description: A small calf with a bronze sheen to its coat and a bell-shaped dewlap.
+        lore: Bellcalves ring faintly when they run. Herders never lose them, and neither do wolves, which is a problem.
+      - id: ironplough
+        name: Ironplough
+        description: A broad ox with plough-blade horns of grey metal.
+        lore: An Ironplough can break ground no other beast can. Terrace builders measure their work by how many Ironplough-days it took.
+      - id: wuarak
+        name: Wuarak
+        epithet: The Bronze Ward
+        description: A massive ox of green-patinated bronze who stands motionless beside a river.
+        lore: >-
+          Bronze oxen once stood beside rivers to hold back the floods, and Wuarak says it is the
+          first of them, come to life. It can stand guard on a dyke for a hundred years without
+          moving. When the water rises, it lowers its horns, and the river turns back.
+  - animal: ox
+    element: water
+    habitat: Flooded paddies, slow rivers, delta islands.
+    markings: { slate-black: 45, river-grey: 30, pale-pink: 20, white-chevroned: 5 }
+    folklore_sources:
+      - region: Vietnam
+        tradition: In the Vietnamese zodiac the water buffalo (trâu) takes the place of the ox, honoured as the farmer's closest partner in the paddy.
+    stages:
+      - id: reedcalf
+        name: Reedcalf
+        description: A dark, round-bellied calf with swept-back horn buds, always half in the water.
+        lore: Reedcalves follow farm children to school and wait outside, knee-deep in the nearest paddy, until lessons end.
+      - id: paddywade
+        name: Paddywade
+        description: A water buffalo with crescent horns and a coat of drying river mud.
+        lore: A Paddywade will plough a field without a driver if it likes the farmer. Villages race them after the harvest, splashing through the stubble.
+      - id: traurun
+        name: Traurun
+        epithet: The River Buffalo
+        description: A vast water buffalo with horns like a crescent moon, lotus flowers floating around its legs.
+        lore: >-
+          In the Hour of the Ox the rivers flood every year, and every year Traurun walks out into the
+          water and lies down, and the flood spreads gently over the fields instead of tearing them
+          away. Farmers sing to it at planting. It sings back, a low note that carries for miles
+          across the flooded paddies.
+
+  # ======================================================== TIGER (native Wood: Torakai)
+  - animal: tiger
+    element: fire
+    habitat: Dry forests, burned hillsides.
+    markings: { flame-orange: 45, ember-red: 30, soot-striped: 20, gold: 5 }
+    stages:
+      - id: sparkcub
+        name: Sparkcub
+        description: A fierce little cub whose stripes flicker like embers in the wind.
+        lore: Sparkcubs pounce on anything that moves, including their own shadows. Dry-season villages keep water barrels handy when one is near.
+      - id: blazestripe
+        name: Blazestripe
+        description: A lean tiger whose stripes are lines of open flame.
+        lore: A Blazestripe hunts by the smell of smoke. It is said that wildfires part around one, as if afraid to interrupt.
+      - id: horanghwa
+        name: Horanghwa
+        epithet: The Burning Mountain
+        description: A great tiger wreathed in flame, its eyes like coals and its roar like a forest fire.
+        lore: >-
+          After the dry season fires, Horanghwa walks the blackened hills, and where it walks the
+          green returns faster. Hill folk fear it and thank it in the same breath. It believes that
+          some things must burn so others can grow, and it does not apologise for being the fire.
+  - animal: tiger
+    element: earth
+    habitat: Mountain passes, cave shrines.
+    markings: { sand-gold: 40, clay-red: 30, stone-grey: 25, dark-maned: 5 }
+    stages:
+      - id: dustcub
+        name: Dustcub
+        description: A stocky sand-coloured cub with heavy paws and a serious face.
+        lore: Dustcubs dig dens in hillsides and decorate them with pebbles. A den with a pebble at the door is occupied; walk around.
+      - id: ridgeprowl
+        name: Ridgeprowl
+        description: A heavyset tiger whose stripes look like layers of exposed rock.
+        lore: A Ridgeprowl lies so still on a mountain ledge that climbers mistake it for the ledge. Most of them only make that mistake once.
+      - id: harimor
+        name: Harimor
+        epithet: The Mountain Elder
+        description: An ancient, broad-shouldered tiger with a coat like sandstone and a grey-whiskered face.
+        lore: >-
+          The mountain villages of the Hour of the Tiger never say Harimor's name aloud; they call it
+          Grandfather and leave salt at the pass. It has guarded the mountain roads for longer than
+          anyone remembers, and it judges every traveller by how they treat the road.
+  - animal: tiger
+    element: metal
+    habitat: Autumn ridges, western steppe.
+    markings: { white: 45, silver-striped: 30, steel-grey: 20, gold-eyed: 5 }
+    folklore_sources:
+      - region: China, Korea and Japan
+        tradition: The White Tiger of the West, one of the Four Symbols, guardian of the west and of autumn, the season of Metal.
+    stages:
+      - id: frostcub
+        name: Frostcub
+        description: A pale cub with silver-grey stripes and ice-blue eyes.
+        lore: Frostcubs are born in autumn and grow fastest when the first frost comes. Their stripes darken with every winter they survive.
+      - id: silverstripe
+        name: Silverstripe
+        description: A lean white tiger whose stripes gleam like hammered silver.
+        lore: A Silverstripe's claws ring when they strike stone. Warriors take a scratch from one as a sign they were judged worthy.
+      - id: suerak
+        name: Suerak
+        epithet: The West Wind
+        description: A magnificent white tiger with steel-dark stripes and a mane of silver autumn wind.
+        lore: >-
+          The old maps place a white tiger at the western edge of the world, guarding the autumn.
+          Suerak claims that post. It arrives with the first cold wind each year and leaves with the
+          last fallen leaf, and it judges warriors by whether they fight for something or merely
+          fight.
+  - animal: tiger
+    element: water
+    habitat: Mangrove deltas, river islands.
+    markings: { river-gold: 40, mist-grey: 30, dark-striped: 25, black: 5 }
+    stages:
+      - id: raincub
+        name: Raincub
+        description: A sleek cub that loves to swim, with webbing between its toes.
+        lore: Raincubs play in monsoon puddles for hours. A wet, muddy cub on the doorstep is lost; dry it off and it will lead you to its mother.
+      - id: mangrove-prowler
+        name: Mangrove Prowler
+        description: A low, sleek tiger that swims between mangrove roots with only its eyes above water.
+        lore: Delta fishers hear a Mangrove Prowler before they see it, and they never see it until it wants them to. It takes a fish from every net, and never two.
+      - id: copthuy
+        name: Copthuy
+        epithet: The Swimming Stripe
+        description: A huge tiger streaming with river water, its stripes rippling like reflections.
+        lore: >-
+          Copthuy rules the river mouths of the Hour of the Tiger, where land and sea argue every
+          tide. It can swim from one island to the next faster than a boat can row. It treats the
+          fishing villages as its own cubs: it guards them fiercely and expects, in return, a little
+          of everything they catch.
+
+  # ======================================================== RABBIT (native Wood: Usagetsu)
+  - animal: rabbit
+    element: fire
+    habitat: Festival grounds, warm hillsides.
+    markings: { lantern-red: 40, apricot: 30, cream-white: 25, gold-eared: 5 }
+    stages:
+      - id: kindlebun
+        name: Kindlebun
+        description: A small rabbit whose ear tips glow like paper lanterns.
+        lore: Kindlebuns gather where lanterns are lit and hop between them like sparks. Festival children try to catch them and never manage it.
+      - id: lanternhare
+        name: Lanternhare
+        description: A long-eared hare carrying a faint glow in its fur, bright enough to read by.
+        lore: A Lanternhare guides travellers home on moonless nights, always staying just far enough ahead to follow.
+      - id: tokkiran
+        name: Tokkiran
+        epithet: The Lantern Moon
+        description: A tall hare of warm amber light, a lantern-moon glowing between its ears.
+        lore: >-
+          On the one night a year when the moon does not rise, Tokkiran rises in its place, and the
+          festival lanterns light themselves to greet it. It pounds medicine like its moon-bound
+          cousin, but its medicine is warmth: for the cold, the lonely and the frightened.
+  - animal: rabbit
+    element: earth
+    habitat: Dry meadows, hill warrens.
+    markings: { sand-brown: 45, earth-brown: 30, dust-grey: 20, white-tailed: 5 }
+    stages:
+      - id: dunebun
+        name: Dunebun
+        description: A sandy little rabbit with oversized feet for digging.
+        lore: Dunebuns dig warrens with a hundred doors. Foxes give up; the Dunebuns are always out of a different one.
+      - id: burrowhare
+        name: Burrowhare
+        description: A sturdy hare with earth-stained paws and an alert, patient face.
+        lore: A Burrowhare's warren can shelter a whole village in a storm. It expects guests to wipe their feet.
+      - id: arnavel
+        name: Arnavel
+        epithet: The Deep Warren
+        description: A broad, calm hare with a coat like rich soil and eyes like polished agate.
+        lore: >-
+          Arnavel's warren runs beneath the whole of the Hour of the Rabbit, and it knows every
+          tunnel. In wartime it hides the helpless; in peace it hides seeds against the next famine.
+          It is the gentlest Sovereign, and the hardest to find when it does not wish to be found.
+  - animal: rabbit
+    element: metal
+    habitat: Moonlit mountain shrines.
+    markings: { silver: 45, frost-white: 30, slate-grey: 20, moon-eyed: 5 }
+    stages:
+      - id: frostbun
+        name: Frostbun
+        description: A small silver-white rabbit whose breath frosts the grass it hops through.
+        lore: Frostbuns appear on the first frost of autumn and vanish by spring. Finding their tracks is said to mean a good harvest next year.
+      - id: silverhop
+        name: Silverhop
+        description: A long-legged hare with a metallic sheen and ears like polished blades.
+        lore: A Silverhop's leap can clear a temple wall. Shrine guards consider this a security problem; the Silverhops consider it exercise.
+      - id: kratayo
+        name: Kratayo
+        epithet: The Silver Mortar
+        description: A slender hare of moon-bright silver carrying a mortar and pestle of hammered metal.
+        lore: >-
+          Kratayo pounds the moonlight into silver dust and scatters it over sleeping villages, and
+          anyone who breathes it wakes a little wiser. It is precise in everything, and it has never
+          once spilled a grain of the moonlight it was trusted with.
+  - animal: rabbit
+    element: water
+    habitat: Riverbanks, misty lakes.
+    markings: { dew-grey: 40, river-blue: 30, white: 25, silver-tipped: 5 }
+    folklore_sources:
+      - region: Vietnam
+        tradition: In the Vietnamese zodiac the Cat takes the Rabbit's place, the origin of rumours about a lost Moon Cat.
+    stages:
+      - id: dewbun
+        name: Dewbun
+        description: A small, damp-furred rabbit covered in morning dew that never dries.
+        lore: Dewbuns drink only dew. A meadow they visit is always green, even in drought.
+      - id: mistleap
+        name: Mistleap
+        description: A grey hare that fades into river fog when it runs.
+        lore: Ferrymen hear a Mistleap's splash before every fog. They wait, and the fog clears exactly when the hare says it will.
+      - id: thohai
+        name: Thohai
+        epithet: The Tide Hare
+        description: A pale hare that skims across the water, its reflection a cat's.
+        lore: >-
+          Look at Thohai's reflection and you will see a cat, not a hare. Thohai says this is the
+          water's mistake. Others whisper that it once had a sister who was left out of the Twelve,
+          and that it keeps her place on the water until she returns.
+
+  # ======================================================== DRAGON (native Earth: Ryuuten)
+  - animal: dragon
+    element: wood
+    habitat: Spring forests, eastern mountains.
+    markings: { azure-green: 45, jade: 30, bark-brown: 20, flower-maned: 5 }
+    folklore_sources:
+      - region: China, Korea and Japan
+        tradition: The Azure Dragon of the East, one of the Four Symbols, guardian of the east and of spring, the season of Wood.
+    stages:
+      - id: sproutscale
+        name: Sproutscale
+        description: A small green dragon with leaf-like fins and antlers like fresh twigs.
+        lore: Sproutscales sleep in tree hollows and wake each spring with new leaves on their antlers. Orchard keepers count the leaves to forecast the blossom.
+      - id: vinecoil
+        name: Vinecoil
+        description: A long, slender dragon wound with flowering vines.
+        lore: Where a Vinecoil passes, vines climb a little higher. Old temples overgrown with flowers are said to have had a Vinecoil as a guest.
+      - id: mireuseon
+        name: Mireuseon
+        epithet: The Azure Spring
+        description: An immense blue-green dragon whose body is half forest canopy, blossoms trailing from its mane.
+        lore: >-
+          Mireuseon guards the east, where the sun rises and the spring begins. Each year it rises
+          from the forest at the first thaw, and the blossom follows it across the Twelve Hours. It
+          is the most generous dragon and the most easily insulted, and it never forgets a felled
+          sacred tree.
+  - animal: dragon
+    element: fire
+    habitat: Volcanoes, southern skies.
+    markings: { flame-red: 45, gold: 30, ember-black: 20, white-hot: 5 }
+    stages:
+      - id: flarescale
+        name: Flarescale
+        description: A fiery little dragon whose whiskers crackle like fuses.
+        lore: Flarescales nest in warm springs near volcanoes. Bathers share the springs with them, carefully.
+      - id: sunwyrm
+        name: Sunwyrm
+        description: A long golden-red dragon that leaves a heat shimmer in the air.
+        lore: A Sunwyrm basks above the clouds at noon. On the hottest days of summer, farmers look up and ask it, politely, to move.
+      - id: rongvan
+        name: Rongvan
+        epithet: The Noon Pearl
+        description: A blazing dragon of red and gold coiled around a pearl as bright as the midday sun.
+        lore: >-
+          Rongvan rules the noon, when shadows vanish and nothing can hide. Its pearl holds the
+          summer heat, and it releases a little each day so the rice ripens. It is proud, loud and
+          generous, and it hates secrets more than anything.
+  - animal: dragon
+    element: metal
+    habitat: Mountain peaks, storm clouds.
+    markings: { gold-scaled: 40, steel-grey: 30, white: 25, bronze-whiskered: 5 }
+    stages:
+      - id: ironscale
+        name: Ironscale
+        description: A small dragon with scales like polished iron plates.
+        lore: Ironscales sharpen their claws on mountain rock and leave grooves a hand deep. Miners follow the grooves to find ore.
+      - id: thundercoil
+        name: Thundercoil
+        description: A grey dragon that crackles with static, lightning flickering along its spine.
+        lore: A Thundercoil rides the leading edge of storms. Temple bells ring by themselves when one passes overhead.
+      - id: yongseong
+        name: Yongseong
+        epithet: The Gold Claw
+        description: A towering gold-scaled dragon with claws like temple bells and eyes like lightning.
+        lore: >-
+          Yongseong forged the first bells, the story goes, by striking the mountain with its claws
+          until the ore rang. Every bell in the Twelve Hours still answers its voice. It is a
+          stern judge of oaths, and it has broken more than one liar with a single word.
+  - animal: dragon
+    element: water
+    habitat: Deep seas, river mouths.
+    markings: { sea-blue: 45, pearl-white: 30, deep-green: 20, black: 5 }
+    folklore_sources:
+      - region: China
+        tradition: The Dragon Kings who rule the four seas and send rain, honoured at temples along coasts and rivers.
+    stages:
+      - id: rainscale
+        name: Rainscale
+        description: A small blue dragon with fins like waves and a nose for coming rain.
+        lore: Rainscales swim up the rivers each spring. Farmers watch the water for their fins and plan their planting by them.
+      - id: rivercoil
+        name: Rivercoil
+        description: A long sea-blue dragon that moves through rivers like a current.
+        lore: A Rivercoil can change the course of a stream by lying across it. Boat folk leave it offerings before a long journey.
+      - id: longhai
+        name: Longhai
+        epithet: The Four Seas
+        description: A vast sea dragon of deep blue and pearl, crowned with coral, its body vanishing into the waves.
+        lore: >-
+          Longhai claims kinship with the dragon kings of the four seas and keeps a palace under each
+          of them. It sends the rain, calms the storm and drowns the arrogant. Sailors who show it
+          respect find fair winds; those who don't rarely tell the story.
+
+  # ======================================================== SNAKE (native Fire: Hebiko)
+  - animal: snake
+    element: wood
+    habitat: Rainforest canopy, bamboo thickets.
+    markings: { leaf-green: 50, vine-banded: 25, bark-brown: 20, blossom-pink: 5 }
+    stages:
+      - id: leafling
+        name: Leafling
+        description: A slender green snake, almost invisible among leaves.
+        lore: Leaflings hang from branches like vines. Fruit pickers check twice before grabbing.
+      - id: briarcoil
+        name: Briarcoil
+        description: A long snake with thorn-like scales that catch the light.
+        lore: A Briarcoil wraps itself around a tree to guard it. Trees with a Briarcoil in them are never cut.
+      - id: ularien
+        name: Ularien
+        epithet: The Green Veil
+        description: An immense emerald serpent draped through the forest canopy like a curtain of vines.
+        lore: >-
+          Ularien is never seen whole: only a coil here, a glint of eye there. It watches the forest
+          from above and remembers every creature that harms it. It speaks in a voice like rustling
+          leaves and offers one riddle to each traveller; those who answer pass safely.
+  - animal: snake
+    element: earth
+    habitat: Desert ruins, dry hills.
+    markings: { sand-banded: 45, clay-red: 30, stone-grey: 20, gold-diamond: 5 }
+    stages:
+      - id: sandling
+        name: Sandling
+        description: A small sand-coloured snake that burrows with only its eyes showing.
+        lore: Sandlings sleep in warm sand by day. Their tracks across a dune are said to spell out the weather.
+      - id: burrowcoil
+        name: Burrowcoil
+        description: A thick-bodied snake with heavy, rock-like scales.
+        lore: A Burrowcoil can dig through packed earth as easily as water. Old wells are often its work.
+      - id: baemrok
+        name: Baemrok
+        epithet: The Coiled Hill
+        description: A colossal serpent so still and vast that its coils look like terraced hills.
+        lore: >-
+          Shepherds have grazed their flocks on Baemrok's back for generations without knowing it.
+          Once a century it stirs, and the hills shift, and new springs open. It is said to be
+          dreaming the land into shape.
+  - animal: snake
+    element: metal
+    habitat: Mountain shrines, mirror pools.
+    markings: { white: 40, silver: 30, steel-banded: 25, gold-eyed: 5 }
+    stages:
+      - id: glintling
+        name: Glintling
+        description: A small snake with mirror-bright scales that flash in the sun.
+        lore: Glintlings blind their prey with reflected light. Children use them, carefully, to send signals across valleys.
+      - id: mirrorscale
+        name: Mirrorscale
+        description: A long white snake whose scales reflect everything around it.
+        lore: Look into a Mirrorscale and you see yourself as you truly are. Most people look away quickly.
+      - id: shejin
+        name: Shejin
+        epithet: The Pale Sage
+        description: A great white serpent with silver scales and calm, golden eyes, coiled around a scroll.
+        lore: >-
+          Shejin has studied for a thousand years and claims to know the answer to every question
+          but one: why anyone would choose to be anything other than a snake. It teaches anyone who
+          asks, but the lessons are long, and most students give up before the first century.
+  - animal: snake
+    element: water
+    habitat: Rivers, swamps, coral reefs.
+    markings: { river-blue: 40, banded-black: 30, mud-green: 25, pearl-bellied: 5 }
+    stages:
+      - id: rippling
+        name: Rippling
+        description: A small water snake that swims in perfect S-curves.
+        lore: Ripplings follow fishing boats for scraps. Fishers say a Rippling in the wake means good luck.
+      - id: eelcoil
+        name: Eelcoil
+        description: A long, sleek snake with a flattened tail for swimming.
+        lore: An Eelcoil can stay underwater for an hour. Pearl divers swim with them for company.
+      - id: ranthuy
+        name: Ranthuy
+        epithet: The Undertow
+        description: A vast sea serpent of deep blue bands, its coils forming whirlpools.
+        lore: >-
+          Ranthuy lives where rivers meet the sea and keeps the balance between fresh and salt. It
+          pulls drowning swimmers under and sets them gently on the shore, and nobody can explain
+          why the ones it chooses always survive.
+
+  # ======================================================== HORSE (native Fire: Umaren)
+  - animal: horse
+    element: wood
+    habitat: Forest meadows, green hills.
+    markings: { chestnut: 40, moss-dappled: 30, leaf-maned: 25, white-socked: 5 }
+    stages:
+      - id: fernfoal
+        name: Fernfoal
+        description: A leggy foal with a mane of fern fronds.
+        lore: Fernfoals graze where no one else will, and the meadow grows back thicker after them.
+      - id: greenstride
+        name: Greenstride
+        description: A strong horse with a coat like dappled forest light.
+        lore: A Greenstride can find a path through any forest. Lost travellers who follow one always reach a road.
+      - id: malsup
+        name: Malsup
+        epithet: The Green Wind
+        description: A tall green-grey stallion whose mane streams with leaves and petals.
+        lore: >-
+          Malsup runs with the spring wind across the Twelve Hours, and wherever it gallops, the
+          blossoms open early. It is restless and joyful, and it has never stood still long enough
+          to be painted.
+  - animal: horse
+    element: earth
+    habitat: Mountain caravan roads.
+    markings: { dun: 45, bay: 30, grey-dappled: 20, gold-maned: 5 }
+    folklore_sources:
+      - region: Southwest China and the Himalaya
+        tradition: The Tea Horse Road, where caravans carried tea one way and horses and salt the other across high mountain passes.
+    stages:
+      - id: dustfoal
+        name: Dustfoal
+        description: A shaggy, short-legged foal with a bell on its halter.
+        lore: Dustfoals walk beside the caravan before they are old enough to carry anything. The bell is so the caravan always knows where they are.
+      - id: ridgerunner
+        name: Ridgerunner
+        description: A tough mountain horse laden with bricks of tea and blocks of salt.
+        lore: A Ridgerunner knows every pass between the Hours and walks them without a guide. Caravan masters trust its judgement over any map.
+      - id: kudasan
+        name: Kudasan
+        epithet: The Long Road
+        description: A great sure-footed horse hung with caravan bells, its hooves like river stones.
+        lore: >-
+          Kudasan has walked every road in the Twelve Hours, and some say it made the first ones. It
+          carries tea to the cold places and salt to the warm, and it has never lost a traveller who
+          walked beside it.
+  - animal: horse
+    element: metal
+    habitat: Temple stables, parade grounds.
+    markings: { silver-grey: 40, steel-black: 30, white: 25, gold-maned: 5 }
+    stages:
+      - id: bellfoal
+        name: Bellfoal
+        description: A silver-grey foal whose hooves ring like small bells.
+        lore: Bellfoals are born in temple stables. Monks say their hoofbeats keep time better than any drum.
+      - id: ironmane
+        name: Ironmane
+        description: A powerful warhorse whose mane hangs like strands of iron chain.
+        lore: An Ironmane doesn't flinch at drums, fire or thunder. Generals once fought over them.
+      - id: kabayon
+        name: Kabayon
+        epithet: The Bronze Bell
+        description: A gleaming stallion of steel-grey and gold, its harness hung with bronze bells.
+        lore: >-
+          When Kabayon gallops, every bell in the valley rings. It carries messages of peace and
+          declarations of war with equal speed, and it never asks which it is carrying. It believes
+          that a message delivered is a promise kept.
+  - animal: horse
+    element: water
+    habitat: Coastlines, surf beaches.
+    markings: { sea-grey: 40, white: 30, river-blue: 25, black-maned: 5 }
+    stages:
+      - id: spumefoal
+        name: Spumefoal
+        description: A pale foal whose mane froths like sea foam.
+        lore: Spumefoals play in the surf at dawn. Fishers' children ride them bareback along the beach.
+      - id: wavecharger
+        name: Wavecharger
+        description: A grey horse that can gallop across shallow water as if it were sand.
+        lore: A Wavecharger can cross a bay faster than any boat. Coastal messengers prize them above all other mounts.
+      - id: nguahai
+        name: Nguahai
+        epithet: The Surf Runner
+        description: A great white stallion galloping on the crest of a wave, its mane of breaking surf.
+        lore: >-
+          When the sea rises in white crests, the coast folk say Nguahai's herd is running. It
+          gallops the shoreline of the Hour of the Horse at every high tide, and it is said to carry
+          lost sailors home on its back.
+
+  # ======================================================== GOAT (native Earth: Yangsu)
+  - animal: goat
+    element: wood
+    habitat: Terraced gardens, tea hills.
+    markings: { moss-cream: 40, leaf-brown: 30, white: 25, flower-horned: 5 }
+    stages:
+      - id: mosskid
+        name: Mosskid
+        description: A small kid with soft green-tinged fleece.
+        lore: Mosskids nibble weeds from between tea bushes and leave the leaves untouched. Tea farmers count them as workers.
+      - id: fernram
+        name: Fernram
+        description: A ram whose curled horns are wrapped with living ferns.
+        lore: A Fernram tends mountain gardens no one planted. Hikers find herbs growing in its footsteps.
+      - id: kambira
+        name: Kambira
+        epithet: The Hill Garden
+        description: A gentle ram with flowering vines curling from its horns and a fleece of soft moss.
+        lore: >-
+          Kambira keeps a garden on the highest hill of the Hour of the Goat, where every medicinal
+          herb in the Twelve Hours grows. It gives cuttings to anyone who climbs to ask, and it sings
+          to the plants while they grow.
+  - animal: goat
+    element: fire
+    habitat: Hearth villages, sunny slopes.
+    markings: { warm-red: 40, cream: 30, soot-faced: 25, gold-horned: 5 }
+    stages:
+      - id: hearthkid
+        name: Hearthkid
+        description: A warm red kid that likes to sleep next to fires.
+        lore: Hearthkids are always found beside the stove. Families say a Hearthkid in the house means no one will be cold.
+      - id: sunram
+        name: Sunram
+        description: A ram with golden horns that hold the warmth of the sun.
+        lore: A Sunram warms mountain shepherds on winter nights. Lean against one and the cold can't reach you.
+      - id: yeomsol
+        name: Yeomsol
+        epithet: The Hearth Song
+        description: A ram of warm russet wool with horns like curling embers.
+        lore: >-
+          Yeomsol sings by the fire on the longest night of winter, and every hearth in the Hour of
+          the Goat burns a little brighter. It invites the lonely and the cold to sit with it, and
+          it has never turned anyone away.
+  - animal: goat
+    element: metal
+    habitat: Mountain monasteries, mining villages.
+    markings: { silver-grey: 45, white: 30, slate: 20, bell-horned: 5 }
+    stages:
+      - id: bellkid
+        name: Bellkid
+        description: A small grey kid with a tiny bell hanging from each horn.
+        lore: Bellkids ring as they climb. Monks use the sound to call them in for evening prayers.
+      - id: silverhorn
+        name: Silverhorn
+        description: A tall ram with spiralled silver horns that shine in the sun.
+        lore: A Silverhorn's horns ring when it butts. Mountain shepherds use it to signal across valleys.
+      - id: phaeron
+        name: Phaeron
+        epithet: The Silver Bell
+        description: A dignified ram of silver fleece, its horns hung with a great temple bell.
+        lore: >-
+          Phaeron rings its bell at dawn, noon and dusk, and every monastery in the Hour of the Goat
+          keeps time by it. It is patient and kind, but it will not tolerate lateness, and it rings
+          louder for those who are.
+  - animal: goat
+    element: water
+    habitat: Misty highlands, waterfall cliffs.
+    markings: { mist-white: 40, cloud-grey: 30, rain-blue: 25, black-faced: 5 }
+    stages:
+      - id: mistkid
+        name: Mistkid
+        description: A little kid with fleece like a rain cloud.
+        lore: Mistkids appear on foggy mornings and vanish when the sun comes out. Shepherds say they are clouds learning to walk.
+      - id: cloudram
+        name: Cloudram
+        description: A ram with fleece that drips with soft rain.
+        lore: A Cloudram brings rain wherever it grazes. Farmers in dry valleys lead them on long walks.
+      - id: deyun
+        name: Deyun
+        epithet: The Rain Shepherd
+        description: A great ram whose fleece is a rain cloud, its horns curled like waves.
+        lore: >-
+          Deyun herds the clouds across the sky of the Hour of the Goat, leading them where the land
+          is dry. Its shepherd's song is the sound of rain on a roof, and farmers sing it back to
+          ask it to stay.
+
+  # ======================================================== MONKEY (native Metal: Sarugen)
+  - animal: monkey
+    element: wood
+    habitat: Rainforest canopy, temple trees.
+    markings: { leaf-green: 40, bark-brown: 30, golden: 25, white-faced: 5 }
+    stages:
+      - id: leafkit
+        name: Leafkit
+        description: A small monkey with leaf-shaped ears and a curling tail.
+        lore: Leafkits hide in plain sight among the leaves. Temple visitors look up and see nothing; the Leafkits see everything.
+      - id: canopaw
+        name: Canopaw
+        description: A long-armed monkey that swings through the canopy without touching the ground.
+        lore: A Canopaw can cross a forest without setting foot on earth. It finds the touch of soil distasteful.
+      - id: lingvara
+        name: Lingvara
+        epithet: The Canopy Sage
+        description: A long-limbed sage-monkey with a beard of hanging moss and eyes like jade.
+        lore: >-
+          Lingvara knows the name of every tree in the forest and has argued with most of them. It
+          teaches young monkeys to climb and young Keepers to listen, and it says the two lessons are
+          the same.
+  - animal: monkey
+    element: fire
+    habitat: Volcanic hot springs, festival rooftops.
+    markings: { flame-red: 40, gold: 30, soot-brown: 25, white-maned: 5 }
+    stages:
+      - id: flickit
+        name: Flickit
+        description: A tiny red monkey whose tail tip burns like a candle.
+        lore: Flickits play with fire and never get burned. Their mothers despair.
+      - id: flarepaw
+        name: Flarepaw
+        description: A mischievous monkey that juggles little balls of flame.
+        lore: A Flarepaw performs at festivals for peaches. Its act ends when someone's hat catches fire.
+      - id: houyan
+        name: Houyan
+        epithet: The Peach Flame
+        description: A fiery monkey king with a mane of flame and a staff that burns at both ends.
+        lore: >-
+          Houyan stole fire from a volcano to warm its troop in a hard winter, and it has never given
+          it back. It sits by the hot springs of the Hour of the Monkey with a peach in each hand,
+          daring anyone to take either.
+  - animal: monkey
+    element: earth
+    habitat: Temple ruins, cliff caves.
+    markings: { stone-grey: 40, clay-brown: 30, gold-faced: 25, moss-backed: 5 }
+    stages:
+      - id: mudkit
+        name: Mudkit
+        description: A small brown monkey that always has dirt under its nails.
+        lore: Mudkits dig up buried things — roots, beetles, old coins. They keep the coins.
+      - id: stonepaw
+        name: Stonepaw
+        description: A sturdy monkey with stone-grey fur and strong, calloused hands.
+        lore: A Stonepaw can stack stones into towers taller than itself. Temple builders hire them.
+      - id: kerasang
+        name: Kerasang
+        epithet: The Temple Keeper
+        description: A grizzled monkey sage seated on a ruined temple wall, wearing a garland of stone beads.
+        lore: >-
+          Kerasang guards the oldest temple ruins in the Hour of the Monkey. It steals from rude
+          visitors, returns lost things to polite ones, and knows exactly what every carving means.
+  - animal: monkey
+    element: water
+    habitat: Riverbanks, mangroves, moonlit pools.
+    markings: { river-grey: 40, dark-brown: 30, silver-faced: 25, white: 5 }
+    folklore_sources:
+      - region: China
+        tradition: The fable of the monkeys who tried to fish the moon out of a well, each hanging from the tail of the one above.
+    stages:
+      - id: splashkit
+        name: Splashkit
+        description: A small monkey with webbed fingers that loves to swim.
+        lore: Splashkits dive for river shells and offer them to anyone who claps.
+      - id: streampaw
+        name: Streampaw
+        description: A sleek monkey that catches fish with its bare hands.
+        lore: A Streampaw fishes by moonlight and never takes more than it can eat. It thinks humans with nets are showing off.
+      - id: khibien
+        name: Khibien
+        epithet: The Moon Fisher
+        description: A long-armed monkey sage hanging over a pool, reaching for the moon's reflection.
+        lore: >-
+          Once, a troop of monkeys hung tail to tail to fish the moon out of a well. Khibien was at
+          the bottom of the chain, and it is still trying. It says it has nearly caught the moon
+          twice, and it isn't joking.
+
+  # ======================================================== ROOSTER (native Metal: Kokketsu)
+  - animal: rooster
+    element: wood
+    habitat: Bamboo villages, forest farms.
+    markings: { green-tailed: 40, bamboo-gold: 30, rust-red: 25, white-crested: 5 }
+    stages:
+      - id: sproutchick
+        name: Sproutchick
+        description: A fluffy chick with a tiny leaf for a comb.
+        lore: Sproutchicks scratch the soil for seeds and plant half of what they find. Farmers call it fair.
+      - id: leafcrest
+        name: Leafcrest
+        description: A proud rooster with tail feathers like long green bamboo leaves.
+        lore: A Leafcrest crows to wake the forest at dawn. Even the trees seem to stir.
+      - id: manokari
+        name: Manokari
+        epithet: The Bamboo Herald
+        description: A magnificent rooster with a cascading tail of green and gold, its crest like a bamboo crown.
+        lore: >-
+          Manokari crows the forest awake each morning, and the bamboo grows a finger's width with
+          every call. It is vain about its tail, generous with its food and furious with anyone who
+          cuts bamboo without asking.
+  - animal: rooster
+    element: fire
+    habitat: Sun shrines, dry valleys.
+    markings: { flame-red: 45, gold: 30, black-tailed: 20, white-hot: 5 }
+    stages:
+      - id: blazechick
+        name: Blazechick
+        description: A tiny red chick with a comb like a match flame.
+        lore: Blazechicks peep loudly at noon and are always warm to the touch. Farm families tuck them in their sleeves on cold mornings.
+      - id: flarecrest
+        name: Flarecrest
+        description: A fiery rooster whose comb blazes and whose tail streams like fire.
+        lore: A Flarecrest crows hotter than other roosters. Its crow at noon can dry wet laundry.
+      - id: ayamera
+        name: Ayamera
+        epithet: The Noon Blaze
+        description: A blazing rooster of red and gold with a tail of living flame.
+        lore: >-
+          Ayamera calls the sun to its highest point each day and holds it there for one crowing
+          breath. It is proud, loud and generous, and it fights anyone who suggests the sun would
+          rise without it.
+  - animal: rooster
+    element: earth
+    habitat: Rice terraces, harvest fields.
+    markings: { harvest-gold: 40, earth-brown: 30, speckled: 25, black-tailed: 5 }
+    stages:
+      - id: dustchick
+        name: Dustchick
+        description: A round, speckled chick that loves a dust bath.
+        lore: Dustchicks roll in the dust until they look like little clods of earth. They are very pleased with themselves.
+      - id: fieldcrest
+        name: Fieldcrest
+        description: A sturdy rooster with golden-brown feathers that guards the rice fields.
+        lore: A Fieldcrest chases sparrows from the paddies and keeps a careful count of every grain.
+      - id: dakmaru
+        name: Dakmaru
+        epithet: The Harvest Caller
+        description: A broad, golden rooster with a comb like a ripe rice stalk.
+        lore: >-
+          Dakmaru crows on the first day of harvest, and every farmer in the Hour of the Rooster goes
+          out into the fields. It is said that a harvest started before its call will spoil, so no
+          one dares.
+  - animal: rooster
+    element: water
+    habitat: Fishing villages, misty coasts.
+    markings: { sea-grey: 40, white: 30, blue-tailed: 25, black: 5 }
+    stages:
+      - id: rainchick
+        name: Rainchick
+        description: A small grey chick that loves to splash in puddles.
+        lore: Rainchicks peep before every rainstorm. Fishers listen for them before setting out.
+      - id: mistcrest
+        name: Mistcrest
+        description: A slender grey rooster whose crow carries through the thickest fog.
+        lore: A Mistcrest's crow can guide boats home in fog. Coastal villages keep one on every pier.
+      - id: jishui
+        name: Jishui
+        epithet: The Tide Crier
+        description: A tall sea-grey rooster with a tail like breaking waves, perched on a lighthouse.
+        lore: >-
+          Jishui crows at every turning of the tide, and the fishing villages of the Hour of the
+          Rooster set their boats by it. It has never missed a tide, and it never will.
+
+  # ======================================================== DOG (native Earth: Inukai)
+  - animal: dog
+    element: wood
+    habitat: Forest villages, hunting trails.
+    markings: { moss-brown: 40, leaf-gold: 30, black-and-tan: 25, white-chested: 5 }
+    stages:
+      - id: leafpup
+        name: Leafpup
+        description: A small brown pup with ears like curled leaves.
+        lore: Leafpups follow children into the forest and always bring them home again.
+      - id: thickethound
+        name: Thickethound
+        description: A rangy hound that moves silently through the undergrowth.
+        lore: A Thickethound can follow a trail through a forest after rain. Lost children are never lost long.
+      - id: gaeryeong
+        name: Gaeryeong
+        epithet: The Forest Ward
+        description: A great green-gold hound with a mane of leaves, standing guard at a forest shrine.
+        lore: >-
+          Gaeryeong guards the forest shrines of the Hour of the Dog, and nothing that means harm can
+          pass it. It is patient with children and fierce with poachers, and it remembers every face.
+  - animal: dog
+    element: fire
+    habitat: Hearthside villages, night roads.
+    markings: { flame-red: 40, gold: 30, black-masked: 25, white-pawed: 5 }
+    stages:
+      - id: coalpup
+        name: Coalpup
+        description: A small red pup whose fur feels warm as a coal.
+        lore: Coalpups curl up in the ashes of the hearth after the fire goes out. They are never cold.
+      - id: bonfirehound
+        name: Bonfire Hound
+        description: A large red hound with eyes like lanterns.
+        lore: A Bonfire Hound walks the village at night, and its glowing eyes keep thieves away.
+      - id: anjingra
+        name: Anjingra
+        epithet: The Torchbearer
+        description: A huge red hound with a flaming mane, carrying a torch in its jaws.
+        lore: >-
+          Anjingra lights the way for travellers lost in the dark, carrying a torch in its jaws that
+          never goes out. It walks beside them until dawn and then vanishes. Some say it is still
+          waiting for one traveller who never came home.
+  - animal: dog
+    element: metal
+    habitat: City gates, temple steps.
+    markings: { silver-grey: 40, steel-blue: 30, white: 25, gold-collared: 5 }
+    stages:
+      - id: bellpup
+        name: Bellpup
+        description: A small grey pup with a silver bell collar.
+        lore: Bellpups bark only when something is truly wrong. Their silence is reassuring.
+      - id: ironhound
+        name: Ironhound
+        description: A powerful hound with a coat like burnished steel.
+        lore: An Ironhound can stand guard all night without tiring. Gatekeepers trust them with their lives.
+      - id: quanjin
+        name: Quanjin
+        epithet: The Gate of Iron
+        description: A great silver hound seated on a stone plinth beside an iron gate.
+        lore: >-
+          Quanjin has sat beside the great gate of the Hour of the Dog since the city was built. It
+          lets in the honest and turns away the false, and it has never once been wrong.
+  - animal: dog
+    element: water
+    habitat: Ferry crossings, harbours.
+    markings: { sea-grey: 40, dark-brown: 30, white: 25, black: 5 }
+    stages:
+      - id: rainpup
+        name: Rainpup
+        description: A small pup with a waterproof coat that loves to swim.
+        lore: Rainpups jump into every river they find. Their owners carry towels.
+      - id: ferryhound
+        name: Ferry Hound
+        description: A sturdy hound that swims alongside boats and pulls swimmers to shore.
+        lore: Ferry Hounds ride every ferry across the great rivers. No one has drowned on a crossing with a Ferry Hound aboard.
+      - id: asotala
+        name: Asotala
+        epithet: The Lighthouse Hound
+        description: A great sea-grey hound standing on a rocky shore, its eyes shining like lighthouse lamps.
+        lore: >-
+          Asotala stands on the rocks at the harbour mouth of the Hour of the Dog every stormy
+          night, its eyes shining across the water. Sailors steer by its light, and they never fail
+          to bring it a fish.
+
+  # ======================================================== PIG (native Water: Butagon)
+  - animal: pig
+    element: wood
+    habitat: Bamboo forests, orchards.
+    markings: { forest-brown: 40, moss-green: 30, striped-young: 25, white-spotted: 5 }
+    stages:
+      - id: acornling
+        name: Acornling
+        description: A round, striped piglet with a nose for fallen fruit.
+        lore: Acornlings follow the fruiting trees across the forest. Where they eat, new trees sprout.
+      - id: orchardboar
+        name: Orchard Boar
+        description: A big, gentle boar with moss-green bristles and a fondness for fruit.
+        lore: An Orchard Boar shakes trees to bring down the fruit, then shares it with everyone nearby.
+      - id: zhulin
+        name: Zhulin
+        epithet: The Bamboo Grove
+        description: A vast, contented boar whose bristles grow green bamboo shoots.
+        lore: >-
+          Zhulin naps in the bamboo forests of the Hour of the Pig, and the bamboo grows around it
+          while it sleeps. When it wakes, it eats the shoots and shares the rest. It believes that a
+          good nap fixes most problems.
+  - animal: pig
+    element: fire
+    habitat: Village feasts, warm hearths.
+    markings: { warm-red: 40, soot-black: 30, ember-spotted: 25, gold: 5 }
+    stages:
+      - id: cinderling
+        name: Cinderling
+        description: A small red piglet that likes to sleep near warm stones.
+        lore: Cinderlings show up at every village feast. No one is quite sure who invites them.
+      - id: hearthboar
+        name: Hearth Boar
+        description: A warm, broad boar whose bristles glow like coals.
+        lore: A Hearth Boar keeps a whole family warm through winter. They pay it in roasted chestnuts.
+      - id: heolua
+        name: Heolua
+        epithet: The Feast Fire
+        description: A huge, jolly boar with a back of glowing embers, surrounded by roasting chestnuts.
+        lore: >-
+          Heolua appears at the great feasts of the Hour of the Pig, and the food never runs out
+          while it is there. It eats more than anyone and gives away more than it eats, and it
+          considers this the perfect balance.
+  - animal: pig
+    element: earth
+    habitat: Hill farms, mushroom forests.
+    markings: { clay-brown: 40, earth-black: 30, sand-gold: 25, white-snouted: 5 }
+    stages:
+      - id: clayling
+        name: Clayling
+        description: A small brown piglet with a snout always covered in mud.
+        lore: Claylings root for mushrooms and present the best ones to whoever looks hungriest.
+      - id: hillboar
+        name: Hill Boar
+        description: A broad, heavy boar with tusks like curved stones.
+        lore: A Hill Boar can dig up a whole field in a day. Farmers let it, because it always finds water.
+      - id: dwaesan
+        name: Dwaesan
+        epithet: The Mountain Larder
+        description: A mountainous boar with stone-hard bristles, its den piled with roots and mushrooms.
+        lore: >-
+          Dwaesan keeps a larder in the hills of the Hour of the Pig that has fed the whole region
+          through every famine. It never hoards and never wastes, and it knows the best mushroom
+          spots in the Twelve Hours.
+  - animal: pig
+    element: metal
+    habitat: Mining towns, market squares.
+    markings: { bronze: 40, iron-grey: 30, copper-red: 25, gold-tusked: 5 }
+    stages:
+      - id: copperling
+        name: Copperling
+        description: A shiny copper-coloured piglet with a coin-shaped snout.
+        lore: Copperlings are thought to bring luck to markets. Traders keep a figurine by the till.
+      - id: ironbristle
+        name: Ironbristle
+        description: A heavy boar with bristles as stiff as iron wire.
+        lore: An Ironbristle's bristles make the finest brushes. It sheds them every spring, and brush-makers wait.
+      - id: baboyan
+        name: Baboyan
+        epithet: The Bronze Belly
+        description: A huge, gleaming bronze boar with a round belly and golden tusks.
+        lore: >-
+          Baboyan is the patron of every market in the Hour of the Pig. It is said that a coin rubbed
+          on its belly will return to its owner. Merchants swear by it, and its belly is very
+          shiny.

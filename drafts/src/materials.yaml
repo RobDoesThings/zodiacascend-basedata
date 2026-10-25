@@ -131,7 +131,7 @@ materials:
     tier: 1
     category: horn
     roles: [facing, frame]
-    source: { method: shed, from: wallowhorn }
+    source: { method: shed, from: paddywade }
     value: 3
     properties: Horn sheaths cast off naturally. Used, as in the brass-and-horn armour of the southern Philippines, for plates and fittings.
   - id: river-jade

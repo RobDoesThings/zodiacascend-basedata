@@ -30,30 +30,37 @@ if (existsSync(overrideDir)) {
     if (m) overrides.set(m[1], `art/overrides/${f}`);
   }
 }
-const art = (key: string) => overrides.get(key.replace(/^card:/, "card-")) ?? manifest[key] ?? null;
+// AI-generated art (npm run art:ai) beats the SVG placeholders; overrides beat both.
+const generatedPath = join(ROOT, "art", "generated", "manifest.json");
+const generated: Record<string, { file: string }> = existsSync(generatedPath) ? JSON.parse(readFileSync(generatedPath, "utf8")) : {};
+const art = (key: string) =>
+  overrides.get(key.replace(/^card:/, "card-")) ??
+  (generated[key] && existsSync(join(ROOT, "art", "generated", generated[key].file)) ? `art/generated/${generated[key].file}` : null) ??
+  manifest[key] ??
+  null;
 
-const PREFIX: Record<string, string> = { wood: "jade", fire: "ember", earth: "ochre", metal: "steel", water: "tide" };
-const PREFIX_NAME: Record<string, string> = { wood: "Jade", fire: "Ember", earth: "Ochre", metal: "Steel", water: "Tide" };
-const ELEMENTS = ["wood", "fire", "earth", "metal", "water"];
-const NATIVE: Record<string, string> = {
-  rat: "water", ox: "earth", tiger: "wood", rabbit: "wood", dragon: "earth", snake: "fire",
-  horse: "fire", goat: "earth", monkey: "metal", rooster: "metal", dog: "earth", pig: "water",
-};
-
-const forms = (id: string, els: string[]) =>
-  els.map((el) => ({ element: el, id: `${PREFIX[el]}-${id}`, prefix: PREFIX_NAME[el], art: art(`${PREFIX[el]}-${id}`) }));
+const ELEMENT_ORDER = ["wood", "fire", "earth", "metal", "water"];
+const STAGE_NAMES = ["Kit", "Adept", "Sovereign"];
 
 const cards: any[] = [];
 
+// Zodiac: each card links to its line's other stages and to the same stage in the animal's
+// other four element lines, so the viewer can step across both.
 for (const s of zodiac) {
-  const native = NATIVE[s.line];
+  const line = zodiac.filter((x: any) => x.line === s.line).sort((a: any, b: any) => a.stage - b.stage);
+  const siblings = zodiac
+    .filter((x: any) => x.animal === s.animal && x.stage === s.stage)
+    .sort((a: any, b: any) => (b.native ? 1 : 0) - (a.native ? 1 : 0) || ELEMENT_ORDER.indexOf(a.element) - ELEMENT_ORDER.indexOf(b.element));
   cards.push({
     id: s.id,
     type: "zodiac",
     name: s.name,
     subtitle: [s.stage_name, s.epithet].filter(Boolean).join(" · "),
-    elements: [native],
-    forms: forms(s.id, [native, ...ELEMENTS.filter((e) => e !== native)]),
+    elements: [s.element],
+    animal: s.animal,
+    native: s.native,
+    stages: line.map((x: any) => ({ id: x.id, label: STAGE_NAMES[x.stage - 1] })),
+    siblings: siblings.map((x: any) => ({ id: x.id, element: x.element, native: x.native })),
     stage: s.stage,
     family: s.family,
     text: s.description,
@@ -63,13 +70,15 @@ for (const s of zodiac) {
   });
 }
 for (const s of wanderers) {
+  const line = wanderers.filter((x: any) => x.line === s.line).sort((a: any, b: any) => a.stage - b.stage);
   cards.push({
     id: s.id,
     type: "wanderer",
     name: s.name,
-    subtitle: s.stage_name,
-    elements: [s.elements[0]],
-    forms: forms(s.id, s.elements),
+    subtitle: [s.stage_name, s.mythical ? "Mythical" : null].filter(Boolean).join(" · "),
+    elements: s.elements,
+    mythical: !!s.mythical,
+    stages: line.map((x: any) => ({ id: x.id, label: x.stage_name })),
     stage: s.stage,
     family: s.family,
     text: s.description,

@@ -1,9 +1,13 @@
-# DRAFT for review. Physical profile, characteristics, taming and lore for the 36 base zodiac
+# DRAFT for review. The twelve zodiac animals and each one's NATIVE line (the canon Kit → Adept →
+# Sovereign). The other four element lines of each animal are in zodiac-elements.yaml and inherit
+# the animal-level fields here (family, quirks, offerings, dislikes, folklore).
+# Physical profile, characteristics, taming and lore for the 36 native
 # species. Combat stats live in data/lines/ (Phase 2). Weights in kg, lengths in cm.
 # measure: length = nose to tail tip; height = to the top of the head; shoulder = shoulder height.
 
 lines:
   - id: rat
+    native_element: water
     family: rodent
     command_dc_mod: 0
     temperaments: { sly: 30, curious: 25, restless: 25, wary: 20 }
@@ -61,6 +65,7 @@ lines:
           tomorrow, and every one of its echoes swears to be the real one.
 
   - id: ox
+    native_element: earth
     family: bovine
     command_dc_mod: 1
     temperaments: { stubborn: 30, serene: 25, devoted: 25, lazy: 20 }
@@ -117,6 +122,7 @@ lines:
           faithful heart into the sky.
 
   - id: tiger
+    native_element: wood
     family: feline
     command_dc_mod: 2
     temperaments: { proud: 30, bold: 30, wary: 20, serene: 20 }
@@ -173,6 +179,7 @@ lines:
           one by one only when it must, knowing each gate costs it something it cannot take back.
 
   - id: rabbit
+    native_element: wood
     family: lagomorph
     command_dc_mod: -1
     temperaments: { gentle: 30, playful: 30, wary: 25, curious: 15 }
@@ -227,6 +234,7 @@ lines:
           medicine in its mortar every night and gives it freely, asking only that no one waste it.
 
   - id: dragon
+    native_element: earth
     family: reptilian
     command_dc_mod: 3
     temperaments: { proud: 40, serene: 25, curious: 20, bold: 15 }
@@ -285,6 +293,7 @@ lines:
           river glows at the end of the rains, Ryuuten is passing beneath.
 
   - id: snake
+    native_element: fire
     family: reptilian
     command_dc_mod: 1
     temperaments: { serene: 30, sly: 30, wary: 25, proud: 15 }
@@ -339,6 +348,7 @@ lines:
           ninth, it says, it is saving for something worth dying for.
 
   - id: horse
+    native_element: fire
     family: equine
     command_dc_mod: 1
     temperaments: { restless: 35, bold: 30, playful: 20, proud: 15 }
@@ -394,6 +404,7 @@ lines:
           but the joy of it. To ride Umaren is to forget, for one day, that you were ever slow.
 
   - id: goat
+    native_element: earth
     family: caprine
     command_dc_mod: -1
     temperaments: { gentle: 35, stubborn: 25, serene: 20, playful: 20 }
@@ -445,6 +456,7 @@ lines:
           to the hungry and the frightened, and wherever it sings, rice grows a little thicker.
 
   - id: monkey
+    native_element: metal
     family: primate
     command_dc_mod: 2
     temperaments: { curious: 35, playful: 30, sly: 25, restless: 10 }
@@ -500,6 +512,7 @@ lines:
           in the Twelve Hours, it claims, and has copied most of them out of politeness.
 
   - id: rooster
+    native_element: metal
     family: avian
     command_dc_mod: 0
     temperaments: { proud: 35, bold: 30, devoted: 20, restless: 15 }
@@ -553,6 +566,7 @@ lines:
           never once been late, and it will not forgive anyone who is.
 
   - id: dog
+    native_element: earth
     family: canine
     command_dc_mod: -2
     temperaments: { devoted: 45, bold: 20, wary: 20, playful: 15 }
@@ -609,6 +623,7 @@ lines:
           never abandoned a post, and it has never lost a ward it swore to protect.
 
   - id: pig
+    native_element: water
     family: suine
     command_dc_mod: -1
     temperaments: { lazy: 30, gentle: 30, stubborn: 20, playful: 20 }

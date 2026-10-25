@@ -69,6 +69,7 @@ family_body_plans:
   piscine: aquatic
   insectoid: insect
   chelonian: shelled
+  mustelid: clawed-quadruped
 line_body_plan_overrides:
   dragon: long-dragon
   callgecko: clawed-quadruped

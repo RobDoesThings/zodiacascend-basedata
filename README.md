@@ -10,20 +10,42 @@ An original, open creature-collecting franchise built on the twelve animals of t
 
 ## The Codex viewer
 
-`site/viewer/` is a static card browser over everything in the drafts: 36 zodiac species (in all five element forms), 32 Wanderers, 25 vessel spirits, 52 Keeper cards, 42 materials and 33 recipes. Each card opens to its full metadata: lore, bell-curve weight and size charts, temperaments, taming and command difficulty, armour fit, folklore sources and raw JSON.
+`site/viewer/` is a static card browser over everything in the drafts: 180 zodiac species (12 animals × 5 element lines × 3 stages), 52 Wanderers (including 10 mythical), 25 vessel spirits, 52 Keeper cards, 42 materials and 33 recipes. Each card opens to its full metadata: lore, bell-curve weight and size charts, temperaments, taming and command difficulty, armour fit, folklore sources and raw JSON. Zodiac cards step through their line (Kit → Adept → Sovereign) and across the animal's five element lines.
 
 ```sh
 npm run build                 # drafts → art → dist/
 npx serve dist                # or any static server
 ```
 
-It deploys to GitHub Pages on every push to `main` (`.github/workflows/pages.yml`). Turn it on once under **Settings → Pages → Source: GitHub Actions**. Pages for a private repository needs a paid GitHub plan; on the free plan the repository must be public.
-
-Card links are shareable: `#zodiac/torakai/water` opens Tide Torakai.
+It deploys to GitHub Pages on every push to `main` and after every art run. Card links are shareable: `#zodiac/torakai`.
 
 ## Card art
 
-`npm run art` draws every illustration as SVG from the species data (body plan, markings, element, stage), so the art stays in step with the descriptions. It is placeholder art for review, not final illustration. To use commissioned art, drop a 4:3 image named after its key into `art/overrides/` (see the README there) and the viewer will use it instead.
+There are three layers, and the viewer uses the first one that exists for each card:
+
+1. **`art/overrides/`**: commissioned or hand-made art (see the README there).
+2. **`art/generated/`**: realistic art from FLUX 1.1 [pro], made by `npm run art:ai`.
+3. **`art/creatures/` etc.**: SVG placeholders drawn from the data by `npm run art`.
+
+### Generating realistic art with FLUX
+
+Every prompt is built from the card's data (species, stage, element, description, colouring, habitat) plus a shared style, with a fixed seed per card so results are reproducible. `npm run art:prompts` writes them all to `art/prompts.json` for review; edit any prompt by adding it to `art/prompt-overrides.json` as `{ "card-id": "full prompt" }`.
+
+**From GitHub (no local setup):**
+
+1. Get an API key at <https://dashboard.bfl.ai> and add credits.
+2. Add it as a repository secret named `BFL_API_KEY` (**Settings → Secrets and variables → Actions → New repository secret**).
+3. **Actions → Generate card art → Run workflow.** Start with the default limit of 3 to check the style, then run again with the limit blank to do the rest. The images are committed and the site redeploys.
+
+**Locally:**
+
+```sh
+BFL_API_KEY=... npm run art:ai -- --limit 3      # try three first
+BFL_API_KEY=... npm run art:ai                   # everything still missing (resumes safely)
+npm run art:ai -- --dry-run                      # count and cost, no API calls
+```
+
+Options: `--type zodiac|wanderer|spirit|card`, `--only id1,id2`, `--stale` (redo cards whose prompt changed), `--force`, `--concurrency N`. The full set is about 309 images, roughly $12 at $0.04 per image. `BFL_MODEL=flux-pro-1.1-ultra` switches to the higher-resolution model.
 
 ## Licences
 

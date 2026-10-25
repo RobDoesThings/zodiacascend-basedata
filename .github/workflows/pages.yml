@@ -3,6 +3,11 @@ name: Deploy viewer to GitHub Pages
 on:
   push:
     branches: [main]
+  # Pushes made by the art workflow use the Actions token, which does not trigger `push`
+  # workflows, so redeploy when it finishes.
+  workflow_run:
+    workflows: ["Generate card art"]
+    types: [completed]
   workflow_dispatch:
 
 permissions:
@@ -19,6 +24,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: actions/setup-node@v4
         with:
           node-version-file: .nvmrc

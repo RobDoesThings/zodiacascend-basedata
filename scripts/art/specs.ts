@@ -28,6 +28,11 @@ export interface ArtSpec {
 
 // Marking keywords → colours. The first keyword found in a marking name wins.
 export const PALETTE: [string, string][] = [
+  ["azure", "#4f9a8f"], ["apricot", "#e8a46b"], ["sea-grey", "#7d8c96"], ["sea-blue", "#3f78b5"], ["verdigris", "#5f9e8a"],
+  ["kiln", "#a94a35"], ["soot", "#2f2c2b"], ["lantern", "#d1452f"], ["harvest", "#c99a3b"], ["chestnut", "#8c4a2b"],
+  ["warm-red", "#b8493a"], ["frost", "#dfe7ee"], ["dew", "#a9b8c2"], ["mist", "#b9c2c8"], ["rain", "#6f8fae"], ["bamboo", "#9a8a4a"],
+  ["storm", "#4a5d78"], ["wind", "#a7adb3"], ["night", "#26252d"], ["tanuki", "#7a5c3e"], ["blue-and-red", "#4f7fbf"],
+  ["vine", "#4f8f4a"], ["slate-black", "#3a3f45"], ["river", "#6f8796"], ["pale", "#e9d9cf"],
   ["ink", "#3d4148"], ["starless", "#26262b"], ["black", "#2b2a2e"], ["charcoal", "#3a3a3d"], ["slate", "#5d6670"],
   ["river-brown", "#7b5a3c"], ["earth-brown", "#80603f"], ["mud", "#7a6048"], ["forest-brown", "#6e5137"], ["grain", "#a07c4f"],
   ["thicket", "#7d6346"], ["dusk", "#6d5a4a"], ["bark", "#6f5e4c"], ["clay", "#a86f4a"], ["dun", "#b8946a"], ["bay", "#8a4f2e"],
@@ -76,16 +81,26 @@ const WANDERER: Record<string, Maker> = {
   "teacup-tortoise": (s) => ({ spec: { rig: "tortoise", k: 0.9, extra: s === 1 ? "teacup" : "pavilion" } }),
   "fox-ember": (s) => ({ spec: q({ len: 150, h: 55, leg: 40, legW: 11, head: 28, snout: 28, neck: 0.4, ears: "pointed", tail: "bushy" }), accent: s === 2 ? "flame" : "white" }),
   "granary-mouse": () => ({ spec: q({ len: 110, h: 52, leg: 16, legW: 11, head: 30, snout: 18, neck: 0.1, ears: "round", tail: "thin" }) }),
-  "wallow-buffalo": (s) => ({ spec: q({ len: 205, h: 100, leg: 48, legW: 24, head: 36, snout: 22, neck: 0, ears: "small", horns: s === 1 ? "short" : "crescent", tail: "tuft", hooves: true }), accent: "grey" }),
   mistprowler: () => ({ spec: q({ len: 165, h: 58, leg: 36, legW: 14, head: 30, snout: 10, neck: 0.15, ears: "pointed", tail: "long", spots: 10 }), accent: "black" }),
-  bramblehare: () => ({ spec: q({ len: 125, h: 62, leg: 22, legW: 13, head: 30, snout: 8, neck: 0.4, ears: "long", tail: "stub" }), accent: "sand" }),
   callgecko: () => ({ spec: q({ len: 160, h: 40, leg: 30, legW: 9, head: 26, snout: 16, neck: 0, ears: "none", tail: "long", spots: 9, low: true }), accent: "amber" }),
-  "saltroad-pony": (s) => ({ spec: q({ len: 175, h: 82, leg: 58, legW: 17, head: 30, snout: 26, neck: 0.75, ears: "pointed", tail: "flowing", mane: "flowing", hooves: true, bell: true }), accent: "black" }),
   cliffserow: (s) => ({ spec: q({ len: 150, h: 72, leg: 52, legW: 13, head: 28, snout: 18, neck: 0.6, ears: "small", horns: "short", tail: "stub", hooves: true, mane: s === 2 ? "ruff" : "none" }), accent: "red" }),
   duskloris: () => ({ spec: { rig: "primate", p: { size: 85, tail: false, bigEyes: true } }, accent: "cream" }),
   "whistle-dhole": () => ({ spec: q({ len: 160, h: 64, leg: 42, legW: 14, head: 30, snout: 22, neck: 0.4, ears: "round", tail: "bushy" }), accent: "black" }),
-  bristleboar: (s) => ({ spec: q({ len: 185, h: 85, leg: 32, legW: 16, head: 32, snout: 30, neck: 0, ears: "pointed", tail: "tuft", hooves: true, beard: true, spikes: s === 2 ? 5 : 0 }), accent: "grey" }),
   bellcricket: () => ({ spec: { rig: "cricket", k: 1.1 } }),
+  saola: () => ({ spec: q({ len: 160, h: 70, leg: 55, legW: 12, head: 26, snout: 22, neck: 0.5, ears: "small", horns: "straight", tail: "tuft", hooves: true, blaze: true }) }),
+  pika: () => ({ spec: q({ len: 95, h: 62, leg: 12, legW: 12, head: 32, snout: 6, neck: 0.15, ears: "round", tail: "none" }) }),
+  kiang: () => ({ spec: q({ len: 180, h: 80, leg: 70, legW: 15, head: 30, snout: 30, neck: 0.85, ears: "pointed", tail: "tuft", mane: "flowing", hooves: true }), accent: "white" }),
+  babirusa: () => ({ spec: q({ len: 170, h: 70, leg: 45, legW: 14, head: 28, snout: 30, neck: 0, ears: "small", tusks: true, tail: "thin", hooves: true }) }),
+  sicklewind: (s) => ({ spec: q({ len: 160, h: 38, leg: 18, legW: 9, head: 22, snout: 14, neck: 0.3, ears: "round", tail: "blade" }), accent: "silver", ...(s === 2 ? { scale: 1.05 } : {}) }),
+  thunderhide: () => ({ spec: q({ len: 165, h: 55, leg: 36, legW: 13, head: 28, snout: 12, neck: 0.3, ears: "pointed", tail: "fork", spikes: 5 }), accent: "lightning-gold" }),
+  "mallet-snake": () => ({ spec: { rig: "serpent", p: { thick: 52, waves: 1, amp: 12, rise: 30, bands: true } } }),
+  pyrecrane: () => ({ spec: { rig: "bird", p: { body: 42, neck: 55, leg: 90, beak: 30, legs: 1, crest: true, tail: "short" } }, accent: "crimson" }),
+  thunderdrum: () => ({ spec: q({ len: 200, h: 100, leg: 50, legW: 26, head: 36, snout: 20, neck: 0, ears: "small", tail: "tuft", oneLeg: true }), accent: "silver" }),
+  sunchaser: (s) => ({ spec: q({ len: 160, h: 66, leg: 44, legW: 15, head: 32, snout: 22, neck: 0.5, ears: "pointed", tail: "bushy", mane: s === 2 ? "ruff" : "none" }), accent: "black", body: "ember" }),
+  tallstrider: () => ({ spec: q({ len: 120, h: 58, leg: 110, legW: 11, head: 28, snout: 30, neck: 1.0, ears: "pointed", tail: "flowing", mane: "flowing", hooves: true }), accent: "black" }),
+  trunklion: () => ({ spec: q({ len: 190, h: 80, leg: 45, legW: 20, head: 34, snout: 10, neck: 0.3, ears: "small", mane: "curly", trunk: true, tusks: true, tail: "tuft" }), accent: "cream" }),
+  nightchimera: () => ({ spec: q({ len: 170, h: 70, leg: 40, legW: 17, head: 32, snout: 8, neck: 0.2, ears: "round", stripes: 4, tail: "long" }), body: "tanuki", accent: "night" }),
+  "festival-lion": () => ({ spec: q({ len: 170, h: 72, leg: 40, legW: 18, head: 36, snout: 10, neck: 0.4, ears: "small", horns: "single", mane: "curly", tail: "bushy", bell: true }), accent: "gold" }),
 };
 
 // ---------------------------------------------------------------- vessel spirits (by id)
@@ -124,8 +139,11 @@ export function artSpecFor(species: any): ArtSpec {
     return s;
   }
   const table = species.kind === "zodiac" ? ZODIAC : WANDERER;
-  const make = table[species.line];
-  if (!make) throw new Error(`no art spec for line ${species.line}`);
+  const key = species.kind === "zodiac" ? species.animal : species.line;
+  const make = table[key];
+  if (!make) throw new Error(`no art spec for ${key}`);
   const m = make(species.stage);
-  return { ...m, scale: m.scale ?? stageScale(species.stage, species.kind) };
+  // Non-native zodiac lines take both colours from their own markings.
+  const own = species.kind === "zodiac" && !species.native ? { body: undefined, accent: undefined } : {};
+  return { ...m, ...own, scale: m.scale ?? stageScale(species.stage, species.kind) };
 }

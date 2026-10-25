@@ -104,23 +104,6 @@ lines:
           description: "A plump, alert mouse that patrols granaries and drives off pests.",
           lore: "A Ricewarden keeps exactly one grain in ten and guards the rest from everything else. Farmers think this is a fair price." }
 
-  - id: wallow-buffalo
-    family: bovine
-    elements: [water, earth]
-    temperaments: { serene: 35, lazy: 30, devoted: 25, stubborn: 10 }
-    markings: { slate-black: 45, mud-grey: 30, pale-pink: 20, white-chevroned: 5 }
-    favoured_offerings: [rice straw, a cool river]
-    folklore_sources:
-      - region: Southeast Asia
-        tradition: The water buffalo (carabao, kerbau, trâu) as a partner in rice farming, honoured in harvest festivals across the region.
-    stages:
-      - { id: wallowcalf, name: Wallowcalf, weight_kg: 90, size_cm: 90, measure: shoulder,
-          description: "A dark, round-bellied buffalo calf that is never more than a step from water.",
-          lore: "Wallowcalves follow farm children to school and wait outside, knee-deep in the nearest paddy." }
-      - { id: wallowhorn, name: Wallowhorn, weight_kg: 600, size_cm: 160, measure: shoulder,
-          description: "A massive water buffalo with sweeping crescent horns and a coat of drying river mud.",
-          lore: "A Wallowhorn ploughs a field without a driver if it likes the farmer. Villages hold races for them after the harvest." }
-
   - id: mistprowler
     family: feline
     elements: [wood, water]
@@ -138,23 +121,6 @@ lines:
           description: "A long-tailed tree cat whose coat is a moving map of clouds.",
           lore: "A Cloudpelt can climb down a tree head-first and hang by its hind paws. It watches villages from the canopy for years before it ever comes down." }
 
-  - id: bramblehare
-    family: lagomorph
-    elements: [wood]
-    temperaments: { playful: 35, wary: 35, restless: 20, gentle: 10 }
-    markings: { thicket-brown: 50, sand-grey: 25, burr-speckled: 20, white-tailed: 5 }
-    favoured_offerings: [berries, a tangle of brambles]
-    folklore_sources:
-      - region: East Asia
-        tradition: The hare as a quick-witted survivor in countryside tales.
-    stages:
-      - { id: burrbun, name: Burrbun, weight_kg: 1.5, size_cm: 35, measure: length,
-          description: "A small brown rabbit whose fur is always tangled with burrs.",
-          lore: "Burrbuns spread seeds wherever they go. A meadow full of brambles probably has a Burrbun to thank." }
-      - { id: bramblehare, name: Bramblehare, weight_kg: 4.5, size_cm: 65, measure: length,
-          description: "A long-legged hare that weaves through thorn thickets without a scratch.",
-          lore: "A Bramblehare leads pursuers into the thorns and out the other side, where it waits, patiently, for them to untangle themselves." }
-
   - id: callgecko
     family: reptilian
     elements: [wood, earth]
@@ -171,23 +137,6 @@ lines:
       - { id: eavesgecko, name: Eavesgecko, weight_kg: 2, size_cm: 70, measure: length,
           description: "A large gecko that clings to rafters and guards the household from pests.",
           lore: "An Eavesgecko in the rafters keeps away insects, snakes and bad luck. Nobody evicts one; it would be like evicting a grandparent." }
-
-  - id: saltroad-pony
-    family: equine
-    elements: [earth, metal]
-    temperaments: { stubborn: 35, devoted: 30, serene: 20, bold: 15 }
-    markings: { dun: 45, bay: 30, grey-dappled: 20, gold-maned: 5 }
-    favoured_offerings: [brick tea, salt]
-    folklore_sources:
-      - region: Southwest China and the Himalaya
-        tradition: The Tea Horse Road, where caravans of ponies carried tea one way and horses and salt the other across high mountain passes.
-    stages:
-      - { id: packfoal, name: Packfoal, weight_kg: 60, size_cm: 90, measure: shoulder,
-          description: "A shaggy, short-legged foal with a bell on its halter.",
-          lore: "Packfoals walk beside the caravan before they are old enough to carry anything. The bell is so the caravan always knows where they are." }
-      - { id: saltroad-pony, name: Saltroad Pony, weight_kg: 280, size_cm: 130, measure: shoulder,
-          description: "A tough mountain pony laden with bricks of tea and blocks of salt.",
-          lore: "A Saltroad Pony knows every pass between the Hours and walks them without a guide. Caravan masters trust its judgement over any map." }
 
   - id: cliffserow
     family: caprine
@@ -240,23 +189,6 @@ lines:
           description: "A lean red wild dog with a dark bushy tail and a piercing whistle.",
           lore: "A pack of Redwhistles hunts in perfect silence, then whistles all at once. Keepers who bond with one often find the rest of the pack following them home." }
 
-  - id: bristleboar
-    family: suine
-    elements: [wood, earth]
-    temperaments: { stubborn: 35, lazy: 25, bold: 25, gentle: 15 }
-    markings: { forest-brown: 45, bearded-grey: 30, striped-young: 20, white-bearded: 5 }
-    favoured_offerings: [fallen fruit, a muddy bank]
-    folklore_sources:
-      - region: Borneo and Sumatra
-        tradition: The bearded pig and its long seasonal migrations following fruiting forests.
-    stages:
-      - { id: bristlet, name: Bristlet, weight_kg: 5, size_cm: 50, measure: length,
-          description: "A striped piglet with a tuft of whiskers like a tiny beard.",
-          lore: "Bristlets follow fruiting trees with their herd, walking for weeks to reach the next feast." }
-      - { id: bristleboar, name: Bristleboar, weight_kg: 120, size_cm: 150, measure: length,
-          description: "A long-snouted boar with a magnificent bristly beard.",
-          lore: "When the forest fruits, Bristleboar herds arrive within days from nowhere anyone can explain. Villages plan their own harvests by their arrival." }
-
   - id: bellcricket
     family: insectoid
     elements: [metal, wood]
@@ -273,3 +205,410 @@ lines:
       - { id: bellcricket, name: Bellcricket, weight_kg: 0.2, size_cm: 15, measure: length,
           description: "A bronze cricket whose song rings like a struck temple bell.",
           lore: "Bellcrickets were once kept in carved gourds for their song. A kind Keeper set one free, and it followed her for the rest of her life, singing. They have chosen Keepers ever since." }
+
+  # ---------------------------------------------------------------- relatives of the zodiac
+  # Close kin of the zodiac animals, never the animals themselves.
+
+  - id: saola
+    family: bovine
+    elements: [wood, water]
+    temperaments: { wary: 45, serene: 30, gentle: 20, stubborn: 5 }
+    markings: { chestnut: 45, dark-brown: 30, white-faced: 20, black-striped: 5 }
+    favoured_offerings: [fig leaves, silence]
+    folklore_sources:
+      - region: Vietnam and Laos
+        tradition: The saola, a forest bovine of the Annamite Mountains, first described by scientists in 1992 and so rarely seen that it is called the "Asian unicorn".
+    stages:
+      - id: hushhorn
+        name: Hushhorn
+        weight_kg: 30
+        size_cm: 70
+        measure: shoulder
+        description: A shy, chestnut calf with white face markings and two straight horn buds.
+        lore: Hushhorns are almost never seen. Forest folk say a Hushhorn only shows itself to someone who has stopped looking for it.
+      - id: spindlehorn
+        name: Spindlehorn
+        weight_kg: 90
+        size_cm: 90
+        measure: shoulder
+        description: A graceful forest bovine with long, straight, parallel horns that sweep back like spindles.
+        lore: >-
+          A Spindlehorn walks so quietly that the forest does not notice it. Keepers who bond one say
+          it is the patience of the forest given legs. It has never been caught, only befriended.
+
+  - id: pika
+    family: lagomorph
+    elements: [earth, metal]
+    temperaments: { curious: 35, wary: 30, playful: 25, stubborn: 10 }
+    markings: { stone-grey: 45, sand-brown: 30, rust-red: 20, white: 5 }
+    favoured_offerings: [dried flowers, a sheltered rock]
+    folklore_sources:
+      - region: Himalaya and Central Asia
+        tradition: The pika of high mountain scree, which gathers piles of hay for the winter and calls across the rocks in sharp whistles.
+    stages:
+      - id: pebblepika
+        name: Pebblepika
+        weight_kg: 0.15
+        size_cm: 18
+        measure: length
+        description: A tiny round-eared, tailless relative of the rabbit that whistles from the rocks.
+        lore: Pebblepikas whistle a warning when anything approaches. Mountain climbers learn the whistles and take them seriously.
+      - id: haymaker
+        name: Haymaker
+        weight_kg: 0.3
+        size_cm: 22
+        measure: length
+        description: A plump pika with cheeks full of flowers, standing guard beside a haystack taller than itself.
+        lore: >-
+          A Haymaker spends all summer gathering flowers and grasses into a haystack under the rocks,
+          enough to last the winter. Hungry travellers who find one and ask politely are given a
+          handful; those who steal find the pass mysteriously full of whistling.
+
+  - id: kiang
+    family: equine
+    elements: [earth, metal]
+    temperaments: { restless: 35, wary: 30, bold: 20, proud: 15 }
+    markings: { chestnut: 45, white-bellied: 30, dark-striped: 20, gold: 5 }
+    favoured_offerings: [salt, highland grass]
+    folklore_sources:
+      - region: Tibetan Plateau
+        tradition: The kiang, a wild ass of the high plateau, famous for galloping alongside travellers and racing them for the sheer joy of it.
+    stages:
+      - id: highfoal
+        name: Highfoal
+        weight_kg: 120
+        size_cm: 110
+        measure: shoulder
+        description: A long-eared, chestnut-and-white foal of the high plateau.
+        lore: Highfoals are born on the windiest plains in the Twelve Hours and can run within an hour of birth.
+      - id: skyplain-kiang
+        name: Skyplain Kiang
+        weight_kg: 350
+        size_cm: 140
+        measure: shoulder
+        description: A powerful wild ass with a dark stripe along its back, racing across the plateau.
+        lore: >-
+          A Skyplain Kiang will gallop beside any traveller on the high plains, racing for the joy of
+          it, then wheel away at the last moment. Nobody owns one. A few, very rarely, choose a Keeper.
+
+  - id: babirusa
+    family: suine
+    elements: [earth, water]
+    temperaments: { stubborn: 35, wary: 30, gentle: 20, bold: 15 }
+    markings: { slate-grey: 45, mud-brown: 35, pale-skinned: 15, gold-tusked: 5 }
+    favoured_offerings: [fallen fruit, a salt lick]
+    folklore_sources:
+      - region: Indonesia (Sulawesi)
+        tradition: The babirusa ("pig-deer"), whose upper tusks grow up through the snout and curve back toward the forehead like antlers.
+    stages:
+      - id: tusklet
+        name: Tusklet
+        weight_kg: 25
+        size_cm: 80
+        measure: length
+        description: A smooth, grey piglet with two little tusks just beginning to curl.
+        lore: Tusklets gather at riverside salt licks with their families. Their squeals carry for miles at dawn.
+      - id: antlertusk
+        name: Antlertusk
+        weight_kg: 85
+        size_cm: 110
+        measure: length
+        description: A long-legged, hairless swine whose upper tusks curve up through its snout like antlers.
+        lore: >-
+          Antlertusks grow their tusks through their own snouts and back toward their eyes, and they
+          wear them with enormous dignity. Islanders say an Antlertusk's tusks keep growing until
+          they point at the thing it most wants, and that it spends its life walking toward it.
+
+  # ---------------------------------------------------------------- mythical Wanderers
+  # Folklore creatures that roam the Twelve Hours. Like every Wanderer, they are bonded, never
+  # caught. `mythical: true` marks them for engines and the viewer.
+
+  - id: sicklewind
+    family: mustelid
+    mythical: true
+    elements: [metal, wood]
+    temperaments: { sly: 40, restless: 30, playful: 20, devoted: 10 }
+    markings: { wind-grey: 45, silver: 30, brown: 20, white-tipped: 5 }
+    favoured_offerings: [whetstones, a gust of wind]
+    folklore_sources:
+      - region: Japan
+        tradition: The kamaitachi, sickle-clawed weasels riding the wind. In some regions they come as three; the first knocks you down, the second cuts, and the third heals the wound so it never bleeds.
+    stages:
+      - id: gustferret
+        name: Gustferret
+        weight_kg: 1.5
+        size_cm: 45
+        measure: length
+        description: A slim grey weasel with tiny curved blades for claws, riding a whirl of dust.
+        lore: Gustferrets ride whirlwinds across mountain passes. Travellers with a strange shallow cut and no memory of how they got it have met one.
+      - id: threefold-sickle
+        name: Threefold Sickle
+        weight_kg: 4
+        size_cm: 70
+        measure: length
+        description: A silver weasel with sickle-blade forelimbs, always followed by two shimmering twins.
+        lore: >-
+          Threefold Sickles hunt as one beast in three bodies: the first trips, the second cuts, and
+          the third heals the cut before it can bleed. Keepers who bond one learn that it never means
+          real harm. It just cannot resist a joke.
+
+  - id: thunderhide
+    family: mustelid
+    mythical: true
+    elements: [wood, metal]
+    temperaments: { restless: 40, bold: 30, playful: 20, proud: 10 }
+    markings: { storm-blue: 40, lightning-gold: 30, grey: 25, white: 5 }
+    favoured_offerings: [a dry place in a storm]
+    folklore_sources:
+      - region: Japan
+        tradition: The raijū, a thunder beast that falls to earth with the lightning and was said to curl up in people's navels during storms, so children were told to sleep on their stomachs.
+    stages:
+      - id: stormkit
+        name: Stormkit
+        weight_kg: 6
+        size_cm: 70
+        measure: length
+        description: A crackling blue-grey creature, half cat and half weasel, whose fur stands on end.
+        lore: Stormkits fall with the lightning and are dazed for a day afterward. Farm children who find one in a field know to keep it dry.
+      - id: thunderhide
+        name: Thunderhide
+        weight_kg: 25
+        size_cm: 120
+        measure: length
+        description: A sleek beast of storm-blue fur crackling with lightning, its tail forked like a bolt.
+        lore: >-
+          A Thunderhide rides the leading edge of every storm in the Hour of the Dragon. When it grows
+          tired it falls to earth in a lightning strike and curls up somewhere warm to sleep, which is
+          why careful parents still tell their children to sleep on their stomachs during storms.
+
+  - id: mallet-snake
+    family: reptilian
+    mythical: true
+    elements: [earth]
+    temperaments: { lazy: 40, sly: 30, playful: 20, wary: 10 }
+    markings: { earth-brown: 45, dust-grey: 30, dark-spotted: 20, gold: 5 }
+    favoured_offerings: [rice wine, a warm stone]
+    folklore_sources:
+      - region: Japan
+        tradition: The tsuchinoko, a stout snake with a body like a mallet, said to leap great distances and to like rice wine. Several towns have offered rewards for proof of one.
+    stages:
+      - id: stubcoil
+        name: Stubcoil
+        weight_kg: 2
+        size_cm: 40
+        measure: length
+        description: A short, stout snake with a fat middle and a stubby tail, like a little mallet.
+        lore: Stubcoils roll downhill when they're in a hurry. They are rarely in a hurry.
+      - id: hillmallet
+        name: Hillmallet
+        weight_kg: 12
+        size_cm: 90
+        measure: length
+        description: A thick-bodied snake that can spring through the air like a thrown mallet.
+        lore: >-
+          Towns in the Hour of the Snake have offered rewards for proof of a Hillmallet for a hundred
+          years. None has ever been claimed. Hillmallets know about the rewards and find them very
+          funny.
+
+  - id: pyrecrane
+    family: avian
+    mythical: true
+    elements: [fire, wood]
+    temperaments: { proud: 40, serene: 30, restless: 20, wary: 10 }
+    markings: { blue-and-red: 45, crimson-spotted: 30, white-beaked: 20, gold: 5 }
+    favoured_offerings: [a lit candle, cedar wood]
+    folklore_sources:
+      - region: China
+        tradition: The bifang of the Classic of Mountains and Seas, a crane-like bird with a single leg, blue feathers with red markings and a white beak, whose appearance was said to foretell fire.
+    stages:
+      - id: emberstilt
+        name: Emberstilt
+        weight_kg: 3
+        size_cm: 90
+        measure: height
+        description: A blue-and-red chick standing on a single long leg.
+        lore: Emberstilts appear where a fire is about to start. Villagers who see one check their stoves.
+      - id: onefoot-pyrecrane
+        name: Onefoot Pyrecrane
+        weight_kg: 9
+        size_cm: 160
+        measure: height
+        description: A tall one-legged crane of blue and crimson with a white beak and sparks in its feathers.
+        lore: >-
+          A Onefoot Pyrecrane never causes the fires it foretells. It arrives first to warn, and
+          those who heed it are spared. Those who ignore it say afterward that the bird must have
+          started the blaze, and the Pyrecrane has long since stopped arguing.
+
+  - id: thunderdrum
+    family: bovine
+    mythical: true
+    elements: [wood, water]
+    temperaments: { serene: 35, bold: 30, stubborn: 25, proud: 10 }
+    markings: { blue-grey: 50, storm-dark: 30, silver: 15, moon-pale: 5 }
+    favoured_offerings: [drum music, sea salt]
+    folklore_sources:
+      - region: China
+        tradition: The kui of the Classic of Mountains and Seas, a hornless, one-legged ox-like beast of the Eastern Sea whose comings and goings bring wind and rain, which shines like the sun and moon and whose voice is like thunder.
+    stages:
+      - id: drumcalf
+        name: Drumcalf
+        weight_kg: 300
+        size_cm: 120
+        measure: shoulder
+        description: A grey-blue, hornless calf that hops on a single sturdy leg.
+        lore: Drumcalves hop out of the sea before a storm. Their footfalls sound like distant drums.
+      - id: thunderdrum
+        name: Thunderdrum
+        weight_kg: 700
+        size_cm: 170
+        measure: shoulder
+        description: A massive one-legged ox of storm-blue hide that glows like the moon, wind and rain swirling around it.
+        lore: >-
+          When a Thunderdrum leaves the sea, the wind rises and the rain comes, and its bellow rolls
+          across the water like thunder. An old story says a drum made from such a beast could be
+          heard five hundred li away. Thunderdrums know the story, and they do not like drummers.
+
+  - id: sunchaser
+    family: canine
+    mythical: true
+    elements: [fire]
+    temperaments: { bold: 40, restless: 30, devoted: 20, stubborn: 10 }
+    markings: { ember-red: 40, black: 35, gold-eyed: 20, white-hot: 5 }
+    favoured_offerings: [a cool stone, moonlight]
+    folklore_sources:
+      - region: Korea
+        tradition: The bulgae, fire dogs from a land of darkness, sent to steal the sun and moon; the sun burns their mouths and the moon freezes them, so they bite and let go, causing eclipses.
+    stages:
+      - id: sunnip
+        name: Sunnip
+        weight_kg: 12
+        size_cm: 45
+        measure: shoulder
+        description: A black-and-red pup whose mouth glows like a coal.
+        lore: Sunnips leap at the sun at noon and yelp at how hot it is. They never learn.
+      - id: moonbiter
+        name: Moonbiter
+        weight_kg: 45
+        size_cm: 75
+        measure: shoulder
+        description: A large hound of fire and shadow with a scorched mouth and frost on its whiskers.
+        lore: >-
+          Moonbiters were sent from a dark kingdom to steal the lights of the sky. The sun burned
+          them; the moon froze them; they bit and let go, and that is why eclipses end. Those that
+          gave up and stayed in the Twelve Hours make loyal, if moody, companions.
+
+  - id: tallstrider
+    family: equine
+    mythical: true
+    elements: [wood, earth]
+    temperaments: { sly: 40, playful: 30, proud: 20, devoted: 10 }
+    markings: { bamboo-brown: 45, black-maned: 30, grey: 20, gold-maned: 5 }
+    favoured_offerings: [a riddle, cigar smoke, three honest words]
+    folklore_sources:
+      - region: Philippines
+        tradition: The tikbalang, a tall, long-limbed trickster with a horse's head who lives in bamboo groves and leads travellers astray; turning your shirt inside out breaks the spell, and three golden hairs from its mane are said to win its loyalty.
+    stages:
+      - id: reedstrider
+        name: Reedstrider
+        weight_kg: 60
+        size_cm: 150
+        measure: height
+        description: A gangly creature with a horse's head and very long legs, hiding in the bamboo.
+        lore: Reedstriders lead lost children in circles until they laugh, then show them the way home. They cannot resist an audience.
+      - id: balete-strider
+        name: Balete Strider
+        weight_kg: 150
+        size_cm: 260
+        measure: height
+        description: A towering, long-limbed figure with a horse's head and a mane threaded with three golden hairs.
+        lore: >-
+          A Balete Strider makes travellers walk in circles all night. Turn your shirt inside out and
+          it laughs and lets you go. It will never bond with anyone who tries to pull its golden
+          hairs, but it may offer them, freely, to someone who makes it laugh.
+
+  - id: trunklion
+    family: feline
+    mythical: true
+    elements: [earth, metal]
+    temperaments: { proud: 40, serene: 30, bold: 20, gentle: 10 }
+    markings: { gold: 45, cream-maned: 30, grey-trunked: 20, white: 5 }
+    favoured_offerings: [sugarcane, temple incense]
+    folklore_sources:
+      - region: Thailand
+        tradition: The gajasingha, one of the creatures of the mythical Himmaphan forest, with the body of a lion and the trunk and tusks of an elephant.
+    stages:
+      - id: trunkcub
+        name: Trunkcub
+        weight_kg: 120
+        size_cm: 180
+        measure: length
+        description: A golden lion cub with a short elephant's trunk and tiny tusks.
+        lore: Trunkcubs spray water at anyone who laughs at them. Everyone laughs at them.
+      - id: tuskmane
+        name: Tuskmane
+        weight_kg: 400
+        size_cm: 320
+        measure: length
+        description: A majestic golden lion with a flowing mane, an elephant's trunk and ivory tusks.
+        lore: >-
+          Tuskmanes come from a hidden forest at the edge of the world, where creatures are made of
+          two animals at once. One that leaves the forest brings the strength of the elephant and
+          the courage of the lion, and it expects to be treated with the dignity of both.
+
+  - id: nightchimera
+    family: primate
+    mythical: true
+    elements: [water, metal]
+    temperaments: { sly: 40, wary: 30, restless: 20, proud: 10 }
+    markings: { night-black: 40, tiger-striped: 30, tanuki-brown: 25, moon-pale: 5 }
+    favoured_offerings: [a quiet roof, birdsong]
+    folklore_sources:
+      - region: Japan
+        tradition: The nue, a chimera with the face of a monkey, the body of a tanuki, the limbs of a tiger and a snake for a tail, whose eerie night cry was said to bring sickness until the warrior Minamoto no Yorimasa shot it from the palace roof.
+    stages:
+      - id: duskmask
+        name: Duskmask
+        weight_kg: 30
+        size_cm: 100
+        measure: length
+        description: A small chimera with a monkey's face, a striped body and a hissing snake for a tail.
+        lore: Duskmasks call from rooftops at night with the voice of a mournful bird. Most people never see what makes the sound.
+      - id: hollowcry
+        name: Hollowcry
+        weight_kg: 90
+        size_cm: 180
+        measure: length
+        description: A shadowy chimera of monkey, tanuki, tiger and snake, wrapped in a black cloud.
+        lore: >-
+          A Hollowcry rides a dark cloud over the palace roofs on sleepless nights, and its call
+          sounds like a lonely bird. Legend says a great archer once shot one down. Hollowcries
+          remember, and they are very polite to archers.
+
+  - id: festival-lion
+    family: feline
+    mythical: true
+    elements: [fire, earth]
+    temperaments: { playful: 45, bold: 25, devoted: 20, proud: 10 }
+    markings: { festival-red: 40, gold: 35, green-maned: 20, white: 5 }
+    favoured_offerings: [mooncakes, drums]
+    folklore_sources:
+      - region: Vietnam
+        tradition: The lân, a lion-like beast of good fortune whose dance, led by the jolly earth god Ông Địa with his fan, fills the streets at the Mid-Autumn Festival.
+    stages:
+      - id: drumcub
+        name: Drumcub
+        weight_kg: 40
+        size_cm: 110
+        measure: length
+        description: A bright red-and-gold cub with a shaggy mane and a single small horn.
+        lore: Drumcubs dance whenever they hear a drum. Festivals start earlier when there is one around.
+      - id: moonlion
+        name: Moonlion
+        weight_kg: 150
+        size_cm: 220
+        measure: length
+        description: A magnificent red-and-gold lion with a single horn, a flowing mane and bells on its brow.
+        lore: >-
+          At the Mid-Autumn Festival, Moonlions dance through the streets of the Twelve Hours,
+          following a round-bellied figure with a fan. Children chase them, merchants feed them and
+          the moon shines brighter wherever they pass.

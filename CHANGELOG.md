@@ -9,6 +9,18 @@ id is never removed or reused within major version 1.
 
 ### Added
 
+- 48 new zodiac element lines: every animal now has five distinct lines (one per element), each
+  Kit → Adept → Sovereign, for 180 species and 60 Sovereigns. Native lines keep their canon names.
+- 10 mythical Wanderer lines drawn from East and Southeast Asian folklore, and the Mustelid family.
+- FLUX 1.1 [pro] art pipeline (`npm run art:prompts`, `npm run art:ai`) and a "Generate card art"
+  GitHub Actions workflow; the viewer prefers generated art over SVG placeholders.
+
+### Changed
+
+- Wanderers are now relatives of the zodiac animals rather than the animals themselves: the pony,
+  wild boar, water buffalo and hare lines became the kiang, babirusa, saola and pika.
+- Element forms are no longer colour swaps of one line; the viewer steps across element lines.
+
 - The Codex card viewer (`site/viewer/`), built to `dist/` and deployed to GitHub Pages from `main`.
 - Generated SVG card art for every species in every element form, vessel spirits and Keeper cards
   (`npm run art`), with `art/overrides/` for commissioned art.

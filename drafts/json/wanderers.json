@@ -1,7 +1,7 @@
 {
   "status": "draft",
   "licence": "CC-BY-4.0",
-  "count": 32,
+  "count": 52,
   "species": [
     {
       "id": "inkcarp",
@@ -13,6 +13,8 @@
         "water",
         "wood"
       ],
+      "evolves_from": null,
+      "evolves_to": "scrollfin",
       "stage": 1,
       "stage_name": "Wanderer",
       "playable": true,
@@ -37,13 +39,6 @@
           "p99": 51.3,
           "upper": 53.1
         }
-      },
-      "form_weight_multipliers": {
-        "wood": 1,
-        "fire": 0.97,
-        "earth": 1.1,
-        "metal": 1.05,
-        "water": 0.95
       },
       "characteristics": {
         "temperaments": [
@@ -134,6 +129,8 @@
         "water",
         "wood"
       ],
+      "evolves_from": "inkcarp",
+      "evolves_to": null,
       "stage": 2,
       "stage_name": "Elder Wanderer",
       "playable": true,
@@ -158,13 +155,6 @@
           "p99": 103,
           "upper": 106
         }
-      },
-      "form_weight_multipliers": {
-        "wood": 1,
-        "fire": 0.97,
-        "earth": 1.1,
-        "metal": 1.05,
-        "water": 0.95
       },
       "characteristics": {
         "temperaments": [
@@ -255,6 +245,8 @@
         "fire",
         "wood"
       ],
+      "evolves_from": null,
+      "evolves_to": "lampwing",
       "stage": 1,
       "stage_name": "Wanderer",
       "playable": true,
@@ -279,13 +271,6 @@
           "p99": 17.1,
           "upper": 17.7
         }
-      },
-      "form_weight_multipliers": {
-        "wood": 1,
-        "fire": 0.97,
-        "earth": 1.1,
-        "metal": 1.05,
-        "water": 0.95
       },
       "characteristics": {
         "temperaments": [
@@ -371,6 +356,8 @@
         "fire",
         "wood"
       ],
+      "evolves_from": "lantern-moth",
+      "evolves_to": null,
       "stage": 2,
       "stage_name": "Elder Wanderer",
       "playable": true,
@@ -395,13 +382,6 @@
           "p99": 45.6,
           "upper": 47.2
         }
-      },
-      "form_weight_multipliers": {
-        "wood": 1,
-        "fire": 0.97,
-        "earth": 1.1,
-        "metal": 1.05,
-        "water": 0.95
       },
       "characteristics": {
         "temperaments": [
@@ -487,6 +467,8 @@
         "water",
         "earth"
       ],
+      "evolves_from": null,
+      "evolves_to": "stiltsage",
       "stage": 1,
       "stage_name": "Wanderer",
       "playable": true,
@@ -511,13 +493,6 @@
           "p99": 103,
           "upper": 106
         }
-      },
-      "form_weight_multipliers": {
-        "wood": 1,
-        "fire": 0.97,
-        "earth": 1.1,
-        "metal": 1.05,
-        "water": 0.95
       },
       "characteristics": {
         "temperaments": [
@@ -622,6 +597,8 @@
         "water",
         "earth"
       ],
+      "evolves_from": "paddy-heron",
+      "evolves_to": null,
       "stage": 2,
       "stage_name": "Elder Wanderer",
       "playable": true,
@@ -646,13 +623,6 @@
           "p99": 171,
           "upper": 177
         }
-      },
-      "form_weight_multipliers": {
-        "wood": 1,
-        "fire": 0.97,
-        "earth": 1.1,
-        "metal": 1.05,
-        "water": 0.95
       },
       "characteristics": {
         "temperaments": [
@@ -757,6 +727,8 @@
         "earth",
         "water"
       ],
+      "evolves_from": null,
+      "evolves_to": "teahouse-tortoise",
       "stage": 1,
       "stage_name": "Wanderer",
       "playable": true,
@@ -781,13 +753,6 @@
           "p99": 11.4,
           "upper": 11.8
         }
-      },
-      "form_weight_multipliers": {
-        "wood": 1,
-        "fire": 0.97,
-        "earth": 1.1,
-        "metal": 1.05,
-        "water": 0.95
       },
       "characteristics": {
         "temperaments": [
@@ -874,6 +839,8 @@
         "earth",
         "water"
       ],
+      "evolves_from": "teacup-tortoise",
+      "evolves_to": null,
       "stage": 2,
       "stage_name": "Elder Wanderer",
       "playable": true,
@@ -898,13 +865,6 @@
           "p99": 125,
           "upper": 130
         }
-      },
-      "form_weight_multipliers": {
-        "wood": 1,
-        "fire": 0.97,
-        "earth": 1.1,
-        "metal": 1.05,
-        "water": 0.95
       },
       "characteristics": {
         "temperaments": [
@@ -994,6 +954,8 @@
       "elements": [
         "fire"
       ],
+      "evolves_from": null,
+      "evolves_to": "pyrebrush",
       "stage": 1,
       "stage_name": "Wanderer",
       "playable": true,
@@ -1018,13 +980,6 @@
           "p99": 103,
           "upper": 106
         }
-      },
-      "form_weight_multipliers": {
-        "wood": 1,
-        "fire": 0.97,
-        "earth": 1.1,
-        "metal": 1.05,
-        "water": 0.95
       },
       "characteristics": {
         "temperaments": [
@@ -1129,6 +1084,8 @@
       "elements": [
         "fire"
       ],
+      "evolves_from": "fox-ember",
+      "evolves_to": null,
       "stage": 2,
       "stage_name": "Elder Wanderer",
       "playable": true,
@@ -1153,13 +1110,6 @@
           "p99": 148,
           "upper": 153
         }
-      },
-      "form_weight_multipliers": {
-        "wood": 1,
-        "fire": 0.97,
-        "earth": 1.1,
-        "metal": 1.05,
-        "water": 0.95
       },
       "characteristics": {
         "temperaments": [
@@ -1273,6 +1223,8 @@
         "earth",
         "water"
       ],
+      "evolves_from": null,
+      "evolves_to": "ricewarden",
       "stage": 1,
       "stage_name": "Wanderer",
       "playable": true,
@@ -1297,13 +1249,6 @@
           "p99": 17.1,
           "upper": 17.7
         }
-      },
-      "form_weight_multipliers": {
-        "wood": 1,
-        "fire": 0.97,
-        "earth": 1.1,
-        "metal": 1.05,
-        "water": 0.95
       },
       "characteristics": {
         "temperaments": [
@@ -1409,6 +1354,8 @@
         "earth",
         "water"
       ],
+      "evolves_from": "granary-mouse",
+      "evolves_to": null,
       "stage": 2,
       "stage_name": "Elder Wanderer",
       "playable": true,
@@ -1433,13 +1380,6 @@
           "p99": 51.3,
           "upper": 53.1
         }
-      },
-      "form_weight_multipliers": {
-        "wood": 1,
-        "fire": 0.97,
-        "earth": 1.1,
-        "metal": 1.05,
-        "water": 0.95
       },
       "characteristics": {
         "temperaments": [
@@ -1536,284 +1476,6 @@
       }
     },
     {
-      "id": "wallowcalf",
-      "name": "Wallowcalf",
-      "line": "wallow-buffalo",
-      "kind": "wanderer",
-      "family": "bovine",
-      "elements": [
-        "water",
-        "earth"
-      ],
-      "stage": 1,
-      "stage_name": "Wanderer",
-      "playable": true,
-      "description": "A dark, round-bellied buffalo calf that is never more than a step from water.",
-      "physical": {
-        "measure": "shoulder",
-        "weight_kg": {
-          "distribution": "truncated_normal",
-          "mean": 90,
-          "sd": 10.8,
-          "min": 57.6,
-          "p95": 108,
-          "p99": 115,
-          "upper": 122
-        },
-        "shoulder_cm": {
-          "distribution": "truncated_normal",
-          "mean": 90,
-          "sd": 5.4,
-          "min": 73.8,
-          "p95": 98.9,
-          "p99": 103,
-          "upper": 106
-        }
-      },
-      "form_weight_multipliers": {
-        "wood": 1,
-        "fire": 0.97,
-        "earth": 1.1,
-        "metal": 1.05,
-        "water": 0.95
-      },
-      "characteristics": {
-        "temperaments": [
-          {
-            "id": "serene",
-            "weight": 35
-          },
-          {
-            "id": "lazy",
-            "weight": 30
-          },
-          {
-            "id": "devoted",
-            "weight": 25
-          },
-          {
-            "id": "stubborn",
-            "weight": 10
-          }
-        ],
-        "markings": [
-          {
-            "id": "slate-black",
-            "weight": 45
-          },
-          {
-            "id": "mud-grey",
-            "weight": 30
-          },
-          {
-            "id": "pale-pink",
-            "weight": 20
-          },
-          {
-            "id": "white-chevroned",
-            "weight": 5
-          }
-        ],
-        "moonmarked_chance": "1/1024"
-      },
-      "taming": {
-        "bond_dc": 10,
-        "story_only": false,
-        "difficulty": "Easy",
-        "favoured_offerings": [
-          "rice straw",
-          "a cool river"
-        ]
-      },
-      "control": {
-        "command_dc": 8,
-        "difficulty": "Easy"
-      },
-      "lore": "Wallowcalves follow farm children to school and wait outside, knee-deep in the nearest paddy.",
-      "folklore_sources": [
-        {
-          "region": "Southeast Asia",
-          "tradition": "The water buffalo (carabao, kerbau, trâu) as a partner in rice farming, honoured in harvest festivals across the region."
-        }
-      ],
-      "armour": {
-        "body_plan": "hooved-quadruped",
-        "size": "medium",
-        "slots": [
-          "head",
-          "body",
-          "limbs",
-          "charm"
-        ],
-        "max_weight": "light",
-        "armour_types": [
-          {
-            "type": "quilted-coat",
-            "fit": "yes"
-          },
-          {
-            "type": "beast-mask",
-            "fit": "yes"
-          },
-          {
-            "type": "hoof-guards",
-            "fit": "yes"
-          },
-          {
-            "type": "charm-collar",
-            "fit": "yes"
-          }
-        ]
-      }
-    },
-    {
-      "id": "wallowhorn",
-      "name": "Wallowhorn",
-      "line": "wallow-buffalo",
-      "kind": "wanderer",
-      "family": "bovine",
-      "elements": [
-        "water",
-        "earth"
-      ],
-      "stage": 2,
-      "stage_name": "Elder Wanderer",
-      "playable": true,
-      "description": "A massive water buffalo with sweeping crescent horns and a coat of drying river mud.",
-      "physical": {
-        "measure": "shoulder",
-        "weight_kg": {
-          "distribution": "truncated_normal",
-          "mean": 600,
-          "sd": 72,
-          "min": 384,
-          "p95": 718,
-          "p99": 767,
-          "upper": 816
-        },
-        "shoulder_cm": {
-          "distribution": "truncated_normal",
-          "mean": 160,
-          "sd": 9.6,
-          "min": 131,
-          "p95": 176,
-          "p99": 182,
-          "upper": 189
-        }
-      },
-      "form_weight_multipliers": {
-        "wood": 1,
-        "fire": 0.97,
-        "earth": 1.1,
-        "metal": 1.05,
-        "water": 0.95
-      },
-      "characteristics": {
-        "temperaments": [
-          {
-            "id": "serene",
-            "weight": 35
-          },
-          {
-            "id": "lazy",
-            "weight": 30
-          },
-          {
-            "id": "devoted",
-            "weight": 25
-          },
-          {
-            "id": "stubborn",
-            "weight": 10
-          }
-        ],
-        "markings": [
-          {
-            "id": "slate-black",
-            "weight": 45
-          },
-          {
-            "id": "mud-grey",
-            "weight": 30
-          },
-          {
-            "id": "pale-pink",
-            "weight": 20
-          },
-          {
-            "id": "white-chevroned",
-            "weight": 5
-          }
-        ],
-        "moonmarked_chance": "1/1024"
-      },
-      "taming": {
-        "bond_dc": 10,
-        "story_only": false,
-        "difficulty": "Easy",
-        "favoured_offerings": [
-          "rice straw",
-          "a cool river"
-        ]
-      },
-      "control": {
-        "command_dc": 11,
-        "difficulty": "Moderate"
-      },
-      "lore": "A Wallowhorn ploughs a field without a driver if it likes the farmer. Villages hold races for them after the harvest.",
-      "folklore_sources": [
-        {
-          "region": "Southeast Asia",
-          "tradition": "The water buffalo (carabao, kerbau, trâu) as a partner in rice farming, honoured in harvest festivals across the region."
-        }
-      ],
-      "armour": {
-        "body_plan": "hooved-quadruped",
-        "size": "large",
-        "slots": [
-          "head",
-          "body",
-          "limbs",
-          "charm"
-        ],
-        "max_weight": "heavy",
-        "armour_types": [
-          {
-            "type": "quilted-coat",
-            "fit": "yes"
-          },
-          {
-            "type": "lamellar-barding",
-            "fit": "yes"
-          },
-          {
-            "type": "scale-sheath",
-            "fit": "adapted"
-          },
-          {
-            "type": "plate-barding",
-            "fit": "yes"
-          },
-          {
-            "type": "beast-mask",
-            "fit": "yes"
-          },
-          {
-            "type": "horn-cap",
-            "fit": "yes"
-          },
-          {
-            "type": "hoof-guards",
-            "fit": "yes"
-          },
-          {
-            "type": "charm-collar",
-            "fit": "yes"
-          }
-        ]
-      }
-    },
-    {
       "id": "mistkit",
       "name": "Mistkit",
       "line": "mistprowler",
@@ -1823,6 +1485,8 @@
         "wood",
         "water"
       ],
+      "evolves_from": null,
+      "evolves_to": "cloudpelt",
       "stage": 1,
       "stage_name": "Wanderer",
       "playable": true,
@@ -1847,13 +1511,6 @@
           "p99": 79.8,
           "upper": 82.6
         }
-      },
-      "form_weight_multipliers": {
-        "wood": 1,
-        "fire": 0.97,
-        "earth": 1.1,
-        "metal": 1.05,
-        "water": 0.95
       },
       "characteristics": {
         "temperaments": [
@@ -1959,6 +1616,8 @@
         "wood",
         "water"
       ],
+      "evolves_from": "mistkit",
+      "evolves_to": null,
       "stage": 2,
       "stage_name": "Elder Wanderer",
       "playable": true,
@@ -1983,13 +1642,6 @@
           "p99": 194,
           "upper": 201
         }
-      },
-      "form_weight_multipliers": {
-        "wood": 1,
-        "fire": 0.97,
-        "earth": 1.1,
-        "metal": 1.05,
-        "water": 0.95
       },
       "characteristics": {
         "temperaments": [
@@ -2094,276 +1746,6 @@
       }
     },
     {
-      "id": "burrbun",
-      "name": "Burrbun",
-      "line": "bramblehare",
-      "kind": "wanderer",
-      "family": "lagomorph",
-      "elements": [
-        "wood"
-      ],
-      "stage": 1,
-      "stage_name": "Wanderer",
-      "playable": true,
-      "description": "A small brown rabbit whose fur is always tangled with burrs.",
-      "physical": {
-        "measure": "length",
-        "weight_kg": {
-          "distribution": "truncated_normal",
-          "mean": 1.5,
-          "sd": 0.18,
-          "min": 0.96,
-          "p95": 1.8,
-          "p99": 1.92,
-          "upper": 2.04
-        },
-        "length_cm": {
-          "distribution": "truncated_normal",
-          "mean": 35,
-          "sd": 2.1,
-          "min": 28.7,
-          "p95": 38.5,
-          "p99": 39.9,
-          "upper": 41.3
-        }
-      },
-      "form_weight_multipliers": {
-        "wood": 1,
-        "fire": 0.97,
-        "earth": 1.1,
-        "metal": 1.05,
-        "water": 0.95
-      },
-      "characteristics": {
-        "temperaments": [
-          {
-            "id": "playful",
-            "weight": 35
-          },
-          {
-            "id": "wary",
-            "weight": 35
-          },
-          {
-            "id": "restless",
-            "weight": 20
-          },
-          {
-            "id": "gentle",
-            "weight": 10
-          }
-        ],
-        "markings": [
-          {
-            "id": "thicket-brown",
-            "weight": 50
-          },
-          {
-            "id": "sand-grey",
-            "weight": 25
-          },
-          {
-            "id": "burr-speckled",
-            "weight": 20
-          },
-          {
-            "id": "white-tailed",
-            "weight": 5
-          }
-        ],
-        "moonmarked_chance": "1/1024"
-      },
-      "taming": {
-        "bond_dc": 10,
-        "story_only": false,
-        "difficulty": "Easy",
-        "favoured_offerings": [
-          "berries",
-          "a tangle of brambles"
-        ]
-      },
-      "control": {
-        "command_dc": 8,
-        "difficulty": "Easy"
-      },
-      "lore": "Burrbuns spread seeds wherever they go. A meadow full of brambles probably has a Burrbun to thank.",
-      "folklore_sources": [
-        {
-          "region": "East Asia",
-          "tradition": "The hare as a quick-witted survivor in countryside tales."
-        }
-      ],
-      "armour": {
-        "body_plan": "clawed-quadruped",
-        "size": "tiny",
-        "slots": [
-          "head",
-          "body",
-          "limbs",
-          "tail",
-          "charm"
-        ],
-        "max_weight": "light",
-        "armour_types": [
-          {
-            "type": "quilted-coat",
-            "fit": "yes"
-          },
-          {
-            "type": "beast-mask",
-            "fit": "yes"
-          },
-          {
-            "type": "claw-guards",
-            "fit": "yes"
-          },
-          {
-            "type": "tail-sheath",
-            "fit": "yes"
-          },
-          {
-            "type": "charm-collar",
-            "fit": "yes"
-          }
-        ]
-      }
-    },
-    {
-      "id": "bramblehare",
-      "name": "Bramblehare",
-      "line": "bramblehare",
-      "kind": "wanderer",
-      "family": "lagomorph",
-      "elements": [
-        "wood"
-      ],
-      "stage": 2,
-      "stage_name": "Elder Wanderer",
-      "playable": true,
-      "description": "A long-legged hare that weaves through thorn thickets without a scratch.",
-      "physical": {
-        "measure": "length",
-        "weight_kg": {
-          "distribution": "truncated_normal",
-          "mean": 4.5,
-          "sd": 0.54,
-          "min": 2.88,
-          "p95": 5.39,
-          "p99": 5.76,
-          "upper": 6.12
-        },
-        "length_cm": {
-          "distribution": "truncated_normal",
-          "mean": 65,
-          "sd": 3.9,
-          "min": 53.3,
-          "p95": 71.4,
-          "p99": 74.1,
-          "upper": 76.7
-        }
-      },
-      "form_weight_multipliers": {
-        "wood": 1,
-        "fire": 0.97,
-        "earth": 1.1,
-        "metal": 1.05,
-        "water": 0.95
-      },
-      "characteristics": {
-        "temperaments": [
-          {
-            "id": "playful",
-            "weight": 35
-          },
-          {
-            "id": "wary",
-            "weight": 35
-          },
-          {
-            "id": "restless",
-            "weight": 20
-          },
-          {
-            "id": "gentle",
-            "weight": 10
-          }
-        ],
-        "markings": [
-          {
-            "id": "thicket-brown",
-            "weight": 50
-          },
-          {
-            "id": "sand-grey",
-            "weight": 25
-          },
-          {
-            "id": "burr-speckled",
-            "weight": 20
-          },
-          {
-            "id": "white-tailed",
-            "weight": 5
-          }
-        ],
-        "moonmarked_chance": "1/1024"
-      },
-      "taming": {
-        "bond_dc": 10,
-        "story_only": false,
-        "difficulty": "Easy",
-        "favoured_offerings": [
-          "berries",
-          "a tangle of brambles"
-        ]
-      },
-      "control": {
-        "command_dc": 11,
-        "difficulty": "Moderate"
-      },
-      "lore": "A Bramblehare leads pursuers into the thorns and out the other side, where it waits, patiently, for them to untangle themselves.",
-      "folklore_sources": [
-        {
-          "region": "East Asia",
-          "tradition": "The hare as a quick-witted survivor in countryside tales."
-        }
-      ],
-      "armour": {
-        "body_plan": "clawed-quadruped",
-        "size": "tiny",
-        "slots": [
-          "head",
-          "body",
-          "limbs",
-          "tail",
-          "charm"
-        ],
-        "max_weight": "light",
-        "armour_types": [
-          {
-            "type": "quilted-coat",
-            "fit": "yes"
-          },
-          {
-            "type": "beast-mask",
-            "fit": "yes"
-          },
-          {
-            "type": "claw-guards",
-            "fit": "yes"
-          },
-          {
-            "type": "tail-sheath",
-            "fit": "yes"
-          },
-          {
-            "type": "charm-collar",
-            "fit": "yes"
-          }
-        ]
-      }
-    },
-    {
       "id": "callgecko",
       "name": "Callgecko",
       "line": "callgecko",
@@ -2373,6 +1755,8 @@
         "wood",
         "earth"
       ],
+      "evolves_from": null,
+      "evolves_to": "eavesgecko",
       "stage": 1,
       "stage_name": "Wanderer",
       "playable": true,
@@ -2397,13 +1781,6 @@
           "p99": 34.2,
           "upper": 35.4
         }
-      },
-      "form_weight_multipliers": {
-        "wood": 1,
-        "fire": 0.97,
-        "earth": 1.1,
-        "metal": 1.05,
-        "water": 0.95
       },
       "characteristics": {
         "temperaments": [
@@ -2509,6 +1886,8 @@
         "wood",
         "earth"
       ],
+      "evolves_from": "callgecko",
+      "evolves_to": null,
       "stage": 2,
       "stage_name": "Elder Wanderer",
       "playable": true,
@@ -2533,13 +1912,6 @@
           "p99": 79.8,
           "upper": 82.6
         }
-      },
-      "form_weight_multipliers": {
-        "wood": 1,
-        "fire": 0.97,
-        "earth": 1.1,
-        "metal": 1.05,
-        "water": 0.95
       },
       "characteristics": {
         "temperaments": [
@@ -2636,284 +2008,6 @@
       }
     },
     {
-      "id": "packfoal",
-      "name": "Packfoal",
-      "line": "saltroad-pony",
-      "kind": "wanderer",
-      "family": "equine",
-      "elements": [
-        "earth",
-        "metal"
-      ],
-      "stage": 1,
-      "stage_name": "Wanderer",
-      "playable": true,
-      "description": "A shaggy, short-legged foal with a bell on its halter.",
-      "physical": {
-        "measure": "shoulder",
-        "weight_kg": {
-          "distribution": "truncated_normal",
-          "mean": 60,
-          "sd": 7.2,
-          "min": 38.4,
-          "p95": 71.8,
-          "p99": 76.7,
-          "upper": 81.6
-        },
-        "shoulder_cm": {
-          "distribution": "truncated_normal",
-          "mean": 90,
-          "sd": 5.4,
-          "min": 73.8,
-          "p95": 98.9,
-          "p99": 103,
-          "upper": 106
-        }
-      },
-      "form_weight_multipliers": {
-        "wood": 1,
-        "fire": 0.97,
-        "earth": 1.1,
-        "metal": 1.05,
-        "water": 0.95
-      },
-      "characteristics": {
-        "temperaments": [
-          {
-            "id": "stubborn",
-            "weight": 35
-          },
-          {
-            "id": "devoted",
-            "weight": 30
-          },
-          {
-            "id": "serene",
-            "weight": 20
-          },
-          {
-            "id": "bold",
-            "weight": 15
-          }
-        ],
-        "markings": [
-          {
-            "id": "dun",
-            "weight": 45
-          },
-          {
-            "id": "bay",
-            "weight": 30
-          },
-          {
-            "id": "grey-dappled",
-            "weight": 20
-          },
-          {
-            "id": "gold-maned",
-            "weight": 5
-          }
-        ],
-        "moonmarked_chance": "1/1024"
-      },
-      "taming": {
-        "bond_dc": 10,
-        "story_only": false,
-        "difficulty": "Easy",
-        "favoured_offerings": [
-          "brick tea",
-          "salt"
-        ]
-      },
-      "control": {
-        "command_dc": 8,
-        "difficulty": "Easy"
-      },
-      "lore": "Packfoals walk beside the caravan before they are old enough to carry anything. The bell is so the caravan always knows where they are.",
-      "folklore_sources": [
-        {
-          "region": "Southwest China and the Himalaya",
-          "tradition": "The Tea Horse Road, where caravans of ponies carried tea one way and horses and salt the other across high mountain passes."
-        }
-      ],
-      "armour": {
-        "body_plan": "hooved-quadruped",
-        "size": "medium",
-        "slots": [
-          "head",
-          "body",
-          "limbs",
-          "charm"
-        ],
-        "max_weight": "light",
-        "armour_types": [
-          {
-            "type": "quilted-coat",
-            "fit": "yes"
-          },
-          {
-            "type": "beast-mask",
-            "fit": "yes"
-          },
-          {
-            "type": "hoof-guards",
-            "fit": "yes"
-          },
-          {
-            "type": "charm-collar",
-            "fit": "yes"
-          }
-        ]
-      }
-    },
-    {
-      "id": "saltroad-pony",
-      "name": "Saltroad Pony",
-      "line": "saltroad-pony",
-      "kind": "wanderer",
-      "family": "equine",
-      "elements": [
-        "earth",
-        "metal"
-      ],
-      "stage": 2,
-      "stage_name": "Elder Wanderer",
-      "playable": true,
-      "description": "A tough mountain pony laden with bricks of tea and blocks of salt.",
-      "physical": {
-        "measure": "shoulder",
-        "weight_kg": {
-          "distribution": "truncated_normal",
-          "mean": 280,
-          "sd": 33.6,
-          "min": 179,
-          "p95": 335,
-          "p99": 358,
-          "upper": 381
-        },
-        "shoulder_cm": {
-          "distribution": "truncated_normal",
-          "mean": 130,
-          "sd": 7.8,
-          "min": 107,
-          "p95": 143,
-          "p99": 148,
-          "upper": 153
-        }
-      },
-      "form_weight_multipliers": {
-        "wood": 1,
-        "fire": 0.97,
-        "earth": 1.1,
-        "metal": 1.05,
-        "water": 0.95
-      },
-      "characteristics": {
-        "temperaments": [
-          {
-            "id": "stubborn",
-            "weight": 35
-          },
-          {
-            "id": "devoted",
-            "weight": 30
-          },
-          {
-            "id": "serene",
-            "weight": 20
-          },
-          {
-            "id": "bold",
-            "weight": 15
-          }
-        ],
-        "markings": [
-          {
-            "id": "dun",
-            "weight": 45
-          },
-          {
-            "id": "bay",
-            "weight": 30
-          },
-          {
-            "id": "grey-dappled",
-            "weight": 20
-          },
-          {
-            "id": "gold-maned",
-            "weight": 5
-          }
-        ],
-        "moonmarked_chance": "1/1024"
-      },
-      "taming": {
-        "bond_dc": 10,
-        "story_only": false,
-        "difficulty": "Easy",
-        "favoured_offerings": [
-          "brick tea",
-          "salt"
-        ]
-      },
-      "control": {
-        "command_dc": 11,
-        "difficulty": "Moderate"
-      },
-      "lore": "A Saltroad Pony knows every pass between the Hours and walks them without a guide. Caravan masters trust its judgement over any map.",
-      "folklore_sources": [
-        {
-          "region": "Southwest China and the Himalaya",
-          "tradition": "The Tea Horse Road, where caravans of ponies carried tea one way and horses and salt the other across high mountain passes."
-        }
-      ],
-      "armour": {
-        "body_plan": "hooved-quadruped",
-        "size": "large",
-        "slots": [
-          "head",
-          "body",
-          "limbs",
-          "charm"
-        ],
-        "max_weight": "heavy",
-        "armour_types": [
-          {
-            "type": "quilted-coat",
-            "fit": "yes"
-          },
-          {
-            "type": "lamellar-barding",
-            "fit": "yes"
-          },
-          {
-            "type": "scale-sheath",
-            "fit": "adapted"
-          },
-          {
-            "type": "plate-barding",
-            "fit": "yes"
-          },
-          {
-            "type": "beast-mask",
-            "fit": "yes"
-          },
-          {
-            "type": "horn-cap",
-            "fit": "yes"
-          },
-          {
-            "type": "hoof-guards",
-            "fit": "yes"
-          },
-          {
-            "type": "charm-collar",
-            "fit": "yes"
-          }
-        ]
-      }
-    },
-    {
       "id": "crag-kid",
       "name": "Crag Kid",
       "line": "cliffserow",
@@ -2923,6 +2017,8 @@
         "earth",
         "metal"
       ],
+      "evolves_from": null,
+      "evolves_to": "cliffserow",
       "stage": 1,
       "stage_name": "Wanderer",
       "playable": true,
@@ -2947,13 +2043,6 @@
           "p99": 57,
           "upper": 59
         }
-      },
-      "form_weight_multipliers": {
-        "wood": 1,
-        "fire": 0.97,
-        "earth": 1.1,
-        "metal": 1.05,
-        "water": 0.95
       },
       "characteristics": {
         "temperaments": [
@@ -3054,6 +2143,8 @@
         "earth",
         "metal"
       ],
+      "evolves_from": "crag-kid",
+      "evolves_to": null,
       "stage": 2,
       "stage_name": "Elder Wanderer",
       "playable": true,
@@ -3078,13 +2169,6 @@
           "p99": 114,
           "upper": 118
         }
-      },
-      "form_weight_multipliers": {
-        "wood": 1,
-        "fire": 0.97,
-        "earth": 1.1,
-        "metal": 1.05,
-        "water": 0.95
       },
       "characteristics": {
         "temperaments": [
@@ -3201,6 +2285,8 @@
         "water",
         "wood"
       ],
+      "evolves_from": null,
+      "evolves_to": "moonloris",
       "stage": 1,
       "stage_name": "Wanderer",
       "playable": true,
@@ -3225,13 +2311,6 @@
           "p99": 34.2,
           "upper": 35.4
         }
-      },
-      "form_weight_multipliers": {
-        "wood": 1,
-        "fire": 0.97,
-        "earth": 1.1,
-        "metal": 1.05,
-        "water": 0.95
       },
       "characteristics": {
         "temperaments": [
@@ -3337,6 +2416,8 @@
         "water",
         "wood"
       ],
+      "evolves_from": "duskloris",
+      "evolves_to": null,
       "stage": 2,
       "stage_name": "Elder Wanderer",
       "playable": true,
@@ -3361,13 +2442,6 @@
           "p99": 51.3,
           "upper": 53.1
         }
-      },
-      "form_weight_multipliers": {
-        "wood": 1,
-        "fire": 0.97,
-        "earth": 1.1,
-        "metal": 1.05,
-        "water": 0.95
       },
       "characteristics": {
         "temperaments": [
@@ -3473,6 +2547,8 @@
         "wood",
         "fire"
       ],
+      "evolves_from": null,
+      "evolves_to": "redwhistle",
       "stage": 1,
       "stage_name": "Wanderer",
       "playable": true,
@@ -3497,13 +2573,6 @@
           "p99": 34.2,
           "upper": 35.4
         }
-      },
-      "form_weight_multipliers": {
-        "wood": 1,
-        "fire": 0.97,
-        "earth": 1.1,
-        "metal": 1.05,
-        "water": 0.95
       },
       "characteristics": {
         "temperaments": [
@@ -3609,6 +2678,8 @@
         "wood",
         "fire"
       ],
+      "evolves_from": "whistlepup",
+      "evolves_to": null,
       "stage": 2,
       "stage_name": "Elder Wanderer",
       "playable": true,
@@ -3633,13 +2704,6 @@
           "p99": 57,
           "upper": 59
         }
-      },
-      "form_weight_multipliers": {
-        "wood": 1,
-        "fire": 0.97,
-        "earth": 1.1,
-        "metal": 1.05,
-        "water": 0.95
       },
       "characteristics": {
         "temperaments": [
@@ -3744,284 +2808,6 @@
       }
     },
     {
-      "id": "bristlet",
-      "name": "Bristlet",
-      "line": "bristleboar",
-      "kind": "wanderer",
-      "family": "suine",
-      "elements": [
-        "wood",
-        "earth"
-      ],
-      "stage": 1,
-      "stage_name": "Wanderer",
-      "playable": true,
-      "description": "A striped piglet with a tuft of whiskers like a tiny beard.",
-      "physical": {
-        "measure": "length",
-        "weight_kg": {
-          "distribution": "truncated_normal",
-          "mean": 5,
-          "sd": 0.6,
-          "min": 3.2,
-          "p95": 5.99,
-          "p99": 6.4,
-          "upper": 6.8
-        },
-        "length_cm": {
-          "distribution": "truncated_normal",
-          "mean": 50,
-          "sd": 3,
-          "min": 41,
-          "p95": 54.9,
-          "p99": 57,
-          "upper": 59
-        }
-      },
-      "form_weight_multipliers": {
-        "wood": 1,
-        "fire": 0.97,
-        "earth": 1.1,
-        "metal": 1.05,
-        "water": 0.95
-      },
-      "characteristics": {
-        "temperaments": [
-          {
-            "id": "stubborn",
-            "weight": 35
-          },
-          {
-            "id": "lazy",
-            "weight": 25
-          },
-          {
-            "id": "bold",
-            "weight": 25
-          },
-          {
-            "id": "gentle",
-            "weight": 15
-          }
-        ],
-        "markings": [
-          {
-            "id": "forest-brown",
-            "weight": 45
-          },
-          {
-            "id": "bearded-grey",
-            "weight": 30
-          },
-          {
-            "id": "striped-young",
-            "weight": 20
-          },
-          {
-            "id": "white-bearded",
-            "weight": 5
-          }
-        ],
-        "moonmarked_chance": "1/1024"
-      },
-      "taming": {
-        "bond_dc": 10,
-        "story_only": false,
-        "difficulty": "Easy",
-        "favoured_offerings": [
-          "fallen fruit",
-          "a muddy bank"
-        ]
-      },
-      "control": {
-        "command_dc": 8,
-        "difficulty": "Easy"
-      },
-      "lore": "Bristlets follow fruiting trees with their herd, walking for weeks to reach the next feast.",
-      "folklore_sources": [
-        {
-          "region": "Borneo and Sumatra",
-          "tradition": "The bearded pig and its long seasonal migrations following fruiting forests."
-        }
-      ],
-      "armour": {
-        "body_plan": "hooved-quadruped",
-        "size": "tiny",
-        "slots": [
-          "head",
-          "body",
-          "limbs",
-          "charm"
-        ],
-        "max_weight": "light",
-        "armour_types": [
-          {
-            "type": "quilted-coat",
-            "fit": "yes"
-          },
-          {
-            "type": "beast-mask",
-            "fit": "yes"
-          },
-          {
-            "type": "hoof-guards",
-            "fit": "yes"
-          },
-          {
-            "type": "charm-collar",
-            "fit": "yes"
-          }
-        ]
-      }
-    },
-    {
-      "id": "bristleboar",
-      "name": "Bristleboar",
-      "line": "bristleboar",
-      "kind": "wanderer",
-      "family": "suine",
-      "elements": [
-        "wood",
-        "earth"
-      ],
-      "stage": 2,
-      "stage_name": "Elder Wanderer",
-      "playable": true,
-      "description": "A long-snouted boar with a magnificent bristly beard.",
-      "physical": {
-        "measure": "length",
-        "weight_kg": {
-          "distribution": "truncated_normal",
-          "mean": 120,
-          "sd": 14.4,
-          "min": 76.8,
-          "p95": 144,
-          "p99": 153,
-          "upper": 163
-        },
-        "length_cm": {
-          "distribution": "truncated_normal",
-          "mean": 150,
-          "sd": 9,
-          "min": 123,
-          "p95": 165,
-          "p99": 171,
-          "upper": 177
-        }
-      },
-      "form_weight_multipliers": {
-        "wood": 1,
-        "fire": 0.97,
-        "earth": 1.1,
-        "metal": 1.05,
-        "water": 0.95
-      },
-      "characteristics": {
-        "temperaments": [
-          {
-            "id": "stubborn",
-            "weight": 35
-          },
-          {
-            "id": "lazy",
-            "weight": 25
-          },
-          {
-            "id": "bold",
-            "weight": 25
-          },
-          {
-            "id": "gentle",
-            "weight": 15
-          }
-        ],
-        "markings": [
-          {
-            "id": "forest-brown",
-            "weight": 45
-          },
-          {
-            "id": "bearded-grey",
-            "weight": 30
-          },
-          {
-            "id": "striped-young",
-            "weight": 20
-          },
-          {
-            "id": "white-bearded",
-            "weight": 5
-          }
-        ],
-        "moonmarked_chance": "1/1024"
-      },
-      "taming": {
-        "bond_dc": 10,
-        "story_only": false,
-        "difficulty": "Easy",
-        "favoured_offerings": [
-          "fallen fruit",
-          "a muddy bank"
-        ]
-      },
-      "control": {
-        "command_dc": 11,
-        "difficulty": "Moderate"
-      },
-      "lore": "When the forest fruits, Bristleboar herds arrive within days from nowhere anyone can explain. Villages plan their own harvests by their arrival.",
-      "folklore_sources": [
-        {
-          "region": "Borneo and Sumatra",
-          "tradition": "The bearded pig and its long seasonal migrations following fruiting forests."
-        }
-      ],
-      "armour": {
-        "body_plan": "hooved-quadruped",
-        "size": "medium",
-        "slots": [
-          "head",
-          "body",
-          "limbs",
-          "charm"
-        ],
-        "max_weight": "heavy",
-        "armour_types": [
-          {
-            "type": "quilted-coat",
-            "fit": "yes"
-          },
-          {
-            "type": "lamellar-barding",
-            "fit": "yes"
-          },
-          {
-            "type": "scale-sheath",
-            "fit": "adapted"
-          },
-          {
-            "type": "plate-barding",
-            "fit": "yes"
-          },
-          {
-            "type": "beast-mask",
-            "fit": "yes"
-          },
-          {
-            "type": "horn-cap",
-            "fit": "yes"
-          },
-          {
-            "type": "hoof-guards",
-            "fit": "yes"
-          },
-          {
-            "type": "charm-collar",
-            "fit": "yes"
-          }
-        ]
-      }
-    },
-    {
       "id": "chirpling",
       "name": "Chirpling",
       "line": "bellcricket",
@@ -4031,6 +2817,8 @@
         "metal",
         "wood"
       ],
+      "evolves_from": null,
+      "evolves_to": "bellcricket",
       "stage": 1,
       "stage_name": "Wanderer",
       "playable": true,
@@ -4055,13 +2843,6 @@
           "p99": 4.56,
           "upper": 4.72
         }
-      },
-      "form_weight_multipliers": {
-        "wood": 1,
-        "fire": 0.97,
-        "earth": 1.1,
-        "metal": 1.05,
-        "water": 0.95
       },
       "characteristics": {
         "temperaments": [
@@ -4147,6 +2928,8 @@
         "metal",
         "wood"
       ],
+      "evolves_from": "chirpling",
+      "evolves_to": null,
       "stage": 2,
       "stage_name": "Elder Wanderer",
       "playable": true,
@@ -4171,13 +2954,6 @@
           "p99": 17.1,
           "upper": 17.7
         }
-      },
-      "form_weight_multipliers": {
-        "wood": 1,
-        "fire": 0.97,
-        "earth": 1.1,
-        "metal": 1.05,
-        "water": 0.95
       },
       "characteristics": {
         "temperaments": [
@@ -4246,6 +3022,3750 @@
         ],
         "max_weight": "light",
         "armour_types": [
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "hushhorn",
+      "name": "Hushhorn",
+      "line": "saola",
+      "kind": "wanderer",
+      "family": "bovine",
+      "elements": [
+        "wood",
+        "water"
+      ],
+      "evolves_from": null,
+      "evolves_to": "spindlehorn",
+      "stage": 1,
+      "stage_name": "Wanderer",
+      "playable": true,
+      "description": "A shy, chestnut calf with white face markings and two straight horn buds.",
+      "physical": {
+        "measure": "shoulder",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 30,
+          "sd": 3.6,
+          "min": 19.2,
+          "p95": 35.9,
+          "p99": 38.4,
+          "upper": 40.8
+        },
+        "shoulder_cm": {
+          "distribution": "truncated_normal",
+          "mean": 70,
+          "sd": 4.2,
+          "min": 57.4,
+          "p95": 76.9,
+          "p99": 79.8,
+          "upper": 82.6
+        }
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "wary",
+            "weight": 45
+          },
+          {
+            "id": "serene",
+            "weight": 30
+          },
+          {
+            "id": "gentle",
+            "weight": 20
+          },
+          {
+            "id": "stubborn",
+            "weight": 5
+          }
+        ],
+        "markings": [
+          {
+            "id": "chestnut",
+            "weight": 45
+          },
+          {
+            "id": "dark-brown",
+            "weight": 30
+          },
+          {
+            "id": "white-faced",
+            "weight": 20
+          },
+          {
+            "id": "black-striped",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "fig leaves",
+          "silence"
+        ]
+      },
+      "control": {
+        "command_dc": 8,
+        "difficulty": "Easy"
+      },
+      "lore": "Hushhorns are almost never seen. Forest folk say a Hushhorn only shows itself to someone who has stopped looking for it.",
+      "folklore_sources": [
+        {
+          "region": "Vietnam and Laos",
+          "tradition": "The saola, a forest bovine of the Annamite Mountains, first described by scientists in 1992 and so rarely seen that it is called the \"Asian unicorn\"."
+        }
+      ],
+      "armour": {
+        "body_plan": "hooved-quadruped",
+        "size": "small",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "hoof-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spindlehorn",
+      "name": "Spindlehorn",
+      "line": "saola",
+      "kind": "wanderer",
+      "family": "bovine",
+      "elements": [
+        "wood",
+        "water"
+      ],
+      "evolves_from": "hushhorn",
+      "evolves_to": null,
+      "stage": 2,
+      "stage_name": "Elder Wanderer",
+      "playable": true,
+      "description": "A graceful forest bovine with long, straight, parallel horns that sweep back like spindles.",
+      "physical": {
+        "measure": "shoulder",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 90,
+          "sd": 10.8,
+          "min": 57.6,
+          "p95": 108,
+          "p99": 115,
+          "upper": 122
+        },
+        "shoulder_cm": {
+          "distribution": "truncated_normal",
+          "mean": 90,
+          "sd": 5.4,
+          "min": 73.8,
+          "p95": 98.9,
+          "p99": 103,
+          "upper": 106
+        }
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "wary",
+            "weight": 45
+          },
+          {
+            "id": "serene",
+            "weight": 30
+          },
+          {
+            "id": "gentle",
+            "weight": 20
+          },
+          {
+            "id": "stubborn",
+            "weight": 5
+          }
+        ],
+        "markings": [
+          {
+            "id": "chestnut",
+            "weight": 45
+          },
+          {
+            "id": "dark-brown",
+            "weight": 30
+          },
+          {
+            "id": "white-faced",
+            "weight": 20
+          },
+          {
+            "id": "black-striped",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "fig leaves",
+          "silence"
+        ]
+      },
+      "control": {
+        "command_dc": 11,
+        "difficulty": "Moderate"
+      },
+      "lore": "A Spindlehorn walks so quietly that the forest does not notice it. Keepers who bond one say it is the patience of the forest given legs. It has never been caught, only befriended.",
+      "folklore_sources": [
+        {
+          "region": "Vietnam and Laos",
+          "tradition": "The saola, a forest bovine of the Annamite Mountains, first described by scientists in 1992 and so rarely seen that it is called the \"Asian unicorn\"."
+        }
+      ],
+      "armour": {
+        "body_plan": "hooved-quadruped",
+        "size": "medium",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "charm"
+        ],
+        "max_weight": "heavy",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "lamellar-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "scale-sheath",
+            "fit": "adapted"
+          },
+          {
+            "type": "plate-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "horn-cap",
+            "fit": "yes"
+          },
+          {
+            "type": "hoof-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "pebblepika",
+      "name": "Pebblepika",
+      "line": "pika",
+      "kind": "wanderer",
+      "family": "lagomorph",
+      "elements": [
+        "earth",
+        "metal"
+      ],
+      "evolves_from": null,
+      "evolves_to": "haymaker",
+      "stage": 1,
+      "stage_name": "Wanderer",
+      "playable": true,
+      "description": "A tiny round-eared, tailless relative of the rabbit that whistles from the rocks.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 0.15,
+          "sd": 0.018,
+          "min": 0.096,
+          "p95": 0.18,
+          "p99": 0.192,
+          "upper": 0.204
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 18,
+          "sd": 1.08,
+          "min": 14.8,
+          "p95": 19.8,
+          "p99": 20.5,
+          "upper": 21.2
+        }
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "curious",
+            "weight": 35
+          },
+          {
+            "id": "wary",
+            "weight": 30
+          },
+          {
+            "id": "playful",
+            "weight": 25
+          },
+          {
+            "id": "stubborn",
+            "weight": 10
+          }
+        ],
+        "markings": [
+          {
+            "id": "stone-grey",
+            "weight": 45
+          },
+          {
+            "id": "sand-brown",
+            "weight": 30
+          },
+          {
+            "id": "rust-red",
+            "weight": 20
+          },
+          {
+            "id": "white",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "dried flowers",
+          "a sheltered rock"
+        ]
+      },
+      "control": {
+        "command_dc": 8,
+        "difficulty": "Easy"
+      },
+      "lore": "Pebblepikas whistle a warning when anything approaches. Mountain climbers learn the whistles and take them seriously.",
+      "folklore_sources": [
+        {
+          "region": "Himalaya and Central Asia",
+          "tradition": "The pika of high mountain scree, which gathers piles of hay for the winter and calls across the rocks in sharp whistles."
+        }
+      ],
+      "armour": {
+        "body_plan": "clawed-quadruped",
+        "size": "tiny",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "tail",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "claw-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "tail-sheath",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "haymaker",
+      "name": "Haymaker",
+      "line": "pika",
+      "kind": "wanderer",
+      "family": "lagomorph",
+      "elements": [
+        "earth",
+        "metal"
+      ],
+      "evolves_from": "pebblepika",
+      "evolves_to": null,
+      "stage": 2,
+      "stage_name": "Elder Wanderer",
+      "playable": true,
+      "description": "A plump pika with cheeks full of flowers, standing guard beside a haystack taller than itself.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 0.3,
+          "sd": 0.036,
+          "min": 0.192,
+          "p95": 0.359,
+          "p99": 0.384,
+          "upper": 0.408
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 22,
+          "sd": 1.32,
+          "min": 18,
+          "p95": 24.2,
+          "p99": 25.1,
+          "upper": 26
+        }
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "curious",
+            "weight": 35
+          },
+          {
+            "id": "wary",
+            "weight": 30
+          },
+          {
+            "id": "playful",
+            "weight": 25
+          },
+          {
+            "id": "stubborn",
+            "weight": 10
+          }
+        ],
+        "markings": [
+          {
+            "id": "stone-grey",
+            "weight": 45
+          },
+          {
+            "id": "sand-brown",
+            "weight": 30
+          },
+          {
+            "id": "rust-red",
+            "weight": 20
+          },
+          {
+            "id": "white",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "dried flowers",
+          "a sheltered rock"
+        ]
+      },
+      "control": {
+        "command_dc": 11,
+        "difficulty": "Moderate"
+      },
+      "lore": "A Haymaker spends all summer gathering flowers and grasses into a haystack under the rocks, enough to last the winter. Hungry travellers who find one and ask politely are given a handful; those who steal find the pass mysteriously full of whistling.",
+      "folklore_sources": [
+        {
+          "region": "Himalaya and Central Asia",
+          "tradition": "The pika of high mountain scree, which gathers piles of hay for the winter and calls across the rocks in sharp whistles."
+        }
+      ],
+      "armour": {
+        "body_plan": "clawed-quadruped",
+        "size": "tiny",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "tail",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "claw-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "tail-sheath",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "highfoal",
+      "name": "Highfoal",
+      "line": "kiang",
+      "kind": "wanderer",
+      "family": "equine",
+      "elements": [
+        "earth",
+        "metal"
+      ],
+      "evolves_from": null,
+      "evolves_to": "skyplain-kiang",
+      "stage": 1,
+      "stage_name": "Wanderer",
+      "playable": true,
+      "description": "A long-eared, chestnut-and-white foal of the high plateau.",
+      "physical": {
+        "measure": "shoulder",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 120,
+          "sd": 14.4,
+          "min": 76.8,
+          "p95": 144,
+          "p99": 153,
+          "upper": 163
+        },
+        "shoulder_cm": {
+          "distribution": "truncated_normal",
+          "mean": 110,
+          "sd": 6.6,
+          "min": 90.2,
+          "p95": 121,
+          "p99": 125,
+          "upper": 130
+        }
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "restless",
+            "weight": 35
+          },
+          {
+            "id": "wary",
+            "weight": 30
+          },
+          {
+            "id": "bold",
+            "weight": 20
+          },
+          {
+            "id": "proud",
+            "weight": 15
+          }
+        ],
+        "markings": [
+          {
+            "id": "chestnut",
+            "weight": 45
+          },
+          {
+            "id": "white-bellied",
+            "weight": 30
+          },
+          {
+            "id": "dark-striped",
+            "weight": 20
+          },
+          {
+            "id": "gold",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "salt",
+          "highland grass"
+        ]
+      },
+      "control": {
+        "command_dc": 8,
+        "difficulty": "Easy"
+      },
+      "lore": "Highfoals are born on the windiest plains in the Twelve Hours and can run within an hour of birth.",
+      "folklore_sources": [
+        {
+          "region": "Tibetan Plateau",
+          "tradition": "The kiang, a wild ass of the high plateau, famous for galloping alongside travellers and racing them for the sheer joy of it."
+        }
+      ],
+      "armour": {
+        "body_plan": "hooved-quadruped",
+        "size": "medium",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "hoof-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skyplain-kiang",
+      "name": "Skyplain Kiang",
+      "line": "kiang",
+      "kind": "wanderer",
+      "family": "equine",
+      "elements": [
+        "earth",
+        "metal"
+      ],
+      "evolves_from": "highfoal",
+      "evolves_to": null,
+      "stage": 2,
+      "stage_name": "Elder Wanderer",
+      "playable": true,
+      "description": "A powerful wild ass with a dark stripe along its back, racing across the plateau.",
+      "physical": {
+        "measure": "shoulder",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 350,
+          "sd": 42,
+          "min": 224,
+          "p95": 419,
+          "p99": 448,
+          "upper": 476
+        },
+        "shoulder_cm": {
+          "distribution": "truncated_normal",
+          "mean": 140,
+          "sd": 8.4,
+          "min": 115,
+          "p95": 154,
+          "p99": 160,
+          "upper": 165
+        }
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "restless",
+            "weight": 35
+          },
+          {
+            "id": "wary",
+            "weight": 30
+          },
+          {
+            "id": "bold",
+            "weight": 20
+          },
+          {
+            "id": "proud",
+            "weight": 15
+          }
+        ],
+        "markings": [
+          {
+            "id": "chestnut",
+            "weight": 45
+          },
+          {
+            "id": "white-bellied",
+            "weight": 30
+          },
+          {
+            "id": "dark-striped",
+            "weight": 20
+          },
+          {
+            "id": "gold",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "salt",
+          "highland grass"
+        ]
+      },
+      "control": {
+        "command_dc": 11,
+        "difficulty": "Moderate"
+      },
+      "lore": "A Skyplain Kiang will gallop beside any traveller on the high plains, racing for the joy of it, then wheel away at the last moment. Nobody owns one. A few, very rarely, choose a Keeper.",
+      "folklore_sources": [
+        {
+          "region": "Tibetan Plateau",
+          "tradition": "The kiang, a wild ass of the high plateau, famous for galloping alongside travellers and racing them for the sheer joy of it."
+        }
+      ],
+      "armour": {
+        "body_plan": "hooved-quadruped",
+        "size": "large",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "charm"
+        ],
+        "max_weight": "heavy",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "lamellar-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "scale-sheath",
+            "fit": "adapted"
+          },
+          {
+            "type": "plate-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "horn-cap",
+            "fit": "yes"
+          },
+          {
+            "type": "hoof-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "tusklet",
+      "name": "Tusklet",
+      "line": "babirusa",
+      "kind": "wanderer",
+      "family": "suine",
+      "elements": [
+        "earth",
+        "water"
+      ],
+      "evolves_from": null,
+      "evolves_to": "antlertusk",
+      "stage": 1,
+      "stage_name": "Wanderer",
+      "playable": true,
+      "description": "A smooth, grey piglet with two little tusks just beginning to curl.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 25,
+          "sd": 3,
+          "min": 16,
+          "p95": 29.9,
+          "p99": 32,
+          "upper": 34
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 80,
+          "sd": 4.8,
+          "min": 65.6,
+          "p95": 87.9,
+          "p99": 91.2,
+          "upper": 94.4
+        }
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "stubborn",
+            "weight": 35
+          },
+          {
+            "id": "wary",
+            "weight": 30
+          },
+          {
+            "id": "gentle",
+            "weight": 20
+          },
+          {
+            "id": "bold",
+            "weight": 15
+          }
+        ],
+        "markings": [
+          {
+            "id": "slate-grey",
+            "weight": 45
+          },
+          {
+            "id": "mud-brown",
+            "weight": 35
+          },
+          {
+            "id": "pale-skinned",
+            "weight": 15
+          },
+          {
+            "id": "gold-tusked",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "fallen fruit",
+          "a salt lick"
+        ]
+      },
+      "control": {
+        "command_dc": 8,
+        "difficulty": "Easy"
+      },
+      "lore": "Tusklets gather at riverside salt licks with their families. Their squeals carry for miles at dawn.",
+      "folklore_sources": [
+        {
+          "region": "Indonesia (Sulawesi)",
+          "tradition": "The babirusa (\"pig-deer\"), whose upper tusks grow up through the snout and curve back toward the forehead like antlers."
+        }
+      ],
+      "armour": {
+        "body_plan": "hooved-quadruped",
+        "size": "small",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "hoof-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "antlertusk",
+      "name": "Antlertusk",
+      "line": "babirusa",
+      "kind": "wanderer",
+      "family": "suine",
+      "elements": [
+        "earth",
+        "water"
+      ],
+      "evolves_from": "tusklet",
+      "evolves_to": null,
+      "stage": 2,
+      "stage_name": "Elder Wanderer",
+      "playable": true,
+      "description": "A long-legged, hairless swine whose upper tusks curve up through its snout like antlers.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 85,
+          "sd": 10.2,
+          "min": 54.4,
+          "p95": 102,
+          "p99": 109,
+          "upper": 116
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 110,
+          "sd": 6.6,
+          "min": 90.2,
+          "p95": 121,
+          "p99": 125,
+          "upper": 130
+        }
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "stubborn",
+            "weight": 35
+          },
+          {
+            "id": "wary",
+            "weight": 30
+          },
+          {
+            "id": "gentle",
+            "weight": 20
+          },
+          {
+            "id": "bold",
+            "weight": 15
+          }
+        ],
+        "markings": [
+          {
+            "id": "slate-grey",
+            "weight": 45
+          },
+          {
+            "id": "mud-brown",
+            "weight": 35
+          },
+          {
+            "id": "pale-skinned",
+            "weight": 15
+          },
+          {
+            "id": "gold-tusked",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "fallen fruit",
+          "a salt lick"
+        ]
+      },
+      "control": {
+        "command_dc": 11,
+        "difficulty": "Moderate"
+      },
+      "lore": "Antlertusks grow their tusks through their own snouts and back toward their eyes, and they wear them with enormous dignity. Islanders say an Antlertusk's tusks keep growing until they point at the thing it most wants, and that it spends its life walking toward it.",
+      "folklore_sources": [
+        {
+          "region": "Indonesia (Sulawesi)",
+          "tradition": "The babirusa (\"pig-deer\"), whose upper tusks grow up through the snout and curve back toward the forehead like antlers."
+        }
+      ],
+      "armour": {
+        "body_plan": "hooved-quadruped",
+        "size": "medium",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "charm"
+        ],
+        "max_weight": "heavy",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "lamellar-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "scale-sheath",
+            "fit": "adapted"
+          },
+          {
+            "type": "plate-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "horn-cap",
+            "fit": "yes"
+          },
+          {
+            "type": "hoof-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "gustferret",
+      "name": "Gustferret",
+      "line": "sicklewind",
+      "kind": "wanderer",
+      "family": "mustelid",
+      "mythical": true,
+      "elements": [
+        "metal",
+        "wood"
+      ],
+      "evolves_from": null,
+      "evolves_to": "threefold-sickle",
+      "stage": 1,
+      "stage_name": "Wanderer",
+      "playable": true,
+      "description": "A slim grey weasel with tiny curved blades for claws, riding a whirl of dust.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 1.5,
+          "sd": 0.18,
+          "min": 0.96,
+          "p95": 1.8,
+          "p99": 1.92,
+          "upper": 2.04
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 45,
+          "sd": 2.7,
+          "min": 36.9,
+          "p95": 49.4,
+          "p99": 51.3,
+          "upper": 53.1
+        }
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "sly",
+            "weight": 40
+          },
+          {
+            "id": "restless",
+            "weight": 30
+          },
+          {
+            "id": "playful",
+            "weight": 20
+          },
+          {
+            "id": "devoted",
+            "weight": 10
+          }
+        ],
+        "markings": [
+          {
+            "id": "wind-grey",
+            "weight": 45
+          },
+          {
+            "id": "silver",
+            "weight": 30
+          },
+          {
+            "id": "brown",
+            "weight": 20
+          },
+          {
+            "id": "white-tipped",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "whetstones",
+          "a gust of wind"
+        ]
+      },
+      "control": {
+        "command_dc": 8,
+        "difficulty": "Easy"
+      },
+      "lore": "Gustferrets ride whirlwinds across mountain passes. Travellers with a strange shallow cut and no memory of how they got it have met one.",
+      "folklore_sources": [
+        {
+          "region": "Japan",
+          "tradition": "The kamaitachi, sickle-clawed weasels riding the wind. In some regions they come as three; the first knocks you down, the second cuts, and the third heals the wound so it never bleeds."
+        }
+      ],
+      "armour": {
+        "body_plan": "clawed-quadruped",
+        "size": "tiny",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "tail",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "claw-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "tail-sheath",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "threefold-sickle",
+      "name": "Threefold Sickle",
+      "line": "sicklewind",
+      "kind": "wanderer",
+      "family": "mustelid",
+      "mythical": true,
+      "elements": [
+        "metal",
+        "wood"
+      ],
+      "evolves_from": "gustferret",
+      "evolves_to": null,
+      "stage": 2,
+      "stage_name": "Elder Wanderer",
+      "playable": true,
+      "description": "A silver weasel with sickle-blade forelimbs, always followed by two shimmering twins.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 4,
+          "sd": 0.48,
+          "min": 2.56,
+          "p95": 4.79,
+          "p99": 5.12,
+          "upper": 5.44
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 70,
+          "sd": 4.2,
+          "min": 57.4,
+          "p95": 76.9,
+          "p99": 79.8,
+          "upper": 82.6
+        }
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "sly",
+            "weight": 40
+          },
+          {
+            "id": "restless",
+            "weight": 30
+          },
+          {
+            "id": "playful",
+            "weight": 20
+          },
+          {
+            "id": "devoted",
+            "weight": 10
+          }
+        ],
+        "markings": [
+          {
+            "id": "wind-grey",
+            "weight": 45
+          },
+          {
+            "id": "silver",
+            "weight": 30
+          },
+          {
+            "id": "brown",
+            "weight": 20
+          },
+          {
+            "id": "white-tipped",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "whetstones",
+          "a gust of wind"
+        ]
+      },
+      "control": {
+        "command_dc": 11,
+        "difficulty": "Moderate"
+      },
+      "lore": "Threefold Sickles hunt as one beast in three bodies: the first trips, the second cuts, and the third heals the cut before it can bleed. Keepers who bond one learn that it never means real harm. It just cannot resist a joke.",
+      "folklore_sources": [
+        {
+          "region": "Japan",
+          "tradition": "The kamaitachi, sickle-clawed weasels riding the wind. In some regions they come as three; the first knocks you down, the second cuts, and the third heals the wound so it never bleeds."
+        }
+      ],
+      "armour": {
+        "body_plan": "clawed-quadruped",
+        "size": "tiny",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "tail",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "claw-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "tail-sheath",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "stormkit",
+      "name": "Stormkit",
+      "line": "thunderhide",
+      "kind": "wanderer",
+      "family": "mustelid",
+      "mythical": true,
+      "elements": [
+        "wood",
+        "metal"
+      ],
+      "evolves_from": null,
+      "evolves_to": "thunderhide",
+      "stage": 1,
+      "stage_name": "Wanderer",
+      "playable": true,
+      "description": "A crackling blue-grey creature, half cat and half weasel, whose fur stands on end.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 6,
+          "sd": 0.72,
+          "min": 3.84,
+          "p95": 7.18,
+          "p99": 7.67,
+          "upper": 8.16
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 70,
+          "sd": 4.2,
+          "min": 57.4,
+          "p95": 76.9,
+          "p99": 79.8,
+          "upper": 82.6
+        }
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "restless",
+            "weight": 40
+          },
+          {
+            "id": "bold",
+            "weight": 30
+          },
+          {
+            "id": "playful",
+            "weight": 20
+          },
+          {
+            "id": "proud",
+            "weight": 10
+          }
+        ],
+        "markings": [
+          {
+            "id": "storm-blue",
+            "weight": 40
+          },
+          {
+            "id": "lightning-gold",
+            "weight": 30
+          },
+          {
+            "id": "grey",
+            "weight": 25
+          },
+          {
+            "id": "white",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "a dry place in a storm"
+        ]
+      },
+      "control": {
+        "command_dc": 8,
+        "difficulty": "Easy"
+      },
+      "lore": "Stormkits fall with the lightning and are dazed for a day afterward. Farm children who find one in a field know to keep it dry.",
+      "folklore_sources": [
+        {
+          "region": "Japan",
+          "tradition": "The raijū, a thunder beast that falls to earth with the lightning and was said to curl up in people's navels during storms, so children were told to sleep on their stomachs."
+        }
+      ],
+      "armour": {
+        "body_plan": "clawed-quadruped",
+        "size": "small",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "tail",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "claw-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "tail-sheath",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "thunderhide",
+      "name": "Thunderhide",
+      "line": "thunderhide",
+      "kind": "wanderer",
+      "family": "mustelid",
+      "mythical": true,
+      "elements": [
+        "wood",
+        "metal"
+      ],
+      "evolves_from": "stormkit",
+      "evolves_to": null,
+      "stage": 2,
+      "stage_name": "Elder Wanderer",
+      "playable": true,
+      "description": "A sleek beast of storm-blue fur crackling with lightning, its tail forked like a bolt.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 25,
+          "sd": 3,
+          "min": 16,
+          "p95": 29.9,
+          "p99": 32,
+          "upper": 34
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 120,
+          "sd": 7.2,
+          "min": 98.4,
+          "p95": 132,
+          "p99": 137,
+          "upper": 142
+        }
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "restless",
+            "weight": 40
+          },
+          {
+            "id": "bold",
+            "weight": 30
+          },
+          {
+            "id": "playful",
+            "weight": 20
+          },
+          {
+            "id": "proud",
+            "weight": 10
+          }
+        ],
+        "markings": [
+          {
+            "id": "storm-blue",
+            "weight": 40
+          },
+          {
+            "id": "lightning-gold",
+            "weight": 30
+          },
+          {
+            "id": "grey",
+            "weight": 25
+          },
+          {
+            "id": "white",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "a dry place in a storm"
+        ]
+      },
+      "control": {
+        "command_dc": 11,
+        "difficulty": "Moderate"
+      },
+      "lore": "A Thunderhide rides the leading edge of every storm in the Hour of the Dragon. When it grows tired it falls to earth in a lightning strike and curls up somewhere warm to sleep, which is why careful parents still tell their children to sleep on their stomachs during storms.",
+      "folklore_sources": [
+        {
+          "region": "Japan",
+          "tradition": "The raijū, a thunder beast that falls to earth with the lightning and was said to curl up in people's navels during storms, so children were told to sleep on their stomachs."
+        }
+      ],
+      "armour": {
+        "body_plan": "clawed-quadruped",
+        "size": "small",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "tail",
+          "charm"
+        ],
+        "max_weight": "medium",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "lamellar-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "scale-sheath",
+            "fit": "adapted"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "claw-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "tail-sheath",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "stubcoil",
+      "name": "Stubcoil",
+      "line": "mallet-snake",
+      "kind": "wanderer",
+      "family": "reptilian",
+      "mythical": true,
+      "elements": [
+        "earth"
+      ],
+      "evolves_from": null,
+      "evolves_to": "hillmallet",
+      "stage": 1,
+      "stage_name": "Wanderer",
+      "playable": true,
+      "description": "A short, stout snake with a fat middle and a stubby tail, like a little mallet.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 2,
+          "sd": 0.24,
+          "min": 1.28,
+          "p95": 2.39,
+          "p99": 2.56,
+          "upper": 2.72
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 40,
+          "sd": 2.4,
+          "min": 32.8,
+          "p95": 43.9,
+          "p99": 45.6,
+          "upper": 47.2
+        }
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "lazy",
+            "weight": 40
+          },
+          {
+            "id": "sly",
+            "weight": 30
+          },
+          {
+            "id": "playful",
+            "weight": 20
+          },
+          {
+            "id": "wary",
+            "weight": 10
+          }
+        ],
+        "markings": [
+          {
+            "id": "earth-brown",
+            "weight": 45
+          },
+          {
+            "id": "dust-grey",
+            "weight": 30
+          },
+          {
+            "id": "dark-spotted",
+            "weight": 20
+          },
+          {
+            "id": "gold",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "rice wine",
+          "a warm stone"
+        ]
+      },
+      "control": {
+        "command_dc": 8,
+        "difficulty": "Easy"
+      },
+      "lore": "Stubcoils roll downhill when they're in a hurry. They are rarely in a hurry.",
+      "folklore_sources": [
+        {
+          "region": "Japan",
+          "tradition": "The tsuchinoko, a stout snake with a body like a mallet, said to leap great distances and to like rice wine. Several towns have offered rewards for proof of one."
+        }
+      ],
+      "armour": {
+        "body_plan": "serpentine",
+        "size": "tiny",
+        "slots": [
+          "head",
+          "body",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "adapted"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "hillmallet",
+      "name": "Hillmallet",
+      "line": "mallet-snake",
+      "kind": "wanderer",
+      "family": "reptilian",
+      "mythical": true,
+      "elements": [
+        "earth"
+      ],
+      "evolves_from": "stubcoil",
+      "evolves_to": null,
+      "stage": 2,
+      "stage_name": "Elder Wanderer",
+      "playable": true,
+      "description": "A thick-bodied snake that can spring through the air like a thrown mallet.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 12,
+          "sd": 1.44,
+          "min": 7.68,
+          "p95": 14.4,
+          "p99": 15.3,
+          "upper": 16.3
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 90,
+          "sd": 5.4,
+          "min": 73.8,
+          "p95": 98.9,
+          "p99": 103,
+          "upper": 106
+        }
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "lazy",
+            "weight": 40
+          },
+          {
+            "id": "sly",
+            "weight": 30
+          },
+          {
+            "id": "playful",
+            "weight": 20
+          },
+          {
+            "id": "wary",
+            "weight": 10
+          }
+        ],
+        "markings": [
+          {
+            "id": "earth-brown",
+            "weight": 45
+          },
+          {
+            "id": "dust-grey",
+            "weight": 30
+          },
+          {
+            "id": "dark-spotted",
+            "weight": 20
+          },
+          {
+            "id": "gold",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "rice wine",
+          "a warm stone"
+        ]
+      },
+      "control": {
+        "command_dc": 11,
+        "difficulty": "Moderate"
+      },
+      "lore": "Towns in the Hour of the Snake have offered rewards for proof of a Hillmallet for a hundred years. None has ever been claimed. Hillmallets know about the rewards and find them very funny.",
+      "folklore_sources": [
+        {
+          "region": "Japan",
+          "tradition": "The tsuchinoko, a stout snake with a body like a mallet, said to leap great distances and to like rice wine. Several towns have offered rewards for proof of one."
+        }
+      ],
+      "armour": {
+        "body_plan": "serpentine",
+        "size": "small",
+        "slots": [
+          "head",
+          "body",
+          "charm"
+        ],
+        "max_weight": "medium",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "adapted"
+          },
+          {
+            "type": "scale-sheath",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "emberstilt",
+      "name": "Emberstilt",
+      "line": "pyrecrane",
+      "kind": "wanderer",
+      "family": "avian",
+      "mythical": true,
+      "elements": [
+        "fire",
+        "wood"
+      ],
+      "evolves_from": null,
+      "evolves_to": "onefoot-pyrecrane",
+      "stage": 1,
+      "stage_name": "Wanderer",
+      "playable": true,
+      "description": "A blue-and-red chick standing on a single long leg.",
+      "physical": {
+        "measure": "height",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 3,
+          "sd": 0.36,
+          "min": 1.92,
+          "p95": 3.59,
+          "p99": 3.84,
+          "upper": 4.08
+        },
+        "height_cm": {
+          "distribution": "truncated_normal",
+          "mean": 90,
+          "sd": 5.4,
+          "min": 73.8,
+          "p95": 98.9,
+          "p99": 103,
+          "upper": 106
+        }
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "proud",
+            "weight": 40
+          },
+          {
+            "id": "serene",
+            "weight": 30
+          },
+          {
+            "id": "restless",
+            "weight": 20
+          },
+          {
+            "id": "wary",
+            "weight": 10
+          }
+        ],
+        "markings": [
+          {
+            "id": "blue-and-red",
+            "weight": 45
+          },
+          {
+            "id": "crimson-spotted",
+            "weight": 30
+          },
+          {
+            "id": "white-beaked",
+            "weight": 20
+          },
+          {
+            "id": "gold",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "a lit candle",
+          "cedar wood"
+        ]
+      },
+      "control": {
+        "command_dc": 8,
+        "difficulty": "Easy"
+      },
+      "lore": "Emberstilts appear where a fire is about to start. Villagers who see one check their stoves.",
+      "folklore_sources": [
+        {
+          "region": "China",
+          "tradition": "The bifang of the Classic of Mountains and Seas, a crane-like bird with a single leg, blue feathers with red markings and a white beak, whose appearance was said to foretell fire."
+        }
+      ],
+      "armour": {
+        "body_plan": "avian",
+        "size": "tiny",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "adapted"
+          },
+          {
+            "type": "feather-mantle",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "talon-sheaths",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "onefoot-pyrecrane",
+      "name": "Onefoot Pyrecrane",
+      "line": "pyrecrane",
+      "kind": "wanderer",
+      "family": "avian",
+      "mythical": true,
+      "elements": [
+        "fire",
+        "wood"
+      ],
+      "evolves_from": "emberstilt",
+      "evolves_to": null,
+      "stage": 2,
+      "stage_name": "Elder Wanderer",
+      "playable": true,
+      "description": "A tall one-legged crane of blue and crimson with a white beak and sparks in its feathers.",
+      "physical": {
+        "measure": "height",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 9,
+          "sd": 1.08,
+          "min": 5.76,
+          "p95": 10.8,
+          "p99": 11.5,
+          "upper": 12.2
+        },
+        "height_cm": {
+          "distribution": "truncated_normal",
+          "mean": 160,
+          "sd": 9.6,
+          "min": 131,
+          "p95": 176,
+          "p99": 182,
+          "upper": 189
+        }
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "proud",
+            "weight": 40
+          },
+          {
+            "id": "serene",
+            "weight": 30
+          },
+          {
+            "id": "restless",
+            "weight": 20
+          },
+          {
+            "id": "wary",
+            "weight": 10
+          }
+        ],
+        "markings": [
+          {
+            "id": "blue-and-red",
+            "weight": 45
+          },
+          {
+            "id": "crimson-spotted",
+            "weight": 30
+          },
+          {
+            "id": "white-beaked",
+            "weight": 20
+          },
+          {
+            "id": "gold",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "a lit candle",
+          "cedar wood"
+        ]
+      },
+      "control": {
+        "command_dc": 11,
+        "difficulty": "Moderate"
+      },
+      "lore": "A Onefoot Pyrecrane never causes the fires it foretells. It arrives first to warn, and those who heed it are spared. Those who ignore it say afterward that the bird must have started the blaze, and the Pyrecrane has long since stopped arguing.",
+      "folklore_sources": [
+        {
+          "region": "China",
+          "tradition": "The bifang of the Classic of Mountains and Seas, a crane-like bird with a single leg, blue feathers with red markings and a white beak, whose appearance was said to foretell fire."
+        }
+      ],
+      "armour": {
+        "body_plan": "avian",
+        "size": "small",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "adapted"
+          },
+          {
+            "type": "feather-mantle",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "talon-sheaths",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "drumcalf",
+      "name": "Drumcalf",
+      "line": "thunderdrum",
+      "kind": "wanderer",
+      "family": "bovine",
+      "mythical": true,
+      "elements": [
+        "wood",
+        "water"
+      ],
+      "evolves_from": null,
+      "evolves_to": "thunderdrum",
+      "stage": 1,
+      "stage_name": "Wanderer",
+      "playable": true,
+      "description": "A grey-blue, hornless calf that hops on a single sturdy leg.",
+      "physical": {
+        "measure": "shoulder",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 300,
+          "sd": 36,
+          "min": 192,
+          "p95": 359,
+          "p99": 384,
+          "upper": 408
+        },
+        "shoulder_cm": {
+          "distribution": "truncated_normal",
+          "mean": 120,
+          "sd": 7.2,
+          "min": 98.4,
+          "p95": 132,
+          "p99": 137,
+          "upper": 142
+        }
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "serene",
+            "weight": 35
+          },
+          {
+            "id": "bold",
+            "weight": 30
+          },
+          {
+            "id": "stubborn",
+            "weight": 25
+          },
+          {
+            "id": "proud",
+            "weight": 10
+          }
+        ],
+        "markings": [
+          {
+            "id": "blue-grey",
+            "weight": 50
+          },
+          {
+            "id": "storm-dark",
+            "weight": 30
+          },
+          {
+            "id": "silver",
+            "weight": 15
+          },
+          {
+            "id": "moon-pale",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "drum music",
+          "sea salt"
+        ]
+      },
+      "control": {
+        "command_dc": 8,
+        "difficulty": "Easy"
+      },
+      "lore": "Drumcalves hop out of the sea before a storm. Their footfalls sound like distant drums.",
+      "folklore_sources": [
+        {
+          "region": "China",
+          "tradition": "The kui of the Classic of Mountains and Seas, a hornless, one-legged ox-like beast of the Eastern Sea whose comings and goings bring wind and rain, which shines like the sun and moon and whose voice is like thunder."
+        }
+      ],
+      "armour": {
+        "body_plan": "hooved-quadruped",
+        "size": "large",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "hoof-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "thunderdrum",
+      "name": "Thunderdrum",
+      "line": "thunderdrum",
+      "kind": "wanderer",
+      "family": "bovine",
+      "mythical": true,
+      "elements": [
+        "wood",
+        "water"
+      ],
+      "evolves_from": "drumcalf",
+      "evolves_to": null,
+      "stage": 2,
+      "stage_name": "Elder Wanderer",
+      "playable": true,
+      "description": "A massive one-legged ox of storm-blue hide that glows like the moon, wind and rain swirling around it.",
+      "physical": {
+        "measure": "shoulder",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 700,
+          "sd": 84,
+          "min": 448,
+          "p95": 838,
+          "p99": 895,
+          "upper": 952
+        },
+        "shoulder_cm": {
+          "distribution": "truncated_normal",
+          "mean": 170,
+          "sd": 10.2,
+          "min": 139,
+          "p95": 187,
+          "p99": 194,
+          "upper": 201
+        }
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "serene",
+            "weight": 35
+          },
+          {
+            "id": "bold",
+            "weight": 30
+          },
+          {
+            "id": "stubborn",
+            "weight": 25
+          },
+          {
+            "id": "proud",
+            "weight": 10
+          }
+        ],
+        "markings": [
+          {
+            "id": "blue-grey",
+            "weight": 50
+          },
+          {
+            "id": "storm-dark",
+            "weight": 30
+          },
+          {
+            "id": "silver",
+            "weight": 15
+          },
+          {
+            "id": "moon-pale",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "drum music",
+          "sea salt"
+        ]
+      },
+      "control": {
+        "command_dc": 11,
+        "difficulty": "Moderate"
+      },
+      "lore": "When a Thunderdrum leaves the sea, the wind rises and the rain comes, and its bellow rolls across the water like thunder. An old story says a drum made from such a beast could be heard five hundred li away. Thunderdrums know the story, and they do not like drummers.",
+      "folklore_sources": [
+        {
+          "region": "China",
+          "tradition": "The kui of the Classic of Mountains and Seas, a hornless, one-legged ox-like beast of the Eastern Sea whose comings and goings bring wind and rain, which shines like the sun and moon and whose voice is like thunder."
+        }
+      ],
+      "armour": {
+        "body_plan": "hooved-quadruped",
+        "size": "large",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "charm"
+        ],
+        "max_weight": "heavy",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "lamellar-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "scale-sheath",
+            "fit": "adapted"
+          },
+          {
+            "type": "plate-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "horn-cap",
+            "fit": "yes"
+          },
+          {
+            "type": "hoof-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sunnip",
+      "name": "Sunnip",
+      "line": "sunchaser",
+      "kind": "wanderer",
+      "family": "canine",
+      "mythical": true,
+      "elements": [
+        "fire"
+      ],
+      "evolves_from": null,
+      "evolves_to": "moonbiter",
+      "stage": 1,
+      "stage_name": "Wanderer",
+      "playable": true,
+      "description": "A black-and-red pup whose mouth glows like a coal.",
+      "physical": {
+        "measure": "shoulder",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 12,
+          "sd": 1.44,
+          "min": 7.68,
+          "p95": 14.4,
+          "p99": 15.3,
+          "upper": 16.3
+        },
+        "shoulder_cm": {
+          "distribution": "truncated_normal",
+          "mean": 45,
+          "sd": 2.7,
+          "min": 36.9,
+          "p95": 49.4,
+          "p99": 51.3,
+          "upper": 53.1
+        }
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "bold",
+            "weight": 40
+          },
+          {
+            "id": "restless",
+            "weight": 30
+          },
+          {
+            "id": "devoted",
+            "weight": 20
+          },
+          {
+            "id": "stubborn",
+            "weight": 10
+          }
+        ],
+        "markings": [
+          {
+            "id": "ember-red",
+            "weight": 40
+          },
+          {
+            "id": "black",
+            "weight": 35
+          },
+          {
+            "id": "gold-eyed",
+            "weight": 20
+          },
+          {
+            "id": "white-hot",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "a cool stone",
+          "moonlight"
+        ]
+      },
+      "control": {
+        "command_dc": 8,
+        "difficulty": "Easy"
+      },
+      "lore": "Sunnips leap at the sun at noon and yelp at how hot it is. They never learn.",
+      "folklore_sources": [
+        {
+          "region": "Korea",
+          "tradition": "The bulgae, fire dogs from a land of darkness, sent to steal the sun and moon; the sun burns their mouths and the moon freezes them, so they bite and let go, causing eclipses."
+        }
+      ],
+      "armour": {
+        "body_plan": "clawed-quadruped",
+        "size": "small",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "tail",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "claw-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "tail-sheath",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "moonbiter",
+      "name": "Moonbiter",
+      "line": "sunchaser",
+      "kind": "wanderer",
+      "family": "canine",
+      "mythical": true,
+      "elements": [
+        "fire"
+      ],
+      "evolves_from": "sunnip",
+      "evolves_to": null,
+      "stage": 2,
+      "stage_name": "Elder Wanderer",
+      "playable": true,
+      "description": "A large hound of fire and shadow with a scorched mouth and frost on its whiskers.",
+      "physical": {
+        "measure": "shoulder",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 45,
+          "sd": 5.4,
+          "min": 28.8,
+          "p95": 53.9,
+          "p99": 57.6,
+          "upper": 61.2
+        },
+        "shoulder_cm": {
+          "distribution": "truncated_normal",
+          "mean": 75,
+          "sd": 4.5,
+          "min": 61.5,
+          "p95": 82.4,
+          "p99": 85.5,
+          "upper": 88.5
+        }
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "bold",
+            "weight": 40
+          },
+          {
+            "id": "restless",
+            "weight": 30
+          },
+          {
+            "id": "devoted",
+            "weight": 20
+          },
+          {
+            "id": "stubborn",
+            "weight": 10
+          }
+        ],
+        "markings": [
+          {
+            "id": "ember-red",
+            "weight": 40
+          },
+          {
+            "id": "black",
+            "weight": 35
+          },
+          {
+            "id": "gold-eyed",
+            "weight": 20
+          },
+          {
+            "id": "white-hot",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "a cool stone",
+          "moonlight"
+        ]
+      },
+      "control": {
+        "command_dc": 11,
+        "difficulty": "Moderate"
+      },
+      "lore": "Moonbiters were sent from a dark kingdom to steal the lights of the sky. The sun burned them; the moon froze them; they bit and let go, and that is why eclipses end. Those that gave up and stayed in the Twelve Hours make loyal, if moody, companions.",
+      "folklore_sources": [
+        {
+          "region": "Korea",
+          "tradition": "The bulgae, fire dogs from a land of darkness, sent to steal the sun and moon; the sun burns their mouths and the moon freezes them, so they bite and let go, causing eclipses."
+        }
+      ],
+      "armour": {
+        "body_plan": "clawed-quadruped",
+        "size": "medium",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "tail",
+          "charm"
+        ],
+        "max_weight": "heavy",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "lamellar-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "scale-sheath",
+            "fit": "adapted"
+          },
+          {
+            "type": "plate-barding",
+            "fit": "adapted"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "claw-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "tail-sheath",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "reedstrider",
+      "name": "Reedstrider",
+      "line": "tallstrider",
+      "kind": "wanderer",
+      "family": "equine",
+      "mythical": true,
+      "elements": [
+        "wood",
+        "earth"
+      ],
+      "evolves_from": null,
+      "evolves_to": "balete-strider",
+      "stage": 1,
+      "stage_name": "Wanderer",
+      "playable": true,
+      "description": "A gangly creature with a horse's head and very long legs, hiding in the bamboo.",
+      "physical": {
+        "measure": "height",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 60,
+          "sd": 7.2,
+          "min": 38.4,
+          "p95": 71.8,
+          "p99": 76.7,
+          "upper": 81.6
+        },
+        "height_cm": {
+          "distribution": "truncated_normal",
+          "mean": 150,
+          "sd": 9,
+          "min": 123,
+          "p95": 165,
+          "p99": 171,
+          "upper": 177
+        }
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "sly",
+            "weight": 40
+          },
+          {
+            "id": "playful",
+            "weight": 30
+          },
+          {
+            "id": "proud",
+            "weight": 20
+          },
+          {
+            "id": "devoted",
+            "weight": 10
+          }
+        ],
+        "markings": [
+          {
+            "id": "bamboo-brown",
+            "weight": 45
+          },
+          {
+            "id": "black-maned",
+            "weight": 30
+          },
+          {
+            "id": "grey",
+            "weight": 20
+          },
+          {
+            "id": "gold-maned",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "a riddle",
+          "cigar smoke",
+          "three honest words"
+        ]
+      },
+      "control": {
+        "command_dc": 8,
+        "difficulty": "Easy"
+      },
+      "lore": "Reedstriders lead lost children in circles until they laugh, then show them the way home. They cannot resist an audience.",
+      "folklore_sources": [
+        {
+          "region": "Philippines",
+          "tradition": "The tikbalang, a tall, long-limbed trickster with a horse's head who lives in bamboo groves and leads travellers astray; turning your shirt inside out breaks the spell, and three golden hairs from its mane are said to win its loyalty."
+        }
+      ],
+      "armour": {
+        "body_plan": "hooved-quadruped",
+        "size": "medium",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "hoof-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "balete-strider",
+      "name": "Balete Strider",
+      "line": "tallstrider",
+      "kind": "wanderer",
+      "family": "equine",
+      "mythical": true,
+      "elements": [
+        "wood",
+        "earth"
+      ],
+      "evolves_from": "reedstrider",
+      "evolves_to": null,
+      "stage": 2,
+      "stage_name": "Elder Wanderer",
+      "playable": true,
+      "description": "A towering, long-limbed figure with a horse's head and a mane threaded with three golden hairs.",
+      "physical": {
+        "measure": "height",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 150,
+          "sd": 18,
+          "min": 96,
+          "p95": 180,
+          "p99": 192,
+          "upper": 204
+        },
+        "height_cm": {
+          "distribution": "truncated_normal",
+          "mean": 260,
+          "sd": 15.6,
+          "min": 213,
+          "p95": 286,
+          "p99": 296,
+          "upper": 307
+        }
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "sly",
+            "weight": 40
+          },
+          {
+            "id": "playful",
+            "weight": 30
+          },
+          {
+            "id": "proud",
+            "weight": 20
+          },
+          {
+            "id": "devoted",
+            "weight": 10
+          }
+        ],
+        "markings": [
+          {
+            "id": "bamboo-brown",
+            "weight": 45
+          },
+          {
+            "id": "black-maned",
+            "weight": 30
+          },
+          {
+            "id": "grey",
+            "weight": 20
+          },
+          {
+            "id": "gold-maned",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "a riddle",
+          "cigar smoke",
+          "three honest words"
+        ]
+      },
+      "control": {
+        "command_dc": 11,
+        "difficulty": "Moderate"
+      },
+      "lore": "A Balete Strider makes travellers walk in circles all night. Turn your shirt inside out and it laughs and lets you go. It will never bond with anyone who tries to pull its golden hairs, but it may offer them, freely, to someone who makes it laugh.",
+      "folklore_sources": [
+        {
+          "region": "Philippines",
+          "tradition": "The tikbalang, a tall, long-limbed trickster with a horse's head who lives in bamboo groves and leads travellers astray; turning your shirt inside out breaks the spell, and three golden hairs from its mane are said to win its loyalty."
+        }
+      ],
+      "armour": {
+        "body_plan": "hooved-quadruped",
+        "size": "medium",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "charm"
+        ],
+        "max_weight": "heavy",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "lamellar-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "scale-sheath",
+            "fit": "adapted"
+          },
+          {
+            "type": "plate-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "horn-cap",
+            "fit": "yes"
+          },
+          {
+            "type": "hoof-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "trunkcub",
+      "name": "Trunkcub",
+      "line": "trunklion",
+      "kind": "wanderer",
+      "family": "feline",
+      "mythical": true,
+      "elements": [
+        "earth",
+        "metal"
+      ],
+      "evolves_from": null,
+      "evolves_to": "tuskmane",
+      "stage": 1,
+      "stage_name": "Wanderer",
+      "playable": true,
+      "description": "A golden lion cub with a short elephant's trunk and tiny tusks.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 120,
+          "sd": 14.4,
+          "min": 76.8,
+          "p95": 144,
+          "p99": 153,
+          "upper": 163
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 180,
+          "sd": 10.8,
+          "min": 148,
+          "p95": 198,
+          "p99": 205,
+          "upper": 212
+        }
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "proud",
+            "weight": 40
+          },
+          {
+            "id": "serene",
+            "weight": 30
+          },
+          {
+            "id": "bold",
+            "weight": 20
+          },
+          {
+            "id": "gentle",
+            "weight": 10
+          }
+        ],
+        "markings": [
+          {
+            "id": "gold",
+            "weight": 45
+          },
+          {
+            "id": "cream-maned",
+            "weight": 30
+          },
+          {
+            "id": "grey-trunked",
+            "weight": 20
+          },
+          {
+            "id": "white",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "sugarcane",
+          "temple incense"
+        ]
+      },
+      "control": {
+        "command_dc": 8,
+        "difficulty": "Easy"
+      },
+      "lore": "Trunkcubs spray water at anyone who laughs at them. Everyone laughs at them.",
+      "folklore_sources": [
+        {
+          "region": "Thailand",
+          "tradition": "The gajasingha, one of the creatures of the mythical Himmaphan forest, with the body of a lion and the trunk and tusks of an elephant."
+        }
+      ],
+      "armour": {
+        "body_plan": "clawed-quadruped",
+        "size": "medium",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "tail",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "claw-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "tail-sheath",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "tuskmane",
+      "name": "Tuskmane",
+      "line": "trunklion",
+      "kind": "wanderer",
+      "family": "feline",
+      "mythical": true,
+      "elements": [
+        "earth",
+        "metal"
+      ],
+      "evolves_from": "trunkcub",
+      "evolves_to": null,
+      "stage": 2,
+      "stage_name": "Elder Wanderer",
+      "playable": true,
+      "description": "A majestic golden lion with a flowing mane, an elephant's trunk and ivory tusks.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 400,
+          "sd": 48,
+          "min": 256,
+          "p95": 479,
+          "p99": 512,
+          "upper": 544
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 320,
+          "sd": 19.2,
+          "min": 262,
+          "p95": 352,
+          "p99": 365,
+          "upper": 378
+        }
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "proud",
+            "weight": 40
+          },
+          {
+            "id": "serene",
+            "weight": 30
+          },
+          {
+            "id": "bold",
+            "weight": 20
+          },
+          {
+            "id": "gentle",
+            "weight": 10
+          }
+        ],
+        "markings": [
+          {
+            "id": "gold",
+            "weight": 45
+          },
+          {
+            "id": "cream-maned",
+            "weight": 30
+          },
+          {
+            "id": "grey-trunked",
+            "weight": 20
+          },
+          {
+            "id": "white",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "sugarcane",
+          "temple incense"
+        ]
+      },
+      "control": {
+        "command_dc": 11,
+        "difficulty": "Moderate"
+      },
+      "lore": "Tuskmanes come from a hidden forest at the edge of the world, where creatures are made of two animals at once. One that leaves the forest brings the strength of the elephant and the courage of the lion, and it expects to be treated with the dignity of both.",
+      "folklore_sources": [
+        {
+          "region": "Thailand",
+          "tradition": "The gajasingha, one of the creatures of the mythical Himmaphan forest, with the body of a lion and the trunk and tusks of an elephant."
+        }
+      ],
+      "armour": {
+        "body_plan": "clawed-quadruped",
+        "size": "large",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "tail",
+          "charm"
+        ],
+        "max_weight": "heavy",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "lamellar-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "scale-sheath",
+            "fit": "adapted"
+          },
+          {
+            "type": "plate-barding",
+            "fit": "adapted"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "claw-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "tail-sheath",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "duskmask",
+      "name": "Duskmask",
+      "line": "nightchimera",
+      "kind": "wanderer",
+      "family": "primate",
+      "mythical": true,
+      "elements": [
+        "water",
+        "metal"
+      ],
+      "evolves_from": null,
+      "evolves_to": "hollowcry",
+      "stage": 1,
+      "stage_name": "Wanderer",
+      "playable": true,
+      "description": "A small chimera with a monkey's face, a striped body and a hissing snake for a tail.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 30,
+          "sd": 3.6,
+          "min": 19.2,
+          "p95": 35.9,
+          "p99": 38.4,
+          "upper": 40.8
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 100,
+          "sd": 6,
+          "min": 82,
+          "p95": 110,
+          "p99": 114,
+          "upper": 118
+        }
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "sly",
+            "weight": 40
+          },
+          {
+            "id": "wary",
+            "weight": 30
+          },
+          {
+            "id": "restless",
+            "weight": 20
+          },
+          {
+            "id": "proud",
+            "weight": 10
+          }
+        ],
+        "markings": [
+          {
+            "id": "night-black",
+            "weight": 40
+          },
+          {
+            "id": "tiger-striped",
+            "weight": 30
+          },
+          {
+            "id": "tanuki-brown",
+            "weight": 25
+          },
+          {
+            "id": "moon-pale",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "a quiet roof",
+          "birdsong"
+        ]
+      },
+      "control": {
+        "command_dc": 8,
+        "difficulty": "Easy"
+      },
+      "lore": "Duskmasks call from rooftops at night with the voice of a mournful bird. Most people never see what makes the sound.",
+      "folklore_sources": [
+        {
+          "region": "Japan",
+          "tradition": "The nue, a chimera with the face of a monkey, the body of a tanuki, the limbs of a tiger and a snake for a tail, whose eerie night cry was said to bring sickness until the warrior Minamoto no Yorimasa shot it from the palace roof."
+        }
+      ],
+      "armour": {
+        "body_plan": "primate",
+        "size": "small",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "tail",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "claw-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "tail-sheath",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "hollowcry",
+      "name": "Hollowcry",
+      "line": "nightchimera",
+      "kind": "wanderer",
+      "family": "primate",
+      "mythical": true,
+      "elements": [
+        "water",
+        "metal"
+      ],
+      "evolves_from": "duskmask",
+      "evolves_to": null,
+      "stage": 2,
+      "stage_name": "Elder Wanderer",
+      "playable": true,
+      "description": "A shadowy chimera of monkey, tanuki, tiger and snake, wrapped in a black cloud.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 90,
+          "sd": 10.8,
+          "min": 57.6,
+          "p95": 108,
+          "p99": 115,
+          "upper": 122
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 180,
+          "sd": 10.8,
+          "min": 148,
+          "p95": 198,
+          "p99": 205,
+          "upper": 212
+        }
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "sly",
+            "weight": 40
+          },
+          {
+            "id": "wary",
+            "weight": 30
+          },
+          {
+            "id": "restless",
+            "weight": 20
+          },
+          {
+            "id": "proud",
+            "weight": 10
+          }
+        ],
+        "markings": [
+          {
+            "id": "night-black",
+            "weight": 40
+          },
+          {
+            "id": "tiger-striped",
+            "weight": 30
+          },
+          {
+            "id": "tanuki-brown",
+            "weight": 25
+          },
+          {
+            "id": "moon-pale",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "a quiet roof",
+          "birdsong"
+        ]
+      },
+      "control": {
+        "command_dc": 11,
+        "difficulty": "Moderate"
+      },
+      "lore": "A Hollowcry rides a dark cloud over the palace roofs on sleepless nights, and its call sounds like a lonely bird. Legend says a great archer once shot one down. Hollowcries remember, and they are very polite to archers.",
+      "folklore_sources": [
+        {
+          "region": "Japan",
+          "tradition": "The nue, a chimera with the face of a monkey, the body of a tanuki, the limbs of a tiger and a snake for a tail, whose eerie night cry was said to bring sickness until the warrior Minamoto no Yorimasa shot it from the palace roof."
+        }
+      ],
+      "armour": {
+        "body_plan": "primate",
+        "size": "medium",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "tail",
+          "charm"
+        ],
+        "max_weight": "medium",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "lamellar-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "claw-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "tail-sheath",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "drumcub",
+      "name": "Drumcub",
+      "line": "festival-lion",
+      "kind": "wanderer",
+      "family": "feline",
+      "mythical": true,
+      "elements": [
+        "fire",
+        "earth"
+      ],
+      "evolves_from": null,
+      "evolves_to": "moonlion",
+      "stage": 1,
+      "stage_name": "Wanderer",
+      "playable": true,
+      "description": "A bright red-and-gold cub with a shaggy mane and a single small horn.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 40,
+          "sd": 4.8,
+          "min": 25.6,
+          "p95": 47.9,
+          "p99": 51.2,
+          "upper": 54.4
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 110,
+          "sd": 6.6,
+          "min": 90.2,
+          "p95": 121,
+          "p99": 125,
+          "upper": 130
+        }
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "playful",
+            "weight": 45
+          },
+          {
+            "id": "bold",
+            "weight": 25
+          },
+          {
+            "id": "devoted",
+            "weight": 20
+          },
+          {
+            "id": "proud",
+            "weight": 10
+          }
+        ],
+        "markings": [
+          {
+            "id": "festival-red",
+            "weight": 40
+          },
+          {
+            "id": "gold",
+            "weight": 35
+          },
+          {
+            "id": "green-maned",
+            "weight": 20
+          },
+          {
+            "id": "white",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "mooncakes",
+          "drums"
+        ]
+      },
+      "control": {
+        "command_dc": 8,
+        "difficulty": "Easy"
+      },
+      "lore": "Drumcubs dance whenever they hear a drum. Festivals start earlier when there is one around.",
+      "folklore_sources": [
+        {
+          "region": "Vietnam",
+          "tradition": "The lân, a lion-like beast of good fortune whose dance, led by the jolly earth god Ông Địa with his fan, fills the streets at the Mid-Autumn Festival."
+        }
+      ],
+      "armour": {
+        "body_plan": "clawed-quadruped",
+        "size": "medium",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "tail",
+          "charm"
+        ],
+        "max_weight": "light",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "claw-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "tail-sheath",
+            "fit": "yes"
+          },
+          {
+            "type": "charm-collar",
+            "fit": "yes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "moonlion",
+      "name": "Moonlion",
+      "line": "festival-lion",
+      "kind": "wanderer",
+      "family": "feline",
+      "mythical": true,
+      "elements": [
+        "fire",
+        "earth"
+      ],
+      "evolves_from": "drumcub",
+      "evolves_to": null,
+      "stage": 2,
+      "stage_name": "Elder Wanderer",
+      "playable": true,
+      "description": "A magnificent red-and-gold lion with a single horn, a flowing mane and bells on its brow.",
+      "physical": {
+        "measure": "length",
+        "weight_kg": {
+          "distribution": "truncated_normal",
+          "mean": 150,
+          "sd": 18,
+          "min": 96,
+          "p95": 180,
+          "p99": 192,
+          "upper": 204
+        },
+        "length_cm": {
+          "distribution": "truncated_normal",
+          "mean": 220,
+          "sd": 13.2,
+          "min": 180,
+          "p95": 242,
+          "p99": 251,
+          "upper": 260
+        }
+      },
+      "characteristics": {
+        "temperaments": [
+          {
+            "id": "playful",
+            "weight": 45
+          },
+          {
+            "id": "bold",
+            "weight": 25
+          },
+          {
+            "id": "devoted",
+            "weight": 20
+          },
+          {
+            "id": "proud",
+            "weight": 10
+          }
+        ],
+        "markings": [
+          {
+            "id": "festival-red",
+            "weight": 40
+          },
+          {
+            "id": "gold",
+            "weight": 35
+          },
+          {
+            "id": "green-maned",
+            "weight": 20
+          },
+          {
+            "id": "white",
+            "weight": 5
+          }
+        ],
+        "moonmarked_chance": "1/1024"
+      },
+      "taming": {
+        "bond_dc": 10,
+        "story_only": false,
+        "difficulty": "Easy",
+        "favoured_offerings": [
+          "mooncakes",
+          "drums"
+        ]
+      },
+      "control": {
+        "command_dc": 11,
+        "difficulty": "Moderate"
+      },
+      "lore": "At the Mid-Autumn Festival, Moonlions dance through the streets of the Twelve Hours, following a round-bellied figure with a fan. Children chase them, merchants feed them and the moon shines brighter wherever they pass.",
+      "folklore_sources": [
+        {
+          "region": "Vietnam",
+          "tradition": "The lân, a lion-like beast of good fortune whose dance, led by the jolly earth god Ông Địa with his fan, fills the streets at the Mid-Autumn Festival."
+        }
+      ],
+      "armour": {
+        "body_plan": "clawed-quadruped",
+        "size": "medium",
+        "slots": [
+          "head",
+          "body",
+          "limbs",
+          "tail",
+          "charm"
+        ],
+        "max_weight": "heavy",
+        "armour_types": [
+          {
+            "type": "quilted-coat",
+            "fit": "yes"
+          },
+          {
+            "type": "lamellar-barding",
+            "fit": "yes"
+          },
+          {
+            "type": "scale-sheath",
+            "fit": "adapted"
+          },
+          {
+            "type": "plate-barding",
+            "fit": "adapted"
+          },
+          {
+            "type": "beast-mask",
+            "fit": "yes"
+          },
+          {
+            "type": "claw-guards",
+            "fit": "yes"
+          },
+          {
+            "type": "tail-sheath",
+            "fit": "yes"
+          },
           {
             "type": "charm-collar",
             "fit": "yes"

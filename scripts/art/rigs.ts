@@ -21,8 +21,10 @@ export interface Quad {
   snout: number; // snout length (0 = flat face)
   neck: number; // 0 = head level with back, 1 = held high
   ears?: "pointed" | "round" | "long" | "small" | "none";
-  horns?: "crescent" | "spiral" | "short" | "antler" | "single" | "none";
-  tail?: "thin" | "bushy" | "tuft" | "stub" | "curl" | "long" | "flowing" | "fork" | "none";
+  horns?: "crescent" | "spiral" | "short" | "antler" | "single" | "straight" | "none";
+  tusks?: boolean;
+  oneLeg?: boolean;
+  tail?: "thin" | "bushy" | "tuft" | "stub" | "curl" | "long" | "flowing" | "fork" | "blade" | "none";
   hooves?: boolean;
   mane?: "flowing" | "curly" | "ruff" | "none";
   stripes?: number;
@@ -56,6 +58,10 @@ export function quadruped(q: Quad, c: Colours, id: string): Figure {
     case "long":
       fig.stroke(C([tx, ty], [tx - 40, ty - 10], [tx - 60, ty - 70], [tx - 25, ty - 95]), 8, c.body);
       break;
+    case "blade":
+      fig.stroke(C([tx, ty], [tx - 35, ty - 5], [tx - 50, ty - 35], [tx - 40, ty - 55]), 7, c.body);
+      fig.path(`M${tx - 40} ${ty - 55} Q${tx - 10} ${ty - 95} ${tx + 25} ${ty - 70} Q${tx - 5} ${ty - 75} ${tx - 30} ${ty - 45} Z`, lighten(c.accent, 0.5));
+      break;
     case "fork":
       fig.stroke(C([tx, ty], [tx - 40, ty - 10], [tx - 55, ty - 60], [tx - 20, ty - 85]), 7, c.body);
       fig.stroke(C([tx, ty], [tx - 45, ty], [tx - 75, ty - 40], [tx - 60, ty - 80]), 7, c.body);
@@ -80,7 +86,7 @@ export function quadruped(q: Quad, c: Colours, id: string): Figure {
   }
 
   // Far legs
-  const legXs = [cx - rx * 0.62, cx + rx * 0.5];
+  const legXs = q.oneLeg ? [cx - rx * 0.05] : [cx - rx * 0.62, cx + rx * 0.5];
   const legTop = cy + ry * 0.2;
   const drawLeg = (x: number, col: string, near: boolean) => {
     if (q.low) {
@@ -88,10 +94,11 @@ export function quadruped(q: Quad, c: Colours, id: string): Figure {
       return;
     }
     const lift = near && q.raisedPaw && x > cx ? 30 : 0;
-    fig.stroke(P([[x, legTop], [x + (lift ? 14 : 0), GROUND - q.legW / 2 - lift]]), q.legW, col);
+    const w = q.oneLeg ? q.legW * 1.8 : q.legW;
+    fig.stroke(P([[x, legTop], [x + (lift ? 14 : 0), GROUND - w / 2 - lift]]), w, col);
     if (q.hooves) fig.detail(`<rect x="${x - q.legW / 2}" y="${GROUND - 8}" width="${q.legW}" height="8" rx="2" fill="${INK}"/>`);
   };
-  for (const x of legXs) drawLeg(x + 12, far, false);
+  if (!q.oneLeg) for (const x of legXs) drawLeg(x + 12, far, false);
 
   // Wings (behind body)
   if (q.wings) {
@@ -155,6 +162,10 @@ export function quadruped(q: Quad, c: Colours, id: string): Figure {
     case "single":
       fig.stroke(Q([hx, ey], [hx + q.head * 0.1, ey - q.head * 0.8], [hx - q.head * 0.4, ey - q.head * 1.3]), q.head * 0.16, hornCol);
       break;
+    case "straight":
+      fig.stroke(P([[ex, ey + 4], [ex - q.head * 1.9, ey - q.head * 1.0]]), q.head * 0.13, hornCol);
+      fig.stroke(P([[ex + q.head * 0.2, ey + 6], [ex - q.head * 1.6, ey - q.head * 1.25]]), q.head * 0.13, darken(hornCol, 0.15));
+      break;
     case "antler":
       fig.stroke(P([[ex, ey + 4], [ex - q.head * 0.4, ey - q.head], [ex - q.head * 1.0, ey - q.head * 1.6]]), q.head * 0.14, hornCol);
       fig.stroke(P([[ex - q.head * 0.4, ey - q.head], [ex + q.head * 0.1, ey - q.head * 1.5]]), q.head * 0.12, hornCol);
@@ -164,6 +175,10 @@ export function quadruped(q: Quad, c: Colours, id: string): Figure {
   // Head and snout
   fig.circle(hx, hy, q.head, c.body);
   if (q.snout > 0) fig.ellipse(hx + q.head * 0.55 + q.snout * 0.4, hy + q.head * 0.3, q.snout * 0.7 + q.head * 0.35, q.head * 0.55, c.body);
+  if (q.tusks) {
+    const sx = hx + q.head * 0.6 + q.snout * 0.6;
+    fig.stroke(Q([sx, hy + q.head * 0.35], [sx + q.head * 0.4, hy - q.head * 0.5], [hx + q.head * 0.15, hy - q.head * 0.85]), Math.max(3, q.head * 0.13), "#efe6d2");
+  }
   if (q.trunk) fig.stroke(C([hx + q.head * 0.9, hy + q.head * 0.3], [hx + q.head * 1.8, hy + q.head * 0.4], [hx + q.head * 1.9, hy + q.head * 1.2], [hx + q.head * 1.6, hy + q.head * 1.6]), q.head * 0.4, c.body);
   if (q.beard) fig.poly([[hx + q.head * 0.3, hy + q.head * 0.7], [hx + q.head * 0.9, hy + q.head * 0.8], [hx + q.head * 0.4, hy + q.head * 1.7]], c.accent);
 

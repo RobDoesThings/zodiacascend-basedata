@@ -13,6 +13,7 @@ const errors: string[] = [];
 
 const chars = readYaml<any>(join(SRC, "characteristics.yaml")).data;
 const zodiac = readYaml<any>(join(SRC, "zodiac.yaml")).data;
+const zodiacElements = readYaml<any>(join(SRC, "zodiac-elements.yaml")).data;
 const wanderers = readYaml<any>(join(SRC, "wanderers.yaml")).data;
 const vessels = readYaml<any>(join(SRC, "vessel-spirits.yaml")).data;
 const cards = readYaml<any>(join(SRC, "keeper-cards.yaml")).data;
@@ -83,11 +84,45 @@ function claim(id: string, where: string) {
 const STAGE_KEYS = ["kit", "adept", "sovereign"];
 
 // ---------- Zodiac bestiary ----------
-const zodiacOut = zodiac.lines.flatMap((line: any) => {
-  checkWeights(line.temperaments, `zodiac ${line.id} temperaments`, TEMPERAMENTS);
-  checkWeights(line.markings, `zodiac ${line.id} markings`);
+// Each animal has five lines, one per element. The native line comes from zodiac.yaml with
+// authored weights and habitats; the other four come from zodiac-elements.yaml and take the
+// native stage's weight and size, times the element's form multiplier, times the line's build.
+const zodiacLines = zodiac.lines.flatMap((animal: any) => {
+  const extra = zodiacElements.lines.filter((l: any) => l.animal === animal.id);
+  const elements = [animal.native_element, ...extra.map((l: any) => l.element)];
+  if (new Set(elements).size !== 5 || !elements.every((e: string) => ELEMENTS.includes(e))) {
+    errors.push(`zodiac ${animal.id}: needs exactly one line per element, got ${elements.join(", ")}`);
+  }
+  const native = { ...animal, element: animal.native_element, native: true };
+  return [
+    native,
+    ...extra.map((l: any) => ({
+      ...animal,
+      ...l,
+      id: animal.id,
+      native: false,
+      temperaments: l.temperaments ?? animal.temperaments,
+      folklore_sources: [...(l.folklore_sources ?? []), ...(animal.folklore_sources ?? [])],
+      stages: l.stages.map((st: any, i: number) => {
+        const base = animal.stages[i];
+        const k = chars.form_weight_multipliers[l.element] * (l.build ?? 1);
+        return { ...st, weight_kg: base.weight_kg * k, size_cm: base.size_cm, measure: base.measure, cv: base.cv, habitat: st.habitat ?? l.habitat };
+      }),
+    })),
+  ];
+});
+for (const e of zodiacElements.lines) {
+  if (!zodiac.lines.some((a: any) => a.id === e.animal)) errors.push(`zodiac-elements: unknown animal ${e.animal}`);
+  if (e.stages.length !== 3) errors.push(`zodiac-elements ${e.animal}-${e.element}: needs 3 stages`);
+}
+
+const zodiacOut = zodiacLines.flatMap((line: any) => {
+  const lineId = `${line.id}-${line.element}`;
+  checkWeights(line.temperaments, `zodiac ${lineId} temperaments`, TEMPERAMENTS);
+  checkWeights(line.markings, `zodiac ${lineId} markings`);
+  const stageIds = line.stages.map((x: any) => x.id);
   return line.stages.map((s: any, i: number) => {
-    claim(s.id, `zodiac ${line.id}`);
+    claim(s.id, `zodiac ${lineId}`);
     const stageKey = STAGE_KEYS[i];
     const bondDc = rules.bond_check.dc[stageKey];
     const storyOnly = rules.bond_check.story_only.includes(stageKey);
@@ -95,17 +130,21 @@ const zodiacOut = zodiac.lines.flatMap((line: any) => {
     return {
       id: s.id,
       name: s.name,
-      line: line.id,
+      line: lineId,
+      animal: line.id,
+      element: line.element,
+      native: line.native,
       kind: "zodiac",
       family: line.family,
       stage: i + 1,
       stage_name: rules.stages.zodiac[i].name,
       ...(s.epithet ? { epithet: s.epithet } : {}),
+      evolves_from: stageIds[i - 1] ?? null,
+      evolves_to: stageIds[i + 1] ?? null,
       playable: true,
       habitat: s.habitat,
       description: s.description,
       physical: physical(s),
-      form_weight_multipliers: chars.form_weight_multipliers,
       characteristics: {
         temperaments: weighted(line.temperaments),
         markings: weighted(line.markings),
@@ -145,13 +184,15 @@ const wandererOut = wanderers.lines.flatMap((line: any) => {
       line: line.id,
       kind: "wanderer",
       family: line.family,
+      ...(line.mythical ? { mythical: true } : {}),
       elements: line.elements,
+      evolves_from: line.stages[i - 1]?.id ?? null,
+      evolves_to: line.stages[i + 1]?.id ?? null,
       stage: i + 1,
       stage_name: rules.stages.wanderer[i].name,
       playable: true,
       description: s.description,
       physical: physical({ ...s, size: undefined }),
-      form_weight_multipliers: chars.form_weight_multipliers,
       characteristics: {
         temperaments: weighted(line.temperaments),
         markings: weighted(line.markings),
@@ -315,7 +356,7 @@ function sizeFromWeight(kg: number): string {
 /** What a species can wear: body plan, size, slots and the heaviest class allowed at its stage and size. */
 function armourProfile(species: any) {
   const plan = armour.body_plans.find(
-    (b: any) => b.id === (armour.line_body_plan_overrides[species.line] ?? armour.family_body_plans[species.family]),
+    (b: any) => b.id === (armour.line_body_plan_overrides[species.animal ?? species.line] ?? armour.family_body_plans[species.family]),
   );
   const size = sizeFromWeight(species.physical.weight_kg.mean);
   const allowedClasses = armour.beast_armour.weight_classes
@@ -436,18 +477,18 @@ md.push(`**Counts:** ${zodiacOut.length} zodiac species · ${wandererOut.length}
 md.push("Weights are truncated normal curves: *mean* is the average, *upper* is the ceiling (mean + 3 sd), *p99* is a record specimen.", "");
 
 md.push("## Zodiac species", "");
-md.push("| Species | Stage | Avg weight | Upper weight | Size (avg) | Bond DC | Command DC | Top temperament |", "|---|---|---|---|---|---|---|---|");
+md.push("| Species | Animal | Element | Stage | Avg weight | Upper weight | Size (avg) | Bond DC | Command DC | Top temperament |", "|---|---|---|---|---|---|---|---|---|---|");
 for (const s of zodiacOut) {
   const len = s.physical[`${s.physical.measure}_cm`];
   const top = s.characteristics.temperaments[0];
-  md.push(`| ${s.name}${s.epithet ? ` (${s.epithet})` : ""} | ${s.stage_name} | ${fmtKg(s.physical.weight_kg.mean)} | ${fmtKg(s.physical.weight_kg.upper)} | ${len.mean} cm ${s.physical.measure} | ${s.taming.bond_dc} (${s.taming.difficulty}) | ${s.control.command_dc} (${s.control.difficulty}) | ${top.id} ${top.weight}% |`);
+  md.push(`| ${s.name}${s.epithet ? ` (${s.epithet})` : ""} | ${s.animal} | ${s.element}${s.native ? " (native)" : ""} | ${s.stage_name} | ${fmtKg(s.physical.weight_kg.mean)} | ${fmtKg(s.physical.weight_kg.upper)} | ${len.mean} cm ${s.physical.measure} | ${s.taming.bond_dc} (${s.taming.difficulty}) | ${s.control.command_dc} (${s.control.difficulty}) | ${top.id} ${top.weight}% |`);
 }
 md.push("");
 
 md.push("## Wanderers", "");
-md.push("| Species | Line | Family | Elements | Avg weight | Upper weight | Command DC |", "|---|---|---|---|---|---|---|");
+md.push("| Species | Line | Family | Elements | Mythical | Avg weight | Upper weight | Command DC |", "|---|---|---|---|---|---|---|---|");
 for (const s of wandererOut) {
-  md.push(`| ${s.name} | ${s.line} | ${s.family} | ${s.elements.join(", ")} | ${fmtKg(s.physical.weight_kg.mean)} | ${fmtKg(s.physical.weight_kg.upper)} | ${s.control.command_dc} |`);
+  md.push(`| ${s.name} | ${s.line} | ${s.family} | ${s.elements.join(", ")} | ${s.mythical ? "yes" : ""} | ${fmtKg(s.physical.weight_kg.mean)} | ${fmtKg(s.physical.weight_kg.upper)} | ${s.control.command_dc} |`);
 }
 md.push("");
 

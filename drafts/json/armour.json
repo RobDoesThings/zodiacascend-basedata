@@ -246,7 +246,8 @@
     "suine": "hooved-quadruped",
     "piscine": "aquatic",
     "insectoid": "insect",
-    "chelonian": "shelled"
+    "chelonian": "shelled",
+    "mustelid": "clawed-quadruped"
   },
   "line_body_plan_overrides": {
     "dragon": "long-dragon",

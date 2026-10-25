@@ -23,7 +23,7 @@
   const esc = (v) => String(v ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
   const title = (s) => String(s).replace(/[-_]/g, " ").replace(/^\w/, (c) => c.toUpperCase());
 
-  const state = { type: "all", elements: new Set(), q: "", sort: "codex", cards: [], shown: [], form: null };
+  const state = { type: "all", elements: new Set(), q: "", sort: "codex", cards: [], shown: [] };
   try {
     const saved = JSON.parse(localStorage.getItem("codex-filters") || "{}");
     if (saved.type) state.type = saved.type;
@@ -32,10 +32,12 @@
   const save = () => { try { localStorage.setItem("codex-filters", JSON.stringify({ type: state.type, sort: state.sort })); } catch { /* ignore */ } };
 
   // ---------------------------------------------------------------- list
-  function pills(card, els = card.elements) {
-    const p = els.map((e) => `<span class="pill" style="--c:${EL[e].c}">${EL[e].glyph} ${EL[e].name}</span>`);
+  function pills(card) {
+    const p = card.elements.map((e) => `<span class="pill" style="--c:${EL[e].c}">${EL[e].glyph} ${EL[e].name}</span>`);
     if (card.typeLabel) p.push(`<span class="pill" style="--c:#b9a07a">${esc(title(card.typeLabel))}</span>`);
     if (card.family) p.push(`<span class="pill" style="--c:#cbbfa9">${esc(title(card.family))}</span>`);
+    if (card.mythical) p.push(`<span class="pill" style="--c:#b48ad6">Mythical</span>`);
+    if (card.native) p.push(`<span class="pill" style="--c:#e9c46a">Native line</span>`);
     return `<div class="pills">${p.join("")}</div>`;
   }
   const pips = (n) => (n ? `<span class="stage-pips" aria-label="Stage ${n}">${"<i></i>".repeat(n)}</span>` : "");
@@ -58,7 +60,7 @@
   function apply() {
     const q = state.q.trim().toLowerCase();
     let list = state.cards.filter((c) => state.type === "all" || c.type === state.type);
-    if (state.elements.size) list = list.filter((c) => c.elements.some((e) => state.elements.has(e)) || (c.forms || []).some((f) => state.elements.has(f.element)));
+    if (state.elements.size) list = list.filter((c) => c.elements.some((e) => state.elements.has(e)));
     if (q) list = list.filter((c) => c._search.includes(q));
     if (state.sort === "name") list = [...list].sort((a, b) => a.name.localeCompare(b.name));
     if (state.sort === "weight") list = [...list].sort((a, b) => weightOf(b) - weightOf(a));
@@ -179,24 +181,36 @@
 
   const SECTIONS = { zodiac: creatureSections, wanderer: creatureSections, spirit: spiritSections, "keeper-card": keeperSections, material: materialSections, recipe: recipeSections };
 
-  function open(i, formIdx = 0) {
+  const indexOfId = (type, id) => state.cards.findIndex((c) => c.type === type && c.id === id);
+
+  /** Stage buttons (Kit → Adept → Sovereign) and, for zodiac beasts, the same stage in each element line. */
+  function navGroups(card) {
+    const out = [];
+    if (card.stages && card.stages.length > 1) {
+      out.push(`<div class="forms" role="group" aria-label="Evolution stage">${card.stages
+        .map((s) => `<button data-goto="${esc(s.id)}" aria-pressed="${s.id === card.id}" style="--c:#e6d8bd">${esc(s.label)}</button>`)
+        .join("")}</div>`);
+    }
+    if (card.siblings && card.siblings.length > 1) {
+      out.push(`<div class="forms" role="group" aria-label="Element line">${card.siblings
+        .map((s) => `<button data-goto="${esc(s.id)}" aria-pressed="${s.id === card.id}" style="--c:${EL[s.element].c}">${EL[s.element].glyph} ${EL[s.element].name}${s.native ? " · native" : ""}</button>`)
+        .join("")}</div>`);
+    }
+    return out.join("");
+  }
+
+  function open(i) {
     const card = state.cards[i];
-    const form = card.forms ? card.forms[formIdx] : null;
-    const img = form?.art || card.art;
-    const name = form ? `${form.prefix} ${card.name}` : card.name;
-    const formBtns = card.forms && card.forms.length > 1
-      ? `<div class="forms" role="group" aria-label="Element form">${card.forms.map((f, k) => `<button data-form="${k}" aria-pressed="${k === formIdx}" style="--c:${EL[f.element].c}">${EL[f.element].glyph} ${esc(f.prefix)}${k === 0 ? " · native" : ""}</button>`).join("")}</div>`
-      : "";
     const pos = state.shown.indexOf(card);
     const d = $("#detail");
-    d.style.setProperty("--el", form ? EL[form.element].c : elColour(card));
+    d.style.setProperty("--el", elColour(card));
     d.innerHTML = `<button class="close" aria-label="Close">×</button>
       <div class="d-wrap">
-        <div class="d-art">${img ? `<img src="${esc(img)}" alt="${esc(name)}">` : `<div class="placeholder">${PLACEHOLDER[card.type] || "?"}</div>`}${formBtns}</div>
+        <div class="d-art">${card.art ? `<img src="${esc(card.art)}" alt="${esc(card.name)}">` : `<div class="placeholder">${PLACEHOLDER[card.type] || "?"}</div>`}${navGroups(card)}</div>
         <div class="d-main">
-          <h2 id="d-name">${esc(name)}${pips(card.stage)}</h2>
+          <h2 id="d-name">${esc(card.name)}${pips(card.stage)}</h2>
           <div class="sub">${esc(KIND_LABEL[card.type])} · ${esc(card.subtitle)}</div>
-          ${pills(card, form ? [form.element] : card.elements)}
+          ${pills(card)}
           ${SECTIONS[card.type](card)}
           <details class="raw"><summary>Raw JSON</summary><pre>${esc(JSON.stringify(card.data, null, 2))}</pre></details>
           <div class="nav-arrows">
@@ -206,14 +220,17 @@
         </div>
       </div>`;
     d.querySelector(".close").onclick = () => d.close();
-    d.querySelectorAll("[data-form]").forEach((b) => (b.onclick = () => open(i, Number(b.dataset.form))));
+    d.querySelectorAll("[data-goto]").forEach((b) => (b.onclick = () => {
+      const j = indexOfId(card.type, b.dataset.goto);
+      if (j >= 0) open(j);
+    }));
     d.querySelectorAll("[data-step]").forEach((b) => (b.onclick = () => {
       const next = state.shown[pos + Number(b.dataset.step)];
       if (next) open(state.cards.indexOf(next));
     }));
     if (!d.open) d.showModal();
     d.scrollTop = 0;
-    history.replaceState(null, "", `#${card.type}/${card.id}${form && formIdx ? `/${form.element}` : ""}`);
+    history.replaceState(null, "", `#${card.type}/${card.id}`);
   }
 
   // ---------------------------------------------------------------- boot
@@ -222,7 +239,7 @@
     const data = await res.json();
     state.cards = data.cards.map((c) => ({
       ...c,
-      _search: [c.name, c.id, c.subtitle, c.text, c.family, c.category, ...(c.elements || []), c.data?.lore, c.data?.creature].filter(Boolean).join(" ").toLowerCase(),
+      _search: [c.name, c.id, c.subtitle, c.text, c.family, c.animal, c.mythical ? "mythical" : "", c.category, ...(c.elements || []), c.data?.lore, c.data?.creature].filter(Boolean).join(" ").toLowerCase(),
     }));
     $("#version").textContent = `· v${data.version} · built ${data.built}`;
 
@@ -249,12 +266,12 @@
     window.addEventListener("hashchange", openFromHash);
   }
 
-  /** Opens the card named in the URL hash: #type/id or #type/id/element. */
+  /** Opens the card named in the URL hash: #type/id. */
   function openFromHash() {
-    const m = /^#([\w-]+)\/([\w-]+)(?:\/(\w+))?$/.exec(location.hash);
+    const m = /^#([\w-]+)\/([\w-]+)$/.exec(location.hash);
     if (!m) return;
-    const i = state.cards.findIndex((c) => c.type === m[1] && c.id === m[2]);
-    if (i >= 0) open(i, Math.max(0, (state.cards[i].forms || []).findIndex((f) => f.element === m[3])));
+    const i = indexOfId(m[1], m[2]);
+    if (i >= 0) open(i);
   }
   boot().catch((err) => { $("#count").textContent = `Could not load cards: ${err.message}`; });
 })();
