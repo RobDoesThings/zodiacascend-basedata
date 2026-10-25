@@ -22,7 +22,7 @@ export const HEIGHT = 768;
 const STYLE =
   "Realistic fantasy creature illustration for a collectible trading card. Painterly digital painting with lifelike anatomy, " +
   "detailed fur, feathers or scales, natural proportions and soft cinematic lighting. East Asian ink-wash atmosphere in the " +
-  "background, shallow depth of field. One creature, full body, centred, facing three-quarters to the right, with clear space " +
+  "background, shallow depth of field. One main creature, full body, centred, facing three-quarters to the right, with clear space " +
   "around it. No text, no lettering, no logos, no border, no frame, no watermark, no people.";
 
 const CARD_STYLE =
@@ -36,6 +36,17 @@ const ELEMENT_SETTING: Record<string, string> = {
   metal: "cool silver and white palette, autumn mountains, bronze temple bells and crisp air",
   water: "deep blue palette, moonlit river or sea, waves and soft fog, winter night",
 };
+
+// Colour only, for hand-written art descriptions that already set the scene and time of day.
+const ELEMENT_COLOURS: Record<string, string> = {
+  wood: "fresh greens and jade with soft gold light",
+  fire: "warm reds, ambers and gold",
+  earth: "ochre, gold and warm earth tones",
+  metal: "cool silvers, whites and bronze accents",
+  water: "deep blues, indigo and silver",
+};
+
+const article = (w: string) => (/^[aeiou]/i.test(w) ? "an" : "a");
 
 const STAGE: Record<string, string> = {
   Kit: "shown as a small, young and endearing juvenile",
@@ -80,8 +91,8 @@ export function buildPrompts(d: { zodiac: any[]; wanderers: any[]; spirits: any[
           s.id,
           "zodiac",
           s.name,
-          `${STYLE} Subject: ${s.name}${s.epithet ? ` ("${s.epithet}")` : ""}, a ${ANIMAL[s.animal]} of the ${s.element} element, ${STAGE[s.stage_name]}. ` +
-            `${s.art_description} Palette: ${ELEMENT_SETTING[s.element]}.`,
+          `${STYLE} Subject: ${s.name}${s.epithet ? ` ("${s.epithet}")` : ""}, ${article(ANIMAL[s.animal])} ${ANIMAL[s.animal]} of the ${s.element} element, ${STAGE[s.stage_name]}. ` +
+            `${s.art_description} Colour palette: ${ELEMENT_COLOURS[s.element]}.`,
         ),
       );
       continue;
@@ -91,7 +102,7 @@ export function buildPrompts(d: { zodiac: any[]; wanderers: any[]; spirits: any[
         s.id,
         "zodiac",
         s.name,
-        `${STYLE} Subject: ${s.name}${s.epithet ? ` ("${s.epithet}")` : ""}, a ${ANIMAL[s.animal]} of the ${s.element} element, ${STAGE[s.stage_name]}. ` +
+        `${STYLE} Subject: ${s.name}${s.epithet ? ` ("${s.epithet}")` : ""}, ${article(ANIMAL[s.animal])} ${ANIMAL[s.animal]} of the ${s.element} element, ${STAGE[s.stage_name]}. ` +
           `${s.description} Colouring: ${colouring(s)}. Setting: ${s.habitat ? `${s.habitat.replace(/\.$/, "")}; ` : ""}${ELEMENT_SETTING[s.element]}.`,
       ),
     );
