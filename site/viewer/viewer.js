@@ -236,8 +236,19 @@
 
   // ---------------------------------------------------------------- boot
   async function boot() {
-    const res = await fetch("data/cards.json");
-    const data = await res.json();
+    // Always fetch a fresh copy (a stale cached 404 from an earlier deploy broke loading on Safari),
+    // and report HTTP or parse failures plainly instead of the browser's generic JSON error.
+    const url = new URL("data/cards.json", location.href.replace(/[?#].*$/, "").replace(/[^/]*$/, ""));
+    url.searchParams.set("t", String(Date.now()));
+    const res = await fetch(url, { cache: "no-store" });
+    if (!res.ok) throw new Error(`the card data returned HTTP ${res.status} (${url.pathname})`);
+    const raw = await res.text();
+    let data;
+    try {
+      data = JSON.parse(raw);
+    } catch {
+      throw new Error(`the card data at ${url.pathname} is not valid JSON (starts: ${raw.slice(0, 40).replace(/\s+/g, " ")})`);
+    }
     state.cards = data.cards.map((c) => ({
       ...c,
       _search: [c.name, c.id, c.subtitle, c.text, c.family, c.animal, c.mythical ? "mythical" : "", c.category, ...(c.elements || []), c.data?.lore, c.data?.creature].filter(Boolean).join(" ").toLowerCase(),

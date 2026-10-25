@@ -157,4 +157,12 @@ writeFileSync(
   JSON.stringify({ version: pkg.version, built: new Date().toISOString().slice(0, 10), licence: "CC-BY-4.0", count: cards.length, cards, armour }),
 );
 writeFileSync(join(DIST, ".nojekyll"), "");
+
+// Version the script and stylesheet URLs so browsers never pair a new page with a cached old script.
+const stamp = Date.now().toString(36);
+const indexPath = join(DIST, "index.html");
+writeFileSync(
+  indexPath,
+  readFileSync(indexPath, "utf8").replace('href="viewer.css"', `href="viewer.css?v=${stamp}"`).replace('src="viewer.js"', `src="viewer.js?v=${stamp}"`),
+);
 console.log(`site: ${cards.length} cards → dist/`);
