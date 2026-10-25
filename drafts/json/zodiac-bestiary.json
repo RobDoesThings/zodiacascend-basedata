@@ -328,7 +328,7 @@
       "playable": true,
       "habitat": "The midnight courts beneath the Hour of the Rat.",
       "description": "A sleek black rat the size of a wolf, trailed by a shimmer of half-real tails.",
-      "art_description": "A sleek, wolf-sized black rat crouched on a wet stone stair at midnight, fur glistening like ink, sharp intelligent dark eyes. Behind it fan out many translucent, half-real tails and three faint shadowy echo-copies of itself, as if it exists a heartbeat apart. Moonlight on rippling water, temple lanterns reflected in a canal, a water-clock dripping nearby.",
+      "art_description": "A sleek, wolf-sized black rat crouched on a wet stone stair at midnight, fur glistening like ink, sharp intelligent dark eyes. Behind it fan out many long, translucent ghostly tails and three faint shadowy echo-copies of the rat, as if it exists a heartbeat apart. Moonlight on rippling water, temple lanterns reflected in an empty canal, a water-clock dripping nearby.",
       "physical": {
         "measure": "length",
         "weight_kg": {
@@ -5068,7 +5068,7 @@
       "playable": true,
       "habitat": "The green heart of the Hour of the Tiger.",
       "description": "A colossal tiger with jade-green eyes and the mark of a king on its brow.",
-      "art_description": "A colossal tiger with deep orange fur and bold black stripes, glowing jade-green eyes and the character-like markings of a king on its brow. Faint green spirit-light gathers around it in three ring-shaped gates, as if it is unlocking hidden strength. Mid-stride on a mossy rock in a towering bamboo forest, sunlight breaking through morning mist, bamboo leaves drifting.",
+      "art_description": "A single colossal tiger with one head, deep orange fur and bold black stripes, glowing jade-green eyes and dark markings on its brow like the character for king. Faint green spirit-light swirls around its shoulders and paws. Mid-stride on a mossy rock in a towering bamboo forest, sunlight breaking through morning mist, bamboo leaves drifting.",
       "physical": {
         "measure": "length",
         "weight_kg": {
@@ -12233,7 +12233,7 @@
       "playable": true,
       "habitat": "The lamplit pagodas of the Hour of the Snake.",
       "description": "A great serpent with nine faint rings of colour, each said to be a skin it has shed and survived.",
-      "art_description": "A great serpent with ember-red scales banded with nine faint rings of colour, raised in a coiled hood-like pose, calm golden eyes. A translucent shed skin drapes beside it like silk. Coiled around the base of an old lamplit pagoda at dusk, paper lanterns glowing warm red, drifting sparks and incense smoke.",
+      "art_description": "A great snake: a true serpent with a long legless body, no horns, no whiskers and no mane, clearly a snake and not a dragon. Ember-red scales banded with nine faint rings of colour, head raised in a coiled striking pose, calm golden eyes, forked tongue. A translucent shed snakeskin drapes beside it like silk. Coiled around the base of an old lamplit pagoda at dusk, paper lanterns glowing warm red, drifting sparks and incense smoke.",
       "physical": {
         "measure": "length",
         "weight_kg": {
@@ -23463,7 +23463,7 @@
       "playable": true,
       "habitat": "The gates of the Hour of the Dog.",
       "description": "A great guardian hound with a lion's mane of earth-gold fur, flanked by a phantom twin.",
-      "art_description": "A great guardian hound with a thick lion-like mane of earth-gold fur, broad chest and calm, watchful eyes, sitting upright like a shrine guardian. Beside it stands a translucent phantom twin, one with mouth open and one with mouth closed. Guarding an ancient stone gate at dusk with stone lanterns, autumn leaves on the steps.",
+      "art_description": "A great guardian dog, clearly a dog with a canine muzzle, dog's ears and a dog's body, not a lion. A thick ruff of earth-gold fur around its neck like an Okinawan shisa guardian dog, broad chest and calm, watchful eyes, sitting upright like a shrine guardian. Beside it sits a translucent, glowing ghostly copy of the same dog, one with mouth open and one with mouth closed. Guarding an ancient stone gate at dusk with stone lanterns, autumn leaves on the steps.",
       "physical": {
         "measure": "shoulder",
         "weight_kg": {
@@ -25840,7 +25840,7 @@
       "playable": true,
       "habitat": "The orchard valleys of the Hour of the Pig.",
       "description": "A vast, contented boar whose bristles sprout herbs and whose belly rumbles like distant thunder.",
-      "art_description": "A vast, contented boar with a round belly and dark bristles sprouting green herbs and tiny flowers, gentle eyes and modest tusks. Lounging happily in an abundant orchard valley beside a river, fallen fruit, chestnuts and mushrooms around it, small animals resting against its side. Soft blue evening light and fireflies over the water.",
+      "art_description": "A vast, contented wild boar with natural boar anatomy, lying on its side on four legs, round belly, coarse brown bristles sprouting green herbs and tiny flowers, gentle eyes, small curved tusks and a pig's snout. Resting in an abundant orchard valley beside a river, fallen fruit, chestnuts and mushrooms around it, small animals curled up against its side. Soft blue evening light and fireflies over the water.",
       "physical": {
         "measure": "length",
         "weight_kg": {
